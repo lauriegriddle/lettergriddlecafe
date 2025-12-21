@@ -370,6 +370,7 @@ function LetterGriddlePuzzle({ puzzle }) {
         <p>• Click a letter, then click a slot to place it</p>
         <p>• Click a filled slot to return the letter</p>
         <p>• Desktop? Type letters directly! Use ↑↓ to switch words, Backspace to remove</p>
+        <p>• Like a good recipe, sometimes you just have to try it and see!</p>
       </div>
 
       {/* Reset button */}
