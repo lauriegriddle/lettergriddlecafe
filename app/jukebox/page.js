@@ -55,6 +55,7 @@ export default function JukeboxGame() {
   const [shakeWord, setShakeWord] = useState(-1);
   const [selectedLetter, setSelectedLetter] = useState(null);
   const [selectedLetterIndex, setSelectedLetterIndex] = useState(null);
+  const [selectedSlot, setSelectedSlot] = useState(null);
 
   // Stats state
   const [stats, setStats] = useState({
@@ -192,7 +193,22 @@ export default function JukeboxGame() {
 
   // Handle tapping a letter in the pool
   const handlePoolLetterClick = (letter, index) => {
-    if (selectedLetter === letter && selectedLetterIndex === index) {
+    if (selectedSlot) {
+      // Slot-first mode: place letter in the selected slot
+      const { wordIdx, slotIdx } = selectedSlot;
+      const newGuesses = [...guesses];
+      newGuesses[wordIdx] = [...newGuesses[wordIdx]];
+      newGuesses[wordIdx][slotIdx] = letter;
+      
+      const newAvailable = [...availableLetters];
+      newAvailable.splice(index, 1);
+      
+      setGuesses(newGuesses);
+      setAvailableLetters(newAvailable);
+      setSelectedSlot(null);
+      setSelectedLetter(null);
+      setSelectedLetterIndex(null);
+    } else if (selectedLetter === letter && selectedLetterIndex === index) {
       // Tapping same letter deselects it
       setSelectedLetter(null);
       setSelectedLetterIndex(null);
@@ -200,6 +216,7 @@ export default function JukeboxGame() {
       // Select this letter
       setSelectedLetter(letter);
       setSelectedLetterIndex(index);
+      setSelectedSlot(null);
     }
   };
 
@@ -230,6 +247,7 @@ export default function JukeboxGame() {
       setAvailableLetters(newAvailable);
       setSelectedLetter(null);
       setSelectedLetterIndex(null);
+      setSelectedSlot(null);
     } else if (selectedLetter !== null) {
       // Slot is empty and we have a selected letter - place it
       const newGuesses = [...guesses];
@@ -241,6 +259,12 @@ export default function JukeboxGame() {
       
       setGuesses(newGuesses);
       setAvailableLetters(newAvailable);
+      setSelectedLetter(null);
+      setSelectedLetterIndex(null);
+      setSelectedSlot(null);
+    } else {
+      // No letter selected - select this slot (slot-first mode)
+      setSelectedSlot({ wordIdx, slotIdx });
       setSelectedLetter(null);
       setSelectedLetterIndex(null);
     }
