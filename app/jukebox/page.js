@@ -1146,7 +1146,7 @@ export default function JukeboxGame() {
               <div className="game-card">
                 <div className="game-instructions">
                   <p>🎵 Each word connects to the next 🎵</p>
-                  <p>Type letters • ENTER to check • BACKSPACE to delete</p>
+                  <p>Tap a spot then a letter, or tap a letter then a spot!</p>
                 </div>
 
                 <div className="word-rows">
