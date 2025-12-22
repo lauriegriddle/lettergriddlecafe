@@ -549,9 +549,11 @@ export default function JukeboxGame() {
         }
         .word-row-header {
           display: flex;
+          flex-direction: row;
           align-items: center;
           justify-content: space-between;
           margin-bottom: 8px;
+          width: 100%;
         }
         .word-row-left {
           display: flex;
@@ -918,16 +920,21 @@ export default function JukeboxGame() {
           font-size: 24px;
           animation: confetti-fall 3s ease-out forwards;
         }
-        @keyframes confetti-fall {
+       @keyframes confetti-fall {
           0% {
             opacity: 1;
             transform: translateY(-20px) rotate(0deg);
           }
           100% {
             opacity: 0;
-            transform: translateY(100vh) rotate(720deg);
+            transform: translateY(100vh) rotate(360deg);
           }
         }
+        .confetti {
+          position: absolute;
+          font-size: 24px;
+          animation: confetti-fall 2.5s linear forwards;
+        } 
       `}</style>
       <div className="jukebox-container">
         <div className="glow-orb glow-pink"></div>
@@ -1087,8 +1094,7 @@ export default function JukeboxGame() {
 
             {allComplete && (
               <div className="completion-banner">
-                <h3>🎉 Track Complete! 🎉</h3>
-                <p>You chained all the words!</p>
+                <h3>Track Complete!</h3>
                 <div className="chain-display">{currentPuzzle.words.join(' → ')}</div>
                 <div className="completion-buttons">
                   <button className="btn-secondary" onClick={() => startPuzzle(currentPuzzleIndex)}>🔄 Play Again</button>
