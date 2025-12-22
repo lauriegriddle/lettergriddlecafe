@@ -729,6 +729,16 @@ export default function JukeboxGame() {
         .letter-tile.empty.active {
           border-color: rgba(244, 114, 182, 0.5);
         }
+        .letter-tile.empty.selected {
+              border-color: #f472b6;
+              border-width: 3px;
+              box-shadow: 0 0 12px rgba(244, 114, 182, 0.6);
+              animation: pulse 1s infinite;
+            }
+            @keyframes pulse {
+              0%, 100% { transform: scale(1); }
+              50% { transform: scale(1.05); }
+            }  
         .letter-tile.complete {
           background: #166534;
           border-color: #4ade80;
@@ -1180,7 +1190,7 @@ export default function JukeboxGame() {
                               if (isComplete) { tileClass += ' complete'; }
                               else if (letterIdx === 0) { tileClass += ' revealed'; }
                               else if (letter) { tileClass += ' filled'; }
-                              else { tileClass += ' empty'; if (isActive) tileClass += ' active'; }
+                              else { tileClass += ' empty'; if (isActive) tileClass += ' active'; if (selectedSlot && selectedSlot.wordIdx === wordIdx && selectedSlot.slotIdx === letterIdx) tileClass += ' selected'; }
                               return (
                       <div 
                         key={letterIdx} 
