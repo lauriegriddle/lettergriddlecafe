@@ -269,6 +269,18 @@ export default function JukeboxGame() {
       setSelectedLetterIndex(null);
     }
   };
+
+  // Shuffle available letters
+  const shuffleLetters = () => {
+    setAvailableLetters(prev => {
+      const shuffled = [...prev];
+      for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+      }
+      return shuffled;
+    });
+  };
   // Check if current word is correct
   const checkWord = () => {
     const guess = guesses[currentWordIndex];
@@ -767,6 +779,19 @@ export default function JukeboxGame() {
           text-transform: uppercase;
           letter-spacing: 2px;
         }
+          .shuffle-btn {
+              background: transparent;
+              border: 1px solid rgba(245, 158, 11, 0.5);
+              border-radius: 8px;
+              padding: 4px 8px;
+              font-size: 16px;
+              cursor: pointer;
+              transition: all 0.2s;
+            }
+            .shuffle-btn:hover {
+              background: rgba(245, 158, 11, 0.2);
+              transform: scale(1.1);
+            }
         .letter-pool-tiles {
           display: flex;
           flex-wrap: wrap;
@@ -1156,7 +1181,7 @@ export default function JukeboxGame() {
               <div className="game-card">
                 <div className="game-instructions">
                   <p>🎵 Each word connects to the next 🎵</p>
-                  <p>Tap a spot then a letter, or tap a letter then a spot!</p>
+                  <p>Tap a spot then a letter, or tap a letter then a spot! Tap ✓ CHECK ANSWER for feedback.</p>
                 </div>
 
                 <div className="word-rows">
@@ -1216,6 +1241,7 @@ export default function JukeboxGame() {
                   <div className="letter-pool-header">
                     <span>🎹</span>
                     <span>Available Letters</span>
+                    <button className="shuffle-btn" onClick={shuffleLetters}>🔀</button>
                   </div>
                   <div className="letter-pool-tiles">
                     {availableLetters.length > 0 ? (
