@@ -378,26 +378,32 @@ function LetterGriddlePuzzle({ puzzle }) {
         🔄 Reset Puzzle
       </button>
 
-      {/* Completion celebration with confetti */}
+      {/* Completion celebration modal - full screen */}
       {allCompleted && (
-        <div className="celebration-overlay">
+        <div className="completion-modal-overlay">
           <div className="confetti-container">
-            {[...Array(50)].map((_, i) => (
+            {[...Array(40)].map((_, i) => (
               <div 
                 key={i} 
                 className="confetti" 
                 style={{
                   left: `${Math.random() * 100}%`,
-                  animationDelay: `${Math.random() * 3}s`,
+                  top: '-20px',
+                  animationDelay: `${Math.random() * 0.5}s`,
                   backgroundColor: ['#f59e0b', '#fbbf24', '#92400e', '#fde68a', '#d97706'][Math.floor(Math.random() * 5)]
                 }}
               />
             ))}
           </div>
-          <div className="completion-message">
+          <div className="completion-modal">
             <div className="completion-emoji">☕🍯🥞</div>
             <h3>Delicious!</h3>
             <p>You solved the puzzle!</p>
+            <div className="completion-buttons">
+              <button className="completion-btn primary" onClick={resetPuzzle}>
+                🔄 Play Again
+              </button>
+            </div>
           </div>
         </div>
       )}
