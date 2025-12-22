@@ -52,6 +52,7 @@ export default function JukeboxGame() {
   const [showConfetti, setShowConfetti] = useState(false);
   const [showStatsModal, setShowStatsModal] = useState(false);
   const [showResetModal, setShowResetModal] = useState(false);
+  const [shakeWord, setShakeWord] = useState(-1);
 
   // Stats state
   const [stats, setStats] = useState({
@@ -102,7 +103,6 @@ export default function JukeboxGame() {
     const puzzle = puzzles[index];
     setCurrentPuzzleIndex(index);
 
-    // Initialize guesses with first letter revealed
     const newGuesses = puzzle.words.map((word) => {
       const arr = Array(word.length).fill('');
       arr[0] = word[0];
@@ -110,7 +110,6 @@ export default function JukeboxGame() {
     });
     setGuesses(newGuesses);
 
-    // Get all letters except first letters
     const letters = [];
     puzzle.words.forEach((word) => {
       for (let i = 1; i < word.length; i++) {
@@ -125,7 +124,6 @@ export default function JukeboxGame() {
     setCurrentWordIndex(0);
     setCurrentView('game');
 
-    // Track play
     const newStats = {
       ...stats,
       totalPlays: stats.totalPlays + 1,
@@ -218,6 +216,9 @@ export default function JukeboxGame() {
         }
       }
     } else {
+      setShakeWord(currentWordIndex);
+      setTimeout(() => setShakeWord(-1), 500);
+      
       const newAvailable = [...availableLetters];
       const newGuesses = [...guesses];
       for (let i = 1; i < newGuesses[currentWordIndex].length; i++) {
@@ -245,241 +246,906 @@ export default function JukeboxGame() {
   const confettiEmojis = ['🎵', '🎶', '💿', '⭐', '✨', '🎸', '🎤', '🎹'];
   const allComplete = completedWords.every(c => c);
   const progressPct = puzzles.length > 0 ? Math.round((completedPuzzles.length / puzzles.length) * 100) : 0;
-
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-900 via-purple-950 to-slate-900 p-4 relative overflow-x-hidden">
-      <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-pink-500 rounded-full opacity-20 blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-64 h-64 bg-cyan-500 rounded-full opacity-20 blur-3xl animate-pulse"></div>
-        <div className="absolute top-1/2 left-1/2 w-48 h-48 bg-amber-500 rounded-full opacity-15 blur-3xl animate-pulse"></div>
-      </div>
+    <>
+      <style jsx>{`
+        .jukebox-container {
+          min-height: 100vh;
+          background: linear-gradient(180deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
+          padding: 16px;
+          position: relative;
+          overflow-x: hidden;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        .glow-orb {
+          position: fixed;
+          border-radius: 50%;
+          filter: blur(60px);
+          pointer-events: none;
+          animation: pulse 4s ease-in-out infinite;
+        }
+        .glow-pink { background: #ec4899; width: 250px; height: 250px; top: 20%; left: 20%; opacity: 0.2; }
+        .glow-cyan { background: #06b6d4; width: 250px; height: 250px; bottom: 20%; right: 20%; opacity: 0.2; animation-delay: 1s; }
+        .glow-amber { background: #f59e0b; width: 200px; height: 200px; top: 50%; left: 50%; transform: translate(-50%, -50%); opacity: 0.15; animation-delay: 2s; }
+        @keyframes pulse {
+          0%, 100% { opacity: 0.2; transform: scale(1); }
+          50% { opacity: 0.3; transform: scale(1.1); }
+        }
+        .music-note {
+          position: fixed;
+          opacity: 0.2;
+          animation: float 3s ease-in-out infinite;
+          pointer-events: none;
+        }
+        @keyframes float {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-15px); }
+        }
+        .jukebox-content {
+          max-width: 500px;
+          margin: 0 auto;
+          position: relative;
+          z-index: 10;
+        }
+        .jukebox-header {
+          text-align: center;
+          margin-bottom: 24px;
+        }
+        .jukebox-title {
+          font-size: 28px;
+          font-weight: bold;
+          color: #fde68a;
+          letter-spacing: 2px;
+          margin: 0;
+        }
+        .jukebox-subtitle {
+          font-size: 42px;
+          font-weight: 900;
+          letter-spacing: 4px;
+          background: linear-gradient(90deg, #f472b6, #a78bfa, #f472b6);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          margin: 4px 0 0 0;
+        }
+        .stats-btn {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          background: rgba(30, 41, 59, 0.7);
+          border: 1px solid rgba(245, 158, 11, 0.3);
+          color: #fde68a;
+          padding: 8px 16px;
+          border-radius: 20px;
+          font-size: 14px;
+          cursor: pointer;
+          transition: all 0.2s;
+        }
+        .stats-btn:hover {
+          background: rgba(51, 65, 85, 0.7);
+        }
+        .track-list-header {
+          text-align: center;
+          margin-bottom: 16px;
+          color: #fde68a;
+          font-weight: bold;
+          letter-spacing: 2px;
+        }
+        .track-list-header span {
+          font-size: 24px;
+          margin-right: 8px;
+        }
+        .track-item {
+          background: rgba(30, 41, 59, 0.7);
+          border: 1px solid #334155;
+          border-radius: 12px;
+          padding: 16px;
+          margin-bottom: 12px;
+          cursor: pointer;
+          transition: all 0.2s;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+        .track-item:hover {
+          background: rgba(51, 65, 85, 0.7);
+          border-color: rgba(244, 114, 182, 0.5);
+        }
+        .track-item-left {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+        }
+        .track-number {
+          width: 32px;
+          height: 32px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 14px;
+          font-weight: bold;
+          background: #334155;
+          color: #94a3b8;
+          transition: all 0.2s;
+        }
+        .track-item:hover .track-number {
+          background: #ec4899;
+          color: white;
+        }
+        .track-number.completed {
+          background: #22c55e;
+          color: white;
+        }
+        .track-info h3 {
+          color: white;
+          margin: 0 0 4px 0;
+          font-size: 16px;
+        }
+        .track-info p {
+          color: #64748b;
+          margin: 0;
+          font-size: 12px;
+        }
+        .track-play {
+          color: #f472b6;
+          opacity: 0;
+          transition: opacity 0.2s;
+          font-size: 18px;
+        }
+        .track-item:hover .track-play {
+          opacity: 1;
+        }
+        .track-play.completed {
+          color: #22c55e;
+          opacity: 1;
+        }
+        .progress-counter {
+          text-align: center;
+          margin-top: 24px;
+        }
+        .progress-badge {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          background: rgba(30, 41, 59, 0.5);
+          padding: 8px 16px;
+          border-radius: 20px;
+          border: 1px solid rgba(245, 158, 11, 0.2);
+        }
+        .progress-badge strong {
+          color: #fbbf24;
+        }
+        .progress-badge span {
+          color: #94a3b8;
+          font-size: 14px;
+        }
+        .jukebox-footer {
+          text-align: center;
+          margin-top: 32px;
+          font-size: 12px;
+          color: #64748b;
+        }
+        .jukebox-footer a {
+          color: #64748b;
+          text-decoration: none;
+          transition: color 0.2s;
+        }
+        .jukebox-footer a:hover {
+          color: #fbbf24;
+        }
+        .jukebox-footer .cafe-name {
+          color: #fbbf24;
+        }
+        .game-header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 16px;
+        }
+        .back-btn {
+          color: #94a3b8;
+          background: none;
+          border: none;
+          cursor: pointer;
+          font-size: 14px;
+          padding: 8px;
+        }
+        .back-btn:hover {
+          color: white;
+        }
+        .category-badge {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          background: #1e293b;
+          padding: 6px 16px;
+          border-radius: 20px;
+          border: 1px solid rgba(245, 158, 11, 0.3);
+        }
+        .category-badge span:first-child {
+          font-size: 18px;
+        }
+        .category-badge span:last-child {
+          color: #fde68a;
+          font-weight: bold;
+          font-size: 14px;
+        }
+        .game-card-wrapper {
+          position: relative;
+        }
+        .game-card-glow {
+          position: absolute;
+          inset: -4px;
+          background: linear-gradient(90deg, #ec4899, #a78bfa, #06b6d4);
+          border-radius: 24px;
+          filter: blur(8px);
+          opacity: 0.3;
+        }
+        .game-card {
+          position: relative;
+          background: linear-gradient(180deg, #1e293b, #0f172a);
+          border-radius: 24px;
+          padding: 20px;
+          border: 1px solid rgba(245, 158, 11, 0.2);
+        }
+        .game-instructions {
+          background: rgba(15, 23, 42, 0.5);
+          border-radius: 12px;
+          padding: 12px;
+          margin-bottom: 16px;
+          border: 1px solid rgba(139, 92, 246, 0.2);
+          text-align: center;
+        }
+        .game-instructions p {
+          margin: 0;
+          color: #c4b5fd;
+          font-size: 14px;
+        }
+        .game-instructions p:last-child {
+          color: #94a3b8;
+          font-size: 12px;
+          margin-top: 4px;
+        }
+        .word-rows {
+          margin-bottom: 20px;
+        }
+        .connector {
+          text-align: center;
+          margin: -4px 0;
+          color: rgba(139, 92, 246, 0.5);
+          font-size: 18px;
+        }
+        .connector.connected {
+          color: #22c55e;
+        }
+        .word-row {
+          border-radius: 12px;
+          padding: 12px;
+          cursor: pointer;
+          transition: all 0.2s;
+          background: rgba(30, 41, 59, 0.5);
+          border: 1px solid rgba(51, 65, 85, 0.5);
+          margin-bottom: 8px;
+        }
+        .word-row:hover {
+          border-color: rgba(139, 92, 246, 0.3);
+        }
+        .word-row.active {
+          background: rgba(88, 28, 135, 0.4);
+          border: 2px solid rgba(244, 114, 182, 0.5);
+        }
+        .word-row.complete {
+          background: rgba(22, 101, 52, 0.3);
+          border: 1px solid rgba(34, 197, 94, 0.3);
+        }
+        .word-row.shake {
+          animation: shake 0.5s ease-in-out;
+        }
+        @keyframes shake {
+          0%, 100% { transform: translateX(0); }
+          25% { transform: translateX(-10px); }
+          75% { transform: translateX(10px); }
+        }
+        .word-row-header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 8px;
+        }
+        .word-row-left {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+        }
+        .word-number {
+          width: 24px;
+          height: 24px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 12px;
+          font-weight: bold;
+          background: #334155;
+          color: #94a3b8;
+        }
+        .word-number.active {
+          background: #ec4899;
+          color: white;
+        }
+        .word-number.complete {
+          background: #22c55e;
+          color: white;
+        }
+        .track-label {
+          color: #64748b;
+          font-size: 12px;
+        }
+        .hint-btn {
+          background: rgba(245, 158, 11, 0.2);
+          border: 1px solid rgba(245, 158, 11, 0.3);
+          color: #fcd34d;
+          padding: 4px 12px;
+          border-radius: 12px;
+          font-size: 12px;
+          cursor: pointer;
+          transition: all 0.2s;
+        }
+        .hint-btn:hover {
+          background: rgba(245, 158, 11, 0.3);
+        }
+        .hint-box {
+          background: rgba(15, 23, 42, 0.7);
+          border-radius: 8px;
+          padding: 8px;
+          margin-bottom: 8px;
+          border: 1px solid rgba(245, 158, 11, 0.2);
+          color: rgba(253, 230, 138, 0.8);
+          font-size: 12px;
+        }
+        .letter-tiles {
+          display: flex;
+          gap: 8px;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+        .letter-tile {
+          width: 36px;
+          height: 44px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 18px;
+          font-weight: bold;
+          border-radius: 8px;
+          border: 2px solid;
+          transition: all 0.2s;
+        }
+        .letter-tile.revealed {
+          background: #0e7490;
+          border-color: #22d3ee;
+          color: white;
+        }
+        .letter-tile.filled {
+          background: #9d174d;
+          border-color: #f472b6;
+          color: white;
+        }
+        .letter-tile.empty {
+          background: #1e293b;
+          border-color: #475569;
+          border-style: dashed;
+        }
+        .letter-tile.empty.active {
+          border-color: rgba(244, 114, 182, 0.5);
+        }
+        .letter-tile.complete {
+          background: #166534;
+          border-color: #4ade80;
+          color: white;
+        }
+        .letter-pool {
+          background: #0f172a;
+          border-radius: 12px;
+          padding: 16px;
+          border: 1px solid rgba(245, 158, 11, 0.3);
+        }
+        .letter-pool-header {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 8px;
+          margin-bottom: 12px;
+        }
+        .letter-pool-header span:first-child {
+          font-size: 20px;
+        }
+        .letter-pool-header span:last-child {
+          font-size: 14px;
+          font-weight: bold;
+          color: #fde68a;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+        }
+        .letter-pool-tiles {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 8px;
+          justify-content: center;
+          margin-bottom: 8px;
+        }
+        .pool-tile {
+          width: 32px;
+          height: 36px;
+          border-radius: 8px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 16px;
+          font-weight: bold;
+          background: linear-gradient(180deg, #fbbf24, #d97706);
+          border: 2px solid #fcd34d;
+          color: #1e293b;
+          box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        .letter-pool-hint {
+          text-align: center;
+          color: #64748b;
+          font-size: 12px;
+        }
+        .all-used {
+          color: #fde68a;
+          font-size: 14px;
+        }
+        .completion-banner {
+          margin-top: 20px;
+          background: #0f172a;
+          border: 1px solid rgba(34, 197, 94, 0.5);
+          border-radius: 16px;
+          padding: 20px;
+          text-align: center;
+        }
+        .completion-banner h3 {
+          color: #4ade80;
+          font-size: 24px;
+          margin: 0 0 8px 0;
+        }
+        .completion-banner p {
+          color: #86efac;
+          font-size: 14px;
+          margin: 0 0 16px 0;
+        }
+        .chain-display {
+          background: rgba(30, 41, 59, 0.5);
+          border-radius: 12px;
+          padding: 12px;
+          margin-bottom: 16px;
+          color: #fde68a;
+          font-size: 14px;
+        }
+        .completion-buttons {
+          display: flex;
+          gap: 12px;
+          justify-content: center;
+        }
+        .btn-secondary {
+          background: #334155;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 20px;
+          font-weight: bold;
+          font-size: 14px;
+          cursor: pointer;
+          transition: all 0.2s;
+        }
+        .btn-secondary:hover {
+          background: #475569;
+        }
+        .btn-primary {
+          background: linear-gradient(90deg, #ec4899, #a78bfa);
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 20px;
+          font-weight: bold;
+          font-size: 14px;
+          cursor: pointer;
+          transition: all 0.2s;
+        }
+        .btn-primary:hover {
+          opacity: 0.9;
+          transform: scale(1.02);
+        }
+        .modal-overlay {
+          position: fixed;
+          inset: 0;
+          background: rgba(0, 0, 0, 0.7);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 50;
+          padding: 16px;
+        }
+        .modal {
+          background: linear-gradient(180deg, #1e293b, #0f172a);
+          border-radius: 24px;
+          padding: 24px;
+          max-width: 380px;
+          width: 100%;
+          position: relative;
+          border: 1px solid rgba(245, 158, 11, 0.3);
+        }
+        .modal-close {
+          position: absolute;
+          top: 16px;
+          right: 16px;
+          background: none;
+          border: none;
+          color: #94a3b8;
+          font-size: 20px;
+          cursor: pointer;
+        }
+        .modal-close:hover {
+          color: white;
+        }
+        .modal-header {
+          text-align: center;
+          margin-bottom: 24px;
+        }
+        .modal-header .emoji {
+          font-size: 40px;
+        }
+        .modal-header h3 {
+          color: #fde68a;
+          font-size: 24px;
+          margin: 8px 0 0 0;
+        }
+        .stats-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 16px;
+          margin-bottom: 24px;
+        }
+        .stat-box {
+          background: rgba(15, 23, 42, 0.5);
+          border-radius: 12px;
+          padding: 16px;
+          text-align: center;
+        }
+        .stat-box.pink { border: 1px solid rgba(236, 72, 153, 0.3); }
+        .stat-box.cyan { border: 1px solid rgba(6, 182, 212, 0.3); }
+        .stat-box.amber { border: 1px solid rgba(245, 158, 11, 0.3); }
+        .stat-box.green { border: 1px solid rgba(34, 197, 94, 0.3); }
+        .stat-box .value {
+          font-size: 28px;
+          font-weight: bold;
+        }
+        .stat-box.pink .value { color: #f472b6; }
+        .stat-box.cyan .value { color: #22d3ee; }
+        .stat-box.amber .value { color: #fbbf24; }
+        .stat-box.green .value { color: #4ade80; }
+        .stat-box .label {
+          color: #94a3b8;
+          font-size: 12px;
+          margin-top: 4px;
+        }
+        .progress-section {
+          margin-bottom: 24px;
+        }
+        .progress-label {
+          color: #94a3b8;
+          font-size: 12px;
+          text-align: center;
+          margin-bottom: 4px;
+        }
+        .progress-bar {
+          height: 12px;
+          background: #334155;
+          border-radius: 6px;
+          overflow: hidden;
+        }
+        .progress-fill {
+          height: 100%;
+          background: linear-gradient(90deg, #ec4899, #a78bfa);
+          transition: width 0.3s;
+        }
+        .all-complete-msg {
+          text-align: center;
+          color: #4ade80;
+          font-weight: bold;
+          margin-bottom: 24px;
+        }
+        .reset-section {
+          border-top: 1px solid #334155;
+          padding-top: 16px;
+          margin-top: 16px;
+        }
+        .reset-btn {
+          width: 100%;
+          background: #1e293b;
+          border: 1px solid #475569;
+          color: #94a3b8;
+          padding: 10px;
+          border-radius: 20px;
+          font-size: 14px;
+          cursor: pointer;
+          transition: all 0.2s;
+        }
+        .reset-btn:hover {
+          background: rgba(127, 29, 29, 0.5);
+          border-color: rgba(239, 68, 68, 0.5);
+          color: #f87171;
+        }
+        .reset-hint {
+          text-align: center;
+          color: #475569;
+          font-size: 12px;
+          margin-top: 8px;
+        }
+        .modal.reset {
+          border: 1px solid rgba(239, 68, 68, 0.3);
+        }
+        .reset-warning {
+          color: #94a3b8;
+          font-size: 14px;
+          text-align: center;
+          margin-bottom: 24px;
+        }
+        .btn-danger {
+          background: #dc2626;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 20px;
+          font-weight: 500;
+          font-size: 14px;
+          cursor: pointer;
+          transition: all 0.2s;
+        }
+        .btn-danger:hover {
+          background: #b91c1c;
+        }
+        .confetti-container {
+          position: fixed;
+          inset: 0;
+          pointer-events: none;
+          z-index: 100;
+        }
+        .confetti {
+          position: absolute;
+          font-size: 24px;
+          animation: confetti-fall 3s ease-out forwards;
+        }
+        @keyframes confetti-fall {
+          0% {
+            opacity: 1;
+            transform: translateY(-20px) rotate(0deg);
+          }
+          100% {
+            opacity: 0;
+            transform: translateY(100vh) rotate(720deg);
+          }
+        }
+      `}</style>
+      <div className="jukebox-container">
+        <div className="glow-orb glow-pink"></div>
+        <div className="glow-orb glow-cyan"></div>
+        <div className="glow-orb glow-amber"></div>
 
-      <div className="fixed top-20 left-10 text-4xl opacity-20 animate-bounce">🎵</div>
-      <div className="fixed top-40 right-16 text-3xl opacity-15 animate-bounce">🎶</div>
-      <div className="fixed bottom-32 left-20 text-3xl opacity-15 animate-bounce">♪</div>
-      <div className="fixed bottom-20 right-10 text-4xl opacity-20 animate-bounce">♫</div>
+        <div className="music-note" style={{ top: '80px', left: '40px', fontSize: '32px' }}>🎵</div>
+        <div className="music-note" style={{ top: '160px', right: '64px', fontSize: '24px', animationDelay: '0.5s' }}>🎶</div>
+        <div className="music-note" style={{ bottom: '128px', left: '80px', fontSize: '24px', animationDelay: '1s' }}>♪</div>
+        <div className="music-note" style={{ bottom: '80px', right: '40px', fontSize: '32px', animationDelay: '1.5s' }}>♫</div>
 
-      {showConfetti && (
-        <div className="fixed inset-0 pointer-events-none z-50">
-          {Array.from({ length: 40 }).map((_, i) => (
-            <div key={i} className="absolute text-3xl animate-ping" style={{ left: `${Math.random() * 100}%`, top: `${Math.random() * 100}%` }}>
-              {confettiEmojis[i % confettiEmojis.length]}
-            </div>
-          ))}
-        </div>
-      )}
-
-      {currentView === 'menu' && (
-        <div className="max-w-lg mx-auto relative z-10">
-          <div className="text-center mb-6">
-            <h1 className="text-3xl font-bold tracking-wide text-amber-200">Letter Griddle</h1>
-            <h2 className="text-5xl font-black tracking-wider mt-1 bg-gradient-to-r from-pink-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">JUKEBOX</h2>
+        {showConfetti && (
+          <div className="confetti-container">
+            {Array.from({ length: 40 }).map((_, i) => (
+              <div key={i} className="confetti" style={{ left: `${Math.random() * 100}%`, top: `${Math.random() * 50}%`, animationDelay: `${Math.random() * 2}s` }}>
+                {confettiEmojis[i % confettiEmojis.length]}
+              </div>
+            ))}
           </div>
+        )}
 
-          <div className="flex justify-center mb-4">
-            <button onClick={() => setShowStatsModal(true)} className="bg-slate-800/70 hover:bg-slate-700/70 border border-amber-500/30 text-amber-200 px-4 py-2 rounded-full text-sm flex items-center gap-2 transition-all">
-              <span>📊</span><span>Your Stats</span>
-            </button>
-          </div>
-
-          <div className="space-y-3">
-            <div className="text-center mb-4">
-              <span className="text-2xl inline-block">💿</span>
-              <span className="text-amber-200 font-bold tracking-wide ml-2">SELECT A TRACK</span>
+        {currentView === 'menu' && (
+          <div className="jukebox-content">
+            <div className="jukebox-header">
+              <h1 className="jukebox-title">Letter Griddle</h1>
+              <h2 className="jukebox-subtitle">JUKEBOX</h2>
             </div>
 
-            {puzzles.map((puzzle, i) => {
-              const isCompleted = completedPuzzles.includes(i);
-              return (
-                <div key={i} onClick={() => startPuzzle(i)} className="bg-slate-800/70 hover:bg-slate-700/70 border border-slate-700 hover:border-pink-500/50 rounded-xl p-4 cursor-pointer transition-all flex items-center justify-between group">
-                  <div className="flex items-center gap-3">
-                    <span className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold transition-all ${isCompleted ? 'bg-green-500 text-white' : 'bg-slate-700 text-slate-400 group-hover:bg-pink-500 group-hover:text-white'}`}>
-                      {isCompleted ? '✓' : i + 1}
-                    </span>
-                    <div>
-                      <div className="text-white font-medium">{puzzle.category}</div>
-                      <div className="text-xs text-slate-500">{isCompleted ? 'Completed • Play again?' : '4 words'}</div>
+            <div style={{ textAlign: 'center', marginBottom: '16px' }}>
+              <button className="stats-btn" onClick={() => setShowStatsModal(true)}>
+                <span>📊</span>
+                <span>Your Stats</span>
+              </button>
+            </div>
+
+            <div className="track-list-header">
+              <span>💿</span>SELECT A TRACK
+            </div>
+
+            <div className="track-list">
+              {puzzles.map((puzzle, i) => {
+                const isCompleted = completedPuzzles.includes(i);
+                return (
+                  <div key={i} className="track-item" onClick={() => startPuzzle(i)}>
+                    <div className="track-item-left">
+                      <div className={`track-number ${isCompleted ? 'completed' : ''}`}>
+                        {isCompleted ? '✓' : i + 1}
+                      </div>
+                      <div className="track-info">
+                        <h3>{puzzle.category}</h3>
+                        <p>{isCompleted ? 'Completed • Play again?' : '4 words'}</p>
+                      </div>
+                    </div>
+                    <div className={`track-play ${isCompleted ? 'completed' : ''}`}>
+                      {isCompleted ? '🔄' : '▶'}
                     </div>
                   </div>
-                  <div className={`transition-opacity ${isCompleted ? 'text-green-400 group-hover:text-pink-400' : 'text-pink-400 opacity-0 group-hover:opacity-100'}`}>
-                    {isCompleted ? '🔄' : '▶'}
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-
-          <div className="mt-6 text-center">
-            <div className="inline-flex items-center gap-2 bg-slate-800/50 px-4 py-2 rounded-full border border-amber-500/20">
-              <span className="text-amber-400 font-bold">{completedPuzzles.length}</span>
-              <span className="text-slate-400 text-sm">/ {puzzles.length} tracks completed</span>
+                );
+              })}
             </div>
-          </div>
 
-          <div className="text-center mt-8 text-xs text-slate-500">
-            <p>Part of <span className="text-amber-400">The Letter Griddle Cafe</span> ☕</p>
-            <p className="mt-1"><a href="/" className="text-slate-600 hover:text-amber-400 transition-colors">← Back to Cafe</a></p>
-          </div>
-        </div>
-      )}
-
-      {currentView === 'game' && currentPuzzle && (
-        <div className="max-w-lg mx-auto relative z-10">
-          <div className="text-center mb-4">
-            <h1 className="text-2xl font-bold tracking-wide text-amber-200">Letter Griddle</h1>
-            <h2 className="text-4xl font-black tracking-wider mt-1 bg-gradient-to-r from-pink-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">JUKEBOX</h2>
-          </div>
-
-          <div className="flex items-center justify-between mb-4">
-            <button onClick={() => setCurrentView('menu')} className="text-slate-400 hover:text-white text-sm">← Back</button>
-            <div className="inline-flex items-center gap-2 bg-slate-800 px-4 py-1.5 rounded-full border border-amber-500/30">
-              <span className="text-lg">💿</span>
-              <span className="text-amber-200 font-bold text-sm">{currentPuzzle.category}</span>
-            </div>
-            <div className="w-12"></div>
-          </div>
-
-          <div className="relative">
-            <div className="absolute -inset-1 bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 rounded-3xl blur opacity-30"></div>
-            <div className="relative bg-gradient-to-b from-slate-800 to-slate-900 rounded-3xl p-5 border border-amber-500/20">
-
-              <div className="bg-slate-900/50 rounded-xl p-3 mb-4 border border-purple-500/20">
-                <p className="text-center text-sm text-purple-200">🎵 Each word connects to the next 🎵</p>
-                <p className="text-center text-xs text-slate-400 mt-1">Type letters • ENTER to check • BACKSPACE to delete</p>
+            <div className="progress-counter">
+              <div className="progress-badge">
+                <strong>{completedPuzzles.length}</strong>
+                <span>/ {puzzles.length} tracks completed</span>
               </div>
+            </div>
 
-              <div className="space-y-2 mb-5">
-                {currentPuzzle.words.map((word, wordIdx) => {
-                  const isActive = currentWordIndex === wordIdx && !completedWords[wordIdx];
-                  const isComplete = completedWords[wordIdx];
+            <div className="jukebox-footer">
+              <p>Part of <span className="cafe-name">The Letter Griddle Cafe</span> ☕</p>
+              <p style={{ marginTop: '4px' }}><a href="/">← Back to Cafe</a></p>
+            </div>
+          </div>
+        )}
 
-                  return (
-                    <React.Fragment key={wordIdx}>
-                      {wordIdx > 0 && (
-                        <div className="flex justify-center -my-1">
-                          <div className={`text-lg ${completedWords[wordIdx - 1] && completedWords[wordIdx] ? 'text-green-400' : 'text-purple-500/50'}`}>⟡</div>
-                        </div>
-                      )}
+        {currentView === 'game' && currentPuzzle && (
+          <div className="jukebox-content">
+            <div className="jukebox-header" style={{ marginBottom: '16px' }}>
+              <h1 className="jukebox-title" style={{ fontSize: '22px' }}>Letter Griddle</h1>
+              <h2 className="jukebox-subtitle" style={{ fontSize: '32px' }}>JUKEBOX</h2>
+            </div>
 
-                      <div onClick={() => !completedWords[wordIdx] && setCurrentWordIndex(wordIdx)} className={`rounded-xl p-3 cursor-pointer transition-all ${isActive ? 'bg-purple-900/40 border-2 border-pink-500/50' : isComplete ? 'bg-green-900/30 border border-green-500/30' : 'bg-slate-800/50 border border-slate-700/50 hover:border-purple-500/30'}`}>
-                        <div className="flex items-center justify-between mb-2">
-                          <div className="flex items-center gap-2">
-                            <span className={`w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold ${isComplete ? 'bg-green-500 text-white' : isActive ? 'bg-pink-500 text-white' : 'bg-slate-700 text-slate-400'}`}>
-                              {isComplete ? '✓' : wordIdx + 1}
-                            </span>
-                            <span className="text-xs text-slate-500">Track {wordIdx + 1}</span>
-                          </div>
-                          {!isComplete && (
-                            <button onClick={(e) => { e.stopPropagation(); const newHints = [...hintsRevealed]; newHints[wordIdx] = !newHints[wordIdx]; setHintsRevealed(newHints); }} className="text-xs bg-amber-500/20 hover:bg-amber-500/30 text-amber-300 px-2 py-1 rounded-full border border-amber-500/30">
-                              Hint
-                            </button>
-                          )}
-                        </div>
+            <div className="game-header">
+              <button className="back-btn" onClick={() => setCurrentView('menu')}>← Back</button>
+              <div className="category-badge">
+                <span>💿</span>
+                <span>{currentPuzzle.category}</span>
+              </div>
+              <div style={{ width: '48px' }}></div>
+            </div>
 
-                        {hintsRevealed[wordIdx] && !isComplete && (
-                          <div className="bg-slate-900/70 rounded-lg p-2 mb-2 border border-amber-500/20 text-xs text-amber-200/80">{currentPuzzle.hints[wordIdx]}</div>
+            <div className="game-card-wrapper">
+              <div className="game-card-glow"></div>
+              <div className="game-card">
+                <div className="game-instructions">
+                  <p>🎵 Each word connects to the next 🎵</p>
+                  <p>Type letters • ENTER to check • BACKSPACE to delete</p>
+                </div>
+
+                <div className="word-rows">
+                  {currentPuzzle.words.map((word, wordIdx) => {
+                    const isActive = currentWordIndex === wordIdx && !completedWords[wordIdx];
+                    const isComplete = completedWords[wordIdx];
+
+                    return (
+                      <React.Fragment key={wordIdx}>
+                        {wordIdx > 0 && (
+                          <div className={`connector ${completedWords[wordIdx - 1] && completedWords[wordIdx] ? 'connected' : ''}`}>⟡</div>
                         )}
-
-                        <div className="flex gap-2 justify-center flex-wrap">
-                          {guesses[wordIdx]?.map((letter, letterIdx) => (
-                            <div key={letterIdx} className={`w-9 h-11 flex items-center justify-center text-lg font-bold rounded-lg border-2 transition-all ${isComplete ? 'bg-green-700 border-green-400 text-white' : letterIdx === 0 ? 'bg-cyan-700 border-cyan-400 text-white' : letter ? 'bg-pink-700 border-pink-400 text-white' : isActive ? 'bg-slate-800 border-pink-500/50 border-dashed' : 'bg-slate-800/50 border-slate-700'}`}>
-                              {letter}
+                        <div className={`word-row ${isActive ? 'active' : ''} ${isComplete ? 'complete' : ''} ${shakeWord === wordIdx ? 'shake' : ''}`} onClick={() => !completedWords[wordIdx] && setCurrentWordIndex(wordIdx)}>
+                          <div className="word-row-header">
+                            <div className="word-row-left">
+                              <div className={`word-number ${isActive ? 'active' : ''} ${isComplete ? 'complete' : ''}`}>
+                                {isComplete ? '✓' : wordIdx + 1}
+                              </div>
+                              <span className="track-label">Track {wordIdx + 1}</span>
                             </div>
-                          ))}
+                            {!isComplete && (
+                              <button className="hint-btn" onClick={(e) => { e.stopPropagation(); const newHints = [...hintsRevealed]; newHints[wordIdx] = !newHints[wordIdx]; setHintsRevealed(newHints); }}>Hint</button>
+                            )}
+                          </div>
+                          {hintsRevealed[wordIdx] && !isComplete && (
+                            <div className="hint-box">{currentPuzzle.hints[wordIdx]}</div>
+                          )}
+                          <div className="letter-tiles">
+                            {guesses[wordIdx]?.map((letter, letterIdx) => {
+                              let tileClass = 'letter-tile';
+                              if (isComplete) { tileClass += ' complete'; }
+                              else if (letterIdx === 0) { tileClass += ' revealed'; }
+                              else if (letter) { tileClass += ' filled'; }
+                              else { tileClass += ' empty'; if (isActive) tileClass += ' active'; }
+                              return (<div key={letterIdx} className={tileClass}>{letter}</div>);
+                            })}
+                          </div>
                         </div>
-                      </div>
-                    </React.Fragment>
-                  );
-                })}
-              </div>
-
-              <div className="bg-slate-900 rounded-xl p-4 border border-amber-500/30">
-                <div className="flex items-center justify-center gap-2 mb-3">
-                  <span className="text-xl">🎹</span>
-                  <span className="text-sm font-bold text-amber-200 tracking-wider uppercase">Available Letters</span>
+                      </React.Fragment>
+                    );
+                  })}
                 </div>
-                <div className="flex flex-wrap gap-2 justify-center mb-2">
-                  {availableLetters.length > 0 ? availableLetters.map((letter, i) => (
-                    <div key={i} className="w-8 h-9 rounded-lg flex items-center justify-center text-base font-bold bg-gradient-to-b from-amber-400 to-amber-600 border-2 border-amber-300 text-slate-900 shadow-md">{letter}</div>
-                  )) : <p className="text-amber-200 text-sm">✨ All letters used!</p>}
+
+                <div className="letter-pool">
+                  <div className="letter-pool-header">
+                    <span>🎹</span>
+                    <span>Available Letters</span>
+                  </div>
+                  <div className="letter-pool-tiles">
+                    {availableLetters.length > 0 ? (
+                      availableLetters.map((letter, i) => (<div key={i} className="pool-tile">{letter}</div>))
+                    ) : (
+                      <p className="all-used">✨ All letters used!</p>
+                    )}
+                  </div>
+                  <p className="letter-pool-hint">Type on your keyboard to play</p>
                 </div>
-                <p className="text-center text-xs text-slate-500">Type on your keyboard to play</p>
+              </div>
+            </div>
+
+            {allComplete && (
+              <div className="completion-banner">
+                <h3>🎉 Track Complete! 🎉</h3>
+                <p>You chained all the words!</p>
+                <div className="chain-display">{currentPuzzle.words.join(' → ')}</div>
+                <div className="completion-buttons">
+                  <button className="btn-secondary" onClick={() => startPuzzle(currentPuzzleIndex)}>🔄 Play Again</button>
+                  <button className="btn-primary" onClick={() => setCurrentView('menu')}>🎵 More Tracks</button>
+                </div>
+              </div>
+            )}
+
+            <div className="jukebox-footer">
+              <p>Part of <span className="cafe-name">The Letter Griddle Cafe</span> ☕</p>
+            </div>
+          </div>
+        )}
+
+        {showStatsModal && (
+          <div className="modal-overlay" onClick={() => setShowStatsModal(false)}>
+            <div className="modal" onClick={(e) => e.stopPropagation()}>
+              <button className="modal-close" onClick={() => setShowStatsModal(false)}>✕</button>
+              <div className="modal-header">
+                <div className="emoji">📊</div>
+                <h3>Your Stats</h3>
+              </div>
+              <div className="stats-grid">
+                <div className="stat-box pink"><div className="value">{stats.tracksCompleted}</div><div className="label">Tracks Completed</div></div>
+                <div className="stat-box cyan"><div className="value">{stats.totalPlays}</div><div className="label">Total Plays</div></div>
+                <div className="stat-box amber"><div className="value">{completedPuzzles.length}/{puzzles.length}</div><div className="label">Unique Tracks</div></div>
+                <div className="stat-box green"><div className="value">{progressPct}%</div><div className="label">Playlist Progress</div></div>
+              </div>
+              <div className="progress-section">
+                <div className="progress-label">Playlist Progress</div>
+                <div className="progress-bar"><div className="progress-fill" style={{ width: `${progressPct}%` }}></div></div>
+              </div>
+              {completedPuzzles.length === puzzles.length && <div className="all-complete-msg">🎉 All tracks completed! 🎉</div>}
+              <div className="reset-section">
+                <button className="reset-btn" onClick={() => setShowResetModal(true)}>🔄 Reset All Progress</button>
+                <p className="reset-hint">Start fresh from the beginning</p>
               </div>
             </div>
           </div>
+        )}
 
-          {allComplete && (
-            <div className="mt-5 bg-slate-900 border border-green-500/50 rounded-2xl p-5 text-center">
-              <p className="text-2xl font-bold text-green-400 mb-2">🎉 Track Complete! 🎉</p>
-              <p className="text-sm text-green-300 mb-4">You chained all the words!</p>
-              <div className="bg-slate-800/50 rounded-xl p-3 mb-4 text-sm text-amber-200">{currentPuzzle.words.join(' → ')}</div>
-              <div className="flex gap-3 justify-center">
-                <button onClick={() => startPuzzle(currentPuzzleIndex)} className="bg-slate-700 hover:bg-slate-600 text-white px-5 py-2 rounded-full font-bold text-sm">🔄 Play Again</button>
-                <button onClick={() => setCurrentView('menu')} className="bg-gradient-to-r from-pink-500 to-purple-500 hover:from-pink-600 hover:to-purple-600 text-white px-5 py-2 rounded-full font-bold text-sm">🎵 More Tracks</button>
+        {showResetModal && (
+          <div className="modal-overlay" onClick={() => setShowResetModal(false)}>
+            <div className="modal reset" onClick={(e) => e.stopPropagation()}>
+              <div className="modal-header">
+                <div className="emoji">⚠️</div>
+                <h3 style={{ color: 'white' }}>Reset All Progress?</h3>
               </div>
-            </div>
-          )}
-
-          <div className="text-center mt-6 text-xs text-slate-500">
-            <p>Part of <span className="text-amber-400">The Letter Griddle Cafe</span> ☕</p>
-          </div>
-        </div>
-      )}
-
-      {showStatsModal && (
-        <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4" onClick={() => setShowStatsModal(false)}>
-          <div className="bg-gradient-to-b from-slate-800 to-slate-900 rounded-3xl p-6 max-w-sm w-full border border-amber-500/30 relative" onClick={(e) => e.stopPropagation()}>
-            <button onClick={() => setShowStatsModal(false)} className="absolute top-4 right-4 text-slate-400 hover:text-white text-xl">✕</button>
-            <div className="text-center mb-6">
-              <span className="text-4xl">📊</span>
-              <h3 className="text-2xl font-bold text-amber-200 mt-2">Your Stats</h3>
-            </div>
-            <div className="grid grid-cols-2 gap-4 mb-6">
-              <div className="bg-slate-900/50 rounded-xl p-4 text-center border border-pink-500/30">
-                <div className="text-3xl font-bold text-pink-400">{stats.tracksCompleted}</div>
-                <div className="text-xs text-slate-400 mt-1">Tracks Completed</div>
+              <p className="reset-warning">This will clear all your stats and completed tracks. This cannot be undone!</p>
+              <div className="completion-buttons">
+                <button className="btn-secondary" onClick={() => setShowResetModal(false)}>Cancel</button>
+                <button className="btn-danger" onClick={confirmReset}>Reset Everything</button>
               </div>
-              <div className="bg-slate-900/50 rounded-xl p-4 text-center border border-cyan-500/30">
-                <div className="text-3xl font-bold text-cyan-400">{stats.totalPlays}</div>
-                <div className="text-xs text-slate-400 mt-1">Total Plays</div>
-              </div>
-              <div className="bg-slate-900/50 rounded-xl p-4 text-center border border-amber-500/30">
-                <div className="text-3xl font-bold text-amber-400">{completedPuzzles.length}/{puzzles.length}</div>
-                <div className="text-xs text-slate-400 mt-1">Unique Tracks</div>
-              </div>
-              <div className="bg-slate-900/50 rounded-xl p-4 text-center border border-green-500/30">
-                <div className="text-3xl font-bold text-green-400">{progressPct}%</div>
-                <div className="text-xs text-slate-400 mt-1">Playlist Progress</div>
-              </div>
-            </div>
-            <div className="mb-6">
-              <div className="text-xs text-slate-400 mb-1 text-center">Playlist Progress</div>
-              <div className="w-full bg-slate-700 rounded-full h-3">
-                <div className="bg-gradient-to-r from-pink-500 to-purple-500 h-3 rounded-full transition-all" style={{width: `${progressPct}%`}}></div>
-              </div>
-            </div>
-            {completedPuzzles.length === puzzles.length && <div className="text-center text-green-400 font-bold mb-6">🎉 All tracks completed! 🎉</div>}
-            <div className="border-t border-slate-700 pt-4 mt-4">
-              <button onClick={() => setShowResetModal(true)} className="w-full bg-slate-800 hover:bg-red-900/50 border border-slate-600 hover:border-red-500/50 text-slate-400 hover:text-red-400 px-4 py-2 rounded-full text-sm transition-all">🔄 Reset All Progress</button>
-              <p className="text-xs text-slate-600 text-center mt-2">Start fresh from the beginning</p>
             </div>
           </div>
-        </div>
-      )}
-
-      {showResetModal && (
-        <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4" onClick={() => setShowResetModal(false)}>
-          <div className="bg-gradient-to-b from-slate-800 to-slate-900 rounded-3xl p-6 max-w-sm w-full border border-red-500/30 text-center" onClick={(e) => e.stopPropagation()}>
-            <div className="text-4xl mb-4">⚠️</div>
-            <h3 className="text-xl font-bold text-white mb-2">Reset All Progress?</h3>
-            <p className="text-slate-400 text-sm mb-6">This will clear all your stats and completed tracks. This cannot be undone!</p>
-            <div className="flex gap-3 justify-center">
-              <button onClick={() => setShowResetModal(false)} className="bg-slate-700 hover:bg-slate-600 text-white px-5 py-2 rounded-full text-sm font-medium transition-all">Cancel</button>
-              <button onClick={confirmReset} className="bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded-full text-sm font-medium transition-all">Reset Everything</button>
-            </div>
-          </div>
-        </div>
-      )}
-    </div>
+        )}
+      </div>
+    </>
   );
 }
