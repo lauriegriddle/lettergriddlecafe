@@ -1223,6 +1223,7 @@ export default function JukeboxGame() {
             <div className="jukebox-footer">
               <p>Part of <span className="cafe-name">The Letter Griddle Cafe</span> ☕</p>
               <p style={{ marginTop: '4px' }}><a href="/">← Back to Cafe</a></p>
+              <p style={{ marginTop: '4px', fontSize: '10px', opacity: 0.6 }}>© {new Date().getFullYear()} Letter Griddle. All rights reserved.</p>
             </div>
           </div>
         )}
