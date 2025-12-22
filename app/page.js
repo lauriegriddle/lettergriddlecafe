@@ -76,7 +76,7 @@ const puzzles = {
       { pos: 2, letter: 'A' },
       { pos: 0, letter: 'F' },
       { pos: 4, letter: 'I' },
-      { pos: 5, letter: 'C' }
+      { pos: 6, letter: 'C' }
     ],
     didYouKnow: 'The word "cafe" comes from the French café, meaning "coffee," which itself derives from the Italian caffè, ultimately tracing back through Ottoman Turkish kahve to the Arabic qahwa, which originally referred to a type of wine but was transferred to coffee due to its stimulating effect.'
   }
