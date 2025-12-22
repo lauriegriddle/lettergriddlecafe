@@ -916,19 +916,18 @@ export default function JukeboxGame() {
           z-index: 100;
         }
         @keyframes confetti-fall {
-          0% {
-            transform: translateY(0);
-            opacity: 1;
+          from {
+            transform: translateY(-10px);
           }
-          100% {
-            transform: translateY(100vh) rotate(360deg);
-            opacity: 0;
+          to {
+            transform: translateY(calc(100vh + 50px));
           }
         }
         .confetti {
           position: absolute;
           font-size: 28px;
-          animation: confetti-fall 2s ease-in forwards;
+          opacity: 0.9;
+          animation: confetti-fall 1.5s linear forwards;
           pointer-events: none;
         }
          
