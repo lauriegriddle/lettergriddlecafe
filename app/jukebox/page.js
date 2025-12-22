@@ -1084,6 +1084,73 @@ export default function JukeboxGame() {
           animation: confetti-fall 1.5s linear forwards;
           pointer-events: none;
         }
+          /* Tablet and Mobile Responsive Styles */
+            @media (max-width: 1024px) {
+              .game-card {
+                padding: 12px;
+              }
+              .game-instructions p {
+                font-size: 11px;
+                margin: 4px 0;
+              }
+              .word-row {
+                padding: 8px;
+                margin-bottom: 4px;
+              }
+              .word-row-header {
+                margin-bottom: 4px;
+              }
+              .letter-tiles {
+                gap: 4px;
+              }
+              .letter-tile {
+                width: 32px;
+                height: 38px;
+                font-size: 16px;
+              }
+              .connector {
+                height: 12px;
+                margin: 2px 0;
+              }
+              .letter-pool {
+                padding: 10px;
+              }
+              .letter-pool-header {
+                margin-bottom: 8px;
+              }
+              .pool-tile {
+                width: 36px;
+                height: 40px;
+                font-size: 16px;
+              }
+              .check-btn {
+                padding: 10px;
+                font-size: 14px;
+              }
+            }
+
+            /* Phone Responsive Styles */
+            @media (max-width: 480px) {
+              .game-instructions p {
+                font-size: 10px;
+              }
+              .word-row {
+                padding: 6px;
+              }
+              .letter-tile {
+                width: 28px;
+                height: 34px;
+                font-size: 14px;
+              }
+              .pool-tile {
+                width: 32px;
+                height: 36px;
+                font-size: 14px;
+              }
+              .connector {
+                height: 8px;
+              }
+            }
          
       `}</style>
       <div className="jukebox-container">
