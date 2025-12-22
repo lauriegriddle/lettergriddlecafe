@@ -38,6 +38,21 @@ export default function JukeboxGame() {
       category: "Action Heroes",
       words: ["DIE", "HARD", "ROCK", "BOTTOM"],
       hints: ["To cease living", "Not soft", "A stone or music genre", "The lowest part"]
+    },
+    {
+      category: "Cafe Recipe",
+      words: ["CINNAMON", "ROLL", "CALL", "BACK"],
+      hints: ["A warm spice from tree bark", "To rotate or a bread type", "To phone someone", "The rear or to return"]
+    },
+    {
+      category: "Morning Rush",
+      words: ["COFFEE", "BREAK", "FAST", "FOOD"],
+      hints: ["A caffeinated drink", "A pause or to shatter", "Quick or to not eat", "What you eat"]
+    },
+    {
+      category: "Bedtime Stories",
+      words: ["SWEET", "TOOTH", "FAIRY", "TALE"],
+      hints: ["Sugary or kind", "Found in your mouth", "A magical creature", "A story"]
     }
   ];
 
