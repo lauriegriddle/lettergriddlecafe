@@ -945,7 +945,7 @@ export default function JukeboxGame() {
         {showConfetti && (
           <div className="confetti-container">
             {Array.from({ length: 40 }).map((_, i) => (
-              <div key={i} className="confetti" style={{ left: `${Math.random() * 100}%`, top: `top: '-30px'`, animationDelay: `${Math.random() * 2}s` }}>
+              <div key={i} className="confetti" style={{ left: `${Math.random() * 100}%`, top: `top: '-30px'`, animationDelay: `${Math.random() * 0.3}s` }}>
                 {confettiEmojis[i % confettiEmojis.length]}
               </div>
             ))}
