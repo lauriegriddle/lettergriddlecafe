@@ -53,6 +53,8 @@ export default function JukeboxGame() {
   const [showStatsModal, setShowStatsModal] = useState(false);
   const [showResetModal, setShowResetModal] = useState(false);
   const [shakeWord, setShakeWord] = useState(-1);
+  const [selectedLetter, setSelectedLetter] = useState(null);
+  const [selectedLetterIndex, setSelectedLetterIndex] = useState(null);
 
   // Stats state
   const [stats, setStats] = useState({
@@ -144,6 +146,8 @@ export default function JukeboxGame() {
 
       if (key === 'BACKSPACE') {
         e.preventDefault();
+        setSelectedLetter(null);
+        setSelectedLetterIndex(null);
         const newGuesses = [...guesses];
         const newAvailable = [...availableLetters];
         for (let i = newGuesses[currentWordIndex].length - 1; i >= 1; i--) {
@@ -159,8 +163,12 @@ export default function JukeboxGame() {
         }
       } else if (key === 'ENTER') {
         e.preventDefault();
+        setSelectedLetter(null);
+        setSelectedLetterIndex(null);
         checkWord();
       } else if (/^[A-Z]$/.test(key)) {
+        setSelectedLetter(null);
+        setSelectedLetterIndex(null);
         const letterIdx = availableLetters.indexOf(key);
         if (letterIdx !== -1) {
           for (let i = 1; i < guesses[currentWordIndex].length; i++) {
@@ -182,6 +190,61 @@ export default function JukeboxGame() {
     return () => document.removeEventListener('keydown', handleKeyPress);
   }, [currentView, currentWordIndex, guesses, availableLetters, completedWords]);
 
+  // Handle tapping a letter in the pool
+  const handlePoolLetterClick = (letter, index) => {
+    if (selectedLetter === letter && selectedLetterIndex === index) {
+      // Tapping same letter deselects it
+      setSelectedLetter(null);
+      setSelectedLetterIndex(null);
+    } else {
+      // Select this letter
+      setSelectedLetter(letter);
+      setSelectedLetterIndex(index);
+    }
+  };
+
+  // Handle tapping a slot in a word
+  const handleSlotClick = (wordIdx, slotIdx) => {
+    // Can't tap the first letter (revealed)
+    if (slotIdx === 0) return;
+    // Can't interact with completed words
+    if (completedWords[wordIdx]) return;
+    
+    // Set this word as current if it's not
+    if (currentWordIndex !== wordIdx) {
+      setCurrentWordIndex(wordIdx);
+    }
+
+    const currentLetter = guesses[wordIdx][slotIdx];
+
+    if (currentLetter) {
+      // Slot has a letter - return it to the pool
+      const newGuesses = [...guesses];
+      newGuesses[wordIdx] = [...newGuesses[wordIdx]];
+      newGuesses[wordIdx][slotIdx] = '';
+      
+      const newAvailable = [...availableLetters, currentLetter];
+      newAvailable.sort();
+      
+      setGuesses(newGuesses);
+      setAvailableLetters(newAvailable);
+      setSelectedLetter(null);
+      setSelectedLetterIndex(null);
+    } else if (selectedLetter !== null) {
+      // Slot is empty and we have a selected letter - place it
+      const newGuesses = [...guesses];
+      newGuesses[wordIdx] = [...newGuesses[wordIdx]];
+      newGuesses[wordIdx][slotIdx] = selectedLetter;
+      
+      const newAvailable = [...availableLetters];
+      newAvailable.splice(selectedLetterIndex, 1);
+      
+      setGuesses(newGuesses);
+      setAvailableLetters(newAvailable);
+      setSelectedLetter(null);
+      setSelectedLetterIndex(null);
+    }
+  };
   // Check if current word is correct
   const checkWord = () => {
     const guess = guesses[currentWordIndex];
@@ -691,6 +754,38 @@ export default function JukeboxGame() {
           color: #1e293b;
           box-shadow: 0 2px 4px rgba(0,0,0,0.3);
         }
+          .pool-tile.selected {
+              background: linear-gradient(180deg, #f472b6, #db2777);
+              border-color: #f9a8d4;
+              color: white;
+              transform: scale(1.15);
+              box-shadow: 0 0 20px rgba(244, 114, 182, 0.6);
+            }
+            .pool-tile:hover {
+              transform: scale(1.05);
+              cursor: pointer;
+            }
+            .pool-tile.selected:hover {
+              transform: scale(1.15);
+            }
+            .check-btn {
+              display: block;
+              width: 100%;
+              margin-top: 12px;
+              padding: 12px;
+              background: linear-gradient(90deg, #ec4899, #a78bfa);
+              border: none;
+              border-radius: 12px;
+              color: white;
+              font-size: 16px;
+              font-weight: bold;
+              cursor: pointer;
+              transition: all 0.2s;
+            }
+            .check-btn:hover {
+              opacity: 0.9;
+              transform: scale(1.02);
+            }
         .letter-pool-hint {
           text-align: center;
           color: #64748b;
@@ -1062,7 +1157,19 @@ export default function JukeboxGame() {
                               else if (letterIdx === 0) { tileClass += ' revealed'; }
                               else if (letter) { tileClass += ' filled'; }
                               else { tileClass += ' empty'; if (isActive) tileClass += ' active'; }
-                              return (<div key={letterIdx} className={tileClass}>{letter}</div>);
+                              return (
+                      <div 
+                        key={letterIdx} 
+                        className={tileClass}
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          handleSlotClick(wordIdx, letterIdx);
+                        }}
+                        style={{ cursor: letterIdx === 0 || isComplete ? 'default' : 'pointer' }}
+                      >
+                        {letter}
+                      </div>
+                    );
                             })}
                           </div>
                         </div>
@@ -1078,12 +1185,25 @@ export default function JukeboxGame() {
                   </div>
                   <div className="letter-pool-tiles">
                     {availableLetters.length > 0 ? (
-                      availableLetters.map((letter, i) => (<div key={i} className="pool-tile">{letter}</div>))
+                      availableLetters.map((letter, i) => (
+                      <div 
+                        key={i} 
+                        className={`pool-tile ${selectedLetter === letter && selectedLetterIndex === i ? 'selected' : ''}`}
+                        onClick={() => handlePoolLetterClick(letter, i)}
+                      >
+                        {letter}
+                      </div>
+                    ))
                     ) : (
                       <p className="all-used">✨ All letters used!</p>
                     )}
                   </div>
-                  <p className="letter-pool-hint">Type on your keyboard to play</p>
+                  <p className="letter-pool-hint">Tap a letter, then tap where to place it • Or type on keyboard</p>
+                  {!allComplete && (
+                <button className="check-btn" onClick={checkWord}>
+                  ✓ Check Answer
+                </button>
+              )}
                 </div>
               </div>
             </div>

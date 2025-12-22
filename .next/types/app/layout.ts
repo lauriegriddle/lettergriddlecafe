@@ -1,4 +1,4 @@
-// File: /Users/lauriehess/Desktop/lettergriddlecafe/app/layout.js
+// File: /Users/lauriehess/Documents/lettergriddlecafe/app/layout.js
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
