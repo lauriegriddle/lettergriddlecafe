@@ -1094,8 +1094,8 @@ export default function JukeboxGame() {
                 margin: 4px 0;
               }
               .word-row {
-                padding: 8px;
-                margin-bottom: 4px;
+                padding: 6px;
+                margin-bottom: 2px;
               }
               .word-row-header {
                 margin-bottom: 4px;
@@ -1104,13 +1104,13 @@ export default function JukeboxGame() {
                 gap: 4px;
               }
               .letter-tile {
-                width: 32px;
-                height: 38px;
-                font-size: 16px;
+                width: 28px;
+                height: 32px;
+                font-size: 14px;
               }
               .connector {
-                height: 12px;
-                margin: 2px 0;
+                height: 6px;
+                margin: 1px 0;
               }
               .letter-pool {
                 padding: 10px;
