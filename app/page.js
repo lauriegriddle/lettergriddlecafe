@@ -45,6 +45,43 @@ const stories = [
       'Turning out the lights, leaving the cafe to head for home, Laurel pauses, "Thanks for another fun trivia night. See you sooner than later, LG."'
     ],
     closing: 'Friends, we will meet you back here sooner than later.'
+  },
+  {
+    id: 'add-one-jukebox',
+    title: 'Add One Jukebox',
+    subtitle: '🎵 Opening Sunday at 7 PM',
+    date: 'December 2025',
+    locked: true,
+    content: [
+      'Walking to her SUV, Laurel notices Mr. and Mrs. Lindsay, Jennie, and Isaac in a post-trivia huddle.',
+      '"I only gave him a small bit of my frosted cinnamon roll," Laurel overhears Jennie, as she tenderly gazes at Isaac.',
+      '"Isaac\'s just like this one," Mrs. Lindsay reveals as she gestures in Mr. Lindsay\'s direction.',
+      '"Who\'s a good boy? Who\'s got a sweet tooth?" Mr. Lindsay lovingly asks as he scratches Isaac\'s ear.',
+      '"Are those trivia questions for next week?" Laurel playfully muses as she joins the group.',
+      '"If it is, that second question will have more than one right answer," Mrs. Lindsay professes. "I\'ve done my own research."',
+      '"Oh, Laurel, you know those cinnamon buns are what we look forward to the most!" Jennie proclaims, then reconsiders, "Well, of course, after the cinnamon buns, the lovely crew of characters…"',
+      'Mr. Lindsay continues his love fest with the chihuahua, "Cute, little fluffy doggies are characters."',
+      '"Coffee, coffee, and more coffee!" Recently caffeinated, Mrs. Lindsay enthusiastically adds to the growing list of Letter Griddle Cafe draws.',
+      '"Crew, you remember two Sunday evenings ago when we didn\'t have Juke—," Laurel begins.',
+      '"Jukebox!" The group responds in trivia style.',
+      '"Jukebox was on the fritz…" Laurel restarts.',
+      '"…And Taylor B had just seen a documentary about the evolution of the jukebox," Mrs. Lindsay adds as Laurel pauses.',
+      '"Taylor B figured out how to replace the tracks to bring our dear Jukebox into the modern age," Laurel reminds the group.',
+      '"We didn\'t dance," Mr. Lindsay says as he comforts Isaac. "I mean, Mrs. Lindsay and I didn\'t dance for two weeks."',
+      '"Laurel, did you just hear us?" Jennie asks rhetorically. "Here\'s a recipe for the Letter Griddle Cafe."',
+      '"Cinnamon buns, lightly frosted," Mr. Lindsay notes.',
+      '"Fun friends who like to talk and share what they know," Jennie offers, nodding in the direction of her dog-loving companions.',
+      '"Coffee and a second cup of coffee!" Mrs. Lindsay robustly interjects.',
+      '"Jukebox!" The group erupts.',
+      'Each pauses to absorb this shared moment of discovery.',
+      'Mr. Lindsay quietly offers, "All of these ingredients create a special place in Griddle Falls, where sharing time, treats, and music with friends, where ——"',
+      '"…people, coffee, cinnamon buns, terriers, jukebox, and gentle chaos concoct the potion for the recipe that makes morning breakfast rush, trivia night, and everything in between magical," Laurel recites as an idea for another creation takes shape.',
+      '"Where one treat leads to another, one friend helps another, one song on Jukebox leads to another," Jennie ponders as Isaac perks up.',
+      '"Crew, you\'ve provided inspiration for my next creation," Laurel shares with renewed energy. "Just add one Jukebox!"'
+    ],
+    closing: 'Return next Sunday at 7pm to see what Laurel has cooked up.',
+    closingLink: '/jukebox',
+    closingLinkText: 'Can\'t wait? Play Letter Griddle Jukebox now →'
   }
 ];
 
@@ -79,6 +116,21 @@ const puzzles = {
       { pos: 6, letter: 'C' }
     ],
     didYouKnow: 'The word "cafe" comes from the French café, meaning "coffee," which itself derives from the Italian caffè, ultimately tracing back through Ottoman Turkish kahve to the Arabic qahwa, which originally referred to a type of wine but was transferred to coffee due to its stimulating effect.'
+  },
+  'add-one-jukebox': {
+    id: 'jukebox',
+    title: 'Jukebox',
+    category: 'Jukebox',
+    words: ['TUNE', 'BLUES', 'VARIETY', 'COUNTRY', 'RECORDED'],
+    hints: ['A melody', 'Sad music genre', 'Wide selection', 'Rural music style', 'Captured on tape'],
+    revealed: [
+      { pos: 0, letter: 'T' },
+      { pos: 2, letter: 'U' },
+      { pos: 0, letter: 'V' },
+      { pos: 3, letter: 'N' },
+      { pos: 2, letter: 'C' }
+    ],
+    didYouKnow: 'Jukeboxes started as nickel-in-slot phonographs in 1889, evolving from early recording devices. The name "jukebox" comes from "juke joints" where people danced to them in the 1930s. They helped revive the music industry during the Depression and offered a wide variety of music for soldiers during WWII.'
   }
 };
 
@@ -414,9 +466,17 @@ function LetterGriddlePuzzle({ puzzle }) {
 // Story Card Component
 function StoryCard({ story, onClick }) {
   return (
-    <button className="story-card" onClick={onClick}>
+    <button 
+      className={`story-card ${story.locked ? 'story-card-locked' : ''}`}
+      onClick={story.locked ? undefined : onClick}
+      disabled={story.locked}
+    >
       <h3 className="story-card-title">{story.title}</h3>
-      <p className="story-card-date">{story.date}</p>
+      {story.locked ? (
+        <p className="story-card-locked-text">{story.subtitle}</p>
+      ) : (
+        <p className="story-card-date">{story.date}</p>
+      )}
     </button>
   );
 }
