@@ -915,26 +915,23 @@ export default function JukeboxGame() {
           pointer-events: none;
           z-index: 100;
         }
-        .confetti {
-          position: absolute;
-          font-size: 24px;
-          animation: confetti-fall 3s ease-out forwards;
-        }
-       @keyframes confetti-fall {
+        @keyframes confetti-fall {
           0% {
+            transform: translateY(0);
             opacity: 1;
-            transform: translateY(-20px) rotate(0deg);
           }
           100% {
-            opacity: 0;
             transform: translateY(100vh) rotate(360deg);
+            opacity: 0;
           }
         }
         .confetti {
           position: absolute;
-          font-size: 24px;
-          animation: confetti-fall 2.5s linear forwards;
-        } 
+          font-size: 28px;
+          animation: confetti-fall 2s ease-in forwards;
+          pointer-events: none;
+        }
+         
       `}</style>
       <div className="jukebox-container">
         <div className="glow-orb glow-pink"></div>
