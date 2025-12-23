@@ -61,21 +61,21 @@ const stories = [
       '"If it is, that second question will have more than one right answer," Mrs. Lindsay professes. "I\'ve done my own research."',
       '"Oh, Laurel, you know those cinnamon buns are what we look forward to the most!" Jennie proclaims, then reconsiders, "Well, of course, after the cinnamon buns, the lovely crew of characters…"',
       'Mr. Lindsay continues his love fest with the chihuahua, "Cute, little fluffy doggies are characters."',
-      '"Coffee, coffee, and more coffee!" Recently caffeinated, Mrs. Lindsay enthusiastically adds to the growing list of Letter Griddle Cafe draws.',
+      '"Coffee, coffee, and more coffee!" Recently caffeinated, Mrs. Lindsay enthusiastically adds to the growing list of Letter Griddle Cafe charms.',
       '"Crew, you remember two Sunday evenings ago when we didn\'t have Juke—," Laurel begins.',
       '"Jukebox!" The group responds in trivia style.',
       '"Jukebox was on the fritz…" Laurel restarts.',
       '"…And Taylor B had just seen a documentary about the evolution of the jukebox," Mrs. Lindsay adds as Laurel pauses.',
       '"Taylor B figured out how to replace the tracks to bring our dear Jukebox into the modern age," Laurel reminds the group.',
       '"We didn\'t dance," Mr. Lindsay says as he comforts Isaac. "I mean, Mrs. Lindsay and I didn\'t dance for two weeks."',
-      '"Laurel, did you just hear us?" Jennie asks rhetorically. "Here\'s a recipe for the Letter Griddle Cafe."',
+      '"Laurel, did you just hear us?" Jennie asks rhetorically. "Here\'s a recipe for the Letter Griddle Cafe!"',
       '"Cinnamon buns, lightly frosted," Mr. Lindsay notes.',
       '"Fun friends who like to talk and share what they know," Jennie offers, nodding in the direction of her dog-loving companions.',
       '"Coffee and a second cup of coffee!" Mrs. Lindsay robustly interjects.',
       '"Jukebox!" The group erupts.',
       'Each pauses to absorb this shared moment of discovery.',
       'Mr. Lindsay quietly offers, "All of these ingredients create a special place in Griddle Falls, where sharing time, treats, and music with friends, where ——"',
-      '"…people, coffee, cinnamon buns, terriers, jukebox, and gentle chaos concoct the potion for the recipe that makes morning breakfast rush, trivia night, and everything in between magical," Laurel recites as an idea for another creation takes shape.',
+      '"…people, coffee, cinnamon buns, terriers, jukebox, and gentle chaos, the recipe that makes the morning breakfast rush, trivia night, and everything in between magical," Laurel recites as an idea for another creation takes shape.',
       '"Where one treat leads to another, one friend helps another, one song on Jukebox leads to another," Jennie ponders as Isaac perks up.',
       '"Crew, you\'ve provided inspiration for my next creation," Laurel shares with renewed energy. "Just add one Jukebox!"'
     ],
@@ -186,7 +186,7 @@ function LetterGriddlePuzzle({ puzzle }) {
       const key = e.key.toUpperCase();
       
       if (/^[A-Z]$/.test(key)) {
-        const poolIndex = letterPool.findIndex((letter, idx) => letter === key);
+        const poolIndex = letterPool.findIndex(letter => letter === key);
         if (poolIndex !== -1) {
           const wordGuess = guesses[activeWordIndex];
           if (!wordGuess || completed[activeWordIndex]) return;
@@ -236,14 +236,16 @@ function LetterGriddlePuzzle({ puzzle }) {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [letterPool, guesses, activeWordIndex, completed, puzzle.words.length]);
 
+  // FIXED: Now stores the letter itself instead of relying on poolIndex
   const placeLetterInSlot = (wordIndex, slotIndex, letter, poolIndex) => {
     const newGuesses = [...guesses];
     newGuesses[wordIndex] = [...newGuesses[wordIndex]];
-    newGuesses[wordIndex][slotIndex] = { letter, poolIndex };
+    // Store the letter - we'll add it back to the pool when removed
+    newGuesses[wordIndex][slotIndex] = { letter };
     setGuesses(newGuesses);
     
-    const newPool = [...letterPool];
-    newPool[poolIndex] = null;
+    // Remove the letter from the pool by splicing it out entirely
+    const newPool = letterPool.filter((_, idx) => idx !== poolIndex);
     setLetterPool(newPool);
     setSelectedLetter(null);
     
@@ -267,6 +269,7 @@ function LetterGriddlePuzzle({ puzzle }) {
     }
   };
 
+  // FIXED: Simply adds the letter back to the pool
   const removeLetterFromSlot = (wordIndex, slotIndex) => {
     const newGuesses = [...guesses];
     newGuesses[wordIndex] = [...newGuesses[wordIndex]];
@@ -274,10 +277,9 @@ function LetterGriddlePuzzle({ puzzle }) {
     newGuesses[wordIndex][slotIndex] = null;
     setGuesses(newGuesses);
     
-    if (returnedLetter.poolIndex !== undefined) {
-      const newPool = [...letterPool];
-      newPool[returnedLetter.poolIndex] = returnedLetter.letter;
-      setLetterPool(newPool);
+    // Simply add the letter back to the pool
+    if (returnedLetter && returnedLetter.letter && !returnedLetter.revealed) {
+      setLetterPool(prev => [...prev, returnedLetter.letter]);
     }
   };
 
@@ -388,11 +390,14 @@ function LetterGriddlePuzzle({ puzzle }) {
                 </button>
               )}
             </div>
+            {completed[wordIndex] && (
+              <div className="word-complete-icon">☕</div>
+            )}
           </div>
         ))}
       </div>
 
-      {/* Letter pool */}
+      {/* Letter pool - FIXED: No more null filtering issues */}
       <div className="letter-pool-container">
         <div className="letter-pool-header">
           <span className="skillet">🍳</span>
@@ -401,15 +406,13 @@ function LetterGriddlePuzzle({ puzzle }) {
         </div>
         <div className="letter-pool">
           {letterPool.map((letter, index) => (
-            letter && (
-              <button
-                key={index}
-                className={`pool-letter ${selectedLetter?.poolIndex === index ? 'selected' : ''}`}
-                onClick={() => handleLetterClick(letter, index)}
-              >
-                {letter}
-              </button>
-            )
+            <button
+              key={index}
+              className={`pool-letter ${selectedLetter?.poolIndex === index ? 'selected' : ''}`}
+              onClick={() => handleLetterClick(letter, index)}
+            >
+              {letter}
+            </button>
           ))}
         </div>
         <button className="shuffle-btn" onClick={shuffleLetters}>
