@@ -1021,26 +1021,26 @@ export default function LetterGriddleCafeGame() {
       {/* Jukebox Modal */}
       {showJukebox && (
         <div style={{position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(0,0,0,0.7)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 9999, padding: '16px'}} onClick={() => setShowJukebox(false)}>
-          <div style={{backgroundColor: '#FFFDF5', border: '3px solid #8B4513', borderRadius: '24px', padding: '24px', maxWidth: '380px', width: '100%', maxHeight: '90vh', overflowY: 'auto', position: 'relative', boxShadow: '0 25px 50px rgba(0,0,0,0.5)'}} onClick={e => e.stopPropagation()}>
-            <button onClick={() => setShowJukebox(false)} style={{position: 'absolute', top: '16px', right: '16px', padding: '4px', borderRadius: '50%', background: 'none', border: 'none', cursor: 'pointer', color: '#8B7355', fontSize: '20px'}}>✕</button>
+          <div style={{backgroundColor: '#FFFDF5', border: '3px solid #8B4513', borderRadius: '24px', padding: '20px', maxWidth: '340px', width: '100%', position: 'relative', boxShadow: '0 25px 50px rgba(0,0,0,0.5)'}} onClick={e => e.stopPropagation()}>
+            <button onClick={() => setShowJukebox(false)} style={{position: 'absolute', top: '12px', right: '12px', padding: '4px', borderRadius: '50%', background: 'none', border: 'none', cursor: 'pointer', color: '#8B7355', fontSize: '18px'}}>✕</button>
             
-            <div style={{textAlign: 'center', marginBottom: '16px'}}>
-              <div style={{fontSize: '40px', marginBottom: '8px'}}>🎵</div>
-              <h2 style={{fontSize: '24px', fontWeight: 'bold', color: '#5D4E37'}}>Jukebox</h2>
+            <div style={{textAlign: 'center', marginBottom: '12px'}}>
+              <div style={{fontSize: '28px', marginBottom: '4px'}}>🎵</div>
+              <h2 style={{fontSize: '20px', fontWeight: 'bold', color: '#5D4E37'}}>Jukebox</h2>
             </div>
             
-            <div style={{borderRadius: '12px', padding: '16px', marginBottom: '16px', background: 'linear-gradient(135deg, #5D4E37, #3D3229)', color: '#F5DEB3'}}>
-              <p style={{fontSize: '12px', textTransform: 'uppercase', letterSpacing: '1px', opacity: 0.8}}>Now Playing</p>
-              <p style={{fontWeight: '600', fontSize: '18px'}}>{currentTrack || 'Select a track'}</p>
+            <div style={{borderRadius: '12px', padding: '12px', marginBottom: '12px', background: 'linear-gradient(135deg, #5D4E37, #3D3229)', color: '#F5DEB3'}}>
+              <p style={{fontSize: '10px', textTransform: 'uppercase', letterSpacing: '1px', opacity: 0.8}}>Now Playing</p>
+              <p style={{fontWeight: '600', fontSize: '16px'}}>{currentTrack || 'Select a track'}</p>
               
-              <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '16px', marginTop: '12px'}}>
-                <button onClick={togglePlayPause} style={{width: '48px', height: '48px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'linear-gradient(135deg, #D2691E, #8B4513)', border: '2px solid #CD853F', cursor: 'pointer', fontSize: '20px', color: '#FFF8DC'}}>
+              <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '12px', marginTop: '8px'}}>
+                <button onClick={togglePlayPause} style={{width: '40px', height: '40px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'linear-gradient(135deg, #D2691E, #8B4513)', border: '2px solid #CD853F', cursor: 'pointer', fontSize: '16px', color: '#FFF8DC'}}>
                   {isPlaying ? '⏸' : '▶'}
                 </button>
               </div>
               
-              <div style={{display: 'flex', alignItems: 'center', gap: '8px', marginTop: '12px'}}>
-                <span>🔊</span>
+              <div style={{display: 'flex', alignItems: 'center', gap: '6px', marginTop: '8px'}}>
+                <span style={{fontSize: '14px'}}>🔊</span>
                 <input
                   type="range"
                   min="0"
@@ -1048,13 +1048,13 @@ export default function LetterGriddleCafeGame() {
                   step="0.1"
                   value={volume}
                   onChange={(e) => setVolume(parseFloat(e.target.value))}
-                  style={{flex: 1, height: '8px', borderRadius: '9999px', cursor: 'pointer', accentColor: '#D2691E'}}
+                  style={{flex: 1, height: '6px', borderRadius: '9999px', cursor: 'pointer', accentColor: '#D2691E'}}
                 />
               </div>
             </div>
             
-            <p style={{fontSize: '12px', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '8px', color: '#8B7355'}}>Playlist</p>
-            <div style={{maxHeight: '256px', overflowY: 'auto'}}>
+            <p style={{fontSize: '10px', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '6px', color: '#8B7355'}}>Playlist</p>
+            <div>
               {JUKEBOX_TRACKS.map(track => (
                 <button
                   key={track.id}
@@ -1062,21 +1062,22 @@ export default function LetterGriddleCafeGame() {
                   style={{
                     width: '100%',
                     textAlign: 'left',
-                    padding: '12px 16px',
+                    padding: '8px 12px',
                     borderRadius: '8px',
-                    marginBottom: '8px',
+                    marginBottom: '4px',
                     display: 'flex',
                     alignItems: 'center',
                     gap: '8px',
                     backgroundColor: currentTrack === track.name ? '#F5DEB3' : 'rgba(210, 105, 30, 0.15)',
                     color: '#5D4E37',
                     border: currentTrack === track.name ? '2px solid #8B4513' : '2px solid transparent',
-                    cursor: 'pointer'
+                    cursor: 'pointer',
+                    fontSize: '14px'
                   }}
                 >
-                  <span style={{fontSize: '20px'}}>{track.icon}</span>
+                  <span style={{fontSize: '16px'}}>{track.icon}</span>
                   <span style={{fontWeight: '500', flex: 1}}>{track.name}</span>
-                  {currentTrack === track.name && isPlaying && <span style={{fontSize: '12px', color: '#8B4513'}}>♪ Playing</span>}
+                  {currentTrack === track.name && isPlaying && <span style={{fontSize: '10px', color: '#8B4513'}}>♪</span>}
                 </button>
               ))}
             </div>
