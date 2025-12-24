@@ -697,3 +697,23 @@
   }
 }
 
+/* Locked Story Card Styles */
+.story-card-locked {
+  opacity: 0.6;
+  cursor: not-allowed;
+  position: relative;
+  background: linear-gradient(135deg, #e0e0e0 0%, #c0c0c0 100%) !important;
+}
+
+.story-card-locked:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.story-card-locked-text {
+  font-size: 14px;
+  color: #666;
+  font-style: italic;
+  margin-top: 8px;
+}
+
