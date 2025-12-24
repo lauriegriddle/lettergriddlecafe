@@ -1020,8 +1020,8 @@ export default function LetterGriddleCafeGame() {
 
       {/* Jukebox Modal */}
       {showJukebox && (
-        <div style={{position: 'fixed', inset: 0, backgroundColor: 'rgba(0,0,0,0.5)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 50, padding: '16px'}} onClick={() => setShowJukebox(false)}>
-          <div style={{backgroundColor: '#FFFDF5', border: '3px solid #8B4513', borderRadius: '24px', padding: '24px', maxWidth: '380px', width: '100%', maxHeight: '90vh', overflowY: 'auto', position: 'relative'}} onClick={e => e.stopPropagation()}>
+        <div style={{position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(0,0,0,0.7)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 9999, padding: '16px'}} onClick={() => setShowJukebox(false)}>
+          <div style={{backgroundColor: '#FFFDF5', border: '3px solid #8B4513', borderRadius: '24px', padding: '24px', maxWidth: '380px', width: '100%', maxHeight: '90vh', overflowY: 'auto', position: 'relative', boxShadow: '0 25px 50px rgba(0,0,0,0.5)'}} onClick={e => e.stopPropagation()}>
             <button onClick={() => setShowJukebox(false)} style={{position: 'absolute', top: '16px', right: '16px', padding: '4px', borderRadius: '50%', background: 'none', border: 'none', cursor: 'pointer', color: '#8B7355', fontSize: '20px'}}>✕</button>
             
             <div style={{textAlign: 'center', marginBottom: '16px'}}>
