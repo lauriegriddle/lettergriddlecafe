@@ -75,13 +75,13 @@ const stories = [
       '"Jukebox!" The group erupts.',
       'Each pauses to absorb this shared moment of discovery.',
       'Mr. Lindsay quietly offers, "All of these ingredients create a special place in Griddle Falls, where sharing time, treats, and music with friends, where ——"',
-      '"…people, coffee, cinnamon buns, terriers, jukebox, and gentle chaos, the recipe that makes the morning breakfast rush, trivia night, and everything in between magical," Laurel recites as an idea for another creation takes shape.',
+      '"…people, coffee, cinnamon buns, terriers, one jukebox, and gentle chaos, are the recipe that makes the morning breakfast rush, trivia night, and everything in between magical," Laurel recites as an idea for another creation takes shape.',
       '"Where one treat leads to another, one friend helps another, one song on Jukebox leads to another," Jennie ponders as Isaac perks up.',
       '"Crew, you\'ve provided inspiration for my next creation," Laurel shares with renewed energy. "Just add one Jukebox!"'
     ],
-    closing: 'Return next Sunday at 7pm to see what Laurel has cooked up.',
+    closing: 'Return next Sunday at 7pm to see what Laurel and the crew have cooked up.',
     closingLink: '/jukebox',
-    closingLinkText: 'Can\'t wait? Play Letter Griddle Jukebox now →'
+    closingLinkText: 'Play Letter Griddle Jukebox now →'
   }
 ];
 
