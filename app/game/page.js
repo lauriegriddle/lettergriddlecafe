@@ -246,6 +246,17 @@ export default function LetterGriddleCafeGame() {
     }
   }, [volume, currentTrack, isLoaded]);
 
+  // Load audio source when currentTrack changes (including on initial load from localStorage)
+  useEffect(() => {
+    if (audioRef.current && currentTrack) {
+      const track = JUKEBOX_TRACKS.find(t => t.name === currentTrack);
+      if (track && audioRef.current.src !== window.location.origin + track.src) {
+        audioRef.current.src = track.src;
+        audioRef.current.load();
+      }
+    }
+  }, [currentTrack]);
+
   // Audio handling - volume
   useEffect(() => {
     if (audioRef.current) {
