@@ -9,7 +9,7 @@ import React, { useState, useEffect, useCallback, useRef } from 'react';
 const PUZZLES = [
   {
     id: 'puzzle-1',
-    subtitle: 'Prepare the cafe',
+    subtitle: 'Prepare the Cafe',
     letters: ['S', 'K', 'A', 'N', 'E', 'C', 'P'],
     keyLetters: ['P', 'A'],
     totalWordCount: 64,
