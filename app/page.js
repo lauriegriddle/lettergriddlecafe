@@ -58,8 +58,8 @@ const stories = [
       '"Isaac\'s just like this one," Mrs. Lindsay reveals as she gestures in Mr. Lindsay\'s direction.',
       '"Who\'s a good boy? Who\'s got a sweet tooth?" Mr. Lindsay lovingly asks as he scratches Isaac\'s ear.',
       '"Are those trivia questions for next week?" Laurel playfully muses as she joins the group.',
-      '"If it is, that second question will have more than one right answer," Mrs. Lindsay professes. "I\'ve done my own research."',
-      '"Oh, Laurel, you know those cinnamon buns are what we look forward to the most!" Jennie proclaims, then reconsiders, "Well, of course, after the cinnamon buns, the lovely crew of characters…"',
+      '"If it is, that second question will have more than one right answer," Mrs. Lindsay playfully professes. "I\'ve done my own research."',
+      '"Oh, Laurel, you know those cinnamon buns are what we look forward to the most!" Jennie proclaims, then reconsiders, "Well, of course, after the lovely crew of characters…"',
       'Mr. Lindsay continues his love fest with the chihuahua, "Cute, little fluffy doggies are characters."',
       '"Coffee, coffee, and more coffee!" Recently caffeinated, Mrs. Lindsay enthusiastically adds to the growing list of Letter Griddle Cafe charms.',
       '"Crew, you remember two Sunday evenings ago when we didn\'t have Juke—," Laurel begins.',
@@ -75,11 +75,11 @@ const stories = [
       '"Jukebox!" The group erupts.',
       'Each pauses to absorb this shared moment of discovery.',
       'Mr. Lindsay quietly offers, "All of these ingredients create a special place in Griddle Falls, where sharing time, treats, and music with friends, where ——"',
-      '"…people, coffee, cinnamon buns, terriers, one jukebox, and gentle chaos, are the recipe that makes the morning breakfast rush, trivia night, and everything in between magical," Laurel recites as an idea for another creation takes shape.',
+      '"…people, coffee, cinnamon buns, pups, and gentle chaos, add to the recipe that makes the morning breakfast rush, trivia night, and everything in between magical," Laurel recites as an idea for another creation takes shape.',
       '"Where one treat leads to another, one friend helps another, one song on Jukebox leads to another," Jennie ponders as Isaac perks up.',
-      '"Crew, you\'ve provided inspiration for my next creation," Laurel shares with renewed energy. "Just add one Jukebox!"'
+      '"Crew," Laurel shares with renewed energy. "Just add one Jukebox!"'
     ],
-    closing: 'Return next Sunday at 7pm to see what Laurel and the crew have cooked up.',
+    closing: 'Return next Sunday at 7pm for another peak into the Letter Griddle Cafe and Griddle Falls.',
     closingLink: '/jukebox',
     closingLinkText: 'Play Letter Griddle Jukebox now →'
   }
