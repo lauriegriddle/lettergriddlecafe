@@ -12,17 +12,18 @@ const PUZZLES = [
     subtitle: 'Prepare the Cafe',
     letters: ['S', 'K', 'A', 'N', 'E', 'C', 'P'],
     keyLetters: ['P', 'A'],
-    totalWordCount: 64,
+    totalWordCount: 67, // Updated from 64
     words: {
       4: [
         'APES', 'APSE', 'ASPS',
         'CAPE', 'CAPS',
         'NAPE', 'NAPS', 'NEAP',
         'PACE', 'PACK', 'PANE', 'PANS', 'PAPA', 'PASS', 'PEAK', 'PEAS',
+        'SAPS', // NEW WORD ADDED
         'SNAP', 'SPAN', 'SPAS'
       ],
       5: [
-        'APACE', 'APSES', 'ASPEN',
+        'APACE', 'APNEA', 'APSES', 'ASPEN', // APNEA NEW WORD ADDED
         'CAPES',
         'KAPPA',
         'NAPES', 'NEAPS',
@@ -30,6 +31,7 @@ const PUZZLES = [
         'SNAPS', 'SPACE', 'SPAKE', 'SPANK', 'SPANS', 'SPEAK'
       ],
       6: [
+        'APNEAS', // NEW WORD ADDED
         'CANAPE',
         'ESCAPE',
         'KAPPAS',
@@ -39,10 +41,101 @@ const PUZZLES = [
       7: ['CANAPES', 'ESCAPES', 'KNEECAP', 'PANACEA', 'PANCAKE'],
       8: ['KEEPSAKE', 'KNEECAPS', 'KNAPSACK', 'PANACEAS', 'PANCAKES', 'SEASCAPE'],
       9: ['KEEPSAKES', 'KNAPSACKS', 'SEASCAPES']
+    },
+    // Hints for each word length category
+    hints: {
+      4: [
+        "Primates without tails",
+        "Part of a church",
+        "Venomous snakes",
+        "Superhero's garment",
+        "Bottle toppers",
+        "Back of the neck",
+        "Short sleeps",
+        "Type of tide",
+        "Walking speed",
+        "Group of cards",
+        "Window glass",
+        "Cooking vessels",
+        "Father figure",
+        "Go by, as time",
+        "Mountain top",
+        "Legumes in a pod",
+        "Tree fluids",
+        "Quick photo",
+        "Bridge across",
+        "Health retreats"
+      ],
+      5: [
+        "At a fast pace",
+        "Sleep disorder",
+        "Church sections",
+        "Quaking tree",
+        "Multiple cloaks",
+        "Greek letter pair",
+        "Neck backs",
+        "Low tides",
+        "Walking speeds",
+        "Card groups",
+        "Song of praise",
+        "Window sections",
+        "Fathers",
+        "Out of style",
+        "Mountain tops",
+        "Tranquility",
+        "Nut from a tree",
+        "Quick photos",
+        "Outer ___",
+        "Past tense of speak",
+        "Slap on the bottom",
+        "Bridge cards",
+        "Talk"
+      ],
+      6: [
+        "Sleep disorders",
+        "Small appetizer",
+        "Get away",
+        "Greek letters",
+        "Praise songs",
+        "Goes by",
+        "Tree nuts",
+        "Outer areas",
+        "Bottom slaps",
+        "Talks"
+      ],
+      7: [
+        "Small appetizers",
+        "Gets away",
+        "Joint protector",
+        "Cure-all",
+        "Breakfast flat cake"
+      ],
+      8: [
+        "Sentimental memento",
+        "Joint protectors",
+        "Hiker's bag",
+        "Cure-alls",
+        "Breakfast flat cakes",
+        "Ocean view"
+      ],
+      9: [
+        "Sentimental mementos",
+        "Hiker's bags",
+        "Ocean views"
+      ]
     }
   }
   // Add more puzzles here for rotation
 ];
+
+// Previous day's puzzle for answer key (would normally be calculated)
+const PREVIOUS_PUZZLE = {
+  id: 'puzzle-0',
+  subtitle: 'Yesterday\'s Puzzle',
+  letters: ['S', 'K', 'A', 'N', 'E', 'C', 'P'],
+  keyLetters: ['P', 'A'],
+  words: PUZZLES[0].words // For demo, using same puzzle
+};
 
 // =============================================================================
 // PUZZLE ROTATION - Get today's puzzle based on 7 AM EST
@@ -128,6 +221,55 @@ const JUKEBOX_TRACKS = [
 ];
 
 // =============================================================================
+// THEME CONFIGURATION
+// =============================================================================
+
+const THEMES = {
+  light: {
+    bg: 'linear-gradient(180deg, #F5DEB3 0%, #DEB887 15%, #D2691E 40%, #CD853F 65%, #8B4513 100%)',
+    cardBg: 'rgba(255, 253, 245, 0.97)',
+    cardBgSolid: '#FFFDF5',
+    cardBorder: '#8B4513',
+    text: '#5D4E37',
+    textSecondary: '#8B7355',
+    textLight: '#FFF8DC',
+    accent: '#D2691E',
+    accentLight: 'rgba(210, 105, 30, 0.15)',
+    headerBg: 'linear-gradient(180deg, rgba(61, 50, 41, 0.95) 0%, rgba(61, 50, 41, 0.85) 60%, transparent 100%)',
+    griddleBg: '#5D4E37',
+    griddleBorder: '#3D3229',
+    buttonBg: '#8B7355',
+    successBg: '#dcfce7',
+    successText: '#166534',
+    errorBg: '#fee2e2',
+    errorText: '#991b1b',
+    encouragementBg: '#fef3c7',
+    encouragementText: '#92400e'
+  },
+  dark: {
+    bg: 'linear-gradient(180deg, #1a1510 0%, #2d261f 15%, #3d322a 40%, #4a3f35 65%, #5d4e40 100%)',
+    cardBg: 'rgba(45, 38, 31, 0.97)',
+    cardBgSolid: '#2d261f',
+    cardBorder: '#8B7355',
+    text: '#F5DEB3',
+    textSecondary: '#DEB887',
+    textLight: '#FFF8DC',
+    accent: '#DEB887',
+    accentLight: 'rgba(222, 184, 135, 0.2)',
+    headerBg: 'linear-gradient(180deg, rgba(26, 21, 16, 0.98) 0%, rgba(26, 21, 16, 0.9) 60%, transparent 100%)',
+    griddleBg: '#3d322a',
+    griddleBorder: '#1a1510',
+    buttonBg: '#5d4e40',
+    successBg: '#14532d',
+    successText: '#86efac',
+    errorBg: '#7f1d1d',
+    errorText: '#fecaca',
+    encouragementBg: '#78350f',
+    encouragementText: '#fde68a'
+  }
+};
+
+// =============================================================================
 // MAIN COMPONENT
 // =============================================================================
 
@@ -144,16 +286,36 @@ export default function LetterGriddleCafeGame() {
   const [highlightLength, setHighlightLength] = useState(null);
   const [wordsExpanded, setWordsExpanded] = useState(true);
   
+  // Modal states
   const [showJukebox, setShowJukebox] = useState(false);
   const [showAchievements, setShowAchievements] = useState(false);
   const [showComplete, setShowComplete] = useState(false);
   const [showConfetti, setShowConfetti] = useState(false);
+  const [showStats, setShowStats] = useState(false);
+  const [showAnswerKey, setShowAnswerKey] = useState(false);
+  const [showHints, setShowHints] = useState(false);
   const [levelUpNotification, setLevelUpNotification] = useState(null);
   
+  // Dark mode state
+  const [darkMode, setDarkMode] = useState(false);
+  const theme = darkMode ? THEMES.dark : THEMES.light;
+  
+  // Jukebox states
   const [currentTrack, setCurrentTrack] = useState(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [volume, setVolume] = useState(0.5);
   const audioRef = useRef(null);
+  
+  // Stats states
+  const [stats, setStats] = useState({
+    totalPuzzlesPlayed: 0,
+    totalWordsFound: 0,
+    currentStreak: 0,
+    longestStreak: 0,
+    bestPercentage: 0,
+    lastPlayedDate: null,
+    achievementsEarned: []
+  });
   
   const [isLoaded, setIsLoaded] = useState(false);
   const [previousAchievement, setPreviousAchievement] = useState(null);
@@ -194,9 +356,10 @@ export default function LetterGriddleCafeGame() {
     return () => clearInterval(interval);
   }, []);
 
-  // Load saved progress
+  // Load saved progress and stats
   useEffect(() => {
     try {
+      // Load game progress
       const saved = localStorage.getItem(`letterGriddleCafeGame_${puzzleData.id}`);
       if (saved) {
         const parsed = JSON.parse(saved);
@@ -208,6 +371,20 @@ export default function LetterGriddleCafeGame() {
         }
         if (parsed.gameStarted) setGameStarted(true);
       }
+      
+      // Load stats
+      const savedStats = localStorage.getItem('letterGriddleCafeStats');
+      if (savedStats) {
+        setStats(JSON.parse(savedStats));
+      }
+      
+      // Load dark mode preference
+      const savedDarkMode = localStorage.getItem('letterGriddleCafeDarkMode');
+      if (savedDarkMode) {
+        setDarkMode(JSON.parse(savedDarkMode));
+      }
+      
+      // Load jukebox preferences
       const jukeboxSaved = localStorage.getItem('letterGriddleCafeJukebox');
       if (jukeboxSaved) {
         const jukeboxParsed = JSON.parse(jukeboxSaved);
@@ -235,6 +412,28 @@ export default function LetterGriddleCafeGame() {
     }
   }, [foundWords, gameStarted, isLoaded, puzzleData.id]);
 
+  // Save stats
+  useEffect(() => {
+    if (isLoaded) {
+      try {
+        localStorage.setItem('letterGriddleCafeStats', JSON.stringify(stats));
+      } catch (e) {
+        console.error('Could not save stats', e);
+      }
+    }
+  }, [stats, isLoaded]);
+
+  // Save dark mode preference
+  useEffect(() => {
+    if (isLoaded) {
+      try {
+        localStorage.setItem('letterGriddleCafeDarkMode', JSON.stringify(darkMode));
+      } catch (e) {
+        console.error('Could not save dark mode preference', e);
+      }
+    }
+  }, [darkMode, isLoaded]);
+
   // Save jukebox preferences
   useEffect(() => {
     if (isLoaded) {
@@ -246,7 +445,7 @@ export default function LetterGriddleCafeGame() {
     }
   }, [volume, currentTrack, isLoaded]);
 
-  // Load audio source when currentTrack changes (including on initial load from localStorage)
+  // Load audio source when currentTrack changes
   useEffect(() => {
     if (audioRef.current && currentTrack) {
       const track = JUKEBOX_TRACKS.find(t => t.name === currentTrack);
@@ -273,7 +472,7 @@ export default function LetterGriddleCafeGame() {
         audioRef.current.pause();
       }
     }
-  }, [isPlaying]);
+  }, [isPlaying, currentTrack]);
 
   // Level up detection
   useEffect(() => {
@@ -288,6 +487,26 @@ export default function LetterGriddleCafeGame() {
       setPreviousAchievement(getCurrentAchievement());
     }
   }, [percentage, isLoaded, previousAchievement, getCurrentAchievement, foundWords.size]);
+
+  // Update stats when puzzle is completed or significant progress is made
+  const updateStats = useCallback((newFoundCount, newPercentage) => {
+    const today = new Date().toDateString();
+    
+    setStats(prev => {
+      const isNewDay = prev.lastPlayedDate !== today;
+      const wasYesterday = prev.lastPlayedDate === new Date(Date.now() - 86400000).toDateString();
+      
+      return {
+        totalPuzzlesPlayed: isNewDay ? prev.totalPuzzlesPlayed + 1 : prev.totalPuzzlesPlayed,
+        totalWordsFound: prev.totalWordsFound + 1,
+        currentStreak: isNewDay ? (wasYesterday ? prev.currentStreak + 1 : 1) : prev.currentStreak,
+        longestStreak: Math.max(prev.longestStreak, isNewDay ? (wasYesterday ? prev.currentStreak + 1 : 1) : prev.currentStreak),
+        bestPercentage: Math.max(prev.bestPercentage, newPercentage),
+        lastPlayedDate: today,
+        achievementsEarned: prev.achievementsEarned
+      };
+    });
+  }, []);
 
   const shuffleLetters = () => {
     setAvailableLetters(prev => {
@@ -346,6 +565,9 @@ export default function LetterGriddleCafeGame() {
       newFoundWords.add(currentWord);
       setFoundWords(newFoundWords);
       
+      const newPercentage = Math.round((newFoundWords.size / totalWords) * 100);
+      updateStats(newFoundWords.size, newPercentage);
+      
       const wordLength = currentWord.length >= 9 ? 9 : (currentWord.length >= 8 ? 8 : currentWord.length);
       const reward = REWARDS[wordLength];
       setMessage(`${reward.icon} +1 ${reward.name}!`);
@@ -381,7 +603,7 @@ export default function LetterGriddleCafeGame() {
     }
     
     setCurrentWord('');
-  }, [currentWord, foundWords, totalWords, puzzleData]);
+  }, [currentWord, foundWords, totalWords, puzzleData, updateStats]);
 
   // Keyboard support
   useEffect(() => {
@@ -411,7 +633,6 @@ export default function LetterGriddleCafeGame() {
 
   const togglePlayPause = () => {
     if (!currentTrack) {
-      // No track selected - select first track and play
       const firstTrack = JUKEBOX_TRACKS[0];
       setCurrentTrack(firstTrack.name);
       if (audioRef.current) {
@@ -434,14 +655,11 @@ export default function LetterGriddleCafeGame() {
     if (!track) return;
     
     if (currentTrack === trackName) {
-      // Same track - toggle play/pause
       setIsPlaying(!isPlaying);
     } else {
-      // Different track - switch and play
       setCurrentTrack(trackName);
       setIsPlaying(true);
       
-      // Force reload and play the audio
       if (audioRef.current) {
         audioRef.current.pause();
         audioRef.current.src = track.src;
@@ -452,6 +670,24 @@ export default function LetterGriddleCafeGame() {
           }
         };
       }
+    }
+  };
+
+  // Share results function
+  const shareResults = () => {
+    const achievement = getCurrentAchievement();
+    const shareText = `☕ Letter Griddle Cafe\n\n${achievement.icon} ${achievement.title}\n${foundCount}/${totalWords} words (${percentage}%)\n\n🎵${getFoundByLength(4)} ☕${getFoundByLength(5)} 🍯${getFoundByLength(6)} 🧈${getFoundByLength(7)} 🥞${getFoundByLength(8)} 👑${getFoundByLength(9)}\n\n🔥 Streak: ${stats.currentStreak} days\n\nPlay at lettergriddlecafe.com`;
+    
+    if (navigator.share) {
+      navigator.share({ text: shareText }).catch(() => {
+        navigator.clipboard.writeText(shareText);
+        setMessage('Copied to clipboard!');
+        setMessageType('success');
+      });
+    } else {
+      navigator.clipboard.writeText(shareText);
+      setMessage('Copied to clipboard!');
+      setMessageType('success');
     }
   };
 
@@ -467,34 +703,53 @@ export default function LetterGriddleCafeGame() {
         minHeight: '100vh',
         display: 'flex',
         flexDirection: 'column',
-        background: 'linear-gradient(180deg, #F5DEB3 0%, #DEB887 15%, #D2691E 40%, #CD853F 65%, #8B4513 100%)',
+        background: theme.bg,
         fontFamily: "'Playfair Display', Georgia, serif"
       }}>
         <audio ref={audioRef} loop />
         
         <div style={{flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '16px'}}>
           <div style={{
-            backgroundColor: 'rgba(255, 253, 245, 0.97)',
-            border: '3px solid #8B4513',
+            backgroundColor: theme.cardBg,
+            border: `3px solid ${theme.cardBorder}`,
             boxShadow: '0 20px 60px rgba(139, 69, 19, 0.4)',
             borderRadius: '24px',
             padding: '32px',
             maxWidth: '420px',
             width: '100%'
           }}>
-            {/* Back to Cafe link */}
-            <a href="/" style={{display: 'flex', alignItems: 'center', gap: '4px', fontSize: '14px', color: '#8B7355', textDecoration: 'none', marginBottom: '16px'}}>
-              ← Back to Cafe
-            </a>
+            {/* Dark Mode Toggle & Back Link */}
+            <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px'}}>
+              <a href="/" style={{display: 'flex', alignItems: 'center', gap: '4px', fontSize: '14px', color: theme.textSecondary, textDecoration: 'none'}}>
+                ← Back to Cafe
+              </a>
+              <button
+                onClick={() => setDarkMode(!darkMode)}
+                style={{
+                  padding: '8px 12px',
+                  borderRadius: '9999px',
+                  backgroundColor: theme.accentLight,
+                  border: `2px solid ${theme.cardBorder}`,
+                  color: theme.text,
+                  cursor: 'pointer',
+                  fontSize: '14px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '6px'
+                }}
+              >
+                {darkMode ? '☀️ Light' : '🌙 Dark'}
+              </button>
+            </div>
 
             <div style={{textAlign: 'center', marginBottom: '16px'}}>
               <div style={{fontSize: '48px'}}>☕</div>
             </div>
 
-            <h1 style={{fontSize: '28px', fontWeight: 'bold', textAlign: 'center', marginBottom: '8px', color: '#5D4E37'}}>
+            <h1 style={{fontSize: '28px', fontWeight: 'bold', textAlign: 'center', marginBottom: '8px', color: theme.text}}>
               Letter Griddle Cafe
             </h1>
-            <p style={{textAlign: 'center', marginBottom: '24px', fontSize: '14px', padding: '8px 16px', borderRadius: '8px', color: '#5D4E37', backgroundColor: 'rgba(210, 105, 30, 0.15)'}}>
+            <p style={{textAlign: 'center', marginBottom: '24px', fontSize: '14px', padding: '8px 16px', borderRadius: '8px', color: theme.text, backgroundColor: theme.accentLight}}>
               {puzzleData.subtitle}
             </p>
 
@@ -518,11 +773,11 @@ export default function LetterGriddleCafeGame() {
             </button>
 
             {/* How to Play */}
-            <div style={{padding: '20px', borderRadius: '16px', backgroundColor: 'rgba(210, 105, 30, 0.12)', border: '2px solid #CD853F', marginBottom: '16px'}}>
-              <h2 style={{fontWeight: 'bold', marginBottom: '12px', display: 'flex', alignItems: 'center', gap: '8px', color: '#5D4E37'}}>
+            <div style={{padding: '20px', borderRadius: '16px', backgroundColor: theme.accentLight, border: `2px solid ${theme.cardBorder}`, marginBottom: '16px'}}>
+              <h2 style={{fontWeight: 'bold', marginBottom: '12px', display: 'flex', alignItems: 'center', gap: '8px', color: theme.text}}>
                 ☕ How to Play
               </h2>
-              <ul style={{listStyle: 'none', padding: 0, margin: 0, fontSize: '14px', color: '#5D4E37'}}>
+              <ul style={{listStyle: 'none', padding: 0, margin: 0, fontSize: '14px', color: theme.text}}>
                 <li style={{marginBottom: '8px'}}>☕ Build words using the 7 letters (reuse allowed!)</li>
                 <li style={{marginBottom: '8px'}}>⭐ <strong>Every word must contain BOTH {puzzleData.keyLetters.join(' and ')}</strong></li>
                 <li style={{marginBottom: '8px'}}>☕ Words must be at least 4 letters</li>
@@ -558,33 +813,32 @@ export default function LetterGriddleCafeGame() {
               </div>
             </div>
 
-            {/* Achievement Levels */}
-            <div style={{padding: '20px', borderRadius: '16px', backgroundColor: 'rgba(210, 105, 30, 0.12)', border: '2px solid #CD853F'}}>
-              <h2 style={{fontWeight: 'bold', marginBottom: '12px', display: 'flex', alignItems: 'center', gap: '8px', color: '#5D4E37'}}>
-                🏆 Achievement Levels
-              </h2>
-              <div style={{fontSize: '14px'}}>
-                {ACHIEVEMENTS.map(ach => (
-                  <div key={ach.title} style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '4px 8px', borderRadius: '8px', marginBottom: '4px', backgroundColor: percentage >= ach.threshold ? 'rgba(139, 69, 19, 0.2)' : 'transparent'}}>
-                    <span style={{display: 'flex', alignItems: 'center', gap: '8px', color: '#5D4E37'}}>
-                      <span>{ach.icon}</span>
-                      <span style={{fontWeight: percentage >= ach.threshold ? '600' : '400'}}>{ach.title}</span>
-                    </span>
-                    <span style={{color: '#8B7355'}}>{ach.threshold}%+</span>
+            {/* Stats Preview */}
+            {stats.totalPuzzlesPlayed > 0 && (
+              <div style={{padding: '16px', borderRadius: '16px', backgroundColor: theme.accentLight, border: `2px solid ${theme.cardBorder}`, marginBottom: '16px'}}>
+                <h3 style={{fontWeight: 'bold', marginBottom: '8px', color: theme.text, textAlign: 'center'}}>📊 Your Stats</h3>
+                <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px', fontSize: '14px'}}>
+                  <div style={{textAlign: 'center', padding: '8px', backgroundColor: theme.cardBgSolid, borderRadius: '8px'}}>
+                    <div style={{fontSize: '20px', fontWeight: 'bold', color: theme.accent}}>{stats.currentStreak}</div>
+                    <div style={{fontSize: '12px', color: theme.textSecondary}}>🔥 Streak</div>
                   </div>
-                ))}
+                  <div style={{textAlign: 'center', padding: '8px', backgroundColor: theme.cardBgSolid, borderRadius: '8px'}}>
+                    <div style={{fontSize: '20px', fontWeight: 'bold', color: theme.accent}}>{stats.bestPercentage}%</div>
+                    <div style={{fontSize: '12px', color: theme.textSecondary}}>🏆 Best</div>
+                  </div>
+                </div>
               </div>
-            </div>
+            )}
 
             {/* Timer */}
-            <div style={{marginTop: '24px', textAlign: 'center', padding: '12px', borderRadius: '9999px', backgroundColor: 'rgba(210, 105, 30, 0.2)', color: '#5D4E37'}}>
+            <div style={{marginTop: '16px', textAlign: 'center', padding: '12px', borderRadius: '9999px', backgroundColor: theme.accentLight, color: theme.text}}>
               <span style={{fontSize: '14px', fontWeight: '500'}}>
                 Next puzzle in: {timeUntilNext}
               </span>
             </div>
             
             {foundWords.size > 0 && (
-              <div style={{marginTop: '12px', textAlign: 'center', fontSize: '12px', color: '#8B7355'}}>
+              <div style={{marginTop: '12px', textAlign: 'center', fontSize: '12px', color: theme.textSecondary}}>
                 ✨ Your progress is saved ({foundWords.size} words found)
               </div>
             )}
@@ -592,12 +846,12 @@ export default function LetterGriddleCafeGame() {
         </div>
 
         {/* Footer */}
-        <footer style={{textAlign: 'center', padding: '16px', fontSize: '12px', color: '#FFF8DC'}}>
-          <p>Part of <a href="/" style={{color: '#FFF8DC', textDecoration: 'underline'}}>The Letter Griddle Cafe</a></p>
+        <footer style={{textAlign: 'center', padding: '16px', fontSize: '12px', color: theme.textLight}}>
+          <p>Part of <a href="/" style={{color: theme.textLight, textDecoration: 'underline'}}>The Letter Griddle Cafe</a></p>
           <p style={{marginTop: '4px'}}>
-            <a href="/privacy" style={{color: '#FFF8DC', textDecoration: 'underline'}}>Privacy</a>
+            <a href="/privacy" style={{color: theme.textLight, textDecoration: 'underline'}}>Privacy</a>
             {' • '}
-            <a href="/terms" style={{color: '#FFF8DC', textDecoration: 'underline'}}>Terms</a>
+            <a href="/terms" style={{color: theme.textLight, textDecoration: 'underline'}}>Terms</a>
           </p>
           <p style={{marginTop: '4px'}}>© {currentYear} Letter Griddle Cafe</p>
         </footer>
@@ -613,7 +867,7 @@ export default function LetterGriddleCafeGame() {
       minHeight: '100vh',
       display: 'flex',
       flexDirection: 'column',
-      background: 'linear-gradient(180deg, #F5DEB3 0%, #DEB887 15%, #D2691E 40%, #CD853F 65%, #8B4513 100%)',
+      background: theme.bg,
       fontFamily: "'Playfair Display', Georgia, serif"
     }}>
       <audio ref={audioRef} loop />
@@ -621,9 +875,9 @@ export default function LetterGriddleCafeGame() {
       {/* Level Up Notification */}
       {levelUpNotification && (
         <div style={{position: 'fixed', top: '80px', left: '50%', transform: 'translateX(-50%)', zIndex: 50, animation: 'bounce 0.5s ease infinite'}}>
-          <div style={{padding: '16px 24px', borderRadius: '16px', textAlign: 'center', backgroundColor: '#FFFDF5', border: '3px solid #FFD700', boxShadow: '0 10px 40px rgba(0,0,0,0.3)'}}>
+          <div style={{padding: '16px 24px', borderRadius: '16px', textAlign: 'center', backgroundColor: theme.cardBgSolid, border: '3px solid #FFD700', boxShadow: '0 10px 40px rgba(0,0,0,0.3)'}}>
             <div style={{fontSize: '32px', marginBottom: '4px'}}>{levelUpNotification.icon}</div>
-            <div style={{fontWeight: 'bold', fontSize: '18px', color: '#5D4E37'}}>Level Up!</div>
+            <div style={{fontWeight: 'bold', fontSize: '18px', color: theme.text}}>Level Up!</div>
             <div style={{fontWeight: '600', color: levelUpNotification.color}}>{levelUpNotification.title}</div>
           </div>
         </div>
@@ -660,7 +914,7 @@ export default function LetterGriddleCafeGame() {
       `}</style>
 
       {/* Header */}
-      <header style={{padding: '16px', background: 'linear-gradient(180deg, rgba(61, 50, 41, 0.95) 0%, rgba(61, 50, 41, 0.85) 60%, transparent 100%)'}}>
+      <header style={{padding: '16px', background: theme.headerBg}}>
         <div style={{maxWidth: '640px', margin: '0 auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
           {/* Left buttons */}
           <div style={{display: 'flex', alignItems: 'center', gap: '8px'}}>
@@ -672,7 +926,7 @@ export default function LetterGriddleCafeGame() {
                 borderRadius: '50%',
                 backgroundColor: 'rgba(222, 184, 135, 0.3)',
                 border: '2px solid rgba(222, 184, 135, 0.5)',
-                color: '#FFF8DC',
+                color: theme.textLight,
                 cursor: 'pointer',
                 display: 'flex',
                 alignItems: 'center',
@@ -683,12 +937,31 @@ export default function LetterGriddleCafeGame() {
             >
               ?
             </button>
+            <button
+              onClick={() => setDarkMode(!darkMode)}
+              style={{
+                width: '40px',
+                height: '40px',
+                borderRadius: '50%',
+                backgroundColor: 'rgba(222, 184, 135, 0.3)',
+                border: '2px solid rgba(222, 184, 135, 0.5)',
+                color: theme.textLight,
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                fontSize: '18px'
+              }}
+              title={darkMode ? 'Light Mode' : 'Dark Mode'}
+            >
+              {darkMode ? '☀️' : '🌙'}
+            </button>
           </div>
           
           {/* Center title */}
           <div style={{textAlign: 'center', flex: 1, padding: '0 8px'}}>
-            <h1 style={{fontSize: '20px', fontWeight: 'bold', color: '#FFF8DC'}}>Letter Griddle Cafe</h1>
-            <p style={{fontSize: '12px', padding: '4px 12px', borderRadius: '9999px', display: 'inline-block', marginTop: '4px', color: '#FFF8DC', backgroundColor: 'rgba(139, 69, 19, 0.5)'}}>
+            <h1 style={{fontSize: '20px', fontWeight: 'bold', color: theme.textLight}}>Letter Griddle Cafe</h1>
+            <p style={{fontSize: '12px', padding: '4px 12px', borderRadius: '9999px', display: 'inline-block', marginTop: '4px', color: theme.textLight, backgroundColor: 'rgba(139, 69, 19, 0.5)'}}>
               Every word needs {puzzleData.keyLetters.join(' + ')}
             </p>
           </div>
@@ -696,23 +969,42 @@ export default function LetterGriddleCafeGame() {
           {/* Right buttons */}
           <div style={{display: 'flex', alignItems: 'center', gap: '8px'}}>
             <button
-              onClick={() => setShowAchievements(true)}
+              onClick={() => setShowHints(true)}
               style={{
                 width: '40px',
                 height: '40px',
                 borderRadius: '50%',
                 backgroundColor: 'rgba(222, 184, 135, 0.3)',
                 border: '2px solid rgba(222, 184, 135, 0.5)',
-                color: '#FFF8DC',
+                color: theme.textLight,
                 cursor: 'pointer',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
                 fontSize: '18px'
               }}
-              title="Achievements"
+              title="Hints"
             >
-              🏆
+              💡
+            </button>
+            <button
+              onClick={() => setShowStats(true)}
+              style={{
+                width: '40px',
+                height: '40px',
+                borderRadius: '50%',
+                backgroundColor: 'rgba(222, 184, 135, 0.3)',
+                border: '2px solid rgba(222, 184, 135, 0.5)',
+                color: theme.textLight,
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                fontSize: '18px'
+              }}
+              title="Stats & Share"
+            >
+              📊
             </button>
             <button
               onClick={() => setShowJukebox(true)}
@@ -730,7 +1022,8 @@ export default function LetterGriddleCafeGame() {
                 color: '#F5DEB3',
                 border: '2px solid #CD853F',
                 cursor: 'pointer',
-                boxShadow: isPlaying ? '0 0 15px rgba(210, 105, 30, 0.5)' : 'none'
+                boxShadow: isPlaying ? '0 0 20px rgba(210, 105, 30, 0.7), 0 0 40px rgba(210, 105, 30, 0.4)' : 'none',
+                transition: 'box-shadow 0.3s ease'
               }}
             >
               🎵 Jukebox
@@ -744,8 +1037,8 @@ export default function LetterGriddleCafeGame() {
         
         {/* Progress Card */}
         <div style={{
-          backgroundColor: 'rgba(255, 253, 245, 0.95)',
-          border: '2px solid #8B4513',
+          backgroundColor: theme.cardBg,
+          border: `2px solid ${theme.cardBorder}`,
           borderRadius: '16px',
           padding: '16px',
           marginBottom: '12px'
@@ -753,26 +1046,26 @@ export default function LetterGriddleCafeGame() {
           <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px'}}>
             <button onClick={() => setShowAchievements(true)} style={{display: 'flex', alignItems: 'center', gap: '8px', background: 'none', border: 'none', cursor: 'pointer'}}>
               <span style={{fontSize: '20px'}}>{getCurrentAchievement().icon}</span>
-              <span style={{fontWeight: '600', fontSize: '14px', color: '#5D4E37'}}>{getCurrentAchievement().title}</span>
+              <span style={{fontWeight: '600', fontSize: '14px', color: theme.text}}>{getCurrentAchievement().title}</span>
             </button>
             <div style={{textAlign: 'right'}}>
-              <span style={{fontSize: '20px', fontWeight: 'bold', color: '#8B4513'}}>{foundCount}</span>
-              <span style={{fontSize: '14px', color: '#8B7355'}}> / {totalWords}</span>
-              <span style={{fontSize: '12px', marginLeft: '8px', padding: '2px 8px', borderRadius: '9999px', backgroundColor: 'rgba(139, 69, 19, 0.2)', color: '#5D4E37'}}>
+              <span style={{fontSize: '20px', fontWeight: 'bold', color: theme.accent}}>{foundCount}</span>
+              <span style={{fontSize: '14px', color: theme.textSecondary}}> / {totalWords}</span>
+              <span style={{fontSize: '12px', marginLeft: '8px', padding: '2px 8px', borderRadius: '9999px', backgroundColor: theme.accentLight, color: theme.text}}>
                 {percentage}%
               </span>
             </div>
           </div>
           
-          <div style={{height: '12px', borderRadius: '9999px', overflow: 'hidden', backgroundColor: '#F5DEB3'}}>
+          <div style={{height: '12px', borderRadius: '9999px', overflow: 'hidden', backgroundColor: darkMode ? '#3d322a' : '#F5DEB3'}}>
             <div style={{height: '100%', borderRadius: '9999px', transition: 'width 0.5s', width: `${percentage}%`, background: 'linear-gradient(90deg, #DEB887, #D2691E, #8B4513)'}} />
           </div>
         </div>
 
         {/* Reward Grid */}
         <div style={{
-          backgroundColor: 'rgba(255, 253, 245, 0.95)',
-          border: '2px solid #8B4513',
+          backgroundColor: theme.cardBg,
+          border: `2px solid ${theme.cardBorder}`,
           borderRadius: '16px',
           padding: '12px',
           marginBottom: '12px'
@@ -785,18 +1078,18 @@ export default function LetterGriddleCafeGame() {
                 style={{
                   padding: '6px',
                   borderRadius: '12px',
-                  border: highlightLength === length ? '2px solid #8B4513' : '2px solid transparent',
+                  border: highlightLength === length ? `2px solid ${theme.cardBorder}` : '2px solid transparent',
                   cursor: 'pointer',
                   backgroundColor: getFoundByLength(length) === getTotalByLength(length) && getTotalByLength(length) > 0
-                    ? 'rgba(139, 69, 19, 0.25)'
+                    ? (darkMode ? 'rgba(139, 69, 19, 0.4)' : 'rgba(139, 69, 19, 0.25)')
                     : highlightLength === length
-                    ? 'rgba(210, 105, 30, 0.3)'
-                    : 'rgba(210, 105, 30, 0.12)'
+                    ? (darkMode ? 'rgba(210, 105, 30, 0.4)' : 'rgba(210, 105, 30, 0.3)')
+                    : theme.accentLight
                 }}
               >
                 <div style={{fontSize: '16px', marginBottom: '2px'}}>{REWARDS[length].icon}</div>
-                <div style={{fontSize: '12px', fontWeight: '500', color: '#5D4E37'}}>{length === 9 ? '9+' : length}</div>
-                <div style={{fontSize: '12px', fontWeight: 'bold', color: '#8B4513'}}>{getFoundByLength(length)}/{getTotalByLength(length)}</div>
+                <div style={{fontSize: '12px', fontWeight: '500', color: theme.text}}>{length === 9 ? '9+' : length}</div>
+                <div style={{fontSize: '12px', fontWeight: 'bold', color: theme.accent}}>{getFoundByLength(length)}/{getTotalByLength(length)}</div>
               </button>
             ))}
           </div>
@@ -805,18 +1098,18 @@ export default function LetterGriddleCafeGame() {
         {/* Found Words */}
         {foundWords.size > 0 && (
           <div style={{
-            backgroundColor: 'rgba(255, 253, 245, 0.95)',
-            border: '2px solid #8B4513',
+            backgroundColor: theme.cardBg,
+            border: `2px solid ${theme.cardBorder}`,
             borderRadius: '16px',
             marginBottom: '12px',
             overflow: 'hidden'
           }}>
             <button 
               onClick={() => setWordsExpanded(!wordsExpanded)}
-              style={{width: '100%', padding: '12px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', backgroundColor: 'rgba(210, 105, 30, 0.1)', border: 'none', cursor: 'pointer'}}
+              style={{width: '100%', padding: '12px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', backgroundColor: theme.accentLight, border: 'none', cursor: 'pointer'}}
             >
-              <span style={{fontWeight: '600', fontSize: '14px', color: '#5D4E37'}}>Words Found ({foundWords.size})</span>
-              <span style={{color: '#5D4E37'}}>{wordsExpanded ? '▲' : '▼'}</span>
+              <span style={{fontWeight: '600', fontSize: '14px', color: theme.text}}>Words Found ({foundWords.size})</span>
+              <span style={{color: theme.text}}>{wordsExpanded ? '▲' : '▼'}</span>
             </button>
             
             {wordsExpanded && (
@@ -832,9 +1125,9 @@ export default function LetterGriddleCafeGame() {
                         fontSize: '12px',
                         fontWeight: '600',
                         opacity: isHighlighted ? 1 : 0.3,
-                        backgroundColor: isHighlighted ? '#F5DEB3' : '#FFF8DC',
-                        color: '#3D3229',
-                        border: highlightLength === wordLen ? '2px solid #8B4513' : '1px solid #CD853F'
+                        backgroundColor: isHighlighted ? (darkMode ? '#5d4e40' : '#F5DEB3') : theme.cardBgSolid,
+                        color: theme.text,
+                        border: highlightLength === wordLen ? `2px solid ${theme.cardBorder}` : `1px solid ${theme.textSecondary}`
                       }}>
                         {word}
                       </span>
@@ -842,8 +1135,8 @@ export default function LetterGriddleCafeGame() {
                   })}
                 </div>
                 {highlightLength && (
-                  <p style={{fontSize: '12px', textAlign: 'center', marginTop: '8px', color: '#5D4E37'}}>
-                    Showing {highlightLength}-letter words • <button onClick={() => setHighlightLength(null)} style={{textDecoration: 'underline', fontWeight: '500', background: 'none', border: 'none', cursor: 'pointer', color: '#5D4E37'}}>Show all</button>
+                  <p style={{fontSize: '12px', textAlign: 'center', marginTop: '8px', color: theme.text}}>
+                    Showing {highlightLength}-letter words • <button onClick={() => setHighlightLength(null)} style={{textDecoration: 'underline', fontWeight: '500', background: 'none', border: 'none', cursor: 'pointer', color: theme.text}}>Show all</button>
                   </p>
                 )}
               </div>
@@ -853,8 +1146,8 @@ export default function LetterGriddleCafeGame() {
 
         {/* Current Word Display */}
         <div style={{
-          backgroundColor: 'rgba(255, 253, 245, 0.95)',
-          border: '2px solid #8B4513',
+          backgroundColor: theme.cardBg,
+          border: `2px solid ${theme.cardBorder}`,
           borderRadius: '16px',
           padding: '16px',
           marginBottom: '12px'
@@ -871,8 +1164,8 @@ export default function LetterGriddleCafeGame() {
               transition: 'all 0.2s',
               transform: currentHasP ? 'scale(1.1)' : 'scale(1)',
               opacity: currentHasP ? 1 : 0.5,
-              backgroundColor: currentHasP ? '#90EE90' : '#F5DEB3',
-              color: currentHasP ? '#228B22' : '#8B7355'
+              backgroundColor: currentHasP ? (darkMode ? '#14532d' : '#90EE90') : (darkMode ? '#3d322a' : '#F5DEB3'),
+              color: currentHasP ? (darkMode ? '#86efac' : '#228B22') : theme.textSecondary
             }}>
               <span>P</span>
               {currentHasP && <span>✓</span>}
@@ -888,8 +1181,8 @@ export default function LetterGriddleCafeGame() {
               transition: 'all 0.2s',
               transform: currentHasA ? 'scale(1.1)' : 'scale(1)',
               opacity: currentHasA ? 1 : 0.5,
-              backgroundColor: currentHasA ? '#90EE90' : '#F5DEB3',
-              color: currentHasA ? '#228B22' : '#8B7355'
+              backgroundColor: currentHasA ? (darkMode ? '#14532d' : '#90EE90') : (darkMode ? '#3d322a' : '#F5DEB3'),
+              color: currentHasA ? (darkMode ? '#86efac' : '#228B22') : theme.textSecondary
             }}>
               <span>A</span>
               {currentHasA && <span>✓</span>}
@@ -904,10 +1197,10 @@ export default function LetterGriddleCafeGame() {
             borderRadius: '12px',
             marginBottom: '12px',
             padding: '12px',
-            backgroundColor: '#FFFDF5',
-            border: '2px dashed #CD853F'
+            backgroundColor: theme.cardBgSolid,
+            border: `2px dashed ${theme.textSecondary}`
           }}>
-            <span style={{fontSize: '28px', fontWeight: 'bold', letterSpacing: '4px', color: currentWord ? '#5D4E37' : '#CD853F'}}>
+            <span style={{fontSize: '28px', fontWeight: 'bold', letterSpacing: '4px', color: currentWord ? theme.text : theme.textSecondary}}>
               {currentWord || 'type or click...'}
             </span>
           </div>
@@ -920,8 +1213,8 @@ export default function LetterGriddleCafeGame() {
                 borderRadius: '8px',
                 fontWeight: '500',
                 fontSize: '14px',
-                backgroundColor: messageType === 'success' ? '#dcfce7' : messageType === 'encouragement' ? '#fef3c7' : '#fee2e2',
-                color: messageType === 'success' ? '#166534' : messageType === 'encouragement' ? '#92400e' : '#991b1b'
+                backgroundColor: messageType === 'success' ? theme.successBg : messageType === 'encouragement' ? theme.encouragementBg : theme.errorBg,
+                color: messageType === 'success' ? theme.successText : messageType === 'encouragement' ? theme.encouragementText : theme.errorText
               }}>
                 {message}
               </div>
@@ -931,8 +1224,8 @@ export default function LetterGriddleCafeGame() {
 
         {/* Letter Griddle */}
         <div style={{
-          backgroundColor: '#5D4E37',
-          border: '3px solid #3D3229',
+          backgroundColor: theme.griddleBg,
+          border: `3px solid ${theme.griddleBorder}`,
           borderRadius: '16px',
           padding: '20px'
         }}>
@@ -976,28 +1269,233 @@ export default function LetterGriddleCafeGame() {
           </div>
           
           <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '8px', paddingTop: '16px', borderTop: '2px solid #8B7355'}}>
-            <button onClick={clearWord} style={{backgroundColor: '#8B7355', color: '#F5DEB3', borderRadius: '9999px', padding: '8px 16px', fontWeight: '600', fontSize: '14px', cursor: 'pointer', border: 'none'}}>Clear</button>
-            <button onClick={removeLetter} style={{backgroundColor: '#8B7355', color: '#F5DEB3', borderRadius: '9999px', padding: '8px 16px', fontWeight: '600', fontSize: '14px', cursor: 'pointer', border: 'none'}}>← Delete</button>
-            <button onClick={shuffleLetters} style={{backgroundColor: '#8B7355', color: '#F5DEB3', borderRadius: '9999px', padding: '8px 16px', fontWeight: '600', fontSize: '14px', cursor: 'pointer', border: 'none'}}>🔀 Shuffle</button>
+            <button onClick={clearWord} style={{backgroundColor: theme.buttonBg, color: '#F5DEB3', borderRadius: '9999px', padding: '8px 16px', fontWeight: '600', fontSize: '14px', cursor: 'pointer', border: 'none'}}>Clear</button>
+            <button onClick={removeLetter} style={{backgroundColor: theme.buttonBg, color: '#F5DEB3', borderRadius: '9999px', padding: '8px 16px', fontWeight: '600', fontSize: '14px', cursor: 'pointer', border: 'none'}}>← Delete</button>
+            <button onClick={shuffleLetters} style={{backgroundColor: theme.buttonBg, color: '#F5DEB3', borderRadius: '9999px', padding: '8px 16px', fontWeight: '600', fontSize: '14px', cursor: 'pointer', border: 'none'}}>🔀 Shuffle</button>
             <button onClick={submitWord} style={{background: 'linear-gradient(135deg, #DEB887, #D2691E)', color: '#FFF8DC', border: '2px solid #CD853F', borderRadius: '9999px', padding: '8px 24px', fontWeight: '600', fontSize: '14px', cursor: 'pointer'}}>Enter</button>
           </div>
         </div>
 
-        <div style={{marginTop: '16px', textAlign: 'center', padding: '8px', borderRadius: '9999px', backgroundColor: 'rgba(255, 253, 245, 0.3)', color: '#FFF8DC'}}>
+        <div style={{marginTop: '16px', textAlign: 'center', padding: '8px', borderRadius: '9999px', backgroundColor: 'rgba(255, 253, 245, 0.3)', color: theme.textLight}}>
           <span style={{fontSize: '14px'}}>☕ Open 24 hours • Progress saves automatically</span>
         </div>
       </main>
 
+      {/* Stats Modal */}
+      {showStats && (
+        <div style={{position: 'fixed', inset: 0, backgroundColor: 'rgba(0,0,0,0.5)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 50, padding: '16px'}} onClick={() => setShowStats(false)}>
+          <div style={{backgroundColor: theme.cardBgSolid, border: `3px solid ${theme.cardBorder}`, borderRadius: '24px', padding: '24px', maxWidth: '380px', width: '100%', maxHeight: '90vh', overflowY: 'auto', position: 'relative'}} onClick={e => e.stopPropagation()}>
+            <button onClick={() => setShowStats(false)} style={{position: 'absolute', top: '16px', right: '16px', padding: '4px', borderRadius: '50%', background: 'none', border: 'none', cursor: 'pointer', color: theme.textSecondary, fontSize: '20px'}}>✕</button>
+            
+            <div style={{textAlign: 'center', marginBottom: '16px'}}>
+              <div style={{fontSize: '40px', marginBottom: '8px'}}>📊</div>
+              <h2 style={{fontSize: '24px', fontWeight: 'bold', color: theme.text}}>Your Stats</h2>
+            </div>
+            
+            {/* Current Game Stats */}
+            <div style={{padding: '16px', borderRadius: '16px', backgroundColor: theme.accentLight, marginBottom: '16px'}}>
+              <h3 style={{fontWeight: 'bold', marginBottom: '12px', color: theme.text, textAlign: 'center'}}>Today's Progress</h3>
+              <div style={{display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '8px', textAlign: 'center'}}>
+                <div style={{padding: '12px', backgroundColor: theme.cardBgSolid, borderRadius: '12px'}}>
+                  <div style={{fontSize: '24px', fontWeight: 'bold', color: theme.accent}}>{foundCount}</div>
+                  <div style={{fontSize: '12px', color: theme.textSecondary}}>Words</div>
+                </div>
+                <div style={{padding: '12px', backgroundColor: theme.cardBgSolid, borderRadius: '12px'}}>
+                  <div style={{fontSize: '24px', fontWeight: 'bold', color: theme.accent}}>{percentage}%</div>
+                  <div style={{fontSize: '12px', color: theme.textSecondary}}>Complete</div>
+                </div>
+                <div style={{padding: '12px', backgroundColor: theme.cardBgSolid, borderRadius: '12px'}}>
+                  <div style={{fontSize: '24px'}}>{getCurrentAchievement().icon}</div>
+                  <div style={{fontSize: '12px', color: theme.textSecondary}}>Level</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Overall Stats */}
+            <div style={{padding: '16px', borderRadius: '16px', backgroundColor: theme.accentLight, marginBottom: '16px'}}>
+              <h3 style={{fontWeight: 'bold', marginBottom: '12px', color: theme.text, textAlign: 'center'}}>All Time</h3>
+              <div style={{display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '8px', textAlign: 'center'}}>
+                <div style={{padding: '12px', backgroundColor: theme.cardBgSolid, borderRadius: '12px'}}>
+                  <div style={{fontSize: '24px', fontWeight: 'bold', color: theme.accent}}>{stats.currentStreak}</div>
+                  <div style={{fontSize: '12px', color: theme.textSecondary}}>🔥 Current Streak</div>
+                </div>
+                <div style={{padding: '12px', backgroundColor: theme.cardBgSolid, borderRadius: '12px'}}>
+                  <div style={{fontSize: '24px', fontWeight: 'bold', color: theme.accent}}>{stats.longestStreak}</div>
+                  <div style={{fontSize: '12px', color: theme.textSecondary}}>⭐ Best Streak</div>
+                </div>
+                <div style={{padding: '12px', backgroundColor: theme.cardBgSolid, borderRadius: '12px'}}>
+                  <div style={{fontSize: '24px', fontWeight: 'bold', color: theme.accent}}>{stats.totalWordsFound}</div>
+                  <div style={{fontSize: '12px', color: theme.textSecondary}}>📝 Total Words</div>
+                </div>
+                <div style={{padding: '12px', backgroundColor: theme.cardBgSolid, borderRadius: '12px'}}>
+                  <div style={{fontSize: '24px', fontWeight: 'bold', color: theme.accent}}>{stats.bestPercentage}%</div>
+                  <div style={{fontSize: '12px', color: theme.textSecondary}}>🏆 Best Score</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Share Button */}
+            <button
+              onClick={shareResults}
+              style={{
+                width: '100%',
+                padding: '16px',
+                borderRadius: '9999px',
+                fontWeight: 'bold',
+                fontSize: '16px',
+                cursor: 'pointer',
+                background: 'linear-gradient(135deg, #DEB887 0%, #D2691E 50%, #8B4513 100%)',
+                color: '#FFF8DC',
+                border: '2px solid #5D4E37',
+                marginBottom: '12px'
+              }}
+            >
+              📤 Share Results
+            </button>
+
+            {/* Answer Key Button */}
+            <button
+              onClick={() => { setShowStats(false); setShowAnswerKey(true); }}
+              style={{
+                width: '100%',
+                padding: '12px',
+                borderRadius: '9999px',
+                fontWeight: '600',
+                fontSize: '14px',
+                cursor: 'pointer',
+                backgroundColor: theme.accentLight,
+                color: theme.text,
+                border: `2px solid ${theme.cardBorder}`
+              }}
+            >
+              📋 View Yesterday's Answers
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* Answer Key Modal */}
+      {showAnswerKey && (
+        <div style={{position: 'fixed', inset: 0, backgroundColor: 'rgba(0,0,0,0.5)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 50, padding: '16px'}} onClick={() => setShowAnswerKey(false)}>
+          <div style={{backgroundColor: theme.cardBgSolid, border: `3px solid ${theme.cardBorder}`, borderRadius: '24px', padding: '24px', maxWidth: '420px', width: '100%', maxHeight: '90vh', overflowY: 'auto', position: 'relative'}} onClick={e => e.stopPropagation()}>
+            <button onClick={() => setShowAnswerKey(false)} style={{position: 'absolute', top: '16px', right: '16px', padding: '4px', borderRadius: '50%', background: 'none', border: 'none', cursor: 'pointer', color: theme.textSecondary, fontSize: '20px'}}>✕</button>
+            
+            <div style={{textAlign: 'center', marginBottom: '16px'}}>
+              <div style={{fontSize: '40px', marginBottom: '8px'}}>📋</div>
+              <h2 style={{fontSize: '24px', fontWeight: 'bold', color: theme.text}}>Yesterday's Answers</h2>
+              <p style={{fontSize: '14px', color: theme.textSecondary, marginTop: '4px'}}>{PREVIOUS_PUZZLE.subtitle}</p>
+            </div>
+            
+            {[4, 5, 6, 7, 8, 9].map(length => {
+              const words = PREVIOUS_PUZZLE.words[length] || [];
+              if (words.length === 0) return null;
+              return (
+                <div key={length} style={{marginBottom: '16px'}}>
+                  <div style={{display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px'}}>
+                    <span style={{fontSize: '20px'}}>{REWARDS[length].icon}</span>
+                    <span style={{fontWeight: 'bold', color: theme.text}}>{length === 9 ? '9+' : length} Letters ({words.length})</span>
+                  </div>
+                  <div style={{display: 'flex', flexWrap: 'wrap', gap: '6px'}}>
+                    {words.map(word => (
+                      <span key={word} style={{
+                        padding: '4px 10px',
+                        borderRadius: '9999px',
+                        fontSize: '13px',
+                        fontWeight: '500',
+                        backgroundColor: theme.accentLight,
+                        color: theme.text,
+                        border: `1px solid ${theme.textSecondary}`
+                      }}>
+                        {word}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      )}
+
+      {/* Hints Modal */}
+      {showHints && (
+        <div style={{position: 'fixed', inset: 0, backgroundColor: 'rgba(0,0,0,0.5)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 50, padding: '16px'}} onClick={() => setShowHints(false)}>
+          <div style={{backgroundColor: theme.cardBgSolid, border: `3px solid ${theme.cardBorder}`, borderRadius: '24px', padding: '24px', maxWidth: '420px', width: '100%', maxHeight: '90vh', overflowY: 'auto', position: 'relative'}} onClick={e => e.stopPropagation()}>
+            <button onClick={() => setShowHints(false)} style={{position: 'absolute', top: '16px', right: '16px', padding: '4px', borderRadius: '50%', background: 'none', border: 'none', cursor: 'pointer', color: theme.textSecondary, fontSize: '20px'}}>✕</button>
+            
+            <div style={{textAlign: 'center', marginBottom: '16px'}}>
+              <div style={{fontSize: '40px', marginBottom: '8px'}}>💡</div>
+              <h2 style={{fontSize: '24px', fontWeight: 'bold', color: theme.text}}>Hints Grid</h2>
+              <p style={{fontSize: '14px', color: theme.textSecondary, marginTop: '4px'}}>Tap a category to see hints</p>
+            </div>
+            
+            {[4, 5, 6, 7, 8, 9].map(length => {
+              const words = puzzleData.words[length] || [];
+              const hints = puzzleData.hints?.[length] || [];
+              const foundInCategory = words.filter(w => foundWords.has(w));
+              if (words.length === 0) return null;
+              
+              return (
+                <details key={length} style={{marginBottom: '12px'}}>
+                  <summary style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'space-between',
+                    padding: '12px 16px',
+                    borderRadius: '12px',
+                    backgroundColor: theme.accentLight,
+                    cursor: 'pointer',
+                    userSelect: 'none'
+                  }}>
+                    <div style={{display: 'flex', alignItems: 'center', gap: '8px'}}>
+                      <span style={{fontSize: '20px'}}>{REWARDS[length].icon}</span>
+                      <span style={{fontWeight: 'bold', color: theme.text}}>{length === 9 ? '9+' : length} Letters</span>
+                    </div>
+                    <span style={{fontSize: '14px', color: theme.textSecondary}}>
+                      {foundInCategory.length}/{words.length} found
+                    </span>
+                  </summary>
+                  <div style={{padding: '12px', marginTop: '8px', backgroundColor: theme.cardBg, borderRadius: '12px', border: `1px solid ${theme.textSecondary}`}}>
+                    {words.map((word, idx) => {
+                      const isFound = foundWords.has(word);
+                      const hint = hints[idx] || '???';
+                      return (
+                        <div key={word} style={{
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'space-between',
+                          padding: '8px 12px',
+                          borderRadius: '8px',
+                          marginBottom: '4px',
+                          backgroundColor: isFound ? (darkMode ? 'rgba(20, 83, 45, 0.5)' : 'rgba(144, 238, 144, 0.3)') : 'transparent'
+                        }}>
+                          <span style={{fontSize: '14px', color: theme.text, flex: 1}}>
+                            {isFound ? word : hint}
+                          </span>
+                          <span style={{fontSize: '14px', color: isFound ? theme.successText : theme.textSecondary}}>
+                            {isFound ? '✓' : '?'}
+                          </span>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </details>
+              );
+            })}
+          </div>
+        </div>
+      )}
+
       {/* Achievements Modal */}
       {showAchievements && (
         <div style={{position: 'fixed', inset: 0, backgroundColor: 'rgba(0,0,0,0.5)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 50, padding: '16px'}} onClick={() => setShowAchievements(false)}>
-          <div style={{backgroundColor: '#FFFDF5', border: '3px solid #8B4513', borderRadius: '24px', padding: '24px', maxWidth: '380px', width: '100%', maxHeight: '90vh', overflowY: 'auto', position: 'relative'}} onClick={e => e.stopPropagation()}>
-            <button onClick={() => setShowAchievements(false)} style={{position: 'absolute', top: '16px', right: '16px', padding: '4px', borderRadius: '50%', background: 'none', border: 'none', cursor: 'pointer', color: '#8B7355', fontSize: '20px'}}>✕</button>
+          <div style={{backgroundColor: theme.cardBgSolid, border: `3px solid ${theme.cardBorder}`, borderRadius: '24px', padding: '24px', maxWidth: '380px', width: '100%', maxHeight: '90vh', overflowY: 'auto', position: 'relative'}} onClick={e => e.stopPropagation()}>
+            <button onClick={() => setShowAchievements(false)} style={{position: 'absolute', top: '16px', right: '16px', padding: '4px', borderRadius: '50%', background: 'none', border: 'none', cursor: 'pointer', color: theme.textSecondary, fontSize: '20px'}}>✕</button>
             
             <div style={{textAlign: 'center', marginBottom: '16px'}}>
               <div style={{fontSize: '40px', marginBottom: '8px'}}>🏆</div>
-              <h2 style={{fontSize: '24px', fontWeight: 'bold', color: '#5D4E37'}}>Achievement Levels</h2>
-              <p style={{fontSize: '14px', marginTop: '4px', color: '#8B7355'}}>You're at {percentage}% - {getCurrentAchievement().title}</p>
+              <h2 style={{fontSize: '24px', fontWeight: 'bold', color: theme.text}}>Achievement Levels</h2>
+              <p style={{fontSize: '14px', marginTop: '4px', color: theme.textSecondary}}>You're at {percentage}% - {getCurrentAchievement().title}</p>
             </div>
             
             <div>
@@ -1005,23 +1503,23 @@ export default function LetterGriddleCafeGame() {
                 const isAchieved = percentage >= ach.threshold;
                 const isCurrent = getCurrentAchievement().title === ach.title;
                 return (
-                  <div key={ach.title} style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '12px 16px', borderRadius: '12px', marginBottom: '8px', border: isCurrent ? '2px solid #D2691E' : '2px solid transparent', backgroundColor: isAchieved ? 'rgba(139, 69, 19, 0.2)' : 'rgba(210, 105, 30, 0.08)', opacity: isAchieved ? 1 : 0.6}}>
+                  <div key={ach.title} style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '12px 16px', borderRadius: '12px', marginBottom: '8px', border: isCurrent ? '2px solid #D2691E' : '2px solid transparent', backgroundColor: isAchieved ? theme.accentLight : (darkMode ? 'rgba(61, 50, 41, 0.5)' : 'rgba(210, 105, 30, 0.08)'), opacity: isAchieved ? 1 : 0.6}}>
                     <span style={{display: 'flex', alignItems: 'center', gap: '12px'}}>
                       <span style={{fontSize: '24px'}}>{ach.icon}</span>
-                      <span style={{fontWeight: isAchieved ? '600' : '400', color: '#5D4E37'}}>{ach.title}</span>
+                      <span style={{fontWeight: isAchieved ? '600' : '400', color: theme.text}}>{ach.title}</span>
                     </span>
-                    <span style={{fontSize: '14px', fontWeight: '500', color: isAchieved ? ach.color : '#8B7355'}}>{ach.threshold}%</span>
+                    <span style={{fontSize: '14px', fontWeight: '500', color: isAchieved ? ach.color : theme.textSecondary}}>{ach.threshold}%</span>
                   </div>
                 );
               })}
             </div>
             
-            <div style={{marginTop: '16px', padding: '12px', borderRadius: '12px', backgroundColor: 'rgba(210, 105, 30, 0.15)'}}>
-              <div style={{display: 'flex', justifyContent: 'space-between', fontSize: '14px', marginBottom: '8px', color: '#5D4E37'}}>
+            <div style={{marginTop: '16px', padding: '12px', borderRadius: '12px', backgroundColor: theme.accentLight}}>
+              <div style={{display: 'flex', justifyContent: 'space-between', fontSize: '14px', marginBottom: '8px', color: theme.text}}>
                 <span>Progress</span>
                 <span style={{fontWeight: 'bold'}}>{foundCount} / {totalWords} words</span>
               </div>
-              <div style={{height: '8px', borderRadius: '9999px', overflow: 'hidden', backgroundColor: '#F5DEB3'}}>
+              <div style={{height: '8px', borderRadius: '9999px', overflow: 'hidden', backgroundColor: darkMode ? '#3d322a' : '#F5DEB3'}}>
                 <div style={{height: '100%', borderRadius: '9999px', width: `${percentage}%`, background: 'linear-gradient(90deg, #DEB887, #D2691E, #8B4513)'}} />
               </div>
             </div>
@@ -1032,12 +1530,12 @@ export default function LetterGriddleCafeGame() {
       {/* Jukebox Modal */}
       {showJukebox && (
         <div style={{position: 'fixed', top: 0, left: 0, right: 0, bottom: 0, backgroundColor: 'rgba(0,0,0,0.7)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 9999, padding: '16px'}} onClick={() => setShowJukebox(false)}>
-          <div style={{backgroundColor: '#FFFDF5', border: '3px solid #8B4513', borderRadius: '24px', padding: '20px', maxWidth: '340px', width: '100%', position: 'relative', boxShadow: '0 25px 50px rgba(0,0,0,0.5)'}} onClick={e => e.stopPropagation()}>
-            <button onClick={() => setShowJukebox(false)} style={{position: 'absolute', top: '12px', right: '12px', padding: '4px', borderRadius: '50%', background: 'none', border: 'none', cursor: 'pointer', color: '#8B7355', fontSize: '18px'}}>✕</button>
+          <div style={{backgroundColor: theme.cardBgSolid, border: `3px solid ${theme.cardBorder}`, borderRadius: '24px', padding: '20px', maxWidth: '340px', width: '100%', position: 'relative', boxShadow: '0 25px 50px rgba(0,0,0,0.5)'}} onClick={e => e.stopPropagation()}>
+            <button onClick={() => setShowJukebox(false)} style={{position: 'absolute', top: '12px', right: '12px', padding: '4px', borderRadius: '50%', background: 'none', border: 'none', cursor: 'pointer', color: theme.textSecondary, fontSize: '18px'}}>✕</button>
             
             <div style={{textAlign: 'center', marginBottom: '12px'}}>
               <div style={{fontSize: '28px', marginBottom: '4px'}}>🎵</div>
-              <h2 style={{fontSize: '20px', fontWeight: 'bold', color: '#5D4E37'}}>Jukebox</h2>
+              <h2 style={{fontSize: '20px', fontWeight: 'bold', color: theme.text}}>Jukebox</h2>
             </div>
             
             <div style={{borderRadius: '12px', padding: '12px', marginBottom: '12px', background: 'linear-gradient(135deg, #5D4E37, #3D3229)', color: '#F5DEB3'}}>
@@ -1064,7 +1562,7 @@ export default function LetterGriddleCafeGame() {
               </div>
             </div>
             
-            <p style={{fontSize: '10px', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '6px', color: '#8B7355'}}>Playlist</p>
+            <p style={{fontSize: '10px', textTransform: 'uppercase', letterSpacing: '1px', marginBottom: '6px', color: theme.textSecondary}}>Playlist</p>
             <div>
               {JUKEBOX_TRACKS.map(track => (
                 <button
@@ -1079,16 +1577,16 @@ export default function LetterGriddleCafeGame() {
                     display: 'flex',
                     alignItems: 'center',
                     gap: '8px',
-                    backgroundColor: currentTrack === track.name ? '#F5DEB3' : 'rgba(210, 105, 30, 0.15)',
-                    color: '#5D4E37',
-                    border: currentTrack === track.name ? '2px solid #8B4513' : '2px solid transparent',
+                    backgroundColor: currentTrack === track.name ? (darkMode ? '#5D4E37' : '#F5DEB3') : theme.accentLight,
+                    color: theme.text,
+                    border: currentTrack === track.name ? `2px solid ${theme.cardBorder}` : '2px solid transparent',
                     cursor: 'pointer',
                     fontSize: '14px'
                   }}
                 >
                   <span style={{fontSize: '16px'}}>{track.icon}</span>
                   <span style={{fontWeight: '500', flex: 1}}>{track.name}</span>
-                  {currentTrack === track.name && isPlaying && <span style={{fontSize: '10px', color: '#8B4513'}}>♪</span>}
+                  {currentTrack === track.name && isPlaying && <span style={{fontSize: '10px', color: theme.accent}}>♪</span>}
                 </button>
               ))}
             </div>
@@ -1099,26 +1597,40 @@ export default function LetterGriddleCafeGame() {
       {/* Completion Modal */}
       {showComplete && (
         <div style={{position: 'fixed', inset: 0, backgroundColor: 'rgba(0,0,0,0.5)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 40, padding: '16px'}} onClick={() => setShowComplete(false)}>
-          <div style={{backgroundColor: '#FFFDF5', border: '4px solid #8B4513', borderRadius: '24px', padding: '32px', maxWidth: '400px', width: '100%', textAlign: 'center'}} onClick={e => e.stopPropagation()}>
+          <div style={{backgroundColor: theme.cardBgSolid, border: `4px solid ${theme.cardBorder}`, borderRadius: '24px', padding: '32px', maxWidth: '400px', width: '100%', textAlign: 'center'}} onClick={e => e.stopPropagation()}>
             <div style={{fontSize: '64px', marginBottom: '16px'}}>👑</div>
-            <h2 style={{fontSize: '28px', fontWeight: 'bold', marginBottom: '8px', color: '#5D4E37'}}>Cafe Legend!</h2>
-            <p style={{fontSize: '18px', marginBottom: '8px', color: '#8B7355'}}>You found all {totalWords} words!</p>
-            <p style={{fontSize: '14px', marginBottom: '16px', fontStyle: 'italic', color: '#8B4513'}}>Your legend will be told at the Letter Griddle Cafe for generations.</p>
+            <h2 style={{fontSize: '28px', fontWeight: 'bold', marginBottom: '8px', color: theme.text}}>Cafe Legend!</h2>
+            <p style={{fontSize: '18px', marginBottom: '8px', color: theme.textSecondary}}>You found all {totalWords} words!</p>
+            <p style={{fontSize: '14px', marginBottom: '16px', fontStyle: 'italic', color: theme.accent}}>Your legend will be told at the Letter Griddle Cafe for generations.</p>
             <div style={{display: 'flex', justifyContent: 'center', gap: '8px', fontSize: '28px', marginBottom: '16px'}}>
               🎵 ☕ 🍯 🧈 🥞 👑
             </div>
-            <p style={{fontWeight: '500', color: '#5D4E37'}}>The morning rush is ready to begin!</p>
+            <button
+              onClick={shareResults}
+              style={{
+                padding: '16px 32px',
+                borderRadius: '9999px',
+                fontWeight: 'bold',
+                fontSize: '16px',
+                cursor: 'pointer',
+                background: 'linear-gradient(135deg, #DEB887 0%, #D2691E 50%, #8B4513 100%)',
+                color: '#FFF8DC',
+                border: '2px solid #5D4E37'
+              }}
+            >
+              📤 Share Your Victory
+            </button>
           </div>
         </div>
       )}
 
       {/* Footer */}
-      <footer style={{textAlign: 'center', padding: '16px', fontSize: '12px', color: '#FFF8DC'}}>
-        <p>Part of <a href="/" style={{color: '#FFF8DC', textDecoration: 'underline'}}>The Letter Griddle Cafe</a></p>
+      <footer style={{textAlign: 'center', padding: '16px', fontSize: '12px', color: theme.textLight}}>
+        <p>Part of <a href="/" style={{color: theme.textLight, textDecoration: 'underline'}}>The Letter Griddle Cafe</a></p>
         <p style={{marginTop: '4px'}}>
-          <a href="/privacy" style={{color: '#FFF8DC', textDecoration: 'underline'}}>Privacy</a>
+          <a href="/privacy" style={{color: theme.textLight, textDecoration: 'underline'}}>Privacy</a>
           {' • '}
-          <a href="/terms" style={{color: '#FFF8DC', textDecoration: 'underline'}}>Terms</a>
+          <a href="/terms" style={{color: theme.textLight, textDecoration: 'underline'}}>Terms</a>
         </p>
         <p style={{marginTop: '4px'}}>© {currentYear} Letter Griddle Cafe</p>
       </footer>
