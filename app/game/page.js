@@ -8,133 +8,120 @@ import React, { useState, useEffect, useCallback, useRef } from 'react';
 
 const PUZZLES = [
   {
-    id: 'puzzle-1',
+    id: 'griddles-puzzle',
     subtitle: 'Prepare the Cafe',
-    letters: ['S', 'K', 'A', 'N', 'E', 'C', 'P'],
-    keyLetters: ['P', 'A'],
-    totalWordCount: 67, // Updated from 64
+    letters: ['I', 'G', 'S', 'R', 'E', 'D', 'L'], // Pre-shuffled for initial display
+    keyLetters: ['G', 'R'],
+    totalWordCount: 70, // Updated: 68 + 2 new words (GIRDED, GREEDIER)
     words: {
-      4: [
-        'APES', 'APSE', 'ASPS',
-        'CAPE', 'CAPS',
-        'NAPE', 'NAPS', 'NEAP',
-        'PACE', 'PACK', 'PANE', 'PANS', 'PAPA', 'PASS', 'PEAK', 'PEAS',
-        'SAPS', // NEW WORD ADDED
-        'SNAP', 'SPAN', 'SPAS'
-      ],
-      5: [
-        'APACE', 'APNEA', 'APSES', 'ASPEN', // APNEA NEW WORD ADDED
-        'CAPES',
-        'KAPPA',
-        'NAPES', 'NEAPS',
-        'PACES', 'PACKS', 'PAEAN', 'PANES', 'PAPAS', 'PASSE', 'PEAKS', 'PEACE', 'PECAN',
-        'SNAPS', 'SPACE', 'SPAKE', 'SPANK', 'SPANS', 'SPEAK'
-      ],
-      6: [
-        'APNEAS', // NEW WORD ADDED
-        'CANAPE',
-        'ESCAPE',
-        'KAPPAS',
-        'PAEANS', 'PASSES', 'PECANS',
-        'SPACES', 'SPANKS', 'SPEAKS'
-      ],
-      7: ['CANAPES', 'ESCAPES', 'KNEECAP', 'PANACEA', 'PANCAKE'],
-      8: ['KEEPSAKE', 'KNEECAPS', 'KNAPSACK', 'PANACEAS', 'PANCAKES', 'SEASCAPE'],
-      9: ['KEEPSAKES', 'KNAPSACKS', 'SEASCAPES']
+      4: ['DREG', 'GIRD', 'GIRL', 'GRID', 'RIGS'],
+      5: ['DIRGE', 'DREGS', 'EDGER', 'GIRDS', 'GIRLS', 'GREED', 'GRIDE', 'GRIDS', 'GRILL', 'LIGER', 'RIDGE', 'SERGE'],
+      6: ['DIGGER', 'DIRGES', 'DREDGE', 'EDGERS', 'EGRESS', 'GILDER', 'GIRDED', 'GIRDLE', 'GIRLIE', 'GLIDER', 'GREEDS', 'GRIDES', 'GRILLE', 'GRILLS', 'GRILSE', 'LEDGER', 'LIGERS', 'REGILD', 'RIDGED', 'RIDGES', 'RIGGED', 'RIGGER', 'SERGED', 'SERGER', 'SERGES', 'SIEGER'],
+      7: ['DIGGERS', 'DIGRESS', 'DREDGED', 'DREDGES', 'GILDERS', 'GIRDLES', 'GIRLIES', 'GLIDERS', 'GRIDDED', 'GRIDDLE', 'GRILLED', 'GRILLER', 'GRILLES', 'LEDGERS', 'REGILDS', 'RIGGERS', 'SERGERS', 'SIEGERS'],
+      8: ['EGRESSES', 'GREEDIER', 'GRIDDLED', 'GRIDDLER', 'GRIDDLES', 'GRILLERS'],
+      9: ['DIGRESSED', 'DIGRESSES', 'GRIDDLERS']
     },
-    // Hints for each word length category
     hints: {
       4: [
-        "Primates without tails",
-        "Part of a church",
-        "Venomous snakes",
-        "Superhero's garment",
-        "Bottle toppers",
-        "Back of the neck",
-        "Short sleeps",
-        "Type of tide",
-        "Walking speed",
-        "Group of cards",
-        "Window glass",
-        "Cooking vessels",
-        "Father figure",
-        "Go by, as time",
-        "Mountain top",
-        "Legumes in a pod",
-        "Tree fluids",
-        "Quick photo",
-        "Bridge across",
-        "Health retreats"
+        "Sediment at the bottom of a drink",
+        "To encircle or prepare for action",
+        "Young female",
+        "Network of lines crossing each other",
+        "Sets up equipment or sails"
       ],
       5: [
-        "At a fast pace",
-        "Sleep disorder",
-        "Church sections",
-        "Quaking tree",
-        "Multiple cloaks",
-        "Greek letter pair",
-        "Neck backs",
-        "Low tides",
-        "Walking speeds",
-        "Card groups",
-        "Song of praise",
-        "Window sections",
-        "Fathers",
-        "Out of style",
-        "Mountain tops",
-        "Tranquility",
-        "Nut from a tree",
-        "Quick photos",
-        "Outer ___",
-        "Past tense of speak",
-        "Slap on the bottom",
-        "Bridge cards",
-        "Talk"
+        "Mournful song for the dead",
+        "The last drops with sediment",
+        "Tool for trimming lawn edges",
+        "Encircles or prepares",
+        "Young females",
+        "Excessive desire for wealth",
+        "To make a harsh scraping sound",
+        "Networks of crossing lines",
+        "Cooking surface with bars",
+        "Lion and tiger hybrid",
+        "Long narrow hilltop",
+        "Strong twilled fabric"
       ],
       6: [
-        "Sleep disorders",
-        "Small appetizer",
-        "Get away",
-        "Greek letters",
-        "Praise songs",
-        "Goes by",
-        "Tree nuts",
-        "Outer areas",
-        "Bottom slaps",
-        "Talks"
+        "One who digs holes",
+        "Mournful funeral songs",
+        "Scoop from the bottom",
+        "Lawn edge trimming tools",
+        "A way out or exit",
+        "One who applies gold leaf",
+        "Encircled or prepared",
+        "Belt or undergarment",
+        "Characteristic of girls",
+        "Aircraft without an engine",
+        "Instances of excessive desire",
+        "Makes harsh scraping sounds",
+        "Metal grating or car front",
+        "Cooks on a grated surface",
+        "Young Atlantic salmon",
+        "Book of financial accounts",
+        "Lion-tiger hybrids",
+        "To apply gold coating again",
+        "Having raised lines",
+        "Long narrow hilltops",
+        "Set up dishonestly",
+        "One who rigs equipment",
+        "Finished with overcast stitching",
+        "Machine that overcast stitches",
+        "Strong twilled fabrics",
+        "One who lays siege"
       ],
       7: [
-        "Small appetizers",
-        "Gets away",
-        "Joint protector",
-        "Cure-all",
-        "Breakfast flat cake"
+        "Those who dig holes",
+        "Stray from the subject",
+        "Scooped from bottom",
+        "Scoops from the bottom",
+        "Those who apply gold leaf",
+        "Belts or undergarments",
+        "Informal term for girls",
+        "Engineless aircraft",
+        "Marked with a grid pattern",
+        "Flat cooking surface",
+        "Cooked on a grill",
+        "One who grills food",
+        "Metal gratings",
+        "Financial account books",
+        "Applies gold coating again",
+        "Those who rig equipment",
+        "Overcast stitch machines",
+        "Those who lay siege"
       ],
       8: [
-        "Sentimental memento",
-        "Joint protectors",
-        "Hiker's bag",
-        "Cure-alls",
-        "Breakfast flat cakes",
-        "Ocean view"
+        "Multiple ways out",
+        "More excessively wanting",
+        "Cooked on a flat surface",
+        "One who uses a griddle (cafe special!)",
+        "Flat cooking surfaces",
+        "Those who grill food"
       ],
       9: [
-        "Sentimental mementos",
-        "Hiker's bags",
-        "Ocean views"
+        "Strayed from the subject",
+        "Strays from the subject",
+        "Those who use griddles (cafe specials!)"
       ]
     }
   }
-  // Add more puzzles here for rotation
 ];
 
-// Previous day's puzzle for answer key (would normally be calculated)
+// Previous day's puzzle for answer key - PANCAKES puzzle
 const PREVIOUS_PUZZLE = {
-  id: 'puzzle-0',
+  id: 'pancakes-puzzle',
   subtitle: 'Yesterday\'s Puzzle',
-  letters: ['S', 'K', 'A', 'N', 'E', 'C', 'P'],
+  letters: ['P', 'A', 'N', 'C', 'K', 'E', 'S'],
   keyLetters: ['P', 'A'],
-  words: PUZZLES[0].words // For demo, using same puzzle
+  words: {
+    4: ['APES', 'APSE', 'ASPS', 'CAPE', 'CAPS', 'NAPE', 'NAPS', 'NEAP', 'PACE', 'PACK', 'PANE', 'PANS', 'PAPA', 'PASS', 'PEAK', 'PEAS', 'SAPS', 'SNAP', 'SPAN', 'SPAS'],
+    5: ['APACE', 'APNEA', 'APSES', 'ASPEN', 'CAPES', 'KAPPA', 'NAPES', 'NEAPS', 'PACES', 'PACKS', 'PAEAN', 'PANES', 'PAPAS', 'PASSE', 'PEAKS', 'PEACE', 'PECAN', 'SNAPS', 'SPACE', 'SPAKE', 'SPANK', 'SPANS', 'SPEAK'],
+    6: ['APNEAS', 'CANAPE', 'ESCAPE', 'KAPPAS', 'PAEANS', 'PASSES', 'PECANS', 'SPACES', 'SPANKS', 'SPEAKS'],
+    7: ['CANAPES', 'ESCAPES', 'KNEECAP', 'PANACEA', 'PANCAKE'],
+    8: ['KEEPSAKE', 'KNEECAPS', 'KNAPSACK', 'PANACEAS', 'PANCAKES', 'SEASCAPE'],
+    9: ['KEEPSAKES', 'KNAPSACKS', 'SEASCAPES']
+  }
 };
 
 // =============================================================================
@@ -177,6 +164,7 @@ function getTimeUntilNextPuzzle() {
 }
 
 // =============================================================================
+// GAME CONSTANTS
 // GAME CONSTANTS
 // =============================================================================
 
@@ -277,10 +265,20 @@ export default function LetterGriddleCafeGame() {
   const [puzzleData] = useState(() => getTodaysPuzzle());
   const [timeUntilNext, setTimeUntilNext] = useState('');
   
+  // Helper function to shuffle an array
+  const shuffleArray = (array) => {
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+  };
+  
   const [gameStarted, setGameStarted] = useState(false);
   const [currentWord, setCurrentWord] = useState('');
   const [foundWords, setFoundWords] = useState(new Set());
-  const [availableLetters, setAvailableLetters] = useState([...puzzleData.letters]);
+  const [availableLetters, setAvailableLetters] = useState(() => shuffleArray([...puzzleData.letters]));
   const [message, setMessage] = useState('');
   const [messageType, setMessageType] = useState('');
   const [highlightLength, setHighlightLength] = useState(null);
@@ -509,14 +507,7 @@ export default function LetterGriddleCafeGame() {
   }, []);
 
   const shuffleLetters = () => {
-    setAvailableLetters(prev => {
-      const shuffled = [...prev];
-      for (let i = shuffled.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-      }
-      return shuffled;
-    });
+    setAvailableLetters(prev => shuffleArray(prev));
   };
 
   const addLetter = useCallback((letter) => {
@@ -691,8 +682,8 @@ export default function LetterGriddleCafeGame() {
     }
   };
 
-  const currentHasP = currentWord.includes('P');
-  const currentHasA = currentWord.includes('A');
+  const currentHasFirstKey = currentWord.includes(puzzleData.keyLetters[0]);
+  const currentHasSecondKey = currentWord.includes(puzzleData.keyLetters[1]);
 
   // =========================================================================
   // WELCOME SCREEN
@@ -961,8 +952,19 @@ export default function LetterGriddleCafeGame() {
           {/* Center title */}
           <div style={{textAlign: 'center', flex: 1, padding: '0 8px'}}>
             <h1 style={{fontSize: '20px', fontWeight: 'bold', color: theme.textLight}}>Letter Griddle Cafe</h1>
-            <p style={{fontSize: '12px', padding: '4px 12px', borderRadius: '9999px', display: 'inline-block', marginTop: '4px', color: theme.textLight, backgroundColor: 'rgba(139, 69, 19, 0.5)'}}>
-              Every word needs {puzzleData.keyLetters.join(' + ')}
+            <p style={{
+              fontSize: '13px', 
+              fontWeight: '600',
+              padding: '6px 16px', 
+              borderRadius: '9999px', 
+              display: 'inline-block', 
+              marginTop: '4px', 
+              color: darkMode ? '#F5DEB3' : '#FFF8DC', 
+              backgroundColor: darkMode ? 'rgba(205, 133, 63, 0.5)' : 'rgba(139, 69, 19, 0.7)',
+              border: darkMode ? '1px solid rgba(205, 133, 63, 0.6)' : '2px solid rgba(139, 69, 19, 0.4)',
+              textShadow: darkMode ? 'none' : '0 1px 2px rgba(0,0,0,0.2)'
+            }}>
+              Every word needs <span style={{fontWeight: '700', color: darkMode ? '#FFD700' : '#FFD700'}}>{puzzleData.keyLetters.join(' + ')}</span>
             </p>
           </div>
           
@@ -1070,28 +1072,46 @@ export default function LetterGriddleCafeGame() {
           padding: '12px',
           marginBottom: '12px'
         }}>
-          <div style={{display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: '6px', textAlign: 'center'}}>
-            {[4, 5, 6, 7, 8, 9].map(length => (
+          <div style={{display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: '8px', textAlign: 'center'}}>
+            {[4, 5, 6, 7, 8, 9].map(length => {
+              const isComplete = getFoundByLength(length) === getTotalByLength(length) && getTotalByLength(length) > 0;
+              return (
               <button
                 key={length}
                 onClick={() => setHighlightLength(prev => prev === length ? null : length)}
                 style={{
-                  padding: '6px',
+                  padding: '8px 4px',
                   borderRadius: '12px',
-                  border: highlightLength === length ? `2px solid ${theme.cardBorder}` : '2px solid transparent',
+                  border: highlightLength === length 
+                    ? `2px solid ${darkMode ? '#FFD700' : theme.cardBorder}` 
+                    : '2px solid transparent',
                   cursor: 'pointer',
-                  backgroundColor: getFoundByLength(length) === getTotalByLength(length) && getTotalByLength(length) > 0
-                    ? (darkMode ? 'rgba(139, 69, 19, 0.4)' : 'rgba(139, 69, 19, 0.25)')
+                  backgroundColor: isComplete
+                    ? (darkMode ? 'rgba(139, 69, 19, 0.5)' : 'rgba(139, 69, 19, 0.25)')
                     : highlightLength === length
-                    ? (darkMode ? 'rgba(210, 105, 30, 0.4)' : 'rgba(210, 105, 30, 0.3)')
-                    : theme.accentLight
+                    ? (darkMode ? 'rgba(210, 105, 30, 0.5)' : 'rgba(210, 105, 30, 0.3)')
+                    : (darkMode ? 'rgba(93, 78, 55, 0.6)' : theme.accentLight),
+                  boxShadow: darkMode ? 'inset 0 1px 0 rgba(255,255,255,0.1)' : 'none'
                 }}
               >
-                <div style={{fontSize: '16px', marginBottom: '2px'}}>{REWARDS[length].icon}</div>
-                <div style={{fontSize: '12px', fontWeight: '500', color: theme.text}}>{length === 9 ? '9+' : length}</div>
-                <div style={{fontSize: '12px', fontWeight: 'bold', color: theme.accent}}>{getFoundByLength(length)}/{getTotalByLength(length)}</div>
+                <div style={{
+                  fontSize: '24px', 
+                  marginBottom: '2px',
+                  filter: darkMode ? 'brightness(1.2)' : 'none',
+                  textShadow: darkMode ? '0 0 8px rgba(255, 215, 0, 0.4)' : 'none'
+                }}>{REWARDS[length].icon}</div>
+                <div style={{
+                  fontSize: '13px', 
+                  fontWeight: '600', 
+                  color: darkMode ? '#F5DEB3' : theme.text
+                }}>{length === 9 ? '9+' : length}</div>
+                <div style={{
+                  fontSize: '13px', 
+                  fontWeight: 'bold', 
+                  color: darkMode ? '#FFD700' : theme.accent
+                }}>{getFoundByLength(length)}/{getTotalByLength(length)}</div>
               </button>
-            ))}
+            )})}
           </div>
         </div>
 
@@ -1154,38 +1174,50 @@ export default function LetterGriddleCafeGame() {
         }}>
           <div style={{display: 'flex', justifyContent: 'center', gap: '12px', marginBottom: '12px'}}>
             <div style={{
-              padding: '4px 12px',
+              padding: '6px 16px',
               borderRadius: '9999px',
-              fontSize: '14px',
-              fontWeight: '600',
+              fontSize: '16px',
+              fontWeight: '700',
               display: 'flex',
               alignItems: 'center',
-              gap: '4px',
+              gap: '6px',
               transition: 'all 0.2s',
-              transform: currentHasP ? 'scale(1.1)' : 'scale(1)',
-              opacity: currentHasP ? 1 : 0.5,
-              backgroundColor: currentHasP ? (darkMode ? '#14532d' : '#90EE90') : (darkMode ? '#3d322a' : '#F5DEB3'),
-              color: currentHasP ? (darkMode ? '#86efac' : '#228B22') : theme.textSecondary
+              transform: currentHasFirstKey ? 'scale(1.1)' : 'scale(1)',
+              opacity: currentHasFirstKey ? 1 : (darkMode ? 0.7 : 0.5),
+              backgroundColor: currentHasFirstKey 
+                ? (darkMode ? '#14532d' : '#90EE90') 
+                : (darkMode ? 'rgba(93, 78, 55, 0.8)' : '#F5DEB3'),
+              color: currentHasFirstKey 
+                ? (darkMode ? '#86efac' : '#228B22') 
+                : (darkMode ? '#F5DEB3' : theme.textSecondary),
+              border: darkMode && !currentHasFirstKey ? '1px solid rgba(205, 133, 63, 0.5)' : 'none',
+              boxShadow: currentHasFirstKey ? '0 0 10px rgba(144, 238, 144, 0.5)' : 'none'
             }}>
-              <span>P</span>
-              {currentHasP && <span>✓</span>}
+              <span>{puzzleData.keyLetters[0]}</span>
+              {currentHasFirstKey && <span>✓</span>}
             </div>
             <div style={{
-              padding: '4px 12px',
+              padding: '6px 16px',
               borderRadius: '9999px',
-              fontSize: '14px',
-              fontWeight: '600',
+              fontSize: '16px',
+              fontWeight: '700',
               display: 'flex',
               alignItems: 'center',
-              gap: '4px',
+              gap: '6px',
               transition: 'all 0.2s',
-              transform: currentHasA ? 'scale(1.1)' : 'scale(1)',
-              opacity: currentHasA ? 1 : 0.5,
-              backgroundColor: currentHasA ? (darkMode ? '#14532d' : '#90EE90') : (darkMode ? '#3d322a' : '#F5DEB3'),
-              color: currentHasA ? (darkMode ? '#86efac' : '#228B22') : theme.textSecondary
+              transform: currentHasSecondKey ? 'scale(1.1)' : 'scale(1)',
+              opacity: currentHasSecondKey ? 1 : (darkMode ? 0.7 : 0.5),
+              backgroundColor: currentHasSecondKey 
+                ? (darkMode ? '#14532d' : '#90EE90') 
+                : (darkMode ? 'rgba(93, 78, 55, 0.8)' : '#F5DEB3'),
+              color: currentHasSecondKey 
+                ? (darkMode ? '#86efac' : '#228B22') 
+                : (darkMode ? '#F5DEB3' : theme.textSecondary),
+              border: darkMode && !currentHasSecondKey ? '1px solid rgba(205, 133, 63, 0.5)' : 'none',
+              boxShadow: currentHasSecondKey ? '0 0 10px rgba(144, 238, 144, 0.5)' : 'none'
             }}>
-              <span>A</span>
-              {currentHasA && <span>✓</span>}
+              <span>{puzzleData.keyLetters[1]}</span>
+              {currentHasSecondKey && <span>✓</span>}
             </div>
           </div>
 
