@@ -105,22 +105,121 @@ const PUZZLES = [
         "Those who use griddles (cafe specials!)"
       ]
     }
+  },
+  // PUZZLE 2: BETOKENS
+  {
+    id: 'betokens-puzzle',
+    subtitle: 'Sunday Brunch',
+    letters: ['T', 'E', 'O', 'B', 'N', 'K', 'S'],
+    keyLetters: ['O', 'N'],
+    totalWordCount: 71,
+    words: {
+      4: ['BONE', 'BONK', 'BOON', 'EBON', 'EONS', 'KENO', 'KNOB', 'KNOT', 'NOBS', 'NOES', 'NONE', 'NOOK', 'NOON', 'NOSE', 'NOTE', 'ONES', 'SNOB', 'SNOT', 'SOON', 'TONE', 'TONS', 'TOON'],
+      5: ['BETON', 'BONES', 'BONKS', 'BONNE', 'BOONS', 'EBONS', 'KENOS', 'KNOBS', 'KNOTS', 'NONES', 'NOOKS', 'NOONS', 'NOOSE', 'NOSES', 'NOTES', 'ONSET', 'SNOBS', 'SNOEK', 'SNOOK', 'SNOTS', 'STENO', 'STONE', 'STONK', 'TOKEN', 'TONES', 'TONNE', 'TOONS'],
+      6: ['BETONS', 'BONNES', 'BONNET', 'BOTNET', 'KETONE', 'NOOSES', 'ONSETS', 'SNOOKS', 'SONNET', 'STENOS', 'STONES', 'STONKS', 'TOKENS', 'TONNES'],
+      7: ['BETOKEN', 'BONESET', 'BONNETS', 'BOTNETS', 'KETONES', 'SONNETS'],
+      8: ['BETOKENS', 'BONESETS']
+    },
+    hints: {
+      4: [
+        "Skeletal structure piece",
+        "Hit on the head",
+        "Blessing or benefit",
+        "Dark black wood color",
+        "Long periods of time",
+        "Bingo-like gambling game",
+        "Round door handle",
+        "Tied rope fastening",
+        "Wealthy or important people (slang)",
+        "Plural of no",
+        "Not any; zero",
+        "Cozy corner for reading",
+        "Midday; 12 o'clock",
+        "Organ for smelling",
+        "Written message or musical sound",
+        "Single units; individuals",
+        "Pretentious person",
+        "Nasal mucus (informal)",
+        "In a short time",
+        "Sound quality or shade",
+        "Units of weight (2000 lbs)",
+        "Cartoon character; animated show"
+      ],
+      5: [
+        "Type of concrete mixture",
+        "Skeletal pieces",
+        "Hits on the head",
+        "French word for good (feminine)",
+        "Benefits or blessings",
+        "Dark black colors",
+        "Bingo-like games",
+        "Round door handles",
+        "Tied fastenings",
+        "Midday prayers; not any (plural)",
+        "Cozy reading corners",
+        "Multiple middays",
+        "Loop for hanging",
+        "Smelling organs",
+        "Written messages",
+        "Beginning; start",
+        "Pretentious people",
+        "South African fish",
+        "Type of fish; billiards shot",
+        "Nasal mucus (plural)",
+        "Shorthand typist",
+        "Rock; fruit seed",
+        "Military bombardment (British)",
+        "Symbol representing something",
+        "Shades or sounds",
+        "Metric ton",
+        "Cartoon characters"
+      ],
+      6: [
+        "Concrete mixtures",
+        "French maids (historical)",
+        "Hat tied under chin",
+        "Network of infected computers",
+        "Chemical compound in metabolism",
+        "Hanging loops",
+        "Beginnings; attacks",
+        "Types of fish",
+        "14-line poem",
+        "Shorthand typists",
+        "Rocks; throws rocks at",
+        "Military bombardments",
+        "Symbols; subway fares",
+        "Metric tons"
+      ],
+      7: [
+        "To signify or indicate",
+        "Medicinal herb plant",
+        "Hats tied under chin",
+        "Networks of infected computers",
+        "Chemical compounds",
+        "14-line poems"
+      ],
+      8: [
+        "Signifies or indicates (pangram!)",
+        "Medicinal herb plants"
+      ]
+    }
   }
 ];
 
-// Previous day's puzzle for answer key - PANCAKES puzzle
+// Previous day's puzzle for answer key - dynamically gets previous puzzle
+// For now, showing GRIDDLES as the previous puzzle
 const PREVIOUS_PUZZLE = {
-  id: 'pancakes-puzzle',
+  id: 'griddles-puzzle',
   subtitle: 'Yesterday\'s Puzzle',
-  letters: ['P', 'A', 'N', 'C', 'K', 'E', 'S'],
-  keyLetters: ['P', 'A'],
+  letters: ['G', 'R', 'I', 'D', 'L', 'E', 'S'],
+  keyLetters: ['G', 'R'],
   words: {
-    4: ['APES', 'APSE', 'ASPS', 'CAPE', 'CAPS', 'NAPE', 'NAPS', 'NEAP', 'PACE', 'PACK', 'PANE', 'PANS', 'PAPA', 'PASS', 'PEAK', 'PEAS', 'SAPS', 'SNAP', 'SPAN', 'SPAS'],
-    5: ['APACE', 'APNEA', 'APSES', 'ASPEN', 'CAPES', 'KAPPA', 'NAPES', 'NEAPS', 'PACES', 'PACKS', 'PAEAN', 'PANES', 'PAPAS', 'PASSE', 'PEAKS', 'PEACE', 'PECAN', 'SNAPS', 'SPACE', 'SPAKE', 'SPANK', 'SPANS', 'SPEAK'],
-    6: ['APNEAS', 'CANAPE', 'ESCAPE', 'KAPPAS', 'PAEANS', 'PASSES', 'PECANS', 'SPACES', 'SPANKS', 'SPEAKS'],
-    7: ['CANAPES', 'ESCAPES', 'KNEECAP', 'PANACEA', 'PANCAKE'],
-    8: ['KEEPSAKE', 'KNEECAPS', 'KNAPSACK', 'PANACEAS', 'PANCAKES', 'SEASCAPE'],
-    9: ['KEEPSAKES', 'KNAPSACKS', 'SEASCAPES']
+    4: ['DREG', 'GIRD', 'GIRL', 'GRID', 'RIGS'],
+    5: ['DIRGE', 'DREGS', 'EDGER', 'GIRDS', 'GIRLS', 'GREED', 'GRIDE', 'GRIDS', 'GRILL', 'LIGER', 'RIDGE', 'SERGE'],
+    6: ['DIGGER', 'DIRGES', 'DREDGE', 'EDGERS', 'EGRESS', 'GILDER', 'GIRDED', 'GIRDLE', 'GIRLIE', 'GLIDER', 'GREEDS', 'GRIDES', 'GRILLE', 'GRILLS', 'GRILSE', 'LEDGER', 'LIGERS', 'REGILD', 'RIDGED', 'RIDGES', 'RIGGED', 'RIGGER', 'SERGED', 'SERGER', 'SERGES', 'SIEGER'],
+    7: ['DIGGERS', 'DIGRESS', 'DREDGED', 'DREDGES', 'GILDERS', 'GIRDLES', 'GIRLIES', 'GLIDERS', 'GRIDDED', 'GRIDDLE', 'GRILLED', 'GRILLER', 'GRILLES', 'LEDGERS', 'REGILDS', 'RIGGERS', 'SERGERS', 'SIEGERS'],
+    8: ['EGRESSES', 'GREEDIER', 'GRIDDLED', 'GRIDDLER', 'GRIDDLES', 'GRILLERS'],
+    9: ['DIGRESSED', 'DIGRESSES', 'GRIDDLERS']
   }
 };
 
@@ -129,7 +228,9 @@ const PREVIOUS_PUZZLE = {
 // =============================================================================
 
 function getTodaysPuzzle() {
-  const ANCHOR_DATE = new Date('2024-12-24T07:00:00-05:00');
+  // Anchor: Dec 26, 2025 at 7 AM EST = index 0 (GRIDDLES)
+  // Dec 27, 2025 at 7 AM EST = index 1 (BETOKENS)
+  const ANCHOR_DATE = new Date('2025-12-26T07:00:00-05:00');
   const now = new Date();
   const estTime = new Date(now.toLocaleString('en-US', { timeZone: 'America/New_York' }));
   const hour = estTime.getHours();
