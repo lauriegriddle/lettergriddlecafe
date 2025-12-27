@@ -1297,14 +1297,14 @@ export default function LetterGriddleCafeGame() {
               gap: '6px',
               transition: 'all 0.2s',
               transform: currentHasFirstKey ? 'scale(1.1)' : 'scale(1)',
-              opacity: currentHasFirstKey ? 1 : (darkMode ? 0.7 : 0.5),
+              opacity: currentHasFirstKey ? 1 : (darkMode ? 0.7 : 0.8),
               backgroundColor: currentHasFirstKey 
                 ? (darkMode ? '#14532d' : '#90EE90') 
                 : (darkMode ? 'rgba(93, 78, 55, 0.8)' : '#F5DEB3'),
               color: currentHasFirstKey 
                 ? (darkMode ? '#86efac' : '#228B22') 
                 : (darkMode ? '#F5DEB3' : theme.textSecondary),
-              border: darkMode && !currentHasFirstKey ? '1px solid rgba(205, 133, 63, 0.5)' : 'none',
+              border: currentHasFirstKey ? 'none' : '2px solid #DAA520',
               boxShadow: currentHasFirstKey ? '0 0 10px rgba(144, 238, 144, 0.5)' : 'none'
             }}>
               <span>{puzzleData.keyLetters[0]}</span>
@@ -1320,14 +1320,14 @@ export default function LetterGriddleCafeGame() {
               gap: '6px',
               transition: 'all 0.2s',
               transform: currentHasSecondKey ? 'scale(1.1)' : 'scale(1)',
-              opacity: currentHasSecondKey ? 1 : (darkMode ? 0.7 : 0.5),
+              opacity: currentHasSecondKey ? 1 : (darkMode ? 0.7 : 0.8),
               backgroundColor: currentHasSecondKey 
                 ? (darkMode ? '#14532d' : '#90EE90') 
                 : (darkMode ? 'rgba(93, 78, 55, 0.8)' : '#F5DEB3'),
               color: currentHasSecondKey 
                 ? (darkMode ? '#86efac' : '#228B22') 
                 : (darkMode ? '#F5DEB3' : theme.textSecondary),
-              border: darkMode && !currentHasSecondKey ? '1px solid rgba(205, 133, 63, 0.5)' : 'none',
+              border: currentHasSecondKey ? 'none' : '2px solid #DAA520',
               boxShadow: currentHasSecondKey ? '0 0 10px rgba(144, 238, 144, 0.5)' : 'none'
             }}>
               <span>{puzzleData.keyLetters[1]}</span>
