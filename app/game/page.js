@@ -114,16 +114,17 @@ const PUZZLES = [
   // PUZZLE 2: BETOKENS
   {
     id: 'betokens-puzzle',
-    subtitle: 'Sunday Brunch',
+    subtitle: 'Prepare the Cafe',
     letters: ['T', 'E', 'O', 'B', 'N', 'K', 'S'],
     keyLetters: ['O', 'N'],
-    totalWordCount: 71,
+    totalWordCount: 76,
     words: {
-      4: ['BONE', 'BONK', 'BOON', 'EBON', 'EONS', 'KENO', 'KNOB', 'KNOT', 'NOBS', 'NOES', 'NONE', 'NOOK', 'NOON', 'NOSE', 'NOTE', 'ONES', 'SNOB', 'SNOT', 'SOON', 'TONE', 'TONS', 'TOON'],
+      4: ['BONE', 'BONK', 'BOON', 'EBON', 'EONS', 'KENO', 'KNOB', 'KNOT', 'NOBS', 'NOES', 'NONE', 'NOOK', 'NOON', 'NOSE', 'NOTE', 'ONES', 'SNOB', 'SNOT', 'SONS', 'SOON', 'TONE', 'TONS', 'TOON'],
       5: ['BETON', 'BONES', 'BONKS', 'BONNE', 'BOONS', 'EBONS', 'KENOS', 'KNOBS', 'KNOTS', 'NONES', 'NOOKS', 'NOONS', 'NOOSE', 'NOSES', 'NOTES', 'ONSET', 'SNOBS', 'SNOEK', 'SNOOK', 'SNOTS', 'STENO', 'STONE', 'STONK', 'TOKEN', 'TONES', 'TONNE', 'TOONS'],
-      6: ['BETONS', 'BONNES', 'BONNET', 'BOTNET', 'KETONE', 'NOOSES', 'ONSETS', 'SNOOKS', 'SONNET', 'STENOS', 'STONES', 'STONKS', 'TOKENS', 'TONNES'],
-      7: ['BETOKEN', 'BONESET', 'BONNETS', 'BOTNETS', 'KETONES', 'SONNETS'],
-      8: ['BETOKENS', 'BONESETS']
+      6: ['BETONS', 'BONNES', 'BONBON', 'BONNET', 'BOTNET', 'KETONE', 'NOOSES', 'ONSETS', 'SNOOKS', 'SONNET', 'STENOS', 'STONES', 'STONKS', 'TOKENS', 'TONNES'],
+      7: ['BETOKEN', 'BONBONS', 'BONESET', 'BONNETS', 'BOTNETS', 'KETONES', 'SONNETS'],
+      8: ['BETOKENS', 'BONESETS', 'NOTEBOOK'],
+      9: ['NOTEBOOKS']
     },
     hints: {
       4: [
@@ -145,6 +146,7 @@ const PUZZLES = [
         "Single units; individuals",
         "Pretentious person",
         "Nasal mucus (informal)",
+        "Male offspring",
         "In a short time",
         "Sound quality or shade",
         "Units of weight (2000 lbs)",
@@ -182,6 +184,7 @@ const PUZZLES = [
       6: [
         "Concrete mixtures",
         "French maids (historical)",
+        "Small chocolate candy",
         "Hat tied under chin",
         "Network of infected computers",
         "Chemical compound in metabolism",
@@ -197,6 +200,7 @@ const PUZZLES = [
       ],
       7: [
         "To signify or indicate",
+        "Small chocolate candies",
         "Medicinal herb plant",
         "Hats tied under chin",
         "Networks of infected computers",
@@ -205,8 +209,12 @@ const PUZZLES = [
       ],
       8: [
         "Signifies or indicates (pangram!)",
-        "Medicinal herb plants"
-      ]
+        "Medicinal herb plants",
+        "Bound pages for writing"
+      ],
+      9: [
+        "Bound pages for writing (plural)",
+      ],
     }
   }
 ];
@@ -221,10 +229,10 @@ const PREVIOUS_PUZZLE = {
   words: {
     4: ['DREG', 'GIRD', 'GIRL', 'GRID', 'RIGS'],
     5: ['DIRGE', 'DREGS', 'EDGER', 'GIRDS', 'GIRLS', 'GREED', 'GRIDE', 'GRIDS', 'GRILL', 'LIGER', 'RIDGE', 'SERGE'],
-    6: ['DIGGER', 'DIRGES', 'DREDGE', 'EDGERS', 'EGRESS', 'GILDER', 'GIRDED', 'GIRDLE', 'GIRLIE', 'GLIDER', 'GREEDS', 'GRIDES', 'GRILLE', 'GRILLS', 'GRILSE', 'LEDGER', 'LIGERS', 'REGILD', 'RIDGED', 'RIDGES', 'RIGGED', 'RIGGER', 'SERGED', 'SERGER', 'SERGES', 'SIEGER'],
-    7: ['DIGGERS', 'DIGRESS', 'DREDGED', 'DREDGES', 'GILDERS', 'GIRDLES', 'GIRLIES', 'GLIDERS', 'GRIDDED', 'GRIDDLE', 'GRILLED', 'GRILLER', 'GRILLES', 'LEDGERS', 'REGILDS', 'RIGGERS', 'SERGERS', 'SIEGERS'],
+    6: ['DIGGER', 'DIRGES', 'DREDGE', 'EDGERS','EDGIER', 'EGGIER', 'EGRESS', 'GILDER', 'GIRDED', 'GIRDLE', 'GIRLIE', 'GLIDER', 'GREEDS', 'GRIDES', 'GRILLE', 'GRILLS', 'GRILSE', 'LEDGER', 'LIGERS', 'REGILD', 'RIDGED', 'RIDGES', 'RIGGED', 'RIGGER', 'SERGED', 'SERGER', 'SERGES', 'SIEGER'],
+    7: ['DIGGERS', 'DIGRESS', 'DREDGED', 'DREDGES', 'GILDERS', 'GIRDLES', 'GIRLIES', 'GLIDERS', 'GRIDDED', 'GRIDDLE', 'GRILLED', 'GRILLER', 'GRILLES', 'LEDGERS', 'REGILDS', 'REGRESS','RIGGERS', 'SERGERS', 'SIEGERS'],
     8: ['EGRESSES', 'GREEDIER', 'GRIDDLED', 'GRIDDLER', 'GRIDDLES', 'GRILLERS'],
-    9: ['DIGRESSED', 'DIGRESSES', 'GRIDDLERS']
+    9: ['DIGRESSED', 'DIGRESSES', 'GRIDDLERS', 'REGRESSED', 'REGRESSES']
   }
 };
 
