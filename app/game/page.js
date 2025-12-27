@@ -12,11 +12,11 @@ const PUZZLES = [
     subtitle: 'Prepare the Cafe',
     letters: ['I', 'G', 'S', 'R', 'E', 'D', 'L'], // Pre-shuffled for initial display
     keyLetters: ['G', 'R'],
-    totalWordCount: 74, // Updated: 70 + 4 new words (EGGIER, REGRESS, REGRESSED, REGRESSES)
+    totalWordCount: 75, // Updated: 74 + 1 new word (EDGIER)
     words: {
       4: ['DREG', 'GIRD', 'GIRL', 'GRID', 'RIGS'],
       5: ['DIRGE', 'DREGS', 'EDGER', 'GIRDS', 'GIRLS', 'GREED', 'GRIDE', 'GRIDS', 'GRILL', 'LIGER', 'RIDGE', 'SERGE'],
-      6: ['DIGGER', 'DIRGES', 'DREDGE', 'EDGERS', 'EGGIER', 'EGRESS', 'GILDER', 'GIRDED', 'GIRDLE', 'GIRLIE', 'GLIDER', 'GREEDS', 'GRIDES', 'GRILLE', 'GRILLS', 'GRILSE', 'LEDGER', 'LIGERS', 'REGILD', 'RIDGED', 'RIDGES', 'RIGGED', 'RIGGER', 'SERGED', 'SERGER', 'SERGES', 'SIEGER'],
+      6: ['DIGGER', 'DIRGES', 'DREDGE', 'EDGERS', 'EDGIER', 'EGGIER', 'EGRESS', 'GILDER', 'GIRDED', 'GIRDLE', 'GIRLIE', 'GLIDER', 'GREEDS', 'GRIDES', 'GRILLE', 'GRILLS', 'GRILSE', 'LEDGER', 'LIGERS', 'REGILD', 'RIDGED', 'RIDGES', 'RIGGED', 'RIGGER', 'SERGED', 'SERGER', 'SERGES', 'SIEGER'],
       7: ['DIGGERS', 'DIGRESS', 'DREDGED', 'DREDGES', 'GILDERS', 'GIRDLES', 'GIRLIES', 'GLIDERS', 'GRIDDED', 'GRIDDLE', 'GRILLED', 'GRILLER', 'GRILLES', 'LEDGERS', 'REGILDS', 'REGRESS', 'RIGGERS', 'SERGERS', 'SIEGERS'],
       8: ['EGRESSES', 'GREEDIER', 'GRIDDLED', 'GRIDDLER', 'GRIDDLES', 'GRILLERS'],
       9: ['DIGRESSED', 'DIGRESSES', 'GRIDDLERS', 'REGRESSED', 'REGRESSES']
@@ -48,6 +48,7 @@ const PUZZLES = [
         "Mournful funeral songs",
         "Scoop from the bottom",
         "Lawn edge trimming tools",
+        "More nervous or irritable; more daring",
         "More like an egg in taste or texture",
         "A way out or exit",
         "One who applies gold leaf",
