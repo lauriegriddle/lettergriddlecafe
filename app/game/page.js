@@ -12,14 +12,14 @@ const PUZZLES = [
     subtitle: 'Prepare the Cafe',
     letters: ['I', 'G', 'S', 'R', 'E', 'D', 'L'], // Pre-shuffled for initial display
     keyLetters: ['G', 'R'],
-    totalWordCount: 70, // Updated: 68 + 2 new words (GIRDED, GREEDIER)
+    totalWordCount: 74, // Updated: 70 + 4 new words (EGGIER, REGRESS, REGRESSED, REGRESSES)
     words: {
       4: ['DREG', 'GIRD', 'GIRL', 'GRID', 'RIGS'],
       5: ['DIRGE', 'DREGS', 'EDGER', 'GIRDS', 'GIRLS', 'GREED', 'GRIDE', 'GRIDS', 'GRILL', 'LIGER', 'RIDGE', 'SERGE'],
-      6: ['DIGGER', 'DIRGES', 'DREDGE', 'EDGERS', 'EGRESS', 'GILDER', 'GIRDED', 'GIRDLE', 'GIRLIE', 'GLIDER', 'GREEDS', 'GRIDES', 'GRILLE', 'GRILLS', 'GRILSE', 'LEDGER', 'LIGERS', 'REGILD', 'RIDGED', 'RIDGES', 'RIGGED', 'RIGGER', 'SERGED', 'SERGER', 'SERGES', 'SIEGER'],
-      7: ['DIGGERS', 'DIGRESS', 'DREDGED', 'DREDGES', 'GILDERS', 'GIRDLES', 'GIRLIES', 'GLIDERS', 'GRIDDED', 'GRIDDLE', 'GRILLED', 'GRILLER', 'GRILLES', 'LEDGERS', 'REGILDS', 'RIGGERS', 'SERGERS', 'SIEGERS'],
+      6: ['DIGGER', 'DIRGES', 'DREDGE', 'EDGERS', 'EGGIER', 'EGRESS', 'GILDER', 'GIRDED', 'GIRDLE', 'GIRLIE', 'GLIDER', 'GREEDS', 'GRIDES', 'GRILLE', 'GRILLS', 'GRILSE', 'LEDGER', 'LIGERS', 'REGILD', 'RIDGED', 'RIDGES', 'RIGGED', 'RIGGER', 'SERGED', 'SERGER', 'SERGES', 'SIEGER'],
+      7: ['DIGGERS', 'DIGRESS', 'DREDGED', 'DREDGES', 'GILDERS', 'GIRDLES', 'GIRLIES', 'GLIDERS', 'GRIDDED', 'GRIDDLE', 'GRILLED', 'GRILLER', 'GRILLES', 'LEDGERS', 'REGILDS', 'REGRESS', 'RIGGERS', 'SERGERS', 'SIEGERS'],
       8: ['EGRESSES', 'GREEDIER', 'GRIDDLED', 'GRIDDLER', 'GRIDDLES', 'GRILLERS'],
-      9: ['DIGRESSED', 'DIGRESSES', 'GRIDDLERS']
+      9: ['DIGRESSED', 'DIGRESSES', 'GRIDDLERS', 'REGRESSED', 'REGRESSES']
     },
     hints: {
       4: [
@@ -48,6 +48,7 @@ const PUZZLES = [
         "Mournful funeral songs",
         "Scoop from the bottom",
         "Lawn edge trimming tools",
+        "More like an egg in taste or texture",
         "A way out or exit",
         "One who applies gold leaf",
         "Encircled or prepared",
@@ -87,6 +88,7 @@ const PUZZLES = [
         "Metal gratings",
         "Financial account books",
         "Applies gold coating again",
+        "Return to a former or less developed state",
         "Those who rig equipment",
         "Overcast stitch machines",
         "Those who lay siege"
@@ -102,7 +104,9 @@ const PUZZLES = [
       9: [
         "Strayed from the subject",
         "Strays from the subject",
-        "Those who use griddles (cafe specials!)"
+        "Those who use griddles (cafe specials!)",
+        "Returned to a former state",
+        "Returns to a former state",
       ]
     }
   },
