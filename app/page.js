@@ -499,6 +499,9 @@ function StoryDetail({ story, puzzle, onBack }) {
             ))}
             <div className="story-closing">
               <p>{story.closing}</p>
+              {story.closingLink && (
+                <a href={story.closingLink} className="story-closing-link">{story.closingLinkText}</a>
+              )}
             </div>
           </div>
         </div>
