@@ -80,7 +80,37 @@ const stories = [
   closing: 'Return next Sunday at 7pm for another peek into the Letter Griddle Cafe and Griddle Falls.',
   closingLink: '/jukebox',
   closingLinkText: 'Play Letter Griddle Jukebox now →'
-}
+},
+{
+    id: 'cafe-kerflufflegrid',
+    title: 'Cafe Kerflufflegrid',
+    subtitle: '🌀 Now Available',
+    date: 'December 2025',
+    locked: false,
+    content: [
+      '"Hey, Trivia Crew! Roads to the cafe are impassable. See you on Zoom at 7. 🌀 Password is Kerflufflegrid." Laurel reads over the group text, then presses send.',
+      'Responses soon follow:',
+      '"Charged. ✨" - Taylor B.',
+      '"See everyone in the Zoom grid! 😃" - Sarah',
+      '"Testing \'kerflufflegrid.\' 🤓 Capital K, everyone!" - Mr. or Mrs. Lindsay',
+      '"Thanks for the text! 🥰 Josie\'ll be there too! See you soon!" - Josephine',
+      '"We have treats! Too bad we won\'t be able to share. 🍩" - Jennie',
+      'Laurel, encouraged by the quick responses, boosts herself, "I must be tech-savvy. I sent the text. The crew texted back. Password\'s ready. I\'ve got this!"',
+      '"It\'s now or never…" Elvis wafts through the Bluetooth as Laurel turns off the coffee pot and puts away the cinnamon rolls.',
+      '"Kerflufflegrid."',
+      '"How appropriate," she thought.',
+      '"A game based on something being so close yet so far. Accessible but out of reach."',
+      '"Kerflufflegrid."',
+      'Laurel sings along, creating her own lyrics,',
+      'Given the circumstances of the night',
+      'Now or never',
+      'and a game of Kerflufflegrid',
+      'seem right.'
+    ],
+    closing: 'kerflufflegrid.com is always accessible, 24/7, now or whenever.',
+    closingLink: 'https://kerflufflegrid.com',
+    closingLinkText: 'Play Kerflufflegrid 🌀'
+  }
 ];
 
 // Puzzle data - expandable for future puzzles
@@ -129,6 +159,21 @@ const puzzles = {
       { pos: 2, letter: 'C' }
     ],
     didYouKnow: 'Jukeboxes started as nickel-in-slot phonographs in 1889, evolving from early recording devices. The name "jukebox" comes from "juke joints" where people danced to them in the 1930s. They helped revive the music industry during the Depression and offered a wide variety of music for soldiers during WWII.'
+  },
+  'cafe-kerflufflegrid': {
+    id: 'kerflufflegrid',
+    title: 'Kerflufflegrid',
+    category: 'Kerflufflegrid',
+    words: ['ZOOM', 'ELVIS', 'TREATS', 'CHARGED', 'PASSWORD'],
+    hints: ['How the trivia crew connected when they couldn\'t meet in person', '"It\'s now or never" singer wafting through Laurel\'s Bluetooth', 'Jennie\'s box of goodies she couldn\'t share 🍩', 'Taylor B.\'s one-word response ✨', 'Kerflufflegrid was this for the virtual trivia night'],
+    revealed: [
+      { pos: 2, letter: 'O' },
+      { pos: 2, letter: 'V' },
+      { pos: 3, letter: 'A' },
+      { pos: 2, letter: 'A' },
+      { pos: 3, letter: 'S' }
+    ],
+    didYouKnow: 'Elvis Presley\'s "It\'s Now or Never" was based on the Italian song "O Sole Mio" and became one of his best-selling singles, reaching #1 in multiple countries in 1960.'
   }
 };
 

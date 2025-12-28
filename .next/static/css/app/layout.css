@@ -452,9 +452,10 @@
 
 .puzzle-instructions {
   text-align: center;
-  font-size: 0.8rem;
-  color: #a8a29e;
+  font-size: 0.85rem;
+  color: #8B5A2B;
   margin-bottom: 1rem;
+  font-weight: 500;
 }
 
 .puzzle-instructions p {
