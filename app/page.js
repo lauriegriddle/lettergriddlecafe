@@ -51,7 +51,7 @@ const stories = [
   title: 'Add One Jukebox',
   subtitle: '🎵 Opening Sunday at 7 PM',
   date: 'December 2025',
-  locked: true,
+  locked: false,
   content: [
     'Walking to her SUV, Laurel notices Mr. and Mrs. Lindsay, Jennie, and Isaac in a post-trivia huddle.',
     '"I gave Isaac a small bite of my frosted cinnamon roll," Laurel overhears Jennie, as she tenderly gazes at Isaac.',
