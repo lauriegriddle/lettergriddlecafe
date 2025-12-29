@@ -390,10 +390,8 @@ const [shareStatus, setShareStatus] = useState(null);
     
     if (navigator.share) {
       try {
-        await navigator.share({
-          title: 'Letter Griddle Cafe',
-          text: shareText,
-          url: 'https://lettergriddlecafe.com'
+        await navigator.share({ 
+          text: shareText
         });
       } catch (err) {
         if (err.name !== 'AbortError') {
