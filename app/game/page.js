@@ -216,6 +216,114 @@ const PUZZLES = [
         "Bound pages for writing (plural)",
       ],
     }
+  },
+  // PUZZLE 3: MOCCASINS
+  {
+    id: 'moccasins-puzzle',
+    subtitle: 'Cozy Morning',
+    letters: ['C', 'N', 'M', 'I', 'A', 'O', 'S'],
+    keyLetters: ['N', 'I'],
+    totalWordCount: 78,
+    words: {
+      4: ['AINS', 'AMIN', 'ANIS', 'CAIN', 'CION', 'COIN', 'ICON', 'INCA', 'INNS', 'IONS', 'MAIN', 'MINI', 'NAOI', 'OMNI', 'SINS'],
+      5: ['AMINO', 'AMNIC', 'AMNIO', 'ANIMA', 'ANION', 'CAINS', 'CIONS', 'COINS', 'ICONS', 'INCAS', 'MAINS', 'MANIA', 'MANIC', 'MANIS', 'MINIS', 'NAOMI', 'OMNIS', 'ONION', 'SCION', 'SONIC'],
+      6: ['AMINOS', 'AMNION', 'AMNIOS', 'ANIMAS', 'ANIONS', 'ANOMIC', 'CAMION', 'CASINO', 'ICONIC', 'MANIAC', 'MANIAS', 'MANICS', 'MANIOC', 'MINION', 'MONISM', 'NOMISM', 'ONIONS', 'SCIONS', 'SIMIAN', 'SONICS'],
+      7: ['AMNIONS', 'ANIMISM', 'CAMIONS', 'CASINOS', 'MANIACS', 'MANIOCS', 'MANSION', 'MASONIC', 'MINIONS', 'MISSION', 'MONISMS', 'ONANISM', 'SIMIANS'],
+      8: ['ANIMISMS', 'CINNAMON', 'MANSIONS', 'MISSIONS', 'MOCCASIN', 'OCCASION', 'ONANISMS'],
+      9: ['CINNAMONS', 'MOCCASINS', 'OCCASIONS']
+    },
+    hints: {
+      4: [
+        "Plural of ain (Scottish word for own)",
+        "Organic compound with NH2 group",
+        "Anise-flavored seeds",
+        "Biblical son of Adam",
+        "Bud or shoot for grafting",
+        "Metal money",
+        "Small religious image",
+        "Ancient Peruvian empire member",
+        "Lodging houses",
+        "Electrically charged atoms",
+        "Principal; most important",
+        "Very small version",
+        "Inner shrine of a Greek temple",
+        "All-inclusive; universal (prefix)",
+        "Wrongful acts"
+      ],
+      5: [
+        "Organic compound with nitrogen",
+        "Relating to the amnion membrane",
+        "Fetal membrane",
+        "Soul in Hindu philosophy",
+        "Ion with negative charge",
+        "Biblical murderers (plural)",
+        "Buds for grafting (plural)",
+        "Metal money pieces",
+        "Religious images",
+        "Ancient Peruvians",
+        "Principal points",
+        "Obsessive enthusiasm",
+        "Wildly enthusiastic",
+        "Cassava plants (alternate)",
+        "Very small versions",
+        "Woman's name; 'pleasant'",
+        "Universal; all-inclusive",
+        "Layered vegetable that makes you cry",
+        "Descendant; offspring",
+        "Relating to sound"
+      ],
+      6: [
+        "Organic compounds with nitrogen",
+        "Innermost fetal membrane",
+        "Fetal membranes",
+        "Souls in Hindu philosophy",
+        "Negatively charged ions",
+        "Irregular; deviating from normal",
+        "Military truck",
+        "Gambling establishment",
+        "Symbolic; representing something",
+        "Person with obsessive enthusiasm",
+        "Obsessive enthusiasms",
+        "Wildly enthusiastic people",
+        "Tropical plant like cassava",
+        "Loyal follower (yellow ones too!)",
+        "Belief in one ultimate reality",
+        "Study of laws and customs",
+        "Layered veggies that make you cry",
+        "Descendants; offspring (plural)",
+        "Relating to apes",
+        "Relating to sound (plural)"
+      ],
+      7: [
+        "Innermost fetal membranes",
+        "Belief that all things have souls",
+        "Military trucks",
+        "Gambling establishments",
+        "People with obsessive enthusiasm",
+        "Tropical plants like cassava",
+        "Large stately house",
+        "Relating to Freemasons",
+        "Loyal followers (yellow ones too!)",
+        "Task or assignment",
+        "Beliefs in one ultimate reality",
+        "Self-gratification",
+        "Relating to apes (plural)"
+      ],
+      8: [
+        "Beliefs that all things have souls",
+        "Warm brown spice from bark",
+        "Large stately houses",
+        "Tasks or assignments",
+        "Native American soft leather shoe",
+        "Special event or happening",
+        "Acts of self-gratification"
+      ],
+      9: [
+        "Warm brown spices from bark (pangram!)",
+        "Native American soft leather shoes (pangram!)",
+        "Special events or happenings"
+      ]
+    }
   }
 ];
 
