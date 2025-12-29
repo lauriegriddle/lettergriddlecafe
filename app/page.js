@@ -201,14 +201,14 @@ function generateLetterPool(words, revealed) {
 }
 
 // Puzzle Component
-function LetterGriddlePuzzle({ puzzle }) {
+function LetterGriddlePuzzle({ puzzle, storyTitle }) {
   const [letterPool, setLetterPool] = useState([]);
   const [guesses, setGuesses] = useState(puzzle.words.map(() => []));
   const [selectedLetter, setSelectedLetter] = useState(null);
   const [completed, setCompleted] = useState(puzzle.words.map(() => false));
   const [revealedHints, setRevealedHints] = useState(puzzle.words.map(() => false));
   const [activeWordIndex, setActiveWordIndex] = useState(0);
-
+const [shareStatus, setShareStatus] = useState(null);
   useEffect(() => {
     setLetterPool(generateLetterPool(puzzle.words, puzzle.revealed));
     const initialGuesses = puzzle.words.map((word, wordIndex) => {
@@ -385,6 +385,36 @@ function LetterGriddlePuzzle({ puzzle }) {
     });
   };
 
+  const handleShare = async () => {
+    const shareText = `I solved the ${storyTitle} puzzle on Letter Griddle Cafe! ☕🥞🎶\nlettergriddlecafe.com`;
+    
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: 'Letter Griddle Cafe',
+          text: shareText,
+          url: 'https://lettergriddlecafe.com'
+        });
+      } catch (err) {
+        if (err.name !== 'AbortError') {
+          copyToClipboard(shareText);
+        }
+      }
+    } else {
+      copyToClipboard(shareText);
+    }
+  };
+
+  const copyToClipboard = async (text) => {
+    try {
+      await navigator.clipboard.writeText(text);
+      setShareStatus('copied');
+      setTimeout(() => setShareStatus(null), 2000);
+    } catch (err) {
+      console.error('Failed to copy:', err);
+    }
+  };
+
   const allCompleted = completed.every(c => c);
 
   return (
@@ -498,6 +528,9 @@ function LetterGriddlePuzzle({ puzzle }) {
             <h3>Delicious!</h3>
             <p>You solved the puzzle!</p>
             <div className="completion-buttons">
+            <button className="completion-btn share" onClick={handleShare}>
+                {shareStatus === 'copied' ? '✓ Copied!' : '📤 Share'}
+              </button>
               <button className="completion-btn primary" onClick={resetPuzzle}>
                 🔄 Play Again
               </button>
@@ -558,7 +591,7 @@ function StoryDetail({ story, puzzle, onBack }) {
             <p>{puzzle.didYouKnow}</p>
           </div>
           
-          <LetterGriddlePuzzle puzzle={puzzle} />
+          <LetterGriddlePuzzle puzzle={puzzle} storyTitle={story.title} />
         </div>
       </div>
     </div>
