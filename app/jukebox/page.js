@@ -71,6 +71,7 @@ export default function JukeboxGame() {
   const [selectedLetter, setSelectedLetter] = useState(null);
   const [selectedLetterIndex, setSelectedLetterIndex] = useState(null);
   const [selectedSlot, setSelectedSlot] = useState(null);
+  const [shareStatus, setShareStatus] = useState(null);
 
   // Stats state
   const [stats, setStats] = useState({
@@ -355,6 +356,35 @@ export default function JukeboxGame() {
     saveCompletedPuzzles([]);
     setShowResetModal(false);
     setShowStatsModal(false);
+  };
+
+  // Share function
+  const handleShare = async () => {
+    const shareText = `I completed the ${currentPuzzle.category} track on Letter Griddle Jukebox! 🎵☕🥞\nlettergriddlecafe.com/jukebox`;
+    
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          text: shareText
+        });
+      } catch (err) {
+        if (err.name !== 'AbortError') {
+          copyToClipboard(shareText);
+        }
+      }
+    } else {
+      copyToClipboard(shareText);
+    }
+  };
+
+  const copyToClipboard = async (text) => {
+    try {
+      await navigator.clipboard.writeText(text);
+      setShareStatus('copied');
+      setTimeout(() => setShareStatus(null), 2000);
+    } catch (err) {
+      console.error('Failed to copy:', err);
+    }
   };
 
   const confettiEmojis = ['🎵', '🎶', '💿', '⭐', '✨', '🎸', '🎤', '🎹'];
@@ -1356,9 +1386,12 @@ export default function JukeboxGame() {
                 <h3>Track Complete!</h3>
                 <div className="chain-display">{currentPuzzle.words.join(' → ')}</div>
                 <div className="completion-buttons">
-                  <button className="btn-secondary" onClick={() => startPuzzle(currentPuzzleIndex)}>🔄 Play Again</button>
-                  <button className="btn-primary" onClick={() => setCurrentView('menu')}>🎵 More Tracks</button>
-                </div>
+  <button className="btn-secondary" onClick={handleShare}>
+    {shareStatus === 'copied' ? '✓ Copied!' : '📤 Share'}
+  </button>
+  <button className="btn-secondary" onClick={() => startPuzzle(currentPuzzleIndex)}>🔄 Play Again</button>
+  <button className="btn-primary" onClick={() => setCurrentView('menu')}>🎵 More Tracks</button>
+</div>
               </div>
             )}
 
