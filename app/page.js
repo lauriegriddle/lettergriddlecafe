@@ -34,13 +34,12 @@ const stories = [
     date: 'December 2025',
     content: [
       '"Mrs. Lindsay, I know you like your coffee with one-third cream and two sugar packets, like I do. Have this one," Sarah offered, "I haven\'t sipped from it yet."',
-      '"Sarah, you know me so well!" Mrs. Lindsay gladly accepted amid the buzz in the room about terriers, cinnamon buns, and the current temperature of their coffee.',
+      '"Sarah, you know me so well!" Mrs. Lindsay gladly accepted amid the buzz in the room about pups, cinnamon buns, and the current temperature of their coffee.',
       '"Coffee, coffee, coffee," Laurel muses as she prepares the machine for the next day.',
       'Coffee is a major ingredient of the Letter Griddle Cafe\'s recipe for magic.',
-      'The Letter Griddle Cafe menu is a permission slip to slow down, and stop trying to fix the world.',
-      'Laurel reads the plaque hanging on the wall over the cafe door. The embroidered stitching in various shades of pancake- and coffee-colored threads reveals the Letter Griddle mission statement.',
+      'As she replenishes the sugar, stirrers, and paper coffee cup cozies, Laurel reads the plaque hanging on the wall. The embroidered stitching in various shades of pancake- and coffee-colored threads reveals the Letter Griddle mission statement.',
       'Nourishing friends of Griddle Falls, one meal at a time.',
-      'Morning will be here along with hungry regulars Chuck and Gladys Barnes, Mrs. Winslow, and the rest of the morning regulars, affectionately known as "The A.M. Cafe Crew."',
+      'The cafe has earned a spot on the Best of Griddle Falls list year after year. Its menu is a permission slip to slow down.',
       'Turning out the lights, leaving the cafe to head for home, Laurel pauses, "Thanks for another fun trivia night. See you sooner than later, LG."'
     ],
     closing: 'Friends, we will meet you back here sooner than later.'
