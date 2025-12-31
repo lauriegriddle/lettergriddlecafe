@@ -717,4 +717,6 @@
   font-style: italic;
   margin-top: 8px;
 }
+.completion-btn.share { background: linear-gradient(135deg, #fbbf24, #f59e0b); color: #92400e; font-weight: bold; }
+.completion-btn.share:hover { background: linear-gradient(135deg, #fcd34d, #fbbf24); }
 

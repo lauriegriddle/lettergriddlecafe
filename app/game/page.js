@@ -220,7 +220,7 @@ const PUZZLES = [
   // PUZZLE 3: MOCCASINS
   {
     id: 'moccasins-puzzle',
-    subtitle: 'Cozy Morning',
+    subtitle: 'Good Choice',
     letters: ['C', 'N', 'M', 'I', 'A', 'O', 'S'],
     keyLetters: ['N', 'I'],
     totalWordCount: 78,
