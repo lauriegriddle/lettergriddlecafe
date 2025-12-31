@@ -217,6 +217,112 @@ const PUZZLES = [
       ],
     }
   },
+  // PUZZLE 3: CINNAMONS
+  {
+    id: 'cinnamons-puzzle',
+    subtitle: 'Choices',
+    letters: ['C', 'N', 'M', 'I', 'A', 'O', 'S'],
+    keyLetters: ['N', 'I'],
+    totalWordCount: 70,
+    words: {
+      4: ['AINS', 'ANIS', 'CAIN', 'COIN', 'ICON', 'INCA', 'INNS', 'IONS', 'MAIN', 'MINI', 'OMNI', 'SINS'],
+      5: ['ANIMA', 'AMINO', 'AMNIO', 'ANION', 'CAINS', 'COINS', 'CONIC', 'ICONS', 'INCAS', 'MAINS', 'MANIA', 'MANIC', 'MANIS', 'MINIS', 'OMNIS', 'ONION', 'SCION', 'SONIC'],
+      6: ['AMINOS', 'AMNION', 'AMNIOS', 'ANIMAS', 'ANIONS', 'CASINO', 'CONICS', 'ICONIC', 'MANIAC', 'MANIAS', 'MANICS', 'MINION', 'MONISM', 'ONIONS', 'SCIONS', 'SIMIAN', 'SONICS'],
+      7: ['AMNIONS', 'ANIMISM', 'CASINOS', 'MANIACS', 'MANSION', 'MASONIC', 'MINIONS', 'MISSION', 'MONISMS', 'SIMIANS'],
+      8: ['ANIMISMS', 'CINNAMON', 'MANSIONS', 'MISSIONS', 'MOCCASIN', 'OCCASION', 'OMISSION'],
+      9: ['CINNAMONS', 'MOCCASINS', 'OCCASIONS', 'OMISSIONS'],
+      10: ['COMMISSION'],
+      11: ['COMMISSIONS']
+    },
+    hints: {
+      4: [
+        "Plural of ain (Scottish word for own)",
+        "Anise-flavored seeds",
+        "Biblical son of Adam",
+        "Metal money",
+        "Small religious image",
+        "Ancient Peruvian empire member",
+        "Lodging houses",
+        "Electrically charged atoms",
+        "Principal; most important",
+        "Very small version",
+        "All-inclusive; universal (prefix)",
+        "Wrongful acts"
+      ],
+      5: [
+        "Soul in Hindu philosophy",
+        "Organic compound with nitrogen",
+        "Fetal membrane",
+        "Ion with negative charge",
+        "Biblical murderers (plural)",
+        "Metal money pieces",
+        "Shaped like a cone",
+        "Religious images",
+        "Ancient Peruvians",
+        "Principal points",
+        "Obsessive enthusiasm",
+        "Wildly enthusiastic",
+        "Cassava plants (alternate)",
+        "Very small versions",
+        "Universal; all-inclusive",
+        "Layered vegetable that makes you cry",
+        "Descendant; offspring",
+        "Relating to sound"
+      ],
+      6: [
+        "Organic compounds with nitrogen",
+        "Innermost fetal membrane",
+        "Fetal membranes",
+        "Souls in Hindu philosophy",
+        "Negatively charged ions",
+        "Gambling establishment",
+        "Cone-shaped things (math term)",
+        "Symbolic; representing something",
+        "Person with obsessive enthusiasm",
+        "Obsessive enthusiasms",
+        "Wildly enthusiastic people",
+        "Loyal follower (yellow ones too!)",
+        "Belief in one ultimate reality",
+        "Layered veggies that make you cry",
+        "Descendants; offspring (plural)",
+        "Relating to apes",
+        "Relating to sound (plural)"
+      ],
+      7: [
+        "Innermost fetal membranes",
+        "Belief that all things have souls",
+        "Gambling establishments",
+        "People with obsessive enthusiasm",
+        "Large stately house",
+        "Relating to Freemasons",
+        "Loyal followers (yellow ones too!)",
+        "Task or assignment",
+        "Beliefs in one ultimate reality",
+        "Relating to apes (plural)"
+      ],
+      8: [
+        "Beliefs that all things have souls",
+        "Warm brown spice from bark",
+        "Large stately houses",
+        "Tasks or assignments",
+        "Native American soft leather shoe",
+        "Special event or happening",
+        "Something left out or not done"
+      ],
+      9: [
+        "Warm brown spices from bark (pangram!)",
+        "Native American soft leather shoes (pangram!)",
+        "Special events or happenings",
+        "Things left out or not done"
+      ],
+      10: [
+        "Fee paid to a salesperson; or a formal group assigned a task"
+      ],
+      11: [
+        "Fees paid to salespeople; or formal groups assigned tasks (pangram!)"
+      ]
+    }
+  },
 
 ];
 
@@ -289,7 +395,9 @@ const REWARDS = {
   6: { icon: '🍯', name: 'Honey Pots' },
   7: { icon: '🧈', name: 'Butter Pats' },
   8: { icon: '🥞', name: 'Pancake Stacks' },
-  9: { icon: '👑', name: 'Crown Jewels' }
+  9: { icon: '👑', name: 'Crown Jewels' },
+  10: { icon: '🏆', name: 'Trophies' },
+  11: { icon: '💎', name: 'Diamonds' }
 };
 
 const ACHIEVEMENTS = [
@@ -674,7 +782,7 @@ export default function LetterGriddleCafeGame() {
       const newPercentage = Math.round((newFoundWords.size / totalWords) * 100);
       updateStats(newFoundWords.size, newPercentage);
       
-      const wordLength = currentWord.length >= 9 ? 9 : (currentWord.length >= 8 ? 8 : currentWord.length);
+      const wordLength = getWordLength(currentWord);
       const reward = REWARDS[wordLength];
       setMessage(`${reward.icon} +1 ${reward.name}!`);
       setMessageType('success');
@@ -782,7 +890,7 @@ export default function LetterGriddleCafeGame() {
   // Share results function
   const shareResults = () => {
     const achievement = getCurrentAchievement();
-    const shareText = `☕ Letter Griddle Cafe\n\n${achievement.icon} ${achievement.title}\n${foundCount}/${totalWords} words (${percentage}%)\n\n🎵${getFoundByLength(4)} ☕${getFoundByLength(5)} 🍯${getFoundByLength(6)} 🧈${getFoundByLength(7)} 🥞${getFoundByLength(8)} 👑${getFoundByLength(9)}\n\n🔥 Streak: ${stats.currentStreak} days\n\nPlay at lettergriddlecafe.com`;
+    const shareText = `☕ Letter Griddle Cafe\n\n${achievement.icon} ${achievement.title}\n${foundCount}/${totalWords} words (${percentage}%)\n\n🎵${getFoundByLength(4)} ☕${getFoundByLength(5)} 🍯${getFoundByLength(6)} 🧈${getFoundByLength(7)} 🥞${getFoundByLength(8)} 👑${getFoundByLength(9)} 🏆${getFoundByLength(10)} 💎${getFoundByLength(11)}\n\n🔥 Streak: ${stats.currentStreak} days\n\nPlay at lettergriddlecafe.com`;
     
     if (navigator.share) {
       navigator.share({ text: shareText }).catch(() => {
@@ -889,7 +997,7 @@ export default function LetterGriddleCafeGame() {
                 <li style={{marginBottom: '8px'}}>☕ Words must be at least 4 letters</li>
                 <li style={{marginBottom: '8px'}}>☕ Click letters or type on keyboard</li>
                 <li style={{marginBottom: '8px'}}>☕ Press Enter to submit, Backspace to delete</li>
-                <li>☕ Collect rewards: 🎵 ☕ 🍯 🧈 🥞 👑</li>
+                <li>☕ Collect rewards: 🎵 ☕ 🍯 🧈 🥞 👑 🏆 💎</li>
               </ul>
             </div>
 
@@ -993,7 +1101,7 @@ export default function LetterGriddleCafeGame() {
       {showConfetti && (
         <div style={{position: 'fixed', inset: 0, pointerEvents: 'none', zIndex: 50}}>
           {Array.from({ length: 60 }).map((_, i) => {
-            const emojis = ['🥞', '☕', '🍯', '🧈', '👑', '⭐', '🎵'];
+            const emojis = ['🥞', '☕', '🍯', '🧈', '👑', '⭐', '🎵', '🏆', '💎'];
             return (
               <div key={i} style={{
                 position: 'absolute',
@@ -1187,9 +1295,11 @@ export default function LetterGriddleCafeGame() {
           padding: '12px',
           marginBottom: '12px'
         }}>
-          <div style={{display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: '8px', textAlign: 'center'}}>
-            {[4, 5, 6, 7, 8, 9].map(length => {
+          <div style={{display: 'grid', gridTemplateColumns: 'repeat(8, 1fr)', gap: '4px', textAlign: 'center'}}>
+            {[4, 5, 6, 7, 8, 9, 10, 11].map(length => {
               const isComplete = getFoundByLength(length) === getTotalByLength(length) && getTotalByLength(length) > 0;
+              const hasWords = getTotalByLength(length) > 0;
+              if (!hasWords) return null;
               return (
               <button
                 key={length}
@@ -1533,7 +1643,7 @@ export default function LetterGriddleCafeGame() {
               <p style={{fontSize: '14px', color: theme.textSecondary, marginTop: '4px'}}>{PREVIOUS_PUZZLE.subtitle}</p>
             </div>
             
-            {[4, 5, 6, 7, 8, 9].map(length => {
+            {[4, 5, 6, 7, 8, 9, 10, 11].map(length => {
               const words = PREVIOUS_PUZZLE.words[length] || [];
               if (words.length === 0) return null;
               return (
@@ -1576,7 +1686,7 @@ export default function LetterGriddleCafeGame() {
               <p style={{fontSize: '14px', color: theme.textSecondary, marginTop: '4px'}}>Tap a category to see hints</p>
             </div>
             
-            {[4, 5, 6, 7, 8, 9].map(length => {
+            {[4, 5, 6, 7, 8, 9, 10, 11].map(length => {
               const words = puzzleData.words[length] || [];
               const hints = puzzleData.hints?.[length] || [];
               const foundInCategory = words.filter(w => foundWords.has(w));
