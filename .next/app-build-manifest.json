@@ -6,10 +6,10 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/jukebox/page": [
+    "/game/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/jukebox/page.js"
+      "static/chunks/app/game/page.js"
     ]
   }
 }

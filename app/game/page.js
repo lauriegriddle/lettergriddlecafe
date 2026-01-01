@@ -323,7 +323,50 @@ const PUZZLES = [
       ]
     }
   },
-
+// PUZZLE: CELEBRATE
+  {
+    id: 'celebrate-puzzle',
+    subtitle: 'Party Time',
+    letters: ['C', 'L', 'B', 'R', 'T', 'E', 'A'],
+    keyLetters: ['E', 'A'],
+    totalWordCount: 104,
+    words: {
+      4: ['ABLE', 'ACER', 'ACRE', 'ALEC', 'ALEE', 'AREA', 'BABE', 'BALE', 'BARE', 'BATE', 'BEAR', 'BEAT', 'BETA', 'BRAE', 'CARE', 'EARL', 'LACE', 'LATE', 'RACE', 'RARE', 'RATE', 'REAL', 'REAR', 'TALE', 'TEAL', 'TEAR'],
+      5: ['ABLER', 'ACERB', 'ALERT', 'ALTER', 'BABEL', 'BALER', 'BARER', 'BLARE', 'BLEAR', 'BLEAT', 'BRACE', 'CABER', 'CABLE', 'CARER', 'CARET', 'CARLE', 'CATER', 'CLEAR', 'CLEAT', 'CRATE', 'EATER', 'ELATE', 'LABEL', 'LACER', 'LATER', 'RACER', 'RARER', 'RATER', 'REACT', 'TABLE', 'TRACE', 'TREAT'],
+      6: ['BALLET', 'BARBER', 'BARREL', 'BATTER', 'BATTLE', 'BEARER', 'BEATER', 'BRACER', 'CABLER', 'CALLER', 'CAREER', 'CARREL', 'CARTEL', 'CARTER', 'CATTLE', 'CELLAR', 'CEREAL', 'CLARET', 'CRATER', 'CREATE', 'LATTER', 'RATTER', 'RATTLE', 'REALER', 'RECALL', 'RECTAL', 'RELATE', 'TABLET', 'TALLER', 'TARTER', 'TRACER'],
+      7: ['BATTLER', 'BLABBER', 'BLATTER', 'BLEATER', 'CATERER', 'CLATTER', 'CLEARER', 'LABELER', 'RATTLER', 'RETREAT', 'TERRACE', 'TREACLE', 'TREATER'],
+      8: ['BEATABLE'],
+      9: ['CELEBRATE'],
+    },
+    hints: {
+      4: 'Think: capable (ABLE), land unit (ACRE), mammal (BEAR), rhythm (BEAT), fabric trim (LACE), contest (RACE), story (TALE), rip (TEAR)',
+      5: 'Think: warning (ALERT), modify (ALTER), loud sound (BLARE), arm support (BRACE), wire (CABLE), transparent (CLEAR), wooden box (CRATE), consumer (EATER), furniture (TABLE), follow path (TRACE), special food (TREAT)',
+      6: 'Think: dance form (BALLET), profession (BARBER), container (BARREL), conflict (BATTLE), breakfast food (CEREAL), moon hole (CRATER), make (CREATE), baby toy (RATTLE), underground room (CELLAR)',
+      7: 'Think: noise maker (CLATTER), outdoor patio (TERRACE), British syrup (TREACLE), snake sound maker (RATTLER)',
+      8: 'Think: can be defeated (BEATABLE)',
+      9: 'Think: party and have fun (CELEBRATE)',
+    }
+  },
+  // PUZZLE: CUPCAKES
+  {
+    id: 'cupcakes-puzzle',
+    subtitle: 'Sweet Treats',
+    letters: ['C', 'U', 'P', 'A', 'K', 'E', 'S'],
+    keyLetters: ['S', 'E'],
+    totalWordCount: 35,
+    words: {
+      4: ['APSE', 'CASE', 'CUES', 'EASE', 'EKES', 'PECS', 'SEEK', 'SEEP', 'SEES', 'SPEC', 'SUES', 'USES'],
+      5: ['CAKES', 'CAPES', 'CASES', 'CAUSE', 'CEASE', 'EASES', 'KEEPS', 'PECKS', 'PEEKS', 'PUKES', 'SEEKS', 'SEEPS', 'SPEAK', 'SPECK', 'SPECS'],
+      6: ['CAUSES', 'CEASES', 'CUSSES', 'ESCAPE', 'PUSSES', 'SPEAKS', 'SPECKS'],
+      7: ['ESCAPES'],
+    },
+    hints: {
+      4: 'Think: church area (APSE), container (CASE), signals (CUES), comfort (EASE), chest muscles (PECS), look for (SEEK), leak slowly (SEEP), views (SEES), specification (SPEC), takes to court (SUES), employs (USES)',
+      5: 'Think: birthday treats (CAKES), superhero garments (CAPES), containers (CASES), reason (CAUSE), stop (CEASE), retains (KEEPS), bird hits (PECKS), quick looks (PEEKS), talks (SPEAK), tiny dot (SPECK)',
+      6: 'Think: reasons (CAUSES), stops (CEASES), flee (ESCAPE), talks (SPEAKS), tiny dots (SPECKS)',
+      7: 'Think: flees from danger (ESCAPES)',
+    }
+  },
 ];
 
 // Previous day's puzzle for answer key - dynamically gets previous puzzle
@@ -1691,7 +1734,7 @@ export default function LetterGriddleCafeGame() {
               const hints = puzzleData.hints?.[length] || [];
               const foundInCategory = words.filter(w => foundWords.has(w));
               if (words.length === 0) return null;
-              
+              CINNAMONS
               return (
                 <details key={length} style={{marginBottom: '12px'}}>
                   <summary style={{
