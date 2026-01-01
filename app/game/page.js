@@ -1734,7 +1734,6 @@ export default function LetterGriddleCafeGame() {
               const hints = puzzleData.hints?.[length] || [];
               const foundInCategory = words.filter(w => foundWords.has(w));
               if (words.length === 0) return null;
-              CINNAMONS
               return (
                 <details key={length} style={{marginBottom: '12px'}}>
                   <summary style={{
