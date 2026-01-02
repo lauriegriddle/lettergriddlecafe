@@ -1198,7 +1198,7 @@ export default function JukeboxGame() {
             }
          
       `}</style>
-      <div className="jukebox-container">
+      <div className="jukebox-container" style={{ touchAction: 'manipulation', overscrollBehavior: 'none', WebkitOverflowScrolling: 'touch' }}>
         <div className="glow-orb glow-pink"></div>
         <div className="glow-orb glow-cyan"></div>
         <div className="glow-orb glow-amber"></div>
@@ -1337,7 +1337,7 @@ export default function JukeboxGame() {
                           e.stopPropagation();
                           handleSlotClick(wordIdx, letterIdx);
                         }}
-                        style={{ cursor: letterIdx === 0 || isComplete ? 'default' : 'pointer' }}
+                        style={{ cursor: letterIdx === 0 || isComplete ? 'default' : 'pointer', touchAction: 'manipulation', WebkitTapHighlightColor: 'transparent', userSelect: 'none' }}
                       >
                         {letter}
                       </div>
@@ -1354,16 +1354,17 @@ export default function JukeboxGame() {
                   <div className="letter-pool-header">
                     <span>🎹</span>
                     <span>Available Letters</span>
-                    <button className="shuffle-btn" onClick={shuffleLetters}>🔀</button>
+                    <button className="shuffle-btn" onClick={shuffleLetters} style={{ touchAction: 'manipulation', WebkitTapHighlightColor: 'transparent' }}>🔀</button>
                   </div>
                   <div className="letter-pool-tiles">
                     {availableLetters.length > 0 ? (
                       availableLetters.map((letter, i) => (
-                      <div 
-                        key={i} 
-                        className={`pool-tile ${selectedLetter === letter && selectedLetterIndex === i ? 'selected' : ''}`}
-                        onClick={() => handlePoolLetterClick(letter, i)}
-                      >
+                      <div
+  key={i}
+  className={`pool-tile ${selectedLetter === letter && selectedLetterIndex === i ? 'selected' : ''}`}
+  onClick={() => handlePoolLetterClick(letter, i)}
+  style={{ touchAction: 'manipulation', WebkitTapHighlightColor: 'transparent', userSelect: 'none' }}
+>
                         {letter}
                       </div>
                     ))
@@ -1373,9 +1374,9 @@ export default function JukeboxGame() {
                   </div>
                   <p className="letter-pool-hint">Tap a letter, then tap where to place it • Or type on keyboard</p>
                   {!allComplete && (
-                <button className="check-btn" onClick={checkWord}>
-                  ✓ Check Answer
-                </button>
+                <button className="check-btn" onClick={checkWord} style={{ touchAction: 'manipulation', WebkitTapHighlightColor: 'transparent' }}>
+  ✓ Check Answer
+</button>
               )}
                 </div>
               </div>
@@ -1386,11 +1387,11 @@ export default function JukeboxGame() {
                 <h3>Track Complete!</h3>
                 <div className="chain-display">{currentPuzzle.words.join(' → ')}</div>
                 <div className="completion-buttons">
-  <button className="btn-secondary" onClick={handleShare}>
-    {shareStatus === 'copied' ? '✓ Copied!' : '📤 Share'}
-  </button>
-  <button className="btn-secondary" onClick={() => startPuzzle(currentPuzzleIndex)}>🔄 Play Again</button>
-  <button className="btn-primary" onClick={() => setCurrentView('menu')}>🎵 More Tracks</button>
+  <button className="btn-secondary" onClick={handleShare} style={{ touchAction: 'manipulation', WebkitTapHighlightColor: 'transparent' }}>
+  {shareStatus === 'copied' ? '✓ Copied!' : '📤 Share'}
+</button>
+  <button className="btn-secondary" onClick={() => startPuzzle(currentPuzzleIndex)} style={{ touchAction: 'manipulation', WebkitTapHighlightColor: 'transparent' }}>🔄 Play Again</button>
+  <button className="btn-primary" onClick={() => setCurrentView('menu')} style={{ touchAction: 'manipulation', WebkitTapHighlightColor: 'transparent' }}>🎵 More Tracks</button>
 </div>
               </div>
             )}
