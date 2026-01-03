@@ -173,6 +173,20 @@ const puzzles = {
   }
 };
 
+// Mobile touch optimization styles - reusable objects
+const touchOptimizationContainer = {
+  touchAction: 'manipulation',
+  overscrollBehavior: 'none',
+  WebkitOverflowScrolling: 'touch'
+};
+
+const touchOptimizationInteractive = {
+  touchAction: 'manipulation',
+  userSelect: 'none',
+  WebkitUserSelect: 'none',
+  WebkitTapHighlightColor: 'transparent'
+};
+
 // Generate letters for a puzzle (excluding revealed letters)
 function generateLetterPool(words, revealed) {
   const allLetters = words.join('').split('');
@@ -412,7 +426,7 @@ const [shareStatus, setShareStatus] = useState(null);
   const allCompleted = completed.every(c => c);
 
   return (
-    <div className="puzzle-container">
+    <div className="puzzle-container" style={touchOptimizationContainer}>
       <div className="puzzle-header">
         <span className="puzzle-icon">☕</span>
         <span className="puzzle-title">Letter Griddle</span>
@@ -428,6 +442,7 @@ const [shareStatus, setShareStatus] = useState(null);
             key={wordIndex} 
             className={`word-row ${completed[wordIndex] ? 'completed' : ''} ${activeWordIndex === wordIndex && !completed[wordIndex] ? 'active' : ''}`}
             onClick={() => !completed[wordIndex] && setActiveWordIndex(wordIndex)}
+            style={touchOptimizationInteractive}
           >
             {revealedHints[wordIndex] && !completed[wordIndex] && (
               <div className="hint-text">{puzzle.hints[wordIndex]}</div>
@@ -442,6 +457,7 @@ const [shareStatus, setShareStatus] = useState(null);
                       key={slotIndex}
                       className={`letter-slot ${guess ? 'filled' : ''} ${guess?.revealed ? 'revealed' : ''} ${completed[wordIndex] ? 'correct' : ''}`}
                       onClick={(e) => { e.stopPropagation(); handleSlotClick(wordIndex, slotIndex); }}
+                      style={touchOptimizationInteractive}
                     >
                       {guess?.letter || ''}
                     </button>
@@ -452,6 +468,7 @@ const [shareStatus, setShareStatus] = useState(null);
                 <button 
                   className="hint-btn"
                   onClick={(e) => { e.stopPropagation(); revealHint(wordIndex); }}
+                  style={touchOptimizationInteractive}
                 >
                   Hint
                 </button>
@@ -477,12 +494,17 @@ const [shareStatus, setShareStatus] = useState(null);
               key={index}
               className={`pool-letter ${selectedLetter?.poolIndex === index ? 'selected' : ''}`}
               onClick={() => handleLetterClick(letter, index)}
+              style={touchOptimizationInteractive}
             >
               {letter}
             </button>
           ))}
         </div>
-        <button className="shuffle-btn" onClick={shuffleLetters}>
+        <button 
+          className="shuffle-btn" 
+          onClick={shuffleLetters}
+          style={touchOptimizationInteractive}
+        >
           🔀 Shuffle
         </button>
       </div>
@@ -496,7 +518,11 @@ const [shareStatus, setShareStatus] = useState(null);
       </div>
 
       {/* Reset button */}
-      <button className="reset-btn" onClick={resetPuzzle}>
+      <button 
+        className="reset-btn" 
+        onClick={resetPuzzle}
+        style={touchOptimizationInteractive}
+      >
         🔄 Reset Puzzle
       </button>
 
@@ -522,10 +548,18 @@ const [shareStatus, setShareStatus] = useState(null);
             <h3>Delicious!</h3>
             <p>You solved the puzzle!</p>
             <div className="completion-buttons">
-            <button className="completion-btn share" onClick={handleShare}>
+            <button 
+              className="completion-btn share" 
+              onClick={handleShare}
+              style={touchOptimizationInteractive}
+            >
                 {shareStatus === 'copied' ? '✓ Copied!' : '📤 Share'}
               </button>
-              <button className="completion-btn primary" onClick={resetPuzzle}>
+              <button 
+                className="completion-btn primary" 
+                onClick={resetPuzzle}
+                style={touchOptimizationInteractive}
+              >
                 🔄 Play Again
               </button>
             </div>
@@ -543,6 +577,7 @@ function StoryCard({ story, onClick }) {
       className={`story-card ${story.locked ? 'story-card-locked' : ''}`}
       onClick={story.locked ? undefined : onClick}
       disabled={story.locked}
+      style={touchOptimizationInteractive}
     >
       <h3 className="story-card-title">{story.title}</h3>
       {story.locked ? (
@@ -557,8 +592,12 @@ function StoryCard({ story, onClick }) {
 // Story Detail Component
 function StoryDetail({ story, puzzle, onBack }) {
   return (
-    <div className="story-detail">
-      <button className="back-btn" onClick={onBack}>
+    <div className="story-detail" style={touchOptimizationContainer}>
+      <button 
+        className="back-btn" 
+        onClick={onBack}
+        style={touchOptimizationInteractive}
+      >
         ← Back to Stories
       </button>
 
@@ -572,7 +611,13 @@ function StoryDetail({ story, puzzle, onBack }) {
             <div className="story-closing">
               <p>{story.closing}</p>
               {story.closingLink && (
-                <a href={story.closingLink} className="story-closing-link">{story.closingLinkText}</a>
+                <a 
+                  href={story.closingLink} 
+                  className="story-closing-link"
+                  style={touchOptimizationInteractive}
+                >
+                  {story.closingLinkText}
+                </a>
               )}
             </div>
           </div>
@@ -597,7 +642,10 @@ export default function LetterGriddleCafe() {
   const [selectedStory, setSelectedStory] = useState(null);
 
   return (
-    <div className="cafe-app">
+    <div 
+      className="cafe-app"
+      style={touchOptimizationContainer}
+    >
       {/* Header */}
       <header className="cafe-header">
         <div className="header-content">
