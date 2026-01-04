@@ -106,7 +106,41 @@ const stories = [
     closing: 'kerflufflegrid.com is always accessible, 24/7, now or whenever.',
     closingLink: 'https://kerflufflegrid.com',
     closingLinkText: 'Play Kerflufflegrid 🌀'
-  }
+  },
+  {
+  id: 'new-year-retro-style',
+  title: 'New Year, Retro Style',
+  subtitle: '👟 Now Available',
+  date: 'January 2026',
+  locked: false,
+  content: [
+    'Sarah unmutes her microphone, "Laurel, you were going to ask us something special for our final question."',
+    '"Laurel, you said we should jot down activities and styles enjoyed over the years that have been trendy," Jennie reminds, then confirms with Isaac that he\'s always in style.',
+    '"Crew, grab your notes!" Mr. and Mrs Lindsay unmute and chime in unison.',
+    '"I\'ve been working on this one all day," Taylor B. enthusiastically shares.',
+    '"Please mute your microphones so Laurel can ask us the question," Josephine gently persuades.',
+    'Laurel grabs her notepad and reads, "Letter Griddle gamers, what\'s an item that you\'d like to see in style in 2026? Type your answers along with an emoji in the chat!"',
+    'Noticing the crew members each holding up what looks to be their own extensively written lists, she adds, "Enter in the chat as many as you can in the next minute. Go!"',
+    'The Zoom chat starts moving at a fast pace.',
+    'Penny loafers!👞 Z-cars!🏎️ Flip phones!📱 Feathered hair💇‍♀️ Malt shops!🍨 Fidget spinners!😵‍💫 Roller skating!🛼 Saddle shoes👟 Taco Bell Chihuahua!🐾 Music stores!💿 Bell bottoms!🔔 Penny candy! 🍬🍭🍫',
+    'Laurel pauses the feverishly scrolling chat, "Gamers, 10 seconds on the clock."',
+    'The chat reopens and the fast-paced scroll continues.',
+    'Actual cameras! 📸 Disco dancing!🕺 Fancy clothes!👗 Cool sunglasses!🕶️ Going camping! ⛺️ Hourglasses!⏳ Swimming lessons! 🤿 Naps! 💤 Real phones!📞',
+    '"Three, two, one, ring-a-ding!"',
+    '"Crew, you\'ve given this so much thought!" Laurel unmutes, as the crew members read the chat responses.',
+    'Unmuting, Sarah asks, "Laurel, are the responses in the chat g-…"',
+    '"Giving me an idea for another Letter Griddle game?" Laurel finishes.',
+    '"Well, I always had a pair of saddle shoes," Josephine unmutes and shares.',
+    '"You all know I still wear cool sunglasses," Taylor B. joins in the conversation.',
+    '"We enjoy malts, all the years," Mr. Lindsay offers.',
+    '"Remember, what is trendy today, can be vintage tomorrow," Mrs. Lindsay explains.',
+    '"The Taco Bell chihuahua was a trend?" Jennie ponders as Isaac offers two yaps.',
+    '"Crew, that concludes our Zoom trivia night. Let\'s put on our saddle shoes and meet at the malt shop!"'
+  ],
+  closing: 'Join us at Saddle Shoes for more malt shop memories.',
+  closingLink: 'https://lettergriddle.com/saddleshoes',
+  closingLinkText: 'Play Saddle Shoes 👟'
+}
 ];
 
 // Puzzle data - expandable for future puzzles
@@ -170,7 +204,28 @@ const puzzles = {
       { pos: 3, letter: 'S' }
     ],
     didYouKnow: 'Elvis Presley\'s "It\'s Now or Never" was based on the Italian song "O Sole Mio" and became one of his best-selling singles, reaching #1 in multiple countries in 1960.'
-  }
+  },
+  'new-year-retro-style': {
+  id: 'retro-style',
+  title: 'Retro Style',
+  category: 'Retro Style',
+  words: ['MALT', 'PHONE', 'SADDLE', 'VINTAGE', 'REMEMBER'],
+  hints: [
+    'Mr. Lindsay\'s favorite sip at the shop',
+    '"Real" or "flip," the crew wants them back! 📱',
+    'Josephine\'s classic two-tone footwear',
+    'Style from years past, now trendy again',
+    'What the crew does when sharing retro favorites'
+  ],
+  revealed: [
+    { pos: 1, letter: 'A' },
+    { pos: 2, letter: 'O' },
+    { pos: 2, letter: 'D' },
+    { pos: 2, letter: 'N' },
+    { pos: 2, letter: 'M' }
+  ],
+  didYouKnow: 'Saddle shoes were invented in 1906 as "gym oxfords" for indoor sports. By the 1930s, they became everyday student wear, perfect for trips to the malt shop, those iconic 1940s-60s teen hangouts known for jukeboxes, spinning stools, and malted milkshakes!'
+}
 };
 
 // Mobile touch optimization styles - reusable objects
