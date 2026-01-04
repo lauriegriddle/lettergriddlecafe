@@ -115,7 +115,7 @@ const stories = [
   locked: false,
   content: [
     'Sarah unmutes her microphone, "Laurel, you were going to ask us something special for our final question."',
-    '"Laurel, you said we should jot down activities and styles enjoyed over the years that have been trendy," Jennie reminds, then confirms with Isaac that he\'s always in style.',
+    '"Laurel, you said we should jot down activities and styles enjoyed over the years that have been trendy," Jennie reminds, then muting confirms with Isaac that he\'s always in style.',
     '"Crew, grab your notes!" Mr. and Mrs Lindsay unmute and chime in unison.',
     '"I\'ve been working on this one all day," Taylor B. enthusiastically shares.',
     '"Please mute your microphones so Laurel can ask us the question," Josephine gently persuades.',
