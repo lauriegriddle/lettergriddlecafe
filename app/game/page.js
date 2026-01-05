@@ -590,6 +590,412 @@ const PUZZLES = [
       ]
     }
   },
+  // PUZZLE: CASHMERE
+  {
+    id: 'cashmere-puzzle',
+    subtitle: 'Cozy and Warm',
+    letters: ['C', 'A', 'S', 'H', 'M', 'E', 'R'],
+    keyLetters: ['E', 'A'],
+    totalWordCount: 55,
+    words: {
+      4: ['ACHE', 'ACRE', 'CAME', 'CARE', 'CASE', 'EACH', 'HAEM', 'HARE', 'MACE', 'MARE', 'RACE', 'REAM', 'SEAM', 'SEAR', 'SHEA'],
+      5: ['ACHES', 'ACMES', 'ACRES', 'CARES', 'CHARE', 'CHASE', 'CREAM', 'HAREM', 'HARES', 'MACES', 'MARES', 'REACH', 'REAMS', 'SCARE', 'SEAMS', 'SHAME', 'SHARE', 'SHEAR', 'SMEAR'],
+      6: ['ARCHES', 'CHASER', 'CREAMS', 'ESCHAR', 'HAREMS', 'MASHER', 'SCREAM', 'SCHEMA', 'SEARCH', 'SHAMES', 'SHARES', 'SHEARS', 'SMEARS'],
+      7: ['CHASERS', 'MARCHES', 'MASHERS', 'REMATCH', 'SCHEMAS', 'SCREAMS', 'SMASHER'],
+      8: ['CASHMERE']
+    },
+    hints: {
+      4: [
+        "Dull persistent pain",
+        "Unit of land measurement",
+        "Arrived; past tense of come",
+        "Feel concern; look after",
+        "Container; situation",
+        "Every one separately",
+        "Iron compound in blood",
+        "Long-eared rabbit relative",
+        "Medieval spiked weapon",
+        "Female horse",
+        "Speed competition",
+        "500 sheets of paper",
+        "Line where fabric is sewn",
+        "Burn the surface",
+        "Tree with nuts for butter"
+      ],
+      5: [
+        "Dull persistent pains",
+        "Highest points; peaks",
+        "Land measurement units",
+        "Feels concern for",
+        "Pursue eagerly (archaic)",
+        "Run after to catch",
+        "Dairy product; best part",
+        "Group of wives",
+        "Rabbit relatives",
+        "Medieval weapons",
+        "Female horses",
+        "Extend arm to grab",
+        "Packs of 500 sheets",
+        "Frighten away",
+        "Sewn lines in fabric",
+        "Feeling of embarrassment",
+        "Portion given to others",
+        "Cut wool from sheep",
+        "Spread messily"
+      ],
+      6: [
+        "Curved doorways",
+        "One who pursues",
+        "Dairy products",
+        "Burn scab or crust",
+        "Groups of wives",
+        "One who mashes",
+        "Loud piercing cry",
+        "Diagram; plan",
+        "Look thoroughly",
+        "Causes embarrassment",
+        "Portions; parts",
+        "Wool cutting tools",
+        "Messy spreads"
+      ],
+      7: [
+        "Those who pursue",
+        "Walking protests; military moves",
+        "Those who mash",
+        "Play a match again",
+        "Diagrams; plans",
+        "Loud piercing cries",
+        "One who breaks things"
+      ],
+      8: [
+        "Luxuriously soft wool from goats (pangram!)"
+      ]
+    }
+  },
+
+  // PUZZLE: KINDNESS
+  {
+    id: 'kindness-puzzle',
+    subtitle: 'Acts of Care',
+    letters: ['K', 'I', 'N', 'D', 'E', 'S'],
+    keyLetters: ['N', 'I'],
+    totalWordCount: 36,
+    words: {
+      4: ['DINE', 'DINK', 'DINS', 'INKS', 'INNS', 'KIND', 'KINE', 'KINS', 'NIDE', 'NINE', 'SINE', 'SINK', 'SKIN'],
+      5: ['DINED', 'DINES', 'DINKS', 'INDIE', 'KINDS', 'KINES', 'NINES', 'SINES', 'SINKS', 'SKEIN', 'SKINS', 'SNIDE'],
+      6: ['DIKING', 'DINNED', 'INDIES', 'KINKED', 'SINNED', 'SKEINS'],
+      7: ['DINKIES', 'INKIEST', 'SKINNED'],
+      8: ['KINDNESS']
+    },
+    hints: {
+      4: [
+        "Eat an evening meal",
+        "Small dent; tennis term",
+        "Loud noises",
+        "Pen fluids",
+        "Hotels; pubs",
+        "Type or sort; nice",
+        "Archaic word for cows",
+        "Family members",
+        "Nest of pheasants",
+        "Number after eight",
+        "Trigonometry function",
+        "Basin for washing dishes",
+        "Outer body covering"
+      ],
+      5: [
+        "Ate dinner",
+        "Eats evening meals",
+        "Small dents",
+        "Independent music or film",
+        "Types; sorts",
+        "Archaic for cows (plural)",
+        "Number 9 multiples",
+        "Trig functions",
+        "Wash basins",
+        "Bundle of yarn",
+        "Outer coverings",
+        "Scornfully mocking"
+      ],
+      6: [
+        "Building an embankment",
+        "Rang repeatedly",
+        "Independent films (plural)",
+        "Twisted or tangled",
+        "Did wrong; transgressed",
+        "Bundles of yarn"
+      ],
+      7: [
+        "Small cute things",
+        "Most like ink",
+        "Removed the hide"
+      ],
+      8: [
+        "Quality of being friendly and generous (pangram!)"
+      ]
+    }
+  },
+
+  // PUZZLE: SWEATER  
+  {
+    id: 'sweater-puzzle',
+    subtitle: 'Knitwear',
+    letters: ['S', 'W', 'E', 'A', 'T', 'R'],
+    keyLetters: ['E', 'A'],
+    totalWordCount: 58,
+    words: {
+      4: ['AREA', 'ARES', 'EARS', 'EASE', 'EAST', 'EATS', 'ERAS', 'ETAS', 'RATE', 'SATE', 'SEAR', 'SEAT', 'SERA', 'TARE', 'TEAR', 'TEAS', 'WARE', 'WEAR'],
+      5: ['AREAS', 'ASTER', 'EATER', 'ERASE', 'RATES', 'RESAT', 'SATED', 'SEARS', 'SEATS', 'SETAE', 'STARE', 'SWEAR', 'TARES', 'TEARS', 'TEASE', 'WARES', 'WASTE', 'WATER', 'WEARS'],
+      6: ['EATERS', 'ERASER', 'ERASES', 'RAREST', 'SEATER', 'STARER', 'SWEARS', 'TEASER', 'TEASES', 'WASTER', 'WASTES', 'WATERS'],
+      7: ['SEATERS', 'STARERS', 'SWEARER', 'SWEATER', 'TEASERS', 'WASTERS'],
+      8: ['SWEATERS', 'SWEARERS']
+    },
+    hints: {
+      4: [
+        "Region; space",
+        "Greek god of war (plural)",
+        "Hearing organs",
+        "Freedom from difficulty",
+        "Direction of sunrise",
+        "Consumes food",
+        "Historical time periods",
+        "Greek letters",
+        "Speed; price per unit",
+        "Satisfy fully",
+        "Burn surface; search",
+        "Place to sit",
+        "Blood fluid (plural)",
+        "Weed among grain",
+        "Rip; eye drop",
+        "Hot beverages",
+        "Goods; merchandise",
+        "Have on one's body"
+      ],
+      5: [
+        "Regions; spaces",
+        "Star-shaped flower",
+        "One who consumes food",
+        "Remove writing",
+        "Speeds; prices",
+        "Sat again",
+        "Fully satisfied",
+        "Burns surfaces",
+        "Places to sit",
+        "Bristle-like structures",
+        "Look fixedly",
+        "Declare under oath",
+        "Weeds among grain",
+        "Rips; eye drops",
+        "Make fun of playfully",
+        "Merchandise items",
+        "Squander; trash",
+        "H2O liquid",
+        "Has on one's body"
+      ],
+      6: [
+        "Those who consume food",
+        "Pencil mark remover",
+        "Rubs out writing",
+        "Most uncommon",
+        "One who seats people",
+        "One who gazes fixedly",
+        "Declares under oath",
+        "One who mocks playfully",
+        "Mocks playfully",
+        "One who squanders",
+        "Squanders; trash bins",
+        "H2O; irrigates"
+      ],
+      7: [
+        "Those who seat people",
+        "Those who gaze fixedly",
+        "One who swears oaths",
+        "Knitted garment for upper body (pangram!)",
+        "Those who mock playfully",
+        "Those who squander"
+      ],
+      8: [
+        "Knitted garments (pangram plural!)",
+        "Those who swear oaths"
+      ]
+    }
+  },
+
+  // PUZZLE: DRAWING
+  {
+    id: 'drawing-puzzle',
+    subtitle: 'Art Class',
+    letters: ['D', 'R', 'A', 'W', 'I', 'N', 'G'],
+    keyLetters: ['A', 'N'],
+    totalWordCount: 31,
+    words: {
+      4: ['ANNA', 'DANG', 'DARN', 'GAIN', 'GNAW', 'GRAN', 'NAAN', 'RAIN', 'RAND', 'RANG', 'RANI', 'WAIN', 'WAND', 'WARN'],
+      5: ['DINAR', 'DRAIN', 'GRAND', 'NADIR'],
+      6: ['AWNING', 'GRADIN', 'RADIAN', 'WADING', 'DRAINS'],
+      7: ['DARNING', 'DRAWING', 'WARDING', 'GRADINS', 'RADIANS', 'AWNINGS']
+    },
+    hints: {
+      4: [
+        "Former Indian coin",
+        "Mild exclamation",
+        "Mend a hole; mild curse",
+        "Obtain; profit",
+        "Chew persistently",
+        "Informal for grandmother",
+        "Indian flatbread",
+        "Water from clouds",
+        "South African currency",
+        "Made a bell sound",
+        "Indian queen",
+        "Large farm wagon",
+        "Magician's stick",
+        "Alert to danger"
+      ],
+      5: [
+        "Middle Eastern currency",
+        "Remove liquid; empty",
+        "Large and impressive",
+        "Lowest point"
+      ],
+      6: [
+        "Roof-like shade cover",
+        "Rising tier of seats",
+        "Angle measurement unit",
+        "Walking in shallow water",
+        "Removes liquid"
+      ],
+      7: [
+        "Mending holes in fabric",
+        "Artwork with pencil or pen (pangram!)",
+        "Guarding; protecting",
+        "Rising tiers of seats",
+        "Angle measurement units",
+        "Roof-like shade covers"
+      ]
+    }
+  },
+
+  // PUZZLE: JACKETS
+  {
+    id: 'jackets-puzzle',
+    subtitle: 'Outerwear',
+    letters: ['J', 'A', 'C', 'K', 'E', 'T', 'S'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 34,
+    words: {
+      4: ['ACES', 'CAKE', 'CASE', 'CATE', 'EASE', 'EATS', 'SAKE', 'SATE', 'SEAT', 'TAKE', 'TEAK', 'TEAS'],
+      5: ['CAKES', 'CASES', 'CASTE', 'CATES', 'EASES', 'SAKES', 'SEATS', 'SKATE', 'STAKE', 'STEAK', 'TAKES', 'TEAKS', 'TEASE'],
+      6: ['CASKET', 'CASTES', 'JACKET', 'SKATES', 'STAKES', 'STEAKS', 'TEASES'],
+      7: ['CASKETS', 'JACKETS']
+    },
+    hints: {
+      4: [
+        "High cards; experts",
+        "Dessert with frosting",
+        "Container; situation",
+        "Choice food (archaic)",
+        "Comfort; freedom from difficulty",
+        "Consumes food",
+        "Japanese rice wine",
+        "Satisfy fully",
+        "Place to sit",
+        "Grab; capture",
+        "Tropical hardwood tree",
+        "Hot beverages"
+      ],
+      5: [
+        "Desserts with frosting",
+        "Containers; situations",
+        "Hindu social class",
+        "Choice foods (archaic)",
+        "Comforts; relieves",
+        "Japanese wines",
+        "Places to sit",
+        "Glide on ice",
+        "Pointed post; wager",
+        "Cut of beef",
+        "Grabs; captures",
+        "Tropical hardwoods",
+        "Mock playfully"
+      ],
+      6: [
+        "Burial box",
+        "Social classes",
+        "Short coat (uses J!)",
+        "Glides on ice",
+        "Pointed posts; wagers",
+        "Cuts of beef",
+        "Mocks playfully"
+      ],
+      7: [
+        "Burial boxes",
+        "Short coats worn outdoors (pangram!)"
+      ]
+    }
+  },
+
+  // PUZZLE: PANCAKES 🥞
+  {
+    id: 'pancakes-puzzle',
+    subtitle: 'Breakfast at the Cafe',
+    letters: ['P', 'A', 'N', 'C', 'K', 'E', 'S'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 35,
+    words: {
+      4: ['ACES', 'ACNE', 'APES', 'CAKE', 'CANE', 'CAPE', 'CASE', 'EASE', 'NAPE', 'PACE', 'PANE', 'PEAK', 'PEAS', 'SAKE', 'SANE'],
+      5: ['ACNES', 'CAKES', 'CANES', 'CAPES', 'CASES', 'EASES', 'NAPES', 'PACES', 'PANES', 'PECAN', 'PEAKS', 'SNEAK', 'SPEAK'],
+      6: ['CANAPE', 'PECANS', 'SNEAKS', 'SPEAKS'],
+      7: ['CANAPES', 'PANCAKE'],
+      8: ['PANCAKES']
+    },
+    hints: {
+      4: [
+        "High cards; experts",
+        "Skin condition with pimples",
+        "Primates; mimics",
+        "Dessert with frosting",
+        "Walking stick; sugar plant",
+        "Superhero garment",
+        "Container; situation",
+        "Comfort; freedom from difficulty",
+        "Back of the neck",
+        "Speed of walking",
+        "Window glass section",
+        "Mountain top",
+        "Green vegetables in pods",
+        "Japanese rice wine",
+        "Mentally healthy; reasonable"
+      ],
+      5: [
+        "Skin conditions",
+        "Desserts with frosting",
+        "Walking sticks",
+        "Superhero garments",
+        "Containers; situations",
+        "Comforts; relieves",
+        "Backs of necks",
+        "Speeds; keeps up with",
+        "Window sections",
+        "Type of nut",
+        "Mountain tops",
+        "Move quietly; creep",
+        "Talk; communicate"
+      ],
+      6: [
+        "Small appetizer on bread",
+        "Types of tree nuts",
+        "Moves quietly",
+        "Talks; communicates"
+      ],
+      7: [
+        "Small appetizers on bread",
+        "Flat breakfast cake on griddle"
+      ],
+      8: [
+        "Flat breakfast cakes - our specialty! (pangram!) 🥞"
+      ]
+    }
+  },
 ];
 
 // Get yesterday's puzzle dynamically based on rotation
