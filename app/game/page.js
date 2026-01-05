@@ -521,27 +521,98 @@ const PUZZLES = [
       7: [
         "Flees from danger; getaways (pangram!)"
       ]
+    },
+  },
+  // PUZZLE: BOOKENDS
+  {
+    id: 'bookends-puzzle',
+    subtitle: 'On the Shelves',
+    letters: ['B', 'K', 'N', 'D', 'S', 'O', 'E'],
+    keyLetters: ['O', 'N'],
+    totalWordCount: 40,
+    words: {
+      4: ['BONE', 'BONK', 'BOON', 'DONE', 'DONS', 'EBON', 'EONS', 'KNOB', 'NODE', 'NODS', 'NOSE', 'ONES', 'SNOB', 'SONE', 'SONS'],
+      5: ['BONED', 'BONES', 'BONKS', 'BOONS', 'EBONS', 'KENDO', 'KNOBS', 'NODES', 'NOSED', 'NOSES', 'SNOBS', 'SNOEK', 'SNOOD', 'SONDE'],
+      6: ['BONKED', 'DONEES', 'DONNED', 'KENDOS', 'SNOODS', 'SNOOKS', 'SONDES'],
+      7: ['BOOKEND', 'DEBONES', 'SNOOKED'],
+      8: ['BOOKENDS'],
+    },
+    hints: {
+      4: [
+        "Skeletal part; study hard",
+        "Hit on the head (informal)",
+        "Blessing; benefit",
+        "Finished; completed",
+        "Puts on clothing",
+        "Dark black wood color",
+        "Long periods of time",
+        "Round door handle",
+        "Connection point; lump",
+        "Head bobs; agrees silently",
+        "Facial feature for smelling",
+        "Single units; numbers",
+        "Person who acts superior",
+        "Unit of loudness",
+        "Male children"
+      ],
+      5: [
+        "Removed bones from fish",
+        "Skeletal parts",
+        "Hits on the head",
+        "Blessings; benefits",
+        "Dark black woods",
+        "Japanese sword fighting art",
+        "Round door handles",
+        "Connection points",
+        "Detected by smelling",
+        "Facial features for smelling",
+        "People who act superior",
+        "Type of fish (South African)",
+        "Hair net worn at back of head",
+        "Device to measure ocean depth"
+      ],
+      6: [
+        "Hit on the head (past tense)",
+        "Recipients of donations",
+        "Put on (clothing, past tense)",
+        "Japanese sword fighting arts",
+        "Hair nets worn at back of head",
+        "Billiard shots; nosy people",
+        "Ocean depth measuring devices"
+      ],
+      7: [
+        "Decorative item holding books upright",
+        "Removes bones from meat",
+        "Made a billiard shot"
+      ],
+      8: [
+        "Decorative items that hold books upright on a shelf (pangram!)"
+      ]
     }
   },
 ];
 
-// Previous day's puzzle for answer key - dynamically gets previous puzzle
-// For now, showing GRIDDLES as the previous puzzle
-const PREVIOUS_PUZZLE = {
-  id: 'griddles-puzzle',
-  subtitle: 'Yesterday\'s Puzzle',
-  letters: ['G', 'R', 'I', 'D', 'L', 'E', 'S'],
-  keyLetters: ['G', 'R'],
-  words: {
-    4: ['DREG', 'GIRD', 'GIRL', 'GRID', 'RIGS'],
-    5: ['DIRGE', 'DREGS', 'EDGER', 'GIRDS', 'GIRLS', 'GREED', 'GRIDE', 'GRIDS', 'GRILL', 'LIGER', 'RIDGE', 'SERGE'],
-    6: ['DIGGER', 'DIRGES', 'DREDGE', 'EDGERS','EDGIER', 'EGGIER', 'EGRESS', 'GILDER', 'GIRDED', 'GIRDLE', 'GIRLIE', 'GLIDER', 'GREEDS', 'GRIDES', 'GRILLE', 'GRILLS', 'GRILSE', 'LEDGER', 'LIGERS', 'REGILD', 'RIDGED', 'RIDGES', 'RIGGED', 'RIGGER', 'SERGED', 'SERGER', 'SERGES', 'SIEGER'],
-    7: ['DIGGERS', 'DIGRESS', 'DREDGED', 'DREDGES', 'GILDERS', 'GIRDLES', 'GIRLIES', 'GLIDERS', 'GRIDDED', 'GRIDDLE', 'GRILLED', 'GRILLER', 'GRILLES', 'LEDGERS', 'REGILDS', 'REGRESS','RIGGERS', 'SERGERS', 'SIEGERS'],
-    8: ['EGRESSES', 'GREEDIER', 'GRIDDLED', 'GRIDDLER', 'GRIDDLES', 'GRILLERS'],
-    9: ['DIGRESSED', 'DIGRESSES', 'GRIDDLERS', 'REGRESSED', 'REGRESSES']
+// Get yesterday's puzzle dynamically based on rotation
+function getYesterdaysPuzzle() {
+  const ANCHOR_DATE = new Date('2026-01-05T07:00:00-05:00');
+  const now = new Date();
+  const estTime = new Date(now.toLocaleString('en-US', { timeZone: 'America/New_York' }));
+  const hour = estTime.getHours();
+  const puzzleDate = new Date(estTime);
+  
+  if (hour < 7) {
+    puzzleDate.setDate(puzzleDate.getDate() - 1);
   }
-};
-
+  puzzleDate.setHours(7, 0, 0, 0);
+  
+  const daysSinceAnchor = Math.floor((puzzleDate - ANCHOR_DATE) / (1000 * 60 * 60 * 24));
+  const todayIndex = Math.max(0, daysSinceAnchor) % PUZZLES.length;
+  
+  // Get PREVIOUS puzzle (wrap around if needed)
+  const yesterdayIndex = (todayIndex - 1 + PUZZLES.length) % PUZZLES.length;
+  
+  return PUZZLES[yesterdayIndex];
+}
 // =============================================================================
 // PUZZLE ROTATION - Get today's puzzle based on 7 AM EST
 // =============================================================================
@@ -549,7 +620,7 @@ const PREVIOUS_PUZZLE = {
 function getTodaysPuzzle() {
   // Anchor: Dec 26, 2025 at 7 AM EST = index 0 (GRIDDLES)
   // Dec 27, 2025 at 7 AM EST = index 1 (BETOKENS)
-  const ANCHOR_DATE = new Date('2025-12-26T07:00:00-05:00');
+  const ANCHOR_DATE = new Date('2026-01-05T07:00:00-05:00');
   const now = new Date();
   const estTime = new Date(now.toLocaleString('en-US', { timeZone: 'America/New_York' }));
   const hour = estTime.getHours();
@@ -1839,11 +1910,11 @@ export default function LetterGriddleCafeGame() {
             <div style={{textAlign: 'center', marginBottom: '16px'}}>
               <div style={{fontSize: '40px', marginBottom: '8px'}}>📋</div>
               <h2 style={{fontSize: '24px', fontWeight: 'bold', color: theme.text}}>Yesterday's Answers</h2>
-              <p style={{fontSize: '14px', color: theme.textSecondary, marginTop: '4px'}}>{PREVIOUS_PUZZLE.subtitle}</p>
+              <p style={{fontSize: '14px', color: theme.textSecondary, marginTop: '4px'}}>{getYesterdaysPuzzle().subtitle}</p>
             </div>
             
             {[4, 5, 6, 7, 8, 9, 10, 11].map(length => {
-              const words = PREVIOUS_PUZZLE.words[length] || [];
+              const words = getYesterdaysPuzzle().words[length] || [];
               if (words.length === 0) return null;
               return (
                 <div key={length} style={{marginBottom: '16px'}}>
