@@ -1566,7 +1566,7 @@ export default function LetterGriddleCafeGame() {
   // Share results function
   const shareResults = () => {
     const achievement = getCurrentAchievement();
-    const shareText = `☕ Letter Griddle Cafe\n\n${achievement.icon} ${achievement.title}\n${foundCount}/${totalWords} words (${percentage}%)\n\n🎵${getFoundByLength(4)} ☕${getFoundByLength(5)} 🍯${getFoundByLength(6)} 🧈${getFoundByLength(7)} 🥞${getFoundByLength(8)} 👑${getFoundByLength(9)} 🏆${getFoundByLength(10)} 💎${getFoundByLength(11)}\n\n🔥 Streak: ${stats.currentStreak} days\n\nPlay at lettergriddle.com`;
+    const shareText = `☕ Letter Griddle Cafe\n\n${achievement.icon} ${achievement.title}\n${foundCount}/${totalWords} words (${percentage}%)\n\n🎵${getFoundByLength(4)} ☕${getFoundByLength(5)} 🍯${getFoundByLength(6)} 🧈${getFoundByLength(7)} 🥞${getFoundByLength(8)} 👑${getFoundByLength(9)} 🏆${getFoundByLength(10)} 💎${getFoundByLength(11)}\n\n🔥 Streak: ${stats.currentStreak} days\n\nPlay at lettergriddlecafe.com/game`;
     
     if (navigator.share) {
       navigator.share({ text: shareText }).catch(() => {
