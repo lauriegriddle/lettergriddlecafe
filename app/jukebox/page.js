@@ -360,7 +360,7 @@ export default function JukeboxGame() {
 
   // Share function
   const handleShare = async () => {
-    const shareText = `I completed the ${currentPuzzle.category} track on Letter Griddle Jukebox! 🎵☕🥞\nlettergriddlecafe.com/jukebox`;
+    const shareText = `I completed the ${trackName} track on Letter Griddle Jukebox! 🎵 ☕ 🥞\nlettergriddlecafe.com/jukebox\nFree & ad-free!\nPart of the Letter Griddle Games 🥞\nMore games: lettergriddle.com`;
     
     if (navigator.share) {
       try {
