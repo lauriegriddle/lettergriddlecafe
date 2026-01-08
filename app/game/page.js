@@ -2283,7 +2283,7 @@ export default function LetterGriddleCafeGame() {
                 marginBottom: '12px'
               }}
             >
-              📤 Share Results
+             Share Results
             </button>
 
             {/* Answer Key Button */}
