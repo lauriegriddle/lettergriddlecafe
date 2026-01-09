@@ -2550,7 +2550,7 @@ export default function LetterGriddleCafeGame() {
                 border: '2px solid #5D4E37'
               }}
             >
-              📤 Share Your Victory
+              Share Your Victory
             </button>
           </div>
         </div>
