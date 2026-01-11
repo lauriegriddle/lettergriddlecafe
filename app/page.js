@@ -148,8 +148,8 @@ const stories = [
     date: 'January 2026',
     locked: false,
     content: [
-      'Laurel plates the piping hot cinnamon rolls.',
-'"Hello Laurel! We are a little early, but we thought you might need a hand," the Lindsays say almost in unison, as they energetically enter the cafe. "What can we do to help?"',
+      'Awaiting the arrival of the trivia crew, Laurel plates the piping hot cinnamon rolls.',
+'"Hello Laurel! We are a little earlier than expected, but we thought you might need a hand," the Lindsays say almost in unison, as they energetically enter the cafe. "What can we do to help?"',
       '"The usual. Until the trivia crew arrives. Thanks, guys!"',
       'Sipping from his favorite Letter Griddle mug, "Just the right temperature," Mr. Lindsay says on cue, as if he\'s talking to the coffee itself.',
       'Punching up her favorite numbers on Jukebox, "Sunday Jazz…" Mrs. Lindsay says as naturally as breathing, as she sways to the music.',
@@ -246,13 +246,13 @@ const puzzles = {
     id: 'the-usual',
     title: 'Anticipation',
     category: 'Anticipation',
-    words: ['HOPE', 'DREAM', 'EXPECT', 'PROMISE', 'AWAITING'],
-    hints: ['Optimistic feeling for the future', 'Aspirations while awake or asleep', 'To look forward to something', 'A commitment to the future', 'Patiently staying for something to arrive'],
+    words: ['HOPE', 'SAVOR', 'EXPECT', 'MOMENT', 'AWAITING'],
+    hints: ['Optimistic feeling for the future', 'To enjoy something slowly and fully', 'To look forward to something', 'A point in time', 'Patiently staying for something to arrive'],
     revealed: [
       { pos: 0, letter: 'H' },
-      { pos: 2, letter: 'E' },
+      { pos: 2, letter: 'V' },
       { pos: 3, letter: 'E' },
-      { pos: 0, letter: 'P' },
+      { pos: 0, letter: 'M' },
       { pos: 4, letter: 'T' }
     ],
     didYouKnow: 'Anticipating something fun triggers your brain to release dopamine, creating "anticipatory joy." Studies show this waiting period can sometimes feel more pleasurable than the event itself. Your mind replays positive scenarios, turning the buildup into a bonus reward!'
