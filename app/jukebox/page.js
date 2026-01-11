@@ -1388,9 +1388,9 @@ export default function JukeboxGame() {
                 <div className="chain-display">{currentPuzzle.words.join(' → ')}</div>
                 <div className="completion-buttons">
   <button className="btn-secondary" onClick={handleShare} style={{ touchAction: 'manipulation', WebkitTapHighlightColor: 'transparent' }}>
-  {shareStatus === 'copied' ? '✓ Copied!' : '📤 Share'}
+  {shareStatus === 'copied' ? '✓ Copied!' : 'Share'}
 </button>
-  <button className="btn-secondary" onClick={() => startPuzzle(currentPuzzleIndex)} style={{ touchAction: 'manipulation', WebkitTapHighlightColor: 'transparent' }}>🔄 Play Again</button>
+  <button className="btn-secondary" onClick={() => startPuzzle(currentPuzzleIndex)} style={{ touchAction: 'manipulation', WebkitTapHighlightColor: 'transparent' }}>Play Again</button>
   <button className="btn-primary" onClick={() => setCurrentView('menu')} style={{ touchAction: 'manipulation', WebkitTapHighlightColor: 'transparent' }}>🎵 More Tracks</button>
 </div>
               </div>
