@@ -662,7 +662,7 @@ const PUZZLES = [
         "Those who pursue",
         "Walking protests; military moves",
         "Those who mash",
-        "Play a march again",
+        "March again",
         "Diagrams; plans",
         "Loud piercing cries",
         "One who breaks things"
