@@ -601,7 +601,7 @@ const PUZZLES = [
       4: ['ACHE', 'ACRE', 'CAME', 'CARE', 'CASE', 'EACH', 'HAEM', 'HARE', 'MACE', 'MARE', 'RACE', 'REAM', 'SEAM', 'SEAR', 'SHEA'],
       5: ['ACHES', 'ACMES', 'ACRES', 'CARES', 'CHARE', 'CHASE', 'CREAM', 'HAREM', 'HARES', 'MACES', 'MARES', 'REACH', 'REAMS', 'SCARE', 'SEAMS', 'SHAME', 'SHARE', 'SHEAR', 'SMEAR'],
       6: ['ARCHES', 'CHASER', 'CREAMS', 'ESCHAR', 'HAREMS', 'MASHER', 'SCREAM', 'SCHEMA', 'SEARCH', 'SHAMES', 'SHARES', 'SHEARS', 'SMEARS'],
-      7: ['CHASERS', 'MARCHES', 'MASHERS', 'REMATCH', 'SCHEMAS', 'SCREAMS', 'SMASHER'],
+      7: ['CHASERS', 'MARCHES', 'MASHERS', 'REMARCH', 'SCHEMAS', 'SCREAMS', 'SMASHER'],
       8: ['CASHMERE']
     },
     hints: {
@@ -662,7 +662,7 @@ const PUZZLES = [
         "Those who pursue",
         "Walking protests; military moves",
         "Those who mash",
-        "Play a match again",
+        "Play a march again",
         "Diagrams; plans",
         "Loud piercing cries",
         "One who breaks things"
