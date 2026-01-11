@@ -140,7 +140,24 @@ const stories = [
   closing: 'Join us at Saddle Shoes for more malt shop memories.',
   closingLink: 'https://lettergriddle.com/saddleshoes',
   closingLinkText: 'Play Saddle Shoes 👟'
-}
+},
+{
+    id: 'the-usual',
+    title: 'The Usual',
+    subtitle: '☕ Cozy Anticipation',
+    date: 'January 2026',
+    locked: false,
+    content: [
+      'Laurel plates the piping hot cinnamon rolls.',
+'"Hello Laurel! We are a little early, but we thought you might need a hand," the Lindsays say almost in unison, as they energetically enter the cafe. "What can we do to help?"',
+      '"The usual. Until the trivia crew arrives. Thanks, guys!"',
+      'Sipping from his favorite Letter Griddle mug, "Just the right temperature," Mr. Lindsay says on cue, as if he\'s talking to the coffee itself.',
+      'Punching up her favorite numbers on Jukebox, "Sunday Jazz…" Mrs. Lindsay says as naturally as breathing, as she sways to the music.',
+      '"The rest of the crew texted and they are all on their way for trivia night at the cafe."',
+      'Savoring the ambiance of the cozy cafe and the anticipation of gathering with good friends, Laurel\'s words swirl into the sensory offerings of the Letter Griddle Cafe, as another pleasant layer of the moment.'
+    ],
+    closing: 'Friends, we hope you too will savor moments of anticipation.'
+  }
 ];
 
 // Puzzle data - expandable for future puzzles
@@ -225,7 +242,21 @@ const puzzles = {
     { pos: 2, letter: 'M' }
   ],
   didYouKnow: 'Saddle shoes were invented in 1906 as "gym oxfords" for indoor sports. By the 1930s, they became everyday student wear, perfect for trips to the malt shop, those iconic 1940s-60s teen hangouts known for jukeboxes, spinning stools, and malted milkshakes!'
-}
+},'the-usual': {
+    id: 'the-usual',
+    title: 'Anticipation',
+    category: 'Anticipation',
+    words: ['HOPE', 'DREAM', 'EXPECT', 'PROMISE', 'AWAITING'],
+    hints: ['Optimistic feeling for the future', 'Aspirations while awake or asleep', 'To look forward to something', 'A commitment to the future', 'Patiently staying for something to arrive'],
+    revealed: [
+      { pos: 0, letter: 'H' },
+      { pos: 2, letter: 'E' },
+      { pos: 3, letter: 'E' },
+      { pos: 0, letter: 'P' },
+      { pos: 4, letter: 'T' }
+    ],
+    didYouKnow: 'Anticipating something fun triggers your brain to release dopamine, creating "anticipatory joy." Studies show this waiting period can sometimes feel more pleasurable than the event itself. Your mind replays positive scenarios, turning the buildup into a bonus reward!'
+  }
 };
 
 // Mobile touch optimization styles - reusable objects
@@ -560,7 +591,7 @@ const [shareStatus, setShareStatus] = useState(null);
           onClick={shuffleLetters}
           style={touchOptimizationInteractive}
         >
-          🔀 Shuffle
+          Shuffle
         </button>
       </div>
 
@@ -578,7 +609,7 @@ const [shareStatus, setShareStatus] = useState(null);
         onClick={resetPuzzle}
         style={touchOptimizationInteractive}
       >
-        🔄 Reset Puzzle
+        Reset Puzzle
       </button>
 
       {/* Completion celebration modal - full screen */}
@@ -608,14 +639,14 @@ const [shareStatus, setShareStatus] = useState(null);
               onClick={handleShare}
               style={touchOptimizationInteractive}
             >
-                {shareStatus === 'copied' ? '✓ Copied!' : '📤 Share'}
+                {shareStatus === 'copied' ? '✓ Copied!' : 'Share'}
               </button>
               <button 
                 className="completion-btn primary" 
                 onClick={resetPuzzle}
                 style={touchOptimizationInteractive}
               >
-                🔄 Play Again
+                Play Again
               </button>
             </div>
           </div>
