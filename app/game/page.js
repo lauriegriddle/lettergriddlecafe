@@ -679,7 +679,7 @@ const PUZZLES = [
     subtitle: 'Acts of Care',
     letters: ['K', 'I', 'N', 'D', 'E', 'S'],
     keyLetters: ['N', 'I'],
-    totalWordCount: 34,
+    totalWordCount: 33,
     words: {
       4: ['DINE', 'DINK', 'DINS', 'INKS', 'INNS', 'KIND', 'KINE', 'KINS', 'NIDE', 'NINE', 'SINE', 'SINK', 'SKIN'],
       5: ['DINED', 'DINES', 'DINKS', 'INDIE', 'KINDS', 'KINES', 'NINES', 'SINES', 'SINKS', 'SKEIN', 'SKINS', 'SNIDE'],
