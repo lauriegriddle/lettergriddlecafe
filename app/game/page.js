@@ -679,12 +679,12 @@ const PUZZLES = [
     subtitle: 'Acts of Care',
     letters: ['K', 'I', 'N', 'D', 'E', 'S'],
     keyLetters: ['N', 'I'],
-    totalWordCount: 36,
+    totalWordCount: 34,
     words: {
       4: ['DINE', 'DINK', 'DINS', 'INKS', 'INNS', 'KIND', 'KINE', 'KINS', 'NIDE', 'NINE', 'SINE', 'SINK', 'SKIN'],
       5: ['DINED', 'DINES', 'DINKS', 'INDIE', 'KINDS', 'KINES', 'NINES', 'SINES', 'SINKS', 'SKEIN', 'SKINS', 'SNIDE'],
-      6: ['DIKING', 'DINNED', 'INDIES', 'KINKED', 'SINNED', 'SKEINS'],
-      7: ['DINKIES', 'INKIEST', 'SKINNED'],
+      6: ['DINNED', 'INDIES', 'KINKED', 'SINNED', 'SKEINS'],
+      7: ['DINKIES', 'SKINNED'],
       8: ['KINDNESS']
     },
     hints: {
@@ -718,7 +718,6 @@ const PUZZLES = [
         "Scornfully mocking"
       ],
       6: [
-        "Building an embankment",
         "Rang repeatedly",
         "Independent films (plural)",
         "Twisted or tangled",
@@ -727,7 +726,6 @@ const PUZZLES = [
       ],
       7: [
         "Small cute things",
-        "Most like ink",
         "Removed the hide"
       ],
       8: [
