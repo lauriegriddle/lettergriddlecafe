@@ -737,13 +737,13 @@ const PUZZLES = [
   // PUZZLE: SWEATER  
   {
     id: 'sweater-puzzle',
-    subtitle: 'Knitwear',
+    subtitle: 'Cableknit',
     letters: ['S', 'W', 'E', 'A', 'T', 'R'],
     keyLetters: ['E', 'A'],
     totalWordCount: 58,
     words: {
       4: ['AREA', 'ARES', 'EARS', 'EASE', 'EAST', 'EATS', 'ERAS', 'ETAS', 'RATE', 'SATE', 'SEAR', 'SEAT', 'SERA', 'TARE', 'TEAR', 'TEAS', 'WARE', 'WEAR'],
-      5: ['AREAS', 'ASTER', 'EATER', 'ERASE', 'RATES', 'RESAT', 'SATED', 'SEARS', 'SEATS', 'SETAE', 'STARE', 'SWEAR', 'TARES', 'TEARS', 'TEASE', 'WARES', 'WASTE', 'WATER', 'WEARS'],
+      5: ['AREAS', 'ASTER', 'EATER', 'ERASE', 'RATES', 'RESAT', 'SATES', 'SEARS', 'SEATS', 'SETAE', 'STARE', 'SWEAR', 'TARES', 'TEARS', 'TEASE', 'WARES', 'WASTE', 'WATER', 'WEARS'],
       6: ['EATERS', 'ERASER', 'ERASES', 'RAREST', 'SEATER', 'STARER', 'SWEARS', 'TEASER', 'TEASES', 'WASTER', 'WASTES', 'WATERS'],
       7: ['SEATERS', 'STARERS', 'SWEARER', 'SWEATER', 'TEASERS', 'WASTERS'],
       8: ['SWEATERS', 'SWEARERS']
@@ -776,7 +776,7 @@ const PUZZLES = [
         "Remove writing",
         "Speeds; prices",
         "Sat again",
-        "Fully satisfied",
+        "Fully satisfies",
         "Burns surfaces",
         "Places to sit",
         "Bristle-like structures",
