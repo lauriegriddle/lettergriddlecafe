@@ -737,7 +737,7 @@ const PUZZLES = [
   // PUZZLE: SWEATER  
   {
     id: 'sweater-puzzle',
-    subtitle: 'Cableknit',
+    subtitle: 'Cable Knit',
     letters: ['S', 'W', 'E', 'A', 'T', 'R'],
     keyLetters: ['E', 'A'],
     totalWordCount: 58,
