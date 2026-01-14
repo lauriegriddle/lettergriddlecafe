@@ -1732,9 +1732,9 @@ export default function LetterGriddleCafeGame() {
         <footer style={{textAlign: 'center', padding: '16px', fontSize: '12px', color: theme.textLight}}>
           <p>Part of <a href="/" style={{color: theme.textLight, textDecoration: 'underline'}}>The Letter Griddle Cafe</a></p>
           <p style={{marginTop: '4px'}}>
-            <a href="/privacy" style={{color: theme.textLight, textDecoration: 'underline'}}>Privacy</a>
+            <a href="https://www.lettergriddle.com/privacy" style={{color: theme.textLight, textDecoration: 'underline'}}>Privacy</a>
             {' • '}
-            <a href="/terms" style={{color: theme.textLight, textDecoration: 'underline'}}>Terms</a>
+            <a href="https://www.lettergriddle.com/terms" style={{color: theme.textLight, textDecoration: 'underline'}}>Terms</a>
           </p>
           <p style={{marginTop: '4px'}}>© {currentYear} Letter Griddle Cafe</p>
         </footer>
@@ -2553,9 +2553,9 @@ export default function LetterGriddleCafeGame() {
       <footer style={{textAlign: 'center', padding: '16px', fontSize: '12px', color: theme.textLight}}>
         <p>Part of <a href="/" style={{color: theme.textLight, textDecoration: 'underline'}}>The Letter Griddle Cafe</a></p>
         <p style={{marginTop: '4px'}}>
-          <a href="/privacy" style={{color: theme.textLight, textDecoration: 'underline'}}>Privacy</a>
+          <a href="https://www.lettergriddle.com/privacy" style={{color: theme.textLight, textDecoration: 'underline'}}>Privacy</a>
           {' • '}
-          <a href="/terms" style={{color: theme.textLight, textDecoration: 'underline'}}>Terms</a>
+          <a href="https://www.lettergriddle.com/terms" style={{color: theme.textLight, textDecoration: 'underline'}}>Terms</a>
         </p>
         <p style={{marginTop: '4px'}}>© {currentYear} Letter Griddle Cafe</p>
       </footer>
