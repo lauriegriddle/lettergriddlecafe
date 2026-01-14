@@ -825,12 +825,12 @@ const PUZZLES = [
     subtitle: 'Art Class',
     letters: ['D', 'R', 'A', 'W', 'I', 'N', 'G'],
     keyLetters: ['A', 'N'],
-    totalWordCount: 31,
+    totalWordCount: 24,
     words: {
       4: ['ANNA', 'DANG', 'DARN', 'GAIN', 'GNAW', 'GRAN', 'NAAN', 'RAIN', 'RAND', 'RANG', 'RANI', 'WAIN', 'WAND', 'WARN'],
       5: ['DINAR', 'DRAIN', 'GRAND', 'NADIR'],
-      6: ['AWNING', 'GRADIN', 'RADIAN', 'WADING', 'DRAINS'],
-      7: ['DARNING', 'DRAWING', 'WARDING', 'GRADINS', 'RADIANS', 'AWNINGS']
+      6: ['AWNING', 'RADIAN', 'WADING'],
+      7: ['DARNING', 'DRAWING', 'WARNING']
     },
     hints: {
       4: [
@@ -857,18 +857,13 @@ const PUZZLES = [
       ],
       6: [
         "Roof-like shade cover",
-        "Rising tier of seats",
         "Angle measurement unit",
-        "Walking in shallow water",
-        "Removes liquid"
+        "Walking in shallow water"
       ],
       7: [
         "Mending holes in fabric",
         "Artwork with pencil or pen (pangram!)",
-        "Guarding; protecting",
-        "Rising tiers of seats",
-        "Angle measurement units",
-        "Roof-like shade covers"
+        "Alerting to danger"
       ]
     }
   },
