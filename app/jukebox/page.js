@@ -1269,6 +1269,7 @@ export default function JukeboxGame() {
               <p>Part of <span className="cafe-name">The Letter Griddle Cafe</span> ☕</p>
               <p style={{ marginTop: '4px' }}><a href="/">← Back to Cafe</a></p>
               <p style={{ marginTop: '4px', fontSize: '10px', opacity: 0.6 }}>© {new Date().getFullYear()} Letter Griddle. All rights reserved.</p>
+              <p style={{ marginTop: '4px', fontSize: '10px', opacity: 0.6 }}><a href="https://www.lettergriddle.com/privacy" style={{ color: '#9ca3af', textDecoration: 'underline' }}>Privacy</a> • <a href="https://www.lettergriddle.com/terms" style={{ color: '#9ca3af', textDecoration: 'underline' }}>Terms</a></p>
             </div>
           </div>
         )}
@@ -1398,6 +1399,8 @@ export default function JukeboxGame() {
 
             <div className="jukebox-footer">
               <p>Part of <span className="cafe-name">The Letter Griddle Cafe</span> ☕</p>
+             <p style={{ marginTop: '4px', fontSize: '10px', opacity: 0.6 }}>© {new Date().getFullYear()} Letter Griddle. All rights reserved.</p>
+              <p style={{ marginTop: '4px', fontSize: '10px', opacity: 0.6 }}><a href="https://www.lettergriddle.com/privacy" style={{ color: '#9ca3af', textDecoration: 'underline' }}>Privacy</a> • <a href="https://www.lettergriddle.com/terms" style={{ color: '#9ca3af', textDecoration: 'underline' }}>Terms</a></p> 
             </div>
           </div>
         )}
