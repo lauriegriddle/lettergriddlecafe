@@ -596,11 +596,11 @@ const PUZZLES = [
     subtitle: 'Cozy and Warm',
     letters: ['C', 'A', 'S', 'H', 'M', 'E', 'R'],
     keyLetters: ['E', 'A'],
-    totalWordCount: 55,
+    totalWordCount: 54,
     words: {
       4: ['ACHE', 'ACRE', 'CAME', 'CARE', 'CASE', 'EACH', 'HAEM', 'HARE', 'MACE', 'MARE', 'RACE', 'REAM', 'SEAM', 'SEAR', 'SHEA'],
       5: ['ACHES', 'ACMES', 'ACRES', 'CARES', 'CHARE', 'CHASE', 'CREAM', 'HAREM', 'HARES', 'MACES', 'MARES', 'REACH', 'REAMS', 'SCARE', 'SEAMS', 'SHAME', 'SHARE', 'SHEAR', 'SMEAR'],
-      6: ['ARCHES', 'CHASER', 'CREAMS', 'ESCHAR', 'HAREMS', 'MASHER', 'SCREAM', 'SCHEMA', 'SEARCH', 'SHAMES', 'SHARES', 'SHEARS', 'SMEARS'],
+      6: ['ARCHES', 'CHASER', 'CREAMS', 'HAREMS', 'MASHER', 'SCREAM', 'SCHEMA', 'SEARCH', 'SHAMES', 'SHARES', 'SHEARS', 'SMEARS'],
       7: ['CHASERS', 'MARCHES', 'MASHERS', 'REMARCH', 'SCHEMAS', 'SCREAMS', 'SMASHER'],
       8: ['CASHMERE']
     },
@@ -647,7 +647,6 @@ const PUZZLES = [
         "Curved doorways",
         "One who pursues",
         "Dairy products",
-        "Burn scab or crust",
         "Groups of wives",
         "One who mashes",
         "Loud piercing cry",
@@ -989,11 +988,202 @@ const PUZZLES = [
       ]
     }
   },
+  // PUZZLE: OATMEAL
+  {
+    id: 'oatmeal-puzzle',
+    subtitle: 'Morning Bowl',
+    letters: ['O', 'A', 'T', 'M', 'E', 'L'],
+    keyLetters: ['O', 'A'],
+    totalWordCount: 25,
+    words: {
+      4: ['ALOE', 'ALTO', 'ATOM', 'LOAM', 'MALT', 'MATE', 'MEAL', 'MEAT', 'MOAT', 'MOLA', 'MOLE', 'MOLT', 'TAME', 'TEAL', 'TEAM', 'TOME', 'TOLA'],
+      5: ['METAL', 'MOTEL'],
+      6: ['MALATE', 'MEATAL', 'TOMATO'],
+      7: ['OATMEAL']
+    },
+    hints: {
+      4: [
+        "Healing plant for burns",
+        "Low singing voice",
+        "Smallest unit of matter",
+        "Rich dark soil",
+        "Barley for brewing",
+        "Partner; friend",
+        "Food eaten at one time",
+        "Animal flesh as food",
+        "Castle's water ditch",
+        "Large ocean sunfish",
+        "Small burrowing mammal",
+        "Shed feathers",
+        "Make less wild",
+        "Blue-green color",
+        "Group working together",
+        "Large scholarly book",
+        "Unit of weight in India"
+      ],
+      5: [
+        "Iron or steel material",
+        "Roadside hotel"
+      ],
+      6: [
+        "Chemistry salt compound",
+        "Relating to a meal",
+        "Red salad fruit"
+      ],
+      7: [
+        "Hot breakfast cereal from oats (pangram!)"
+      ]
+    }
+  },
+
+  // PUZZLE: CEREALS
+  {
+    id: 'cereals-puzzle',
+    subtitle: 'Breakfast Aisle',
+    letters: ['C', 'E', 'R', 'A', 'L', 'S'],
+    keyLetters: ['E', 'A'],
+    totalWordCount: 48,
+    words: {
+      4: ['ACES', 'ACRE', 'ALES', 'ARCS', 'AREA', 'ARES', 'CARE', 'CARS', 'CASE', 'EARL', 'EARS', 'EASE', 'ERAS', 'LACE', 'LASE', 'LEAR', 'LEAS', 'RACE', 'REAL', 'SALE', 'SEAL', 'SEAR'],
+      5: ['ACRES', 'AREAL', 'AREAS', 'CARES', 'CASES', 'CEASE', 'CLEAR', 'EARLS', 'ERASE', 'LACES', 'LASER', 'LEASE', 'RACES', 'REALS', 'SCALE', 'SCARE', 'SEALS', 'SEARS'],
+      6: ['CEREAL', 'CLEARS', 'ERASER', 'ERASES', 'LASERS', 'LEASER', 'LEASES', 'SCALER', 'SCALES', 'SCARES', 'SEALER'],
+      7: ['CEREALS', 'ERASERS', 'RESCALE', 'SEALERS', 'SCALERS']
+    },
+    hints: {
+      4: [
+        "High cards; experts",
+        "Land measurement unit",
+        "Beer varieties",
+        "Curved lines",
+        "Region; zone",
+        "Greek god of war",
+        "Feel concern; look after",
+        "Automobiles",
+        "Container; situation",
+        "British nobleman",
+        "Hearing organs",
+        "Freedom from difficulty",
+        "Historical periods",
+        "Delicate fabric trim",
+        "Use a laser on",
+        "King (Shakespearean)",
+        "Meadows",
+        "Speed competition",
+        "Actual; genuine",
+        "Discounted event",
+        "Aquatic mammal; close up",
+        "Burn surface"
+      ],
+      5: [
+        "Land units",
+        "Relating to area",
+        "Regions; zones",
+        "Feels concern",
+        "Containers; situations",
+        "Stop; end",
+        "Obvious; transparent",
+        "British noblemen",
+        "Remove writing",
+        "Fabric trims",
+        "Light beam device",
+        "Rental contract",
+        "Competitions of speed",
+        "Genuine things",
+        "Weighing device; climb",
+        "Frighten",
+        "Aquatic mammals",
+        "Burns surfaces"
+      ],
+      6: [
+        "Breakfast grain food",
+        "Makes transparent",
+        "Rubber for removing marks",
+        "Removes writing",
+        "Light beam devices",
+        "One who leases",
+        "Rental contracts",
+        "One who scales",
+        "Weighing devices",
+        "Frightens",
+        "One who seals"
+      ],
+      7: [
+        "Breakfast grain foods (pangram!)",
+        "Rubbers for removing marks",
+        "Adjust scale again",
+        "Those who seal",
+        "Those who scale"
+      ]
+    }
+  },
+
+  // PUZZLE: CORNERS
+  {
+    id: 'corners-puzzle',
+    subtitle: 'Nooks and Crannies',
+    letters: ['C', 'O', 'R', 'N', 'E', 'S'],
+    keyLetters: ['O', 'N'],
+    totalWordCount: 36,
+    words: {
+      4: ['CONE', 'CONS', 'CORE', 'CORN', 'EONS', 'ERNS', 'NOES', 'NOSE', 'ONCE', 'ONES', 'ORES', 'SONE', 'SORE'],
+      5: ['CONES', 'CORER', 'CORES', 'CORNS', 'CRONE', 'RECON', 'SCONE', 'SENOR', 'SNORE', 'SORER'],
+      6: ['CENSOR', 'CORNER', 'CORERS', 'CRONES', 'RECONS', 'SCONES', 'SCORER', 'SENORS', 'SNORER', 'SNORES'],
+      7: ['CENSORS', 'CORNERS', 'SCORERS', 'SCORNER', 'SNORERS']
+    },
+    hints: {
+      4: [
+        "Ice cream holder shape",
+        "Disadvantages; swindles",
+        "Center; heart",
+        "Grain on cob",
+        "Long time periods",
+        "Sea eagles",
+        "Negative votes",
+        "Smell organ",
+        "Single time; formerly",
+        "Single units",
+        "Metal rocks",
+        "Unit of loudness",
+        "Painful; tender"
+      ],
+      5: [
+        "Ice cream holders",
+        "Tool for removing cores",
+        "Centers; hearts",
+        "Grains on cobs",
+        "Old witch",
+        "Reconnaissance",
+        "Baked bread triangle",
+        "Spanish mister",
+        "Sleep sound",
+        "More painful"
+      ],
+      6: [
+        "One who removes content",
+        "Angle where walls meet",
+        "Core-removing tools",
+        "Old witches",
+        "Reconnaissances",
+        "Baked triangles",
+        "One who keeps score",
+        "Spanish misters",
+        "One who snores",
+        "Sleep sounds"
+      ],
+      7: [
+        "Those who censor",
+        "Angles where walls meet (pangram!)",
+        "Those who keep score",
+        "One who scorns",
+        "Those who snore"
+      ]
+    }
+  },
 ];
 
 // Get yesterday's puzzle dynamically based on rotation
 function getYesterdaysPuzzle() {
-  const ANCHOR_DATE = new Date('2026-01-05T07:00:00-05:00');
+  const ANCHOR_DATE = new Date('2026-01-17T07:00:00-05:00');
   const now = new Date();
   const estTime = new Date(now.toLocaleString('en-US', { timeZone: 'America/New_York' }));
   const hour = estTime.getHours();
@@ -1019,7 +1209,7 @@ function getYesterdaysPuzzle() {
 function getTodaysPuzzle() {
   // Anchor: Dec 26, 2025 at 7 AM EST = index 0 (GRIDDLES)
   // Dec 27, 2025 at 7 AM EST = index 1 (BETOKENS)
-  const ANCHOR_DATE = new Date('2026-01-05T07:00:00-05:00');
+  const ANCHOR_DATE = new Date('2026-01-17T07:00:00-05:00');
   const now = new Date();
   const estTime = new Date(now.toLocaleString('en-US', { timeZone: 'America/New_York' }));
   const hour = estTime.getHours();
