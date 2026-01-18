@@ -157,6 +157,28 @@ const stories = [
       'Savoring the ambiance of the cozy cafe and the anticipation of gathering with good friends, Laurel\'s words swirl into the sensory offerings of the Letter Griddle Cafe, as another pleasant layer of the moment.'
     ],
     closing: 'Friends, we hope you too will savor moments of anticipation.'
+  },
+  {
+    id: 'cinnamon-hour',
+    title: 'Cinnamon Hour',
+    subtitle: '🥞 Spice Things Up',
+    date: 'January 2026',
+    locked: false,
+    content: [
+      '"Hey, everyone! 😀 Setting up the trivia station," Taylor texts the group wondering if anyone would even have time to read the message.',
+      '"Hi, Taylor! ☕️ Cinnamon Hour is under control. We need an eight letter word for \'a popular winter spice from the inner bark of tropical trees,\' the revealed letter is an n," Mr. or Mrs. Lindsay responds.',
+      '"We are here, too! By Jukebox! 🎵 Wave so we can find you! 👋" Jennie texts, as Isaac quietly concurs.',
+      '"See you soon, still working on a five letter word with the hint \'aromatic substance used to flavor sweet or savory food 🤔\'", Sarah shares.',
+      '"Mom and Laurel are working on the cinnamon pancakes. 🥞 I\'m helping out with the coffee counter! Come see me when you get to the cafe! 🤩" Josie lets the group know.',
+      'Taking off her Letter Griddle apron, Laurel pauses to gather her thoughts.',
+      '✔️ Cinnamon pancakes. Thanks to Josephine\'s help.',
+      '✔️ Coffee counter. Josie knows what to do.',
+      '✔️ Music. Jennie knows music keeps Isaac from barking.',
+      '✔️ Trivia station. Taylor ensures the technology is user-friendly.',
+      '✔️ Working the room. The Lindsays know everyone at the Letter Griddle Cafe, and in Griddle Falls, for that matter.',
+      'Putting on her trivia night emcee headset and mic, Laurel announces, "Cinnamon hour guests, enjoy your pancakes and coffee, and take a look at the trivia screen…let\'s see if we can solve this puzzle."'
+    ],
+    closing: 'Friends, it\'s Cinnamon Hour somewhere, so enjoy solving this puzzle.'
   }
 ];
 
@@ -256,6 +278,21 @@ const puzzles = {
       { pos: 4, letter: 'T' }
     ],
     didYouKnow: 'Anticipating something fun triggers your brain to release dopamine, creating "anticipatory joy." Studies show this waiting period can sometimes feel more pleasurable than the event itself. Your mind replays positive scenarios, turning the buildup into a bonus reward!'
+  },
+  'cinnamon-hour': {
+    id: 'cinnamon-hour',
+    title: 'Spice',
+    category: 'Spice',
+    words: ['BARK', 'SWEET', 'SAVORY', 'PANCAKE', 'CINNAMON'],
+    hints: ['Outer layer of a tree', 'Sugary taste', 'Salty or spicy, not sweet', 'Griddle breakfast favorite', 'Popular winter spice from tropical tree bark'],
+    revealed: [
+      { pos: 0, letter: 'B' },
+      { pos: 1, letter: 'W' },
+      { pos: 2, letter: 'V' },
+      { pos: 2, letter: 'N' },
+      { pos: 3, letter: 'N' }
+    ],
+    didYouKnow: 'Cinnamon is known for boosting brain activity and its antioxidant properties. It enhances both sweet and savory dishes. Those rolled sticks? They\'re called quills!'
   }
 };
 

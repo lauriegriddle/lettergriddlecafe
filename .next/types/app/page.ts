@@ -1,8 +1,8 @@
-// File: /Users/lauriehess/Documents/lettergriddlecafe/app/jukebox/page.js
-import * as entry from '../../../../app/jukebox/page.js'
+// File: /Users/lauriehess/Documents/lettergriddlecafe/app/page.js
+import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
-type TEntry = typeof import('../../../../app/jukebox/page.js')
+type TEntry = typeof import('../../../app/page.js')
 
 type SegmentParams<T extends Object = any> = T extends Record<string, any>
   ? { [K in keyof T]: T[K] extends string ? string | string[] | undefined : never }
