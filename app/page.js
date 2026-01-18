@@ -167,9 +167,9 @@ const stories = [
     content: [
       '"Hey, everyone! 😀 Setting up the trivia station," Taylor texts the group wondering if anyone would even have time to read the message.',
       '"Hi, Taylor! ☕️ Cinnamon Hour is under control. We need an eight letter word for \'a popular winter spice from the inner bark of tropical trees,\' the revealed letter is an n," Mr. or Mrs. Lindsay responds.',
-      '"We are here, too! By Jukebox! 🎵 Wave so we can find you! 👋" Jennie texts, as Isaac quietly concurs.',
-      '"See you soon, still working on a five letter word with the hint \'aromatic substance used to flavor sweet or savory food 🤔\'", Sarah shares.',
-      '"Mom and Laurel are working on the cinnamon pancakes. 🥞 I\'m helping out with the coffee counter! Come see me when you get to the cafe! 🤩" Josie lets the group know.',
+      '"We are here, too! 🎵  By Jukebox! 👋 Wave so we can find you!" Jennie texts, as Isaac quietly concurs.',
+      '"See you soon,  🤔 still working on a five letter word with the hint \'aromatic substance used to flavor sweet or savory food! \'" Sarah shares.',
+      '"Mom and Laurel are working on the cinnamon pancakes. 🥞 I\'m helping out with the coffee counter! 🤩 Come see me when you get to the cafe!"  Josie lets the group know.',
       'Taking off her Letter Griddle apron, Laurel pauses to gather her thoughts.',
       '✔️ Cinnamon pancakes. Thanks to Josephine\'s help.',
       '✔️ Coffee counter. Josie knows what to do.',
