@@ -117,11 +117,11 @@ const PUZZLES = [
     subtitle: 'Prepare the Cafe',
     letters: ['T', 'E', 'O', 'B', 'N', 'K', 'S'],
     keyLetters: ['O', 'N'],
-    totalWordCount: 76,
+    totalWordCount: 72,
     words: {
       4: ['BONE', 'BONK', 'BOON', 'EBON', 'EONS', 'KENO', 'KNOB', 'KNOT', 'NOBS', 'NOES', 'NONE', 'NOOK', 'NOON', 'NOSE', 'NOTE', 'ONES', 'SNOB', 'SNOT', 'SONS', 'SOON', 'TONE', 'TONS', 'TOON'],
-      5: ['BETON', 'BONES', 'BONKS', 'BONNE', 'BOONS', 'EBONS', 'KENOS', 'KNOBS', 'KNOTS', 'NONES', 'NOOKS', 'NOONS', 'NOOSE', 'NOSES', 'NOTES', 'ONSET', 'SNOBS', 'SNOEK', 'SNOOK', 'SNOTS', 'STENO', 'STONE', 'STONK', 'TOKEN', 'TONES', 'TONNE', 'TOONS'],
-      6: ['BETONS', 'BONNES', 'BONBON', 'BONNET', 'BOTNET', 'KETONE', 'NOOSES', 'ONSETS', 'SNOOKS', 'SONNET', 'STENOS', 'STONES', 'STONKS', 'TOKENS', 'TONNES'],
+      5: ['BONES', 'BONKS', 'BONNE', 'BOONS', 'EBONS', 'KENOS', 'KNOBS', 'KNOTS', 'NONES', 'NOOKS', 'NOONS', 'NOSES', 'NOTES', 'ONSET', 'SNOBS', 'SNOEK', 'SNOOK', 'SNOTS', 'STENO', 'STONE', 'STONK', 'TOKEN', 'TONES', 'TONNE', 'TOONS'],
+      6: ['BONNES', 'BONBON', 'BONNET', 'BOTNET', 'KETONE', 'ONSETS', 'SNOOKS', 'SONNET', 'STENOS', 'STONES', 'STONKS', 'TOKENS', 'TONNES'],
       7: ['BETOKEN', 'BONBONS', 'BONESET', 'BONNETS', 'BOTNETS', 'KETONES', 'SONNETS'],
       8: ['BETOKENS', 'BONESETS', 'NOTEBOOK'],
       9: ['NOTEBOOKS']
@@ -153,7 +153,6 @@ const PUZZLES = [
         "Cartoon character; animated show"
       ],
       5: [
-        "Type of concrete mixture",
         "Skeletal pieces",
         "Hits on the head",
         "French word for good (feminine)",
@@ -165,7 +164,6 @@ const PUZZLES = [
         "Midday prayers; not any (plural)",
         "Cozy reading corners",
         "Multiple middays",
-        "Loop for hanging",
         "Smelling organs",
         "Written messages",
         "Beginning; start",
@@ -182,13 +180,11 @@ const PUZZLES = [
         "Cartoon characters"
       ],
       6: [
-        "Concrete mixtures",
         "French maids (historical)",
         "Small chocolate candy",
         "Hat tied under chin",
         "Network of infected computers",
         "Chemical compound in metabolism",
-        "Hanging loops",
         "Beginnings; attacks",
         "Types of fish",
         "14-line poem",
