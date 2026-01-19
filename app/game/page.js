@@ -77,10 +77,10 @@ const PUZZLES = [
     subtitle: 'All That Jazz!',
     letters: ['M', 'U', 'S', 'I', 'C', 'A', 'L'],
     keyLetters: ['A', 'L'],
-    totalWordCount: 44,
+    totalWordCount: 29,
     words: {
-      4: ['AILS', 'AIMS', 'ALUM', 'CALL', 'CALM', 'CLAM', 'ILLS', 'LULL', 'MAIL', 'MALL', 'MAUL', 'MILL', 'MULL', 'SAIL', 'SILL', 'SLAM', 'SLIM'],
-      5: ['ALIAS', 'ALUMS', 'CALLS', 'CALMS', 'CLAIM', 'CLAMS', 'LILAC', 'LLAMA', 'LULLS', 'MAILS', 'MALLS', 'MAULS', 'MILLS', 'MULLS', 'MUSIC', 'SAILS', 'SILLS', 'SLAMS', 'SLIMS', 'SMALL'],
+      4: ['AILS', 'ALUM', 'CALL', 'CALM', 'CLAM', 'MAIL', 'MALL', 'SAIL', 'SLAM'],
+      5: ['ALIAS', 'ALUMS', 'CALLS', 'CALMS', 'CLAIM', 'CLAMS', 'LILAC', 'LLAMA', 'MAILS', 'MALLS', 'SAILS', 'SLAMS', 'SMALL'],
       6: ['ALUMNI', 'CALLUS', 'CLAIMS', 'LILACS', 'LLAMAS'],
       7: ['MUSICAL'],
       8: ['MUSICALS']
@@ -88,22 +88,14 @@ const PUZZLES = [
     hints: {
       4: [
         "Troubles or bothers",
-        "Goals; points a weapon",
         "Graduate of a school",
         "Phone someone; shout out",
         "Peaceful and still",
         "Shellfish in chowder",
-        "Sicknesses or problems",
-        "Calm period; soothe to sleep",
         "Letters delivered to your door",
         "Shopping center",
-        "Attack violently; heavy hammer",
-        "Building for grinding grain",
-        "Think over carefully",
         "Boat fabric; travel by water",
-        "Ledge at the bottom of a window",
-        "Shut forcefully",
-        "Thin or slender"
+        "Shut forcefully"
       ],
       5: [
         "Fake name used to hide identity",
@@ -114,17 +106,10 @@ const PUZZLES = [
         "Shellfish; slang for dollars",
         "Purple flowering spring shrub",
         "Fluffy South American animal",
-        "Calm periods; soothes to sleep",
         "Sends letters or packages",
         "Shopping centers",
-        "Attacks violently",
-        "Grain grinding buildings",
-        "Thinks over carefully",
-        "Melodic sounds and songs",
         "Boat fabrics; travels by water",
-        "Window ledges",
         "Shuts doors forcefully",
-        "Becomes thinner",
         "Little in size"
       ],
       6: [
