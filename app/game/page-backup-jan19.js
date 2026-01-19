@@ -7,667 +7,1027 @@ import React, { useState, useEffect, useCallback, useRef } from 'react';
 // =============================================================================
 
 const PUZZLES = [
-  // PUZZLE 1: STICKER
   {
-    id: 'sticker-puzzle',
-    subtitle: 'Stick Together',
-    letters: ['S', 'T', 'I', 'C', 'K', 'E', 'R'],
-    keyLetters: ['E', 'R'],
-    totalWordCount: 48,
+    id: 'griddles-puzzle',
+    subtitle: 'Prepare the Cafe',
+    letters: ['I', 'G', 'S', 'R', 'E', 'D', 'L'], // Pre-shuffled for initial display
+    keyLetters: ['G', 'R'],
+    totalWordCount: 75, // Updated: 74 + 1 new word (EDGIER)
     words: {
-      4: ['CITE', 'IRES', 'KITE', 'RICE', 'RISE', 'RISK', 'RITE', 'SIRE', 'SITE', 'TIER', 'TIRE', 'TREK'],
-      5: ['CITES', 'CREST', 'CRIER', 'CRIES', 'ICIER', 'KITES', 'RICES', 'RISER', 'RITES', 'SIRES', 'SITES', 'SKIER', 'STICK', 'TIERS', 'TIRES', 'TREKS', 'TRICK', 'TRICE', 'TRIES'],
-      6: ['CRESTS', 'CRIERS', 'KICKER', 'SICKER', 'SKIERS', 'STICKS', 'STRICT', 'STRIKE', 'TICKER', 'TRICKS'],
-      7: ['KICKERS', 'RICKETS', 'STICKER', 'STRIKES', 'TICKERS'],
-      8: ['STICKERS', 'STICKIER']
+      4: ['DREG', 'GIRD', 'GIRL', 'GRID', 'RIGS'],
+      5: ['DIRGE', 'DREGS', 'EDGER', 'GIRDS', 'GIRLS', 'GREED', 'GRIDE', 'GRIDS', 'GRILL', 'LIGER', 'RIDGE', 'SERGE'],
+      6: ['DIGGER', 'DIRGES', 'DREDGE', 'EDGERS', 'EDGIER', 'EGGIER', 'EGRESS', 'GILDER', 'GIRDED', 'GIRDLE', 'GIRLIE', 'GLIDER', 'GREEDS', 'GRIDES', 'GRILLE', 'GRILLS', 'GRILSE', 'LEDGER', 'LIGERS', 'REGILD', 'RIDGED', 'RIDGES', 'RIGGED', 'RIGGER', 'SERGED', 'SERGER', 'SERGES', 'SIEGER'],
+      7: ['DIGGERS', 'DIGRESS', 'DREDGED', 'DREDGES', 'GILDERS', 'GIRDLES', 'GIRLIES', 'GLIDERS', 'GRIDDED', 'GRIDDLE', 'GRILLED', 'GRILLER', 'GRILLES', 'LEDGERS', 'REGILDS', 'REGRESS', 'RIGGERS', 'SERGERS', 'SIEGERS'],
+      8: ['EGRESSES', 'GREEDIER', 'GRIDDLED', 'GRIDDLER', 'GRIDDLES', 'GRILLERS'],
+      9: ['DIGRESSED', 'DIGRESSES', 'GRIDDLERS', 'REGRESSED', 'REGRESSES']
     },
     hints: {
       4: [
-        "Quote as a source or reference",
-        "Angers or irritates",
-        "Flying toy on a string",
-        "Grain often served with stir-fry",
-        "Go upward; get out of bed",
-        "Chance of danger or loss",
-        "Ceremony or ritual",
-        "Father, especially of a horse",
-        "Location or place",
-        "Level or layer, like on a cake",
-        "Rubber covering on a wheel",
-        "Long, difficult journey"
+        "Sediment at the bottom of a drink",
+        "To encircle or prepare for action",
+        "Young female",
+        "Network of lines crossing each other",
+        "Sets up equipment or sails"
       ],
       5: [
-        "Quotes or references sources",
-        "Top of a hill; family emblem",
-        "Town announcer; one who weeps",
-        "Weeps or shouts",
-        "More cold and frosty",
-        "Flying toys at the beach",
-        "Pushes potatoes through a kitchen tool",
-        "Early _____ (morning person); stair part",
-        "Ceremonies or rituals",
-        "Fathers offspring",
-        "Locations; web pages",
-        "Person zooming down snowy slopes",
-        "Wooden twig; to adhere",
-        "Layers, like on a wedding cake",
-        "Rubber wheel coverings",
-        "Long journeys on foot",
-        "Prank or clever move",
-        "A moment; \"in a _____\"",
-        "Attempts; gives it a go"
+        "Mournful song for the dead",
+        "The last drops with sediment",
+        "Tool for trimming lawn edges",
+        "Encircles or prepares",
+        "Young females",
+        "Excessive desire for wealth",
+        "To make a harsh scraping sound",
+        "Networks of crossing lines",
+        "Cooking surface with bars",
+        "Lion and tiger hybrid",
+        "Long narrow hilltop",
+        "Strong twilled fabric"
       ],
       6: [
-        "Hill tops; waves' peaks",
-        "Town announcers of old",
-        "Football player who boots field goals",
-        "More ill; feeling worse",
-        "People racing down mountains",
-        "Twigs; hockey equipment",
-        "Rigid and demanding",
-        "Work stoppage; bowling achievement",
-        "Your heart, informally",
-        "Pranks; magic acts"
+        "One who digs holes",
+        "Mournful funeral songs",
+        "Scoop from the bottom",
+        "Lawn edge trimming tools",
+        "More nervous or irritable; more daring",
+        "More like an egg in taste or texture",
+        "A way out or exit",
+        "One who applies gold leaf",
+        "Encircled or prepared",
+        "Belt or undergarment",
+        "Characteristic of girls",
+        "Aircraft without an engine",
+        "Instances of excessive desire",
+        "Makes harsh scraping sounds",
+        "Metal grating or car front",
+        "Cooks on a grated surface",
+        "Young Atlantic salmon",
+        "Book of financial accounts",
+        "Lion-tiger hybrids",
+        "To apply gold coating again",
+        "Having raised lines",
+        "Long narrow hilltops",
+        "Set up dishonestly",
+        "One who rigs equipment",
+        "Finished with overcast stitching",
+        "Machine that overcast stitches",
+        "Strong twilled fabrics",
+        "One who lays siege"
       ],
       7: [
-        "Football specialists",
-        "Bone disease from vitamin D deficiency",
-        "Adhesive label or decal (pangram!)",
-        "Bowling achievements; work stoppages",
-        "Hearts; stock price displays"
+        "Those who dig holes",
+        "Stray from the subject",
+        "Scooped from bottom",
+        "Scoops from the bottom",
+        "Those who apply gold leaf",
+        "Belts or undergarments",
+        "Informal term for girls",
+        "Engineless aircraft",
+        "Marked with a grid pattern",
+        "Flat cooking surface",
+        "Cooked on a grill",
+        "One who grills food",
+        "Metal gratings",
+        "Financial account books",
+        "Applies gold coating again",
+        "Return to a former or less developed state",
+        "Those who rig equipment",
+        "Overcast stitch machines",
+        "Those who lay siege"
       ],
       8: [
-        "Adhesive labels kids love to collect",
-        "More adhesive; harder to remove"
+        "Multiple ways out",
+        "More excessively wanting",
+        "Cooked on a flat surface",
+        "One who uses a griddle (cafe special!)",
+        "Flat cooking surfaces",
+        "Those who grill food"
+      ],
+      9: [
+        "Strayed from the subject",
+        "Strays from the subject",
+        "Those who use griddles (cafe specials!)",
+        "Returned to a former state",
+        "Returns to a former state",
       ]
     }
   },
-
-  // PUZZLE 2: MUSICAL
+  // PUZZLE 2: BETOKENS
   {
-    id: 'musical-puzzle',
-    subtitle: 'All That Jazz!',
-    letters: ['M', 'U', 'S', 'I', 'C', 'A', 'L'],
-    keyLetters: ['A', 'L'],
-    totalWordCount: 44,
+    id: 'betokens-puzzle',
+    subtitle: 'Prepare the Cafe',
+    letters: ['T', 'E', 'O', 'B', 'N', 'K', 'S'],
+    keyLetters: ['O', 'N'],
+    totalWordCount: 70,
     words: {
-      4: ['AILS', 'AIMS', 'ALUM', 'CALL', 'CALM', 'CLAM', 'ILLS', 'LULL', 'MAIL', 'MALL', 'MAUL', 'MILL', 'MULL', 'SAIL', 'SILL', 'SLAM', 'SLIM'],
-      5: ['ALIAS', 'ALUMS', 'CALLS', 'CALMS', 'CLAIM', 'CLAMS', 'LILAC', 'LLAMA', 'LULLS', 'MAILS', 'MALLS', 'MAULS', 'MILLS', 'MULLS', 'MUSIC', 'SAILS', 'SILLS', 'SLAMS', 'SLIMS', 'SMALL'],
-      6: ['ALUMNI', 'CALLUS', 'CLAIMS', 'LILACS', 'LLAMAS'],
-      7: ['MUSICAL'],
-      8: ['MUSICALS']
+      4: ['BONE', 'BONK', 'BOON', 'EBON', 'EONS', 'KENO', 'KNOB', 'KNOT', 'NOBS', 'NOES', 'NONE', 'NOOK', 'NOON', 'NOSE', 'NOTE', 'ONES', 'SNOB', 'SNOT', 'SONS', 'SOON', 'TONE', 'TONS', 'TOON'],
+      5: ['BONES', 'BONKS', 'BONNE', 'BOONS', 'EBONS', 'KENOS', 'KNOBS', 'KNOTS', 'NONES', 'NOOKS', 'NOONS', 'NOSES', 'NOTES', 'ONSET', 'SNOBS', 'SNOEK', 'SNOOK', 'SNOTS', 'STENO', 'STONE', 'STONK', 'TOKEN', 'TONES', 'TONNE', 'TOONS'],
+      6: ['BONNES', 'BONBON', 'BONNET', 'KETONE', 'ONSETS', 'SNOOKS', 'SONNET', 'STENOS', 'STONES', 'STONKS', 'TOKENS', 'TONNES'],
+      7: ['BETOKEN', 'BONBONS', 'BONESET', 'BONNETS', 'KETONES', 'SONNETS'],
+      8: ['BETOKENS', 'BONESETS', 'NOTEBOOK'],
+      9: ['NOTEBOOKS']
     },
     hints: {
       4: [
-        "Troubles or bothers",
-        "Goals; points a weapon",
-        "Graduate of a school",
-        "Phone someone; shout out",
-        "Peaceful and still",
-        "Shellfish in chowder",
-        "Sicknesses or problems",
-        "Calm period; soothe to sleep",
-        "Letters delivered to your door",
-        "Shopping center",
-        "Attack violently; heavy hammer",
-        "Building for grinding grain",
-        "Think over carefully",
-        "Boat fabric; travel by water",
-        "Ledge at the bottom of a window",
-        "Shut forcefully",
-        "Thin or slender"
+        "Skeletal structure piece",
+        "Hit on the head",
+        "Blessing or benefit",
+        "Dark black wood color",
+        "Long periods of time",
+        "Bingo-like gambling game",
+        "Round door handle",
+        "Tied rope fastening",
+        "Wealthy or important people (slang)",
+        "Plural of no",
+        "Not any; zero",
+        "Cozy corner for reading",
+        "Midday; 12 o'clock",
+        "Organ for smelling",
+        "Written message or musical sound",
+        "Single units; individuals",
+        "Pretentious person",
+        "Nasal mucus (informal)",
+        "Male offspring",
+        "In a short time",
+        "Sound quality or shade",
+        "Units of weight (2000 lbs)",
+        "Cartoon character; animated show"
       ],
       5: [
-        "Fake name used to hide identity",
-        "School graduates",
-        "Phone conversations; shouts",
-        "Soothes; peaceful states",
-        "Assert ownership of something",
-        "Shellfish; slang for dollars",
-        "Purple flowering spring shrub",
-        "Fluffy South American animal",
-        "Calm periods; soothes to sleep",
-        "Sends letters or packages",
-        "Shopping centers",
-        "Attacks violently",
-        "Grain grinding buildings",
-        "Thinks over carefully",
-        "Melodic sounds and songs",
-        "Boat fabrics; travels by water",
-        "Window ledges",
-        "Shuts doors forcefully",
-        "Becomes thinner",
-        "Little in size"
+        "Skeletal pieces",
+        "Hits on the head",
+        "French word for good (feminine)",
+        "Benefits or blessings",
+        "Dark black colors",
+        "Bingo-like games",
+        "Round door handles",
+        "Tied fastenings",
+        "Midday prayers; not any (plural)",
+        "Cozy reading corners",
+        "Multiple middays",
+        "Smelling organs",
+        "Written messages",
+        "Beginning; start",
+        "Pretentious people",
+        "South African fish",
+        "Type of fish; billiards shot",
+        "Nasal mucus (plural)",
+        "Shorthand typist",
+        "Rock; fruit seed",
+        "Military bombardment (British)",
+        "Symbol representing something",
+        "Shades or sounds",
+        "Metric ton",
+        "Cartoon characters"
       ],
       6: [
-        "Graduates of a school (plural)",
-        "Hardened, thick patch of skin",
-        "Asserts ownership",
-        "Purple flowering spring shrubs",
-        "Fluffy South American animals"
+        "French maids (historical)",
+        "Small chocolate candy",
+        "Hat tied under chin",
+        "Chemical compound in metabolism",
+        "Beginnings; attacks",
+        "Types of fish",
+        "14-line poem",
+        "Shorthand typists",
+        "Rocks; throws rocks at",
+        "Military bombardments",
+        "Symbols; subway fares",
+        "Metric tons"
       ],
       7: [
-        "Broadway show with singing and dancing (pangram!)"
+        "To signify or indicate",
+        "Small chocolate candies",
+        "Medicinal herb plant",
+        "Hats tied under chin",
+        "Chemical compounds",
+        "14-line poems"
       ],
       8: [
-        "Broadway shows like Hamilton or Wicked (pangram!)"
-      ]
+        "Signifies or indicates (pangram!)",
+        "Medicinal herb plants",
+        "Bound pages for writing"
+      ],
+      9: [
+        "Bound pages for writing (plural)",
+      ],
     }
   },
-
-  // PUZZLE 3: FLOWERS
+  // PUZZLE 3: CINNAMONS
   {
-    id: 'flowers-puzzle',
-    subtitle: 'Blooming at the Cafe',
-    letters: ['F', 'L', 'O', 'W', 'E', 'R', 'S'],
-    keyLetters: ['E', 'R'],
-    totalWordCount: 47,
+    id: 'cinnamons-puzzle',
+    subtitle: 'Choices',
+    letters: ['C', 'N', 'M', 'I', 'A', 'O', 'S'],
+    keyLetters: ['N', 'I'],
+    totalWordCount: 70,
     words: {
-      4: ['EWER', 'FORE', 'LEER', 'LORE', 'ORES', 'REEL', 'REEF', 'ROLE', 'ROSE', 'SERF', 'SERE', 'SORE', 'WERE', 'WORE'],
-      5: ['EWERS', 'FEWER', 'FLOOR', 'FORES', 'FREER', 'FREES', 'LEERS', 'LORES', 'LOSER', 'LOWER', 'REELS', 'REEFS', 'RESEW', 'ROLES', 'ROSES', 'ROWER', 'SEERS', 'SERFS', 'SEWER', 'SORER', 'SWORE', 'WOOER', 'WORSE'],
-      6: ['FLOORS', 'FLOWER', 'LOSERS', 'LOWERS', 'ROWERS', 'SEWERS', 'SLOWER', 'WOOERS'],
-      7: ['FLOWERS', 'REFLOWS']
+      4: ['AINS', 'ANIS', 'CAIN', 'COIN', 'ICON', 'INCA', 'INNS', 'IONS', 'MAIN', 'MINI', 'OMNI', 'SINS'],
+      5: ['ANIMA', 'AMINO', 'AMNIO', 'ANION', 'CAINS', 'COINS', 'CONIC', 'ICONS', 'INCAS', 'MAINS', 'MANIA', 'MANIC', 'MANIS', 'MINIS', 'OMNIS', 'ONION', 'SCION', 'SONIC'],
+      6: ['AMINOS', 'AMNION', 'AMNIOS', 'ANIMAS', 'ANIONS', 'CASINO', 'CONICS', 'ICONIC', 'MANIAC', 'MANIAS', 'MANICS', 'MINION', 'MONISM', 'ONIONS', 'SCIONS', 'SIMIAN', 'SONICS'],
+      7: ['AMNIONS', 'ANIMISM', 'CASINOS', 'MANIACS', 'MANSION', 'MASONIC', 'MINIONS', 'MISSION', 'MONISMS', 'SIMIANS'],
+      8: ['ANIMISMS', 'CINNAMON', 'MANSIONS', 'MISSIONS', 'MOCCASIN', 'OCCASION', 'OMISSION'],
+      9: ['CINNAMONS', 'MOCCASINS', 'OCCASIONS', 'OMISSIONS'],
+      10: ['COMMISSION'],
+      11: ['COMMISSIONS']
     },
     hints: {
       4: [
-        "Decorative pitcher for water",
-        "Front part; golf warning shout",
-        "Creepy or suggestive stare",
-        "Traditional knowledge and legends",
-        "Rocks containing valuable metals",
-        "Fishing spool; stagger dizzily",
-        "Underwater coral formation",
-        "Part played by an actor",
-        "Classic red flower of love",
-        "Medieval peasant worker",
-        "Dried up and withered",
-        "Painful and aching",
-        "Past tense of \"are\"",
-        "Had clothing on"
+        "Plural of ain (Scottish word for own)",
+        "Anise-flavored seeds",
+        "Biblical son of Adam",
+        "Metal money",
+        "Small religious image",
+        "Ancient Peruvian empire member",
+        "Lodging houses",
+        "Electrically charged atoms",
+        "Principal; most important",
+        "Very small version",
+        "All-inclusive; universal (prefix)",
+        "Wrongful acts"
       ],
       5: [
-        "Decorative water pitchers",
-        "Smaller in number",
-        "Surface you walk on",
-        "Golf warning shouts",
-        "More free; less restricted",
-        "Releases or liberates",
-        "Creepy stares",
-        "Legends and traditional knowledge",
-        "One who doesn't win",
-        "Reduce; beneath something",
-        "Fishing spools; staggers",
-        "Coral formations underwater",
-        "Stitch again",
-        "Parts in a play or movie",
-        "Classic flowers of love",
-        "Person paddling a boat",
-        "Fortune tellers; prophets",
-        "Medieval peasant workers",
-        "Underground drainage pipe",
-        "More painful",
-        "Made an oath; used bad words",
-        "Someone courting a sweetheart",
-        "More bad; not as good"
+        "Soul in Hindu philosophy",
+        "Organic compound with nitrogen",
+        "Fetal membrane",
+        "Ion with negative charge",
+        "Biblical murderers (plural)",
+        "Metal money pieces",
+        "Shaped like a cone",
+        "Religious images",
+        "Ancient Peruvians",
+        "Principal points",
+        "Obsessive enthusiasm",
+        "Wildly enthusiastic",
+        "Cassava plants (alternate)",
+        "Very small versions",
+        "Universal; all-inclusive",
+        "Layered vegetable that makes you cry",
+        "Descendant; offspring",
+        "Relating to sound"
       ],
       6: [
-        "Surfaces you walk on",
-        "Blooming plant in a garden",
-        "Those who don't win",
-        "Reduces; brings down",
-        "People paddling boats",
-        "Underground drainage pipes",
-        "Less fast; more gradual",
-        "People courting sweethearts"
+        "Organic compounds with nitrogen",
+        "Innermost fetal membrane",
+        "Fetal membranes",
+        "Souls in Hindu philosophy",
+        "Negatively charged ions",
+        "Gambling establishment",
+        "Cone-shaped things (math term)",
+        "Symbolic; representing something",
+        "Person with obsessive enthusiasm",
+        "Obsessive enthusiasms",
+        "Wildly enthusiastic people",
+        "Loyal follower (yellow ones too!)",
+        "Belief in one ultimate reality",
+        "Layered veggies that make you cry",
+        "Descendants; offspring (plural)",
+        "Relating to apes",
+        "Relating to sound (plural)"
       ],
       7: [
-        "Blooming beauties in a garden (pangram!)",
-        "Flows again, like melted wax"
-      ]
-    }
-  },
-
-  // PUZZLE 4: FRIENDS
-  {
-    id: 'friends-puzzle',
-    subtitle: 'The One at the Cafe',
-    letters: ['F', 'R', 'I', 'E', 'N', 'D', 'S'],
-    keyLetters: ['I', 'E'],
-    totalWordCount: 56,
-    words: {
-      4: ['DINE', 'DIRE', 'FINE', 'FIRE', 'IDES', 'NINE', 'REIN', 'RIDE', 'RIFE', 'RISE', 'SIDE', 'SINE', 'SIRE'],
-      5: ['DINED', 'DINER', 'DINES', 'DRIED', 'DRIES', 'FINED', 'FINER', 'FINES', 'FIRED', 'FIRES', 'FRIED', 'FRIES', 'INDIE', 'INFER', 'INNER', 'REINS', 'RESIN', 'RIDER', 'RIDES', 'RINSE', 'RISEN', 'SIDED', 'SIDES', 'SIRED', 'SIREN', 'SNIDE'],
-      6: ['DINERS', 'DRIERS', 'FINDER', 'FRIEND', 'INFERS', 'REFINE', 'REINED', 'RESIDE', 'RIDERS', 'RINSED', 'SIRENS'],
-      7: ['FINDERS', 'FRIENDS', 'INSIDER', 'REFINED', 'REFINES', 'RESIDES'],
-      8: ['INSIDERS']
-    },
-    hints: {
-      4: [
-        "Eat a meal, especially dinner",
-        "Extremely serious or urgent",
-        "Good quality; penalty fee",
-        "Flames; to let go from a job",
-        "Middle of the month (beware the _____ of March!)",
-        "Number after eight",
-        "Strap to control a horse",
-        "Travel on a horse, bike, or roller coaster",
-        "Widespread; full of",
-        "Go upward; get out of bed",
-        "Edge; to agree with someone",
-        "Math function in trigonometry",
-        "Father, especially of a horse"
-      ],
-      5: [
-        "Ate a meal",
-        "Restaurant with booths; person eating",
-        "Eats meals",
-        "Made dry; preserved",
-        "Removes moisture",
-        "Given a penalty fee",
-        "Better quality; more delicate",
-        "Penalty fees",
-        "Let go from a job; shot a gun",
-        "Flames; shoots",
-        "Cooked in hot oil",
-        "French _____; cooks in oil",
-        "Independent film or music",
-        "Conclude from evidence",
-        "Inside; internal",
-        "Straps to control a horse",
-        "Sticky substance from trees",
-        "Person on a horse or bike",
-        "Travels on; amusement park attractions",
-        "Wash lightly with water",
-        "Gone up; out of bed",
-        "Took a position with someone",
-        "Edges; french fries or coleslaw",
-        "Fathered offspring",
-        "Warning sound; mythical sea singer",
-        "Sarcastic in a mean way"
-      ],
-      6: [
-        "Restaurants with booths",
-        "Machines that remove moisture",
-        "One who locates something lost",
-        "Close companion you care about",
-        "Concludes from evidence",
-        "Make pure; improve",
-        "Pulled back with horse straps",
-        "Live in a place",
-        "People on horses or bikes",
-        "Washed lightly with water",
-        "Warning sounds; mythical singers"
-      ],
-      7: [
-        "People who locate lost things",
-        "Close companions (pangram!)",
-        "Someone with special inside knowledge",
-        "Made pure; elegant and cultured",
-        "Makes pure; improves",
-        "Lives in a place"
+        "Innermost fetal membranes",
+        "Belief that all things have souls",
+        "Gambling establishments",
+        "People with obsessive enthusiasm",
+        "Large stately house",
+        "Relating to Freemasons",
+        "Loyal followers (yellow ones too!)",
+        "Task or assignment",
+        "Beliefs in one ultimate reality",
+        "Relating to apes (plural)"
       ],
       8: [
-        "People with special inside knowledge"
-      ]
-    }
-  },
-
-  // PUZZLE 5: INVENTOR
-  {
-    id: 'inventor-puzzle',
-    subtitle: "What's New?",
-    letters: ['I', 'N', 'V', 'E', 'T', 'O', 'R'],
-    keyLetters: ['O', 'E'],
-    totalWordCount: 23,
-    words: {
-      4: ['NOTE', 'OVEN', 'OVER', 'ROTE', 'ROVE', 'TONE', 'TORE', 'VETO', 'VOTE'],
-      5: ['NOTER', 'OVERT', 'ROVER', 'TENOR', 'TONER', 'TONNE', 'TROVE', 'VOTER'],
-      6: ['INTONE', 'ORIENT', 'RETORT', 'ROTTEN'],
-      7: ['ENVIRON'],
-      8: ['INVENTOR']
-    },
-    hints: {
-      4: [
-        "Written message; musical sound",
-        "Kitchen appliance for baking",
-        "Above; finished",
-        "Memorization by repetition",
-        "Wander or roam about",
-        "Sound quality; shade of color",
-        "Ripped apart",
-        "Reject or override a decision",
-        "Cast a ballot in an election"
+        "Beliefs that all things have souls",
+        "Warm brown spice from bark",
+        "Large stately houses",
+        "Tasks or assignments",
+        "Native American soft leather shoe",
+        "Special event or happening",
+        "Something left out or not done"
       ],
-      5: [
-        "One who writes things down",
-        "Open and not hidden",
-        "Wanderer; Mars explorer",
-        "Male singing voice",
-        "Printer ink; skin care product",
-        "Metric ton (1,000 kg)",
-        "Collection of treasures",
-        "Person who casts a ballot"
-      ],
-      6: [
-        "Chant; speak in a monotone",
-        "The East; to position or align",
-        "Quick, witty reply",
-        "Decayed and spoiled"
-      ],
-      7: [
-        "Surround or encircle"
-      ],
-      8: [
-        "Creator of new things (pangram!)"
-      ]
-    }
-  },
-
-  // PUZZLE 6: PUZZLERS
-  {
-    id: 'puzzlers-puzzle',
-    subtitle: 'Piecers of Wisdom',
-    letters: ['P', 'U', 'Z', 'L', 'E', 'R', 'S'],
-    keyLetters: ['U', 'E'],
-    totalWordCount: 39,
-    words: {
-      4: ['LURE', 'PURE', 'RULE', 'RUES', 'RUSE', 'SURE', 'USER'],
-      5: ['LURES', 'PULSE', 'PUREE', 'PURER', 'PURSE', 'RULES', 'RULER', 'RUSES', 'SUPER', 'SURER', 'UPPER', 'USERS'],
-      6: ['PERUSE', 'PULSES', 'PUREES', 'PURSUE', 'PURSES', 'PUZZLE', 'RULERS', 'SUPPER', 'SUPPLE', 'UPPERS'],
-      7: ['PERUSES', 'PURSUER', 'PURSUES', 'PUZZLER', 'PUZZLES', 'REPULSE', 'SUPPERS'],
-      8: ['PURSUERS', 'PUZZLERS', 'REPULSES']
-    },
-    hints: {
-      4: [
-        "Temptation; fishing bait",
-        "Clean and unmixed",
-        "Regulation; to govern",
-        "Regrets deeply",
-        "Trick or deception",
-        "Certain and confident",
-        "Person who uses something"
-      ],
-      5: [
-        "Temptations; fishing baits",
-        "Heartbeat; rhythmic throb",
-        "Blended smooth food",
-        "More clean and unmixed",
-        "Handbag; to pucker lips",
-        "Regulations; governs",
-        "Measuring stick; leader",
-        "Tricks or deceptions",
-        "Great; excellent",
-        "More certain",
-        "Higher part; top level",
-        "People who use things"
-      ],
-      6: [
-        "Read carefully and thoroughly",
-        "Heartbeats; legumes like lentils",
-        "Blended smooth foods",
-        "Chase after; seek",
-        "Handbags",
-        "Brain teaser; jigsaw",
-        "Measuring sticks; leaders",
-        "Evening meal",
-        "Flexible and bendable",
-        "Top parts of shoes; stimulants"
-      ],
-      7: [
-        "Reads carefully and thoroughly",
-        "One who chases after someone",
-        "Chases after; seeks",
-        "One who solves brain teasers (pangram!)",
-        "Brain teasers; jigsaws",
-        "Drive back; disgust",
-        "Evening meals"
-      ],
-      8: [
-        "People who chase after others",
-        "People who solve brain teasers (pangram!)",
-        "Drives back; disgusts"
-      ]
-    }
-  },
-
-  // PUZZLE 7: PEANUTS
-  {
-    id: 'peanuts-puzzle',
-    subtitle: 'Snack Attack',
-    letters: ['P', 'E', 'A', 'N', 'U', 'T', 'S'],
-    keyLetters: ['A', 'E'],
-    totalWordCount: 45,
-    words: {
-      4: ['ANTE', 'APES', 'EASE', 'EATS', 'ETAS', 'NAPE', 'NEAT', 'PANE', 'PATE', 'PEAS', 'PEAT', 'SANE', 'SATE', 'SEAT', 'TAPE', 'TEAS'],
-      5: ['ANTES', 'EATEN', 'NAPES', 'NEAPS', 'PANES', 'PASTE', 'PATES', 'PAUSE', 'PEATS', 'SATES', 'SAUTE', 'SEATS', 'STATE', 'TAPES', 'TASTE'],
-      6: ['PASTES', 'PAUSES', 'PEANUT', 'SATEEN', 'SAUTES', 'SENATE', 'STATES', 'STATUE', 'TASTES'],
-      7: ['APTNESS', 'PEANUTS', 'SENATES', 'STATUES'],
-      8: ['PEASANTS']
-    },
-    hints: {
-      4: [
-        "Poker stake; put money in the pot",
-        "Primates; imitates someone",
-        "Comfort; make less difficult",
-        "Consumes food",
-        "Greek letters; estimated arrival times",
-        "Back of the neck",
-        "Tidy and organized",
-        "Sheet of window glass",
-        "Top of the head",
-        "Small round green vegetables",
-        "Soil used in gardening",
-        "Mentally healthy and reasonable",
-        "Satisfy fully",
-        "Chair; place to sit",
-        "Sticky strip; cassette recording",
-        "Hot brewed beverages"
-      ],
-      5: [
-        "Poker stakes; bets before dealing",
-        "Consumed as food",
-        "Backs of necks",
-        "Tides with minimal change",
-        "Sheets of window glass",
-        "Glue; soft dough mixture",
-        "Tops of heads",
-        "Brief stop or break",
-        "Types of gardening soil",
-        "Satisfies fully",
-        "Cook quickly in a pan",
-        "Chairs; places to sit",
-        "Condition; nation or territory",
-        "Sticky strips; recordings",
-        "Flavor; sample food"
-      ],
-      6: [
-        "Glues; soft mixtures",
-        "Brief stops or breaks",
-        "Legume snack in a shell",
-        "Glossy cotton fabric",
-        "Cooks quickly in a pan",
-        "Legislative governing body",
-        "Conditions; nations or territories",
-        "Sculpted figure of a person",
-        "Flavors; samples food"
-      ],
-      7: [
-        "Quality of being suitable",
-        "Legume snacks at the ballpark (pangram!)",
-        "Legislative governing bodies",
-        "Sculpted figures"
-      ],
-      8: [
-        "Farm workers; rural villagers"
-      ]
-    }
-  },
-
-  // PUZZLE 8: BAKERIES
-  {
-    id: 'bakeries-puzzle',
-    subtitle: 'Cookies, Donuts, and Pastries, oh my!',
-    letters: ['B', 'A', 'K', 'E', 'R', 'I', 'S'],
-    keyLetters: ['A', 'E'],
-    totalWordCount: 50,
-    words: {
-      4: ['BAKE', 'BARE', 'BASE', 'BEAK', 'BEAR', 'EASE', 'RAKE', 'SAKE', 'SEAR'],
-      5: ['ABASE', 'AREAS', 'ARISE', 'BAKER', 'BAKES', 'BARES', 'BASES', 'BEAKS', 'BEARS', 'BRAKE', 'BREAK', 'ERASE', 'RAISE', 'RAKES', 'REARS', 'SABER', 'SAKES', 'SAREE', 'SEARS'],
-      6: ['ABASES', 'BAKERS', 'BEAKER', 'BRAISE', 'BRAKES', 'BREAKS', 'EASIER', 'ERASER', 'ERASES', 'RABIES', 'RAISER', 'RAISES', 'SABERS', 'SAREES', 'SIERRA'],
-      7: ['BEAKERS', 'BRAISES', 'BREAKER', 'ERASERS', 'RAISERS', 'SIERRAS'],
-      8: ['BAKERIES', 'BREAKERS']
-    },
-    hints: {
-      4: [
-        "Cook in an oven",
-        "Uncovered; naked",
-        "Bottom; foundation",
-        "Bird's bill",
-        "Large furry animal; to carry",
-        "Comfort; make less difficult",
-        "Garden tool for gathering leaves",
-        "Purpose; Japanese rice wine",
-        "Burn the surface; scorch"
-      ],
-      5: [
-        "Humble or degrade oneself",
-        "Regions; spaces",
-        "Get up; come into being",
-        "Person who makes bread and pastries",
-        "Cooks in an oven",
-        "Uncovers; exposes",
-        "Foundations; baseball spots",
-        "Bird bills",
-        "Large furry animals; carries",
-        "Stopping device on a vehicle",
-        "Shatter; pause from work",
-        "Delete; remove marks",
-        "Lift up; increase",
-        "Garden tools; gathers leaves",
-        "Back parts; raises up",
-        "Curved sword",
-        "Purposes",
-        "Traditional Indian wrapped garment",
-        "Burns surfaces"
-      ],
-      6: [
-        "Humbles or degrades",
-        "People who make bread and pastries",
-        "Glass container used in labs",
-        "Cook slowly in liquid",
-        "Stopping devices on vehicles",
-        "Shatters; pauses from work",
-        "Less difficult",
-        "Tool for removing pencil marks",
-        "Deletes; removes marks",
-        "Viral disease from animal bites",
-        "One who lifts or increases",
-        "Lifts up; increases",
-        "Curved swords",
-        "Traditional Indian garments",
-        "Mountain range"
-      ],
-      7: [
-        "Glass containers used in labs",
-        "Cooks slowly in liquid",
-        "Ocean wave; circuit safety device",
-        "Tools for removing marks",
-        "People who lift or increase",
-        "Mountain ranges"
-      ],
-      8: [
-        "Shops selling bread and pastries (pangram!)",
-        "Ocean waves; circuit safety devices"
-      ]
-    }
-  },
-
-  // PUZZLE 9: APPRECIATE
-  {
-    id: 'appreciate-puzzle',
-    subtitle: 'Thank You!',
-    letters: ['A', 'P', 'R', 'E', 'C', 'I', 'T'],
-    keyLetters: ['A', 'E'],
-    totalWordCount: 38,
-    words: {
-      4: ['ACRE', 'CAPE', 'CARE', 'PACE', 'PARE', 'PATE', 'RACE', 'RARE', 'RATE', 'REAP', 'TAPE', 'TARE'],
-      5: ['CAPER', 'CARET', 'CARTE', 'CATER', 'CRATE', 'EATER', 'IRATE', 'PACER', 'PARER', 'PEACE', 'PRATE', 'RACER', 'REACT', 'RECAP', 'TAPER', 'TRACE'],
-      6: ['APIECE', 'CAPITA', 'CARPET', 'CREATE', 'PIRATE', 'RACIER', 'RAPIER', 'REPEAT', 'TRACER'],
-      10: ['APPRECIATE']
-    },
-    hints: {
-      4: [
-        "Unit of land measurement",
-        "Sleeveless cloak; coastal point",
-        "Concern; look after someone",
-        "Speed of movement; step",
-        "Peel or trim with a knife",
-        "Top of the head",
-        "Competition; run fast",
-        "Uncommon; lightly cooked steak",
-        "Speed; evaluate or rank",
-        "Harvest crops",
-        "Sticky strip; recording medium",
-        "Weed; weight of a container"
-      ],
-      5: [
-        "Playful jump; edible flower bud",
-        "Editing symbol that looks like ^",
-        "Menu; as in \"à la _____\"",
-        "Provide food for an event",
-        "Wooden shipping box",
-        "One who consumes food",
-        "Very angry",
-        "One who walks back and forth; horse breed",
-        "Tool for peeling fruit",
-        "Calm; absence of war",
-        "Talk foolishly at length",
-        "One who competes in speed contests",
-        "Respond to something",
-        "Summarize what happened",
-        "Narrow gradually; thin candle",
-        "Track; small amount"
-      ],
-      6: [
-        "Each one; per item",
-        "Per _____ (per person)",
-        "Floor covering; call on the _____",
-        "Make something new",
-        "Sea robber; illegal copier",
-        "More risqué or suggestive",
-        "Thin, pointed sword",
-        "Do or say again",
-        "One who tracks; glowing bullet"
+      9: [
+        "Warm brown spices from bark (pangram!)",
+        "Native American soft leather shoes (pangram!)",
+        "Special events or happenings",
+        "Things left out or not done"
       ],
       10: [
-        "Value highly; be grateful for (pangram!)"
+        "Fee paid to a salesperson; or a formal group assigned a task"
+      ],
+      11: [
+        "Fees paid to salespeople; or formal groups assigned tasks (pangram!)"
       ]
     }
-  }
+  },
+// PUZZLE: CELEBRATE
+  {
+    id: 'celebrate-puzzle',
+    subtitle: 'Party Time',
+    letters: ['C', 'L', 'B', 'R', 'T', 'E', 'A'],
+    keyLetters: ['E', 'A'],
+    totalWordCount: 104,
+    words: {
+      4: ['ABLE', 'ACER', 'ACRE', 'ALEC', 'ALEE', 'AREA', 'BABE', 'BALE', 'BARE', 'BATE', 'BEAR', 'BEAT', 'BETA', 'BRAE', 'CARE', 'EARL', 'LACE', 'LATE', 'RACE', 'RARE', 'RATE', 'REAL', 'REAR', 'TALE', 'TEAL', 'TEAR'],
+      5: ['ABLER', 'ACERB', 'ALERT', 'ALTER', 'BABEL', 'BALER', 'BARER', 'BLARE', 'BLEAR', 'BLEAT', 'BRACE', 'CABER', 'CABLE', 'CARER', 'CARET', 'CARLE', 'CATER', 'CLEAR', 'CLEAT', 'CRATE', 'EATER', 'ELATE', 'LABEL', 'LACER', 'LATER', 'RACER', 'RARER', 'RATER', 'REACT', 'TABLE', 'TRACE', 'TREAT'],
+      6: ['BALLET', 'BARBER', 'BARREL', 'BATTER', 'BATTLE', 'BEARER', 'BEATER', 'BRACER', 'CABLER', 'CALLER', 'CAREER', 'CARREL', 'CARTEL', 'CARTER', 'CATTLE', 'CELLAR', 'CEREAL', 'CLARET', 'CRATER', 'CREATE', 'LATTER', 'RATTER', 'RATTLE', 'REALER', 'RECALL', 'RECTAL', 'RELATE', 'TABLET', 'TALLER', 'TARTER', 'TRACER'],
+      7: ['BATTLER', 'BLABBER', 'BLATTER', 'BLEATER', 'CATERER', 'CLATTER', 'CLEARER', 'LABELER', 'RATTLER', 'RETREAT', 'TERRACE', 'TREACLE', 'TREATER'],
+      8: ['BEATABLE'],
+      9: ['CELEBRATE'],
+    },
+    // CELEBRATE PUZZLE - CORRECTED HINTS
+// Replace your current hints section with this:
+
+    hints: {
+      4: [
+        "Capable of doing something",
+        "Maple tree genus",
+        "Unit of land measurement",
+        "A man's name, short for Alexander",
+        "On the sheltered side (nautical)",
+        "A region or space",
+        "Infant; baby",
+        "Bundle of hay",
+        "Without covering; naked",
+        "To soak leather in alkaline solution",
+        "Large furry mammal",
+        "To defeat; rhythm",
+        "Greek letter; test version",
+        "Hillside (Scottish)",
+        "Feel concern; look after",
+        "British nobleman",
+        "Delicate fabric trim",
+        "Not on time",
+        "Competition of speed",
+        "Not common; undercooked",
+        "Speed; charge per unit",
+        "Actual; genuine",
+        "Back part; raise (children)",
+        "Story; narrative",
+        "Blue-green color; a duck",
+        "Rip; drop of sadness"
+      ],
+      5: [
+        "More capable",
+        "Sour; bitter tasting",
+        "Warning signal; watchful",
+        "Change; modify",
+        "Tower of confusion (biblical)",
+        "One who bales hay",
+        "More naked; more empty",
+        "Loud sound; horn noise",
+        "Dim or blurred (eyes)",
+        "Cry of a sheep or goat",
+        "Arm support; strengthen",
+        "Pole used in Scottish games",
+        "Wire for TV or electricity",
+        "One who provides care",
+        "Proofreader's mark (^)",
+        "A peasant; rustic fellow",
+        "Provide food service",
+        "Transparent; obvious",
+        "T-shaped fastener on a boat",
+        "Wooden shipping box",
+        "One who consumes food",
+        "Make very happy",
+        "Tag for identification",
+        "One who laces",
+        "Afterward; more late",
+        "One who races; sports car",
+        "More uncommon",
+        "One who rates or evaluates",
+        "Respond to a stimulus",
+        "Furniture for dining",
+        "Follow a path; small amount",
+        "Special food; handle medically"
+      ],
+      6: [
+        "Classical dance form",
+        "One who cuts hair",
+        "Cylindrical container; gun part",
+        "One who bats; cake mixture",
+        "Armed conflict; fight",
+        "One who carries something",
+        "Kitchen mixer tool",
+        "Wrist support; something that braces",
+        "One who installs cables",
+        "One who calls; visitor",
+        "Profession; job path",
+        "Library study cubicle",
+        "Business alliance; price-fixing group",
+        "One who drives a cart",
+        "Cows and bulls",
+        "Underground storage room",
+        "Breakfast grain food",
+        "Deep red wine color",
+        "Volcanic hole; moon pit",
+        "Make; bring into existence",
+        "Second of two; more recent",
+        "Dog that catches rats",
+        "Baby's shaking toy",
+        "More genuine (informal)",
+        "Remember; call back",
+        "Relating to the rectum",
+        "Tell; have connection to",
+        "Flat slab; pill",
+        "More tall",
+        "More sour or acidic",
+        "One who traces; bullet type"
+      ],
+      7: [
+        "One who fights battles",
+        "One who talks too much",
+        "One who blatters (rare word)",
+        "Sheep or goat making sounds",
+        "One who provides food service",
+        "Loud rattling noise",
+        "More transparent",
+        "One who applies labels",
+        "Venomous snake; baby toy",
+        "Go back; place of seclusion",
+        "Outdoor patio area",
+        "British golden syrup",
+        "One who treats patients"
+      ],
+      8: [
+        "Able to be defeated"
+      ],
+      9: [
+        "Have a party; honor a special occasion (pangram!)"
+      ]
+    }
+    },
+  
+  // PUZZLE: CUPCAKES
+  {
+    id: 'cupcakes-puzzle',
+    subtitle: 'Sweet Treats',
+    letters: ['C', 'U', 'P', 'A', 'K', 'E', 'S'],
+    keyLetters: ['S', 'E'],
+    totalWordCount: 35,
+    words: {
+      4: ['APSE', 'CASE', 'CUES', 'EASE', 'EKES', 'PECS', 'SEEK', 'SEEP', 'SEES', 'SPEC', 'SUES', 'USES'],
+      5: ['CAKES', 'CAPES', 'CASES', 'CAUSE', 'CEASE', 'EASES', 'KEEPS', 'PECKS', 'PEEKS', 'PUKES', 'SEEKS', 'SEEPS', 'SPEAK', 'SPECK', 'SPECS'],
+      6: ['CAUSES', 'CEASES', 'CUSSES', 'ESCAPE', 'PUSSES', 'SPEAKS', 'SPECKS'],
+      7: ['ESCAPES'],
+    },
+    // CUPCAKES PUZZLE - HINTS
+// Replace your current CUPCAKES hints section with this:
+
+    hints: {
+      4: [
+        "Semicircular church recess",
+        "Container; situation",
+        "Signals to an actor",
+        "Comfort; lack of difficulty",
+        "Manages to get by barely",
+        "Chest muscles (slang)",
+        "Look for; search",
+        "Leak slowly; ooze",
+        "Views; observes",
+        "Specification (abbrev.)",
+        "Takes to court; legal action",
+        "Employs; makes use of"
+      ],
+      5: [
+        "Birthday party desserts",
+        "Superhero garments; geographic features",
+        "Containers; situations",
+        "Reason; something that produces an effect",
+        "Stop; come to an end",
+        "Comforts; relaxes",
+        "Retains; holds onto",
+        "Bird bites; quick kisses",
+        "Quick glances; sneak looks",
+        "Vomits (slang)",
+        "Searches for",
+        "Oozes; leaks slowly",
+        "Talks; communicates verbally",
+        "Small dot; tiny bit",
+        "Specifications (abbrev.)"
+      ],
+      6: [
+        "Reasons; things that produce effects",
+        "Stops; comes to an end",
+        "Uses swear words",
+        "Flee; get away from",
+        "Cats (informal)",
+        "Talks; communicates",
+        "Small dots; tiny bits"
+      ],
+      7: [
+        "Flees from danger; getaways (pangram!)"
+      ]
+    },
+  },
+  // PUZZLE: BOOKENDS
+  {
+    id: 'bookends-puzzle',
+    subtitle: 'On the Shelves',
+    letters: ['B', 'K', 'N', 'D', 'S', 'O', 'E'],
+    keyLetters: ['O', 'N'],
+    totalWordCount: 40,
+    words: {
+      4: ['BONE', 'BONK', 'BOON', 'DONE', 'DONS', 'EBON', 'EONS', 'KNOB', 'NODE', 'NODS', 'NOSE', 'ONES', 'SNOB', 'SONE', 'SONS'],
+      5: ['BONED', 'BONES', 'BONKS', 'BOONS', 'EBONS', 'KENDO', 'KNOBS', 'NODES', 'NOSED', 'NOSES', 'SNOBS', 'SNOEK', 'SNOOD', 'SONDE'],
+      6: ['BONKED', 'DONEES', 'DONNED', 'KENDOS', 'SNOODS', 'SNOOKS', 'SONDES'],
+      7: ['BOOKEND', 'DEBONES', 'SNOOKED'],
+      8: ['BOOKENDS'],
+    },
+    hints: {
+      4: [
+        "Skeletal part; study hard",
+        "Hit on the head (informal)",
+        "Blessing; benefit",
+        "Finished; completed",
+        "Puts on clothing",
+        "Dark black wood color",
+        "Long periods of time",
+        "Round door handle",
+        "Connection point; lump",
+        "Head bobs; agrees silently",
+        "Facial feature for smelling",
+        "Single units; numbers",
+        "Person who acts superior",
+        "Unit of loudness",
+        "Male children"
+      ],
+      5: [
+        "Removed bones from fish",
+        "Skeletal parts",
+        "Hits on the head",
+        "Blessings; benefits",
+        "Dark black woods",
+        "Japanese sword fighting art",
+        "Round door handles",
+        "Connection points",
+        "Detected by smelling",
+        "Facial features for smelling",
+        "People who act superior",
+        "Type of fish (South African)",
+        "Hair net worn at back of head",
+        "Device to measure ocean depth"
+      ],
+      6: [
+        "Hit on the head (past tense)",
+        "Recipients of donations",
+        "Put on (clothing, past tense)",
+        "Japanese sword fighting arts",
+        "Hair nets worn at back of head",
+        "Billiard shots; nosy people",
+        "Ocean depth measuring devices"
+      ],
+      7: [
+        "Decorative item holding books upright",
+        "Removes bones from meat",
+        "Made a billiard shot"
+      ],
+      8: [
+        "Decorative items that hold books upright on a shelf (pangram!)"
+      ]
+    }
+  },
+  // PUZZLE: CASHMERE
+  {
+    id: 'cashmere-puzzle',
+    subtitle: 'Cozy and Warm',
+    letters: ['C', 'A', 'S', 'H', 'M', 'E', 'R'],
+    keyLetters: ['E', 'A'],
+    totalWordCount: 54,
+    words: {
+      4: ['ACHE', 'ACRE', 'CAME', 'CARE', 'CASE', 'EACH', 'HAEM', 'HARE', 'MACE', 'MARE', 'RACE', 'REAM', 'SEAM', 'SEAR', 'SHEA'],
+      5: ['ACHES', 'ACMES', 'ACRES', 'CARES', 'CHARE', 'CHASE', 'CREAM', 'HAREM', 'HARES', 'MACES', 'MARES', 'REACH', 'REAMS', 'SCARE', 'SEAMS', 'SHAME', 'SHARE', 'SHEAR', 'SMEAR'],
+      6: ['ARCHES', 'CHASER', 'CREAMS', 'HAREMS', 'MASHER', 'SCREAM', 'SCHEMA', 'SEARCH', 'SHAMES', 'SHARES', 'SHEARS', 'SMEARS'],
+      7: ['CHASERS', 'MARCHES', 'MASHERS', 'REMARCH', 'SCHEMAS', 'SCREAMS', 'SMASHER'],
+      8: ['CASHMERE']
+    },
+    hints: {
+      4: [
+        "Dull persistent pain",
+        "Unit of land measurement",
+        "Arrived; past tense of come",
+        "Feel concern; look after",
+        "Container; situation",
+        "Every one separately",
+        "Iron compound in blood",
+        "Long-eared rabbit relative",
+        "Medieval spiked weapon",
+        "Female horse",
+        "Speed competition",
+        "500 sheets of paper",
+        "Line where fabric is sewn",
+        "Burn the surface",
+        "Tree with nuts for butter"
+      ],
+      5: [
+        "Dull persistent pains",
+        "Highest points; peaks",
+        "Land measurement units",
+        "Feels concern for",
+        "Pursue eagerly (archaic)",
+        "Run after to catch",
+        "Dairy product; best part",
+        "Group of wives",
+        "Rabbit relatives",
+        "Medieval weapons",
+        "Female horses",
+        "Extend arm to grab",
+        "Packs of 500 sheets",
+        "Frighten away",
+        "Sewn lines in fabric",
+        "Feeling of embarrassment",
+        "Portion given to others",
+        "Cut wool from sheep",
+        "Spread messily"
+      ],
+      6: [
+        "Curved doorways",
+        "One who pursues",
+        "Dairy products",
+        "Groups of wives",
+        "One who mashes",
+        "Loud piercing cry",
+        "Diagram; plan",
+        "Look thoroughly",
+        "Causes embarrassment",
+        "Portions; parts",
+        "Wool cutting tools",
+        "Messy spreads"
+      ],
+      7: [
+        "Those who pursue",
+        "Walking protests; military moves",
+        "Those who mash",
+        "March again",
+        "Diagrams; plans",
+        "Loud piercing cries",
+        "One who breaks things"
+      ],
+      8: [
+        "Luxuriously soft wool from goats (pangram!)"
+      ]
+    }
+  },
+
+  // PUZZLE: KINDNESS
+  {
+    id: 'kindness-puzzle',
+    subtitle: 'Acts of Care',
+    letters: ['K', 'I', 'N', 'D', 'E', 'S'],
+    keyLetters: ['N', 'I'],
+    totalWordCount: 33,
+    words: {
+      4: ['DINE', 'DINK', 'DINS', 'INKS', 'INNS', 'KIND', 'KINE', 'KINS', 'NIDE', 'NINE', 'SINE', 'SINK', 'SKIN'],
+      5: ['DINED', 'DINES', 'DINKS', 'INDIE', 'KINDS', 'KINES', 'NINES', 'SINES', 'SINKS', 'SKEIN', 'SKINS', 'SNIDE'],
+      6: ['DINNED', 'INDIES', 'KINKED', 'SINNED', 'SKEINS'],
+      7: ['DINKIES', 'SKINNED'],
+      8: ['KINDNESS']
+    },
+    hints: {
+      4: [
+        "Eat an evening meal",
+        "Small dent; tennis term",
+        "Loud noises",
+        "Pen fluids",
+        "Hotels; pubs",
+        "Type or sort; nice",
+        "Archaic word for cows",
+        "Family members",
+        "Nest of pheasants",
+        "Number after eight",
+        "Trigonometry function",
+        "Basin for washing dishes",
+        "Outer body covering"
+      ],
+      5: [
+        "Ate dinner",
+        "Eats evening meals",
+        "Small dents",
+        "Independent music or film",
+        "Types; sorts",
+        "Archaic for cows (plural)",
+        "Number 9 multiples",
+        "Trig functions",
+        "Wash basins",
+        "Bundle of yarn",
+        "Outer coverings",
+        "Scornfully mocking"
+      ],
+      6: [
+        "Rang repeatedly",
+        "Independent films (plural)",
+        "Twisted or tangled",
+        "Did wrong; transgressed",
+        "Bundles of yarn"
+      ],
+      7: [
+        "Small cute things",
+        "Removed the hide"
+      ],
+      8: [
+        "Quality of being friendly and generous (pangram!)"
+      ]
+    }
+  },
+
+  // PUZZLE: SWEATER  
+  {
+    id: 'sweater-puzzle',
+    subtitle: 'Cable Knit',
+    letters: ['S', 'W', 'E', 'A', 'T', 'R'],
+    keyLetters: ['E', 'A'],
+    totalWordCount: 58,
+    words: {
+      4: ['AREA', 'ARES', 'EARS', 'EASE', 'EAST', 'EATS', 'ERAS', 'ETAS', 'RATE', 'SATE', 'SEAR', 'SEAT', 'SERA', 'TARE', 'TEAR', 'TEAS', 'WARE', 'WEAR'],
+      5: ['AREAS', 'ASTER', 'EATER', 'ERASE', 'RATES', 'RESAT', 'SATES', 'SEARS', 'SEATS', 'SETAE', 'STARE', 'SWEAR', 'TARES', 'TEARS', 'TEASE', 'WARES', 'WASTE', 'WATER', 'WEARS'],
+      6: ['EATERS', 'ERASER', 'ERASES', 'RAREST', 'SEATER', 'STARER', 'SWEARS', 'TEASER', 'TEASES', 'WASTER', 'WASTES', 'WATERS'],
+      7: ['SEATERS', 'STARERS', 'SWEARER', 'SWEATER', 'TEASERS', 'WASTERS'],
+      8: ['SWEATERS', 'SWEARERS']
+    },
+    hints: {
+      4: [
+        "Region; space",
+        "Greek god of war (plural)",
+        "Hearing organs",
+        "Freedom from difficulty",
+        "Direction of sunrise",
+        "Consumes food",
+        "Historical time periods",
+        "Greek letters",
+        "Speed; price per unit",
+        "Satisfy fully",
+        "Burn surface; search",
+        "Place to sit",
+        "Blood fluid (plural)",
+        "Weed among grain",
+        "Rip; eye drop",
+        "Hot beverages",
+        "Goods; merchandise",
+        "Have on one's body"
+      ],
+      5: [
+        "Regions; spaces",
+        "Star-shaped flower",
+        "One who consumes food",
+        "Remove writing",
+        "Speeds; prices",
+        "Sat again",
+        "Fully satisfies",
+        "Burns surfaces",
+        "Places to sit",
+        "Bristle-like structures",
+        "Look fixedly",
+        "Declare under oath",
+        "Weeds among grain",
+        "Rips; eye drops",
+        "Make fun of playfully",
+        "Merchandise items",
+        "Squander; trash",
+        "H2O liquid",
+        "Has on one's body"
+      ],
+      6: [
+        "Those who consume food",
+        "Pencil mark remover",
+        "Rubs out writing",
+        "Most uncommon",
+        "One who seats people",
+        "One who gazes fixedly",
+        "Declares under oath",
+        "One who mocks playfully",
+        "Mocks playfully",
+        "One who squanders",
+        "Squanders; trash bins",
+        "H2O; irrigates"
+      ],
+      7: [
+        "Those who seat people",
+        "Those who gaze fixedly",
+        "One who swears oaths",
+        "Knitted garment for upper body (pangram!)",
+        "Those who mock playfully",
+        "Those who squander"
+      ],
+      8: [
+        "Knitted garments (pangram plural!)",
+        "Those who swear oaths"
+      ]
+    }
+  },
+
+  // PUZZLE: DRAWING
+  {
+    id: 'drawing-puzzle',
+    subtitle: 'Art Class',
+    letters: ['D', 'R', 'A', 'W', 'I', 'N', 'G'],
+    keyLetters: ['A', 'N'],
+    totalWordCount: 24,
+    words: {
+      4: ['ANNA', 'DANG', 'DARN', 'GAIN', 'GNAW', 'GRAN', 'NAAN', 'RAIN', 'RAND', 'RANG', 'RANI', 'WAIN', 'WAND', 'WARN'],
+      5: ['DINAR', 'DRAIN', 'GRAND', 'NADIR'],
+      6: ['AWNING', 'RADIAN', 'WADING'],
+      7: ['DARNING', 'DRAWING', 'WARNING']
+    },
+    hints: {
+      4: [
+        "Former Indian coin",
+        "Mild exclamation",
+        "Mend a hole; mild curse",
+        "Obtain; profit",
+        "Chew persistently",
+        "Informal for grandmother",
+        "Indian flatbread",
+        "Water from clouds",
+        "South African currency",
+        "Made a bell sound",
+        "Indian queen",
+        "Large farm wagon",
+        "Magician's stick",
+        "Alert to danger"
+      ],
+      5: [
+        "Middle Eastern currency",
+        "Remove liquid; empty",
+        "Large and impressive",
+        "Lowest point"
+      ],
+      6: [
+        "Roof-like shade cover",
+        "Angle measurement unit",
+        "Walking in shallow water"
+      ],
+      7: [
+        "Mending holes in fabric",
+        "Artwork with pencil or pen (pangram!)",
+        "Alerting to danger"
+      ]
+    }
+  },
+
+  // PUZZLE: JACKETS
+  {
+    id: 'jackets-puzzle',
+    subtitle: 'Outerwear',
+    letters: ['J', 'A', 'C', 'K', 'E', 'T', 'S'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 34,
+    words: {
+      4: ['ACES', 'CAKE', 'CASE', 'CATE', 'EASE', 'EATS', 'SAKE', 'SATE', 'SEAT', 'TAKE', 'TEAK', 'TEAS'],
+      5: ['CAKES', 'CASES', 'CASTE', 'CATES', 'EASES', 'SAKES', 'SEATS', 'SKATE', 'STAKE', 'STEAK', 'TAKES', 'TEAKS', 'TEASE'],
+      6: ['CASKET', 'CASTES', 'JACKET', 'SKATES', 'STAKES', 'STEAKS', 'TEASES'],
+      7: ['CASKETS', 'JACKETS']
+    },
+    hints: {
+      4: [
+        "High cards; experts",
+        "Dessert with frosting",
+        "Container; situation",
+        "Choice food (archaic)",
+        "Comfort; freedom from difficulty",
+        "Consumes food",
+        "Japanese rice wine",
+        "Satisfy fully",
+        "Place to sit",
+        "Grab; capture",
+        "Tropical hardwood tree",
+        "Hot beverages"
+      ],
+      5: [
+        "Desserts with frosting",
+        "Containers; situations",
+        "Hindu social class",
+        "Choice foods (archaic)",
+        "Comforts; relieves",
+        "Japanese wines",
+        "Places to sit",
+        "Glide on ice",
+        "Pointed post; wager",
+        "Cut of beef",
+        "Grabs; captures",
+        "Tropical hardwoods",
+        "Mock playfully"
+      ],
+      6: [
+        "Burial box",
+        "Social classes",
+        "Short coat (uses J!)",
+        "Glides on ice",
+        "Pointed posts; wagers",
+        "Cuts of beef",
+        "Mocks playfully"
+      ],
+      7: [
+        "Burial boxes",
+        "Short coats worn outdoors (pangram!)"
+      ]
+    }
+  },
+
+  // PUZZLE: PANCAKES 🥞
+  {
+    id: 'pancakes-puzzle',
+    subtitle: 'Breakfast at the Cafe',
+    letters: ['P', 'A', 'N', 'C', 'K', 'E', 'S'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 35,
+    words: {
+      4: ['ACES', 'ACNE', 'APES', 'CAKE', 'CANE', 'CAPE', 'CASE', 'EASE', 'NAPE', 'PACE', 'PANE', 'PEAK', 'PEAS', 'SAKE', 'SANE'],
+      5: ['ACNES', 'CAKES', 'CANES', 'CAPES', 'CASES', 'EASES', 'NAPES', 'PACES', 'PANES', 'PECAN', 'PEAKS', 'SNEAK', 'SPEAK'],
+      6: ['CANAPE', 'PECANS', 'SNEAKS', 'SPEAKS'],
+      7: ['CANAPES', 'PANCAKE'],
+      8: ['PANCAKES']
+    },
+    hints: {
+      4: [
+        "High cards; experts",
+        "Skin condition with pimples",
+        "Primates; mimics",
+        "Dessert with frosting",
+        "Walking stick; sugar plant",
+        "Superhero garment",
+        "Container; situation",
+        "Comfort; freedom from difficulty",
+        "Back of the neck",
+        "Speed of walking",
+        "Window glass section",
+        "Mountain top",
+        "Green vegetables in pods",
+        "Japanese rice wine",
+        "Mentally healthy; reasonable"
+      ],
+      5: [
+        "Skin conditions",
+        "Desserts with frosting",
+        "Walking sticks",
+        "Superhero garments",
+        "Containers; situations",
+        "Comforts; relieves",
+        "Backs of necks",
+        "Speeds; keeps up with",
+        "Window sections",
+        "Type of nut",
+        "Mountain tops",
+        "Move quietly; creep",
+        "Talk; communicate"
+      ],
+      6: [
+        "Small appetizer on bread",
+        "Types of tree nuts",
+        "Moves quietly",
+        "Talks; communicates"
+      ],
+      7: [
+        "Small appetizers on bread",
+        "Flat breakfast cake on griddle"
+      ],
+      8: [
+        "Flat breakfast cakes - our specialty! (pangram!) 🥞"
+      ]
+    }
+  },
 ];
 
 // Get yesterday's puzzle dynamically based on rotation
-export function getTodaysPuzzle() {
-  const ANCHOR_DATE = new Date('2025-01-14T19:00:00-05:00');
+function getYesterdaysPuzzle() {
+  const ANCHOR_DATE = new Date('2026-01-17T07:00:00-05:00');
   const now = new Date();
   const estTime = new Date(now.toLocaleString('en-US', { timeZone: 'America/New_York' }));
-  
   const hour = estTime.getHours();
   const puzzleDate = new Date(estTime);
   
-  if (hour < 19) {
+  if (hour < 7) {
     puzzleDate.setDate(puzzleDate.getDate() - 1);
-    puzzleDate.setHours(19, 0, 0, 0);
-  } else {
-    puzzleDate.setHours(19, 0, 0, 0);
   }
+  puzzleDate.setHours(7, 0, 0, 0);
   
   const daysSinceAnchor = Math.floor((puzzleDate - ANCHOR_DATE) / (1000 * 60 * 60 * 24));
-  const puzzleIndex = ((daysSinceAnchor % PUZZLES.length) + PUZZLES.length) % PUZZLES.length;
+  const todayIndex = Math.max(0, daysSinceAnchor) % PUZZLES.length;
+  
+  // Get PREVIOUS puzzle (wrap around if needed)
+  const yesterdayIndex = (todayIndex - 1 + PUZZLES.length) % PUZZLES.length;
+  
+  return PUZZLES[yesterdayIndex];
+}
+// =============================================================================
+// PUZZLE ROTATION - Get today's puzzle based on 7 AM EST
+// =============================================================================
+
+function getTodaysPuzzle() {
+  // Anchor: Dec 26, 2025 at 7 AM EST = index 0 (GRIDDLES)
+  // Dec 27, 2025 at 7 AM EST = index 1 (BETOKENS)
+  const ANCHOR_DATE = new Date('2026-01-17T07:00:00-05:00');
+  const now = new Date();
+  const estTime = new Date(now.toLocaleString('en-US', { timeZone: 'America/New_York' }));
+  const hour = estTime.getHours();
+  const puzzleDate = new Date(estTime);
+  
+  if (hour < 7) {
+    puzzleDate.setDate(puzzleDate.getDate() - 1);
+  }
+  puzzleDate.setHours(7, 0, 0, 0);
+  
+  const daysSinceAnchor = Math.floor((puzzleDate - ANCHOR_DATE) / (1000 * 60 * 60 * 24));
+  const puzzleIndex = Math.max(0, daysSinceAnchor) % PUZZLES.length;
   
   return PUZZLES[puzzleIndex];
 }
-
 
 function getTimeUntilNextPuzzle() {
   const now = new Date();
