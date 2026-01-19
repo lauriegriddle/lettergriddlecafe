@@ -13,11 +13,11 @@ const PUZZLES = [
     subtitle: 'Stick Together',
     letters: ['S', 'T', 'I', 'C', 'K', 'E', 'R'],
     keyLetters: ['E', 'R'],
-    totalWordCount: 38,
+    totalWordCount: 36,
     words: {
       4: ['IRES', 'RICE', 'RISE', 'RITE', 'SIRE', 'TIER', 'TIRE', 'TREK'],
-      5: ['CREST', 'CRIER', 'CRIES', 'ICIER', 'RICES', 'RISER', 'RITES', 'SIRES', 'SKIER', 'TIERS', 'TIRES', 'TREKS', 'TRICK', 'TRICE', 'TRIES'],
-      6: ['CRESTS', 'CRIERS', 'KICKER', 'SICKER', 'SKIERS', 'STRIKE', 'TICKER', 'TRICKS'],
+      5: ['CREST', 'CRIER', 'CRIES', 'ICIER', 'RICES', 'RISER', 'RITES', 'SIRES', 'SKIER', 'TIERS', 'TIRES', 'TREKS', 'TRICE', 'TRIES'],
+      6: ['CRESTS', 'CRIERS', 'KICKER', 'SICKER', 'SKIERS', 'STRIKE', 'TICKER'],
       7: ['KICKERS', 'RICKETS', 'STICKER', 'STRIKES', 'TICKERS'],
       8: ['STICKERS', 'STICKIER']
     },
@@ -45,7 +45,6 @@ const PUZZLES = [
         "Layers, like on a wedding cake",
         "Rubber wheel coverings",
         "Long journeys on foot",
-        "Prank or clever move",
         "A moment; \"in a _____\"",
         "Attempts; gives it a go"
       ],
@@ -56,8 +55,7 @@ const PUZZLES = [
         "More ill; feeling worse",
         "People racing down mountains",
         "Work stoppage; bowling achievement",
-        "Your heart, informally",
-        "Pranks; magic acts"
+        "Your heart, informally"
       ],
       7: [
         "Football specialists",
