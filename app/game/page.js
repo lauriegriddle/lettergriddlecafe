@@ -13,9 +13,9 @@ const PUZZLES = [
     subtitle: 'Stick Together',
     letters: ['S', 'T', 'I', 'C', 'K', 'E', 'R'],
     keyLetters: ['E', 'R'],
-    totalWordCount: 46,
+    totalWordCount: 45,
     words: {
-      4: ['IRES', 'KITE', 'RICE', 'RISE', 'RISK', 'RITE', 'SIRE', 'SITE', 'TIER', 'TIRE', 'TREK'],
+      4: ['IRES', 'RICE', 'RISE', 'RISK', 'RITE', 'SIRE', 'SITE', 'TIER', 'TIRE', 'TREK'],
       5: ['CREST', 'CRIER', 'CRIES', 'ICIER', 'KITES', 'RICES', 'RISER', 'RITES', 'SIRES', 'SITES', 'SKIER', 'STICK', 'TIERS', 'TIRES', 'TREKS', 'TRICK', 'TRICE', 'TRIES'],
       6: ['CRESTS', 'CRIERS', 'KICKER', 'SICKER', 'SKIERS', 'STICKS', 'STRICT', 'STRIKE', 'TICKER', 'TRICKS'],
       7: ['KICKERS', 'RICKETS', 'STICKER', 'STRIKES', 'TICKERS'],
@@ -24,7 +24,6 @@ const PUZZLES = [
     hints: {
       4: [
         "Angers or irritates",
-        "Flying toy on a string",
         "Grain often served with stir-fry",
         "Go upward; get out of bed",
         "Chance of danger or loss",
