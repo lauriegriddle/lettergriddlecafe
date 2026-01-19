@@ -13,7 +13,7 @@ const PUZZLES = [
     subtitle: 'Stick Together',
     letters: ['S', 'T', 'I', 'C', 'K', 'E', 'R'],
     keyLetters: ['E', 'R'],
-    totalWordCount: 42,
+    totalWordCount: 43,
     words: {
       4: ['IRES', 'RICE', 'RISE', 'RITE', 'SIRE', 'TIER', 'TIRE', 'TREK'],
       5: ['CREST', 'CRIER', 'CRIES', 'ICIER', 'KITES', 'RICES', 'RISER', 'RITES', 'SIRES', 'SKIER', 'STICK', 'TIERS', 'TIRES', 'TREKS', 'TRICK', 'TRICE', 'TRIES'],
