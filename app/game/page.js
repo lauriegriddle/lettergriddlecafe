@@ -145,7 +145,7 @@ const PUZZLES = [
       4: [
         "Decorative pitcher for water",
         "Front part; golf warning shout",
-        "Creepy or suggestive stare",
+        "Stare",
         "Traditional knowledge and legends",
         "Rocks containing valuable metals",
         "Fishing spool; stagger dizzily",
@@ -164,7 +164,7 @@ const PUZZLES = [
         "Golf warning shouts",
         "More free; less restricted",
         "Releases or liberates",
-        "Creepy stares",
+        "Stares",
         "Legends and traditional knowledge",
         "One who doesn't win",
         "Reduce; beneath something",
