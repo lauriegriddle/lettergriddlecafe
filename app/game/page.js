@@ -134,11 +134,11 @@ const PUZZLES = [
     subtitle: 'Blooming at the Cafe',
     letters: ['F', 'L', 'O', 'W', 'E', 'R', 'S'],
     keyLetters: ['E', 'R'],
-    totalWordCount: 47,
+    totalWordCount: 45,
     words: {
       4: ['EWER', 'FORE', 'LEER', 'LORE', 'ORES', 'REEL', 'REEF', 'ROLE', 'ROSE', 'SERF', 'SERE', 'SORE', 'WERE', 'WORE'],
-      5: ['EWERS', 'FEWER', 'FLOOR', 'FORES', 'FREER', 'FREES', 'LEERS', 'LORES', 'LOSER', 'LOWER', 'REELS', 'REEFS', 'RESEW', 'ROLES', 'ROSES', 'ROWER', 'SEERS', 'SERFS', 'SEWER', 'SORER', 'SWORE', 'WOOER', 'WORSE'],
-      6: ['FLOORS', 'FLOWER', 'LOSERS', 'LOWERS', 'ROWERS', 'SEWERS', 'SLOWER', 'WOOERS'],
+      5: ['EWERS', 'FEWER', 'FORES', 'FREER', 'FREES', 'LEERS', 'LORES', 'LOSER', 'LOWER', 'REELS', 'REEFS', 'RESEW', 'ROLES', 'ROSES', 'ROWER', 'SEERS', 'SERFS', 'SEWER', 'SORER', 'SWORE', 'WOOER', 'WORSE'],
+      6: ['FLOWER', 'LOSERS', 'LOWERS', 'ROWERS', 'SEWERS', 'SLOWER', 'WOOERS'],
       7: ['FLOWERS', 'REFLOWS']
     },
     hints: {
@@ -161,7 +161,6 @@ const PUZZLES = [
       5: [
         "Decorative water pitchers",
         "Smaller in number",
-        "Surface you walk on",
         "Golf warning shouts",
         "More free; less restricted",
         "Releases or liberates",
@@ -184,7 +183,6 @@ const PUZZLES = [
         "More bad; not as good"
       ],
       6: [
-        "Surfaces you walk on",
         "Blooming plant in a garden",
         "Those who don't win",
         "Reduces; brings down",
