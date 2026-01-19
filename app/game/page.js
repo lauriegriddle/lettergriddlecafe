@@ -639,6 +639,27 @@ export function getTodaysPuzzle() {
   return PUZZLES[puzzleIndex];
 }
 
+function getYesterdaysPuzzle() {
+  const ANCHOR_DATE = new Date('2025-01-14T19:00:00-05:00');
+  const now = new Date();
+  const estTime = new Date(now.toLocaleString('en-US', { timeZone: 'America/New_York' }));
+  
+  const hour = estTime.getHours();
+  const puzzleDate = new Date(estTime);
+  
+  if (hour < 7) {
+    puzzleDate.setDate(puzzleDate.getDate() - 2);
+  } else {
+    puzzleDate.setDate(puzzleDate.getDate() - 1);
+  }
+  puzzleDate.setHours(7, 0, 0, 0);
+  
+  const daysSinceAnchor = Math.floor((puzzleDate - ANCHOR_DATE) / (1000 * 60 * 60 * 24));
+  const puzzleIndex = ((daysSinceAnchor % PUZZLES.length) + PUZZLES.length) % PUZZLES.length;
+  
+  return PUZZLES[puzzleIndex];
+}
+
 
 function getTimeUntilNextPuzzle() {
   const now = new Date();
