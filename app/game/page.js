@@ -15,8 +15,8 @@ const PUZZLES = [
     keyLetters: ['E', 'R'],
     totalWordCount: 45,
     words: {
-      4: ['IRES', 'RICE', 'RISE', 'RISK', 'RITE', 'SIRE', 'SITE', 'TIER', 'TIRE', 'TREK'],
-      5: ['CREST', 'CRIER', 'CRIES', 'ICIER', 'KITES', 'RICES', 'RISER', 'RITES', 'SIRES', 'SITES', 'SKIER', 'STICK', 'TIERS', 'TIRES', 'TREKS', 'TRICK', 'TRICE', 'TRIES'],
+      4: ['IRES', 'RICE', 'RISE', 'RISK', 'RITE', 'SIRE', 'TIER', 'TIRE', 'TREK'],
+      5: ['CREST', 'CRIER', 'CRIES', 'ICIER', 'KITES', 'RICES', 'RISER', 'RITES', 'SIRES', 'SKIER', 'STICK', 'TIERS', 'TIRES', 'TREKS', 'TRICK', 'TRICE', 'TRIES'],
       6: ['CRESTS', 'CRIERS', 'KICKER', 'SICKER', 'SKIERS', 'STICKS', 'STRICT', 'STRIKE', 'TICKER', 'TRICKS'],
       7: ['KICKERS', 'RICKETS', 'STICKER', 'STRIKES', 'TICKERS'],
       8: ['STICKERS', 'STICKIER']
@@ -29,7 +29,6 @@ const PUZZLES = [
         "Chance of danger or loss",
         "Ceremony or ritual",
         "Father, especially of a horse",
-        "Location or place",
         "Level or layer, like on a cake",
         "Rubber covering on a wheel",
         "Long, difficult journey"
@@ -44,7 +43,6 @@ const PUZZLES = [
         "Early _____ (morning person); stair part",
         "Ceremonies or rituals",
         "Fathers offspring",
-        "Locations; web pages",
         "Person zooming down snowy slopes",
         "Wooden twig; to adhere",
         "Layers, like on a wedding cake",
