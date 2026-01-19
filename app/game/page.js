@@ -13,10 +13,10 @@ const PUZZLES = [
     subtitle: 'Stick Together',
     letters: ['S', 'T', 'I', 'C', 'K', 'E', 'R'],
     keyLetters: ['E', 'R'],
-    totalWordCount: 39,
+    totalWordCount: 38,
     words: {
       4: ['IRES', 'RICE', 'RISE', 'RITE', 'SIRE', 'TIER', 'TIRE', 'TREK'],
-      5: ['CREST', 'CRIER', 'CRIES', 'ICIER', 'KITES', 'RICES', 'RISER', 'RITES', 'SIRES', 'SKIER', 'TIERS', 'TIRES', 'TREKS', 'TRICK', 'TRICE', 'TRIES'],
+      5: ['CREST', 'CRIER', 'CRIES', 'ICIER', 'RICES', 'RISER', 'RITES', 'SIRES', 'SKIER', 'TIERS', 'TIRES', 'TREKS', 'TRICK', 'TRICE', 'TRIES'],
       6: ['CRESTS', 'CRIERS', 'KICKER', 'SICKER', 'SKIERS', 'STRIKE', 'TICKER', 'TRICKS'],
       7: ['KICKERS', 'RICKETS', 'STICKER', 'STRIKES', 'TICKERS'],
       8: ['STICKERS', 'STICKIER']
@@ -37,7 +37,6 @@ const PUZZLES = [
         "Town announcer; one who weeps",
         "Weeps or shouts",
         "More cold and frosty",
-        "Flying toys at the beach",
         "Pushes potatoes through a kitchen tool",
         "Early _____ (morning person); stair part",
         "Ceremonies or rituals",
