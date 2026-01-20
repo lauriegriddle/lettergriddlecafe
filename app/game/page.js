@@ -77,11 +77,11 @@ const PUZZLES = [
     subtitle: 'All That Jazz!',
     letters: ['M', 'U', 'S', 'I', 'C', 'A', 'L'],
     keyLetters: ['A', 'L'],
-    totalWordCount: 29,
+    totalWordCount: 28,
     words: {
       4: ['AILS', 'ALUM', 'CALL', 'CALM', 'CLAM', 'MAIL', 'MALL', 'SAIL', 'SLAM'],
       5: ['ALIAS', 'ALUMS', 'CALLS', 'CALMS', 'CLAIM', 'CLAMS', 'LILAC', 'LLAMA', 'MAILS', 'MALLS', 'SAILS', 'SLAMS', 'SMALL'],
-      6: ['ALUMNI', 'CALLUS', 'CLAIMS', 'LILACS', 'LLAMAS'],
+      6: ['CALLUS', 'CLAIMS', 'LILACS', 'LLAMAS'],
       7: ['MUSICAL'],
       8: ['MUSICALS']
     },
@@ -113,7 +113,6 @@ const PUZZLES = [
         "Little in size"
       ],
       6: [
-        "Graduates of a school (plural)",
         "Hardened, thick patch of skin",
         "Asserts ownership",
         "Purple flowering spring shrubs",
