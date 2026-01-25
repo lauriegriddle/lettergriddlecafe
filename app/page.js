@@ -179,6 +179,42 @@ const stories = [
       'Putting on her trivia night emcee headset and mic, Laurel announces, "Cinnamon hour guests, enjoy your pancakes and coffee, and take a look at the trivia screen…let\'s see if we can solve this puzzle."'
     ],
     closing: 'Friends, it\'s Cinnamon Hour somewhere, so enjoy solving this puzzle.'
+  },
+  {
+    id: 'tech-night',
+    title: 'Tech Night',
+    subtitle: '📱 One Tap Away',
+    date: 'January 2026',
+    locked: false,
+    content: [
+      '"Taylor, since you are THE techie we are leaning on you to make our lives easier," Sarah asserts.',
+      '"We enjoy all of the daily digital Letter Griddle games, but keeping track of them…." Jennie\'s voice trails off.',
+      '"Woof!" Isaac concurs as he sniffs out his next treat.',
+      'Confidently Taylor offers, "Crew, since we all agree that Laurel\'s \'Orange You Surprised It\'s For Brunch?\' is our favorite vitamin-C packed treat from the cafe\'s kitchen, I designed the new Letter Griddle app-like icon to resemble an….."',
+      '"Orange!" 🟠 the crew erupts in trivia style.',
+      '"Crew, you are as tech-savvy as you are treat-savvy!" Taylor says, knowing his audience.',
+      '"Taylor, enough with telling! Show us!" Mrs. Lindsay eagerly insists.',
+      'Taylor is enjoying the group\'s enthusiasm!',
+      '"Now if I may direct your attention to lettergriddle.com/play, also known as \'your favorite pancake-inspired daily word game.\'"',
+      'The crew members, devices in hand, go to Safari and type in their browser lettergriddle.com/play just as Taylor mentions.',
+      '"Now, friends, devices down, eyes up here at the trivia screen, in 3, 2, 1," Taylor directs.',
+      'The eager group of trivia buffs, word game enthusiasts, and treat connoisseurs follows directions as Taylor projects the Letter Griddle game from his own device, and calls attention to the word \'NEW\' above the help circle.',
+      '"When you look at the question mark, the help circle, you\'ll now see the word NEW above it. Click it for new instructions about adding the Letter Griddle icon to your Home Screen. Once it\'s there, you can access your game from the icon rather than your browser or bookmark."',
+      'Taylor continues, "Once the Letter Griddle icon is added to your home screen, your favorite daily pancake-inspired word game will be one tap away!"',
+      '"One tap away?! I\'m all for that, Taylor! Continue!" Mrs. Lindsay\'s enthusiasm for this encourages Taylor to continue.',
+      'Taylor goes on with tech night, "Let\'s read over this new info together so that questions can be answered."',
+      'NEW! Add to Your Home Screen! Play Letter Griddle like an app! Add it to your phone\'s Home Screen for easy one-tap access every day. iPhone/iPad: In Safari, tap the Share button (square with arrow) → "Add to Home Screen" Android: In Chrome, tap the three dots menu → "Add to Home Screen" You\'ll see our orange Letter Griddle icon on your Home Screen! 🟠',
+      '"I like how you added two videos to the instructions because, as Mrs. Lindsay said, \'show me\', and I can easily share with the cafe regulars how to add the Letter Griddle icon to their home screens too," Laurel offers.',
+      '"The first video shows how to add the lettergriddle.com landing page to your Home Screen. Great if you play multiple Letter Griddle games!"',
+      '"The second video shows how to add the Letter Griddle Game page directly, so your favorite daily puzzle is just one tap away!"',
+'Sarah wisely reminds the group, "As always Taylor\'s Pro-tip: Rewatch videos as many times as you\'d like!"',
+'Taylor reminds the group, "Yes, Sarah! Thanks and if you have questions about this process of adding the Letter Griddle app-like icon to your home screen, reach out at lettergriddle@gmail.com or on Instagram @letter_griddle."',
+'"Thanks, Taylor! Right on time, it\'s 7:00 pm EST! Tech night is concluded," Laurel says as she takes over as emcee.',
+'The crew, devices in hand, seem happy and content with the tech night\'s events and the group shifts into Letter Griddle game mode.',
+'"…\'Pie\'…an eight-letter word for \'a fluffy topping made from whipped egg whites and sugar,\'" Mr. Lindsay says to himself.',
+'"Woof!" Isaac responds.'
+    ],
+    closing: 'Friends, your favorite pancake-inspired daily word game is one tap away!'
   }
 ];
 
@@ -293,6 +329,26 @@ const puzzles = {
       { pos: 3, letter: 'N' }
     ],
     didYouKnow: 'Cinnamon is known for boosting brain activity and its antioxidant properties. It enhances both sweet and savory dishes. Those rolled sticks? They\'re called quills!'
+  },'tech-night': {
+    id: 'tech-night',
+    title: 'Home Screen',
+    category: 'Home Screen',
+    words: ['ICON', 'SHARE', 'ORANGE', 'DESKTOP', 'MERINGUE'],
+    hints: [
+      'A small image representing an app or program',
+      'To give others access or distribute content',
+      'A citrus fruit or its color',
+      'The main screen of a computer where icons are displayed',
+      'A fluffy topping made from whipped egg whites and sugar'
+    ],
+    revealed: [
+      { pos: 0, letter: 'I' },
+      { pos: 2, letter: 'A' },
+      { pos: 0, letter: 'O' },
+      { pos: 3, letter: 'K' },
+      { pos: 4, letter: 'N' }
+    ],
+    didYouKnow: 'Using the Home Screen Letter Griddle app-like icon will make your day 99.99%* more fun! *Your mileage may vary.'
   }
 };
 
