@@ -613,6 +613,494 @@ const PUZZLES = [
         "Value highly; be grateful for (pangram!)"
       ]
     }
+  },
+
+  // PUZZLE 10: ANIMATES
+  {
+    id: 'animates-puzzle',
+    subtitle: 'Coming to Life!',
+    letters: ['A', 'N', 'I', 'M', 'T', 'E', 'S'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 40,
+    words: {
+      4: ['ANTE', 'EASE', 'EATS', 'MANE', 'MATE', 'MEAN', 'MEAT', 'NAME', 'NEAT', 'SAME', 'SANE', 'SATE', 'SEAT', 'SEAM', 'TAME', 'TAPE', 'TEAM', 'TEAS'],
+      5: ['ANTES', 'EATEN', 'INANE', 'MANES', 'MANIA', 'MATES', 'MATTE', 'MEANS', 'MEATS', 'NAMES', 'SATIN', 'SEAMS', 'SEATS', 'STAIN', 'STEAM', 'TAMES', 'TAPES', 'TEAMS'],
+      6: ['MANIAS', 'SAINTS', 'STAMEN'],
+      7: ['ANIMATE', 'STAMINA'],
+      8: ['ANIMATES']
+    },
+    hints: {
+      4: [
+        "Poker stake; put money in the pot",
+        "Comfort; make less difficult",
+        "Consumes food",
+        "Lion's flowing neck hair",
+        "Friend; partner; chess ending",
+        "Unkind; or an average",
+        "Animal flesh used for food",
+        "What you're called",
+        "Tidy and organized",
+        "Identical; not different",
+        "Mentally healthy and reasonable",
+        "Satisfy fully",
+        "Chair; place to sit",
+        "Line where two fabrics are sewn together",
+        "Not wild; gentle and docile",
+        "Sticky strip; recording medium",
+        "Group working together",
+        "Hot brewed beverages"
+      ],
+      5: [
+        "Poker stakes; bets before dealing",
+        "Consumed as food",
+        "Silly and meaningless",
+        "Lions' flowing neck hair",
+        "Obsession; intense craze",
+        "Friends; partners",
+        "Dull finish; not shiny",
+        "Methods; or is unkind",
+        "Animal flesh foods",
+        "What people are called",
+        "Smooth, shiny fabric",
+        "Lines where fabrics join",
+        "Chairs; places to sit",
+        "Discoloration; spot that won't wash out",
+        "Water vapor; or cook with vapor",
+        "Makes gentle and docile",
+        "Sticky strips; recordings",
+        "Groups working together"
+      ],
+      6: [
+        "Obsessions; intense crazes",
+        "Holy people; very good persons",
+        "Flower part that produces pollen"
+      ],
+      7: [
+        "Bring to life; lively and energetic (pangram!)",
+        "Endurance; staying power"
+      ],
+      8: [
+        "Brings to life; makes lively (pangram!)"
+      ]
+    }
+  },
+
+// PUZZLE 11: SERVING
+  {
+    id: 'serving-puzzle',
+    subtitle: 'At Your Service',
+    letters: ['S', 'E', 'R', 'V', 'I', 'N', 'G'],
+    keyLetters: ['E', 'R'],
+    totalWordCount: 40,
+    words: {
+      4: ['ERGS', 'EVER', 'IRES', 'REIN', 'REVS', 'RISE', 'SEER', 'SERE', 'VEER'],
+      5: ['GIVER', 'VEERS', 'REIGN', 'REINS', 'RESIN', 'RINSE', 'RISEN', 'RISER', 'RIVER', 'SEERS', 'SERVE', 'SEVER', 'SIREN', 'VEINS', 'VERSE'],
+      6: ['GIVERS', 'REIGNS', 'RESIGN', 'RISERS', 'RIVERS', 'SERVER', 'SEVERS', 'SINGER', 'SIRENS', 'VERGES'],
+      7: ['SERVING', 'SERVERS', 'SINGERS', 'VERSING'],
+      8: ['SERVINGS', 'SEVERING']
+    },
+    hints: {
+      4: [
+        "Units of energy in physics",
+        "At any time; always",
+        "Angers or irritates",
+        "Strap to control a horse",
+        "Engine sounds; speeds up",
+        "Go upward; get out of bed",
+        "Fortune teller; prophet",
+        "Dried up and withered",
+        "Change direction suddenly"
+      ],
+      5: [
+        "One who donates or presents gifts",
+        "Changes direction suddenly",
+        "Rule as king or queen",
+        "Straps to control a horse",
+        "Sticky substance from trees",
+        "Wash lightly with water",
+        "Gone up; out of bed",
+        "Early bird; stair part",
+        "Flowing body of water",
+        "Fortune tellers; prophets",
+        "Wait on customers; tennis start",
+        "Cut off completely",
+        "Warning sound; mythical sea singer",
+        "Blood vessels that carry blood to the heart",
+        "Lines of poetry"
+      ],
+      6: [
+        "People who donate or present gifts",
+        "Rules as royalty",
+        "Quit a job formally",
+        "Early birds; stair parts",
+        "Flowing bodies of water",
+        "Waiter; restaurant worker; computer that hosts",
+        "Cuts off completely",
+        "Person who performs songs vocally",
+        "Warning sounds; mythical sea singers",
+        "Edges; borders; is on the brink of"
+      ],
+      7: [
+        "Portion of food; helping others (pangram!)",
+        "Waiters; computers that host websites",
+        "People who perform songs vocally",
+        "Competing against in a match"
+      ],
+      8: [
+        "Portions of food; helpings (pangram!)",
+        "Cutting off completely"
+      ]
+    }
+  },
+  
+  // PUZZLE 12: PICTURE
+  {
+    id: 'picture-puzzle',
+    subtitle: 'Worth a Thousand Words',
+    letters: ['P', 'I', 'C', 'T', 'U', 'R', 'E'],
+    keyLetters: ['E', 'R'],
+    totalWordCount: 32,
+    words: {
+      4: ['CURE', 'PIER', 'PURE', 'RICE', 'RIPE', 'RITE', 'TIER', 'TIRE', 'TREE', 'TRUE'],
+      5: ['CREPT', 'CRIER', 'CURER', 'CUTER', 'ERUPT', 'PETER', 'PIECE', 'PRICE', 'PRIER', 'RIPER', 'TRICE', 'TRIER', 'TRIPE', 'TRUER', 'RECUR', 'TRUCE'],
+      6: ['PRICER', 'RECIPE', 'RECITE', 'TRICEP'],
+      7: ['PICTURE', 'PIERCER', 'RECEIPT', 'RECITER']
+    },
+    hints: {
+      4: [
+        "Heal; remedy for illness",
+        "Dock; walkway extending over water",
+        "Clean and unmixed",
+        "Grain often served with stir-fry",
+        "Ready to eat; mature",
+        "Ceremony or ritual",
+        "Level or layer, like on a cake",
+        "Rubber wheel covering; grow weary",
+        "Woody plant with trunk and branches",
+        "Correct; accurate; faithful"
+      ],
+      5: [
+        "Moved slowly and stealthily",
+        "Town announcer; one who weeps",
+        "One who heals or preserves",
+        "More adorable",
+        "Explode; burst out suddenly",
+        "Fade away gradually; a man's name",
+        "Part or portion of something",
+        "Cost; what you pay",
+        "One who pries into others' business",
+        "More ready to eat; more mature",
+        "A moment; in a _____",
+        "One who attempts; one who tries",
+        "Stomach lining meat; also means nonsense",
+        "More accurate; more correct",
+        "Happen again; occur repeatedly",
+        "Ceasefire; temporary peace agreement"
+      ],
+      6: [
+        "One who determines costs",
+        "Cooking instructions for a dish",
+        "Speak aloud from memory",
+        "Arm muscle at back of upper arm"
+      ],
+      7: [
+        "Photo; image; movie (pangram!)",
+        "One who makes holes in ears or skin",
+        "Proof of purchase; sales slip",
+        "One who speaks aloud from memory"
+      ]
+    }
+  },
+
+  // PUZZLE 13: PANCAKES
+  {
+    id: 'pancakes-puzzle',
+    subtitle: 'Griddle Me This',
+    letters: ['P', 'A', 'N', 'C', 'A', 'K', 'E', 'S'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 40,
+    words: {
+      4: ['ACES', 'ACNE', 'APES', 'CAKE', 'CANE', 'CAPE', 'CASE', 'EASE', 'NAPE', 'PACE', 'PANE', 'PEAK', 'PEAS', 'SAKE', 'SANE'],
+      5: ['CAKES', 'CANES', 'CAPES', 'CASES', 'CEASE', 'NAPES', 'PACES', 'PANES', 'PEAKS', 'PECAN', 'SAKES', 'SNAKE', 'SNEAK', 'SPACE', 'SPEAK'],
+      6: ['CANAPE', 'ESCAPE', 'PECANS', 'SNEAKS', 'SPACES', 'SPEAKS'],
+      7: ['CANAPES', 'ESCAPES', 'PANCAKE'],
+      8: ['PANCAKES']
+    },
+    hints: {
+      4: [
+        "Top cards in a deck; experts",
+        "Skin condition with pimples",
+        "Primates; imitates",
+        "Sweet layered birthday dessert",
+        "Walking stick; sugar source plant",
+        "Sleeveless superhero cloak",
+        "Container; instance or example",
+        "Comfort; make less difficult",
+        "Back of the neck",
+        "Speed of walking; a single step",
+        "Sheet of window glass",
+        "Mountain top; highest point",
+        "Small round green vegetables",
+        "Purpose; for the _____ of",
+        "Mentally sound; rational"
+      ],
+      5: [
+        "Birthday desserts with candles",
+        "Walking sticks; sugar plants",
+        "Superhero cloaks",
+        "Containers; instances",
+        "Stop; come to an end",
+        "Backs of necks",
+        "Walking speeds; steps",
+        "Window glass sheets",
+        "Mountain tops",
+        "Nut used in pie",
+        "Purposes; reasons",
+        "Slithering reptile",
+        "Move quietly and secretly",
+        "Outer _____; room to move",
+        "Talk; say words aloud"
+      ],
+      6: [
+        "Small appetizer on bread or cracker",
+        "Get away; break free",
+        "Nuts often used in pralines",
+        "Moves quietly and secretly",
+        "Rooms; areas; gaps",
+        "Talks; says words aloud"
+      ],
+      7: [
+        "Small appetizers on bread",
+        "Gets away; breaks free",
+        "Flat breakfast cake cooked on a griddle (pangram!)"
+      ],
+      8: [
+        "Flat breakfast cakes with syrup (pangram!)"
+      ]
+    }
+  },
+
+  // PUZZLE 14: GRIDDLES
+  {
+    id: 'griddles-puzzle',
+    subtitle: 'Cooking Up Words',
+    letters: ['G', 'R', 'I', 'D', 'D', 'L', 'E', 'S'],
+    keyLetters: ['E', 'R'],
+    totalWordCount: 47,
+    words: {
+      4: ['DIRE', 'ERGS', 'IRED', 'IRES', 'LEER', 'LIRE', 'REDS', 'REEL', 'RIDE', 'RILE', 'RISE', 'SEER', 'SERE', 'SIRE'],
+      5: ['DIRGE', 'DRIER', 'ELDER', 'GREED', 'IDLER', 'LEERS', 'REELS', 'RIDER', 'RIDGE', 'RILED', 'RILES', 'RISER', 'SEERS', 'SIRED'],
+      6: ['DRIERS', 'ELDERS', 'GILDER', 'GIRDLE', 'GLIDER', 'IDLERS', 'REDDER', 'RIDDLE', 'RIDGES', 'RIDERS', 'RISERS', 'SLIDER'],
+      7: ['GIRDLES', 'GILDERS', 'GLIDERS', 'GRIDDLE', 'RIDDLES', 'SLIDERS'],
+      8: ['GRIDDLES']
+    },
+    hints: {
+      4: [
+        "Extremely serious; urgent",
+        "Units of energy in physics",
+        "Made angry; annoyed",
+        "Angers; annoys",
+        "Stare in a creepy way",
+        "Former Italian currency",
+        "Crimson colors; wine types",
+        "Fishing line spool; stagger back",
+        "Travel on horseback or in a car",
+        "Annoy; stir up",
+        "Go upward; get out of bed",
+        "Prophet; one who foresees",
+        "Dried up; withered",
+        "Father; address to a king"
+      ],
+      5: [
+        "Slow, mournful funeral song",
+        "More arid; laundry appliance",
+        "Older and wiser person; tree type",
+        "Excessive desire for wealth",
+        "Lazy person; one who loafs",
+        "Stares in a creepy way",
+        "Fishing spools; staggers",
+        "One who rides horses or bikes",
+        "Mountain crest; raised line",
+        "Annoyed; stirred up",
+        "Annoys; stirs up",
+        "Early bird; stair step part",
+        "Prophets; fortune tellers",
+        "Fathered; begot"
+      ],
+      6: [
+        "Laundry appliances; more arid ones",
+        "Older people; church leaders",
+        "One who applies gold leaf",
+        "Belt; shaping undergarment",
+        "Aircraft without an engine",
+        "Lazy people; loafers",
+        "More crimson in color",
+        "Puzzle with a clever answer",
+        "Mountain crests; raised lines",
+        "Horseback travelers; cyclists",
+        "Early birds; stair step parts",
+        "Small hamburgers; playground equipment"
+      ],
+      7: [
+        "Belts; shaping undergarments",
+        "Workers who apply gold leaf",
+        "Engineless aircraft",
+        "Flat cooking surface (pangram!)",
+        "Puzzles with clever answers",
+        "Small hamburgers; playground items"
+      ],
+      8: [
+        "Flat cooking surfaces at diners (pangram!)"
+      ]
+    }
+  },
+
+  // PUZZLE 15: NOTEBOOKS
+  {
+    id: 'notebooks-puzzle',
+    subtitle: 'Write It Down',
+    letters: ['N', 'O', 'T', 'E', 'B', 'O', 'O', 'K', 'S'],
+    keyLetters: ['E', 'O'],
+    totalWordCount: 28,
+    words: {
+      4: ['BONE', 'EONS', 'KENO', 'NOES', 'NOSE', 'NOTE', 'OBOE', 'ONES', 'TOES', 'TONE'],
+      5: ['BESOT', 'BONES', 'NOTES', 'OBOES', 'ONSET', 'STENO', 'STOKE', 'STONE', 'TOKEN', 'TONES'],
+      6: ['BESOTS', 'BETOOK', 'STENOS', 'STOKES', 'STONES', 'TOKENS'],
+      7: ['NOTEBOOK'],
+      8: ['NOTEBOOKS']
+    },
+    hints: {
+      4: [
+        "Skeleton part; study hard",
+        "Very long time periods",
+        "Lottery-style gambling game",
+        "Refusals; negative votes",
+        "Facial feature for smelling",
+        "Written message; observe",
+        "Double-reed woodwind instrument",
+        "Single units; individuals",
+        "Foot digits",
+        "Sound quality; muscle firmness"
+      ],
+      5: [
+        "Make foolish with infatuation",
+        "Skeleton parts; studies hard",
+        "Written messages; observes",
+        "Double-reed woodwind instruments",
+        "Beginning; start of something",
+        "Shorthand typist",
+        "Feed a fire; stir up",
+        "Rock; fruit seed",
+        "Arcade coin; symbol; keepsake",
+        "Sound qualities; shades of color"
+      ],
+      6: [
+        "Makes foolish with infatuation",
+        "Past tense of betake; went",
+        "Shorthand typists",
+        "Feeds fires; stirs up",
+        "Rocks; fruit seeds",
+        "Arcade coins; symbols; keepsakes"
+      ],
+      7: [
+        "Bound pad for writing (pangram!)"
+      ],
+      8: [
+        "Bound pads for writing (pangram!)"
+      ]
+    }
+  },
+
+  // PUZZLE 16: CANDLES
+  {
+    id: 'candles-puzzle',
+    subtitle: 'A Warm Glow',
+    letters: ['C', 'A', 'N', 'D', 'L', 'E', 'S'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 64,
+    words: {
+      4: ['ACES', 'ACNE', 'ALES', 'CANE', 'CASE', 'DALE', 'DEAL', 'DEAN', 'EASE', 'ELAN', 'LACE', 'LANE', 'LEAD', 'LEAN', 'SALE', 'SANE', 'SEAL'],
+      5: ['CANED', 'CANES', 'CASES', 'CEASE', 'CLEAN', 'DALES', 'DANCE', 'DEALS', 'DEANS', 'DECAL', 'EASEL', 'LACED', 'LACES', 'LADEN', 'LANCE', 'LANES', 'LEADS', 'LEANS', 'LEASE', 'SALES', 'SCALE', 'SEALS', 'SEDAN'],
+      6: ['ASCEND', 'CANDLE', 'CLEANS', 'DANCES', 'DECALS', 'EASELS', 'LANCED', 'LANCES', 'LEADEN', 'LEANED', 'LEASED', 'LEASES', 'SANDAL', 'SCALED', 'SCALES', 'SEALED', 'SEDANS'],
+      7: ['ASCENDS', 'CANDLES', 'CLEANED', 'ENCASED', 'SANDALS', 'SCANDAL'],
+      8: ['SCANDALS']
+    },
+    hints: {
+      4: [
+        "Top cards in a deck; experts",
+        "Skin condition with pimples",
+        "Types of beer",
+        "Walking stick; sugar plant",
+        "Container; instance",
+        "Valley; glen",
+        "Agreement; distribute cards",
+        "School administrator",
+        "Comfort; lack of difficulty",
+        "Enthusiasm; stylish flair",
+        "Delicate fabric; shoe ties",
+        "Narrow road; bowling path",
+        "Go first; heavy metal",
+        "Thin; tilt to one side",
+        "Discount event at a store",
+        "Mentally sound; rational",
+        "Ocean mammal; close tightly"
+      ],
+      5: [
+        "Hit with a walking stick",
+        "Walking sticks; sugar plants",
+        "Containers; instances",
+        "Stop; come to an end",
+        "Free from dirt; tidy up",
+        "Valleys; glens",
+        "Move to music",
+        "Agreements; distributes cards",
+        "School administrators",
+        "Decorative sticker",
+        "Art stand for painting",
+        "Tied with delicate fabric",
+        "Delicate fabrics; shoe ties",
+        "Heavily loaded; burdened",
+        "Long spear; pierce to drain",
+        "Narrow roads; bowling paths",
+        "Goes first; heavy metals",
+        "Tilts to one side",
+        "Rental agreement",
+        "Discount events at stores",
+        "Weighing device; climb up",
+        "Ocean mammals; closes tightly",
+        "Four-door car"
+      ],
+      6: [
+        "Climb upward; go up",
+        "Wax stick that burns (pangram!)",
+        "Tidies up; makes spotless",
+        "Moves to music",
+        "Decorative stickers",
+        "Art stands for painting",
+        "Pierced with a spear",
+        "Long spears",
+        "Heavy like metal; dull gray",
+        "Tilted to one side",
+        "Rented out",
+        "Rental agreements",
+        "Open summer shoe",
+        "Climbed up; weighed",
+        "Weighing devices; climbs up",
+        "Closed tightly",
+        "Four-door cars"
+      ],
+      7: [
+        "Climbs upward; goes up",
+        "Wax sticks that burn (pangram!)",
+        "Tidied up; made spotless",
+        "Enclosed; surrounded",
+        "Open summer shoes",
+        "Shocking public disgrace"
+      ],
+      8: [
+        "Shocking public disgraces"
+      ]
+    }
   }
 ];
 
