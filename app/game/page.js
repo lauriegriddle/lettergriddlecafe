@@ -618,18 +618,18 @@ const PUZZLES = [
 
 // Get yesterday's puzzle dynamically based on rotation
 export function getTodaysPuzzle() {
-  const ANCHOR_DATE = new Date('2025-01-14T19:00:00-05:00');
+  const ANCHOR_DATE = new Date('2025-01-14T07:00:00-05:00');
   const now = new Date();
   const estTime = new Date(now.toLocaleString('en-US', { timeZone: 'America/New_York' }));
   
   const hour = estTime.getHours();
   const puzzleDate = new Date(estTime);
   
-  if (hour < 19) {
+  if (hour < 7) {
     puzzleDate.setDate(puzzleDate.getDate() - 1);
-    puzzleDate.setHours(19, 0, 0, 0);
+    puzzleDate.setHours(7, 0, 0, 0);
   } else {
-    puzzleDate.setHours(19, 0, 0, 0);
+    puzzleDate.setHours(7, 0, 0, 0);
   }
   
   const daysSinceAnchor = Math.floor((puzzleDate - ANCHOR_DATE) / (1000 * 60 * 60 * 24));
@@ -639,7 +639,7 @@ export function getTodaysPuzzle() {
 }
 
 function getYesterdaysPuzzle() {
-  const ANCHOR_DATE = new Date('2025-01-14T19:00:00-05:00');
+ const ANCHOR_DATE = new Date('2025-01-14T07:00:00-05:00');
   const now = new Date();
   const estTime = new Date(now.toLocaleString('en-US', { timeZone: 'America/New_York' }));
   
