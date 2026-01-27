@@ -618,7 +618,7 @@ const PUZZLES = [
 
 // Get yesterday's puzzle dynamically based on rotation
 export function getTodaysPuzzle() {
-  const ANCHOR_DATE = new Date('2025-01-14T07:00:00-05:00');
+  const ANCHOR_DATE = new Date('2026-01-19T07:00:00-05:00');
   const now = new Date();
   const estTime = new Date(now.toLocaleString('en-US', { timeZone: 'America/New_York' }));
   
@@ -639,7 +639,7 @@ export function getTodaysPuzzle() {
 }
 
 function getYesterdaysPuzzle() {
- const ANCHOR_DATE = new Date('2025-01-14T07:00:00-05:00');
+ const ANCHOR_DATE = new Date('2026-01-19T07:00:00-05:00');
   const now = new Date();
   const estTime = new Date(now.toLocaleString('en-US', { timeZone: 'America/New_York' }));
   
