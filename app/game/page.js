@@ -558,11 +558,11 @@ const PUZZLES = [
     subtitle: 'Thank You!',
     letters: ['A', 'P', 'R', 'E', 'C', 'I', 'T'],
     keyLetters: ['A', 'E'],
-    totalWordCount: 38,
+    totalWordCount: 37,
     words: {
       4: ['ACRE', 'CAPE', 'CARE', 'PACE', 'PARE', 'PATE', 'RACE', 'RARE', 'RATE', 'REAP', 'TAPE', 'TARE'],
       5: ['CAPER', 'CARET', 'CARTE', 'CATER', 'CRATE', 'EATER', 'IRATE', 'PACER', 'PARER', 'PEACE', 'PRATE', 'RACER', 'REACT', 'RECAP', 'TAPER', 'TRACE'],
-      6: ['APIECE', 'CAPITA', 'CARPET', 'CREATE', 'PIRATE', 'RACIER', 'RAPIER', 'REPEAT', 'TRACER'],
+      6: ['APIECE', 'CARPET', 'CREATE', 'PIRATE', 'RACIER', 'RAPIER', 'REPEAT', 'TRACER'],
       10: ['APPRECIATE']
     },
     hints: {
@@ -600,7 +600,6 @@ const PUZZLES = [
       ],
       6: [
         "Each one; per item",
-        "Per _____ (per person)",
         "Floor covering; call on the _____",
         "Make something new",
         "Sea robber; illegal copier",
