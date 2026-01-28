@@ -620,10 +620,10 @@ const PUZZLES = [
     subtitle: 'Coming to Life!',
     letters: ['A', 'N', 'I', 'M', 'T', 'E', 'S'],
     keyLetters: ['A', 'E'],
-    totalWordCount: 34,
+    totalWordCount: 32,
     words: {
-      4: ['ANTE', 'EASE', 'EATS', 'MANE', 'MATE', 'MEAN', 'MEAT', 'NAME', 'NEAT', 'SAME', 'SANE', 'SATE', 'SEAT', 'SEAM', 'TAME', 'TAPE', 'TEAM', 'TEAS'],
-      5: ['ANTES', 'EATEN', 'INANE', 'MANES', 'MATES', 'MATTE', 'MEANS', 'MEATS', 'NAMES', 'SEAMS', 'SEATS', 'STEAM', 'TAMES', 'TAPES', 'TEAMS'],
+      4: ['ANTE', 'EASE', 'EATS', 'MANE', 'MATE', 'MEAN', 'MEAT', 'NAME', 'NEAT', 'SAME', 'SANE', 'SATE', 'SEAT', 'SEAM', 'TAME', 'TEAM', 'TEAS'],
+      5: ['ANTES', 'EATEN', 'INANE', 'MANES', 'MATES', 'MATTE', 'MEANS', 'MEATS', 'NAMES', 'SEAMS', 'SEATS', 'STEAM', 'TAMES', 'TEAMS'],
       6: ['STAMEN'],
       7: ['ANIMATE'],
       8: ['ANIMATES']
@@ -645,7 +645,6 @@ const PUZZLES = [
         "Chair; place to sit",
         "Line where two fabrics are sewn together",
         "Not wild; gentle and docile",
-        "Sticky strip; recording medium",
         "Group working together",
         "Hot brewed beverages"
       ],
@@ -663,7 +662,6 @@ const PUZZLES = [
         "Chairs; places to sit",
         "Water vapor; or cook with vapor",
         "Makes gentle and docile",
-        "Sticky strips; recordings",
         "Groups working together"
       ],
       6: [
