@@ -620,12 +620,12 @@ const PUZZLES = [
     subtitle: 'Coming to Life!',
     letters: ['A', 'N', 'I', 'M', 'T', 'E', 'S'],
     keyLetters: ['A', 'E'],
-    totalWordCount: 40,
+    totalWordCount: 34,
     words: {
       4: ['ANTE', 'EASE', 'EATS', 'MANE', 'MATE', 'MEAN', 'MEAT', 'NAME', 'NEAT', 'SAME', 'SANE', 'SATE', 'SEAT', 'SEAM', 'TAME', 'TAPE', 'TEAM', 'TEAS'],
-      5: ['ANTES', 'EATEN', 'INANE', 'MANES', 'MANIA', 'MATES', 'MATTE', 'MEANS', 'MEATS', 'NAMES', 'SATIN', 'SEAMS', 'SEATS', 'STAIN', 'STEAM', 'TAMES', 'TAPES', 'TEAMS'],
-      6: ['MANIAS', 'SAINTS', 'STAMEN'],
-      7: ['ANIMATE', 'STAMINA'],
+      5: ['ANTES', 'EATEN', 'INANE', 'MANES', 'MATES', 'MATTE', 'MEANS', 'MEATS', 'NAMES', 'SEAMS', 'SEATS', 'STEAM', 'TAMES', 'TAPES', 'TEAMS'],
+      6: ['STAMEN'],
+      7: ['ANIMATE'],
       8: ['ANIMATES']
     },
     hints: {
@@ -654,29 +654,23 @@ const PUZZLES = [
         "Consumed as food",
         "Silly and meaningless",
         "Lions' flowing neck hair",
-        "Obsession; intense craze",
         "Friends; partners",
         "Dull finish; not shiny",
         "Methods; or is unkind",
         "Animal flesh foods",
         "What people are called",
-        "Smooth, shiny fabric",
         "Lines where fabrics join",
         "Chairs; places to sit",
-        "Discoloration; spot that won't wash out",
         "Water vapor; or cook with vapor",
         "Makes gentle and docile",
         "Sticky strips; recordings",
         "Groups working together"
       ],
       6: [
-        "Obsessions; intense crazes",
-        "Holy people; very good persons",
         "Flower part that produces pollen"
       ],
       7: [
         "Bring to life; lively and energetic (pangram!)",
-        "Endurance; staying power"
       ],
       8: [
         "Brings to life; makes lively (pangram!)"
