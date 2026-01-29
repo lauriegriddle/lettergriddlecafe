@@ -682,10 +682,10 @@ const PUZZLES = [
     subtitle: 'At Your Service',
     letters: ['S', 'E', 'R', 'V', 'I', 'N', 'G'],
     keyLetters: ['E', 'R'],
-    totalWordCount: 40,
+    totalWordCount: 39,
     words: {
       4: ['ERGS', 'EVER', 'IRES', 'REIN', 'REVS', 'RISE', 'SEER', 'SERE', 'VEER'],
-      5: ['GIVER', 'VEERS', 'REIGN', 'REINS', 'RESIN', 'RINSE', 'RISEN', 'RISER', 'RIVER', 'SEERS', 'SERVE', 'SEVER', 'SIREN', 'VEINS', 'VERSE'],
+      5: ['GIVER', 'VEERS', 'REIGN', 'REINS', 'RESIN', 'RINSE', 'RISEN', 'RISER', 'RIVER', 'SEERS', 'SERVE', 'SEVER', 'SIREN', 'VERSE'],
       6: ['GIVERS', 'REIGNS', 'RESIGN', 'RISERS', 'RIVERS', 'SERVER', 'SEVERS', 'SINGER', 'SIRENS', 'VERGES'],
       7: ['SERVING', 'SERVERS', 'SINGERS', 'VERSING'],
       8: ['SERVINGS', 'SEVERING']
@@ -716,7 +716,6 @@ const PUZZLES = [
         "Wait on customers; tennis start",
         "Cut off completely",
         "Warning sound; mythical sea singer",
-        "Blood vessels that carry blood to the heart",
         "Lines of poetry"
       ],
       6: [
