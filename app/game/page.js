@@ -749,10 +749,10 @@ const PUZZLES = [
     subtitle: 'Worth a Thousand Words',
     letters: ['P', 'I', 'C', 'T', 'U', 'R', 'E'],
     keyLetters: ['E', 'R'],
-    totalWordCount: 32,
+    totalWordCount: 31,
     words: {
       4: ['CURE', 'PIER', 'PURE', 'RICE', 'RIPE', 'RITE', 'TIER', 'TIRE', 'TREE', 'TRUE'],
-      5: ['CREPT', 'CRIER', 'CURER', 'CUTER', 'ERUPT', 'PETER', 'PIECE', 'PRICE', 'PRIER', 'RIPER', 'TRICE', 'TRIER', 'TRIPE', 'TRUER', 'RECUR', 'TRUCE'],
+      5: ['CREPT', 'CRIER', 'CURER', 'CUTER', 'ERUPT', 'PETER', 'PRICE', 'PRIER', 'RIPER', 'TRICE', 'TRIER', 'TRIPE', 'TRUER', 'RECUR', 'TRUCE'],
       6: ['PRICER', 'RECIPE', 'RECITE', 'TRICEP'],
       7: ['PICTURE', 'PIERCER', 'RECEIPT', 'RECITER']
     },
@@ -776,7 +776,6 @@ const PUZZLES = [
         "More adorable",
         "Explode; burst out suddenly",
         "Fade away gradually; a man's name",
-        "Part or portion of something",
         "Cost; what you pay",
         "One who pries into others' business",
         "More ready to eat; more mature",
