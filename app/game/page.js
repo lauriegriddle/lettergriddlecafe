@@ -805,7 +805,7 @@ const PUZZLES = [
   {
     id: 'pancakes-puzzle',
     subtitle: 'Griddle Me This',
-    letters: ['P', 'A', 'N', 'C', 'A', 'K', 'E', 'S'],
+    letters: ['P', 'A', 'N', 'C', 'K', 'E', 'S'],
     keyLetters: ['A', 'E'],
     totalWordCount: 40,
     words: {
