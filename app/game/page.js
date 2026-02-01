@@ -873,7 +873,7 @@ const PUZZLES = [
   {
     id: 'griddles-puzzle',
     subtitle: 'Cooking Up Words',
-    letters: ['G', 'R', 'I', 'D', 'D', 'L', 'E', 'S'],
+    letters: ['G', 'R', 'I','D', 'L', 'E', 'S'],
     keyLetters: ['E', 'R'],
     totalWordCount: 47,
     words: {
