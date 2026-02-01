@@ -213,6 +213,32 @@ const stories = [
       '"Woof!" Isaac responds.'
     ],
     closing: 'Friends, please note: adding Letter Griddle to your Home Screen starts fresh stats. Your stats will save within the app going forward!'
+  },
+  {
+    id: 'winter-olympics',
+    title: 'Winter Olympics Trivia',
+    subtitle: '🏅 Going for Gold',
+    date: 'February 2026',
+    locked: false,
+    content: [
+      '"Thanks again everyone for helping at the Winter Festival today. Tonight\'s trivia theme naturally is the Winter Olympics! Who knows the dates of the 2026 winter games and locations? First to respond gets an extra pancake added to their stack!" Laurel reads over her text before sending it to the trivia crew.',
+      '"This teaser should get the group thinking about the 2026 Winter Olympics," Laurel says to Taylor B. as he gets the tech set up for the night.',
+      'The bell on the cafe door grabs their attention before the energetic voice, "February 6th through February 22nd are the dates of the winter games. We were just dropping off Isaac at Jennie\'s when we thought we\'d all head over to the cafe to see what we could do to help prepare," Mr. Lindsay explains on behalf of Mrs. Lindsay, Jennie, and Isaac.',
+      '"Isaac is a handsome fellow and wanted to show you his grooming session was a success!" Jennie explains.',
+      'Mrs. Lindsay offers, "It\'s our pleasure to keep your furry friend in tip-top shape. Our \'Lending a Paw\' mobile dog care business is our pride and joy since Mr. Lindsay and I have retired from teaching. And did I mention that this year\'s games are in Milan and Cortina, Italy? It is the first Winter Games to be officially hosted by two cities."',
+      '"Thanks, Mr. Lindsay, Mrs. Lindsay. Correct as usual. And glad you\'re here a bit early, but we could use some help with reading over tonight\'s Winter Olympics questions," Taylor says.',
+      'Laurel added, "If you all could make sure the questions and the tech are in sync for tonight and no, Mr. Lindsay we\'re not giving you the correct answers so that you can debate with your extensive knowledge of geography and history. We know you are smart."',
+      '"I just want to be sure…" Mr. Lindsay starts.',
+      '"That you\'re the smartest in the room?" Laurel jokes. "Anyway go ahead and start reading over the questions while Taylor makes sure the tech is cooperating and I\'ll go get those pancakes."',
+      '"Let me know if there\'s anything that needs correcting before game time tonight," Taylor says.',
+      '"Okay I\'ll read the first question," Jennie offers. "All the events at the Winter Olympics take place in blank and blank."',
+      '"I can\'t wait to answer that question tonight!" Mrs. Lindsay says. "The next question asks, \'What year—?\'"',
+      '"Letter Griddle pancakes are only hot once!" Laurel announces.',
+      '"We\'ll be back, Taylor!" Mr. Lindsay promises, as the group scurries to their corner booth in the cafe.',
+      'Taylor pauses the sound board, and asks the now empty trivia room, "What cafe holds the record for the gold medal every Sunday in the pancake competition?"',
+      'Before removing his headset, Taylor\'s amplified voice fills the cafe, "Hey, wait for me!"'
+    ],
+    closing: 'Friends, go for the gold and enjoy this puzzle!'
   }
 ];
 
@@ -347,6 +373,27 @@ const puzzles = {
       { pos: 4, letter: 'N' }
     ],
     didYouKnow: 'Using the Home Screen Letter Griddle app-like icon will make your day 99.99%* more fun! *Your mileage may vary.'
+  },
+  'winter-olympics': {
+    id: 'winter-olympics',
+    title: 'Winter Olympics',
+    category: 'Winter Olympics',
+    words: ['ICE', 'SNOW', 'MEDAL', 'RECORD', 'HISTORY'],
+    hints: [
+      'Frozen water used for skating and hockey',
+      'White precipitation essential for skiing events',
+      'Award given to top three finishers',
+      'A best-ever achievement in a sport',
+      'The story of past events over time'
+    ],
+    revealed: [
+      { pos: 0, letter: 'I' },
+      { pos: 1, letter: 'N' },
+      { pos: 2, letter: 'D' },
+      { pos: 3, letter: 'O' },
+      { pos: 4, letter: 'O' }
+    ],
+    didYouKnow: 'The first Winter Olympics were held in 1924 in Chamonix, France, but were originally branded as an "International Winter Sports Week."  No Southern Hemisphere country has ever hosted the Winter Games.  Norway holds the record for the most total medals won in Winter Olympic history.'
   }
 };
 
