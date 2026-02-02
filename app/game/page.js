@@ -1090,6 +1090,398 @@ const PUZZLES = [
         "Shocking public disgraces"
       ]
     }
+  },
+
+  // PUZZLE 17: SPARKLE
+  {
+    id: 'sparkle-puzzle',
+    subtitle: 'All That Glitters',
+    letters: ['S', 'P', 'A', 'R', 'K', 'L', 'E'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 90,
+    words: {
+      4: ['APES', 'AREA', 'EARL', 'EARS', 'EASE', 'ERAS', 'KALE', 'LAKE', 'LEAK', 'LEAP', 'PALE', 'PARE', 'PEAK', 'PEAL', 'PEAR', 'PEAS', 'RAKE', 'RARE', 'REAL', 'REAP', 'SAKE', 'SALE', 'SEAL', 'SEAR'],
+      5: ['APERS', 'AREAS', 'EARLS', 'EASEL', 'ERASE', 'KALES', 'LAKES', 'LAPSE', 'LASER', 'LEAKS', 'LEAPS', 'LEASE', 'PALER', 'PALES', 'PAPER', 'PARES', 'PARSE', 'PEAKS', 'PEALS', 'PEARL', 'PEARS', 'PLEAS', 'RAKES', 'REALS', 'REAPS', 'SALES', 'SEALS', 'SEARS', 'SPARE', 'SPEAK', 'SPEAR'],
+      6: ['ASLEEP', 'EASELS', 'ERASER', 'ERASES', 'LAPELS', 'LAPSES', 'LASERS', 'LEAPER', 'LEASES', 'PAPERS', 'PARSES', 'PEARLS', 'PEELER', 'PLEASE', 'RESALE', 'SEALER', 'SPARES', 'SPEAKS', 'SPEARS'],
+      7: ['ERASERS', 'LEAPERS', 'PEELERS', 'PLEASER', 'RELAPSE', 'REPEALS', 'RESALES', 'SEALERS', 'SPARKLE', 'SPEAKER'],
+      8: ['PLEASERS', 'RELAPSES', 'SPARKLER', 'SPARKLES', 'SPEAKERS'],
+      9: ['SPARKLERS']
+    },
+    hints: {
+      4: [
+        "Primates; imitates",
+        "Region; surface space",
+        "British nobleman",
+        "Hearing organs",
+        "Comfort; lack of difficulty",
+        "Historical time periods",
+        "Leafy green superfood",
+        "Body of water",
+        "Drip through a hole",
+        "Jump; spring forward",
+        "Light in color; fence stake",
+        "Peel; trim away",
+        "Mountain top; highest point",
+        "Ring out like bells",
+        "Fruit related to apples",
+        "Small green vegetables",
+        "Garden tool for leaves",
+        "Uncommon; cooked lightly",
+        "Genuine; actual",
+        "Harvest; gather crops",
+        "Purpose; for the _____ of",
+        "Discount event",
+        "Ocean mammal; close tightly",
+        "Burn the surface; scorch"
+      ],
+      5: [
+        "Those who imitate",
+        "Regions; surface spaces",
+        "British noblemen",
+        "Art stand for painting",
+        "Remove; rub out",
+        "Leafy green superfoods",
+        "Bodies of water",
+        "Slip; temporary failure",
+        "Focused light beam device",
+        "Drips through holes",
+        "Jumps; springs forward",
+        "Rental agreement",
+        "More light in color",
+        "Fence stakes; light colors",
+        "Writing material; newspaper",
+        "Peels; trims away",
+        "Analyze grammatically",
+        "Mountain tops",
+        "Rings out like bells",
+        "Gem from an oyster",
+        "Fruits related to apples",
+        "Requests; appeals",
+        "Garden tools for leaves",
+        "Genuine things; currency",
+        "Harvests; gathers crops",
+        "Discount events",
+        "Ocean mammals",
+        "Burns the surface",
+        "Extra; additional",
+        "Talk; say words",
+        "Weapon; throw a javelin"
+      ],
+      6: [
+        "Sleeping; not awake",
+        "Art stands for painting",
+        "Rubber for removing pencil marks",
+        "Removes; rubs out",
+        "Jacket flaps; collar folds",
+        "Slips; temporary failures",
+        "Focused light beam devices",
+        "One who jumps",
+        "Rental agreements",
+        "Writing materials; newspapers",
+        "Analyzes grammatically",
+        "Gems from oysters",
+        "Potato skin remover",
+        "Make happy; say 'pretty _____'",
+        "Secondhand sale",
+        "One who closes tightly",
+        "Extras; additional ones",
+        "Talks; says words",
+        "Weapons; throws javelins"
+      ],
+      7: [
+        "Rubber tools for removing marks",
+        "Those who jump",
+        "Potato skin removers",
+        "One who makes others happy",
+        "Fall back into old habits",
+        "Revokes; takes back laws",
+        "Secondhand sales",
+        "Those who close tightly",
+        "Glitter; shine brightly (pangram!)",
+        "One who talks; audio device"
+      ],
+      8: [
+        "Those who make others happy",
+        "Falls back into old habits",
+        "Handheld firework (pangram!)",
+        "Glitters; shines brightly (pangram!)",
+        "Those who talk; audio devices"
+      ],
+      9: [
+        "Handheld fireworks (pangram!)"
+      ]
+    }
+  },
+
+  // PUZZLE 18: GARDENS
+  {
+    id: 'gardens-puzzle',
+    subtitle: 'In Full Bloom',
+    letters: ['G', 'A', 'R', 'D', 'E', 'N', 'S'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 55,
+    words: {
+      4: ['AGED', 'AGES', 'DARE', 'DEAN', 'DEAR', 'EARS', 'EARN', 'EASE', 'ERAS', 'GEAR', 'NEAR', 'RAGE', 'READ', 'SAGE', 'SANE', 'SEAR'],
+      5: ['ANGER', 'DARES', 'DEANS', 'DEARS', 'EARED', 'EARNS', 'EASED', 'GEARS', 'GRADE', 'NEARS', 'RAGES', 'RANGE', 'READS', 'SAGES', 'SANER', 'SEARS', 'SNARE'],
+      6: ['ANGERS', 'DANGER', 'DARNED', 'GANDER', 'GARDEN', 'GEARED', 'GRADES', 'RANGED', 'RANGER', 'RANGES', 'SANDER', 'SNARED', 'SNARES'],
+      7: ['DANGERS', 'GANDERS', 'GARDENS', 'GRENADE', 'RANGERS', 'SANDERS'],
+      8: ['GARDENER', 'GRENADES'],
+      9: ['GARDENERS']
+    },
+    hints: {
+      4: [
+        "Grew older; matured",
+        "Grows older; time periods",
+        "Challenge someone; be bold",
+        "School administrator",
+        "Beloved; expensive",
+        "Hearing organs",
+        "Make money; deserve",
+        "Comfort; lack of difficulty",
+        "Historical time periods",
+        "Mechanical cog; equipment",
+        "Close by; not far",
+        "Intense anger; fury",
+        "Look at written words",
+        "Wise person; herb",
+        "Mentally sound; rational",
+        "Burn the surface; scorch"
+      ],
+      5: [
+        "Strong feeling of annoyance",
+        "Challenges; acts boldly",
+        "School administrators",
+        "Beloved ones; letters starting with 'Dear'",
+        "Having ears; listened",
+        "Makes money; deserves",
+        "Made more comfortable",
+        "Mechanical cogs; equipment",
+        "School mark; slope level",
+        "Comes close to",
+        "Intense angers; furies",
+        "Span; mountain chain",
+        "Looks at written words",
+        "Wise people; herbs",
+        "More rational; more sound",
+        "Burns surfaces; scorches",
+        "Trap for catching animals"
+      ],
+      6: [
+        "Strong feelings of annoyance",
+        "Threat; peril",
+        "Mild curse word; mended socks",
+        "Male goose; take a look",
+        "Plot for growing plants (pangram!)",
+        "Equipped; prepared",
+        "School marks; slope levels",
+        "Varied; roamed over",
+        "Park protector; forest guide",
+        "Spans; mountain chains",
+        "Power tool for smoothing wood",
+        "Caught in a trap",
+        "Traps for catching animals"
+      ],
+      7: [
+        "Threats; perils",
+        "Male geese; takes a look",
+        "Plots for growing plants (pangram!)",
+        "Explosive weapon",
+        "Park protectors; forest guides",
+        "Power tools for smoothing wood"
+      ],
+      8: [
+        "One who tends plants (pangram!)",
+        "Explosive weapons"
+      ],
+      9: [
+        "Those who tend plants (pangram!)"
+      ]
+    }
+  },
+
+  // PUZZLE 19: SCRABBLE
+  {
+    id: 'scrabble-puzzle',
+    subtitle: 'Letter Perfect!',
+    letters: ['S', 'C', 'R', 'A', 'B', 'B', 'L', 'E'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 71,
+    words: {
+      4: ['ABLE', 'ACES', 'ACRE', 'ALES', 'AREA', 'BABE', 'BARE', 'BASE', 'BEAR', 'CARE', 'CASE', 'EARL', 'EARS', 'EASE', 'ERAS', 'LACE', 'RACE', 'REAL', 'SALE', 'SEAL', 'SEAR'],
+      5: ['ABLER', 'ACRES', 'AREAS', 'BABES', 'BALES', 'BARES', 'BASES', 'BEARS', 'BLARE', 'BRACE', 'CABLE', 'CARES', 'CASES', 'CEASE', 'CLEAR', 'EARLS', 'EASEL', 'ERASE', 'LACES', 'LASER', 'RACER', 'RACES', 'REALS', 'SABER', 'SALES', 'SCALE', 'SCARE', 'SEALS', 'SEARS'],
+      6: ['BLARES', 'BRACES', 'CABLES', 'CEREAL', 'CLEARS', 'EASELS', 'ERASER', 'ERASES', 'LASERS', 'RACERS', 'RESALE', 'SABERS', 'SCALES', 'SCARES', 'SEALER'],
+      7: ['CEREALS', 'ERASERS', 'RESALES', 'SEALERS'],
+      8: ['SCRABBLE'],
+      9: ['SCRABBLES']
+    },
+    hints: {
+      4: [
+        "Capable; having skill",
+        "Top cards; experts",
+        "Land measurement; plot",
+        "Types of beer",
+        "Region; surface space",
+        "Infant; dear one",
+        "Uncovered; naked",
+        "Bottom; foundation",
+        "Large mammal; endure",
+        "Be concerned; look after",
+        "Container; instance",
+        "British nobleman",
+        "Hearing organs",
+        "Comfort; lack of difficulty",
+        "Historical time periods",
+        "Delicate fabric; shoe ties",
+        "Competition; run fast",
+        "Genuine; actual",
+        "Discount event",
+        "Ocean mammal; close tightly",
+        "Burn the surface; scorch"
+      ],
+      5: [
+        "More capable",
+        "Land measurements; plots",
+        "Regions; surface spaces",
+        "Infants; dear ones",
+        "Bundles of hay",
+        "Uncovers; exposes",
+        "Foundations; bottoms",
+        "Large mammals; endures",
+        "Loud sound; honk",
+        "Support device; prepare for impact",
+        "Thick wire; TV cord",
+        "Is concerned; looks after",
+        "Containers; instances",
+        "Stop; come to an end",
+        "Transparent; obvious",
+        "British noblemen",
+        "Art stand for painting",
+        "Remove; rub out",
+        "Delicate fabrics; shoe ties",
+        "Focused light beam device",
+        "One who competes in speed",
+        "Competitions; runs fast",
+        "Genuine things; currency",
+        "Curved sword",
+        "Discount events",
+        "Weighing device; climb up",
+        "Frighten; startle",
+        "Ocean mammals",
+        "Burns surfaces; scorches"
+      ],
+      6: [
+        "Loud sounds; honks",
+        "Support devices; dental gear",
+        "Thick wires; TV cords",
+        "Breakfast grain food",
+        "Makes transparent; removes obstacles",
+        "Art stands for painting",
+        "Rubber for removing pencil marks",
+        "Removes; rubs out",
+        "Focused light beam devices",
+        "Those who compete in speed",
+        "Secondhand sale",
+        "Curved swords",
+        "Weighing devices; climbs up",
+        "Frightens; startles",
+        "One who closes tightly"
+      ],
+      7: [
+        "Breakfast grain foods",
+        "Rubber tools for removing marks",
+        "Secondhand sales",
+        "Those who close tightly"
+      ],
+      8: [
+        "Word tile board game (pangram!)"
+      ],
+      9: [
+        "Plays word tile games; scrambles (pangram!)"
+      ]
+    }
+  },
+
+  // PUZZLE 20: LIBRARIES
+  {
+    id: 'libraries-puzzle',
+    subtitle: 'Check It Out',
+    letters: ['L', 'I', 'B', 'R', 'A', 'R', 'I', 'E', 'S'],
+    keyLetters: ['E', 'R'],
+    totalWordCount: 54,
+    words: {
+      4: ['BARE', 'BEER', 'BRIE', 'EARL', 'EARS', 'ERRS', 'ERAS', 'IRES', 'LEER', 'REAL', 'REAR', 'RILE', 'RISE', 'SEAR', 'SEER', 'SIRE'],
+      5: ['ABLER', 'ARISE', 'BARER', 'BARES', 'BEERS', 'BRIER', 'BRIES', 'EARLS', 'ERASE', 'LASER', 'LEERS', 'RAISE', 'RARER', 'REALS', 'REARS', 'RILES', 'RISER', 'SABER', 'SEERS', 'SIRES'],
+      6: ['ARISES', 'BRIERS', 'EERIER', 'ERASER', 'IRISES', 'LASERS', 'RAISER', 'RAISES', 'RISERS', 'SABERS', 'SEALER', 'SERIAL', 'SIERRA'],
+      7: ['ERASERS', 'RAISERS', 'SEALERS', 'SERIALS', 'SIERRAS'],
+      9: ['LIBRARIES']
+    },
+    hints: {
+      4: [
+        "Uncovered; naked",
+        "Alcoholic drink from hops",
+        "Soft French cheese",
+        "British nobleman",
+        "Hearing organs",
+        "Makes mistakes",
+        "Historical time periods",
+        "Angers; annoys",
+        "Stare in a creepy way",
+        "Genuine; actual",
+        "Back part; raise up",
+        "Annoy; stir up",
+        "Go upward; get out of bed",
+        "Burn the surface; scorch",
+        "Prophet; one who foresees",
+        "Father; address to a king"
+      ],
+      5: [
+        "More capable",
+        "Get up; come into being",
+        "More uncovered",
+        "Uncovers; exposes",
+        "Alcoholic drinks from hops",
+        "Thorny shrub",
+        "Soft French cheeses",
+        "British noblemen",
+        "Remove; rub out",
+        "Focused light beam device",
+        "Stares in a creepy way",
+        "Lift up; increase",
+        "More uncommon",
+        "Genuine things; currency",
+        "Back parts; raises up",
+        "Annoys; stirs up",
+        "Early bird; stair step part",
+        "Curved sword",
+        "Prophets; fortune tellers",
+        "Fathers; addresses to kings"
+      ],
+      6: [
+        "Gets up; comes into being",
+        "Thorny shrubs",
+        "More creepy; more unsettling",
+        "Rubber for removing pencil marks",
+        "Flowers; parts of eyes",
+        "Focused light beam devices",
+        "One who lifts or increases",
+        "Lifts up; increases",
+        "Early birds; stair step parts",
+        "Curved swords",
+        "One who closes tightly",
+        "Ongoing story; in sequence",
+        "Mountain range; type of mist"
+      ],
+      7: [
+        "Rubber tools for removing marks",
+        "Those who lift or increase",
+        "Those who close tightly",
+        "Ongoing stories; TV series",
+        "Mountain ranges"
+      ],
+      9: [
+        "Buildings full of books (pangram!)"
+      ]
+    }
   }
 ];
 
