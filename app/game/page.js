@@ -948,7 +948,7 @@ const PUZZLES = [
   {
     id: 'notebooks-puzzle',
     subtitle: 'Write It Down',
-    letters: ['N', 'O', 'T', 'E', 'B', 'O', 'O', 'K', 'S'],
+    letters: ['N', 'O', 'T', 'E', 'B', 'K', 'S'],
     keyLetters: ['E', 'O'],
     totalWordCount: 28,
     words: {
