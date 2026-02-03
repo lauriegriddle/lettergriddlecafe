@@ -1006,12 +1006,12 @@ const PUZZLES = [
     subtitle: 'A Warm Glow',
     letters: ['C', 'A', 'N', 'D', 'L', 'E', 'S'],
     keyLetters: ['A', 'E'],
-    totalWordCount: 64,
+    totalWordCount: 61,
     words: {
       4: ['ACES', 'ACNE', 'ALES', 'CANE', 'CASE', 'DALE', 'DEAL', 'DEAN', 'EASE', 'ELAN', 'LACE', 'LANE', 'LEAD', 'LEAN', 'SALE', 'SANE', 'SEAL'],
       5: ['CANED', 'CANES', 'CASES', 'CEASE', 'CLEAN', 'DALES', 'DANCE', 'DEALS', 'DEANS', 'DECAL', 'EASEL', 'LACED', 'LACES', 'LADEN', 'LANCE', 'LANES', 'LEADS', 'LEANS', 'LEASE', 'SALES', 'SCALE', 'SEALS', 'SEDAN'],
-      6: ['ASCEND', 'CANDLE', 'CLEANS', 'DANCES', 'DECALS', 'EASELS', 'LANCED', 'LANCES', 'LEADEN', 'LEANED', 'LEASED', 'LEASES', 'SANDAL', 'SCALED', 'SCALES', 'SEALED', 'SEDANS'],
-      7: ['ASCENDS', 'CANDLES', 'CLEANED', 'ENCASED', 'SANDALS', 'SCANDAL'],
+      6: ['ASCEND', 'CANDLE', 'CLEANS', 'DANCES', 'DECALS', 'EASELS', 'LANCED', 'LANCES', 'LEADEN', 'LEANED', 'LEASED', 'LEASES', 'SCALED', 'SCALES', 'SEALED', 'SEDANS'],
+      7: ['ASCENDS', 'CANDLES', 'CLEANED', 'ENCASED'],
       8: ['ASCENDED']
     },
     hints: {
@@ -1072,7 +1072,6 @@ const PUZZLES = [
         "Tilted to one side",
         "Rented out",
         "Rental agreements",
-        "Open summer shoe",
         "Climbed up; weighed",
         "Weighing devices; climbs up",
         "Closed tightly",
@@ -1083,8 +1082,6 @@ const PUZZLES = [
         "Wax sticks that burn (pangram!)",
         "Tidied up; made spotless",
         "Enclosed; surrounded",
-        "Open summer shoes",
-        "Shocking public disgrace"
       ],
       8: [
         "Climbed upward; went up",
