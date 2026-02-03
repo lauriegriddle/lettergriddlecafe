@@ -1012,7 +1012,7 @@ const PUZZLES = [
       5: ['CANED', 'CANES', 'CASES', 'CEASE', 'CLEAN', 'DALES', 'DANCE', 'DEALS', 'DEANS', 'DECAL', 'EASEL', 'LACED', 'LACES', 'LADEN', 'LANCE', 'LANES', 'LEADS', 'LEANS', 'LEASE', 'SALES', 'SCALE', 'SEALS', 'SEDAN'],
       6: ['ASCEND', 'CANDLE', 'CLEANS', 'DANCES', 'DECALS', 'EASELS', 'LANCED', 'LANCES', 'LEADEN', 'LEANED', 'LEASED', 'LEASES', 'SANDAL', 'SCALED', 'SCALES', 'SEALED', 'SEDANS'],
       7: ['ASCENDS', 'CANDLES', 'CLEANED', 'ENCASED', 'SANDALS', 'SCANDAL'],
-      8: ['SCANDALS']
+      8: ['ASCENDED']
     },
     hints: {
       4: [
@@ -1087,7 +1087,7 @@ const PUZZLES = [
         "Shocking public disgrace"
       ],
       8: [
-        "Shocking public disgraces"
+        "Climbed upward; went up",
       ]
     }
   },
