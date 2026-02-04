@@ -1095,12 +1095,12 @@ const PUZZLES = [
     subtitle: 'All That Glitters',
     letters: ['S', 'P', 'A', 'R', 'K', 'L', 'E'],
     keyLetters: ['A', 'E'],
-    totalWordCount: 90,
+    totalWordCount: 88,
     words: {
       4: ['APES', 'AREA', 'EARL', 'EARS', 'EASE', 'ERAS', 'KALE', 'LAKE', 'LEAK', 'LEAP', 'PALE', 'PARE', 'PEAK', 'PEAL', 'PEAR', 'PEAS', 'RAKE', 'RARE', 'REAL', 'REAP', 'SAKE', 'SALE', 'SEAL', 'SEAR'],
       5: ['APERS', 'AREAS', 'EARLS', 'EASEL', 'ERASE', 'KALES', 'LAKES', 'LAPSE', 'LASER', 'LEAKS', 'LEAPS', 'LEASE', 'PALER', 'PALES', 'PAPER', 'PARES', 'PARSE', 'PEAKS', 'PEALS', 'PEARL', 'PEARS', 'PLEAS', 'RAKES', 'REALS', 'REAPS', 'SALES', 'SEALS', 'SEARS', 'SPARE', 'SPEAK', 'SPEAR'],
-      6: ['ASLEEP', 'EASELS', 'ERASER', 'ERASES', 'LAPELS', 'LAPSES', 'LASERS', 'LEAPER', 'LEASES', 'PAPERS', 'PARSES', 'PEARLS', 'PEELER', 'PLEASE', 'RESALE', 'SEALER', 'SPARES', 'SPEAKS', 'SPEARS'],
-      7: ['ERASERS', 'LEAPERS', 'PEELERS', 'PLEASER', 'RELAPSE', 'REPEALS', 'RESALES', 'SEALERS', 'SPARKLE', 'SPEAKER'],
+      6: ['ASLEEP', 'EASELS', 'ERASER', 'ERASES', 'LAPELS', 'LAPSES', 'LASERS', 'LEAPER', 'LEASES', 'PAPERS', 'PARSES', 'PEARLS', 'PLEASE', 'RESALE', 'SEALER', 'SPARES', 'SPEAKS', 'SPEARS'],
+      7: ['ERASERS', 'LEAPERS', 'PLEASER', 'RELAPSE', 'REPEALS', 'RESALES', 'SEALERS', 'SPARKLE', 'SPEAKER'],
       8: ['PLEASERS', 'RELAPSES', 'SPARKLER', 'SPARKLES', 'SPEAKERS'],
       9: ['SPARKLERS']
     },
@@ -1177,7 +1177,6 @@ const PUZZLES = [
         "Writing materials; newspapers",
         "Analyzes grammatically",
         "Gems from oysters",
-        "Potato skin remover",
         "Make happy; say 'pretty _____'",
         "Secondhand sale",
         "One who closes tightly",
@@ -1188,7 +1187,6 @@ const PUZZLES = [
       7: [
         "Rubber tools for removing marks",
         "Those who jump",
-        "Potato skin removers",
         "One who makes others happy",
         "Fall back into old habits",
         "Revokes; takes back laws",
