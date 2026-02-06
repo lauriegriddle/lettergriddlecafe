@@ -1298,7 +1298,7 @@ const PUZZLES = [
   {
     id: 'scrabble-puzzle',
     subtitle: 'Letter Perfect!',
-    letters: ['S', 'C', 'R', 'A', 'B', 'B', 'L', 'E'],
+    letters: ['S', 'C', 'R', 'A', 'B', 'L', 'E'],
     keyLetters: ['A', 'E'],
     totalWordCount: 71,
     words: {
