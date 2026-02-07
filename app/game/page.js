@@ -1400,7 +1400,7 @@ const PUZZLES = [
   {
     id: 'libraries-puzzle',
     subtitle: 'Check It Out',
-    letters: ['L', 'I', 'B', 'R', 'A', 'R', 'I', 'E', 'S'],
+    letters: ['L', 'I', 'B', 'R', 'A', 'E', 'S'],
     keyLetters: ['E', 'R'],
     totalWordCount: 54,
     words: {
