@@ -239,7 +239,33 @@ const stories = [
       'Before removing his headset, Taylor\'s amplified voice fills the cafe, "Hey, wait for me!"'
     ],
     closing: 'Friends, go for the gold and enjoy this puzzle!'
-  }
+  },
+  {
+  id: 'hoopla-pancakes-winter-olympics',
+  title: 'Hoopla, Pancakes, and the Winter Olympics!',
+  subtitle: '🥇 Now Available',
+  date: 'February 2026',
+  locked: false,
+  content: [
+    'As 7:00 nears, Laurel makes sure the cafe is prepared for the Hoopla Pep Rally Trivia night.',
+    'The cafe\'s beautiful granite countertop shines like a beacon to coffee lovers. Each booth has its own small vanilla scented votive candle lit. The hardwood floors creak in familiar footworn patterns as Laurel gives the cafe a twice-over.',
+    'Jukebox plays the familiar instrumental jazz that no one seems to notice until the music stops.',
+    'Laurel knows how each guest will greet the group as they arrive, where each player will sit, the topics that will make experts out of mere mortals, and how they take their coffee and top their pancakes.',
+    'Mr. Lindsay energetically enters the cafe. "I don\'t know what my nose likes best, fresh-brewed coffee or cinnamon rolls."',
+    '"Sorry, we\'re late. We got caught up working on our taxes," Mrs. Lindsay offers.',
+    '"You\'re fashionably early," Laurel says with a laugh.',
+    '"Perfectly early! Come take a look at the Hoopla screen!" Taylor B. persuades as he emerges from the tech area.',
+    '"Tomorrow, let\'s work on taxes, tonight let\'s party with pancakes, pastries, and the Winter Olympics!" Sarah interjects as she brings a plate of fresh cinnamon rolls out.',
+    '"Tonight, Hoopla. Tomorrow, taxes!" Jennie offers entering from the cafe\'s side door with Isaac.',
+    '"My vote is we do both here at the Letter Griddle Cafe!" Josephine offers peeking around the high-backed corner booth.',
+    '"Trivia tonight. I will pencil in taxes tomorrow! Got it!" Laurel schedules the group\'s meeting.',
+    '"It will be a taxes pep rally!" Mr. Lindsay gets excited about group activities.',
+    'Laurel proudly knows that Sunday trivia nights are part of the heritage of Griddle Falls established traditions. Adding "taxes" to the cafe\'s activities is a natural evolution.'
+  ],
+  closing: 'Friends, pencil in some fun and go for the gold!',
+  closingLink: 'https://lettergriddle.com/hoopla',
+  closingLinkText: 'Play Hoopla 🥇'
+}
 ];
 
 // Puzzle data - expandable for future puzzles
@@ -394,7 +420,28 @@ const puzzles = {
       { pos: 4, letter: 'O' }
     ],
     didYouKnow: 'The first Winter Olympics were held in 1924 in Chamonix, France, but were originally branded as an "International Winter Sports Week."  No Southern Hemisphere country has ever hosted the Winter Games.  Norway holds the record for the most total medals won in Winter Olympic history.'
-  }
+  },
+  'hoopla-pancakes-winter-olympics': {
+  id: 'pep-rally',
+  title: 'Pep Rally',
+  category: 'Pep Rally',
+  words: ['JAZZ', 'TAXES', 'HOOPLA', 'OLYMPIC', 'PASTRIES'],
+  hints: [
+    'Jukebox\'s familiar instrumental genre',
+    'Tomorrow\'s pep rally topic!',
+    'Tonight\'s trivia game on Taylor B.\'s screen',
+    'Winter games to party with pancakes and pastries',
+    'Cinnamon rolls and other sweet treats'
+  ],
+  revealed: [
+    { pos: 2, letter: 'Z' },
+    { pos: 2, letter: 'X' },
+    { pos: 1, letter: 'O' },
+    { pos: 3, letter: 'M' },
+    { pos: 2, letter: 'S' }
+  ],
+  didYouKnow: 'The term "pep rally" dates back to at least 1915, with "pep" meaning vigor and energy, originating from "pepper" in the early 1900s.'
+}
 };
 
 // Mobile touch optimization styles - reusable objects
