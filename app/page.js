@@ -265,6 +265,29 @@ const stories = [
   closing: 'Friends, pencil in some fun and go for the gold!',
   closingLink: 'https://lettergriddle.com/hoopla',
   closingLinkText: 'Play Hoopla 🥇'
+},
+{
+  id: 'orange-you-surprised',
+  title: 'Orange You Surprised?',
+  subtitle: '🍊 Now Available',
+  date: 'February 2026',
+  locked: false,
+  content: [
+    '"Intermittent rain throughout Sunday evening…" the weather forecaster reads.',
+    '"We\'ll bring our umbrella," the group text from the Lindsay duo grabs Laurel\'s attention from the television to her phone.',
+    '"Hm, the group is going to need a boost of sunshine amid the gloomy weather to answer tonight\'s trivia questions," Laurel ponders.',
+    'Thinking on her feet, "Hey, crew, I\'ve got a special favor to ask. Need these ingredients. Please bring whatever you have with you to the cafe for trivia," Laurel sends the text, knowing that the crew will come through.',
+    '"1 box 3 oz of orange gelatin, 1 box 3.4 oz instant vanilla pudding, 1 tub 8 oz whipped topping, 2-15 oz cans mandarin oranges drained, 1 tbsp orange zest"',
+    '"Laurel, I have a box of orange gelatin that I will bring, but this sounds a little mysterious… the weather, the request for ingredients, the unknown…," Josephine responds.',
+    '"Sounds delicious whatever this surprise is! I\'ve got the box of vanilla pudding packed in my tote bag already!" Sarah replies.',
+    '"Whipped topping, check!" Jennie informs the group.',
+    '"I\'ve got a navel orange to bring to add to the zest! See what I did there?" Taylor B. jokes.',
+    '"Two umbrellas and two cans of mandarin oranges are ready for trivia night!" Mr. Lindsay or Mrs. Lindsay message.',
+    '"Orange 🍊 you all the best trivia crew in Griddle Falls!?" Laurel texts the group in anticipation of another Sunday gathering at the Letter Griddle Cafe.'
+  ],
+  closing: 'Friends, the recipe for deliciousness Laurel\'s whipping up is found at lettergriddlecookbook.com',
+  closingLink: 'https://lettergriddlecookbook.com',
+  closingLinkText: 'Visit the Cookbook 🍊'
 }
 ];
 
@@ -441,6 +464,27 @@ const puzzles = {
     { pos: 2, letter: 'S' }
   ],
   didYouKnow: 'The term "pep rally" dates back to at least 1915, with "pep" meaning vigor and energy, originating from "pepper" in the early 1900s.'
+},
+'orange-you-surprised': {
+  id: 'oranges',
+  title: 'Oranges',
+  category: 'Oranges',
+  words: ['PEEL', 'JUICE', 'CITRUS', 'VITAMIN', 'FRAGRANT'],
+  hints: [
+    'Remove the skin',
+    'Squeeze for this liquid',
+    'Orange, lemon, and lime family',
+    'C is found in oranges',
+    'Sweet-smelling aroma'
+  ],
+  revealed: [
+    { pos: 2, letter: 'E' },
+    { pos: 0, letter: 'J' },
+    { pos: 0, letter: 'C' },
+    { pos: 3, letter: 'A' },
+    { pos: 4, letter: 'R' }
+  ],
+  didYouKnow: 'In ancient Greece, oranges were prized as food from the gods and were called "golden apples." They were also a prized fruit of the Chinese emperors. In one Chinese dialect, the word for "orange" means "gold."'
 }
 };
 
