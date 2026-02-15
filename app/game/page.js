@@ -7,6 +7,186 @@ import React, { useState, useEffect, useCallback, useRef } from 'react';
 // =============================================================================
 
 const PUZZLES = [
+  // PUZZLE 1: PRINTERS - "Fresh Off the Press" (Feb 16)
+  {
+    id: 'printers-s2',
+    subtitle: 'Fresh Off the Press',
+    letters: ['P', 'R', 'I', 'N', 'T', 'E', 'S'],
+    keyLetters: ['E', 'R'],
+    totalWordCount: 76,
+    words: {
+      4: ['IRES', 'PIER', 'REIN', 'RENT', 'REPS', 'REST', 'RIPE', 'RISE', 'RITE', 'SEER', 'SIRE', 'TERN', 'TIER', 'TIRE', 'TREE'],
+      5: ['ENTER', 'INERT', 'INTER', 'PREEN', 'PRIER', 'REINS', 'RENTS', 'RIPEN', 'RIPER', 'RISER', 'RITES', 'SEERS', 'SIREN', 'SIRES', 'SNEER', 'SPIRE', 'STEER', 'STERN', 'TERNS', 'TERSE', 'TIERS', 'TIRES', 'TREES', 'TRIER', 'TRIPE'],
+      6: ['ENTERS', 'INSERT', 'INTERS', 'PREENS', 'PRIERS', 'RESENT', 'RIPENS', 'RISERS', 'SIRENS', 'SNEERS', 'SNIPER', 'SPIRES', 'SPRITE', 'STEERS', 'STERNS', 'STRIPE', 'TENSER', 'TRIERS', 'TRIPES'],
+      7: ['ENTRIES', 'INSERTS', 'PRESENT', 'PRINTER', 'REPENTS', 'REPRINT', 'RESENTS', 'SERPENT', 'SNIPERS', 'SPRITES', 'STRIPES'],
+      8: ['PRINTERS', 'PRESENTS', 'REPRINTS', 'SERPENTS', 'SPRINTER'],
+      9: ['SPRINTERS']
+    },
+    hints: {
+      4: ["Angers or annoys", "Dock or walkway over water", "Strap to control a horse", "Lease payment; or tear", "Representatives; exercise counts", "Relax; remainder", "Ready to eat; mature", "Go upward; get out of bed", "Ceremony or ritual", "Prophet; one who foresees", "Father; address to a king", "Seabird", "Level or layer", "Rubber wheel covering; grow weary", "Woody plant with trunk and branches"],
+      5: ["Go in; type into a computer", "Inactive; not moving", "Bury; place in a grave", "Groom feathers; primp", "One who pries into others' business", "Straps to control a horse", "Lease payments; tears", "Become ready to eat", "More ready to eat; more mature", "Early bird; stair step part", "Ceremonies or rituals", "Prophets; fortune tellers", "Warning sound; mythical sea singer", "Fathers; addresses to kings", "Scornful smile; mock", "Church steeple; pointed tower", "Guide; young bull", "Back of ship; serious", "Seabirds", "Brief and to the point", "Levels or layers", "Rubber wheel coverings", "Woody plants", "One who attempts", "Stomach lining meat; nonsense"],
+      6: ["Goes in; types into computer", "Put in; place inside", "Buries; places in graves", "Grooms feathers; primps", "Ones who pry into others' business", "Feel bitter about", "Becomes ready to eat", "Early birds; stair parts", "Warning sounds; mythical singers", "Scornful smiles; mocks", "Hidden shooter", "Church steeples; pointed towers", "Fairy; lemon-lime soda", "Guides; young bulls", "Backs of ships; serious expressions", "Band of color", "More tight; more strained", "Ones who attempt", "Stomach lining meats"],
+      7: ["Ways in; items in a list", "Puts in; places inside", "Gift; here now", "Machine that produces documents (pangram!)", "Feels remorse", "Print again", "Feels bitter about", "Snake", "Hidden shooters", "Fairies; lemon-lime sodas", "Bands of color"],
+      8: ["Machines that produce documents (pangram!)", "Gifts; here now", "Prints again", "Snakes", "Fast runner"],
+      9: ["Fast runners"]
+    }
+  },
+  // PUZZLE 2: ROASTED - "Fresh From the Oven" (Feb 17)
+  {
+    id: 'roasted-s2',
+    subtitle: 'Fresh From the Oven',
+    letters: ['R', 'O', 'A', 'S', 'T', 'E', 'D'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 70,
+    words: {
+      4: ['AREA', 'DARE', 'DATE', 'DEAR', 'EARS', 'EASE', 'EAST', 'EATS', 'ERAS', 'RATE', 'READ', 'SATE', 'SEAR', 'SEAT', 'TARE', 'TEAS', 'TEAR'],
+      5: ['AREAS', 'AROSE', 'ASTER', 'DARES', 'DATES', 'DEARS', 'EASED', 'EATER', 'ERASE', 'ORATE', 'RATED', 'RATES', 'READS', 'SATED', 'SATES', 'SEARS', 'SEATS', 'STARE', 'STEAD', 'TARES', 'TEARS', 'TEASE', 'TRADE', 'TREAD'],
+      6: ['ADORES', 'ASTERS', 'EATERS', 'ERASED', 'ERASER', 'ERASES', 'ORATED', 'ORATES', 'RESEAT', 'SEDATE', 'STARED', 'STARER', 'STARES', 'STEADS', 'TEASED', 'TEASER', 'TEASES', 'TRADES', 'TREADS'],
+      7: ['ERASERS', 'RESEATS', 'ROASTED', 'ROASTER', 'SEDATES', 'TEASERS', 'TOASTED', 'TOASTER'],
+      8: ['ROASTERS', 'TOASTERS']
+    },
+    hints: {
+      4: ["Region; surface space", "Challenge someone; be bold", "Calendar day; romantic outing", "Beloved; expensive", "Hearing organs", "Comfort; lack of difficulty", "Compass direction; sunrise side", "Consumes food", "Historical time periods", "Speed; evaluate or rank", "Look at written words", "Satisfy fully", "Burn the surface; scorch", "Chair; place to sit", "Weed; weight of container", "Hot brewed beverages", "Rip; eye drop"],
+      5: ["Regions; surface spaces", "Got up; came into being", "Star-shaped flower", "Challenges; acts boldly", "Calendar days; romantic outings", "Beloved ones", "Made more comfortable", "One who consumes food", "Remove; rub out", "Speak formally; give a speech", "Evaluated; ranked", "Speeds; evaluates", "Looks at written words", "Satisfied fully", "Satisfies fully", "Burns surfaces; scorches", "Chairs; places to sit", "Gaze; look fixedly", "Place; in someone's _____", "Weeds; container weights", "Rips; eye drops", "Playfully mock", "Exchange; business deal", "Walk on; tire pattern"],
+      6: ["Loves greatly; worships", "Star-shaped flowers", "Ones who consume food", "Removed; rubbed out", "Tool for removing pencil marks", "Removes; rubs out", "Spoke formally; gave a speech", "Speaks formally; gives speeches", "Seat again", "Calm; give a sedative", "Gazed; looked fixedly", "One who gazes", "Gazes; looks fixedly", "Places", "Playfully mocked", "One who playfully mocks", "Playfully mocks", "Exchanges; business deals", "Walks on; tire patterns"],
+      7: ["Tools for removing marks", "Seats again", "Cooked in dry heat (pangram!)", "Pan for cooking in dry heat", "Calms; gives sedatives", "Ones who playfully mock", "Browned with heat; celebrated", "Kitchen appliance for bread"],
+      8: ["Pans for cooking in dry heat (pangram!)", "Kitchen appliances for bread"]
+    }
+  },
+  // PUZZLE 3: DETAILS - "The Fine Print" (Feb 18)
+  {
+    id: 'details-s2',
+    subtitle: 'The Fine Print',
+    letters: ['D', 'E', 'T', 'A', 'I', 'L', 'S'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 66,
+    words: {
+      4: ['AIDE', 'ALES', 'DALE', 'DATE', 'DEAL', 'EASE', 'EAST', 'EATS', 'IDEA', 'LATE', 'LEAD', 'LEAS', 'SALE', 'SATE', 'SEAL', 'SEAT', 'TALE', 'TEAS'],
+      5: ['AIDES', 'AILED', 'AISLE', 'DALES', 'DATES', 'DEALS', 'DELTA', 'EASED', 'EASEL', 'IDEAL', 'IDEAS', 'LEADS', 'LEASE', 'LEAST', 'SALES', 'SATED', 'SATES', 'SEALS', 'SEATS', 'SLATE', 'STALE', 'STEAL', 'TALES', 'TEASE'],
+      6: ['AISLES', 'DELTAS', 'DETAIL', 'DILATE', 'EASELS', 'IDEALS', 'LADIES', 'LASTED', 'LEASED', 'LEASES', 'SAILED', 'SALTED', 'SEALED', 'SEDATE', 'SLATED', 'STEALS', 'TAILED', 'TEASED'],
+      7: ['DETAILS', 'DILATED', 'DILATES', 'SEDATES'],
+      8: ['DETAILED', 'STEADIED']
+    },
+    hints: {
+      4: ["Assistant; helper", "Types of beer", "Valley; glen", "Calendar day; romantic outing", "Agreement; distribute cards", "Comfort; lack of difficulty", "Compass direction; sunrise side", "Consumes food", "Thought; concept", "Not on time; deceased", "Go first; heavy metal", "Meadows; grasslands", "Discount event at a store", "Satisfy fully", "Ocean mammal; close tightly", "Chair; place to sit", "Story; narrative", "Hot brewed beverages"],
+      5: ["Assistants; helpers", "Was sick; troubled", "Walkway between seats", "Valleys; glens", "Calendar days; romantic outings", "Agreements; distributes cards", "River mouth; Greek letter", "Made more comfortable", "Art stand for painting", "Perfect; model", "Thoughts; concepts", "Goes first; heavy metals", "Rental agreement", "Smallest amount", "Discount events at stores", "Satisfied fully", "Satisfies fully", "Ocean mammals; closes tightly", "Chairs; places to sit", "Rock; schedule", "Not fresh; old bread", "Take without permission", "Stories; narratives", "Playfully mock"],
+      6: ["Walkways between seats", "River mouths; Greek letters", "Specific fact; minor point (pangram!)", "Expand; widen pupils", "Art stands for painting", "Perfections; models", "Women", "Continued; endured", "Rented", "Rental agreements", "Traveled by boat", "Added salt to", "Closed tightly", "Calm; give a sedative", "Scheduled; planned", "Takes without permission", "Followed behind", "Playfully mocked"],
+      7: ["Specific facts; minor points (pangram!)", "Expanded; widened", "Expands; widens", "Calms; gives sedatives"],
+      8: ["Thorough; explained fully (pangram!)", "Made stable; calmed"]
+    }
+  },
+  // PUZZLE 4: TREASURED - "Hidden Gems" (Feb 19)
+  {
+    id: 'treasured-s2',
+    subtitle: 'Hidden Gems',
+    letters: ['T', 'R', 'E', 'A', 'S', 'U', 'D'],
+    keyLetters: ['E', 'R'],
+    totalWordCount: 86,
+    words: {
+      4: ['DARE', 'DEAR', 'DEER', 'EARS', 'ERRS', 'ERAS', 'RATE', 'READ', 'REAR', 'REDS', 'REED', 'REST', 'RUED', 'RUES', 'RUSE', 'SEAR', 'SEER', 'SURE', 'TEAR', 'TREE', 'TRUE', 'USER'],
+      5: ['ASTER', 'DARER', 'DARES', 'DEARS', 'DETER', 'EATER', 'ERASE', 'RATED', 'RATES', 'READS', 'REARS', 'REEDS', 'RESET', 'RESTS', 'REUSE', 'RUSES', 'SEERS', 'STARE', 'STEER', 'SURER', 'TEARS', 'TERSE', 'TRADE', 'TREAD', 'TREED', 'TREES', 'TRUER', 'USERS'],
+      6: ['ASTERS', 'DETERS', 'EATERS', 'ERASED', 'ERASER', 'ERASES', 'REREAD', 'RESEAT', 'RESETS', 'RESTED', 'REUSED', 'REUSES', 'RUSTED', 'SEDATE', 'STARED', 'STARER', 'STARES', 'STEERS', 'SUREST', 'TEASER', 'TRADES', 'TREADS', 'TRUEST'],
+      7: ['DEAREST', 'ERASERS', 'READERS', 'REREADS', 'RESEATS', 'RESTATE', 'SEDATES', 'STEERED', 'TEASERS'],
+      8: ['RESTATED', 'RESTATES', 'TREASURE'],
+      9: ['TREASURED']
+    },
+    hints: {
+      4: ["Challenge someone; be bold", "Beloved; expensive", "Forest animal with antlers", "Hearing organs", "Makes mistakes", "Historical time periods", "Speed; evaluate or rank", "Look at written words", "Back part; raise children", "Communist colors", "Tall water plant; woodwind part", "Relax; remainder", "Regretted", "Regrets", "Trick; deception", "Burn the surface; scorch", "Prophet; one who foresees", "Certain; confident", "Rip; eye drop", "Woody plant with branches", "Genuine; accurate", "One who uses something"],
+      5: ["Star-shaped flower", "One who dares", "Challenges; acts boldly", "Beloved ones", "Discourage; prevent", "One who consumes food", "Remove; rub out", "Evaluated; ranked", "Speeds; evaluates", "Looks at written words", "Back parts; raises children", "Tall water plants", "Start over; restore settings", "Relaxes; remainders", "Use again", "Tricks; deceptions", "Prophets; fortune tellers", "Gaze; look fixedly", "Guide; young bull", "More certain", "Rips; eye drops", "Brief and to the point", "Exchange; business deal", "Walk on; tire pattern", "Chased up a tree", "Woody plants", "More genuine", "Ones who use something"],
+      6: ["Star-shaped flowers", "Discourages; prevents", "Ones who consume food", "Removed; rubbed out", "Tool for removing marks", "Removes; rubs out", "Read again", "Seat again", "Starts over; restores settings", "Relaxed", "Used again", "Uses again", "Oxidized; corroded", "Calm; give a sedative", "Gazed; looked fixedly", "One who gazes", "Gazes; looks fixedly", "Guides; young bulls", "Most certain", "One who playfully mocks", "Exchanges; business deals", "Walks on; tire patterns", "Most genuine"],
+      7: ["Most beloved", "Tools for removing marks", "People who read books", "Reads again", "Seats again", "State again; rephrase", "Calms; gives sedatives", "Guided; drove", "Ones who playfully mock"],
+      8: ["Stated again", "States again", "Valuable items; cherish (pangram!)"],
+      9: ["Greatly valued; cherished (pangram!)"]
+    }
+  },
+  // PUZZLE 5: CHARADES - "Party Time!" (Feb 20)
+  {
+    id: 'charades-s2',
+    subtitle: 'Party Time!',
+    letters: ['C', 'H', 'A', 'R', 'A', 'D', 'E', 'S'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 87,
+    words: {
+      4: ['ACHE', 'ACRE', 'AREA', 'CARE', 'CASE', 'DARE', 'DEAR', 'EACH', 'EARS', 'EASE', 'ERAS', 'HARE', 'HEAD', 'HEAR', 'RACE', 'READ', 'SEAR'],
+      5: ['ACHED', 'ACHES', 'ACRES', 'ARCED', 'AREAS', 'CARED', 'CARES', 'CASED', 'CASES', 'CEDAR', 'CHASE', 'DARED', 'DARER', 'DARES', 'DEARS', 'EASED', 'ERASE', 'HARES', 'HEADS', 'HEARD', 'HEARS', 'RACED', 'RACER', 'RACES', 'REACH', 'READS', 'SCARE', 'SEARS', 'SHADE', 'SHARE'],
+      6: ['ARCHED', 'ARCHES', 'ARCADE', 'CADRES', 'CASHED', 'CEDARS', 'CHASED', 'CHASER', 'CHASES', 'ERASED', 'ERASER', 'ERASES', 'HEADER', 'HEARSE', 'RACERS', 'SACRED', 'SCARED', 'SCARER', 'SCARES', 'SEARCH', 'SEARED', 'SHADED', 'SHADES', 'SHARED', 'SHARER', 'SHARES'],
+      7: ['ARCADES', 'CHARADE', 'CHASERS', 'CRASHED', 'CRASHES', 'ERASERS', 'HEADERS', 'HEARSES', 'REACHED', 'REACHES', 'SHARERS'],
+      8: ['CHARADES', 'SEARCHED', 'SEARCHES']
+    },
+    hints: {
+      4: ["Pain; hurt", "Unit of land measurement", "Region; surface space", "Be concerned; look after", "Container; instance", "Challenge someone; be bold", "Beloved; expensive", "Every one separately", "Hearing organs", "Comfort; lack of difficulty", "Historical time periods", "Rabbit-like animal", "Top of body; leader", "Perceive sound", "Competition; ethnicity", "Look at written words", "Burn the surface; scorch"],
+      5: ["Hurt (past tense)", "Pains; hurts", "Units of land measurement", "Moved in a curve", "Regions; surface spaces", "Was concerned; looked after", "Is concerned; looks after", "Put in a container", "Containers; instances", "Aromatic wood tree", "Pursue; run after", "Challenged (past tense)", "One who dares", "Challenges; acts boldly", "Beloved ones", "Made more comfortable", "Remove; rub out", "Rabbit-like animals", "Tops of bodies; leaders", "Perceived sound", "Perceives sound", "Competed (past tense)", "One who races", "Competitions; ethnicities", "Extend to grab; arrive at", "Looks at written words", "Frighten", "Burns surfaces; scorches", "Shadow; lamp cover", "Divide; portion"],
+      6: ["Curved", "Curves; doorway shapes", "Covered shopping area; game venue", "Groups of trained personnel", "Exchanged for money", "Aromatic wood trees", "Pursued; ran after", "One who pursues", "Pursues; runs after", "Removed; rubbed out", "Tool for removing marks", "Removes; rubs out", "Top of document; soccer move", "Funeral vehicle", "Ones who race", "Holy; revered", "Frightened", "One who frightens", "Frightens", "Look for; hunt", "Burned the surface", "Put in shadow", "Shadows; lamp covers", "Divided; portioned", "One who shares", "Divides; portions"],
+      7: ["Covered shopping areas", "Acting game; pretense (pangram!)", "Ones who pursue", "Collided violently", "Collides violently", "Tools for removing marks", "Tops of documents", "Funeral vehicles", "Extended to grab", "Extends to grab", "Ones who share"],
+      8: ["Acting guessing game (pangram!)", "Looked for; hunted", "Looks for; hunts"]
+    }
+  },
+  // PUZZLE 6: WINTERS - "Snowflake Season" (Feb 21)
+  {
+    id: 'winters-s2',
+    subtitle: 'Snowflake Season',
+    letters: ['W', 'I', 'N', 'T', 'E', 'R', 'S'],
+    keyLetters: ['E', 'R'],
+    totalWordCount: 73,
+    words: {
+      4: ['EWER', 'IRES', 'REIN', 'RENT', 'REST', 'RITE', 'RISE', 'SEER', 'SIRE', 'TERN', 'TIER', 'TIRE', 'TREE', 'WERE', 'WIRE', 'WREN'],
+      5: ['ENTER', 'EWERS', 'INERT', 'INTER', 'NEWER', 'REINS', 'RENTS', 'RESIT', 'RINSE', 'RISEN', 'RISER', 'RITES', 'SEERS', 'SIREN', 'SIRES', 'SNEER', 'STEER', 'STERN', 'TERNS', 'TERSE', 'TIERS', 'TIRES', 'TREES', 'TRIER', 'WIRES', 'WISER', 'WRENS', 'WREST', 'WRIER', 'WRITE'],
+      6: ['ENTERS', 'INSERT', 'INTERS', 'RENEWS', 'RESENT', 'RINSER', 'RINSES', 'RISERS', 'SIRENS', 'SISTER', 'SNEERS', 'STEERS', 'STERNS', 'TENSER', 'TRIERS', 'TWINER', 'WINTER', 'WRIEST', 'WRITER', 'WRITES'],
+      7: ['ENTRIES', 'INSERTS', 'RESENTS', 'SISTERS', 'TWINERS', 'WINTERS', 'WRITERS']
+    },
+    hints: {
+      4: ["Water pitcher", "Angers or annoys", "Strap to control a horse", "Lease payment; or tear", "Relax; remainder", "Ceremony or ritual", "Go upward; get out of bed", "Prophet; one who foresees", "Father; address to a king", "Seabird", "Level or layer", "Rubber wheel covering; grow weary", "Woody plant with branches", "Past tense of 'to be'", "Metal conductor; telegram", "Small songbird"],
+      5: ["Go in; type into a computer", "Water pitchers", "Inactive; not moving", "Bury; place in a grave", "More recent", "Straps to control a horse", "Lease payments; tears", "Take an exam again", "Wash lightly", "Got up; came upward", "Early bird; stair part", "Ceremonies or rituals", "Prophets; fortune tellers", "Warning sound; mythical singer", "Fathers; addresses to kings", "Scornful smile; mock", "Guide; young bull", "Back of ship; serious", "Seabirds", "Brief and to the point", "Levels or layers", "Rubber wheel coverings", "Woody plants", "One who attempts", "Metal conductors; telegrams", "More wise", "Small songbirds", "Pull away forcibly", "More wry; more twisted", "Put words on paper"],
+      6: ["Goes in; types into computer", "Put in; place inside", "Buries; places in graves", "Makes new again", "Feel bitter about", "One who rinses", "Washes lightly", "Early birds; stair parts", "Warning sounds; mythical singers", "Female sibling", "Scornful smiles; mocks", "Guides; young bulls", "Backs of ships", "More tight; more strained", "Ones who attempt", "One who twines", "Cold season (pangram!)", "Most wry; most twisted", "Author; one who writes", "Puts words on paper"],
+      7: ["Ways in; items in a list", "Puts in; places inside", "Feels bitter about", "Female siblings", "Ones who twine", "Cold seasons (pangram!)", "Authors; ones who write"]
+    }
+  },
+  // PUZZLE 7: SALTIER - "Season to Taste" (Feb 22)
+  {
+    id: 'saltier-s2',
+    subtitle: 'Season to Taste',
+    letters: ['S', 'A', 'L', 'T', 'I', 'E', 'R'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 91,
+    words: {
+      4: ['ALES', 'AREA', 'EARL', 'EARS', 'EASE', 'EAST', 'EATS', 'ERAS', 'LATE', 'LEAS', 'RATE', 'REAL', 'SALE', 'SATE', 'SEAL', 'SEAR', 'SEAT', 'TALE', 'TARE', 'TEAL', 'TEAR', 'TEAS'],
+      5: ['AISLE', 'ALERT', 'ALTER', 'AREAS', 'ARISE', 'ASTER', 'EARLS', 'EASEL', 'EATER', 'ELATE', 'IRATE', 'LASER', 'LATER', 'LEAST', 'RAISE', 'RATES', 'REALS', 'SALES', 'SATES', 'SEALS', 'SEARS', 'SEATS', 'SLATE', 'STALE', 'STARE', 'STEAL', 'TALES', 'TARES', 'TEALS', 'TEARS', 'TEASE', 'TESLA'],
+      6: ['ALERTS', 'ALTERS', 'AISLES', 'ARISES', 'ASTERS', 'EASELS', 'EATERS', 'ELATES', 'LASERS', 'RAISER', 'RAISES', 'RELATE', 'RETAIL', 'SAILER', 'SALTER', 'SATIRE', 'SEALER', 'SLATER', 'STALER', 'TEASER'],
+      7: ['RAISERS', 'REALIST', 'RELATES', 'RETAILS', 'SAILERS', 'SALTIER', 'SALTERS', 'SATIRES', 'SEALERS', 'SLATERS', 'STEALER', 'TEASERS', 'TRAILER'],
+      8: ['REALISTS', 'SALTIERS', 'STEALERS', 'TRAILERS']
+    },
+    hints: {
+      4: ["Types of beer", "Region; surface space", "British nobleman", "Hearing organs", "Comfort; lack of difficulty", "Compass direction; sunrise side", "Consumes food", "Historical time periods", "Not on time; deceased", "Meadows; grasslands", "Speed; evaluate or rank", "Genuine; actual", "Discount event at a store", "Satisfy fully", "Ocean mammal; close tightly", "Burn the surface; scorch", "Chair; place to sit", "Story; narrative", "Weed; weight of container", "Blue-green color; duck", "Rip; eye drop", "Hot brewed beverages"],
+      5: ["Walkway between seats", "Warning; alarm", "Change; modify", "Regions; surface spaces", "Get up; originate", "Star-shaped flower", "British noblemen", "Art stand for painting", "One who consumes food", "Make happy; thrill", "Angry; furious", "Light beam device", "After; more recent", "Smallest amount", "Lift up; increase", "Speeds; evaluates", "Genuine ones; actual", "Discount events", "Satisfies fully", "Ocean mammals; closes", "Burns surfaces; scorches", "Chairs; places to sit", "Rock; schedule", "Not fresh; old bread", "Gaze; look fixedly", "Take without permission", "Stories; narratives", "Weeds; container weights", "Blue-green colors; ducks", "Rips; eye drops", "Playfully mock", "Electric car brand; unit"],
+      6: ["Warnings; alarms", "Changes; modifies", "Walkways between seats", "Gets up; originates", "Star-shaped flowers", "Art stands for painting", "Ones who consume food", "Makes happy; thrills", "Light beam devices", "One who raises", "Lifts up; increases", "Connect; tell about", "Sell directly to consumers", "Boat that sails", "One who adds salt", "Mocking humor; irony", "One who seals", "One who lays slate", "More stale; less fresh", "One who playfully mocks"],
+      7: ["Ones who raise", "Practical person", "Connects; tells about", "Sells directly to consumers", "Boats that sail", "More salty (pangram!)", "Ones who add salt", "Mocking humor works", "Ones who seal", "Ones who lay slate", "One who steals", "Ones who playfully mock", "Vehicle towed behind"],
+      8: ["Practical people", "More salty ones (pangram!)", "Ones who steal", "Vehicles towed behind"]
+    }
+  },
+  // PUZZLE 8: REASONED - "Makes Sense" (Feb 23)
+  {
+    id: 'reasoned-s2',
+    subtitle: 'Makes Sense',
+    letters: ['R', 'E', 'A', 'S', 'O', 'N', 'D'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 54,
+    words: {
+      4: ['AEON', 'AREA', 'DARE', 'DEAN', 'DEAR', 'EARN', 'EARS', 'EASE', 'ERAS', 'NEAR', 'READ', 'SANE', 'SEAR', 'SERA'],
+      5: ['AEONS', 'ANODE', 'AREAS', 'AROSE', 'DARES', 'DEANS', 'DEARS', 'EARNS', 'EASED', 'ERASE', 'NEARS', 'OARED', 'READS', 'SANER', 'SEARS', 'SNARE'],
+      6: ['ANODES', 'EARNED', 'EARNER', 'ERASED', 'ERASER', 'ERASES', 'REASON', 'SANDER', 'SNARED', 'SNARER', 'SNARES', 'SOARED', 'SOARER'],
+      7: ['EARNERS', 'ERASERS', 'ENDEARS', 'REASONS', 'SANDERS', 'SNARERS', 'SOARERS'],
+      8: ['REASONED', 'REASONER', 'SEASONED'],
+      9: ['REASONERS']
+    },
+    hints: {
+      4: ["Long period of time; age", "Region; surface space", "Challenge someone; be bold", "University official; church leader", "Beloved; expensive", "Make money; deserve", "Hearing organs", "Comfort; lack of difficulty", "Historical time periods", "Close by; almost", "Look at written words", "Mentally healthy; rational", "Burn the surface; scorch", "Blood fluid (plural)"],
+      5: ["Long periods of time; ages", "Electrode; battery terminal", "Regions; surface spaces", "Got up; came into being", "Challenges; acts boldly", "University officials", "Beloved ones", "Makes money; deserves", "Made more comfortable", "Remove; rub out", "Close by ones; almosts", "Having oars", "Looks at written words", "More mentally healthy", "Burns surfaces; scorches", "Trap; entangle"],
+      6: ["Electrodes; battery terminals", "Made money; deserved", "One who earns money", "Removed; rubbed out", "Tool for removing marks", "Removes; rubs out", "Logic; explanation", "Tool for smoothing wood", "Trapped; entangled", "One who traps", "Traps; entangles", "Flew high; glided", "One who soars"],
+      7: ["Ones who earn money", "Tools for removing marks", "Makes dear; makes beloved", "Logics; explanations", "Tools for smoothing wood", "Ones who trap", "Ones who soar"],
+      8: ["Thought logically (pangram!)", "One who reasons", "Added spices to; experienced"],
+      9: ["Ones who think logically (pangram!)"]
+    }
+  },
   // PUZZLE 1: STICKER
   {
     id: 'sticker-puzzle',
@@ -1482,7 +1662,7 @@ const PUZZLES = [
 
 // Get yesterday's puzzle dynamically based on rotation
 export function getTodaysPuzzle() {
-  const ANCHOR_DATE = new Date('2026-01-19T07:00:00-05:00');
+  const ANCHOR_DATE = new Date('2026-02-16T07:00:00-05:00');
   const now = new Date();
   const estTime = new Date(now.toLocaleString('en-US', { timeZone: 'America/New_York' }));
   
