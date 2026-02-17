@@ -50,7 +50,7 @@ const PUZZLES = [
       5: ["Regions; surface spaces", "Got up; came into being", "Star-shaped flower", "Challenges; acts boldly", "Calendar days; romantic outings", "Beloved ones", "Made more comfortable", "One who consumes food", "Remove; rub out", "Speak formally; give a speech", "Evaluated; ranked", "Speeds; evaluates", "Looks at written words", "Satisfied fully", "Satisfies fully", "Burns surfaces; scorches", "Chairs; places to sit", "Gaze; look fixedly", "Place; in someone's _____", "Weeds; container weights", "Rips; eye drops", "Playfully mock", "Exchange; business deal", "Walk on; tire pattern"],
       6: ["Loves greatly; worships", "Star-shaped flowers", "Ones who consume food", "Removed; rubbed out", "Tool for removing pencil marks", "Removes; rubs out", "Spoke formally; gave a speech", "Speaks formally; gives speeches", "Seat again", "Calm; give a sedative", "Gazed; looked fixedly", "One who gazes", "Gazes; looks fixedly", "Places", "Playfully mocked", "One who playfully mocks", "Playfully mocks", "Exchanges; business deals", "Walks on; tire patterns"],
       7: ["Tools for removing marks", "Seats again", "Cooked in dry heat (pangram!)", "Pan for cooking in dry heat", "Calms; gives sedatives", "Ones who playfully mock", "Browned with heat; celebrated", "Kitchen appliance for bread"],
-      8: ["Pans for cooking in dry heat (pangram!)", "Kitchen appliances for bread"]
+      8: ["Pans for cooking in dry heat", "Kitchen appliances for bread"]
     }
   },
   // PUZZLE 3: DETAILS - "The Fine Print" (Feb 18)
