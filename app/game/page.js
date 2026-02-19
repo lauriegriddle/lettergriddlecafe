@@ -81,20 +81,20 @@ const PUZZLES = [
     subtitle: 'Hidden Gems',
     letters: ['T', 'R', 'E', 'A', 'S', 'U', 'D'],
     keyLetters: ['E', 'R'],
-    totalWordCount: 86,
+    totalWordCount: 84,
     words: {
       4: ['DARE', 'DEAR', 'DEER', 'EARS', 'ERRS', 'ERAS', 'RATE', 'READ', 'REAR', 'REDS', 'REED', 'REST', 'RUED', 'RUES', 'RUSE', 'SEAR', 'SEER', 'SURE', 'TEAR', 'TREE', 'TRUE', 'USER'],
       5: ['ASTER', 'DARER', 'DARES', 'DEARS', 'DETER', 'EATER', 'ERASE', 'RATED', 'RATES', 'READS', 'REARS', 'REEDS', 'RESET', 'RESTS', 'REUSE', 'RUSES', 'SEERS', 'STARE', 'STEER', 'SURER', 'TEARS', 'TERSE', 'TRADE', 'TREAD', 'TREED', 'TREES', 'TRUER', 'USERS'],
-      6: ['ASTERS', 'DETERS', 'EATERS', 'ERASED', 'ERASER', 'ERASES', 'REREAD', 'RESEAT', 'RESETS', 'RESTED', 'REUSED', 'REUSES', 'RUSTED', 'SEDATE', 'STARED', 'STARER', 'STARES', 'STEERS', 'SUREST', 'TEASER', 'TRADES', 'TREADS', 'TRUEST'],
-      7: ['DEAREST', 'ERASERS', 'READERS', 'REREADS', 'RESEATS', 'RESTATE', 'SEDATES', 'STEERED', 'TEASERS'],
+      6: ['ASTERS', 'DETERS', 'EATERS', 'ERASED', 'ERASER', 'ERASES', 'REREAD', 'RESEAT', 'RESETS', 'RESTED', 'REUSED', 'REUSES', 'RUSTED', 'STARED', 'STARER', 'STARES', 'STEERS', 'SUREST', 'TEASER', 'TRADES', 'TREADS', 'TRUEST'],
+      7: ['DEAREST', 'ERASERS', 'READERS', 'REREADS', 'RESEATS', 'RESTATE', 'STEERED', 'TEASERS'],
       8: ['RESTATED', 'RESTATES', 'TREASURE'],
       9: ['TREASURED']
     },
     hints: {
       4: ["Challenge someone; be bold", "Beloved; expensive", "Forest animal with antlers", "Hearing organs", "Makes mistakes", "Historical time periods", "Speed; evaluate or rank", "Look at written words", "Back part; raise children", "Communist colors", "Tall water plant; woodwind part", "Relax; remainder", "Regretted", "Regrets", "Trick; deception", "Burn the surface; scorch", "Prophet; one who foresees", "Certain; confident", "Rip; eye drop", "Woody plant with branches", "Genuine; accurate", "One who uses something"],
       5: ["Star-shaped flower", "One who dares", "Challenges; acts boldly", "Beloved ones", "Discourage; prevent", "One who consumes food", "Remove; rub out", "Evaluated; ranked", "Speeds; evaluates", "Looks at written words", "Back parts; raises children", "Tall water plants", "Start over; restore settings", "Relaxes; remainders", "Use again", "Tricks; deceptions", "Prophets; fortune tellers", "Gaze; look fixedly", "Guide; young bull", "More certain", "Rips; eye drops", "Brief and to the point", "Exchange; business deal", "Walk on; tire pattern", "Chased up a tree", "Woody plants", "More genuine", "Ones who use something"],
-      6: ["Star-shaped flowers", "Discourages; prevents", "Ones who consume food", "Removed; rubbed out", "Tool for removing marks", "Removes; rubs out", "Read again", "Seat again", "Starts over; restores settings", "Relaxed", "Used again", "Uses again", "Oxidized; corroded", "Calm; give a sedative", "Gazed; looked fixedly", "One who gazes", "Gazes; looks fixedly", "Guides; young bulls", "Most certain", "One who playfully mocks", "Exchanges; business deals", "Walks on; tire patterns", "Most genuine"],
-      7: ["Most beloved", "Tools for removing marks", "People who read books", "Reads again", "Seats again", "State again; rephrase", "Calms; gives sedatives", "Guided; drove", "Ones who playfully mock"],
+      6: ["Star-shaped flowers", "Discourages; prevents", "Ones who consume food", "Removed; rubbed out", "Tool for removing marks", "Removes; rubs out", "Read again", "Seat again", "Starts over; restores settings", "Relaxed", "Used again", "Uses again", "Oxidized; corroded", "Gazed; looked fixedly", "One who gazes", "Gazes; looks fixedly", "Guides; young bulls", "Most certain", "One who playfully mocks", "Exchanges; business deals", "Walks on; tire patterns", "Most genuine"],
+      7: ["Most beloved", "Tools for removing marks", "People who read books", "Reads again", "Seats again", "State again; rephrase", "Guided; drove", "Ones who playfully mock"],
       8: ["Stated again", "States again", "Valuable items; cherish (pangram!)"],
       9: ["Greatly valued; cherished (pangram!)"]
     }
