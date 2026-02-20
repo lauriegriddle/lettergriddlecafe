@@ -103,7 +103,7 @@ const PUZZLES = [
   {
     id: 'charades-s2',
     subtitle: 'Party Time!',
-    letters: ['C', 'H', 'A', 'R', 'A', 'D', 'E', 'S'],
+    letters: ['C', 'H', 'A', 'R', 'D', 'E', 'S'],
     keyLetters: ['A', 'E'],
     totalWordCount: 87,
     words: {
