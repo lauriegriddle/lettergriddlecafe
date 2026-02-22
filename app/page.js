@@ -288,6 +288,26 @@ const stories = [
   closing: 'Friends, the recipe for deliciousness Laurel\'s whipping up is found at lettergriddlecookbook.com',
   closingLink: 'https://lettergriddlecookbook.com',
   closingLinkText: 'Visit the Cookbook 🍊'
+},
+{
+  id: 'new-new-new',
+  title: 'New, New, New',
+  subtitle: '☕ Now Available',
+  date: 'February 2026',
+  locked: false,
+  content: [
+    '"Is anyone surprised that this is delicious?" Sarah asked as the crew was enjoying the orange dessert each of them contributed an ingredient to creating.',
+    '"Laurel, is there enough for a to-go order to have for a mid-morning treat at home tomorrow?" Josie eagerly asked.',
+    '"Let\'s meet back here tomorrow morning around 11:00 and we can all try the dessert as a brunch treat!" Mr. Lindsay generously offered. "We certainly have enough granola for the crew!"',
+    '"We can all try it together! Even better!" said Mrs. Lindsay.',
+    '"I\'ve got some vanilla Greek yogurt that would be delicious added to the orange dessert topped with granola! The yogurt is buy-one-get-one at the store this week, so I doubled up. I have enough for the entire trivia crew!" Jennie added.',
+    '"What will our brunch activities be?" Josephine wondered. "We could try the Espresso Lane games or we can…"',
+    '"Espresso Lane gets my vote!" Taylor hopped in, then added, "I\'ve got to do a tech check on those six new games. Tomorrow will be the perfect opportunity with the crew to play Espresso Lane games."',
+    '"New games, new brunch treat, new meeting day and time!" Laurel recapped the conversation, reviewing the exciting offerings found at Letter Griddle Cafe.'
+  ],
+  closing: 'Friends, whether you\'re enjoying brunch, a coffee break, or chilling with the original Letter Griddle, savor the moment with the coffee-inspired Espresso Lane games. Find Glow, Sizzle, Top That!, Lattes, Order Up!, and To-Go at lettergriddle.com.',
+  closingLink: 'https://lettergriddle.com',
+  closingLinkText: 'Play Espresso Lane ☕'
 }
 ];
 
@@ -485,6 +505,27 @@ const puzzles = {
     { pos: 4, letter: 'R' }
   ],
   didYouKnow: 'In ancient Greece, oranges were prized as food from the gods and were called "golden apples." They were also a prized fruit of the Chinese emperors. In one Chinese dialect, the word for "orange" means "gold."'
+},
+'new-new-new': {
+  id: 'new-new-new',
+  title: 'New, New, New',
+  category: 'New, New, New',
+  words: ['TECH', 'LETTER', 'YOGURT', 'GRANOLA', 'ESPRESSO'],
+  hints: [
+    'Taylor\'s check on the new games',
+    'Griddle\'s first name',
+    'Jennie\'s buy-one-get-one find',
+    'Crunchy brunch topping',
+    'Coffee-inspired game lane'
+  ],
+  revealed: [
+    { pos: 0, letter: 'T' },
+    { pos: 2, letter: 'T' },
+    { pos: 2, letter: 'G' },
+    { pos: 3, letter: 'N' },
+    { pos: 4, letter: 'E' }
+  ],
+  didYouKnow: 'Stepping outside your comfort zone, even in small ways, builds emotional resilience, increases self-confidence, and encourages creativity. Novel experiences actually stimulate new neural connections, keeping the brain young and adaptive.'
 }
 };
 
