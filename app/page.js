@@ -308,6 +308,29 @@ const stories = [
   closing: 'Friends, whether you\'re enjoying brunch, a coffee break, or chilling with the original Letter Griddle, savor the moment with the coffee-inspired Espresso Lane games. Find Glow, Sizzle, Top That!, Lattes, Order Up!, and To-Go at lettergriddle.com.',
   closingLink: 'https://lettergriddle.com',
   closingLinkText: 'Play Espresso Lane ☕'
+},
+{
+  id: 'top-that',
+  title: 'Top That!',
+  subtitle: '🍳 Now Available',
+  date: 'March 2026',
+  locked: false,
+  content: [
+    '"Laurel is good but she can\'t top…" Taylor teases.',
+    '"Orange dessert with a brunch twist of yogurt and granola? For sure, it\'s on the list of new favorites," Josie declares. "Mom, let\'s make it at home!"',
+    '"Where has that orange delight been all my life?" Josephine ponders.',
+    '"We\'ll have it again but not before we try the new and improved breakfast casserole!" Laurel promises. "Cheddar cheese, not from a bag, but freshly grated by your great cafe owner."',
+    '"Laurel, you shouldn\'t tease us like that," Mr. Lindsay playfully chides.',
+    '"The casserole has been sitting for nearly half an hour, so it\'s still pretty hot, but I\'m excited for us all to try it," Laurel explains.',
+    '"You had us at cheese," Sarah speaks for the group.',
+    '"I\'ve also used kosher salt that I\'ve been using in the cafe kitchen for the last week or so…that\'s going to be interesting flavor-wise," Laurel shares.',
+    '"If by interesting you mean delicious, we are here for it. Aren\'t we Josie?" Josephine offers.',
+    '"Last time we had a cold treat, today we will feast on a hotdish!" Josie eagerly responds to her mother.',
+    'As she comes into the dining area from the kitchen, Mrs. Lindsay announces, "The orange juice is freshly poured and ready!"'
+  ],
+  closing: 'Friends, remember: a glass of orange juice is the perfect complement to the breakfast casserole. Breakfast casserole tips: use half a tsp of kosher salt; a cup of freshly grated cheese is good but 12 oz might be better; use a very crusty dried out baguette. Visit lettergriddlecookbook.com for more delicious recipes, tips, and fun Letter Griddle puzzles!',
+  closingLink: 'https://lettergriddlecookbook.com',
+  closingLinkText: 'Visit the Cookbook 🍳'
 }
 ];
 
@@ -526,6 +549,27 @@ const puzzles = {
     { pos: 4, letter: 'E' }
   ],
   didYouKnow: 'Stepping outside your comfort zone, even in small ways, builds emotional resilience, increases self-confidence, and encourages creativity. Novel experiences actually stimulate new neural connections, keeping the brain young and adaptive.'
+},
+'top-that': {
+  id: 'casserole',
+  title: 'Casserole',
+  category: 'Casserole',
+  words: ['DISH', 'SHARE', 'RECIPE', 'HOTDISH', 'COOKBOOK'],
+  hints: [
+    'A casserole is this type of food',
+    'What the crew does with meals together',
+    'Instructions for making the casserole',
+    'Midwestern term for a warm casserole',
+    'Where to find more delicious recipes'
+  ],
+  revealed: [
+    { pos: 0, letter: 'D' },
+    { pos: 2, letter: 'A' },
+    { pos: 3, letter: 'I' },
+    { pos: 3, letter: 'D' },
+    { pos: 4, letter: 'B' }
+  ],
+  didYouKnow: 'The modern breakfast casserole is believed to have roots in a 19th-century German dish called Eiergeraeush, which literally translates to "egg noise." While casserole dishes are ancient, the "breakfast casserole" as we know it gained massive popularity in the 1950s due to the rise of convenience foods like canned soups and frozen hash browns.'
 }
 };
 
