@@ -331,6 +331,26 @@ const stories = [
   closing: 'Friends, remember: a glass of orange juice is the perfect complement to the breakfast casserole. Breakfast casserole tips: use half a tsp of kosher salt; a cup of freshly grated cheese is good but 12 oz might be better; use a very crusty dried out baguette. Visit lettergriddlecookbook.com for more delicious recipes, tips, and fun Letter Griddle puzzles!',
   closingLink: 'https://lettergriddlecookbook.com',
   closingLinkText: 'Visit the Cookbook 🍳'
+},
+{
+  id: 'food-for-thought',
+  title: 'Food For Thought',
+  subtitle: '📒 Now Available',
+  date: 'March 2026',
+  locked: false,
+  content: [
+    '"The crew will be here any minute," Laurel ponders as she pulls out the ledger of Letter Griddle\'s annual top ten night.',
+    'The well-used leather bound ledger used to record the annual top ten suggestions was showing its age. Coffee rings, cinnamon bun crumbs, and syrup splatters, mementos of previous years\' Top Ten nights didn\'t seem to interfere with Laurel\'s perusal of the previous years\' contenders.',
+    '"No pressure, no rush. Just good vibes." Mr. Lindsay interjects as he enters the cafe. "I\'m partial to last year\'s winner."',
+    '"Yes! Good vibes all around!" Mrs. Lindsay concurs then adds, "No \'watch-this-ad,\' pay for this subscription, just play…for free!"',
+    '"For me it\'s the hum of the tech station. Every year. Hands down." Taylor\'s voice is heard throughout the cafe\'s PA system.',
+    '"Yap, yap, yap, yap!" Isaac bolts through the cafe door as Jennie runs through the cafe after him.',
+    '"For us, we like that the whole family can play!" Jennie shares as she whizzes through the room chasing her pooch.',
+    'Laurel cradles the open ledger and announces, "The coffee is hot, the cinnamon buns are warm, and the ledger is open. And so begins our annual Letter Griddle Top Ten."'
+  ],
+  closing: 'Friends, Letter Griddle is just the beginning. A whole family of games is waiting for you at lettergriddle.com.',
+  closingLink: 'https://lettergriddle.com',
+  closingLinkText: 'Play Letter Griddle'
 }
 ];
 
@@ -570,6 +590,27 @@ const puzzles = {
     { pos: 4, letter: 'B' }
   ],
   didYouKnow: 'The modern breakfast casserole is believed to have roots in a 19th-century German dish called Eiergeraeush, which literally translates to "egg noise." While casserole dishes are ancient, the "breakfast casserole" as we know it gained massive popularity in the 1950s due to the rise of convenience foods like canned soups and frozen hash browns.'
+},
+'food-for-thought': {
+  id: 'top-ten',
+  title: 'Top Ten',
+  category: 'Top Ten',
+  words: ['RUSH', 'VIBES', 'LEDGER', 'ANNUAL', 'PRESSURE'],
+  hints: [
+    'No need for this tonight',
+    'Good ones all around!',
+    'Well-worn book of Top Ten history',
+    'Once-a-year tradition',
+    'Mr. Lindsay says there\'s none of this'
+  ],
+  revealed: [
+    { pos: 1, letter: 'U' },
+    { pos: 1, letter: 'I' },
+    { pos: 2, letter: 'D' },
+    { pos: 2, letter: 'N' },
+    { pos: 2, letter: 'E' }
+  ],
+  didYouKnow: '"Food for thought" refers to information, ideas, or insights that deserve serious contemplation or require time to "digest" mentally. It implies that ideas nourish the mind just as food nourishes the body, with roots in ancient philosophy and common usage since the 1800s.'
 }
 };
 
