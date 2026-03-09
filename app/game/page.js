@@ -1660,9 +1660,11 @@ const PUZZLES = [
   }
 ];
 
-// Get yesterday's puzzle dynamically based on rotation
+// Get today's puzzle dynamically based on rotation
 export function getTodaysPuzzle() {
-  const ANCHOR_DATE = new Date('2026-02-16T07:00:00-05:00');
+  // ANCHOR DATE: March 8, 2026 at 7 AM = Index 0 (first puzzle)
+  const anchorDate = new Date(2026, 2, 8, 7, 0, 0, 0); // Month is 0-indexed, so 2 = March
+  
   const now = new Date();
   const estTime = new Date(now.toLocaleString('en-US', { timeZone: 'America/New_York' }));
   
@@ -1671,19 +1673,19 @@ export function getTodaysPuzzle() {
   
   if (hour < 7) {
     puzzleDate.setDate(puzzleDate.getDate() - 1);
-    puzzleDate.setHours(7, 0, 0, 0);
-  } else {
-    puzzleDate.setHours(7, 0, 0, 0);
   }
+  puzzleDate.setHours(7, 0, 0, 0);
   
-  const daysSinceAnchor = Math.floor((puzzleDate - ANCHOR_DATE) / (1000 * 60 * 60 * 24));
+  const daysSinceAnchor = Math.round((puzzleDate - anchorDate) / (1000 * 60 * 60 * 24));
   const puzzleIndex = ((daysSinceAnchor % PUZZLES.length) + PUZZLES.length) % PUZZLES.length;
   
   return PUZZLES[puzzleIndex];
 }
 
 function getYesterdaysPuzzle() {
- const ANCHOR_DATE = new Date('2026-01-19T07:00:00-05:00');
+  // Same anchor date as getTodaysPuzzle
+  const anchorDate = new Date(2026, 2, 8, 7, 0, 0, 0); // Month is 0-indexed, so 2 = March
+  
   const now = new Date();
   const estTime = new Date(now.toLocaleString('en-US', { timeZone: 'America/New_York' }));
   
@@ -1697,16 +1699,16 @@ function getYesterdaysPuzzle() {
   }
   puzzleDate.setHours(7, 0, 0, 0);
   
-  const daysSinceAnchor = Math.floor((puzzleDate - ANCHOR_DATE) / (1000 * 60 * 60 * 24));
+  const daysSinceAnchor = Math.round((puzzleDate - anchorDate) / (1000 * 60 * 60 * 24));
   const puzzleIndex = ((daysSinceAnchor % PUZZLES.length) + PUZZLES.length) % PUZZLES.length;
   
   return PUZZLES[puzzleIndex];
 }
 
-
 function getTimeUntilNextPuzzle() {
   const now = new Date();
   const estTime = new Date(now.toLocaleString('en-US', { timeZone: 'America/New_York' }));
+  
   const nextPuzzle = new Date(estTime);
   nextPuzzle.setHours(7, 0, 0, 0);
   
