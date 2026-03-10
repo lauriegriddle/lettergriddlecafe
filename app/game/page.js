@@ -7,10 +7,10 @@ import React, { useState, useEffect, useCallback, useRef } from 'react';
 // =============================================================================
 
 const PUZZLES = [
-  // PUZZLE 1: PRINTERS - "Fresh Off the Press" (Feb 16)
+  // PUZZLE 1: PRINTERS - "Welcome to the cafe!" (Feb 16)
   {
     id: 'printers-s2',
-    subtitle: 'Fresh Off the Press',
+    subtitle: 'Welcome to the cafe!',
     letters: ['P', 'R', 'I', 'N', 'T', 'E', 'S'],
     keyLetters: ['E', 'R'],
     totalWordCount: 76,
@@ -31,10 +31,10 @@ const PUZZLES = [
       9: ["Fast runners"]
     }
   },
-  // PUZZLE 2: ROASTED - "Fresh From the Oven" (Feb 17)
+  // PUZZLE 2: ROASTED - "Brew up some words!" (Feb 17)
   {
     id: 'roasted-s2',
-    subtitle: 'Fresh From the Oven',
+    subtitle: 'Brew up some words!',
     letters: ['R', 'O', 'A', 'S', 'T', 'E', 'D'],
     keyLetters: ['A', 'E'],
     totalWordCount: 70,
@@ -53,10 +53,10 @@ const PUZZLES = [
       8: ["Pans for cooking in dry heat", "Kitchen appliances for bread"]
     }
   },
-  // PUZZLE 3: DETAILS - "The Fine Print" (Feb 18)
+  // PUZZLE 3: DETAILS - "You've got this!" (Feb 18)
   {
     id: 'details-s2',
-    subtitle: 'The Fine Print',
+    subtitle: "You've got this!",
     letters: ['D', 'E', 'T', 'A', 'I', 'L', 'S'],
     keyLetters: ['A', 'E'],
     totalWordCount: 66,
@@ -75,10 +75,10 @@ const PUZZLES = [
       8: ["Thorough; explained fully (pangram!)", "Made stable; calmed"]
     }
   },
-  // PUZZLE 4: TREASURED - "Hidden Gems" (Feb 19)
+  // PUZZLE 4: TREASURED - "Pull up a chair!" (Feb 19)
   {
     id: 'treasured-s2',
-    subtitle: 'Hidden Gems',
+    subtitle: 'Pull up a chair!',
     letters: ['T', 'R', 'E', 'A', 'S', 'U', 'D'],
     keyLetters: ['E', 'R'],
     totalWordCount: 84,
@@ -99,10 +99,10 @@ const PUZZLES = [
       9: ["Greatly valued; cherished (pangram!)"]
     }
   },
-  // PUZZLE 5: CHARADES - "Party Time!" (Feb 20)
+  // PUZZLE 5: CHARADES - "Warning: highly addictive!" (Feb 20)
   {
     id: 'charades-s2',
-    subtitle: 'Party Time!',
+    subtitle: 'Warning: highly addictive!',
     letters: ['C', 'H', 'A', 'R', 'D', 'E', 'S'],
     keyLetters: ['A', 'E'],
     totalWordCount: 87,
@@ -121,10 +121,10 @@ const PUZZLES = [
       8: ["Acting guessing game (pangram!)", "Looked for; hunted", "Looks for; hunts"]
     }
   },
-  // PUZZLE 6: WINTERS - "Snowflake Season" (Feb 21)
+  // PUZZLE 6: WINTERS - "The coffee's hot!" (Feb 21)
   {
     id: 'winters-s2',
-    subtitle: 'Snowflake Season',
+    subtitle: "The coffee's hot!",
     letters: ['W', 'I', 'N', 'T', 'E', 'R', 'S'],
     keyLetters: ['E', 'R'],
     totalWordCount: 73,
@@ -141,10 +141,10 @@ const PUZZLES = [
       7: ["Ways in; items in a list", "Puts in; places inside", "Feels bitter about", "Female siblings", "Ones who twine", "Cold seasons (pangram!)", "Authors; ones who write"]
     }
   },
-  // PUZZLE 7: SALTIER - "Season to Taste" (Feb 22)
+  // PUZZLE 7: SALTIER - "Flex those word muscles!" (Feb 22)
   {
     id: 'saltier-s2',
-    subtitle: 'Season to Taste',
+    subtitle: 'Flex those word muscles!',
     letters: ['S', 'A', 'L', 'T', 'I', 'E', 'R'],
     keyLetters: ['A', 'E'],
     totalWordCount: 91,
@@ -163,10 +163,10 @@ const PUZZLES = [
       8: ["Practical people", "More salty ones (pangram!)", "Ones who steal", "Vehicles towed behind"]
     }
   },
-  // PUZZLE 8: REASONED - "Makes Sense" (Feb 23)
+  // PUZZLE 8: REASONED - "No peeking at answers!" (Feb 23)
   {
     id: 'reasoned-s2',
-    subtitle: 'Makes Sense',
+    subtitle: 'No peeking at answers!',
     letters: ['R', 'E', 'A', 'S', 'O', 'N', 'D'],
     keyLetters: ['A', 'E'],
     totalWordCount: 54,
@@ -190,7 +190,7 @@ const PUZZLES = [
   // PUZZLE 1: STICKER
   {
     id: 'sticker-puzzle',
-    subtitle: 'Stick Together',
+    subtitle: 'Stir the letters!',
     letters: ['S', 'T', 'I', 'C', 'K', 'E', 'R'],
     keyLetters: ['E', 'R'],
     totalWordCount: 36,
@@ -254,7 +254,7 @@ const PUZZLES = [
   // PUZZLE 2: MUSICAL
   {
     id: 'musical-puzzle',
-    subtitle: 'All That Jazz!',
+    subtitle: 'Good morning, friend!',
     letters: ['M', 'U', 'S', 'I', 'C', 'A', 'L'],
     keyLetters: ['A', 'L'],
     totalWordCount: 28,
@@ -310,7 +310,7 @@ const PUZZLES = [
   // PUZZLE 3: FLOWERS
   {
     id: 'flowers-puzzle',
-    subtitle: 'Blooming at the Cafe',
+    subtitle: 'Think outside the cup!',
     letters: ['F', 'L', 'O', 'W', 'E', 'R', 'S'],
     keyLetters: ['E', 'R'],
     totalWordCount: 45,
@@ -380,7 +380,7 @@ const PUZZLES = [
   // PUZZLE 4: FRIENDS
   {
     id: 'friends-puzzle',
-    subtitle: 'The One at the Cafe',
+    subtitle: 'Served with a smile!',
     letters: ['F', 'R', 'I', 'E', 'N', 'D', 'S'],
     keyLetters: ['I', 'E'],
     totalWordCount: 56,
@@ -465,7 +465,7 @@ const PUZZLES = [
   // PUZZLE 5: INVENTOR
   {
     id: 'inventor-puzzle',
-    subtitle: "What's New?",
+    subtitle: 'Decaf not allowed here!',
     letters: ['I', 'N', 'V', 'E', 'T', 'O', 'R'],
     keyLetters: ['O', 'E'],
     totalWordCount: 23,
@@ -516,7 +516,7 @@ const PUZZLES = [
   // PUZZLE 6: PUZZLERS
   {
     id: 'puzzlers-puzzle',
-    subtitle: 'Piecers of Wisdom',
+    subtitle: 'Every letter counts!',
     letters: ['P', 'U', 'Z', 'L', 'E', 'R', 'S'],
     keyLetters: ['U', 'E'],
     totalWordCount: 39,
@@ -583,7 +583,7 @@ const PUZZLES = [
   // PUZZLE 7: PEANUTS
   {
     id: 'peanuts-puzzle',
-    subtitle: 'Snack Attack',
+    subtitle: 'A fresh cup of challenge!',
     letters: ['P', 'E', 'A', 'N', 'U', 'T', 'S'],
     keyLetters: ['A', 'E'],
     totalWordCount: 45,
@@ -656,7 +656,7 @@ const PUZZLES = [
   // PUZZLE 8: BAKERIES
   {
     id: 'bakeries-puzzle',
-    subtitle: 'Cookies, Donuts, and Pastries, oh my!',
+    subtitle: 'Side effects include big vocabulary!',
     letters: ['B', 'A', 'K', 'E', 'R', 'I', 'S'],
     keyLetters: ['A', 'E'],
     totalWordCount: 50,
@@ -735,7 +735,7 @@ const PUZZLES = [
   // PUZZLE 9: APPRECIATE
   {
     id: 'appreciate-puzzle',
-    subtitle: 'Thank You!',
+    subtitle: 'The regulars saved you a seat!',
     letters: ['A', 'P', 'R', 'E', 'C', 'I', 'T'],
     keyLetters: ['A', 'E'],
     totalWordCount: 37,
@@ -797,7 +797,7 @@ const PUZZLES = [
   // PUZZLE 10: ANIMATES
   {
     id: 'animates-puzzle',
-    subtitle: 'Coming to Life!',
+    subtitle: 'Sharpen your pencil!',
     letters: ['A', 'N', 'I', 'M', 'T', 'E', 'S'],
     keyLetters: ['A', 'E'],
     totalWordCount: 32,
@@ -859,7 +859,7 @@ const PUZZLES = [
 // PUZZLE 11: SERVING
   {
     id: 'serving-puzzle',
-    subtitle: 'At Your Service',
+    subtitle: 'Words on the menu today!',
     letters: ['S', 'E', 'R', 'V', 'I', 'N', 'G'],
     keyLetters: ['E', 'R'],
     totalWordCount: 39,
@@ -926,7 +926,7 @@ const PUZZLES = [
   // PUZZLE 12: PICTURE
   {
     id: 'picture-puzzle',
-    subtitle: 'Worth a Thousand Words',
+    subtitle: "Today's special: big words!",
     letters: ['P', 'I', 'C', 'T', 'U', 'R', 'E'],
     keyLetters: ['E', 'R'],
     totalWordCount: 31,
@@ -984,7 +984,7 @@ const PUZZLES = [
   // PUZZLE 13: PANCAKES
   {
     id: 'pancakes-puzzle',
-    subtitle: 'Griddle Me This',
+    subtitle: 'Your table is ready!',
     letters: ['P', 'A', 'N', 'C', 'K', 'E', 'S'],
     keyLetters: ['A', 'E'],
     totalWordCount: 40,
@@ -1052,7 +1052,7 @@ const PUZZLES = [
   // PUZZLE 14: GRIDDLES
   {
     id: 'griddles-puzzle',
-    subtitle: 'Cooking Up Words',
+    subtitle: "Don't let the letters intimidate you!",
     letters: ['G', 'R', 'I','D', 'L', 'E', 'S'],
     keyLetters: ['E', 'R'],
     totalWordCount: 47,
@@ -1127,7 +1127,7 @@ const PUZZLES = [
   // PUZZLE 15: NOTEBOOKS
   {
     id: 'notebooks-puzzle',
-    subtitle: 'Write It Down',
+    subtitle: 'Order up!',
     letters: ['N', 'O', 'T', 'E', 'B', 'K', 'S'],
     keyLetters: ['E', 'O'],
     totalWordCount: 28,
@@ -1183,7 +1183,7 @@ const PUZZLES = [
   // PUZZLE 16: CANDLES
   {
     id: 'candles-puzzle',
-    subtitle: 'A Warm Glow',
+    subtitle: 'Fresh batch, just for you!',
     letters: ['C', 'A', 'N', 'D', 'L', 'E', 'S'],
     keyLetters: ['A', 'E'],
     totalWordCount: 61,
@@ -1272,7 +1272,7 @@ const PUZZLES = [
   // PUZZLE 17: SPARKLE
   {
     id: 'sparkle-puzzle',
-    subtitle: 'All That Glitters',
+    subtitle: 'The cafe is open!',
     letters: ['S', 'P', 'A', 'R', 'K', 'L', 'E'],
     keyLetters: ['A', 'E'],
     totalWordCount: 88,
@@ -1391,7 +1391,7 @@ const PUZZLES = [
   // PUZZLE 18: GARDENS
   {
     id: 'gardens-puzzle',
-    subtitle: 'In Full Bloom',
+    subtitle: 'Savor every word!',
     letters: ['G', 'A', 'R', 'D', 'E', 'N', 'S'],
     keyLetters: ['A', 'E'],
     totalWordCount: 55,
@@ -1477,7 +1477,7 @@ const PUZZLES = [
   // PUZZLE 19: SCRABBLE
   {
     id: 'scrabble-puzzle',
-    subtitle: 'Letter Perfect!',
+    subtitle: "You're among friends here!",
     letters: ['S', 'C', 'R', 'A', 'B', 'L', 'E'],
     keyLetters: ['A', 'E'],
     totalWordCount: 71,
@@ -1579,7 +1579,7 @@ const PUZZLES = [
   // PUZZLE 20: LIBRARIES
   {
     id: 'libraries-puzzle',
-    subtitle: 'Check It Out',
+    subtitle: 'See you tomorrow!',
     letters: ['L', 'I', 'B', 'R', 'A', 'E', 'S'],
     keyLetters: ['E', 'R'],
     totalWordCount: 54,
@@ -1724,7 +1724,6 @@ function getTimeUntilNextPuzzle() {
 }
 
 // =============================================================================
-// GAME CONSTANTS
 // GAME CONSTANTS
 // =============================================================================
 
@@ -1919,7 +1918,6 @@ export default function LetterGriddleCafeGame() {
   // Load saved progress and stats
   useEffect(() => {
     try {
-      // Load game progress
       const saved = localStorage.getItem(`letterGriddleCafeGame_${puzzleData.id}`);
       if (saved) {
         const parsed = JSON.parse(saved);
@@ -1932,19 +1930,16 @@ export default function LetterGriddleCafeGame() {
         if (parsed.gameStarted) setGameStarted(true);
       }
       
-      // Load stats
       const savedStats = localStorage.getItem('letterGriddleCafeStats');
       if (savedStats) {
         setStats(JSON.parse(savedStats));
       }
       
-      // Load dark mode preference
       const savedDarkMode = localStorage.getItem('letterGriddleCafeDarkMode');
       if (savedDarkMode) {
         setDarkMode(JSON.parse(savedDarkMode));
       }
       
-      // Load jukebox preferences
       const jukeboxSaved = localStorage.getItem('letterGriddleCafeJukebox');
       if (jukeboxSaved) {
         const jukeboxParsed = JSON.parse(jukeboxSaved);
@@ -2888,7 +2883,6 @@ export default function LetterGriddleCafeGame() {
               <h2 style={{fontSize: '24px', fontWeight: 'bold', color: theme.text}}>Your Stats</h2>
             </div>
             
-            {/* Current Game Stats */}
             <div style={{padding: '16px', borderRadius: '16px', backgroundColor: theme.accentLight, marginBottom: '16px'}}>
               <h3 style={{fontWeight: 'bold', marginBottom: '12px', color: theme.text, textAlign: 'center'}}>Today's Progress</h3>
               <div style={{display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '8px', textAlign: 'center'}}>
@@ -2907,7 +2901,6 @@ export default function LetterGriddleCafeGame() {
               </div>
             </div>
 
-            {/* Overall Stats */}
             <div style={{padding: '16px', borderRadius: '16px', backgroundColor: theme.accentLight, marginBottom: '16px'}}>
               <h3 style={{fontWeight: 'bold', marginBottom: '12px', color: theme.text, textAlign: 'center'}}>All Time</h3>
               <div style={{display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '8px', textAlign: 'center'}}>
@@ -2930,7 +2923,6 @@ export default function LetterGriddleCafeGame() {
               </div>
             </div>
 
-            {/* Share Button */}
             <button
               onClick={shareResults}
               style={{
@@ -2949,7 +2941,6 @@ export default function LetterGriddleCafeGame() {
              Share Results
             </button>
 
-            {/* Answer Key Button */}
             <button
               onClick={() => { setShowStats(false); setShowAnswerKey(true); }}
               style={{
