@@ -1107,15 +1107,55 @@ export default function LetterGriddleCafe() {
             <div className="stories-intro">
               <h2>Come for the trivia, pancakes, and coffee. Stay for the tea.</h2>
             </div>
+            {(() => {
+  const reversed = [...stories].reverse();
+  const latestStories = reversed.slice(0, 2);
+  const olderStories = reversed.slice(2);
+
+  // Group older stories by month
+  const groups = {};
+  olderStories.forEach(story => {
+    if (!groups[story.date]) groups[story.date] = [];
+    groups[story.date].push(story);
+  });
+
+  return (
+    <>
+      {/* Latest 2 Vignettes */}
+      <div className="latest-section">
+        <h3 className="latest-header">☕ New at the Cafe</h3>
+        <div className="story-grid">
+          {latestStories.map(story => (
+            <StoryCard
+              key={story.id}
+              story={story}
+              onClick={() => setSelectedStory(story)}
+            />
+          ))}
+        </div>
+      </div>
+
+      {/* Older Stories Grouped by Month */}
+      <div className="archive-section">
+        <h3 className="archive-label">Previously at the Cafe</h3>
+        {Object.entries(groups).map(([month, monthStories]) => (
+          <div key={month} className="month-group">
+            <h4 className="month-header">{month}</h4>
             <div className="story-grid">
-              {stories.map(story => (
-                <StoryCard 
-                  key={story.id} 
-                  story={story} 
-                  onClick={() => setSelectedStory(story)} 
+              {monthStories.map(story => (
+                <StoryCard
+                  key={story.id}
+                  story={story}
+                  onClick={() => setSelectedStory(story)}
                 />
               ))}
             </div>
+          </div>
+        ))}
+      </div>
+    </>
+  );
+})()}
           </>
         )}
       </main>
