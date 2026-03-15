@@ -184,7 +184,7 @@ const PUZZLES = [
       6: ["Electrodes; battery terminals", "Made money; deserved", "One who earns money", "Removed; rubbed out", "Tool for removing marks", "Removes; rubs out", "Logic; explanation", "Tool for smoothing wood", "Trapped; entangled", "One who traps", "Traps; entangles", "Flew high; glided", "One who soars"],
       7: ["Ones who earn money", "Tools for removing marks", "Makes dear; makes beloved", "Logics; explanations", "Tools for smoothing wood", "Ones who trap", "Ones who soar"],
       8: ["Thought logically (pangram!)", "One who reasons", "Added spices to; experienced"],
-      9: ["Ones who think logically (pangram!)"]
+      9: ["Ones who think logically"]
     }
   },
   // PUZZLE 1: STICKER
