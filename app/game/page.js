@@ -163,10 +163,10 @@ const PUZZLES = [
       8: ["Practical people", "More salty ones (pangram!)", "Ones who steal", "Vehicles towed behind"]
     }
   },
-  // PUZZLE 8: REASONED - "No peeking at answers!" (Feb 23)
+  // PUZZLE 8: REASONED - "Think things through" (Feb 23)
   {
     id: 'reasoned-s2',
-    subtitle: 'No peeking at answers!',
+    subtitle: 'Think things through',
     letters: ['R', 'E', 'A', 'S', 'O', 'N', 'D'],
     keyLetters: ['A', 'E'],
     totalWordCount: 54,
