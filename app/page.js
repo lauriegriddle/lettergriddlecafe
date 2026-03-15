@@ -351,7 +351,31 @@ const stories = [
   closing: 'Friends, Letter Griddle is just the beginning. A whole family of games is waiting for you at lettergriddle.com.',
   closingLink: 'https://lettergriddle.com',
   closingLinkText: 'Play Letter Griddle'
-}
+},
+{
+  id: 'stay-for-the-vibe',
+  title: 'Stay for the Vibe',
+  subtitle: '✨ Now Available',
+  date: 'March 2026',
+  locked: false,
+  content: [
+    '"People don\'t just play!"  Josie adds, skipping behind Jennie who\'s still chasing Issac through the cafe. "They visit."',
+    '"I have to agree with Josie," offers Josephine, trailing into the cafe after her daughter.  "We play the game, then visit the cookbook to see what\'s cooking. Sorry Josie and I are late.  What did we miss?  What is cooking?"',
+    '"Our annual Top Ten night is heating up," Laurel announces, attempting to focus the group.',
+    '"You know they say, \'Come for the pancakes and coffee. Stay for the tea\'? Let\'s add \'vibe\' to that hook,"  Taylor again drops his input over the cafe PA.',
+    'Looking up at the speaker, "Taylor, you\'re way too cozy in that cafe tech station, but if by \'vibe\' you mean vignettes with us as the characters, trivia nights, and.." Mrs. Lindsay starts.',
+    '"Sparking connections with a fresh puzzle at 7 PM,"  Mr. Lindsay completes Mrs. Lindsay\'s thought.',
+    '"Yes, it really fits into our routine, without taking over," Josephine shares.  "We Letter Griddle after dinner."',
+    '"Letter Griddle is a verb now!"  Sarah interjects.',
+    '"Okay, so one puzzle a day is…" Laurel rephrases the thought to focus the crew.',
+    '"Totally doable!"  Sarah gladly offers.  "Laurel, add that to the ledger!"',
+    '"Woo-hoo!  Yes! Bravo, bravo! Huzzah!" the crew responds favorably.',
+    '"Backed by the cheers of the crew \'One puzzle a day is doable\' earns its place in the ledger," Laurel announces as she writes the entry.'
+  ],
+  closing: 'Friends, the vibe is yours to choose: one puzzle a day at lettergriddle.com/play or choose from a palette of puzzles at lettergriddle.com.',
+  closingLink: 'https://lettergriddle.com/play',
+  closingLinkText: 'Play Letter Griddle ✨'
+},
 ];
 
 // Puzzle data - expandable for future puzzles
@@ -611,7 +635,28 @@ const puzzles = {
     { pos: 2, letter: 'E' }
   ],
   didYouKnow: '"Food for thought" refers to information, ideas, or insights that deserve serious contemplation or require time to "digest" mentally. It implies that ideas nourish the mind just as food nourishes the body, with roots in ancient philosophy and common usage since the 1800s.'
-}
+},
+'stay-for-the-vibe': {
+  id: 'stay-for-the-vibe',
+  title: 'Stay for the Vibe',
+  category: 'Stay for the Vibe',
+  words: ['VIBE', 'CHEER', 'CHOOSE', 'CONNECT', 'ANNOUNCE'],
+  hints: [
+    'The feeling you choose to bring or how you get along found in the title',
+    "The crew's enthusiastic response",
+    'Pick your puzzle experience',
+    'What a fresh puzzle sparks',
+    'What Laurel does with the ledger entry'
+  ],
+  revealed: [
+    { pos: 2, letter: 'B' },
+    { pos: 1, letter: 'H' },
+    { pos: 4, letter: 'S' },
+    { pos: 3, letter: 'N' },
+    { pos: 5, letter: 'N' }
+  ],
+  didYouKnow: 'Enjoyment is essential for well-being, lowering stress, heart rates, and boosting happiness. Otters hold hands while sleeping to stay together, smelling flowers improves mood, and buying experiences, such as trips and concerts, rather than objects brings lasting joy.'
+},
 };
 
 // Mobile touch optimization styles - reusable objects
@@ -837,7 +882,7 @@ const [shareStatus, setShareStatus] = useState(null);
   };
 
   const handleShare = async () => {
-    const shareText = `I solved the ${storyTitle} puzzle on Letter Griddle Cafe! ☕🥞🎶\nlettergriddlecafe.com`;
+    const shareText = `I solved the ${storyTitle} puzzle on Letter Griddle Cafe! ☕🥞🎶\nlettergriddlecafe.com\nPlay more games at lettergriddle.com`;
     
     if (navigator.share) {
       try {
