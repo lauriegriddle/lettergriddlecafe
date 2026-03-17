@@ -376,6 +376,36 @@ const stories = [
   closingLink: 'https://lettergriddle.com/play',
   closingLinkText: 'Play Letter Griddle ✨'
 },
+{
+  id: 'st-patricks-day-scavenger-hunt',
+  title: 'The Annual St. Patrick\'s Day Scavenger Hunt',
+  subtitle: '☘️ 2026 Edition',
+  date: 'March 2026',
+  locked: false,
+  content: [
+    '"The Letter Griddle Annual St. Patrick\'s Day Scavenger Hunt 2026 edition is set to begin any moment…" Laurel announces.',
+    '"Everyone have their sneakers on? You remember how much ground we covered last year!" Sarah asks the group.',
+    '"My dogs were barking, and I\'m not referring to our Lending a Paw clients," Mr. Lindsay shares.',
+    '"Yap, yap!" Isaac is heard before he\'s seen.',
+    '"Happy St. Patrick\'s Day, everyone! Are we late?" Jennie asks, with Isaac at her heels, who soon finds his way into Mrs. Lindsay\'s arms.',
+    '"Happy St. Patrick\'s Day to you," Mrs. Lindsay replies affectionately, with Isaac being the you.',
+    '"Oh my goodness, you both look fab! Did you knit matching sweaters?" Sarah asks, admiring the green cardigan vests Jennie and Isaac are wearing.',
+    '…Ping! Whoosh! Clink!…',
+    '"Taylor has texted the official list!" Laurel announces.',
+    'Taylor\'s text reads: "As loyal members of the trivia crew, your participation in the annual scavenger hunt is of the utmost importance. You and another crew member have exactly 17 minutes to find and collect the following items."',
+    'Sarah reads, "The first item is ⭐️ 1 star."',
+    'Jennie takes a turn: "The next item is 🫖 1 teapot."',
+    'Mrs. Lindsay, still cradling Isaac, reads, "☘️ 1 clover."',
+    'Mr. Lindsay eagerly reads, "Okay, this one will be easy. You know I never met a stranger. 🗒️ 1 lucky message, which can be a text, a note, or a greeting from anyone. Present company excluded."',
+    'Laurel reads the last item: "🟢 A green treat, and there\'s a bonus this year."',
+    '"Bonus points are earned if there\'s enough of the green treat to share!" Taylor\'s voice booms through the cafe PA system.',
+    '"I didn\'t know the PA system worked out here on the sidewalk too," Sarah says in amazement.',
+    '"Crew, 17 minutes are on the clock. May the luck of the Irish be with you! That\'s the green light to go. See what I did there?" With that, Taylor officially starts the hunt.',
+  ],
+  closing: 'Friends, sneakers or no sneakers, many of the items on this list can be found at lettergriddle.com/maze. And if you find a green treat, it\'s always nice to share. 🍀 Happy St. Patrick\'s Day! 🍀',
+  closingLink: 'https://lettergriddle.com/maze',
+  closingLinkText: 'Play Maze at lettergriddle.com →'
+},
 ];
 
 // Puzzle data - expandable for future puzzles
@@ -656,6 +686,27 @@ const puzzles = {
     { pos: 5, letter: 'N' }
   ],
   didYouKnow: 'Enjoyment is essential for well-being, lowering stress, heart rates, and boosting happiness. Otters hold hands while sleeping to stay together, smelling flowers improves mood, and buying experiences, such as trips and concerts, rather than objects brings lasting joy.'
+},
+'st-patricks-day-scavenger-hunt': {
+  id: 'scavenger-hunt',
+  title: 'Scavenger Hunt',
+  category: 'Scavenger Hunt',
+  words: ['STAR', 'GREEN', 'TEAPOT', 'MESSAGE', 'SNEAKERS'],
+  hints: [
+    'The first item on the scavenger hunt list ⭐️',
+    'The color of Isaac\'s cardigan vest and a treat to share 🟢',
+    'Item #2 on the hunt list 🫖',
+    'A text, a note, or a greeting from anyone 🗒️',
+    'Sarah reminds everyone to lace these up!'
+  ],
+  revealed: [
+    { pos: 1, letter: 'T' },
+    { pos: 2, letter: 'E' },
+    { pos: 3, letter: 'P' },
+    { pos: 3, letter: 'S' },
+    { pos: 4, letter: 'K' }
+  ],
+  didYouKnow: 'Scavenger hunts, which originated as party games in the 1930s, are popular team-building activities that enhance problem-solving and collaboration. The largest, hosted in Provo, Utah in 2014, featured 2,079 participants, while the term itself is inspired by animals like raccoons. Modern hunts often use photo and video challenges over physical collecting.'
 },
 };
 
