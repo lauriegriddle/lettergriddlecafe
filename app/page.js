@@ -406,6 +406,36 @@ const stories = [
   closingLink: 'https://lettergriddle.com/maze',
   closingLinkText: 'Play Maze at lettergriddle.com →'
 },
+{
+  id: 'a-scrapbook',
+  title: 'A Scrapbook!',
+  subtitle: '📔 Now Available',
+  date: 'March 2026',
+  locked: false,
+  content: [
+    '"We\'ve entered \'A puzzle a day is totally doable\' as a top ten favorite, now let\'s add to the scrapbook pages of that old tome," Mr. Lindsay suggests.',
+    'Laurel fumbles with the leather-bound ledger as she locates its scrapbook pages.',
+    '"I\'ve got it! Let\'s add the items to the album from the scavenger hunt to commemorate 2026\'s adventures," Mrs. Lindsay offers.',
+    'Its pages sticking from previous years\' syrup splatters, Laurel awkwardly juggles both the book and the Lindsays\' eager suggestions.',
+    'The luxury of a momentary pause to reflect on mementos from years past is soon interrupted.',
+    'Click, click, tap, ping! 📱',
+    '"Check your phones, everyone," Jennie tells the crew.',
+    '"Precious," chime the Lindsays, upon immediately grabbing their phone.',
+    '"I vote for this selfie photo of Isaac and Jennie sporting their green hand-knitted sweaters finding its rightful place as a Letter Griddle memory," Sarah suggests.',
+    '"Of course, we will not pass green until we do! See what I did there?" Taylor remarks, impressing himself.',
+    'Locating the coffee-splattered journal page from last year, Laurel projects the image using the trivia tech setup.',
+    '"Look at how much Isaac has grown since last year," Jennie lovingly notes, glancing back and forth at last year\'s snap and her fur BFF on her lap.',
+    '"Look at how much Letter Griddle has grown in a year!" Sarah marvels.',
+    '"Games," Mr. Lindsay instinctively shouts.',
+    '"Puzzles," Mrs. Lindsay adds.',
+    '"Fun facts," Sarah offers.',
+    '"Tech capabilities," Taylor proudly shares.',
+    '"Crew, we\'ve all grown in our fun, friendship, good times, and knowledge in the past year," Laurel shares, offering her perspective. "This scrapbook proves it!"',
+  ],
+  closing: 'Friends, enjoy collecting in your own scrapbook at lettergriddle.com/play as a way for you to capture the fun and good times you\'ve had in a year with your favorite pancake-inspired word game. 📔 Find your Letter Griddle Scrapbook 📔 next to Jukebox 🎵 at lettergriddle.com/play.',
+  closingLink: 'https://lettergriddle.com/play',
+  closingLinkText: 'Find your Scrapbook at lettergriddle.com/play 📔'
+},
 ];
 
 // Puzzle data - expandable for future puzzles
@@ -707,6 +737,27 @@ const puzzles = {
     { pos: 4, letter: 'K' }
   ],
   didYouKnow: 'Scavenger hunts, which originated as party games in the 1930s, are popular team-building activities that enhance problem-solving and collaboration. The largest, hosted in Provo, Utah in 2014, featured 2,079 participants, while the term itself is inspired by animals like raccoons. Modern hunts often use photo and video challenges over physical collecting.'
+},
+'a-scrapbook': {
+  id: 'scrapbook',
+  title: 'Scrapbook',
+  category: 'Scrapbook',
+  words: ['PAGE', 'ALBUM', 'MEMORY', 'JOURNAL', 'MEMENTOS'],
+  hints: [
+    'Where a scrapbook memory lives',
+    'A collection of photos and keepsakes',
+    'Isaac\'s green sweater selfie is one of these',
+    'Laurel\'s coffee-splattered record from last year',
+    'Scavenger hunt items worth commemorating'
+  ],
+  revealed: [
+    { pos: 1, letter: 'A' },
+    { pos: 2, letter: 'B' },
+    { pos: 2, letter: 'M' },
+    { pos: 3, letter: 'R' },
+    { pos: 3, letter: 'E' }
+  ],
+  didYouKnow: 'Early scrapbooks, known as commonplace books, were used to compile recipes, quotes, and letters. Engaging in this creative hobby can reduce anxiety, improve focus, and strengthen neural networks.'
 },
 };
 
