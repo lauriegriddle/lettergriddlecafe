@@ -432,9 +432,30 @@ const stories = [
     '"Tech capabilities," Taylor proudly shares.',
     '"Crew, we\'ve all grown in our fun, friendship, good times, and knowledge in the past year," Laurel shares, offering her perspective. "This scrapbook proves it!"',
   ],
-  closing: 'Friends, enjoy collecting in your own scrapbook at lettergriddle.com/play as a way for you to capture the fun and good times you\'ve had in a year with your favorite pancake-inspired word game. 📔 Find your Letter Griddle Scrapbook 📔 next to Jukebox 🎵 at lettergriddle.com/play.',
+  closing: 'Friends, enjoy collecting in your own scrapbook at lettergriddle.com/play as a way for you to capture the fun and good times you\'ve had in a year with your favorite pancake-inspired word game. 📔 Find your Letter Griddle Scrapbook 📔 next to our new night mode toggle 🌙 at lettergriddle.com/play.',
   closingLink: 'https://lettergriddle.com/play',
   closingLinkText: 'Find your Scrapbook at lettergriddle.com/play 📔'
+},
+{
+  id: 'top-ten-toast',
+  title: 'Top Ten Toast',
+  subtitle: '☕ Now Available',
+  date: 'March 2026',
+  locked: false,
+  content: [
+    '"Everyone, have your mug?" Laurel asks, lifting her Letter Griddle coffee cup.',
+    'The crew follows Laurel\'s lead, raising their mugs as if choreographed.',
+    'Clink, clink, clink.',
+    'Taylor emerges from the tech station, mug in hand, to join in the toast.',
+    '"To the \'doable\' daily puzzle," Mr. Lindsay toasts, eyes a-twinkle.',
+    '"To the syrup splatters and the sticky pages in that historic book," Mrs. Lindsay adds, fidgeting with something gooey.',
+    '"To being more than just players, to being a crew, to lending a paw," Jennie says, looking around at each of the crew, then at Isaac.',
+    '"And to more fun \'Letter Griddling\' together!" Sarah cheers.',
+    'The Letter Griddle friends sip their coffee to the memories already saved, the puzzles yet to be solved, recipes yet to be prepared, and adventures to be experienced.',
+  ],
+  closing: 'Friends, to you and your doable daily puzzle. lettergriddle.com/play',
+  closingLink: 'https://lettergriddle.com/play',
+  closingLinkText: 'Play your doable daily puzzle ☕'
 },
 ];
 
@@ -758,6 +779,27 @@ const puzzles = {
     { pos: 3, letter: 'E' }
   ],
   didYouKnow: 'Early scrapbooks, known as commonplace books, were used to compile recipes, quotes, and letters. Engaging in this creative hobby can reduce anxiety, improve focus, and strengthen neural networks.'
+},
+'top-ten-toast': {
+  id: 'toast',
+  title: 'Toast',
+  category: 'Toast',
+  words: ['LIFT', 'CLINK', 'CHEERS', 'RAISING', 'ADVENTURE'],
+  hints: [
+    'What Laurel does with her coffee cup',
+    'The sound of mugs coming together',
+    'Sarah\'s enthusiastic send-off',
+    'What the crew does with their mugs as if choreographed',
+    'Puzzles yet to be solved and experiences yet to be had'
+  ],
+  revealed: [
+    { pos: 1, letter: 'I' },
+    { pos: 2, letter: 'I' },
+    { pos: 2, letter: 'E' },
+    { pos: 3, letter: 'S' },
+    { pos: 4, letter: 'N' }
+  ],
+  didYouKnow: 'In the 17th century, people literally dropped spiced, burnt bread into wine to make it taste better. Over time, the name stuck to the drink itself.'
 },
 };
 
