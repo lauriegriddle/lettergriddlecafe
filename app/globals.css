@@ -796,3 +796,133 @@
 }
 .completion-btn.share { background: linear-gradient(135deg, #fbbf24, #f59e0b); color: #92400e; font-weight: bold; }
 .completion-btn.share:hover { background: linear-gradient(135deg, #fcd34d, #fbbf24); }
+
+/* Cast Modal */
+.cast-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.cast-modal {
+  background: #fffdf5;
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 860px;
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.cast-modal::-webkit-scrollbar {
+  width: 6px;
+}
+
+.cast-modal::-webkit-scrollbar-track {
+  background: #fff8ee;
+  border-radius: 10px;
+}
+
+.cast-modal::-webkit-scrollbar-thumb {
+  background: #c1692a;
+  border-radius: 10px;
+}
+
+.cast-modal::-webkit-scrollbar-thumb:hover {
+  background: #a0522d;
+}
+.cast-modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #8b4513;
+}
+
+.cast-modal-title {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #8b4513;
+  margin-bottom: 1.5rem;
+}
+
+.cast-modal-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.cast-card {
+  background: #fff8ee;
+  border-radius: 12px;
+  padding: 1.25rem;
+  border: 1px solid #e8d5b0;
+  text-align: left;
+}
+
+.cast-card-name {
+  font-size: 1.1rem;
+  color: #8b4513;
+  margin-bottom: 0.75rem;
+}
+
+.cast-card-bio {
+  font-size: 0.85rem;
+  color: #5a3e2b;
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
+.cast-card-bio li {
+  margin-bottom: 0.35rem;
+}
+
+.cast-card-fun-facts-label {
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #8b4513;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.4rem;
+}
+
+.cast-card-fun-facts {
+  font-size: 0.85rem;
+  color: #5a3e2b;
+  padding-left: 0;
+  list-style: none;
+  line-height: 1.6;
+}
+
+.cast-card-fun-facts li {
+  margin-bottom: 0.35rem;
+}
+
+/* Meet the Cast Button */
+.meet-the-cast-btn {
+  margin-top: 0.75rem;
+  background: transparent;
+  border: 1px solid #f5e6c8;
+  color: #f5e6c8;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-style: italic;
+}
+
+.meet-the-cast-btn:hover {
+  background: rgba(245, 230, 200, 0.15);
+}

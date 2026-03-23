@@ -1,7 +1,145 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-
+// Character data
+const characters = [
+  {
+    id: 'laurel',
+    name: 'Laurel',
+    emoji: '🥞',
+    bio: [
+      'Owner and heart of the Letter Griddle Cafe',
+      'Keeps the cinnamon rolls warm, the coffee fresh, and the chaos under control',
+    ],
+    funFacts: [
+      'Has her own shorthand',
+      'Sings along to Elvis when closing up',
+      'Plans the cafe activities and the crew brings the mayhem',
+    ],
+  },
+  {
+    id: 'mrs-lindsay',
+    name: 'Mrs. Lindsay',
+    emoji: '☕',
+    bio: [
+      'One half of the beloved Lindsay duo',
+      'Takes her coffee with one-third cream and two sugar packets',
+      'Adds exactly the right word to any conversation',
+    ],
+    funFacts: [
+      'Enjoys Sunday jazz',
+      'Does her own research on trivia answers',
+    ],
+  },
+  {
+    id: 'mr-lindsay',
+    name: 'Mr. Lindsay',
+    emoji: '💃',
+    bio: [
+      'The other half of the Lindsay duo',
+      'Warm, expressive, and has never once met a stranger',
+      'Invaluable at trivia night and essential at scavenger hunts',
+    ],
+    funFacts: [
+      'Did not dance for two weeks without Jukebox',
+      'Drinks his coffee at just the right temperature, always',
+    ],
+  },
+  {
+    id: 'jennie',
+    name: 'Jennie',
+    emoji: '🍩',
+    bio: [
+      'Devoted to Isaac',
+      'Usually has treats to share',
+      'Knits matching green cardigan vests for herself and her dog',
+    ],
+    funFacts: [
+      'Can be counted on to bring treats',
+      'Chihuahua aficionado',
+    ],
+  },
+  {
+    id: 'isaac',
+    name: 'Isaac',
+    emoji: '🐾',
+    bio: [
+      "Jennie's chihuahua",
+      'Popular four-legged member of the trivia crew',
+      'Attends every Sunday night with Jennie',
+    ],
+    funFacts: [
+      'Has a sweet tooth',
+      'Expressively yaps when the moment calls for it',
+    ],
+  },
+  {
+    id: 'taylor',
+    name: 'Taylor B.',
+    emoji: '🕶️',
+    bio: [
+      "The crew's resident tech wizard",
+      'Modernized Jukebox, designed the orange Letter Griddle app icon',
+      'Ask him if he still wears cool sunglasses',
+    ],
+    funFacts: [
+      'Single-handedly saved Jukebox',
+      'Pro tip: reread the directions as many times as you like',
+    ],
+  },
+  {
+    id: 'josephine',
+    name: 'Josephine',
+    emoji: '👟',
+    bio: [
+      "Josie's mother",
+      'Pitches in wherever she is needed',
+    ],
+    funFacts: [
+      'Once owned a pair of saddle shoes',
+      'Makes delicious cinnamon pancakes',
+    ],
+  },
+  {
+    id: 'josie',
+    name: 'Josie',
+    emoji: '🐱',
+    bio: [
+      "Josephine's daughter",
+      'The youngest member of the trivia crew',
+    ],
+    funFacts: [
+      'While she adores Isaac, she prefers cats',
+      'Always up for the next adventure',
+    ],
+  },
+  {
+    id: 'jukebox',
+    name: 'Jukebox',
+    emoji: '🎵',
+    bio: [
+      "The cafe's beloved ambient music player",
+      'The soul of Sunday trivia night',
+      'Sets the mood, keeps Isaac calm, and went offline for two weeks before Taylor B. restored order',
+    ],
+    funFacts: [
+      "Sunday jazz is Mrs. Lindsay's favorite setting",
+      'Plays Elvis at just the right moment',
+      'Part of several games found at lettergriddle.com',
+    ],
+  },
+  {
+    id: 'griddles',
+    name: 'Griddles',
+    emoji: '🐱',
+    bio: [
+      'Coming soon...',
+    ],
+    funFacts: [
+      'The Letter Griddle Cafe cat',
+    ],
+  },
+];
 // Story/Vignette data - easily expandable for future stories
 const stories = [
   {
@@ -1199,7 +1337,37 @@ const [shareStatus, setShareStatus] = useState(null);
     </div>
   );
 }
-
+// Cast Modal Component
+function CastModal({ onClose }) {
+  return (
+    <div className="cast-modal-overlay" onClick={onClose}>
+      <div className="cast-modal" onClick={e => e.stopPropagation()}>
+        <button className="cast-modal-close" onClick={onClose}>✕</button>
+        <h2 className="cast-modal-title">Meet the Cast</h2>
+        <div className="cast-modal-grid">
+          {characters.map(character => (
+            <div key={character.id} className="cast-card">
+              <h3 className="cast-card-name">
+                {character.emoji} {character.name}
+              </h3>
+              <ul className="cast-card-bio">
+                {character.bio.map((line, i) => (
+                  <li key={i}>{line}</li>
+                ))}
+              </ul>
+              <p className="cast-card-fun-facts-label">Fun Facts:</p>
+              <ul className="cast-card-fun-facts">
+                {character.funFacts.map((fact, i) => (
+                  <li key={i}>{fact}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
 // Story Card Component
 function StoryCard({ story, onClick }) {
   return (
@@ -1270,8 +1438,8 @@ function StoryDetail({ story, puzzle, onBack }) {
 
 // Main App Component
 export default function LetterGriddleCafe() {
-  const [selectedStory, setSelectedStory] = useState(null);
-
+  const [selectedStory, setSelectedStory] = useState(null); 
+const [showCastModal, setShowCastModal] = useState(false);
   return (
     <div 
       className="cafe-app"
@@ -1282,6 +1450,13 @@ export default function LetterGriddleCafe() {
         <div className="header-content">
           <h1 className="header-title">The Letter Griddle Cafe</h1>
 <p className="header-subtitle">Word puzzles. Stories. Fun Facts.</p>
+<button
+  className="meet-the-cast-btn"
+  onClick={() => setShowCastModal(true)}
+>
+  Meet the Cast
+</button>
+{showCastModal && <CastModal onClose={() => setShowCastModal(false)} />}
         </div>
       </header>
 
