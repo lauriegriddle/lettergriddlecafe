@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import { track } from '@vercel/analytics';
 // Character data
 const characters = [
   {
@@ -1511,7 +1512,10 @@ const [showCastModal, setShowCastModal] = useState(false);
             <StoryCard
               key={story.id}
               story={story}
-              onClick={() => setSelectedStory(story)}
+              onClick={() => {
+  setSelectedStory(story);
+  track('vignette_opened', { title: story.title, id: story.id });
+}}
             />
           ))}
         </div>
@@ -1528,7 +1532,10 @@ const [showCastModal, setShowCastModal] = useState(false);
                 <StoryCard
                   key={story.id}
                   story={story}
-                  onClick={() => setSelectedStory(story)}
+                  onClick={() => {
+  setSelectedStory(story);
+  track('vignette_opened', { title: story.title, id: story.id });
+}}
                 />
               ))}
             </div>
