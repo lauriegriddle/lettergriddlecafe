@@ -95,6 +95,13 @@
   max-width: 800px;
   margin: 0 auto;
 }
+.story-card-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #a0522d;
+  margin-bottom: 0.4rem;
+}
 
 @media (max-width: 500px) {
   .story-grid {

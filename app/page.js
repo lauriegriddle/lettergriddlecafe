@@ -242,7 +242,7 @@ const stories = [
   },
   {
   id: 'hoopla-pancakes-winter-olympics',
-  title: 'Hoopla, Pancakes, and the Winter Olympics!',
+  title: 'Hoopla, Pancakes, and the Winter Olympics',
   subtitle: '🥇 Now Available',
   date: 'February 2026',
   locked: false,
@@ -268,7 +268,7 @@ const stories = [
 },
 {
   id: 'orange-you-surprised',
-  title: 'Orange You Surprised?',
+  title: 'Surprised',
   subtitle: '🍊 Now Available',
   date: 'February 2026',
   locked: false,
@@ -311,7 +311,7 @@ const stories = [
 },
 {
   id: 'top-that',
-  title: 'Top That!',
+  title: 'Top That',
   subtitle: '🍳 Now Available',
   date: 'March 2026',
   locked: false,
@@ -378,7 +378,7 @@ const stories = [
 },
 {
   id: 'st-patricks-day-scavenger-hunt',
-  title: 'The Annual St. Patrick\'s Day Scavenger Hunt',
+  title: 'The Scavenger Hunt',
   subtitle: '☘️ 2026 Edition',
   date: 'March 2026',
   locked: false,
@@ -408,7 +408,7 @@ const stories = [
 },
 {
   id: 'a-scrapbook',
-  title: 'A Scrapbook!',
+  title: 'A Scrapbook',
   subtitle: '📔 Now Available',
   date: 'March 2026',
   locked: false,
@@ -1209,6 +1209,7 @@ function StoryCard({ story, onClick }) {
       disabled={story.locked}
       style={touchOptimizationInteractive}
     >
+      <p className="story-card-label">Story & Puzzle</p>
       <h3 className="story-card-title">{story.title}</h3>
       {story.locked ? (
         <p className="story-card-locked-text">{story.subtitle}</p>
