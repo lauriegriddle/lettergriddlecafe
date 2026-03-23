@@ -9,8 +9,8 @@ const characters = [
     name: 'Laurel',
     emoji: '🥞',
     bio: [
-      'Owner and heart of the Letter Griddle Cafe',
-      'Keeps the cinnamon rolls warm, the coffee fresh, and the chaos under control',
+      'Owner of the Letter Griddle Cafe',
+      'Keeps the pancakes stacked high, the cinnamon rolls warm, the coffee fresh, and the chaos under control',
     ],
     funFacts: [
       'Has her own shorthand',
@@ -69,7 +69,7 @@ const characters = [
     bio: [
       'Devoted to Isaac',
       'Usually has treats to share',
-      'Knits matching green cardigan vests for herself and her dog',
+      'Knits matching cardigan vests for herself and her dog',
     ],
     funFacts: [
       'Can be counted on to bring treats',
@@ -83,7 +83,7 @@ const characters = [
     bio: [
       "Jennie's chihuahua",
       'Popular four-legged member of the trivia crew',
-      'Attends every Sunday night with Jennie',
+      'Attends every Sunday trivia night with Jennie',
     ],
     funFacts: [
       'Has a sweet tooth',
@@ -96,7 +96,7 @@ const characters = [
     emoji: '🕶️',
     bio: [
       "The crew's resident tech wizard",
-      'Modernized Jukebox, designed the orange Letter Griddle app icon',
+      'Modernized Jukebox & designed the orange Letter Griddle app icon',
       'Ask him if he still wears cool sunglasses',
     ],
     funFacts: [
@@ -126,7 +126,7 @@ const characters = [
       'The youngest member of the trivia crew',
     ],
     funFacts: [
-      'While she adores Isaac, she prefers cats',
+      'Adores Isaac, but prefers cats',
       'Always up for the next adventure',
     ],
   },
@@ -140,9 +140,9 @@ const characters = [
       'Sets the mood, keeps Isaac calm, and went offline for two weeks before Taylor B. restored order',
     ],
     funFacts: [
-      "Sunday jazz is Mrs. Lindsay's favorite setting",
+      "Sunday jazz is a favorite setting",
       'Plays Elvis at just the right moment',
-      'Part of several games found at lettergriddle.com',
+      'Included in several games found at lettergriddle.com',
     ],
   },
   {
