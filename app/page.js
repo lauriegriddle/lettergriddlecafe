@@ -1280,6 +1280,7 @@ export default function LetterGriddleCafe() {
       <header className="cafe-header">
         <div className="header-content">
           <h1 className="header-title">The Letter Griddle Cafe</h1>
+<p className="header-subtitle">Word puzzles. Stories. Fun Facts.</p>
         </div>
       </header>
 

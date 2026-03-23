@@ -58,6 +58,15 @@
   line-height: 1.2;
 }
 
+.header-subtitle {
+  font-size: 1.25rem;
+  font-style: italic;
+  color: #f5e6c8;
+  letter-spacing: 0.08em;
+  margin-top: 0.25rem;
+  opacity: 0.9;
+}
+
 /* Main Content */
 .main-content {
   max-width: 1200px;
