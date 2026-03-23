@@ -18,6 +18,20 @@ const characters = [
     ],
   },
   {
+    id: 'sarah',
+    name: 'Sarah',
+    emoji: '🌟',
+    bio: [
+      'Intelligent and thoughtful member of the trivia crew',
+      'Takes her coffee with one-third cream and two sugar packets',
+      'First to notice what others need',
+    ],
+    funFacts: [
+      'Shares insights at critical cafe and trivia moments',
+      'Thinks ahead for the trivia crew',
+    ],
+  },
+  {
     id: 'mrs-lindsay',
     name: 'Mrs. Lindsay',
     emoji: '☕',
@@ -29,20 +43,22 @@ const characters = [
     funFacts: [
       'Enjoys Sunday jazz',
       'Does her own research on trivia answers',
+      'Retired teacher, owns Lending a Paw with Mr. Lindsay',
     ],
   },
   {
     id: 'mr-lindsay',
     name: 'Mr. Lindsay',
-    emoji: '💃',
+    emoji: '🐕',
     bio: [
       'The other half of the Lindsay duo',
       'Warm, expressive, and has never once met a stranger',
-      'Invaluable at trivia night and essential at scavenger hunts',
+      'Invaluable at trivia night and scavenger hunts',
     ],
     funFacts: [
-      'Did not dance for two weeks without Jukebox',
+      'Aficionado of all dog breeds',
       'Drinks his coffee at just the right temperature, always',
+      'Retired teacher, owns Lending a Paw with Mrs. Linsday',
     ],
   },
   {
@@ -131,7 +147,7 @@ const characters = [
   {
     id: 'griddles',
     name: 'Griddles',
-    emoji: '🐱',
+    emoji: '🐈',
     bio: [
       'Coming soon...',
     ],
