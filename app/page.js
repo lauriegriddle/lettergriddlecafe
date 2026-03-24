@@ -13,8 +13,7 @@ const characters = [
       'Keeps the pancakes stacked high, the cinnamon rolls warm, the coffee fresh, and the chaos under control',
     ],
     funFacts: [
-      'Has her own shorthand',
-      'Sings along to Elvis when closing up',
+      'Combines cafe, cooking, and fun',
       'Plans the cafe activities and the crew brings the mayhem',
     ],
   },
@@ -24,7 +23,6 @@ const characters = [
     emoji: '🌟',
     bio: [
       'Intelligent and thoughtful member of the trivia crew',
-      'Takes her coffee with one-third cream and two sugar packets',
       'First to notice what others need',
     ],
     funFacts: [
@@ -38,12 +36,10 @@ const characters = [
     emoji: '☕',
     bio: [
       'One half of the beloved Lindsay duo',
-      'Takes her coffee with one-third cream and two sugar packets',
       'Adds exactly the right word to any conversation',
     ],
     funFacts: [
-      'Enjoys Sunday jazz',
-      'Does her own research on trivia answers',
+      'Does her own research on trivia matters',
       'Retired teacher, owns Lending a Paw with Mr. Lindsay',
     ],
   },
@@ -53,12 +49,10 @@ const characters = [
     emoji: '🐕',
     bio: [
       'The other half of the Lindsay duo',
-      'Warm, expressive, and has never once met a stranger',
-      'Invaluable at trivia night and scavenger hunts',
+      'Never met a stranger',
     ],
     funFacts: [
       'Aficionado of all dog breeds',
-      'Drinks his coffee at just the right temperature, always',
       'Retired teacher, owns Lending a Paw with Mrs. Linsday',
     ],
   },
@@ -68,8 +62,7 @@ const characters = [
     emoji: '🍩',
     bio: [
       'Devoted to Isaac',
-      'Usually has treats to share',
-      'Knits matching cardigan vests for herself and her dog',
+      'Knits',
     ],
     funFacts: [
       'Can be counted on to bring treats',
@@ -97,11 +90,10 @@ const characters = [
     bio: [
       "The crew's resident tech wizard",
       'Modernized Jukebox & designed the orange Letter Griddle app icon',
-      'Ask him if he still wears cool sunglasses',
     ],
     funFacts: [
       'Single-handedly saved Jukebox',
-      'Pro tip: reread the directions as many times as you like',
+      'Ask him if he still wears cool sunglasses',
     ],
   },
   {
@@ -137,11 +129,9 @@ const characters = [
     bio: [
       "The cafe's beloved ambient music player",
       'The soul of Sunday trivia night',
-      'Sets the mood, keeps Isaac calm, and went offline for two weeks before Taylor B. restored order',
     ],
     funFacts: [
-      "Sunday jazz is a favorite setting",
-      'Plays Elvis at just the right moment',
+      "Known for its Sunday jazz",
       'Included in several games found at lettergriddle.com',
     ],
   },
