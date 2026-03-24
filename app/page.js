@@ -36,7 +36,7 @@ const characters = [
     emoji: '☕',
     bio: [
       'One half of the beloved Lindsay duo',
-      'Adds exactly the right word to any conversation',
+      'Appreciates a good cup of coffee',
     ],
     funFacts: [
       'Does her own research on trivia matters',
