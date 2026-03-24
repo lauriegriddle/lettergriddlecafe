@@ -46,9 +46,9 @@ const characters = [
   {
     id: 'mr-lindsay',
     name: 'Mr. Lindsay',
-    emoji: '🐕',
+    emoji: '⚡️',
     bio: [
-      'The other half of the Lindsay duo',
+      'The boisterous half of the Lindsay duo',
       'Never met a stranger',
     ],
     funFacts: [
@@ -76,7 +76,6 @@ const characters = [
     bio: [
       "Jennie's chihuahua",
       'Popular four-legged member of the trivia crew',
-      'Attends every Sunday trivia night with Jennie',
     ],
     funFacts: [
       'Has a sweet tooth',
@@ -86,10 +85,10 @@ const characters = [
   {
     id: 'taylor',
     name: 'Taylor B.',
-    emoji: '🕶️',
+    emoji: '🟠',
     bio: [
       "The crew's resident tech wizard",
-      'Modernized Jukebox & designed the orange Letter Griddle app icon',
+      'Designed the orange Letter Griddle app icon',
     ],
     funFacts: [
       'Single-handedly saved Jukebox',
@@ -112,7 +111,7 @@ const characters = [
   {
     id: 'josie',
     name: 'Josie',
-    emoji: '🐱',
+    emoji: '☀️',
     bio: [
       "Josephine's daughter",
       'The youngest member of the trivia crew',
@@ -131,8 +130,8 @@ const characters = [
       'The soul of Sunday trivia night',
     ],
     funFacts: [
-      "Known for its Sunday jazz",
-      'Included in several games found at lettergriddle.com',
+      "Known for Sunday jazz",
+      'In several games found at lettergriddle.com',
     ],
   },
   {
