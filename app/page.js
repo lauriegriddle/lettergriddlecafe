@@ -140,9 +140,11 @@ const characters = [
     emoji: '🐈',
     bio: [
       'Coming soon...',
+      'Emerges at interesting times',
     ],
     funFacts: [
       'The Letter Griddle Cafe cat',
+      'Gigi to cafe regulars',
     ],
   },
 ];
