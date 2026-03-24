@@ -98,7 +98,7 @@ const characters = [
   {
     id: 'josephine',
     name: 'Josephine',
-    emoji: '👟',
+    emoji: '🤲',
     bio: [
       "Josie's mother",
       'Pitches in wherever she is needed',
