@@ -488,7 +488,7 @@ const stories = [
     '"The crew will be here any minute," Laurel ponders as she pulls out the ledger of Letter Griddle\'s annual top ten night.',
     'The well-used leather bound ledger used to record the annual top ten suggestions was showing its age. Coffee rings, cinnamon bun crumbs, and syrup splatters, mementos of previous years\' Top Ten nights didn\'t seem to interfere with Laurel\'s perusal of the previous years\' contenders.',
     '"No pressure, no rush. Just good vibes." Mr. Lindsay interjects as he enters the cafe. "I\'m partial to last year\'s winner."',
-    '"Yes! Good vibes all around!" Mrs. Lindsay concurs then adds, "No \'watch-this-ad,\' pay for this subscription, just play…for free!"',
+    '"Yes! Good vibes all around!" Mrs. Lindsay concurs then adds, "No ad to watch or subscription, just play…for free!"',
     '"For me it\'s the hum of the tech station. Every year. Hands down." Taylor\'s voice is heard throughout the cafe\'s PA system.',
     '"Yap, yap, yap, yap!" Isaac bolts through the cafe door as Jennie runs through the cafe after him.',
     '"For us, we like that the whole family can play!" Jennie shares as she whizzes through the room chasing her pooch.',
