@@ -1481,7 +1481,7 @@ const [showCastModal, setShowCastModal] = useState(false);
             <div className="stories-intro">
   <h2>Come for the trivia, pancakes, and coffee. Stay for the tea.</h2>
   <a href="https://griddlefalls.com" className="footer-link" style={{color: '#8B5A2B'}} target="_blank" rel="noopener noreferrer">
-    ☕ Play Griddle Falls — trivia night at the cafe
+    ☕ Play Griddle Falls where it's always trivia night at the cafe
   </a>
 </div>
             {(() => {
