@@ -603,6 +603,44 @@ const stories = [
   closingLink: 'https://lettergriddle.com/play',
   closingLinkText: 'Play your doable daily puzzle ☕'
 },
+{
+  id: 'the-cafe-has-an-almanac',
+  title: 'The Cafe Has an Almanac',
+  subtitle: '📔 Now Available',
+  date: 'April 2026',
+  locked: false,
+  content: [
+    '"What\'s this?" Josie asks as she struggles to pull an identical leather-bound tome off the cafe shelf.',
+    '"The cafe almanac!" Mrs. Lindsay says.',
+    '"We need to update that too!" Mr. Lindsay chimes in.',
+    '"Looks like the last time we opened this old tome was in 2023 to update the cafe\'s moments in time," Taylor notices.',
+    '"2024, okay who remembers…" Laurel starts.',
+    '"What was all the rage at the cafe in 2024?" Jennie asks.',
+    '"Remember, mushroom coffee was in everyone\'s to-go cup until the next year when …," Laurel shares, "the next year had me learning recipes for pistachio lattes."',
+    '"We just celebrated the wins at the 2026 Winter Olympics in Milan and Cortina d\'Ampezzo, but remember the Paris Olympics captivated the cafe and the world in summer 2024!" Mr. Lindsay offers.',
+    'Isaac provides an energetic "yap, yap" along with two tail wiggles, as if to prepare the room for Jennie to add, "The Paris Olympics were the stage where Simone Biles returned triumphantly!"',
+    '"We were at the cafe for every event during the Paris Summer Olympics," Mr. Lindsay reflects.',
+    '"Every day, here, sipping coffee and even trying the mushroom coffee Laurel was serving the to-go group," Mrs. Lindsay recollects.',
+    '"Good times and good thing I hung on to those cool retro sunglasses because last year\'s nostalgia for the early 2000s hit like a beam of sunshine," Taylor says as he adjusts his sunglasses. "But 2024 to me was all about tech, the other Taylor\'s Eras tour, and Oppenheimer. Even though Oppenheimer was released in 2023, the obsession was fully rooted in 2024."',
+    '"Cool shades, Taylor, and music and movie choices," Sarah says, "but 2024 for me was a big year for books and reading. I know it\'s not everyone\'s cup of mushroom coffee, but that was the year I developed an appreciation for romantasy as a go-to genre."',
+    '"Sarah, you loaned me some of your books. I haven\'t stopped reading since," Josephine shares. "If anyone wants to borrow any books, I have since acquired my own copies, paperbacks and ebooks."',
+    'Josie shares, "Mom said the themes were too mature for me to read, so I drew a lot of cute dragon pictures that summer instead."',
+    '"I also remember…." Josephine starts.',
+    '"…asking about Kendrick Lamar and Drake\'s argument around that time," Josie interjects.',
+    '"Not the direction I was going," Josephine clarifies. "I was going to say…"',
+    '"Mom, you said it wasn\'t any of my business," Josie softly adds.',
+    '"I encouraged you to color those cute dragon drawings, write your own stories, and to read about fashion trends to get you ready for school," Josephine adds.',
+    '"Ballet flats for the win!" Josie stands and points at her feet.',
+    '"I think Josie still has a pair for each day of the school week," Josephine tells the group.',
+    '"Listen to us share. Each of us having our own unique memories," Laurel remarks. "So much important history happened in 2024."',
+    '"Let\'s add all of this wonderful recollection to the pages of the cafe almanac," Mrs. Lindsay says.',
+    '"Now, who remembers 2025?" asks Taylor, dramatically removing his sunglasses.',
+    '"Taking orders for pistachio lattes!" Laurel offers.',
+  ],
+  closing: 'Friends, join us here to read the next entry in the cafe almanac, "2025: Retro Vibes and Pistachio Lattes."',
+  closingLink: 'https://lettergriddlecafe.com',
+  closingLinkText: 'Return to the Cafe 📔'
+},
 ];
 
 // Puzzle data - expandable for future puzzles
@@ -946,6 +984,27 @@ const puzzles = {
     { pos: 4, letter: 'N' }
   ],
   didYouKnow: 'In the 17th century, people literally dropped spiced, burnt bread into wine to make it taste better. Over time, the name stuck to the drink itself.'
+},
+'the-cafe-has-an-almanac': {
+  id: 'cafe-almanac',
+  title: 'Cafe History',
+  category: 'Cafe History',
+  words: ['FLAT', 'PARIS', 'DRAGON', 'ALMANAC', 'MUSHROOM'],
+  hints: [
+    'Josie\'s go-to school shoe — ballet style',
+    'City that captivated the cafe during the 2024 Summer Olympics',
+    'Josie drew cute pictures of these instead of reading romantasy',
+    'The leather-bound tome Josie pulled off the cafe shelf',
+    'The coffee trend that filled everyone\'s to-go cup in 2024'
+  ],
+  revealed: [
+    { pos: 1, letter: 'L' },
+    { pos: 1, letter: 'A' },
+    { pos: 3, letter: 'G' },
+    { pos: 3, letter: 'M' },
+    { pos: 4, letter: 'O' }
+  ],
+  didYouKnow: 'Mushrooms have a history in traditional medicine, however, direct, extensive research on the combination with coffee is limited, with some experts attributing benefits to simply lower caffeine intake.'
 },
 };
 
