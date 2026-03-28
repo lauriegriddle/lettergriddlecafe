@@ -991,7 +991,7 @@ const puzzles = {
   category: 'Cafe History',
   words: ['FLAT', 'PARIS', 'DRAGON', 'ALMANAC', 'MUSHROOM'],
   hints: [
-    'Josie\'s go-to school shoe — ballet style',
+    'Josie\'s go-to school shoe, ballet style',
     'City that captivated the cafe during the 2024 Summer Olympics',
     'Josie drew cute pictures of these instead of reading romantasy',
     'The leather-bound tome Josie pulled off the cafe shelf',
@@ -1002,7 +1002,7 @@ const puzzles = {
     { pos: 1, letter: 'A' },
     { pos: 3, letter: 'G' },
     { pos: 3, letter: 'M' },
-    { pos: 4, letter: 'O' }
+    { pos: 4, letter: 'R' }
   ],
   didYouKnow: 'Mushrooms have a history in traditional medicine, however, direct, extensive research on the combination with coffee is limited, with some experts attributing benefits to simply lower caffeine intake.'
 },
