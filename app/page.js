@@ -1001,7 +1001,7 @@ const puzzles = {
     { pos: 1, letter: 'L' },
     { pos: 1, letter: 'A' },
     { pos: 3, letter: 'G' },
-    { pos: 3, letter: 'M' },
+    { pos: 3, letter: 'A' },
     { pos: 4, letter: 'R' }
   ],
   didYouKnow: 'Mushrooms have a history in traditional medicine, however, direct, extensive research on the combination with coffee is limited, with some experts attributing benefits to simply lower caffeine intake.'
