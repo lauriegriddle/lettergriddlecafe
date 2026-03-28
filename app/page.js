@@ -14,7 +14,7 @@ const characters = [
     ],
     funFacts: [
       'Combines cafe, cooking, and fun',
-      'Plans the cafe activities and the crew supplies the entertainment',
+      'Plans the cafe activities and the crew provides the entertainment',
     ],
   },
   {
