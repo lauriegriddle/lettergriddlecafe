@@ -676,7 +676,7 @@ const stories = [
     'Following suit, Josephine and Josie place spring hats on their heads.',
     '"Would you?" Sarah asks, handing her phone to Taylor.',
     'The ladies all gather with Sarah in the center to pose for the photo.',
-    '"Thanks, Taylor. @Sarah_bookworm is going to get all the likes for this one!" Sarah lets the group know.',
+    '"Thanks, Taylor. @Sarah_bookworm2000 is going to get all the likes for this one!" Sarah lets the group know.',
     '"But it\'s not really Easter until we\'ve clinked glasses, or I mean eggs, for another wonderful season," Taylor says.',
     'Each helps themselves and raises their egg-espresso.',
     '"Who\'s going to give this year\'s Easter toast?" Mrs. Lindsay asks.',
