@@ -641,6 +641,55 @@ const stories = [
   closingLink: 'https://lettergriddlecafe.com',
   closingLinkText: 'Return to the Cafe 📔'
 },
+{
+  id: 'egg-spresso-lane',
+  title: 'Egg-spresso Lane',
+  subtitle: '🥚 Now Available',
+  date: 'April 2026',
+  locked: false,
+  content: [
+    'A stunned Taylor enters Letter Griddle Cafe, and starts, "I\'ve never seen so…"',
+    '"Many chocolate eggs?" Josie interrupts.',
+    '"Well, now that you mention it, yes, but I was going to say so many espresso machines," Taylor explains.',
+    '"The espresso is brewing!" Laurel says.',
+    '"The chocolate eggs have been cracked open," Josie informs the group.',
+    '"Well, the tops have been opened," Josephine explains.',
+    '"Let\'s get these chocolate egg cups lined up and ready for the machines!" Laurel directs.',
+    '"Here are the cups, oops I mean eggs! Can I try some?" Josie asks.',
+    '"Just a sip, Josie. Coffee isn\'t my first choice for you, so espresso is only allowed today as a special treat," Josephine says.',
+    '"You sound like Grandmother Gigi, Josephine," Laurel explains. "When I was Josie\'s age, I helped her prepare Egg-spressos for the Easter gatherings she had every year."',
+    '"Did your Gigi let you have more than…?" Josie starts to ask.',
+    '"A sip?" Laurel says. "Not until I was in college."',
+    '"She was very protective," Josephine says.',
+    '"…more likely she knew my tastes hadn\'t evolved yet," Laurel explains.',
+    '"Hot cross buns. Check," Jennie declares as she emerges from the cafe kitchen with the Lindsays close behind.',
+    '"I can play Hot Cross Buns on the cafe synthesizer at the celebration," Josie shares.',
+    '"Yap, yap," Sir Isaac makes his presence known.',
+    '"Isaac\'s Easter basket is in our Lending a Paw van," Mrs. Lindsay shares.',
+    '"…and he knows it," Mr. Lindsay says.',
+    '"Yap, yap," Isaac repeats himself as he pads to the cafe entrance.',
+    'The group\'s attention is directed to the door where Sarah is making her entrance.',
+    '"Sarah, is that you? I mean you look great, but the…" Taylor starts.',
+    '"…bonnet is beautiful!" Laurel says, pulling out a colorful bonnet she\'d stashed under the cafe counter and putting it on.',
+    '"Shall we?" Josephine asks.',
+    '"We shall," Mrs. Lindsay responds, placing an Easter bonnet on her coiffed hair.',
+    'Following suit, Josephine and Josie place spring hats on their heads.',
+    '"Would you?" Sarah asks, handing her phone to Taylor.',
+    'The ladies all gather with Sarah in the center to pose for the photo.',
+    '"Thanks, Taylor. @Sarah_bookworm is going to get all the likes for this one!" Sarah lets the group know.',
+    '"But it\'s not really Easter until we\'ve clinked glasses, or I mean eggs, for another wonderful season," Taylor says.',
+    'Each helps themselves and raises their egg-espresso.',
+    '"Who\'s going to give this year\'s Easter toast?" Mrs. Lindsay asks.',
+    '"Easter toast? Easter toast! I will!" Laurel offers. "Wishing everyone good times and good health ... and thanks for the menu idea!"',
+    '"Laurel, what are you talking about?" Mr. Lindsay asks.',
+    '"Laurel?" Mrs. Lindsay asks, equally confused.',
+    '"Menu idea?" Taylor questions.',
+    '"Easter toast!"',
+  ],
+  closing: 'Friends, wishing you a wonderful Easter filled with good times, good health, and maybe an Egg-spresso or two. 🥚☕',
+  closingLink: 'https://lettergriddle.com/play',
+  closingLinkText: 'Play Letter Griddle ☕'
+},
 ];
 
 // Puzzle data - expandable for future puzzles
@@ -1005,6 +1054,27 @@ const puzzles = {
     { pos: 4, letter: 'R' }
   ],
   didYouKnow: 'Mushrooms have a history in traditional medicine, however, direct, extensive research on the combination with coffee is limited, with some experts attributing benefits to simply lower caffeine intake.'
+},
+'egg-spresso-lane': {
+  id: 'easter',
+  title: 'Easter',
+  category: 'Easter',
+  words: ['EGGS', 'TOAST', 'BONNET', 'MACHINE', 'ESPRESSO'],
+  hints: [
+    'Chocolate cups for the Egg-spresso surprise',
+    'Laurel\'s Easter punchline and a menu idea',
+    'Sarah\'s beautiful Easter headwear',
+    'Taylor noticed there were a lot of this item',
+    'The special treat brewing in the cafe'
+  ],
+  revealed: [
+    { pos: 1, letter: 'G' },
+    { pos: 2, letter: 'A' },
+    { pos: 3, letter: 'N' },
+    { pos: 4, letter: 'I' },
+    { pos: 3, letter: 'R' }
+  ],
+  didYouKnow: 'Easter bonnets originated from a European tradition of wearing new clothes on Easter Sunday to symbolize spiritual renewal and the arrival of spring. Additionally, hot cross buns are traditionally eaten on Good Friday.'
 },
 };
 
