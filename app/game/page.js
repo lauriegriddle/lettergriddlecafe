@@ -1918,7 +1918,7 @@ export default function LetterGriddleCafeGame() {
   // Load saved progress and stats
   useEffect(() => {
     try {
-      const saved = localStorage.getItem(`letterGriddleCafeGame_${puzzleData.id}`);
+      const saved = localStorage.getItem(`letterGriddleCafeGame_s2_${puzzleData.id}`);
       if (saved) {
         const parsed = JSON.parse(saved);
         if (parsed.foundWords && Array.isArray(parsed.foundWords)) {
@@ -1956,7 +1956,7 @@ export default function LetterGriddleCafeGame() {
   useEffect(() => {
     if (isLoaded && foundWords.size > 0) {
       try {
-        localStorage.setItem(`letterGriddleCafeGame_${puzzleData.id}`, JSON.stringify({
+        localStorage.setItem(`letterGriddleCafeGame_s2_${puzzleData.id}`, JSON.stringify({
           foundWords: Array.from(foundWords),
           gameStarted: gameStarted,
           lastPlayed: new Date().toISOString()
@@ -2238,6 +2238,17 @@ export default function LetterGriddleCafeGame() {
       setMessageType('success');
     }
   };
+  const resetProgress = () => {
+  try {
+    localStorage.removeItem(`letterGriddleCafeGame_s2_${puzzleData.id}`);
+    setFoundWords(new Set());
+    setCurrentWord('');
+    setMessage('Progress reset! Fresh start ☕');
+    setMessageType('encouragement');
+  } catch (e) {
+    console.error('Could not reset progress', e);
+  }
+};
 
   const currentHasFirstKey = currentWord.includes(puzzleData.keyLetters[0]);
   const currentHasSecondKey = currentWord.includes(puzzleData.keyLetters[1]);
@@ -2957,6 +2968,23 @@ export default function LetterGriddleCafeGame() {
             >
               📋 View Yesterday's Answers
             </button>
+            <button
+  onClick={() => { resetProgress(); setShowStats(false); }}
+  style={{
+    width: '100%',
+    padding: '12px',
+    borderRadius: '9999px',
+    fontWeight: '600',
+    fontSize: '14px',
+    cursor: 'pointer',
+    backgroundColor: theme.errorBg,
+    color: theme.errorText,
+    border: `2px solid ${theme.cardBorder}`,
+    marginTop: '8px'
+  }}
+>
+  🔄 Reset Today's Progress
+</button>
           </div>
         </div>
       )}
