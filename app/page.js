@@ -690,6 +690,67 @@ const stories = [
   closingLink: 'https://lettergriddle.com/play',
   closingLinkText: 'Play Letter Griddle ☕'
 },
+{
+  id: '2015-falls-out',
+  title: '2015 Falls Out',
+  subtitle: '📔 Now Available',
+  date: 'April 2026',
+  locked: false,
+  content: [
+    '"What just fell out of the almanac, Josie?" Josephine asks.',
+    '"Oh, wow, 2015 just fell out of the book," Taylor says, picking up the syrupy, sticky pages.',
+    '"2015! Pivotal year for coffee!" Laurel says.',
+    '"That was the year of the great explosion of cold brew. No longer for the niche cafe orders, but the regulars jumped on the cold brew wagon, too," Laurel reflects. "Even in the cold of winter, cold brew was the order du jour, until they started wanting it warm."',
+    '"We know, Taylor, you were already enjoying cold brewed coffee way before 2015," Sarah says before Taylor shares his knowledge.',
+    '"Just saying that I always have had cold brew in my travel tumbler when working on the tech station," Taylor explains his ahead-of-the-trend habit.',
+    '"I would finish mom\'s coffee, always cold. So natch my coffee order is always going to be cold," Josie says.',
+    '"I learned to warm my cold brew that year," Josephine shares.',
+    '"I learned how to beat Taylor in the line for the Apple Watch that year…" Jennie shares, grabbing everyone\'s attention.',
+    '"Jennie, we\'re friends," Taylor reminds Jennie.',
+    '"One word, pre-order," Jennie muses.',
+    '"Only because Apple discouraged lines for the watch release," Taylor acknowledges.',
+    '"Friends, even though things just got a little heated," Mr. Lindsay jokes. "I remember the landmark Paris Agreement on climate change that year."',
+    '"One hundred ninety-six nations agreed to cut emissions and limit global warming," Mrs. Lindsay adds.',
+    '"I remember drawing and coloring France\'s flag to decorate the cafe," Josie shares.',
+    '"2015 was a big year for coloring," Sarah interjects.',
+    '"You borrowed my colors every day, Sarah," Josie remembers.',
+    '"Until you used your allowance and bought a set of 48 crayons and gave them to Sarah," Josephine adds.',
+    '"So sweet of you, Josie," Sarah remarks, pulling out a set from her tote. "I always have a pack in my book bag now, thanks to you."',
+    '"Speaking of colors, who thinks these pages need some bright colorful doodles before going back in the almanac?" Laurel asks, as everyone in the room raises their hand before she completes the question.',
+  ],
+  closing: 'Friends, feel free to color outside the lines and enjoy today\'s puzzle! 🖍️',
+  closingLink: 'https://lettergriddle.com/play',
+  closingLinkText: 'Play Letter Griddle 🖍️'
+},
+{
+  id: 'unicorns-and-pokemon',
+  title: 'Unicorns and Pokémon',
+  subtitle: '🦄 Now Available',
+  date: 'April 2026',
+  locked: false,
+  content: [
+    '"That should keep 2015 from ever falling out again," Laurel tells the group as she returns 2015 to its rightful spot in the cafe almanac.',
+    '"On the back of the page…look!" Josie grabs the group\'s attention.',
+    '"Oh, the unicorn trend of 2016!" Laurel remembers, turning the book to show the group a colorful unicorn illustration.',
+    '"Unicorns inspired everything from lattes to bagels to…" Josephine shares.',
+    '"Hair bows and shoe laces," Josie adds.',
+    '"My adult coloring books were on the trend too," Sarah shares as she opens her Instagram account on her phone and flashes it for the group to see her intricately colored, rainbow-hued unicorn posts.',
+    '"Unicorn obsessions were one thing…that summer Stranger Things had my attention," Taylor reminds the group.',
+    '"For the record, that summer was the hottest on record," Mr. Lindsay states.',
+    '"True. Also that summer we had fun watching the kids who were outside playing Pokémon," Mrs. Lindsay adds. "Of course, we kept a watchful eye out, but it was fun to see so many outdoors, moving."',
+    '"Josie, you were part of a Pokémon Go group, what happened?" Josephine asks.',
+    '"I told the Pokémon Go group that I have enough adventure, friendship, and community here at Letter Griddle."',
+    'A momentary lull falls over the group of friends.',
+    '"I second that, Josie," Laurel says.',
+    '"I third that, Josie," Sarah joins.',
+    '"We fourth and fifth that, Josie," Mrs. Lindsay speaks for the duo.',
+    '"It is not like me to be late to a trend. I sixth that, Josie," Taylor offers.',
+    'The comfortable lull returns to the cafe as the friends bask in the memories of 2016.',
+  ],
+  closing: 'Friends, whether you\'re team unicorn or team Pokémon, there\'s always a puzzle waiting for you at Letter Griddle. 🦄',
+  closingLink: 'https://lettergriddle.com/play',
+  closingLinkText: 'Play Letter Griddle 🦄'
+},
 ];
 
 // Puzzle data - expandable for future puzzles
@@ -1075,6 +1136,48 @@ const puzzles = {
     { pos: 3, letter: 'R' }
   ],
   didYouKnow: 'Easter bonnets originated from a European tradition of wearing new clothes on Easter Sunday to symbolize spiritual renewal and the arrival of spring. Additionally, hot cross buns are traditionally eaten on Good Friday.'
+},
+'2015-falls-out': {
+  id: '2015',
+  title: '2015',
+  category: '2015',
+  words: ['BREW', 'PARIS', 'CRAYON', 'CLIMATE', 'AGREEMENT'],
+  hints: [
+    'Cold version of this became the order du jour in 2015',
+    'City that gave its name to the 2015 landmark climate accord',
+    'Josie\'s 48-pack gift to Sarah',
+    'What 196 nations agreed to protect in 2015',
+    'What those 196 nations signed in Paris'
+  ],
+  revealed: [
+    { pos: 1, letter: 'R' },
+    { pos: 1, letter: 'A' },
+    { pos: 2, letter: 'A' },
+    { pos: 3, letter: 'M' },
+    { pos: 4, letter: 'E' }
+  ],
+  didYouKnow: 'Cold brew coffee is made by steeping grounds in cold water for 12–24 hours, resulting in a less acidic, sweeter, and more caffeinated drink than hot coffee.'
+},
+'unicorns-and-pokemon': {
+  id: '2016',
+  title: '2016',
+  category: '2016',
+  words: ['BOOK', 'LATTE', 'RECORD', 'UNICORN', 'STRANGER'],
+  hints: [
+    'Sarah\'s adult coloring version was rainbow-hued',
+    'The unicorn version of this cafe drink was very Instagrammable',
+    'That summer was the hottest one of this',
+    'The pastel, glittery trend that inspired everything from food to hair bows',
+    'The Things show that had Taylor\'s attention that summer'
+  ],
+  revealed: [
+    { pos: 1, letter: 'O' },
+    { pos: 2, letter: 'T' },
+    { pos: 3, letter: 'O' },
+    { pos: 3, letter: 'C' },
+    { pos: 4, letter: 'N' }
+  ],
+  didYouKnow: 'In 2016, unicorn food emerged as a dominant, highly Instagrammable trend featuring pastel-hued, rainbow-colored, and glitter-topped items.'
 },
 };
 
