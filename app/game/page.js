@@ -1657,7 +1657,9 @@ const PUZZLES = [
         "Buildings full of books (pangram!)"
       ]
     }
-  }, // =============================================================================
+  },
+  
+  // =============================================================================
 // NEW PUZZLES - Append these to the end of the PUZZLES array
 // Each puzzle: 20-31 words, same format as existing puzzles
 // =============================================================================
@@ -1939,12 +1941,12 @@ const PUZZLES = [
         "Passes the baton; race tactics",
         "Pays back; returns favors",
         "Watch again; do over",
-        "One who kills"
+        "One who slays"
       ],
       7: [
         "People in a game or performance (pangram!)",
         "Watches again; does over",
-        "Ones who kill"
+        "Ones who slay"
       ]
     }
   },
