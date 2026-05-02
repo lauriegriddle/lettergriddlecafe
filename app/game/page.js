@@ -1729,13 +1729,12 @@ const PUZZLES = [
     subtitle: 'The show is about to start!',
     letters: ['C', 'U', 'R', 'T', 'A', 'I', 'N'],
     keyLetters: ['A', 'N'],
-    totalWordCount: 20,
+    totalWordCount: 19,
     words: {
       4: ['ANTI', 'AUNT', 'CANT', 'RAIN', 'RANI', 'RANT', 'TARN', 'TUNA'],
       5: ['ANTIC', 'CAIRN', 'INTRA', 'TAINT', 'TAUNT', 'TRAIN'],
       6: ['NUTRIA', 'RATTAN', 'URANIC'],
       7: ['CANTINA', 'CURTAIN'],
-      8: ['CURTAINS']
     },
     hints: {
       4: [
@@ -1764,9 +1763,6 @@ const PUZZLES = [
       7: [
         "Mexican bar or canteen",
         "Window drape; theater drop (pangram!)"
-      ],
-      8: [
-        "Window drapes; theater drops (pangram!)"
       ]
     }
   },
