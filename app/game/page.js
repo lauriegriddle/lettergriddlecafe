@@ -1657,7 +1657,297 @@ const PUZZLES = [
         "Buildings full of books (pangram!)"
       ]
     }
-  }
+  }, // =============================================================================
+// NEW PUZZLES - Append these to the end of the PUZZLES array
+// Each puzzle: 20-31 words, same format as existing puzzles
+// =============================================================================
+
+  // PUZZLE 21: SEMINAR
+  {
+    id: 'seminar-puzzle',
+    subtitle: 'Pull up a stool!',
+    letters: ['S', 'E', 'M', 'I', 'N', 'A', 'R'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 31,
+    words: {
+      4: ['AMEN', 'AREA', 'EARN', 'EARS', 'ERAS', 'MANE', 'MARE', 'MEAN', 'NAME', 'NEAR', 'SANE', 'SEAM', 'SEAR'],
+      5: ['AMINE', 'EARNS', 'MANES', 'MARES', 'MEANS', 'NAMES', 'NEARS', 'SANER'],
+      6: ['AIRMEN', 'ANEMIA', 'INSANE', 'MARINE', 'REMAIN'],
+      7: ['ANEMIAS', 'MARINES', 'REMAINS', 'SEMINAR'],
+      8: ['SEMINARS']
+    },
+    hints: {
+      4: [
+        "So be it; said at the end of a prayer",
+        "Region; surface space",
+        "Make money; deserve",
+        "Hearing organs",
+        "Historical time periods",
+        "Lion's flowing neck hair",
+        "Female horse",
+        "Unkind; or an average",
+        "What you're called",
+        "Close by; not far",
+        "Mentally healthy; rational",
+        "Line where two fabrics are joined",
+        "Burn the surface; scorch"
+      ],
+      5: [
+        "Organic compound containing nitrogen",
+        "Makes money; deserves",
+        "Lions' flowing neck hair",
+        "Female horses",
+        "Methods; averages",
+        "What people are called",
+        "Comes close to",
+        "More mentally sound"
+      ],
+      6: [
+        "Male members of a military flight crew",
+        "Iron-deficiency condition",
+        "Not rational; wild",
+        "Soldier of the sea",
+        "Stay behind; continue to be"
+      ],
+      7: [
+        "Iron-deficiency conditions",
+        "Soldiers of the sea",
+        "Stays behind; continues to be",
+        "Academic lecture or workshop (pangram!)"
+      ],
+      8: [
+        "Academic lectures or workshops (pangram!)"
+      ]
+    }
+  },
+
+  // PUZZLE 22: CURTAIN
+  {
+    id: 'curtain-puzzle',
+    subtitle: 'The show is about to start!',
+    letters: ['C', 'U', 'R', 'T', 'A', 'I', 'N'],
+    keyLetters: ['A', 'N'],
+    totalWordCount: 20,
+    words: {
+      4: ['ANTI', 'AUNT', 'CANT', 'RAIN', 'RANI', 'RANT', 'TARN', 'TUNA'],
+      5: ['ANTIC', 'CAIRN', 'INTRA', 'TAINT', 'TAUNT', 'TRAIN'],
+      6: ['NUTRIA', 'RATTAN', 'URANIC'],
+      7: ['CANTINA', 'CURTAIN'],
+      8: ['CURTAINS']
+    },
+    hints: {
+      4: [
+        "Against; opposed to",
+        "Parent's sister",
+        "Cannot (contraction); tilt to one side",
+        "Water falling from the sky",
+        "Queen or princess in India",
+        "Angry outburst",
+        "Mountain lake",
+        "Sandwich fish; swimmer"
+      ],
+      5: [
+        "Playful or silly behavior",
+        "Rocky mountain peak",
+        "Within; internally (prefix)",
+        "Mark of shame; blemish on reputation",
+        "Challenge; provoke",
+        "Locomotive and its cars"
+      ],
+      6: [
+        "Large South American rodent; wetland creature",
+        "Wicker or cane material for chairs",
+        "Relating to the planet Uranus"
+      ],
+      7: [
+        "Mexican bar or canteen",
+        "Window drape; theater drop (pangram!)"
+      ],
+      8: [
+        "Window drapes; theater drops (pangram!)"
+      ]
+    }
+  },
+
+  // PUZZLE 23: CARAMELS
+  {
+    id: 'caramels-puzzle',
+    subtitle: 'Sweet words ahead!',
+    letters: ['C', 'A', 'R', 'M', 'E', 'L', 'S'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 31,
+    words: {
+      4: ['CARE', 'LACE', 'MARE', 'MEAL', 'RACE', 'REAL', 'REAM', 'SEAL', 'SEAR'],
+      5: ['CARES', 'CLEAR', 'CREAM', 'EARLS', 'LACES', 'LAMER', 'MARES', 'MEALS', 'RACES', 'REALM', 'REALS', 'REAMS', 'SCALE', 'SMEAR'],
+      6: ['CAMELS', 'CLEARS', 'CREAMS', 'REALMS', 'SCREAM', 'SMEARS'],
+      7: ['CARAMEL'],
+      8: ['CARAMELS']
+    },
+    hints: {
+      4: [
+        "Be concerned; look after",
+        "Delicate fabric; shoe tie",
+        "Female horse",
+        "Food eaten at breakfast, lunch, or dinner",
+        "Competition; run fast",
+        "Genuine; actual",
+        "Large quantity of paper; daydream",
+        "Ocean mammal; close tightly",
+        "Burn the surface; scorch"
+      ],
+      5: [
+        "Is concerned; looks after",
+        "Transparent; easy to understand",
+        "Dairy topping; rise to the top",
+        "British noblemen",
+        "Delicate fabrics; shoe ties",
+        "Less impressive; more mediocre",
+        "Female horses",
+        "Foods eaten at mealtimes",
+        "Competitions; runs fast",
+        "Kingdom; domain",
+        "Genuine things; currency",
+        "Large quantities of paper",
+        "Weighing device; climb up",
+        "Smudge; spread grease on"
+      ],
+      6: [
+        "Desert animals with humps",
+        "Makes transparent; removes obstacles",
+        "Dairy toppings; rises to the top",
+        "Kingdoms; domains",
+        "Loud cry; ice cream flavor",
+        "Smudges; spreads grease on"
+      ],
+      7: [
+        "Chewy golden-brown candy (pangram!)"
+      ],
+      8: [
+        "Chewy golden-brown candies (pangram!)"
+      ]
+    }
+  },
+
+  // PUZZLE 24: CHARGERS
+  {
+    id: 'chargers-puzzle',
+    subtitle: 'Full speed ahead!',
+    letters: ['C', 'H', 'A', 'R', 'G', 'E', 'S'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 33,
+    words: {
+      4: ['ACHE', 'ACRE', 'CARE', 'EACH', 'GEAR', 'HARE', 'HEAR', 'RACE', 'SEAR'],
+      5: ['ACHES', 'ACRES', 'CARES', 'CHASE', 'GEARS', 'GRACE', 'HARES', 'HEARS', 'RACES', 'REACH', 'SCARE', 'SHARE', 'SHEAR'],
+      6: ['ARCHES', 'CHARGE', 'CHASER', 'GRACES', 'SCARES', 'SEARCH', 'SHARES'],
+      7: ['CHARGER', 'CRASHES', 'REACHES'],
+      8: ['CHARGERS']
+    },
+    hints: {
+      4: [
+        "Pain; hurt",
+        "Unit of land measurement",
+        "Be concerned; look after",
+        "Every one individually",
+        "Mechanical cog; equipment",
+        "Rabbit-like animal",
+        "Perceive sound",
+        "Competition; run fast",
+        "Burn the surface; scorch"
+      ],
+      5: [
+        "Pains; hurts",
+        "Units of land measurement",
+        "Is concerned; looks after",
+        "Pursue; run after",
+        "Mechanical cogs; equipment",
+        "Elegance; divine favor",
+        "Rabbit-like animals",
+        "Perceives sound",
+        "Competitions; runs fast",
+        "Extend to grab; arrive at",
+        "Frighten; startle",
+        "Divide; portion out",
+        "Cut with shears"
+      ],
+      6: [
+        "Curved doorway shapes",
+        "Fee; rush at; power up a battery",
+        "One who pursues",
+        "Elegance and divine favors",
+        "Frightens; startles",
+        "Look for; hunt",
+        "Divides; portions out"
+      ],
+      7: [
+        "Device that powers up a battery",
+        "Collides violently",
+        "Extends to grab; arrives at"
+      ],
+      8: [
+        "Devices that power up batteries (pangram!)"
+      ]
+    }
+  },
+
+  // PUZZLE 25: PLAYERS
+  {
+    id: 'players-puzzle',
+    subtitle: 'Game on!',
+    letters: ['P', 'L', 'A', 'Y', 'E', 'R', 'S'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 35,
+    words: {
+      4: ['EARL', 'ERAS', 'LEAP', 'LEAS', 'PALE', 'PEAR', 'PLEA', 'REAL', 'REAP', 'SALE', 'SEAL'],
+      5: ['EARLS', 'LAYER', 'LEAPS', 'PALES', 'PEARL', 'PEARS', 'PLEAS', 'REALS', 'RELAY', 'REPAY', 'SALES', 'SEALS', 'SPARE', 'SPEAR'],
+      6: ['LAYERS', 'PEARLS', 'PLAYER', 'RELAYS', 'REPAYS', 'REPLAY', 'SLAYER'],
+      7: ['PLAYERS', 'REPLAYS', 'SLAYERS']
+    },
+    hints: {
+      4: [
+        "British nobleman",
+        "Historical time periods",
+        "Jump; spring forward",
+        "Meadows; grasslands",
+        "Light in color; fence stake",
+        "Fruit related to apples",
+        "Urgent request; legal argument",
+        "Genuine; actual",
+        "Harvest; gather crops",
+        "Discount event at a store",
+        "Ocean mammal; close tightly"
+      ],
+      5: [
+        "British noblemen",
+        "Coating; level or stratum",
+        "Jumps; springs forward",
+        "Light colors; fence stakes",
+        "Gem from an oyster",
+        "Fruits related to apples",
+        "Urgent requests; legal arguments",
+        "Genuine things; currency",
+        "Pass the baton; race team tactic",
+        "Pay back; return a favor",
+        "Discount events at stores",
+        "Ocean mammals; closes tightly",
+        "Extra; not tight",
+        "Weapon; throw a javelin"
+      ],
+      6: [
+        "Coatings; levels or strata",
+        "Gems from oysters",
+        "Someone in a game or performance",
+        "Passes the baton; race tactics",
+        "Pays back; returns favors",
+        "Watch again; do over",
+        "One who kills"
+      ],
+      7: [
+        "People in a game or performance (pangram!)",
+        "Watches again; does over",
+        "Ones who kill"
+      ]
+    }
+  },
 ];
 
 // Get today's puzzle dynamically based on rotation
