@@ -1951,7 +1951,7 @@ const PUZZLES = [
 // Get today's puzzle dynamically based on rotation
 export function getTodaysPuzzle() {
   // ANCHOR DATE: March 8, 2026 at 7 AM = Index 0 (first puzzle)
-  const anchorDate = new Date(2026, 2, 8, 7, 0, 0, 0); // Month is 0-indexed, so 2 = March
+  const anchorDate = new Date(2026, 3, 5, 7, 0, 0, 0); // Month is 0-indexed, so 2 = March
   
   const now = new Date();
   const estTime = new Date(now.toLocaleString('en-US', { timeZone: 'America/New_York' }));
@@ -1972,7 +1972,7 @@ export function getTodaysPuzzle() {
 
 function getYesterdaysPuzzle() {
   // Same anchor date as getTodaysPuzzle
-  const anchorDate = new Date(2026, 2, 8, 7, 0, 0, 0); // Month is 0-indexed, so 2 = March
+  const anchorDate = new Date(2026, 3, 5, 7, 0, 0, 0); // Month is 0-indexed, so 2 = March
   
   const now = new Date();
   const estTime = new Date(now.toLocaleString('en-US', { timeZone: 'America/New_York' }));
