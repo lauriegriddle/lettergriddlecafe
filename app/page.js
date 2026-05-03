@@ -751,6 +751,74 @@ const stories = [
   closingLink: 'https://lettergriddle.com/play',
   closingLinkText: 'Play Letter Griddle 🦄'
 },
+{
+  id: '2017s-so-bright',
+  title: '2017\'s So Bright',
+  subtitle: '☀️ Now Available',
+  date: 'May 2026',
+  locked: false,
+  content: [
+    '"While we are at it, let\'s take a look in the almanac and read about all the fun in 2017," Taylor remarks, bringing the group out of their lull.',
+    '"Without even looking in the book…" Laurel continues, "Avocado toast."',
+    '"I was going to say the year that these sunglasses were a must," Taylor says, adjusting his Ray-Bans in his shirt pocket.',
+    '"The total solar eclipse crossed the entire United States," Mrs. Lindsay remembers.',
+    '"…the first in 99 years to go coast to coast." Mr. Lindsay chimes.',
+    '"In school they told us not to look up during the eclipse," Josie remembers.',
+    '"They also told students to put away their fidget spinners during school hours," Josephine reminds the group.',
+    '"Speaking of school, Educated by Tara Westover is still at the top of my recommended reading," Sarah says. "The public wasn\'t graced with the book until 2018, but an advance copy of the book found its way to me in the autumn of 2017. Remember, Josephine, how we talked about it for weeks before it was even in bookstores?"',
+    '"We had some in-depth conversations about self-transformation and how people remember events differently," Josephine adds.',
+    '"Our book club of two discussed the meaning of truth, memory, and how to preserve both."',
+    '"Maybe that\'s why so many cafe visitors started Instagramming their orders that year, to remember the food exactly as it was presented," Laurel thinks aloud.',
+    '"My iPhone X took lots of pictures that year," Taylor observes.',
+    '"Let\'s also remember reading about Voyager 1 in interstellar space," Mr. Lindsay interjects.',
+    'Mrs. Lindsay adds, "The reporting stated it was the first human-made object to leave our solar system."',
+    '"The images and data…," Mr. Lindsay begins.',
+    '"…were incredible!" Mrs. Lindsay completes her husband\'s sentence.',
+    '"With all of these memorable events, 2017 will be remembered…" Sarah starts.',
+    '"…exactly as it is written in our cafe almanac," Josephine continues.',
+    '"…as the year that avocado toast crumbs were officially added to coffee rings and syrup splatters," Laurel concludes as she closes the almanac.',
+  ],
+  closing: 'Friends, some years are so bright you need shades. Enjoy today\'s puzzle! ☀️',
+  closingLink: 'https://lettergriddle.com/play',
+  closingLinkText: 'Play Letter Griddle ☀️'
+},
+{
+  id: 'alexa-says',
+  title: 'Alexa Says…',
+  subtitle: '🔊 Now Available',
+  date: 'May 2026',
+  locked: false,
+  content: [
+    '"TikTok, Fortnite, or The Highlights Book of Things to Do?" Josie ponders.',
+    '"I\'m voting for…," Josephine responds.',
+    '"2018 for the win!" Taylor interjects.',
+    '"I was going to suggest the screen-free option, but I am sure your answer is correct, Taylor," Josephine says.',
+    '"In the year 2018, avocado continued to dominate but bagels…," Laurel starts.',
+    '"Taylor, you\'re good at this but so are the rest of us," Jennie quickly responds.',
+    'Isaac jumps off of Jennie\'s lap and offers the group "yap" to break the tension.',
+    '"Sorry, Laurel, you were saying," Jennie says.',
+    '"Bagels were on the rise that year…pardon the pun," Laurel finishes her thought and then adds, "actually, oat milk was a mainstream choice from that year on."',
+    '"I\'m sorry, would you like to repeat that?" Alexa broke into the conversation.',
+    '"Thanks, Alexa, 2018 was a big year for the Amazon Echo becoming a household name," Taylor interjects.',
+    '"Would you like me to help you with that?" Alexa asks.',
+    '"I\'ve got it, Alexa. 2018 was the year Educated was officially published. I may or may not have been a little smug about having read an advance copy the previous fall," Sarah says. "But it is just that good."',
+    '"It is and we still share our perspectives about it," Josephine offers.',
+    '"Speaking of perspective, anyone remember James Webb Telescope being in the news that year?" Mr. Lindsay asks.',
+    '"Or the beach vacation we planned but we canceled with the Kilauea volcano in Hawaii and its eruption," Mrs. Lindsay reminds the group.',
+    '"Instead, we had a small fundraiser for the people and animals affected and sent the funds collected to a relief fund," Mr. Lindsay says.',
+    '"I remember the Lending a Paw van in the cafe parking lot, and you both gave dogs baths, nail trimmings, the works. You accepted whatever people felt called to give," Jennie reflects.',
+    '"We were glad to do it," Mrs. Lindsay reflects.',
+    'Isaac pads over to Mrs. Lindsay, as if to say thank you or look for a chin scratch.',
+    '"Still not sure …TikTok, Fortnite, or The Highlights Book of Things to Do," Josie says.',
+    '"Dog whistle!" Taylor says. "Added to the dictionary in 2017 and in 2018 it got a lot of use."',
+    '"In 2018 \'unplug,\' meaning to take a break from technology, was featured in new word updates," Alexa offers.',
+    '"Josie, did you hear that?" Josephine asks.',
+    '"That\'s my answer! Thanks, Alexa!" Josie says.',
+  ],
+  closing: 'Friends, whether you choose TikTok, Fortnite, or The Highlights Book of Things to Do, enjoy today\'s puzzle! 🔊',
+  closingLink: 'https://lettergriddle.com/play',
+  closingLinkText: 'Play Letter Griddle 🔊'
+},
 ];
 
 // Puzzle data - expandable for future puzzles
@@ -1178,6 +1246,48 @@ const puzzles = {
     { pos: 4, letter: 'N' }
   ],
   didYouKnow: 'In 2016, unicorn food emerged as a dominant, highly Instagrammable trend featuring pastel-hued, rainbow-colored, and glitter-topped items.'
+},
+'2017s-so-bright': {
+  id: '2017',
+  title: '2017',
+  category: '2017',
+  words: ['SPIN', 'TOAST', 'FIDGET', 'AVOCADO', 'EDUCATED'],
+  hints: [
+    'What fidget spinners do',
+    'Avocado version became a 2017 cultural flashpoint',
+    'Students were told to put these spinners away in school',
+    'The brunch trend that dominated 2017',
+    'Tara Westover\'s memoir Sarah recommended'
+  ],
+  revealed: [
+    { pos: 1, letter: 'P' },
+    { pos: 2, letter: 'A' },
+    { pos: 3, letter: 'G' },
+    { pos: 3, letter: 'C' },
+    { pos: 4, letter: 'A' }
+  ],
+  didYouKnow: 'Avocado toast was an Instagram-fueled brunch trend that became a cultural flashpoint. It was controversially cited by Australian millionaire Tim Gurner in May 2017 as a reason millennials couldn\'t afford homes.'
+},
+'alexa-says': {
+  id: '2018',
+  title: '2018',
+  category: '2018',
+  words: ['ECHO', 'BAGEL', 'UNPLUG', 'VOLCANO', 'FORTNITE'],
+  hints: [
+    'Amazon\'s smart speaker that became a household name in 2018',
+    'This bread was on the rise — pardon the pun',
+    'What Alexa suggested Josie do with her devices',
+    'The Kilauea eruption in Hawaii canceled the Lindsays\' beach vacation',
+    'One of Josie\'s three choices for 2018 entertainment'
+  ],
+  revealed: [
+    { pos: 1, letter: 'C' },
+    { pos: 2, letter: 'G' },
+    { pos: 3, letter: 'L' },
+    { pos: 3, letter: 'C' },
+    { pos: 4, letter: 'N' }
+  ],
+  didYouKnow: 'In 2018, major dictionaries added hundreds of new words reflecting technology, social trends, and food culture. Key additions included mansplain, glamping, dumpster fire, haptics, and bingeable.'
 },
 };
 
