@@ -1946,6 +1946,277 @@ const PUZZLES = [
       ]
     }
   },
+
+    // PUZZLE 34: TOPPINGS
+  {
+    id: 'toppings-puzzle',
+    subtitle: 'Load it up!',
+    letters: ['T', 'O', 'P', 'I', 'N', 'G', 'S'],
+    keyLetters: ['O', 'I'],
+    totalWordCount: 20,
+    words: {
+      4: ['INTO', 'IONS', 'PION'],
+      5: ['PINTO', 'PITON', 'POINT', 'POSIT'],
+      6: ['OPTING', 'OPTION', 'PINTOS', 'PISTON', 'PITONS', 'POINTS', 'POTION'],
+      7: ['OPTIONS', 'PISTONS', 'POSTING', 'POTIONS', 'TOPPING'],
+      8: ['TOPPINGS']
+    },
+    hints: {
+      4: [
+        "Inside; to go within",
+        "Charged particles; electrolytes",
+        "Elementary particle; subatomic unit"
+      ],
+      5: [
+        "Spotted horse; small wild horse",
+        "Stake driven into the ground",
+        "Score or tally; sharp tip",
+        "Assume; put forward a hypothesis"
+      ],
+      6: [
+        "Choosing; deciding to do something",
+        "Choice; something you can pick",
+        "Spotted horses; small wild horses",
+        "Engine part that moves up and down",
+        "Stakes driven into the ground",
+        "Scores or tallies; sharp tips",
+        "Magic drink; medicinal liquid"
+      ],
+      7: [
+        "Choices; things you can pick",
+        "Engine parts that move up and down",
+        "Placing mail; putting something up",
+        "Magic drinks; medicinal liquids",
+        "Layer on a pizza or ice cream (pangram!)"
+      ],
+      8: [
+        "Layers on a pizza or ice cream (pangram!)"
+      ]
+    }
+  },
+
+  // PUZZLE 35: CARTOONS
+  {
+    id: 'cartoons-puzzle',
+    subtitle: 'Saturday morning vibes!',
+    letters: ['C', 'A', 'R', 'T', 'O', 'N', 'S'],
+    keyLetters: ['A', 'O'],
+    totalWordCount: 32,
+    words: {
+      4: ['COAT', 'ORCA', 'ROAN', 'TACO'],
+      5: ['ACORN', 'ACTOR', 'CANON', 'CANTO', 'COAST', 'COATS', 'ORCAS', 'ROANS', 'SONAR', 'TACOS'],
+      6: ['ACORNS', 'ACTORS', 'CANONS', 'CANTON', 'CANTOR', 'CANTOS', 'CARTON', 'CONTRA', 'CORONA', 'COSTAR'],
+      7: ['CANTONS', 'CANTORS', 'CARTONS', 'CARTOON', 'CONTRAS', 'CORONAS', 'COSTARS'],
+      8: ['CARTOONS']
+    },
+    hints: {
+      4: [
+        "Jacket; to cover with a layer",
+        "Large ocean-dwelling dolphin relative",
+        "Reddish-brown horse color",
+        "Mexican food in a shell"
+      ],
+      5: [
+        "Nut that squirrels love",
+        "Performer on stage or screen",
+        "Church law; a rule or standard",
+        "Section of a poem or song",
+        "Shoreline; to glide without effort",
+        "Jackets; layers of paint",
+        "Large ocean-dwelling dolphin relatives",
+        "Reddish-brown horses",
+        "Sound detection device; echo locator",
+        "Mexican foods in shells"
+      ],
+      6: [
+        "Nuts that squirrels love",
+        "Performers on stage or screen",
+        "Church laws; rules or standards",
+        "District or division of a country",
+        "Choir director; one who sings lead",
+        "Sections of poems or songs",
+        "Cardboard box for shipping",
+        "Against; opposing force",
+        "Crown; halo of light around the sun",
+        "Co-star of a film or show"
+      ],
+      7: [
+        "Districts or divisions of a country",
+        "Choir directors; ones who sing lead",
+        "Cardboard boxes for shipping",
+        "Animated drawing; funny drawing (pangram!)",
+        "Opposing forces",
+        "Crowns; halos around the sun",
+        "Co-stars of films or shows"
+      ],
+      8: [
+        "Animated drawings; funny drawings (pangram!)"
+      ]
+    }
+  },
+
+  // PUZZLE 36: PADDLING
+  {
+    id: 'paddling-puzzle',
+    subtitle: 'Making a splash!',
+    letters: ['P', 'A', 'D', 'L', 'I', 'N', 'G'],
+    keyLetters: ['A', 'I'],
+    totalWordCount: 23,
+    words: {
+      4: ['DIAL', 'GAIN', 'LAIN', 'NAIL', 'PAID', 'PAIL', 'PAIN'],
+      5: ['ALIGN', 'LAPIN', 'NAIAD', 'PLAID', 'PLAIN'],
+      6: ['AIDING', 'AILING', 'INLAID', 'INLAND', 'LADING', 'PALING'],
+      7: ['DIALING', 'LANDING', 'NAILING', 'PADDING'],
+      8: ['PADDLING']
+    },
+    hints: {
+      4: [
+        "Rotate; face of a clock",
+        "Profit; to acquire",
+        "Resting; stretched out flat",
+        "Metal fastener; hammer it in",
+        "Received money for work",
+        "Bucket with a handle",
+        "Ache; suffering"
+      ],
+      5: [
+        "Line up; arrange in a row",
+        "Young rabbit",
+        "Water nymph in Greek mythology",
+        "Tartan pattern; Scottish fabric",
+        "Simple; obvious; flat landscape"
+      ],
+      6: [
+        "Helping; assisting someone",
+        "Feeling unwell; sick",
+        "Set into a surrounding surface",
+        "Not on the coast; away from the sea",
+        "Loading cargo; adding weight",
+        "Growing paler; fence posts"
+      ],
+      7: [
+        "Calling a phone number",
+        "Coming ashore; touching down",
+        "Hammering nails; securing with nails",
+        "Extra cushioning; filling out"
+      ],
+      8: [
+        "Moving a canoe with a paddle (pangram!)"
+      ]
+    }
+  },
+
+  // PUZZLE 37: HYDRATE
+  {
+    id: 'hydrate-puzzle',
+    subtitle: 'Drink up!',
+    letters: ['H', 'Y', 'D', 'R', 'A', 'T', 'E'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 30,
+    words: {
+      4: ['DARE', 'DATE', 'DEAR', 'HARE', 'HATE', 'RATE', 'READ', 'TARE', 'YEAR'],
+      5: ['DARED', 'DATED', 'DATER', 'DEATH', 'EARTH', 'HATED', 'HATER', 'HEARD', 'HEART', 'RATED', 'READY', 'TEARY', 'TRADE', 'TREAD'],
+      6: ['DEARTH', 'EARTHY', 'RATHER', 'THREAD', 'TRADER'],
+      7: ['HYDRATE', 'THREADY'],
+    },
+    hints: {
+      4: [
+        "Challenge someone; be bold",
+        "Calendar day; romantic outing",
+        "Beloved; expensive",
+        "Rabbit-like animal",
+        "Strong dislike; despise",
+        "Speed; evaluate or rank",
+        "Look at written words",
+        "Weed; weight of a container",
+        "365 days; what you celebrate on your birthday"
+      ],
+      5: [
+        "Challenged; was bold",
+        "Had a romantic outing; set a time",
+        "One who sets a time or goes on dates",
+        "End of life; dying",
+        "Soil and rock beneath our feet; the planet",
+        "Strongly disliked; despised",
+        "One who strongly dislikes",
+        "Perceived with the ears; listened to",
+        "Organ that pumps blood; center of emotion",
+        "Evaluated; had a certain speed",
+        "Prepared; set to go",
+        "Full of tears; about to cry",
+        "Exchange; business deal",
+        "Walk heavily; tire pattern"
+      ],
+      6: [
+        "Scarcity; severe lack of something",
+        "Rough and natural; of the earth",
+        "More so; to a greater degree",
+        "Thin cord; follow the story",
+        "One who buys and sells goods"
+      ],
+      7: [
+        "Add water; keep the body moist (pangram!)",
+        "Resembling a loose thread; fraying"
+      ]
+    }
+  },
+
+  // PUZZLE 38: MUNCHIES
+  {
+    id: 'munchies-puzzle',
+    subtitle: 'Snack time!',
+    letters: ['M', 'U', 'N', 'C', 'H', 'I', 'E', 'S'],
+    keyLetters: ['I', 'E'],
+    totalWordCount: 29,
+    words: {
+      4: ['HEMI', 'HIES', 'MICE', 'MIEN', 'MINE', 'NICE', 'SEMI'],
+      5: ['CHIME', 'MIENS', 'MINCE', 'MINES', 'NICHE', 'NIECE', 'SHINE', 'SINCE'],
+      6: ['CHIMES', 'ICEMEN', 'IMMUNE', 'INCHES', 'MINCES', 'NICHES', 'NIECES', 'SHINES'],
+      7: ['CHEMISE', 'CUISINE', 'MUNCHIE'],
+      8: ['CHEMISES', 'CUISINES', 'MUNCHIES']
+    },
+    hints: {
+      4: [
+        "Half; prefix meaning partially",
+        "Hurries; rushes off",
+        "Small rodents; plural of mouse",
+        "Air or manner; outward appearance",
+        "Tunnel dug for minerals; it's all mine!",
+        "Pleasant; kind",
+        "Partial; halfway point"
+      ],
+      5: [
+        "Bell sound; to ring like a bell",
+        "Airs or manners; outward appearances",
+        "Chop finely; walk daintily",
+        "Tunnels dug for minerals",
+        "Specialty area; snug little spot",
+        "Sister's daughter or brother's daughter",
+        "Glow brightly; polish to a sheen",
+        "From the time that; because"
+      ],
+      6: [
+        "Bell sounds; rings like bells",
+        "Men made of ice; hockey players informally",
+        "Protected from disease; not affected by",
+        "Units of measurement; small amounts",
+        "Chops finely; walks daintily",
+        "Specialty areas; snug little spots",
+        "Sisters' or brothers' daughters",
+        "Glows brightly; polishes to a sheen"
+      ],
+      7: [
+        "Light undergarment; sleeveless dress",
+        "Style of cooking; food of a region",
+        "Small snack; late-night craving"
+      ],
+      8: [
+        "Light undergarments; sleeveless dresses",
+        "Styles of cooking; foods of a region",
+        "Late-night snack cravings (pangram!)"
+      ]
+    }
+  },
 ];
 
 // Get today's puzzle dynamically based on rotation
