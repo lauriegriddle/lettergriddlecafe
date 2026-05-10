@@ -2217,6 +2217,368 @@ const PUZZLES = [
       ]
     }
   },
+
+    // PUZZLE 39: CAPITOL
+  {
+    id: 'capitol-puzzle',
+    subtitle: 'Make your voice heard!',
+    letters: ['C', 'A', 'P', 'I', 'T', 'O', 'L'],
+    keyLetters: ['A', 'O'],
+    totalWordCount: 18,
+    words: {
+      4: ['ALTO', 'ATOP', 'COAL', 'COAT', 'COLA', 'IOTA', 'TACO'],
+      5: ['ATOLL', 'COATI', 'COPAL', 'OCTAL', 'PATIO', 'TOTAL'],
+      7: ['CAPITOL', 'OPTICAL', 'TAPIOCA', 'TOPCOAT', 'TOPICAL']
+    },
+    hints: {
+      4: [
+        "High singing voice; musical range",
+        "On top of; above",
+        "Black fuel burned for heat",
+        "Jacket; layer of paint",
+        "Soft drink; ingredient in rum drinks",
+        "Tiny amount; Greek letter",
+        "Mexican food in a crunchy shell"
+      ],
+      5: [
+        "Ring-shaped coral island",
+        "Raccoon-like animal from South America",
+        "Aromatic tree resin used in varnish",
+        "Base eight; relating to the number eight",
+        "Outdoor courtyard or terrace",
+        "Sum of everything; complete amount"
+      ],
+      7: [
+        "Building where lawmakers meet (pangram!)",
+        "Relating to lenses and light",
+        "Starchy pudding ingredient; tropical plant",
+        "Weatherproof outer coat",
+        "Relating to a subject or current events"
+      ]
+    }
+  },
+
+  // PUZZLE 40: EARRINGS
+  {
+    id: 'earrings-puzzle',
+    subtitle: 'Looking fabulous!',
+    letters: ['E', 'A', 'R', 'I', 'N', 'G', 'S'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 41,
+    words: {
+      4: ['AREA', 'EARN', 'EARS', 'ERAS', 'GEAR', 'NEAR', 'SANE'],
+      5: ['ANISE', 'AREAS', 'ARISE', 'EARNS', 'GEARS', 'INANE', 'NEARS', 'RAISE', 'RANGE', 'SANER', 'SNARE'],
+      6: ['ARISES', 'GAINER', 'GARNER', 'INSANE', 'RAISER', 'RAISES', 'RANGER', 'RANGES', 'REGAIN', 'SNARES'],
+      7: ['ARRANGE', 'EARRING', 'ERASING', 'GAINERS', 'GARNERS', 'NEARING', 'RAISERS', 'RANGERS', 'REARING', 'REGAINS', 'SEARING'],
+      8: ['ARRANGES', 'EARRINGS']
+    },
+    hints: {
+      4: [
+        "Region; surface space",
+        "Make money; deserve",
+        "Hearing organs",
+        "Historical time periods",
+        "Mechanical cog; equipment",
+        "Close by; not far",
+        "Mentally sound; rational"
+      ],
+      5: [
+        "Herb used in cooking; licorice-flavored seeds",
+        "Regions; surface spaces",
+        "Get up; come into being",
+        "Makes money; deserves",
+        "Mechanical cogs; equipment",
+        "Silly and pointless; lacking sense",
+        "Comes close to",
+        "Lift up; increase",
+        "Span of distance; mountain chain",
+        "More mentally sound",
+        "Trap for catching animals"
+      ],
+      6: [
+        "Gets up; comes into being",
+        "One who profits or acquires",
+        "Collect and store; gather rewards",
+        "Not rational; wild or chaotic",
+        "One who lifts or increases",
+        "Lifts up; increases",
+        "Park protector; forest guide",
+        "Spans; mountain chains",
+        "Get back; recover",
+        "Traps; catches in a snare"
+      ],
+      7: [
+        "Put in order; organize neatly",
+        "Jewelry worn on the ear (pangram!)",
+        "Removing by rubbing out",
+        "Ones who profit or acquire",
+        "Collects and stores; gathers",
+        "Getting close to",
+        "Ones who lift or increase",
+        "Park protectors; forest guides",
+        "Raising up from behind; bringing up children",
+        "Gets back; recovers",
+        "Burning; extremely hot"
+      ],
+      8: [
+        "Puts in order; organizes neatly",
+        "Jewelry worn on the ears (pangram!)"
+      ]
+    }
+  },
+
+  // PUZZLE 41: CARHOPS
+  {
+    id: 'carhops-puzzle',
+    subtitle: 'Your order is ready!',
+    letters: ['C', 'A', 'R', 'H', 'O', 'P', 'S'],
+    keyLetters: ['A', 'R'],
+    totalWordCount: 35,
+    words: {
+      4: ['ARCH', 'ARCS', 'CARP', 'CHAR', 'CRAP', 'HARP', 'HOAR', 'HORA', 'ORCA', 'PROA', 'RASH', 'SCAR', 'SOAR'],
+      5: ['CARPS', 'CHARS', 'COPRA', 'CRAPS', 'CRASH', 'HARPS', 'HOARS', 'HORAS', 'ORCAS', 'PARCH', 'ROACH', 'SCARP', 'SCARS', 'SCRAP', 'SHARP'],
+      6: ['CARHOP', 'COPRAS', 'PHAROS', 'SCARPS', 'SHARPS'],
+      7: ['CARHOPS'],
+      8: ['APPROACH']
+    },
+    hints: {
+      4: [
+        "Curved structure; doorway shape",
+        "Curved lines; electrical sparks",
+        "Freshwater fish; complain repeatedly",
+        "Burn the surface; blacken with heat",
+        "Waste matter; nonsense",
+        "Stringed instrument played by plucking",
+        "White with age; frost-covered",
+        "Traditional circle dance",
+        "Large ocean dolphin relative",
+        "Outrigger canoe",
+        "Reckless; hasty and careless",
+        "Mark left by a wound",
+        "Glide upward on air currents"
+      ],
+      5: [
+        "Freshwater fish; complains repeatedly",
+        "Burns the surface; blackens with heat",
+        "Dried coconut meat used in cooking",
+        "Waste matter; nonsense (plural)",
+        "Violent collision; sudden loud noise",
+        "Stringed instruments played by plucking",
+        "White with age; frost-covered (plural)",
+        "Traditional circle dances",
+        "Large ocean dolphin relatives",
+        "Dry out; make thirsty",
+        "Cockroach; flat disgusting bug",
+        "Steep rocky cliff face",
+        "Marks left by wounds",
+        "Scraps; bits of leftover material",
+        "Having a keen edge; quick-witted"
+      ],
+      6: [
+        "Drive-in restaurant server (pangram!)",
+        "Dried coconut meat (plural)",
+        "Ancient lighthouse; beacon of light",
+        "Steep rocky cliff faces",
+        "Having keen edges; quick-witted (plural)"
+      ],
+      7: [
+        "Drive-in restaurant servers (pangram!)"
+      ],
+      8: [
+        "Come near; method of doing something"
+      ]
+    }
+  },
+
+    // PUZZLE 42: ASCRIBE
+  {
+    id: 'ascribe-puzzle',
+    subtitle: 'Write it down!',
+    letters: ['A', 'S', 'C', 'R', 'I', 'B', 'E'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 35,
+    words: {
+      4: ['ACES', 'ACRE', 'BARE', 'BASE', 'BEAR', 'CARE', 'CASE', 'RACE', 'SEAR'],
+      5: ['ACRES', 'ARISE', 'BARES', 'BASER', 'BEARS', 'BRACE', 'CABER', 'CARES', 'CASES', 'RACES', 'RAISE', 'SABER', 'SABRE'],
+      6: ['ARISES', 'BRACES', 'CABERS', 'CARIES', 'EASIER', 'RABIES', 'RAISER', 'RAISES', 'SABERS', 'SABRES'],
+      7: ['ASCRIBE', 'RAISERS'],
+      8: ['ASCRIBES']
+    },
+    hints: {
+      4: [
+        "Top cards in a deck; experts",
+        "Unit of land measurement",
+        "Uncovered; naked",
+        "Bottom; foundation",
+        "Large furry animal; endure",
+        "Be concerned; look after",
+        "Container; instance",
+        "Competition; run fast",
+        "Burn the surface; scorch"
+      ],
+      5: [
+        "Units of land measurement",
+        "Get up; come into being",
+        "Uncovers; exposes",
+        "More vile; lower quality",
+        "Large furry animals; endures",
+        "Support device; prepare for impact",
+        "Heavy wooden pole tossed in Scottish games",
+        "Is concerned; looks after",
+        "Containers; instances",
+        "Competitions; runs fast",
+        "Lift up; increase",
+        "Curved sword",
+        "Curved sword (British spelling)"
+      ],
+      6: [
+        "Gets up; comes into being",
+        "Support devices; dental gear",
+        "Heavy wooden poles tossed in Scottish games",
+        "Tooth decay",
+        "Less difficult; more comfortable",
+        "Viral disease spread by animal bites",
+        "One who lifts or increases",
+        "Lifts up; increases",
+        "Curved swords",
+        "Curved swords (British spelling)"
+      ],
+      7: [
+        "Credit or attribute to someone (pangram!)",
+        "Ones who lift or increase"
+      ],
+      8: [
+        "Credits or attributes to someone (pangram!)"
+      ]
+    }
+  },
+
+  // PUZZLE 43: CANOERS
+  {
+    id: 'canoers-puzzle',
+    subtitle: 'Paddle on in!',
+    letters: ['C', 'A', 'N', 'O', 'E', 'R', 'S'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 45,
+    words: {
+      4: ['ACNE', 'ACRE', 'AEON', 'CANE', 'CARE', 'CASE', 'EARN', 'EARS', 'ERAS', 'NEAR', 'RACE', 'SANE'],
+      5: ['ACNES', 'ACRES', 'AEONS', 'AROSE', 'CANER', 'CANES', 'CANOE', 'CARES', 'CASES', 'CRANE', 'EARNS', 'NEARS', 'OCEAN', 'RACES', 'SANER', 'SNARE'],
+      6: ['CANERS', 'CANOER', 'CANOES', 'COARSE', 'CORNEA', 'CRANES', 'OCEANS', 'REASON', 'SEASON', 'SENORA', 'SNARES'],
+      7: ['CANOERS', 'COARSEN', 'CORNEAS', 'REASONS', 'SENORAS'],
+      8: ['COARSENS']
+    },
+    hints: {
+      4: [
+        "Skin condition with pimples",
+        "Unit of land measurement",
+        "Long period of time; an age",
+        "Walking stick; sugar plant",
+        "Be concerned; look after",
+        "Container; instance",
+        "Make money; deserve",
+        "Hearing organs",
+        "Historical time periods",
+        "Close by; not far",
+        "Competition; run fast",
+        "Mentally sound; rational"
+      ],
+      5: [
+        "Skin conditions with pimples",
+        "Units of land measurement",
+        "Long periods of time; ages",
+        "Got up; came into being",
+        "One who makes walking sticks or canes",
+        "Walking sticks; sugar plants",
+        "Narrow boat paddled with a single oar",
+        "Is concerned; looks after",
+        "Containers; instances",
+        "Large bird with a long neck",
+        "Makes money; deserves",
+        "Comes close to",
+        "Large body of salt water",
+        "Competitions; runs fast",
+        "More mentally sound",
+        "Trap for catching animals"
+      ],
+      6: [
+        "Ones who make walking sticks",
+        "One who paddles a narrow boat",
+        "Narrow boats paddled with a single oar",
+        "Rough; lacking refinement",
+        "Transparent part of the eye",
+        "Large birds with long necks",
+        "Large bodies of salt water",
+        "Logic; explanation; think through",
+        "Time of year; add flavor to food",
+        "Spanish title for a woman; ma'am",
+        "Traps for catching animals"
+      ],
+      7: [
+        "People who paddle narrow boats (pangram!)",
+        "Make rougher; less refined",
+        "Transparent parts of the eye",
+        "Logics; explanations",
+        "Spanish titles for women"
+      ],
+      8: [
+        "Makes rougher; less refined"
+      ]
+    }
+  },
+
+  // PUZZLE 44: BUDGIES
+  {
+    id: 'budgies-puzzle',
+    subtitle: 'Pretty bird!',
+    letters: ['B', 'U', 'D', 'G', 'I', 'E', 'S'],
+    keyLetters: ['I', 'E'],
+    totalWordCount: 26,
+    words: {
+      4: ['BIDE', 'DIES', 'GIBE', 'SIDE'],
+      5: ['BEIGE', 'BIDES', 'GIBED', 'GIBES', 'GUIDE', 'GUISE', 'SIDES', 'SIEGE'],
+      6: ['BEIGES', 'BESIDE', 'BUDGIE', 'GUIDED', 'GUIDES', 'IBISES', 'SIEGES'],
+      7: ['BESIDES', 'BESIEGE', 'BUDGIES', 'SUBSIDE'],
+      8: ['BESIEGES', 'DISGUISE', 'SUBSIDED']
+    },
+    hints: {
+      4: [
+        "Wait; stay in a place",
+        "Passes away; stops living",
+        "Mock or taunt someone",
+        "Edge; one part of an argument"
+      ],
+      5: [
+        "Sandy tan color; pale yellowish brown",
+        "Waits; stays in a place",
+        "Mocked or taunted",
+        "Mocks or taunts",
+        "Lead the way; travel companion",
+        "False appearance; disguise",
+        "Edges; parts of arguments",
+        "Military blockade; prolonged attack"
+      ],
+      6: [
+        "Sandy tan colors",
+        "Next to; in addition to",
+        "Small colorful pet parakeet (pangram!)",
+        "Led the way; escorted",
+        "Leads the way; travel companions",
+        "Sacred birds of ancient Egypt; wading birds",
+        "Military blockades; prolonged attacks"
+      ],
+      7: [
+        "In addition to; moreover",
+        "Surround and blockade",
+        "Small colorful pet parakeets (pangram!)",
+        "Gradually fade or settle down"
+      ],
+      8: [
+        "Surrounds and blockades",
+        "Costume or disguise; conceal identity",
+        "Gradually faded or settled down"
+      ]
+    }
+  },
 ];
 
 // Get today's puzzle dynamically based on rotation
