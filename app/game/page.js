@@ -2579,6 +2579,279 @@ const PUZZLES = [
       ]
     }
   },
+    // PUZZLE 45: ALPINES
+  {
+    id: 'alpines-puzzle',
+    subtitle: 'High altitude attitude!',
+    letters: ['A', 'L', 'P', 'I', 'N', 'E', 'S'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 45,
+    words: {
+      4: ['ALES', 'APES', 'LANE', 'LEAN', 'LEAP', 'NAPE', 'NEAP', 'PALE', 'PANE', 'PEAL'],
+      5: ['AISLE', 'ALIEN', 'ALINE', 'ANISE', 'LANES', 'LAPSE', 'LEANS', 'LEAPS', 'LIANE', 'NAPES', 'NEAPS', 'PALES', 'PANEL', 'PANES', 'PEALS', 'PENAL', 'PLANE', 'SEPIA'],
+      6: ['AISLES', 'ALIENS', 'ALINES', 'ALPINE', 'LAPINE', 'LIANES', 'PANELS', 'PINEAL', 'PLANES', 'SALINE'],
+      7: ['ALIASES', 'ALPINES', 'LAPINES', 'PINEALS', 'SALINES', 'SPANIEL'],
+      8: ['SPANIELS']
+    },
+    hints: {
+      4: [
+        "Types of beer",
+        "Primates; imitates someone",
+        "Narrow road; bowling path",
+        "Thin; tilt to one side",
+        "Jump; spring forward",
+        "Back of the neck",
+        "Low tide; barely adequate",
+        "Light in color; fence stake",
+        "Sheet of window glass",
+        "Ring out like bells"
+      ],
+      5: [
+        "Walkway between seats",
+        "Being from another world; foreign",
+        "Line up; arrange in a row",
+        "Herb with licorice-flavored seeds",
+        "Narrow roads; bowling paths",
+        "Slip; temporary failure",
+        "Tilts to one side",
+        "Jumps; springs forward",
+        "Tropical climbing plant; vine",
+        "Backs of necks",
+        "Low tides; barely adequate",
+        "Light colors; fence stakes",
+        "Flat section of wall; group of judges",
+        "Sheets of window glass",
+        "Rings out like bells",
+        "Subject to punishment; relating to penalties",
+        "Flat surface; aircraft",
+        "Reddish-brown pigment; cuttlefish ink"
+      ],
+      6: [
+        "Walkways between seats",
+        "Beings from another world; foreigners",
+        "Lines up; arranges in a row",
+        "Relating to high mountain regions (pangram!)",
+        "Relating to rabbits",
+        "Tropical climbing plants; vines",
+        "Flat sections of wall; groups of judges",
+        "Relating to the pineal gland in the brain",
+        "Flat surfaces; aircraft",
+        "Containing salt; saltwater solution"
+      ],
+      7: [
+        "False names used to hide identity",
+        "High mountain plants or regions (pangram!)",
+        "Things relating to rabbits",
+        "Pineal glands in the brain",
+        "Saltwater solutions",
+        "Long-eared hunting dog breed"
+      ],
+      8: [
+        "Long-eared hunting dog breeds"
+      ]
+    }
+  },
+
+  // PUZZLE 46: CALDRON
+  {
+    id: 'caldron-puzzle',
+    subtitle: 'Something is brewing!',
+    letters: ['C', 'A', 'L', 'D', 'R', 'O', 'N'],
+    keyLetters: ['A', 'O'],
+    totalWordCount: 20,
+    words: {
+      4: ['COAL', 'COLA', 'DONA', 'LOAD', 'LOAN', 'ORAL', 'ORCA', 'ROAD', 'ROAN'],
+      5: ['ACORN', 'ADORN', 'CANON', 'CAROL', 'CORAL', 'NARCO'],
+      6: ['CANDOR', 'CLONAL', 'LARDON'],
+      7: ['CALDRON', 'CORONAL']
+    },
+    hints: {
+      4: [
+        "Black fuel burned for heat",
+        "Soft drink; cocktail ingredient",
+        "A Spanish noblewoman; a lady",
+        "Cargo; fill up with weight",
+        "Borrow money from a bank; lend",
+        "Spoken; by mouth",
+        "Large ocean dolphin relative",
+        "Path for vehicles; journey ahead",
+        "Reddish-brown horse color"
+      ],
+      5: [
+        "Nut that squirrels love",
+        "Decorate; add ornament to",
+        "Church rule; a law or standard",
+        "Christmas song; a woman's name",
+        "Reef-building sea creature; pink color",
+        "Drug trafficker; informal law enforcement term"
+      ],
+      6: [
+        "Honesty; openness and frankness",
+        "Relating to a genetic clone",
+        "Strip of fat used to flavor cooking"
+      ],
+      7: [
+        "Large pot used for boiling (pangram!)",
+        "Relating to a crown; the sun's outer atmosphere"
+      ]
+    }
+  },
+
+  // PUZZLE 47: CALMEST
+  {
+    id: 'calmest-puzzle',
+    subtitle: 'Take a deep breath!',
+    letters: ['C', 'A', 'L', 'M', 'E', 'S', 'T'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 51,
+    words: {
+      4: ['ACES', 'ACME', 'ALES', 'CAME', 'CASE', 'LACE', 'LAME', 'MACE', 'MALE', 'MEAL', 'MEAT', 'MESA', 'SALE', 'SAME', 'SEAM', 'SEAT', 'TALE', 'TAME', 'TEAL', 'TEAM'],
+      5: ['ACMES', 'CAMEL', 'CASTE', 'CLEAT', 'ECLAT', 'LACES', 'LAMES', 'MACES', 'MALES', 'MEALS', 'MEATS', 'METAL', 'SALES', 'SCALE', 'SEAMS', 'SEATS', 'TALES', 'TAMES', 'TEALS', 'TEAMS'],
+      6: ['CAMELS', 'CAMLET', 'CASTES', 'CASTLE', 'CLEATS', 'ECLATS', 'METALS', 'SCALES'],
+      7: ['CALMEST', 'CAMLETS', 'CASTLES']
+    },
+    hints: {
+      4: [
+        "Top cards in a deck; experts",
+        "Peak; highest point of achievement",
+        "Types of beer",
+        "Arrived; showed up",
+        "Container; instance",
+        "Delicate fabric; shoe tie",
+        "Dull; not exciting; hobble",
+        "Heavy club; spice used in cooking",
+        "Adult man; masculine",
+        "Food eaten at lunchtime",
+        "Animal flesh used for food",
+        "Flat-topped hill; table in Spanish",
+        "Discount event at a store",
+        "Identical; not different",
+        "Line where two fabrics are joined",
+        "Chair; place to sit",
+        "Story; narrative",
+        "Not wild; gentle and docile",
+        "Blue-green color; type of duck",
+        "Group working together"
+      ],
+      5: [
+        "Peaks; highest points of achievement",
+        "Desert animal with humps",
+        "Social class; rigid social group",
+        "Metal fitting on a shoe; holds a rope",
+        "Brilliant display; dazzling success",
+        "Delicate fabrics; shoe ties",
+        "Dull things; hobbles",
+        "Heavy clubs; spices used in cooking",
+        "Adult men; masculine ones",
+        "Foods eaten at lunchtime",
+        "Animal flesh foods",
+        "Hard substance; a type of element",
+        "Discount events at stores",
+        "Weighing device; climb up",
+        "Lines where fabrics are joined",
+        "Chairs; places to sit",
+        "Stories; narratives",
+        "Makes gentle and docile",
+        "Blue-green colors; types of duck",
+        "Groups working together"
+      ],
+      6: [
+        "Desert animals with humps",
+        "Fabric made from camel or goat hair",
+        "Social classes; rigid social groups",
+        "Fortified building; chess piece",
+        "Metal fittings on shoes",
+        "Brilliant displays; dazzling successes",
+        "Hard substances; types of elements",
+        "Weighing devices; climbs up"
+      ],
+      7: [
+        "Most peaceful and serene (pangram!)",
+        "Fabrics made from camel or goat hair",
+        "Fortified buildings; chess pieces"
+      ]
+    }
+  },
+
+  // PUZZLE 48: RAMBLES
+  {
+    id: 'rambles-puzzle',
+    subtitle: 'Wander on in!',
+    letters: ['R', 'A', 'M', 'B', 'L', 'E', 'S'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 54,
+    words: {
+      4: ['ABLE', 'BALE', 'BARE', 'BASE', 'BEAM', 'BEAR', 'EARL', 'EARS', 'ERAS', 'LAME', 'MALE', 'MARE', 'MEAL', 'SALE', 'SEAM'],
+      5: ['AMBLE', 'BALER', 'BALES', 'BARES', 'BEAMS', 'BEARS', 'BLAME', 'BLARE', 'BLEAR', 'BREAM', 'EARLS', 'LABEL', 'LAMES', 'MALES', 'MARES', 'MEALS', 'REALM', 'SABLE', 'SALES', 'SEAMS', 'SMEAR'],
+      6: ['AMBLER', 'AMBLES', 'BALERS', 'BLAMES', 'BLARES', 'BLEARS', 'BREAMS', 'LABELS', 'LAMBER', 'MARBLE', 'RAMBLE', 'REALMS', 'SABLES', 'SMEARS'],
+      7: ['AMBLERS', 'LAMBERS', 'MARBLES', 'RAMBLES']
+    },
+    hints: {
+      4: [
+        "Capable; having skill",
+        "Bundle of hay",
+        "Uncovered; naked",
+        "Bottom; foundation",
+        "Ray of light; support girder",
+        "Large furry animal; endure",
+        "British nobleman",
+        "Hearing organs",
+        "Historical time periods",
+        "Dull; not exciting; hobble",
+        "Adult man; masculine",
+        "Female horse",
+        "Food eaten at lunchtime",
+        "Discount event at a store",
+        "Line where two fabrics are joined"
+      ],
+      5: [
+        "Walk at a leisurely pace",
+        "One who bales hay",
+        "Bundles of hay",
+        "Uncovers; exposes",
+        "Rays of light; support girders",
+        "Large furry animals; endures",
+        "Put responsibility on someone",
+        "Loud noise; honk",
+        "Dim or blurry; make dim",
+        "Freshwater fish with a deep body",
+        "British noblemen",
+        "Tag attached to a product",
+        "Dull things; hobbles",
+        "Adult men; masculine ones",
+        "Female horses",
+        "Foods eaten at lunchtime",
+        "Kingdom; domain",
+        "Dark fur; dark color",
+        "Discount events at stores",
+        "Lines where fabrics are joined",
+        "Smudge; spread grease on"
+      ],
+      6: [
+        "One who walks at a leisurely pace",
+        "Walks at a leisurely pace",
+        "Ones who bale hay",
+        "Puts responsibility on others",
+        "Loud noises; honks",
+        "Dim or blurry things; makes dim",
+        "Freshwater fish with deep bodies",
+        "Tags attached to products",
+        "One who tends ewes during lambing",
+        "Stone used in sculpture; pattern game",
+        "Walk without a clear destination",
+        "Kingdoms; domains",
+        "Dark furs; dark colors",
+        "Smudges; spreads grease on"
+      ],
+      7: [
+        "Ones who walk at a leisurely pace",
+        "Ones who tend ewes during lambing",
+        "Stones used in sculpture; pattern games",
+        "Walks without a clear destination (pangram!)"
+      ]
+    }
+  },
+
 ];
 
 // Get today's puzzle dynamically based on rotation
