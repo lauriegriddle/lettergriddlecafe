@@ -2333,10 +2333,10 @@ const PUZZLES = [
     subtitle: 'Your order is ready!',
     letters: ['C', 'A', 'R', 'H', 'O', 'P', 'S'],
     keyLetters: ['A', 'R'],
-    totalWordCount: 33,
+    totalWordCount: 32,
     words: {
       4: ['ARCH', 'ARCS', 'CARP', 'CHAR', 'HARP', 'HOAR', 'HORA', 'ORCA', 'PROA', 'RASH', 'SCAR', 'SOAR'],
-      5: ['CARPS', 'CHARS', 'COPRA', 'CRASH', 'HARPS', 'HOARS', 'HORAS', 'ORCAS', 'PARCH', 'ROACH', 'SCARP', 'SCARS', 'SCRAP', 'SHARP'],
+      5: ['CARPS', 'CHARS', 'COPRA', 'CRASH', 'HARPS', 'HOARS', 'HORAS', 'ORCAS', 'PARCH', 'SCARP', 'SCARS', 'SCRAP', 'SHARP'],
       6: ['CARHOP', 'COPRAS', 'PHAROS', 'SCARPS', 'SHARPS'],
       7: ['CARHOPS'],
       8: ['APPROACH']
@@ -2366,7 +2366,6 @@ const PUZZLES = [
         "Traditional circle dances",
         "Large ocean dolphin relatives",
         "Dry out; make thirsty",
-        "Cockroach; flat disgusting bug",
         "Steep rocky cliff face",
         "Marks left by wounds",
         "Scraps; bits of leftover material",
