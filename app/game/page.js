@@ -2849,6 +2849,215 @@ const PUZZLES = [
     }
   },
 
+    // PUZZLE 49: CABINET
+  {
+    id: 'cabinet-puzzle',
+    subtitle: 'Called to order!',
+    letters: ['C', 'A', 'B', 'I', 'N', 'E', 'T'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 20,
+    words: {
+      4: ['ABET', 'ACNE', 'ANTE', 'BANE', 'BEAN', 'BEAT', 'BETA', 'CANE', 'CATE', 'NEAT'],
+      5: ['ABATE', 'EATEN', 'INANE'],
+      6: ['BATTEN', 'BEATEN', 'BEANIE', 'INNATE'],
+      7: ['ANCIENT', 'CABINET', 'CANTEEN']
+    },
+    hints: {
+      4: [
+        "Encourage or assist wrongdoing",
+        "Skin condition with pimples",
+        "Poker stake; put money in the pot",
+        "Curse; something causing misery",
+        "Legume; coffee variety",
+        "Strike; pulsing rhythm",
+        "Greek letter; test version of software",
+        "Walking stick; sugar plant",
+        "Delicacy; choice food item",
+        "Tidy and organized"
+      ],
+      5: [
+        "Reduce; lessen in intensity",
+        "Consumed as food",
+        "Silly and pointless; lacking sense"
+      ],
+      6: [
+        "Strip of wood used to secure something",
+        "Defeated; struck repeatedly",
+        "Knitted hat; small bean-shaped hat",
+        "Natural; inborn from birth"
+      ],
+      7: [
+        "Very old; from long ago",
+        "Group of senior government advisors (pangram!)",
+        "Soldier's refreshment tent; drinks dispenser"
+      ]
+    }
+  },
+
+  // PUZZLE 50: AMBIENT
+  {
+    id: 'ambient-puzzle',
+    subtitle: 'Feel the atmosphere!',
+    letters: ['A', 'M', 'B', 'I', 'E', 'N', 'T'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 26,
+    words: {
+      4: ['ABET', 'ANTE', 'BANE', 'BATE', 'BEAN', 'BEAT', 'BETA', 'MANE', 'MATE', 'MEAN', 'MEAT', 'NAME', 'NEAT', 'TAME', 'TEAM'],
+      5: ['ABATE', 'ABEAM', 'AMENT', 'ANIME', 'MEANT'],
+      6: ['BATMEN', 'BEATEN', 'INMATE', 'INNATE'],
+      7: ['AMBIENT'],
+      9: ['INANIMATE']
+    },
+    hints: {
+      4: [
+        "Encourage or assist wrongdoing",
+        "Poker stake; put money in the pot",
+        "Curse; something causing misery",
+        "Restrain; reduce in force",
+        "Legume; coffee variety",
+        "Strike; pulsing rhythm",
+        "Greek letter; test version of software",
+        "Lion's flowing neck hair",
+        "Friend; chess ending",
+        "Unkind; or an average",
+        "Animal flesh used for food",
+        "What you're called",
+        "Tidy and organized",
+        "Not wild; gentle and docile",
+        "Group working together"
+      ],
+      5: [
+        "Reduce; lessen in intensity",
+        "Directly in front of a ship",
+        "Flowering catkin cluster on a tree",
+        "Japanese animation style",
+        "Had in mind; intended to say"
+      ],
+      6: [
+        "Officers' personal servants; caped crusaders",
+        "Defeated; struck repeatedly",
+        "Prisoner; one confined to a facility",
+        "Natural; inborn from birth"
+      ],
+      7: [
+        "Relating to the surrounding atmosphere (pangram!)"
+      ],
+      9: [
+        "Without life; not living or moving"
+      ]
+    }
+  },
+
+  // PUZZLE 51: CALIBER
+  {
+    id: 'caliber-puzzle',
+    subtitle: 'High standards only!',
+    letters: ['C', 'A', 'L', 'I', 'B', 'E', 'R'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 21,
+    words: {
+      4: ['ABLE', 'ACRE', 'BALE', 'BARE', 'BEAR', 'CARE', 'EARL', 'LACE', 'RACE', 'REAL'],
+      5: ['ABLER', 'BALER', 'BLARE', 'BLEAR', 'BRACE', 'CABER', 'CLEAR', 'LACER'],
+      6: ['ECLAIR'],
+      7: ['CALIBER', 'CALIBRE']
+    },
+    hints: {
+      4: [
+        "Capable; having skill",
+        "Unit of land measurement",
+        "Bundle of hay",
+        "Uncovered; naked",
+        "Large furry animal; endure",
+        "Be concerned; look after",
+        "British nobleman",
+        "Delicate fabric; shoe tie",
+        "Competition; run fast",
+        "Genuine; actual"
+      ],
+      5: [
+        "More capable; more skilled",
+        "One who bales hay",
+        "Loud noise; honk loudly",
+        "Dim or blurry; make less clear",
+        "Support device; prepare for impact",
+        "Heavy wooden pole tossed in Scottish games",
+        "Transparent; easy to understand",
+        "One who laces shoes or corsets"
+      ],
+      6: [
+        "French pastry filled with cream"
+      ],
+      7: [
+        "Quality or standard of something (pangram!)",
+        "Quality or standard of something — British spelling (pangram!)"
+      ]
+    }
+  },
+
+  // PUZZLE 52: BANGLES
+  {
+    id: 'bangles-puzzle',
+    subtitle: 'Shake it up!',
+    letters: ['B', 'A', 'N', 'G', 'L', 'E', 'S'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 39,
+    words: {
+      4: ['ABLE', 'AGES', 'ALES', 'BALE', 'BANE', 'BASE', 'BEAN', 'GALE', 'LANE', 'LEAN', 'SAGE', 'SALE', 'SANE'],
+      5: ['ANGEL', 'ANGLE', 'BALES', 'BANES', 'BEANS', 'BLASE', 'GABLE', 'GALES', 'GLEAN', 'LABEL', 'LANES', 'LEANS', 'SABLE', 'SALES'],
+      6: ['ANGELS', 'ANGLES', 'BANGLE', 'BEAGLE', 'ENABLE', 'GABLES', 'GLEANS', 'LABELS', 'SABLES'],
+      7: ['BANGLES', 'BEAGLES', 'ENABLES']
+    },
+    hints: {
+      4: [
+        "Capable; having skill",
+        "Time periods; grows older",
+        "Types of beer",
+        "Bundle of hay",
+        "Curse; something causing misery",
+        "Bottom; foundation",
+        "Legume; coffee variety",
+        "Strong wind; a sale of goods",
+        "Narrow road; bowling path",
+        "Thin; tilt to one side",
+        "Wise herb; a wise person",
+        "Discount event at a store",
+        "Mentally sound; rational"
+      ],
+      5: [
+        "Heavenly being with wings",
+        "Geometric shape; point of view",
+        "Bundles of hay",
+        "Curses; causes of misery",
+        "Legumes; coffee varieties",
+        "Bored and unimpressed; world-weary",
+        "Triangular roof support; wall section",
+        "Strong winds; sales of goods",
+        "Gather bit by bit; collect information",
+        "Tag attached to a product",
+        "Narrow roads; bowling paths",
+        "Tilts to one side",
+        "Dark fur; dark color",
+        "Discount events at stores"
+      ],
+      6: [
+        "Heavenly beings with wings",
+        "Geometric shapes; points of view",
+        "Decorative bracelet worn on the wrist (pangram!)",
+        "Long-eared hunting dog breed",
+        "Make possible; allow to happen",
+        "Triangular roof supports; wall sections",
+        "Gathers bit by bit; collects information",
+        "Tags attached to products",
+        "Dark furs; dark colors"
+      ],
+      7: [
+        "Decorative bracelets worn on the wrist (pangram!)",
+        "Long-eared hunting dog breeds",
+        "Makes possible; allows to happen"
+      ]
+    }
+  },
+
 ];
 
 // Get today's puzzle dynamically based on rotation
