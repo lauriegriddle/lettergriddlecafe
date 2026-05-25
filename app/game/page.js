@@ -3259,6 +3259,216 @@ const PUZZLES = [
       ]
     }
   },
+    // PUZZLE 57: CONTAINS
+  {
+    id: 'contains-puzzle',
+    subtitle: 'What\'s inside counts!',
+    letters: ['C', 'O', 'N', 'T', 'A', 'I', 'S'],
+    keyLetters: ['A', 'O'],
+    totalWordCount: 29,
+    words: {
+      4: ['COAT', 'IOTA', 'OAST', 'OATS', 'TACO'],
+      5: ['CANON', 'CANTO', 'COATS', 'IOTAS', 'TACOS'],
+      6: ['ACTION', 'ANOINT', 'ATONIC', 'CANONS', 'CANTOS', 'CASINO', 'CATION', 'NATION'],
+      7: ['ACTIONS', 'ANOINTS', 'CASINOS', 'CATIONS', 'CONTAIN', 'NATIONS', 'STATION'],
+      8: ['CONTAINS', 'SANCTION', 'STATIONS'],
+      9: ['SANCTIONS']
+    },
+    hints: {
+      4: [
+        "Jacket; layer of paint",
+        "Tiny amount; Greek letter",
+        "A kiln for drying hops or malt",
+        "Rolled oats for breakfast",
+        "Mexican food in a crunchy shell"
+      ],
+      5: [
+        "Church law; a rule or standard",
+        "Section of a poem or song",
+        "Jackets; layers of paint",
+        "Tiny amounts; Greek letters",
+        "Mexican foods in crunchy shells"
+      ],
+      6: [
+        "Something done; a deed",
+        "Consecrate with oil; dedicate formally",
+        "Lacking muscle tone or stress",
+        "Church laws; rules or standards",
+        "Sections of poems or songs",
+        "Place for gambling and entertainment",
+        "Positively charged ion",
+        "A country or state; citizenry"
+      ],
+      7: [
+        "Deeds; things done",
+        "Consecrates with oil; dedicates formally",
+        "Places for gambling and entertainment",
+        "Positively charged ions",
+        "Hold within; keep inside",
+        "Countries or states; citizenries",
+        "Place where trains stop; a position"
+      ],
+      8: [
+        "Holds within; keeps inside (pangram!)",
+        "Official permission or penalty",
+        "Places where trains stop; positions"
+      ],
+      9: [
+        "Official permissions or penalties"
+      ]
+    }
+  },
+
+  // PUZZLE 58: SHARPEN
+  {
+    id: 'sharpen-puzzle',
+    subtitle: 'Stay on point!',
+    letters: ['S', 'H', 'A', 'R', 'P', 'E', 'N'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 49,
+    words: {
+      4: ['EARN', 'EARS', 'ERAS', 'HARE', 'HEAP', 'HEAR', 'NAPE', 'NEAR', 'PANE', 'PARE', 'RAPE', 'REAP', 'SANE', 'SEAR'],
+      5: ['ASHEN', 'EARNS', 'HARES', 'HEAPS', 'HEARS', 'NAPES', 'NEARS', 'PANES', 'PAREN', 'PARES', 'PARSE', 'PEARS', 'PHASE', 'RAPES', 'REAPS', 'SANER', 'SHAPE', 'SHARE', 'SHEAR', 'SNARE', 'SPARE'],
+      6: ['PARENS', 'PARSES', 'PHASES', 'PHRASE', 'SHAPES', 'SHARES', 'SHEARS', 'SNARES', 'SPARES'],
+      7: ['HARNESS', 'NAPPERS', 'PHRASES', 'SHARPEN'],
+      8: ['SHARPENS']
+    },
+    hints: {
+      4: [
+        "Make money; deserve",
+        "Hearing organs",
+        "Historical time periods",
+        "Rabbit-like animal",
+        "Pile of something; mound",
+        "Perceive sound",
+        "Back of the neck",
+        "Close by; not far",
+        "Sheet of window glass",
+        "Peel or trim with a knife",
+        "Forced sexual assault",
+        "Harvest crops",
+        "Mentally sound; rational",
+        "Burn the surface; scorch"
+      ],
+      5: [
+        "Pale gray; pale from shock",
+        "Makes money; deserves",
+        "Rabbit-like animals",
+        "Piles of things; mounds",
+        "Perceives sound",
+        "Backs of necks",
+        "Comes close to",
+        "Sheets of window glass",
+        "Short for parenthesis",
+        "Peels or trims with a knife",
+        "Analyze grammatically",
+        "Fruits related to apples",
+        "Stage or period of something",
+        "Forced sexual assaults",
+        "Harvests crops",
+        "More mentally sound",
+        "Mold or contour",
+        "Divide; portion out",
+        "Cut with shears",
+        "Trap for catching animals",
+        "Extra; not tight"
+      ],
+      6: [
+        "Short forms for parentheses",
+        "Analyzes grammatically",
+        "Stages or periods of something",
+        "Group of words expressing an idea",
+        "Molds or contours",
+        "Divides; portions out",
+        "Cuts with shears",
+        "Traps for catching animals",
+        "Extras; not tight ones"
+      ],
+      7: [
+        "Restraints; straps holding something in",
+        "People who nap frequently; hair stylists",
+        "Groups of words expressing ideas",
+        "Make keener or more acute (pangram!)"
+      ],
+      8: [
+        "Makes keener or more acute (pangram!)"
+      ]
+    }
+  },
+
+  // PUZZLE 59: THERMOS
+  {
+    id: 'thermos-puzzle',
+    subtitle: 'Keeping it warm!',
+    letters: ['T', 'H', 'E', 'R', 'M', 'O', 'S'],
+    keyLetters: ['E', 'O'],
+    totalWordCount: 46,
+    words: {
+      4: ['HERO', 'HOER', 'HOME', 'HOSE', 'MORE', 'ROSE', 'ROTE', 'SOME', 'SORE', 'TOME', 'TORE'],
+      5: ['EMOTE', 'ETHOS', 'HEROS', 'HOMES', 'HORSE', 'METRO', 'MORES', 'MOTES', 'OTHER', 'ROTES', 'SHORE', 'SHOTE', 'SMOTE', 'STORE', 'THOSE', 'THROE', 'TOMES'],
+      6: ['EMOTES', 'HORSES', 'METEOR', 'METROS', 'MOTHER', 'OTHERS', 'REMOTE', 'SHORES', 'STORES', 'THROES'],
+      7: ['METEORS', 'MOTHERS', 'REMOTES', 'SMOTHER', 'THEOREM', 'THERMOS'],
+      8: ['SMOTHERS', 'THEOREMS']
+    },
+    hints: {
+      4: [
+        "Brave or admired person",
+        "One who hoes the garden",
+        "Where you live; cozy place",
+        "Flexible tube for water",
+        "A greater amount; in addition",
+        "A flower; came back up",
+        "Learned by repetition; a plant",
+        "A certain amount; rather",
+        "Painful and aching",
+        "A large book; heavy volume",
+        "Ripped apart; past tense of tear"
+      ],
+      5: [
+        "Express emotion dramatically",
+        "The spirit or character of a culture",
+        "Brave or admired people",
+        "Cozy places; residences",
+        "Large four-legged riding animal",
+        "Urban subway or transit system",
+        "Greater amounts; additional things",
+        "Small specks of dust or material",
+        "Different from this one; additional",
+        "Learned by repetition; plants",
+        "Rocky coastline; beach",
+        "A young pig",
+        "Struck with force; extinguished",
+        "Shop; keep in a warehouse",
+        "The ones over there; at that time",
+        "A pang of pain or grief",
+        "Large books; heavy volumes"
+      ],
+      6: [
+        "Expresses emotion dramatically",
+        "Large four-legged riding animals",
+        "Space rock that burns in atmosphere",
+        "Urban subway or transit systems",
+        "Female parent; to fuss over",
+        "Different ones; additional ones",
+        "Far away; operated from a distance",
+        "Rocky coastlines; beaches",
+        "Shops; keeps in warehouses",
+        "Pangs of pain or grief"
+      ],
+      7: [
+        "Space rocks that burn in atmosphere",
+        "Female parents; ones who fuss over",
+        "Far away things; remote controls",
+        "Suppress or suffocate completely",
+        "Mathematical proposition to be proved",
+        "Insulated flask that keeps drinks hot (pangram!)"
+      ],
+      8: [
+        "Suppresses or suffocates completely",
+        "Mathematical propositions to be proved"
+      ]
+    }
+  },
 ];
 
 // Get today's puzzle dynamically based on rotation
