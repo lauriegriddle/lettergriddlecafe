@@ -3399,7 +3399,7 @@ const PUZZLES = [
   // PUZZLE 59: THERMOS
   {
     id: 'thermos-puzzle',
-    subtitle: 'Keeping it warm!',
+    subtitle: 'Keeping it warm or cold!',
     letters: ['T', 'H', 'E', 'R', 'M', 'O', 'S'],
     keyLetters: ['E', 'O'],
     totalWordCount: 46,
