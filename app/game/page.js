@@ -3057,7 +3057,208 @@ const PUZZLES = [
       ]
     }
   },
+  // PUZZLE 53: PELICAN
+  {
+    id: 'pelican-puzzle',
+    subtitle: 'Dive right in!',
+    letters: ['P', 'E', 'L', 'I', 'C', 'A', 'N'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 28,
+    words: {
+      4: ['ACNE', 'CANE', 'CAPE', 'LACE', 'LANE', 'LEAN', 'LEAP', 'NAPE', 'NEAP', 'PACE', 'PALE', 'PANE', 'PEAL'],
+      5: ['ALIEN', 'ALINE', 'LANCE', 'LIANE', 'PANEL', 'PENAL', 'PLACE', 'PLANE'],
+      6: ['APIECE', 'CANAPE', 'LAPINE', 'PINEAL'],
+      7: ['CAPELIN', 'PELICAN'],
+      8: ['PINNACLE']
+    },
+    hints: {
+      4: [
+        "Skin condition with pimples",
+        "Walking stick; sugar plant",
+        "Sleeveless cloak; coastal headland",
+        "Delicate fabric; shoe tie",
+        "Narrow road; bowling path",
+        "Thin; tilt to one side",
+        "Jump; spring forward",
+        "Back of the neck",
+        "Low tide; barely adequate",
+        "Speed of movement; a single step",
+        "Light in color; fence stake",
+        "Sheet of window glass",
+        "Ring out like bells"
+      ],
+      5: [
+        "Being from another world; foreign",
+        "Line up; arrange in a row",
+        "Long spear; pierce to drain",
+        "Tropical climbing plant; vine",
+        "Flat section of wall; group of judges",
+        "Subject to punishment; relating to penalties",
+        "Location; position in a race",
+        "Flat surface; aircraft"
+      ],
+      6: [
+        "Each one; per item",
+        "Small appetizer on bread or cracker",
+        "Relating to rabbits",
+        "Relating to the pineal gland in the brain"
+      ],
+      7: [
+        "Small fish used in cooking",
+        "Large seabird with a pouch bill (pangram!)"
+      ],
+      8: [
+        "High pointed peak; crowning achievement"
+      ]
+    }
+  },
 
+  // PUZZLE 54: AIRPORTS
+  {
+    id: 'airports-puzzle',
+    subtitle: 'Departures and arrivals!',
+    letters: ['A', 'I', 'R', 'P', 'O', 'T', 'S'],
+    keyLetters: ['A', 'I'],
+    totalWordCount: 28,
+    words: {
+      4: ['ARIA', 'PAIR', 'PITA', 'SARI'],
+      5: ['ARIAS', 'ATRIA', 'ATRIP', 'PAIRS', 'PATIO', 'PITAS', 'RAITA', 'RATIO', 'SARIS', 'TAPIR', 'TIARA'],
+      6: ['ARISTO', 'PATIOS', 'RAITAS', 'RAPIST', 'RATIOS', 'TAPIRS', 'TIARAS'],
+      7: ['AIRPORT', 'ARISTOS', 'PATRIOT', 'RAPISTS'],
+      8: ['AIRPORTS', 'PATRIOTS']
+    },
+    hints: {
+      4: [
+        "Operatic solo; a melody",
+        "Two of a kind; matched set",
+        "Flatbread used in wraps",
+        "Wrapped garment worn in South Asia"
+      ],
+      5: [
+        "Operatic solos; melodies",
+        "Inner chambers; heart chambers",
+        "Nautical term meaning anchor is clear",
+        "Two of a kind; matched sets",
+        "Outdoor courtyard or terrace",
+        "Flatbreads used in wraps",
+        "Indian yogurt and cucumber condiment",
+        "Proportion; relationship between two amounts",
+        "Wrapped garments worn in South Asia",
+        "Large horse-like animal with a long snout",
+        "Jeweled crown worn by royalty"
+      ],
+      6: [
+        "Informal term for an aristocrat",
+        "Outdoor courtyards or terraces",
+        "Indian yogurt and cucumber condiments",
+        "One who uses force or threat",
+        "Proportions; relationships between amounts",
+        "Large horse-like animals with long snouts",
+        "Jeweled crowns worn by royalty"
+      ],
+      7: [
+        "Hub for planes to land and take off (pangram!)",
+        "Informal terms for aristocrats",
+        "One who loves and defends their country",
+        "Ones who use force or threat"
+      ],
+      8: [
+        "Hubs for planes to land and take off (pangram!)",
+        "People who love and defend their country"
+      ]
+    }
+  },
+
+  // PUZZLE 55: FOUNDER
+  {
+    id: 'founder-puzzle',
+    subtitle: 'Build something great!',
+    letters: ['F', 'O', 'U', 'N', 'D', 'E', 'R'],
+    keyLetters: ['E', 'R'],
+    totalWordCount: 18,
+    words: {
+      4: ['EURO', 'FERN', 'FORE', 'RODE', 'RUDE', 'RUNE'],
+      5: ['DONER', 'DRONE', 'UNDER'],
+      6: ['ENDURE', 'ENURED', 'FONDER', 'FUNDER', 'FUNNER', 'REDONE', 'REFUND'],
+      7: ['FOUNDER', 'REFOUND']
+    },
+    hints: {
+      4: [
+        "European currency",
+        "Feathery plant found in woodlands",
+        "Front part; golf warning shout",
+        "Traveled on horseback; past tense of ride",
+        "Impolite; rough in texture",
+        "Magical symbol; letter in old alphabet"
+      ],
+      5: [
+        "Rotating meat kebab; one who donates",
+        "Pilotless aircraft; a low hum",
+        "Below; less than"
+      ],
+      6: [
+        "Withstand; put up with hardship",
+        "Became hardened or accustomed",
+        "More affectionate; more partial to",
+        "One who provides financial backing",
+        "More enjoyable; more entertaining",
+        "Done over again; renovated",
+        "Return money paid; reimbursement"
+      ],
+      7: [
+        "One who establishes something new (pangram!)",
+        "Establish again; set up once more"
+      ]
+    }
+  },
+
+  // PUZZLE 56: ARCHIVE
+  {
+    id: 'archive-puzzle',
+    subtitle: 'History in the making!',
+    letters: ['A', 'R', 'C', 'H', 'I', 'V', 'E'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 20,
+    words: {
+      4: ['ACER', 'ACHE', 'ACRE', 'AVER', 'CARE', 'CAVE', 'EACH', 'HARE', 'HAVE', 'HEAR', 'RACE', 'RAVE'],
+      5: ['AERIE', 'REACH'],
+      6: ['CAHIER', 'RACIER'],
+      7: ['ACHIEVE', 'ARCHIVE'],
+      8: ['ACHIEVER', 'ARCHIVER']
+    },
+    hints: {
+      4: [
+        "Maple tree genus",
+        "Pain; dull persistent hurt",
+        "Unit of land measurement",
+        "To assert confidently as fact",
+        "Be concerned; look after",
+        "Underground hollow; a bat's home",
+        "Every one individually",
+        "Rabbit-like animal",
+        "Possess; own something",
+        "Perceive sound",
+        "Competition; run fast",
+        "Wild enthusiasm; speak passionately"
+      ],
+      5: [
+        "Eagle's nest high on a cliff",
+        "Extend to grab; arrive at a destination"
+      ],
+      6: [
+        "Notebook or exercise book",
+        "More risqué or daring"
+      ],
+      7: [
+        "Reach a goal through effort",
+        "Collection of historical records (pangram!)"
+      ],
+      8: [
+        "One who reaches goals through effort",
+        "One who manages historical records (pangram!)"
+      ]
+    }
+  },
 ];
 
 // Get today's puzzle dynamically based on rotation
