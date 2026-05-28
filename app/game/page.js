@@ -3119,12 +3119,12 @@ const PUZZLES = [
     subtitle: 'Departures and arrivals!',
     letters: ['A', 'I', 'R', 'P', 'O', 'T', 'S'],
     keyLetters: ['A', 'I'],
-    totalWordCount: 28,
+    totalWordCount: 26,
     words: {
       4: ['ARIA', 'PAIR', 'PITA', 'SARI'],
       5: ['ARIAS', 'ATRIA', 'ATRIP', 'PAIRS', 'PATIO', 'PITAS', 'RAITA', 'RATIO', 'SARIS', 'TAPIR', 'TIARA'],
-      6: ['ARISTO', 'PATIOS', 'RAITAS', 'RAPIST', 'RATIOS', 'TAPIRS', 'TIARAS'],
-      7: ['AIRPORT', 'ARISTOS', 'PATRIOT', 'RAPISTS'],
+      6: ['ARISTO', 'PATIOS', 'RAITAS', 'RATIOS', 'TAPIRS', 'TIARAS'],
+      7: ['AIRPORT', 'ARISTOS', 'PATRIOT'],
       8: ['AIRPORTS', 'PATRIOTS']
     },
     hints: {
@@ -3151,7 +3151,6 @@ const PUZZLES = [
         "Informal term for an aristocrat",
         "Outdoor courtyards or terraces",
         "Indian yogurt and cucumber condiments",
-        "One who uses force or threat",
         "Proportions; relationships between amounts",
         "Large horse-like animals with long snouts",
         "Jeweled crowns worn by royalty"
@@ -3160,7 +3159,6 @@ const PUZZLES = [
         "Hub for planes to land and take off (pangram!)",
         "Informal terms for aristocrats",
         "One who loves and defends their country",
-        "Ones who use force or threat"
       ],
       8: [
         "Hubs for planes to land and take off (pangram!)",
