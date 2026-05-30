@@ -171,7 +171,7 @@ const stories = [
       'Mrs. Lindsay concurred with her husband\'s adoration and Laurel\'s answer but promised to do her own research.',
       'The other players were having their sidebar conversations that lasted anywhere from "a sip of coffee to I need another cinnamon bun."'
     ],
-    closing: 'Friends, return next Sunday at 7pm for another serving.'
+    closing: 'Friends, please join us again for another serving.'
   },
   {
     id: 'coffee-coffee-coffee',
@@ -451,7 +451,7 @@ const stories = [
     '"Espresso Lane gets my vote!" Taylor hopped in, then added, "I\'ve got to do a tech check on those six new games. Tomorrow will be the perfect opportunity with the crew to play Espresso Lane games."',
     '"New games, new brunch treat, new meeting day and time!" Laurel recapped the conversation, reviewing the exciting offerings found at Letter Griddle Cafe.'
   ],
-  closing: 'Friends, whether you\'re enjoying brunch, a coffee break, or chilling with the original Letter Griddle, savor the moment with the coffee-inspired Espresso Lane games. Find Glow, Sizzle, Top That!, Lattes, Order Up!, and To-Go at lettergriddle.com.',
+  closing: 'Friends, whether you\'re enjoying brunch, a coffee break, or chilling with the original Letter Griddle, savor the moment with the any of our pancake-inspired games at lettergriddle.com.',
   closingLink: 'https://lettergriddle.com',
   closingLinkText: 'Play Espresso Lane ☕'
 },
@@ -637,7 +637,7 @@ const stories = [
     '"Now, who remembers 2025?" asks Taylor, dramatically removing his sunglasses.',
     '"Taking orders for pistachio lattes!" Laurel offers.',
   ],
-  closing: 'Friends, join us here to read the next entry in the cafe almanac, "2025: Retro Vibes and Pistachio Lattes."',
+  closing: 'Friends, join us here to read about another entry in the cafe almanac.',
   closingLink: 'https://lettergriddlecafe.com',
   closingLinkText: 'Return to the Cafe 📔'
 },
