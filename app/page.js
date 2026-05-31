@@ -819,6 +819,90 @@ const stories = [
   closingLink: 'https://lettergriddle.com/play',
   closingLinkText: 'Play Letter Griddle 🔊'
 },
+{
+  id: '2019-emoji-style',
+  title: '2019 Emoji Style',
+  subtitle: '🧇 Now Available',
+  date: 'May 2026',
+  locked: false,
+  content: [
+    '"Crew, let\'s check it out!" Laurel grabs the group\'s attention.',
+    '"The emojis have dropped!" Sarah adds.',
+    '"Seems like World Emoji Day was yesterday," Mr. Lindsay says, "but it was back in July and here we are in September!"',
+    '"Does everyone have their device?" Mrs. Lindsay asks.',
+    '"iOS13 update in 3…2…1," Taylor signals the group for the big moment.',
+    'An excited silence fills Letter Griddle…',
+    '…until the room is engulfed by fingers flying, screens flashing, thumbs scrolling.',
+    'The group text is activated and alerts the crew with 🧇 from Laurel.',
+    '"Pancakes have met their match," Laurel says with satisfaction.',
+    '🧇 🥯 Jennie texts the group.',
+    '"Laurel, I always enjoy your waffles. And you know, I also enjoy a good bagel with cream cheese," Jennie says encouragingly.',
+    '"Oh, em, gee. Mom did you see it?" Josie asks.',
+    '"🦥," Josephine replies in the group text.',
+    '"The animals this year are…" Mr. Lindsay starts.',
+    '"🦮 🐕‍🦺," Mrs. Lindsay embellishes the thought in the group chat.',
+    '"♥️ 🦮 🐕‍🦺," Jennie responds. "Service dog and guide dog. I can\'t."',
+    '"There\'s a story with this, but it\'s too soon," Taylor says then sends 🦨 to the group text, and voice softening, reiterates, "too soon."',
+    '"I have a drawing of a flamingo in my sketchbook!" Josie shares with the group. "I can\'t wait to draw a guide dog, a service dog, a skunk and a sloth!"',
+    '"As long as we are on the subject," Josephine says before texting 🦩 to the group. "I remember decorating my first apartment using just that shade of pink. We called it \'Early Flamingo.\'"',
+    '🇫🇷 appears in the chat.',
+    '"Like my flag drawing that decorated the cafe in 2015!" Josie proudly reminds the group.',
+    '"Laurel, did you see the…," Sarah starts.',
+    '🧈 appears in the group text.',
+    'Laurel texts 🧇 🧈 then tells the group, "For the record. It\'s true. It\'s never too late for breakfast."',
+  ],
+  closing: 'Friends, it\'s never too late for breakfast or a puzzle. 🧇 Enjoy today\'s Letter Griddle!',
+  closingLink: 'https://lettergriddle.com/play',
+  closingLinkText: 'Play Letter Griddle 🧇'
+},
+{
+  id: 'letter-griddle-zooms',
+  title: 'Letter Griddle Zooms',
+  subtitle: '💻 Now Available',
+  date: 'May 2026',
+  locked: false,
+  content: [
+    '"Are we muted?" Mrs. Lindsay asks.',
+    '"Can you hear us?" Mr. Lindsay adds.',
+    '"We hear you!" Laurel confirms.',
+    '"Laurel, this is giving me flashbacks to 2020," Jennie says as she cuddles Isaac.',
+    '"The crew that locks down together, still has trivia nights together," Sarah says.',
+    '"Good news. Technically we aren\'t locking down, just doing a bit of a tech check," Laurel tells the crew.',
+    '"With all the recent system updates, we\'ve got to report any problems stat," Taylor informs the group.',
+    '"I really don\'t mind staying current with the technology," Mrs. Lindsay says.',
+    '"Staying brushed up on our skills keeps us sharp," Mr. Lindsay adds.',
+    '"None of us ever even heard of Zoom before 2020," Josephine admits.',
+    '"I never knew I could serve the community without even opening the cafe doors," Laurel shares.',
+    '"Isaac sure loved the extra time together although he missed his crew as much as I missed bringing him to the cafe," Jennie says as she cuddles Isaac even more closely.',
+    '"People really tuned into their pets during that time," Mrs. Lindsay reflects.',
+    '"Dog adoptions were at an all-time high. The shelter pets found forever homes," Mr. Lindsay remembers.',
+    '"Fur-ever home," Jennie corrects, followed by two yaps from Sir Isaac.',
+    '"The Lending a Paw van was as busy as it ever was," Laurel adds.',
+    '"We missed seeing Isaac," Mr. Lindsay starts.',
+    '"And of course all of our humans," Mrs. Lindsay adds.',
+    '"But we did enjoy closely following the story of the SpaceX Crew Dragon," Mr. Lindsay remembers.',
+    '"We watched every second on television," Mrs. Lindsay chimes.',
+    '"Three missions launched to Mars in the summer of 2020, from the US, China, and the UAE," Mr. Lindsay adds.',
+    '"That accounts for all of the instant coffee trends that year," Laurel suggests.',
+    '"To keep busy at home we tried making Dalgona coffee, banana bread, pancake cereal, you name it, any comfort food," Josephine shares.',
+    '"Modern Comfort Food by Ina Garten was my go-to cookbook. Dare I say my go-to book during that time?" Sarah ponders. "Of course, I usually had leftovers."',
+    '"You even brought us some mac and cheese when I was at Letter Griddle working on the tech station and Laurel was filling to-go orders," Taylor remembers.',
+    '"I know it was a strange, difficult time. It was great seeing the crew on Zoom," Laurel says.',
+    'Taylor adds, "I was glad to be supporting with the technology in any way I could. Also that year Animal Crossing: New Horizons launched. It reminded me that a peaceful place can exist. Not unlike….waiting for it."',
+    '"Letter Griddle!" the crew responds.',
+    '"Great job, crew!" Taylor encourages.',
+    '"That concludes our tech check and our bit of nostalgia!" Laurel announces.',
+    '"We will see everyone for trivia," Mr. Lindsay reminds the group.',
+    '"Sunday, as usual," Mrs. Lindsay completes the thought.',
+    '"I\'ll bring my homemade macaroni and cheese," Sarah offers.',
+    '"I\'ll bring Isaac!" Jennie says.',
+    '"Yap! Yap!" Isaac concurs.',
+    'Your meeting has ended.',
+  ],
+  closing: 'Friends, whether you\'re on Zoom or in person, find a way to enjoy a puzzle. ☕',
+  closingLink: 'https://lettergriddle.com/play',
+  closingLinkText: 'Play Letter Griddle ☕'
+},
 ];
 
 // Puzzle data - expandable for future puzzles
@@ -1288,6 +1372,48 @@ const puzzles = {
     { pos: 4, letter: 'N' }
   ],
   didYouKnow: 'In 2018, major dictionaries added hundreds of new words reflecting technology, social trends, and food culture. Key additions included mansplain, glamping, dumpster fire, haptics, and bingeable.'
+},
+'2019-emoji-style': {
+  id: '2019',
+  title: '2019',
+  category: '2019',
+  words: ['SLOTH', 'SKUNK', 'WAFFLE', 'SERVICE', 'FLAMINGO'],
+  hints: [
+    'Josephine\'s 🦥 reaction to the new emoji drop',
+    'Taylor\'s too-soon emoji with a story behind it 🦨',
+    'Laurel\'s breakfast emoji that met its match 🧇',
+    'One of the dog emojis that made Jennie say "I can\'t" 🐕‍🦺',
+    'The pink emoji Josie can\'t wait to draw 🦩'
+  ],
+  revealed: [
+    { pos: 1, letter: 'L' },
+    { pos: 2, letter: 'U' },
+    { pos: 3, letter: 'F' },
+    { pos: 3, letter: 'V' },
+    { pos: 4, letter: 'I' }
+  ],
+  didYouKnow: 'A waffle emoji was added in 2019, prompting debates on whether it was "too late" for breakfast. 🧇 The 2019 release also included a sloth and a flamingo, leading to jokes about setting up a digital zoo.'
+},
+'letter-griddle-zooms': {
+  id: '2020',
+  title: '2020',
+  category: '2020',
+  words: ['ZOOM', 'SPACE', 'BANANA', 'DALGONA', 'COOKBOOK'],
+  hints: [
+    'The platform that gave the crew trivia nights during lockdown',
+    'SpaceX Crew Dragon and three Mars missions launched from here',
+    'The comfort food bread everyone was baking at home',
+    'The whipped instant coffee trend of 2020',
+    'Ina Garten\'s Modern Comfort Food was Sarah\'s go-to this'
+  ],
+  revealed: [
+    { pos: 1, letter: 'O' },
+    { pos: 2, letter: 'A' },
+    { pos: 3, letter: 'A' },
+    { pos: 3, letter: 'G' },
+    { pos: 4, letter: 'B' }
+  ],
+  didYouKnow: 'Ina Garten developed Modern Comfort Food to provide stress-reducing recipes timed for the 2020 election, intending to offer familiar, soul-satisfying dishes like Chicken Pot Pie Soup. She has never eaten boxed macaroni and cheese, believing it is just as fast to make from scratch.'
 },
 };
 
