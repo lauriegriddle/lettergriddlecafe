@@ -3382,7 +3382,7 @@ const PUZZLES = [
       ],
       7: [
         "Restraints; straps holding something in",
-        "People who nap frequently; hair stylists",
+        "People who nap frequently",
         "Groups of words expressing ideas",
         "Make keener or more acute (pangram!)"
       ],
