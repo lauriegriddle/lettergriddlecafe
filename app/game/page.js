@@ -3323,10 +3323,10 @@ const PUZZLES = [
     subtitle: 'Stay on point!',
     letters: ['S', 'H', 'A', 'R', 'P', 'E', 'N'],
     keyLetters: ['A', 'E'],
-    totalWordCount: 49,
+    totalWordCount: 47,
     words: {
-      4: ['EARN', 'EARS', 'ERAS', 'HARE', 'HEAP', 'HEAR', 'NAPE', 'NEAR', 'PANE', 'PARE', 'RAPE', 'REAP', 'SANE', 'SEAR'],
-      5: ['ASHEN', 'EARNS', 'HARES', 'HEAPS', 'HEARS', 'NAPES', 'NEARS', 'PANES', 'PAREN', 'PARES', 'PARSE', 'PEARS', 'PHASE', 'RAPES', 'REAPS', 'SANER', 'SHAPE', 'SHARE', 'SHEAR', 'SNARE', 'SPARE'],
+      4: ['EARN', 'EARS', 'ERAS', 'HARE', 'HEAP', 'HEAR', 'NAPE', 'NEAR', 'PANE', 'PARE', 'REAP', 'SANE', 'SEAR'],
+      5: ['ASHEN', 'EARNS', 'HARES', 'HEAPS', 'HEARS', 'NAPES', 'NEARS', 'PANES', 'PAREN', 'PARES', 'PARSE', 'PEARS', 'PHASE', 'REAPS', 'SANER', 'SHAPE', 'SHARE', 'SHEAR', 'SNARE', 'SPARE'],
       6: ['PARENS', 'PARSES', 'PHASES', 'PHRASE', 'SHAPES', 'SHARES', 'SHEARS', 'SNARES', 'SPARES'],
       7: ['HARNESS', 'NAPPERS', 'PHRASES', 'SHARPEN'],
       8: ['SHARPENS']
