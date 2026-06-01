@@ -3343,7 +3343,6 @@ const PUZZLES = [
         "Close by; not far",
         "Sheet of window glass",
         "Peel or trim with a knife",
-        "Forced sexual assault",
         "Harvest crops",
         "Mentally sound; rational",
         "Burn the surface; scorch"
@@ -3362,7 +3361,6 @@ const PUZZLES = [
         "Analyze grammatically",
         "Fruits related to apples",
         "Stage or period of something",
-        "Forced sexual assaults",
         "Harvests crops",
         "More mentally sound",
         "Mold or contour",
