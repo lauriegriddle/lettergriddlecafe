@@ -903,6 +903,37 @@ const stories = [
   closingLink: 'https://lettergriddle.com/play',
   closingLinkText: 'Play Letter Griddle ☕'
 },
+{
+  id: '2021-we-were-back',
+  title: '2021 We Were Back',
+  subtitle: '☕ Now Available',
+  date: 'June 2026',
+  locked: false,
+  content: [
+    '"That\'s it. Letter Griddle\'s QR code menu is just as solid as it was in 2021," Taylor tells Laurel.',
+    '"The year of QR codes, patio dining, and reuniting," Laurel remembers.',
+    '"That first Sunday back for the crew, it was like no other time," Taylor admits. "I love the technology but there\'s a limit that it reached and then, I missed the crew and the cafe."',
+    '"I was thinking the same thing. And you know the Lindsays, Josephine, Josie, Sarah, Jennie, even Isaac, not being here on Sundays, it was hard," Laurel says, voice softening.',
+    '"The Ted Lasso viewing party was just the motivation needed….along with pancakes of course…to bring the crew and all of the regulars back together."',
+    '"Did someone say \'back together?\'" Mr. Lindsay booms entering the cafe.',
+    '"Laurel, the menu QR code is back!" Mrs. Lindsay informs. "Even better than it was in 2021 because this time we are here, in the cafe!"',
+    '"You are on it, Mrs. Lindsay!" Laurel says.',
+    '"Speaking of 2021, the James Webb Space Telescope launched on Christmas Day in 2021," Mr. Lindsay reflects. "After years of delays, it finally went up."',
+    '"Mr. Lindsay was beside himself up until that very moment on Christmas Day that year," Mrs. Lindsay shares.',
+    '"We remember," Laurel and Taylor chime in unison.',
+    '"And the word \'vax\' was Oxford\'s word of the year for 2021," Sarah interjects as she enters the cafe dining room.',
+    'Sarah continues, "And the Facebook outage in October 2021 took down…"',
+    '"Facebook," Laurel interjects.',
+    '"Instagram," Mrs. Lindsay adds.',
+    '"And WhatsApp for six hours," Taylor remembers. "I know exactly where I was during that outage."',
+    '"Speaking of knowing where I am, has anyone seen Isaac?" Jennie can be heard over the cafe\'s trivia PA system.',
+    '"Yap, yap!"',
+    'The crew looks at Isaac in the cafe dining room enjoying….',
+  ],
+  closing: 'Friends, savor today\'s puzzle as you ponder what you imagine that chihuahua Isaac is enjoying. 🐾',
+  closingLink: 'https://lettergriddle.com/play',
+  closingLinkText: 'Play Letter Griddle ☕'
+},
 ];
 
 // Puzzle data - expandable for future puzzles
@@ -1414,6 +1445,27 @@ const puzzles = {
     { pos: 4, letter: 'B' }
   ],
   didYouKnow: 'Ina Garten developed Modern Comfort Food to provide stress-reducing recipes timed for the 2020 election, intending to offer familiar, soul-satisfying dishes like Chicken Pot Pie Soup. She has never eaten boxed macaroni and cheese, believing it is just as fast to make from scratch.'
+},
+'2021-we-were-back': {
+  id: '2021',
+  title: '2021',
+  category: '2021',
+  words: ['MENU', 'LASSO', 'OUTAGE', 'PANCAKE', 'TOGETHER'],
+  hints: [
+    'The QR code version of this got a 2021 upgrade',
+    'The Ted _____ viewing party brought the crew back together',
+    'This took down Facebook, Instagram, and WhatsApp for six hours',
+    'Cafe favorite that Isaac is enjoying in the cafe dining room 🐾',
+    'The feeling of the crew\'s first Sunday back at the cafe'
+  ],
+  revealed: [
+    { pos: 1, letter: 'E' },
+    { pos: 2, letter: 'S' },
+    { pos: 3, letter: 'A' },
+    { pos: 3, letter: 'C' },
+    { pos: 4, letter: 'T' }
+  ],
+  didYouKnow: '2021 was the year of al fresco dining. People wanted to be outside together again and cafe patios became the most coveted seats in town.'
 },
 };
 
