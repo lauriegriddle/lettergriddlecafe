@@ -1019,6 +1019,29 @@ const stories = [
   closingLink: 'https://lettergriddle.com/play',
   closingLinkText: 'Play Letter Griddle 🍒'
 },
+{
+  id: 'blending-the-froth',
+  title: 'Blending the Froth',
+  subtitle: '🍒 Now Available',
+  date: 'June 2026',
+  locked: false,
+  content: [
+    '"Fresh lemon, check. The kitchen has the ingredients for the froth in stock!" Laurel says.',
+    '"Here\'s the Waring, shined and ready for blending," Mr. Lindsay proudly booms entering the cafe.',
+    '"We are glad to help out in any way we can for the fourth, froth, and …," Mrs. Lindsay says.',
+    '"Fur!" Jennie exclaims as Isaac pads his way to the Lindsays.',
+    '"All the ingredients are ready. Now, for the blending," Laurel announces.',
+    '"Yap! Yap!" Isaac concurs.',
+    'Blending Instructions',
+    'Step 1 — Dissolve Honey: Blend the milk, vanilla, and honey on low for 10 seconds.',
+    'Step 2 — Add Fruits: Drop in the frozen cherries, frozen red grapes, orange juice, and fresh lemon juice.',
+    'Step 3 — Emulsify Skins: Blend on high speed for 45 seconds to fully break down the grape skins.',
+    'Step 4 — Froth with Ice: Add the ice cubes and blend on high until thick, smooth, and a patriotic shade of pink!',
+  ],
+  closing: 'Friends, we think this is perfect for any Independence Day, Froth on the Fourth, or anywhere you celebrate independence. 🍒🇺🇸',
+  closingLink: 'https://lettergriddle.com/play',
+  closingLinkText: 'Play Letter Griddle 🍒'
+},
 ];
 
 // Puzzle data - expandable for future puzzles
@@ -1593,6 +1616,27 @@ const puzzles = {
     { pos: 4, letter: 'C' }
   ],
   didYouKnow: 'The 1976 United States Bicentennial on the Fourth of July was a massive, nationwide celebration marking the 200th anniversary of the Declaration of Independence. It was a golden era of red, white, and blue nostalgia, featuring Tall Ships, time capsules, and blockbuster historical spectacles.'
+},
+'blending-the-froth': {
+  id: 'froth',
+  title: 'Froth',
+  category: 'Froth',
+  words: ['PINK', 'JUICE', 'FRUITY', 'VANILLA', 'SMOOTHIE'],
+  hints: [
+    'The patriotic shade the Independence Froth blends to',
+    'Orange and fresh lemon versions go into the blender',
+    'The flavor profile of frozen cherries and red grapes',
+    'Extract added in Step 1 with milk and honey',
+    'What the Independence Froth becomes after blending with ice'
+  ],
+  revealed: [
+    { pos: 1, letter: 'I' },
+    { pos: 2, letter: 'I' },
+    { pos: 3, letter: 'I' },
+    { pos: 3, letter: 'I' },
+    { pos: 4, letter: 'T' }
+  ],
+  didYouKnow: 'Refreshing summer smoothies are the ultimate seasonal treat to beat the heat, but they are also packed with surprising science and history. They actually originated in the 1930s as "health milkshakes," and their velvety texture became a global phenomenon with the invention of the Waring Blender in 1937.'
 },
 };
 
