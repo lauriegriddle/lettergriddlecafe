@@ -991,6 +991,34 @@ const stories = [
   closingLink: 'https://lettergriddle.com/play',
   closingLinkText: 'Play Letter Griddle 🧺'
 },
+{
+  id: 'froth-on-the-fourth',
+  title: 'Froth on the Fourth',
+  subtitle: '🍒 Now Available',
+  date: 'June 2026',
+  locked: false,
+  content: [
+    'The handwritten recipe is almost readable after all the years following its introduction to Letter Griddle Cafe circa 1976.',
+    '"Looks more like 1776," Laurel muses as she redirects her attention to peruse the kitchen ensuring the ingredients are close at hand.',
+    'Cafe lore says that a cafe regular who managed the Griddle Falls Cherry Orchard sold fresh pickings every season to Gigi. Gigi along with the regulars of the era collaborated to use the crop of cherries to create a special summer refresher for the bicentennial celebration.',
+    'Gigi wrote the recipe in her cafe \'shorthand.\' Or so Laurel gathers from its neatly formed letters.',
+    'The faded ink used to write the recipe leaves Laurel to fill in the blanks with her own thoughts of the tasty beverage known as Independence Froth.',
+    'Froth. Forth. Fourth. 4th. As in the Fourth of July.',
+    'Due to the nature of the degradation of the ink used, \'Fourth\' now looks like a capital letter \'F\' followed by something lost to the ages and a discernible \'th\'. With no other choice, it\'s known to Laurel, the crew, regulars, and Griddle Falls as Independence Froth.',
+    'The Official Independence Froth Recipe Ingredients',
+    'Orange Juice: 1 cup',
+    'Frozen Cherries: 1/2 cup',
+    'Frozen Red Grapes: 1/2 cup',
+    'Milk: 1/2 cup',
+    'Honey: 1 to 2 tablespoons',
+    'Fresh Lemon Juice: 1 teaspoon',
+    'Vanilla Extract: 1 teaspoon',
+    'Ice Cubes: 1 cup',
+  ],
+  closing: 'Friends, before we blend and froth these delicious ingredients, let\'s take a break for a bicentennial moment. 🍒',
+  closingLink: 'https://lettergriddle.com/play',
+  closingLinkText: 'Play Letter Griddle 🍒'
+},
 ];
 
 // Puzzle data - expandable for future puzzles
@@ -1544,6 +1572,27 @@ const puzzles = {
     { pos: 4, letter: 'O' }
   ],
   didYouKnow: 'Outdoor feasting was popular in ancient Greece, Rome, and even featured in tales of Robin Hood dining under the trees. In the early 19th century, a fashionable group in London formed a "Picnic Society," where members gathered regularly to share refreshments and entertainment.'
+},
+'froth-on-the-fourth': {
+  id: 'bicentennial',
+  title: '1976 Bicentennial',
+  category: '1976 Bicentennial',
+  words: ['FREE', 'UNITE', 'NATION', 'HUNDRED', 'OFFICIAL'],
+  hints: [
+    'What the Declaration of Independence proclaimed',
+    'What the Bicentennial brought the country together to do',
+    'The country celebrating 200 years in 1976',
+    'Two of these years passed between 1776 and 1976',
+    'The word on Gigi\'s Independence Froth recipe header'
+  ],
+  revealed: [
+    { pos: 1, letter: 'R' },
+    { pos: 2, letter: 'I' },
+    { pos: 3, letter: 'I' },
+    { pos: 3, letter: 'D' },
+    { pos: 4, letter: 'C' }
+  ],
+  didYouKnow: 'The 1976 United States Bicentennial on the Fourth of July was a massive, nationwide celebration marking the 200th anniversary of the Declaration of Independence. It was a golden era of red, white, and blue nostalgia, featuring Tall Ships, time capsules, and blockbuster historical spectacles.'
 },
 };
 
