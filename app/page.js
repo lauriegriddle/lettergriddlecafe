@@ -934,6 +934,63 @@ const stories = [
   closingLink: 'https://lettergriddle.com/play',
   closingLinkText: 'Play Letter Griddle ☕'
 },
+{
+  id: 'picnic-with-the-boss',
+  title: 'Picnic with the Boss',
+  subtitle: '🧺 Now Available',
+  date: 'June 2026',
+  locked: false,
+  content: [
+    '"It\'s summer!" Mr. Lindsay booms as he enters the cafe carrying a red, white, and blue basket by its handles.',
+    '"…and we love picnics!" Mrs. Lindsay says.',
+    '"Did I ever tell you about our cafe regular Leigha and her picnic with the boss?" Laurel asks the crew.',
+    'Sarah says, "If we are planning a picnic, I will bring my macaroni salad."',
+    'Taylor asks, "How\'s Leigha\'s car stereo? Remember I install audio for ultimate listening experiences."',
+    '"Thanks Taylor," Laurel says. "…where was I?"',
+    '"Picnic…with the Boss…," Sarah reminds Laurel.',
+    '"Yes, picture this. Leigha has just completed her third closet redesign of the morning. Knowing that the picnic with the Boss was that day, she scheduled all of her projects for the morning in order to be ready for the picnic."',
+    'Laurel continues as the crew is uncharacteristically quiet.',
+    '"Not sure of the length of time of the picnic, Leigha was very careful to avoid scheduling any customers for the afternoon or evening that warm summer day."',
+    '"I think we will bring treats for Isaac to the picnic," Mrs. Lindsay offers, involving herself with future picnic plans.',
+    '"Thanks, Mrs. Lindsay. Isaac will enjoy," Jennie responds.',
+    'The group returns their attention to Laurel.',
+    '"Organizing hangers had just about done her in at the last house prior to the picnic. Three closets with three various needs and designs. The hangers had to coordinate according to the closet. It almost took an act of Congress to ensure that each type of hanger was properly assigned." Laurel pauses, surveying her audience and allowing them to absorb the details.',
+    '"Kind of like you, Laurel, with the cafe plates, mugs, silverware, coffee station, …," Taylor interjects.',
+    '"Yap! Yap!" Isaac concurs as if signaling to Laurel to proceed.',
+    '"Once the hangers were placed in their rightful closet, the project could proceed: clothing, linens, and guest closet."',
+    'Laurel pauses, sips her coffee, then continues.',
+    '"The job is challenging and Leigha is proud that she\'s able to please the customer."',
+    '"A few quick snaps for Instagram along with her customer\'s recommendation ensures future projects and more business for Closet Creations."',
+    '"Especially sought after in the closet business are celebrity endorsements."',
+    '"Just like the wall of local celebrities\' pictures hanging in the cafe," Josie remarks.',
+    '"Having completed the closets for celebrities in the competitive closet business ensures phone calls, texts, and Facebook messages needing her attention."',
+    '"The mayor likes the picture of…" Josie starts.',
+    '"Sort of, but these likes, comments, shares are the bread and butter of the professional closet design world," Laurel explains as she opens Instagram on her phone to show her listeners the comments on Leigha\'s account.',
+    '"We feel like you\'ve given us our lives back! Thank you Leigha and Closet Creations!" read the Instagram post, followed by multiple hashtags: #closets #hangout #hangoutwithourhangers #celebrate #lifeback',
+    'Putting her phone down, Laurel continues, "But that day was different, with the picnic starting soon."',
+    '"Without another thought about likes, posts, or hashtags, Leigha hugs and thanks her clients, having the picnic with the Boss on her mind."',
+    '"Hopping in her SUV having Closet Creations magnets on the doors, she carefully pulls out of the driveway, ensuring her cooler full of picnic goodies remains intact."',
+    '"Goodies?" Mr. Lindsay\'s ears perk up. "Continue Laurel."',
+    '"She knows the Boss is fond of a relish tray so she was able to create a feast of olives and pickles if that\'s all the Boss ate at the picnic."',
+    '"Traffic was light, so no stress on the roadways to the picnic location."',
+    '"As she nears the picnic pavilion, she makes sure to scan the area to see if she spots the Boss\'s vehicle. She notices a shiny chrome-laden motorcycle and has a strong hunch that the Boss had arrived."',
+    '"I install audio on motorcycles, too. Just saying." Taylor says. "As you were saying, Laurel."',
+    '"She parks her SUV closer to the picnic area than the Boss\'s motorcycle, knowing that she\'d be playing music from her car stereo with the Boss in mind."',
+    '"Grills are being fired up and the badminton net is ready when Leigha arrives."',
+    '"From her SUV, Leigha sees the Boss sitting at the picnic table. Carefully parking, she cues up her car stereo to play music for the Boss."',
+    '"Being sure to keep the relish tray in its original condition, she carries the tray to the picnic table where the Boss is sitting."',
+    '"At this point, Leigha is thinking, \'With this music and relish tray, the Boss is going to feel right at home.\'"',
+    '"As she approaches the picnic table, the picnic crowd is jolted by the music blasting from Leigha\'s car."',
+    '"Born in the USA. I was born in the USA…."',
+    '"Great tune," Taylor says.',
+    '"Sitting at the picnic table, the Boss turns to Leigha."',
+    '"As she approaches the table she says, \'Hi! Bruce!\'"',
+    '"Tying his bandana, Bruce Springsteen starts to get up from the picnic table and says, \'Darlin\', I\'m not sure who invited me or why I\'m here. But I know a party when I see one.\'"',
+  ],
+  closing: 'Friends, whether you were born in the USA or born to run, enjoy a relish tray and today\'s puzzle. 🧺',
+  closingLink: 'https://lettergriddle.com/play',
+  closingLinkText: 'Play Letter Griddle 🧺'
+},
 ];
 
 // Puzzle data - expandable for future puzzles
@@ -1466,6 +1523,27 @@ const puzzles = {
     { pos: 4, letter: 'T' }
   ],
   didYouKnow: '2021 was the year of al fresco dining. People wanted to be outside together again and cafe patios became the most coveted seats in town.'
+},
+'picnic-with-the-boss': {
+  id: 'picnic',
+  title: 'Picnic',
+  category: 'Picnic',
+  words: ['TRAY', 'MUSIC', 'RELISH', 'CLOSETS', 'OUTDOORS'],
+  hints: [
+    'Leigha\'s feast of olives and pickles arrived on this',
+    'Born in the USA blasted from Leigha\'s car stereo',
+    'The condiment tray the Boss is fond of',
+    'Leigha\'s specialty with three of them redesigned that morning',
+    'Where the picnic pavilion, grills, and badminton net were waiting'
+  ],
+  revealed: [
+    { pos: 1, letter: 'R' },
+    { pos: 2, letter: 'S' },
+    { pos: 3, letter: 'I' },
+    { pos: 3, letter: 'S' },
+    { pos: 4, letter: 'O' }
+  ],
+  didYouKnow: 'Outdoor feasting was popular in ancient Greece, Rome, and even featured in tales of Robin Hood dining under the trees. In the early 19th century, a fashionable group in London formed a "Picnic Society," where members gathered regularly to share refreshments and entertainment.'
 },
 };
 
