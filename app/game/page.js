@@ -1749,14 +1749,14 @@ const PUZZLES = [
       ],
       5: [
         "Playful or silly behavior",
-        "Rocky mountain peak",
+        "Stack of stones",
         "Within; internally (prefix)",
         "Mark of shame; blemish on reputation",
         "Challenge; provoke",
         "Locomotive and its cars"
       ],
       6: [
-        "Large South American rodent; wetland creature",
+        "Large South American rodent; wetland creature; nu____",
         "Wicker or cane material for chairs",
         "Relating to the planet Uranus"
       ],
