@@ -1751,7 +1751,7 @@ const PUZZLES = [
         "Playful or silly behavior",
         "Stack of stones",
         "Within; internally (prefix)",
-        "Mark of shame; blemish on reputation",
+        "To spoil or corrupt",
         "Challenge; provoke",
         "Locomotive and its cars"
       ],
