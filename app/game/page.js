@@ -1789,7 +1789,7 @@ const PUZZLES = [
         "Food eaten at breakfast, lunch, or dinner",
         "Competition; run fast",
         "Genuine; actual",
-        "Large quantity of paper; daydream",
+        "Large quantity of paper",
         "Ocean mammal; close tightly",
         "Burn the surface; scorch"
       ],
