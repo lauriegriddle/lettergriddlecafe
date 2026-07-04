@@ -1814,11 +1814,11 @@ const PUZZLES = [
         "Makes transparent; removes obstacles",
         "Dairy toppings; rises to the top",
         "Kingdoms; domains",
-        "Loud cry; ice cream flavor",
+        "Loud cry",
         "Smudges; spreads grease on"
       ],
       7: [
-        "Chewy golden-brown candy (pangram!)"
+        "Chewy golden-brown candy"
       ],
       8: [
         "Chewy golden-brown candies (pangram!)"
