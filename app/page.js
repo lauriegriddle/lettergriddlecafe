@@ -1042,6 +1042,54 @@ const stories = [
   closingLink: 'https://lettergriddle.com/play',
   closingLinkText: 'Play Letter Griddle 🍒'
 },
+{
+  id: 'so-good',
+  title: 'So Good!',
+  subtitle: '🍨 Now Available',
+  date: 'July 2026',
+  locked: false,
+  content: [
+    '"I thought that you would ask us that, Laurel!" Jennie says.',
+    'Isaac concurs with "Yap! Yap!"',
+    '"You know me so well," Laurel says.',
+    '"My answer remains," Mr. Lindsay says. "The year was 1900 in New York."',
+    '"You are correct! That is the first record of an ice cream sandwich in the United States," Laurel confirms.',
+    '"I wonder what it was called back in 1900," Josie ponders.',
+    '"I read that ice cream sandwiches were called \'hokey pokeys,\'" Taylor shares.',
+    '"What is the name of tonight\'s dessert?" Sarah asks. "I mean, I know it uses an ice cream sandwich, but it\'s so much more!"',
+    '"That is a very good question," Josephine says.',
+    '"We never agreed on an official name," Laurel offers.',
+    '"They are so delicious that we end up repeating each other saying…" Mrs. Lindsay starts.',
+    '"This is so good!" Mr. Lindsay chimes in.',
+    '"Sandwich on Sunday because we would have them every Sunday in the summer when I would help out at the Letter Griddle Cafe," Josephine remembers.',
+    '"Sandwich in a Dish is a name I remember using," Jennie says.',
+    '"Unbelievables because we can\'t believe how good they taste," Taylor says.',
+    '"I remember one time we called them \'Top Thats\' because of the toppings and they are so delicious that we could never think of anything that could \'top that,\'" Josie shares.',
+    'The group pauses to sit in a moment of silence.',
+    '"Where are we?" Taylor asks.',
+    '"Letter Griddle Cafe, of course," Mrs. Lindsay says.',
+    '"It\'s Trivia Sunday," Mr. Lindsay adds.',
+    'An unusual lull falls over the group as the crew members exchange glances and smiles before erupting.',
+    '"Letter Griddle!" Laurel proclaims.',
+    '"Unbelievably So Good!" the Lindsays sing in unison.',
+    '"Sandwich in a Dish," Jennie adds.',
+    '"Trivia Treats," Taylor offers.',
+    '"What about \'So-Goods\'?!" Josie exclaims.',
+    'A brief moment of quiet consideration fills the trivia room.',
+    '"There you go!" Taylor voices.',
+    '"Huzzah!" Mr. Lindsay shouts.',
+    '"Woo hoo!" Mrs. Lindsay chimes.',
+    '"Yummy!" Sarah offers.',
+    '"Yap! Yap!" Isaac joins in the cheering.',
+    '"We like it!" Jennie shares, patting Isaac.',
+    '"Josie, you did it!" Josephine tells her daughter.',
+    'Laurel proclaims, "From this day forward, the delicious summer favorites are formally known as \'Letter Griddle Unbelievably So Good Sandwich in a Dish Trivia Treats.\'"',
+    '"Are \'So-Good\'!" Josie says, placing the final stamp of approval.',
+  ],
+  closing: 'Friends, please visit the Letter Griddle Cookbook for the recipe that is So Good along with another fun Letter Griddle puzzle! 🍨',
+  closingLink: 'https://lettergriddlecookbook.com',
+  closingLinkText: 'Visit the Letter Griddle Cookbook 🍨'
+},
 ];
 
 // Puzzle data - expandable for future puzzles
@@ -1637,6 +1685,27 @@ const puzzles = {
     { pos: 4, letter: 'T' }
   ],
   didYouKnow: 'Refreshing summer smoothies are the ultimate seasonal treat to beat the heat, but they are also packed with surprising science and history. They actually originated in the 1930s as "health milkshakes," and their velvety texture became a global phenomenon with the invention of the Waring Blender in 1937.'
+},
+'so-good': {
+  id: 'so-good',
+  title: 'So Good!',
+  category: 'So Good!',
+  words: ['NAME', 'TREAT', 'SUNDAE', 'TOPPING', 'SANDWICH'],
+  hints: [
+    'What the crew spent the whole vignette trying to agree on',
+    'Taylor called them Trivia these',
+    'The dish style of the So-Good dessert',
+    'What made the "Top Thats" name a contender',
+    'The ice cream version that started it all in 1900'
+  ],
+  revealed: [
+    { pos: 1, letter: 'A' },
+    { pos: 2, letter: 'E' },
+    { pos: 3, letter: 'D' },
+    { pos: 3, letter: 'P' },
+    { pos: 4, letter: 'W' }
+  ],
+  didYouKnow: 'The modern ice cream sandwich was popularized in the early 1900s as a "one-penny" treat in New York City.'
 },
 };
 
