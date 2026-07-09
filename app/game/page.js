@@ -3465,6 +3465,217 @@ const PUZZLES = [
       ]
     }
   },
+
+    // PUZZLE 60: ORGANIC
+  {
+    id: 'organic-puzzle',
+    subtitle: 'Naturally delicious!',
+    letters: ['O', 'R', 'G', 'A', 'N', 'I', 'C'],
+    keyLetters: ['A', 'O'],
+    totalWordCount: 17,
+    words: {
+      4: ['ORCA', 'ROAN'],
+      5: ['ACORN', 'CANON', 'CARGO', 'CONGA', 'GROAN', 'NARCO', 'ORANG', 'ORGAN'],
+      6: ['CORONA', 'GARCON', 'OARING', 'RANCOR'],
+      7: ['ORGANIC'],
+      8: ['GROANING'],
+      9: ['INORGANIC']
+    },
+    hints: {
+      4: [
+        "Large ocean dolphin relative",
+        "Reddish-brown horse color"
+      ],
+      5: [
+        "Nut that squirrels love",
+        "Church law; a rule or standard",
+        "Goods transported by ship or plane",
+        "Latin percussion dance; drumbeat",
+        "Low moan of complaint",
+        "Drug trafficker; informal term",
+        "Orangutan; informal short form",
+        "Musical instrument; body part"
+      ],
+      6: [
+        "Crown; halo around the sun; a virus",
+        "Waiter; French term used in English",
+        "Rowing a boat with oars",
+        "Bitterness or deep resentment"
+      ],
+      7: [
+        "Natural; free from chemicals (pangram!)"
+      ],
+      8: [
+        "Moaning loudly and repeatedly"
+      ],
+      9: [
+        "Not organic; made from non-living matter (pangram!)"
+      ]
+    }
+  },
+
+  // PUZZLE 61: TURNOVER
+  {
+    id: 'turnover-puzzle',
+    subtitle: 'A fresh start every day!',
+    letters: ['T', 'U', 'R', 'N', 'O', 'V', 'E'],
+    keyLetters: ['O', 'E'],
+    totalWordCount: 26,
+    words: {
+      4: ['EURO', 'NOTE', 'OVEN', 'OVER', 'ROTE', 'ROVE', 'TONE', 'TORE', 'VOTE'],
+      5: ['NOTER', 'OUTER', 'OVERT', 'ROUTE', 'ROVER', 'TENOR', 'TONER', 'TROVE', 'VOTER'],
+      6: ['ENROOT', 'NEURON', 'REVOTE'],
+      7: ['NEURONE', 'NEUTRON', 'OVERRUN'],
+      8: ['OVERTURN', 'TURNOVER']
+    },
+    hints: {
+      4: [
+        "European currency",
+        "Written message; musical pitch",
+        "Kitchen appliance for baking",
+        "Above; finished",
+        "Learned by repetition",
+        "Wander or roam about",
+        "Sound quality; shade of color",
+        "Ripped apart; past tense of tear",
+        "Cast a ballot in an election"
+      ],
+      5: [
+        "One who writes things down",
+        "On the outside; further away",
+        "Open and not hidden",
+        "Path taken; way to go",
+        "Wanderer; Mars explorer",
+        "Male singing voice",
+        "Printer ink; skin care product",
+        "Collection of treasures",
+        "Person who casts a ballot"
+      ],
+      6: [
+        "Establish firmly; take root",
+        "Brain cell that transmits signals",
+        "Vote again on the same matter"
+      ],
+      7: [
+        "Brain cell that transmits signals; British spelling",
+        "Subatomic particle with no charge",
+        "Run past or beyond; exceed a limit"
+      ],
+      8: [
+        "Flip upside down; reverse completely",
+        "Rate of replacement; pastry filled with fruit (pangram!)"
+      ]
+    }
+  },
+
+  // PUZZLE 62: THREADS
+  {
+    id: 'threads-puzzle',
+    subtitle: 'Pull it all together!',
+    letters: ['T', 'H', 'R', 'E', 'A', 'D', 'S'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 80,
+    words: {
+      4: ['DARE', 'DATE', 'DEAR', 'EARS', 'ERAS', 'HARE', 'HATE', 'HEAD', 'HEAR', 'HEAT', 'RATE', 'READ', 'SEAR', 'TARE', 'TEAR'],
+      5: ['DARES', 'DATES', 'DEARS', 'DEATH', 'DREAD', 'EARTH', 'HARES', 'HASTE', 'HATED', 'HATER', 'HEADS', 'HEARD', 'HEARS', 'HEART', 'HEATS', 'RATED', 'RATES', 'READS', 'SEARS', 'SHADE', 'SHARE', 'SHEAR', 'STARE', 'STEAD', 'TARES', 'TEARS', 'TRADE', 'TREAD'],
+      6: ['DASHER', 'DEARTH', 'DEATHS', 'DREADS', 'EARTHS', 'HATERS', 'HATRED', 'HEADER', 'HEARSE', 'HEARTS', 'RASHER', 'SHADER', 'SHADES', 'SHARED', 'SHARER', 'SHARES', 'SHEARS', 'STARED', 'STARES', 'THREAD', 'TRADED', 'TRADER', 'TRADES', 'TREADS'],
+      7: ['DASHERS', 'DEARTHS', 'HARDEST', 'HATREDS', 'HEADERS', 'RASHERS', 'SHADERS', 'THREADS', 'TRADERS', 'TRASHER'],
+      8: ['HEADREST', 'THRASHED', 'THRASHES']
+    },
+    hints: {
+      4: [
+        "Challenge someone; be bold",
+        "Calendar day; romantic outing",
+        "Beloved; expensive",
+        "Hearing organs",
+        "Historical time periods",
+        "Rabbit-like animal",
+        "Strong dislike; despise",
+        "Top of the body; leader",
+        "Perceive sound",
+        "Warmth from the sun or fire",
+        "Speed; evaluate or rank",
+        "Look at written words",
+        "Burn the surface; scorch",
+        "Weed; weight of a container",
+        "Rip; eye drop"
+      ],
+      5: [
+        "Challenges; acts boldly",
+        "Calendar days; romantic outings",
+        "Beloved ones",
+        "End of life; dying",
+        "Fear greatly; dread a thing",
+        "Soil and rock beneath our feet",
+        "Rabbit-like animals",
+        "Urgency; hurried rush",
+        "Strongly disliked; despised",
+        "One who strongly dislikes",
+        "Tops of bodies; leaders",
+        "Perceived with the ears",
+        "Perceives sound",
+        "Organ that pumps blood",
+        "Warmth from the sun; fires",
+        "Evaluated; had a certain speed",
+        "Speeds; evaluates",
+        "Looks at written words",
+        "Burns surfaces; scorches",
+        "Shadow; lamp cover",
+        "Divide; portion out",
+        "Cut with shears",
+        "Gaze; look fixedly",
+        "Place; in good stead",
+        "Weeds; container weights",
+        "Rips; eye drops",
+        "Exchange; business deal",
+        "Walk heavily; tire pattern"
+      ],
+      6: [
+        "One who dashes or runs quickly",
+        "Scarcity; severe shortage",
+        "Endings of life; dyings",
+        "Fears greatly; dreads things",
+        "Soils and rocks of the planet",
+        "Ones who strongly dislike",
+        "Deep dislike or animosity",
+        "Title at top of a document",
+        "Funeral vehicle; carriage",
+        "Organs that pump blood",
+        "More reckless; strips of bacon",
+        "One who creates shadows",
+        "Shadows; lamp covers",
+        "Divided; portioned out",
+        "One who divides",
+        "Divides; portions out",
+        "Cuts with shears",
+        "Gazed; looked fixedly",
+        "Gazes; looks fixedly",
+        "Thin fiber running through fabric (pangram!)",
+        "Exchanged; past tense of trade",
+        "One who buys and sells goods",
+        "Exchanges; business deals",
+        "Walks heavily; tire patterns"
+      ],
+      7: [
+        "Ones who dash or run quickly",
+        "Scarcities; severe shortages",
+        "Most difficult; toughest",
+        "Deep dislikes or animosities",
+        "Titles at tops of documents",
+        "Strips of bacon; more reckless ones",
+        "Ones who create shadows",
+        "Thin fibers running through fabric (pangram!)",
+        "Ones who buy and sell goods",
+        "One who thrashes or beats"
+      ],
+      8: [
+        "Support for resting your head",
+        "Beat or flailed vigorously",
+        "Beats or flails vigorously"
+      ]
+    }
+  },
+
 ];
 
 // Get today's puzzle dynamically based on rotation
