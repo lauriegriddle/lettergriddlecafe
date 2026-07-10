@@ -3675,6 +3675,213 @@ const PUZZLES = [
       ]
     }
   },
+  // PUZZLE 63: PIONEERS
+  {
+    id: 'pioneers-puzzle',
+    subtitle: 'Blazing new trails!',
+    letters: ['P', 'I', 'O', 'N', 'E', 'R', 'S'],
+    keyLetters: ['I', 'E'],
+    totalWordCount: 36,
+    words: {
+      4: ['IRES', 'PIER', 'PINE', 'RIPE', 'RISE'],
+      5: ['NOISE', 'OPINE', 'PIERS', 'PINES', 'RINSE', 'RISEN', 'SIREN', 'SPINE', 'SPIRE'],
+      6: ['NOISES', 'NOSIER', 'OPINES', 'ORPINE', 'PONIES', 'RINSES', 'SENIOR', 'SNIPER', 'SPINES', 'SPIRES'],
+      7: ['INSPIRE', 'PENSION', 'PIONEER', 'SENIORS', 'SNIPERS'],
+      8: ['INSPIRES', 'PENSIONS', 'PIONEERS', 'POISONER'],
+      9: ['PENSIONER', 'POISONERS'],
+      10: ['PENSIONERS']
+    },
+    hints: {
+      4: [
+        "Angers or irritates",
+        "Dock or walkway over water",
+        "Evergreen tree with needles",
+        "Ready to eat; mature",
+        "Go upward; get out of bed"
+      ],
+      5: [
+        "Unwanted sound; loud disturbance",
+        "Hold and express an opinion",
+        "Docks or walkways over water",
+        "Evergreen trees with needles",
+        "Wash lightly with water",
+        "Gone up; out of bed",
+        "Warning sound; mythical sea singer",
+        "Backbone; pointed column",
+        "Pointed tower; church steeple"
+      ],
+      6: [
+        "Unwanted sounds; loud disturbances",
+        "More inclined to snoop",
+        "Holds and expresses opinions",
+        "A succulent plant; stonecrop",
+        "Small horses; small groups",
+        "Washes lightly with water",
+        "Older and more experienced person",
+        "Hidden shooter; sharpshooter",
+        "Backbones; pointed columns",
+        "Pointed towers; church steeples"
+      ],
+      7: [
+        "Fill with enthusiasm or motivation",
+        "Regular payment to a retired person",
+        "First settler; trailblazer (pangram!)",
+        "Older and more experienced people",
+        "Hidden shooters; sharpshooters"
+      ],
+      8: [
+        "Fills with enthusiasm or motivation",
+        "Regular payments to retired people",
+        "First settlers; trailblazers (pangram!)",
+        "One who administers poison"
+      ],
+      9: [
+        "Retired person receiving regular payments",
+        "Ones who administer poison"
+      ],
+      10: [
+        "Retired people receiving regular payments"
+      ]
+    }
+  },
+
+  // PUZZLE 64: DEDICATES
+  {
+    id: 'dedicates-puzzle',
+    subtitle: 'With heart and soul!',
+    letters: ['D', 'E', 'I', 'C', 'A', 'T', 'S'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 44,
+    words: {
+      4: ['ACED', 'AIDE', 'CASE', 'DATE', 'EASE', 'EAST', 'EATS', 'IDEA', 'SATE', 'SEAT', 'TEAS'],
+      5: ['ACTED', 'AIDED', 'AIDES', 'CADET', 'CASED', 'DATES', 'IDEAS', 'SATED', 'STATE', 'STEAD', 'TASTE'],
+      6: ['CADETS', 'IDEATE', 'SATIED', 'SEATED', 'SEDATE', 'STATED', 'STATES', 'STEADS', 'TASTED', 'TASTES'],
+      7: ['ASCETIC', 'IDEATED', 'IDEATES', 'SATIATE', 'SEDATED'],
+      8: ['ASCETICS', 'DEDICATE', 'DISTASTE', 'SATIATED', 'SATIATES'],
+      9: ['DEDICATED', 'DEDICATES']
+    },
+    hints: {
+      4: [
+        "Scored a point; defeated easily",
+        "Helper; assistant",
+        "Container; instance or example",
+        "Calendar day; romantic outing",
+        "Comfort; make less difficult",
+        "Compass direction; sunrise side",
+        "Consumes food",
+        "Thought or concept",
+        "Satisfy fully",
+        "Chair; place to sit",
+        "Hot brewed beverages"
+      ],
+      5: [
+        "Did something; performed",
+        "Helped; assisted",
+        "Helpers; assistants",
+        "Junior military officer or student",
+        "Put in a container; examined",
+        "Calendar days; romantic outings",
+        "Thoughts or concepts",
+        "Satisfied fully",
+        "Condition or territory; declare formally",
+        "Place; in good stead",
+        "Flavor; sample food"
+      ],
+      6: [
+        "Junior military officers or students",
+        "Form ideas or mental images",
+        "Satisfied to the full",
+        "Sitting in a chair; placed in a seat",
+        "Calm; administer a sedative",
+        "Declared formally; declared as fact",
+        "Conditions or territories",
+        "Places; positions",
+        "Sampled food; tried out",
+        "Flavors; samples food"
+      ],
+      7: [
+        "One who practices extreme self-denial",
+        "Formed ideas or mental images",
+        "Forms ideas or mental images",
+        "Satisfy fully; provide to excess",
+        "Calmed; administered a sedative"
+      ],
+      8: [
+        "Ones who practice extreme self-denial",
+        "Commit fully to a cause or person (pangram!)",
+        "Strong dislike or aversion",
+        "Provided to excess; fully satisfied",
+        "Satisfies fully; provides to excess"
+      ],
+      9: [
+        "Committed fully to a cause or person (pangram!)",
+        "Commits fully to a cause or person (pangram!)"
+      ]
+    }
+  },
+
+  // PUZZLE 65: CURRENTS
+  {
+    id: 'currents-puzzle',
+    subtitle: 'Go with the flow!',
+    letters: ['C', 'U', 'R', 'E', 'N', 'T', 'S'],
+    keyLetters: ['U', 'E'],
+    totalWordCount: 35,
+    words: {
+      4: ['CURE', 'RUNE', 'RUSE', 'SURE', 'TRUE', 'TUNE'],
+      5: ['CURES', 'CURSE', 'NURSE', 'RUNES', 'TRUCE', 'TUNES'],
+      6: ['CURSES', 'NURSES', 'RESCUE', 'RETURN', 'SECURE', 'TENURE', 'TRUCES', 'TURNER', 'UNREST'],
+      7: ['CENSURE', 'CURRENT', 'ENCRUST', 'ENTRUST', 'RESCUES', 'RETURNS', 'SECURES', 'TENURES', 'TURNERS'],
+      8: ['CENSURES', 'CURRENTS', 'CURTNESS', 'ENCRUSTS', 'ENTRUSTS']
+    },
+    hints: {
+      4: [
+        "Heal; remedy for illness",
+        "Magical symbol; letter in old alphabet",
+        "Trick or deception",
+        "Certain and confident",
+        "Accurate; genuine",
+        "Musical note; melody"
+      ],
+      5: [
+        "Heals; remedies for illness",
+        "Wish ill upon; profane language",
+        "Care for the sick",
+        "Magical symbols; old alphabet letters",
+        "Temporary peace agreement; ceasefire",
+        "Musical notes; melodies"
+      ],
+      6: [
+        "Wishes ill upon; uses profane language",
+        "Cares for the sick",
+        "Save from danger",
+        "Go back; send back",
+        "Make safe; fasten firmly",
+        "Length of time holding a position",
+        "Temporary peace agreements; ceasefires",
+        "One who turns; a lathe operator",
+        "Unease; lack of peace or calm"
+      ],
+      7: [
+        "Formally criticize or reprimand",
+        "Flow of water or air; up to date (pangram!)",
+        "Cover with a hard outer layer",
+        "Give responsibility to someone",
+        "Saves from danger",
+        "Goes back; sends back",
+        "Makes safe; fastens firmly",
+        "Lengths of time holding a position",
+        "Ones who turn; lathe operators"
+      ],
+      8: [
+        "Formally criticizes or reprimands",
+        "Flows of water or air; up to date (pangram!)",
+        "Shortness or abruptness in manner",
+        "Covers with hard outer layers",
+        "Gives responsibility to others"
+      ]
+    }
+  },
 
 ];
 
