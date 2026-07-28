@@ -1143,6 +1143,29 @@ const stories = [
   closingLink: 'https://youtube.com/watch?v=DL7-CKirWZE',
   closingLinkText: 'Name That Song on YouTube 🎵'
 },
+{
+  id: 'unwritten-to-writing',
+  title: 'Unwritten to Writing',
+  subtitle: '🎵 Now Available',
+  date: 'July 2026',
+  locked: false,
+  content: [
+    '"Now on to another new radical…" Taylor starts.',
+    '"Taking requests!" Josephine confidently shouts.',
+    '"Okay, sure, let\'s continue with…" Taylor says, knowing the control of the crowd and the music is slipping through his fingers.',
+    '"July 2006!" Sarah shouts.',
+    'Laurel chimes, "A good month. A good year."',
+    '"I\'ve got just the track," Josephine announces. "Queued up!"',
+    '"Who can name this song?" Taylor asks.',
+    '"I tell Josie that she\'s the one with the \'pen in her hand\' to write her life story," Josephine tells the crowd as a clue to the song.',
+    '"Five syllables!" Sarah shouts, rising to her feet.',
+    'The crowd at Letter Griddle trivia night has never fallen so silent.',
+    '"You\'ve got this friend!" Josephine speaks over the thick lull blanketing the trivia room, before blaring through the cafe speakers those five syllables that remind us that our lives are our own stories.',
+  ],
+  closing: 'Dear Reader, this empowering anthem from 2006 reminds us that our lives are our own to create as we choose. Visit YouTube to name this song! 🎵',
+  closingLink: 'https://youtube.com/watch?v=b7k0a5hYnSI',
+  closingLinkText: 'Name That Song on YouTube 🎵'
+},
 ];
 
 // Puzzle data - expandable for future puzzles
@@ -1801,6 +1824,27 @@ const puzzles = {
     { pos: 4, letter: 'A' }
   ],
   didYouKnow: '"You Only Get What You Give" peaked just inside the Top 40 in the US.  It ruled international charts and radio playlists throughout the summer of 1999, becoming one of the ultimate "don\'t give up" anthems of the decade.'
+},
+'unwritten-to-writing': {
+  id: 'july-2006',
+  title: 'July 2006',
+  category: 'July 2006',
+  words: ['HAND', 'HILLS', 'SILENT', 'WRITTEN', 'REQUESTS'],
+  hints: [
+    'Josephine\'s clue; the pen is in this',
+    'The TV show that blasted this anthem every week as its theme',
+    'How the trivia crowd fell when Sarah called five syllables',
+    'The word in the song title that became the anthem\'s identity',
+    'What Josephine was taking and Sarah was making that night'
+  ],
+  revealed: [
+    { pos: 1, letter: 'A' },
+    { pos: 2, letter: 'L' },
+    { pos: 3, letter: 'E' },
+    { pos: 3, letter: 'T' },
+    { pos: 4, letter: 'E' }
+  ],
+  didYouKnow: 'Blasting through the TV every week as the theme for The Hills, "Unwritten" transformed into a meteoric slow-burner, eventually spending 42 weeks on the Billboard Hot 100 and becoming the most-played song on American radio for the year 2006.'
 },
 };
 
