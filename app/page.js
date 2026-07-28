@@ -1150,7 +1150,7 @@ const stories = [
   date: 'July 2026',
   locked: false,
   content: [
-    '"Now on to another new radical…" Taylor starts.',
+    '"Now. music trivia enthusiasts, on to another new radical…" Taylor starts.',
     '"Taking requests!" Josephine confidently shouts.',
     '"Okay, sure, let\'s continue with…" Taylor says, knowing the control of the crowd and the music is slipping through his fingers.',
     '"July 2006!" Sarah shouts.',
