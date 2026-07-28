@@ -1090,6 +1090,32 @@ const stories = [
   closingLink: 'https://lettergriddlecookbook.com',
   closingLinkText: 'Visit the Letter Griddle Cookbook 🍨'
 },
+{
+  id: 'name-that-90s-july-song',
+  title: 'Name That 90s July Song!',
+  subtitle: '🎵 Now Available',
+  date: 'July 2026',
+  locked: false,
+  content: [
+    '"Are we late?" Jennie asks in a hushed tone, joining Mr. and Mrs. Lindsay.',
+    '"You\'re in time for the first song," Mr. Lindsay responds in his Isaac voice.',
+    '"Taylor just got us quieted down after Laurel closed the coffee bar for a refresh," Mrs. Lindsay adds.',
+    '"I can name that song in 20 seconds!" Sarah shouts to Taylor.',
+    '"Sarah?!" Taylor asks, surprised by his reticent friend\'s abandon.',
+    '"Sarah, name that song," Jennie pipes, followed by Isaac\'s "yap, yap."',
+    'Taylor cues Josephine, deejaying music trivia night at Letter Griddle.',
+    'A familiar tune fills the cafe. The melody along with the lyrics waft in swirls of memories, taking the trivia crew to that sweet summer in 1990.',
+    'The crowd appears to slip under a hypnotic spell with this old chestnut\'s powerful harmonies, touching chords, and heart-grabbing percussion.',
+    '"Someday, somebody\'s gonna…."',
+    'The crowd immediately joins in with singing…over the track!',
+    'Fists pumping. Phones swaying.',
+    '"Sarah, you can do this for one more day! But for the purposes of this game we need you to…" Taylor defers to the trivia crowd.',
+    '"Name! That! Song!" chimes the crowd.',
+  ],
+  closing: 'Dear Reader, we know you can hold on for as long as needed and enjoy a puzzle or two at lettergriddle.com. Visit YouTube to name that song and maybe even sing along with this anthem of empowerment! 🎵',
+  closingLink: 'https://youtube.com/watch?v=uIbXvaE39wM&t=5s',
+  closingLinkText: 'Name That Song on YouTube 🎵'
+},
 ];
 
 // Puzzle data - expandable for future puzzles
@@ -1706,6 +1732,27 @@ const puzzles = {
     { pos: 4, letter: 'W' }
   ],
   didYouKnow: 'The modern ice cream sandwich was popularized in the early 1900s as a "one-penny" treat in New York City.'
+},
+'name-that-90s-july-song': {
+  id: '1990-hit',
+  title: 'Name that 1990 Hit',
+  category: 'Name that 1990 Hit',
+  words: ['SONG', 'VOICE', 'DEEJAY', 'REFRESH', 'NINETIES'],
+  hints: [
+    'What the trivia crowd was challenged to name',
+    'Mr. Lindsay used his Isaac _____',
+    'Josephine\'s role for music trivia night',
+    'What Laurel did to the coffee bar before the first song',
+    'The decade this anthem of empowerment belongs to'
+  ],
+  revealed: [
+    { pos: 1, letter: 'O' },
+    { pos: 2, letter: 'I' },
+    { pos: 3, letter: 'J' },
+    { pos: 3, letter: 'R' },
+    { pos: 2, letter: 'N' }
+  ],
+  didYouKnow: 'Even though it only spent one week at number one, "Hold On" stayed on the charts so long that Billboard named it the #1 Single of the Year for 1990.'
 },
 };
 
