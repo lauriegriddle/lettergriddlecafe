@@ -1116,6 +1116,33 @@ const stories = [
   closingLink: 'https://youtube.com/watch?v=uIbXvaE39wM&t=5s',
   closingLinkText: 'Name That Song on YouTube 🎵'
 },
+{
+  id: 'party-like-its-1999',
+  title: 'Party Like It\'s 1999',
+  subtitle: '🎵 Now Available',
+  date: 'July 2026',
+  locked: false,
+  content: [
+    '"Hold on…we\'ve got another nineties hits challenge for you music trivia enthusiasts," Taylor promises the Letter Griddle crowd.',
+    '"Let\'s party like it\'s 1999," Mr. Lindsay playfully interjects.',
+    '"Let\'s not and say we did," Mrs. Lindsay responds in equal parts playfulness and truth.',
+    '"Tell us about the next song challenge!" Sarah uncharacteristically shouts.',
+    'Laurel tells the crowd, "This one hit wonder didn\'t wonder about the music industry when they walked away from fame after this smash hit topped the charts in July 1999."',
+    '"Okay, 1999, let\'s go!" Mr. Lindsay takes notice.',
+    'Laurel continues, "This song covers themes such as always remember your dreams and never give up because \'you\'ve got the music in you.\'"',
+    '"I can name that song in…" Mrs. Lindsay starts to offer.',
+    '"We can name that song in…" Mr. Lindsay takes over.',
+    '"20 syllables!" Sarah surprisingly challenges.',
+    '"Sarah, are you sure about this?" Taylor provides an out for his confident friend.',
+    '"Play it, Josephine!" Sarah instructs.',
+    'Josephine, showing her expertise as a deejay, is ready with Sarah\'s 20 syllables request.',
+    'No sooner does the crowd fall silent as the notes fill the room that the Lindsays start the movement through the cafe.',
+    'Laurel joins in, jumping to the front of the line, leading the crew dancing their way around the tables, past the cake safe, into the dining area, to the coffee bar, no intentions of stopping at 20 syllables.',
+  ],
+  closing: 'Dear Reader, the trivia crew shows they\'ve got the music in them with this anthem of pop sweetness and rebellion. Visit YouTube to name this song! 🎵',
+  closingLink: 'https://youtube.com/watch?v=DL7-CKirWZE',
+  closingLinkText: 'Name That Song on YouTube 🎵'
+},
 ];
 
 // Puzzle data - expandable for future puzzles
@@ -1753,6 +1780,27 @@ const puzzles = {
     { pos: 2, letter: 'N' }
   ],
   didYouKnow: 'Even though it only spent one week at number one, "Hold On" stayed on the charts so long that Billboard named it the #1 Single of the Year for 1990.'
+},
+'party-like-its-1999': {
+  id: '1999',
+  title: '1999',
+  category: '1999',
+  words: ['HITS', 'PARTY', 'DREAMS', 'JUMPING', 'SYLLABLE'],
+  hints: [
+    'What Taylor promised the crowd; another nineties these',
+    'What Mr. Lindsay wanted to do like it was 1999',
+    'Never give up on _____; a theme of the mystery song',
+    'What Laurel was doing in front of the conga line',
+    'The unit Sarah used to challenge the crowd; 20 of these'
+  ],
+  revealed: [
+    { pos: 1, letter: 'I' },
+    { pos: 2, letter: 'R' },
+    { pos: 3, letter: 'A' },
+    { pos: 3, letter: 'P' },
+    { pos: 4, letter: 'A' }
+  ],
+  didYouKnow: '"You Only Get What You Give" peaked just inside the Top 40 in the US.  It ruled international charts and radio playlists throughout the summer of 1999, becoming one of the ultimate "don\'t give up" anthems of the decade.'
 },
 };
 
