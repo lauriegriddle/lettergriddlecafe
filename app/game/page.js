@@ -2989,7 +2989,7 @@ const PUZZLES = [
       ],
       7: [
         "Quality or standard of something (pangram!)",
-        "Quality or standard of something — British spelling (pangram!)"
+        "Quality or standard of something, British spelling (pangram!)"
       ]
     }
   },
