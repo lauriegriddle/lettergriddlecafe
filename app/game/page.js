@@ -3751,11 +3751,11 @@ const PUZZLES = [
     subtitle: 'With heart and soul!',
     letters: ['D', 'E', 'I', 'C', 'A', 'T', 'S'],
     keyLetters: ['A', 'E'],
-    totalWordCount: 44,
+    totalWordCount: 43,
     words: {
       4: ['ACED', 'AIDE', 'CASE', 'DATE', 'EASE', 'EAST', 'EATS', 'IDEA', 'SATE', 'SEAT', 'TEAS'],
       5: ['ACTED', 'AIDED', 'AIDES', 'CADET', 'CASED', 'DATES', 'IDEAS', 'SATED', 'STATE', 'STEAD', 'TASTE'],
-      6: ['CADETS', 'IDEATE', 'SATIED', 'SEATED', 'SEDATE', 'STATED', 'STATES', 'STEADS', 'TASTED', 'TASTES'],
+      6: ['CADETS', 'IDEATE', 'SEATED', 'SEDATE', 'STATED', 'STATES', 'STEADS', 'TASTED', 'TASTES'],
       7: ['ASCETIC', 'IDEATED', 'IDEATES', 'SATIATE', 'SEDATED'],
       8: ['ASCETICS', 'DEDICATE', 'DISTASTE', 'SATIATED', 'SATIATES'],
       9: ['DEDICATED', 'DEDICATES']
@@ -3790,7 +3790,6 @@ const PUZZLES = [
       6: [
         "Junior military officers or students",
         "Form ideas or mental images",
-        "Satisfied to the full",
         "Sitting in a chair; placed in a seat",
         "Calm; administer a sedative",
         "Declared formally; declared as fact",
