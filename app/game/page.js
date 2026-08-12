@@ -3881,6 +3881,628 @@ const PUZZLES = [
       ]
     }
   },
+  // PUZZLE 66: ROASTED
+  {
+    id: 'roasted-puzzle',
+    subtitle: 'Hot out of the oven!',
+    letters: ['R', 'O', 'A', 'S', 'T', 'E', 'D'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 52,
+    words: {
+      4: ['DARE', 'DATE', 'DEAR', 'EARS', 'EAST', 'EATS', 'ERAS', 'RATE', 'READ', 'SATE', 'SEAR', 'SEAT', 'TARE', 'TEAR'],
+      5: ['ADORE', 'DARES', 'DATER', 'DATES', 'DEARS', 'OARED', 'ORATE', 'RATES', 'READS', 'SATED', 'SATES', 'SEARS', 'SEATS', 'STARE', 'STEAD', 'TARES', 'TEARS', 'TRADE', 'TREAD'],
+      6: ['ADORED', 'ADORES', 'DATERS', 'ORATED', 'ORATES', 'STARED', 'STARES', 'STEADS', 'TRADES', 'TREADS'],
+      7: ['ROASTED', 'ROASTER', 'TOASTED', 'TOASTER'],
+      8: ['ASSORTED', 'ROADSTER', 'ROASTERS', 'TOASTERS'],
+      9: ['ROADSTERS']
+    },
+    hints: {
+      4: [
+        "Challenge someone; be bold",
+        "Calendar day; romantic outing",
+        "Beloved; expensive",
+        "Hearing organs",
+        "Compass direction; sunrise side",
+        "Consumes food",
+        "Historical time periods",
+        "Speed; evaluate or rank",
+        "Look at written words",
+        "Satisfy fully",
+        "Burn the surface; scorch",
+        "Chair; place to sit",
+        "Weed; weight of a container",
+        "Rip; eye drop"
+      ],
+      5: [
+        "Worship; love deeply",
+        "Challenges; acts boldly",
+        "One who sets a time or goes on dates",
+        "Calendar days; romantic outings",
+        "Beloved ones",
+        "Having oars; fitted with oars",
+        "Speak formally; give a speech",
+        "Speeds; evaluates",
+        "Looks at written words",
+        "Satisfied fully",
+        "Satisfies fully",
+        "Burns surfaces; scorches",
+        "Chairs; places to sit",
+        "Gaze; look fixedly",
+        "Place; in good stead",
+        "Weeds; container weights",
+        "Rips; eye drops",
+        "Exchange; business deal",
+        "Walk heavily; tire pattern"
+      ],
+      6: [
+        "Worshipped; loved deeply",
+        "Worships; loves deeply",
+        "Ones who set times or go on dates",
+        "Spoke formally; gave a speech",
+        "Speaks formally; gives speeches",
+        "Gazed; looked fixedly",
+        "Gazes; looks fixedly",
+        "Places; positions",
+        "Exchanges; business deals",
+        "Walks heavily; tire patterns"
+      ],
+      7: [
+        "Cooked in dry heat (pangram!)",
+        "Pan for cooking in dry oven heat",
+        "Browned with heat; honored with a toast",
+        "Kitchen appliance that makes toast"
+      ],
+      8: [
+        "Mixed together; varied collection",
+        "Open-topped car with a long hood",
+        "Pans for cooking in dry oven heat",
+        "Kitchen appliances that make toast"
+      ],
+      9: [
+        "Open-topped cars with long hoods"
+      ]
+    }
+  },
+
+  // PUZZLE 67: SUPPORTER
+  {
+    id: 'supporter-puzzle',
+    subtitle: 'Cheering you on!',
+    letters: ['S', 'U', 'P', 'O', 'R', 'T', 'E'],
+    keyLetters: ['O', 'E'],
+    totalWordCount: 56,
+    words: {
+      4: ['PESO', 'POET', 'PORE', 'POSE', 'ROPE', 'ROSE', 'ROTE', 'SORE'],
+      5: ['OUTER', 'PORES', 'PROSE', 'REPOT', 'ROPES', 'ROUSE', 'ROUTE', 'SPORE', 'STORE', 'TOPER', 'TROPE'],
+      6: ['OUSTER', 'OUTERS', 'POSEUR', 'POSTER', 'POURER', 'POUTER', 'PRESTO', 'REPOST', 'REPOTS', 'ROUSES', 'ROUTES', 'SPORES', 'STORES', 'TOPERS', 'TOPPER', 'TOURER', 'TROPES', 'TROUPE'],
+      7: ['OUSTERS', 'POSEURS', 'POSTERS', 'POSTURE', 'POURERS', 'POUTERS', 'PRESTOS', 'REPOSTS', 'STOUTER', 'TOPPERS', 'TOURERS', 'TROUPER', 'TROUPES', 'TROUSER'],
+      8: ['POSTURES', 'TROUPERS', 'TROUSERS'],
+      9: ['SUPPORTER'],
+      10: ['SUPPORTERS']
+    },
+    hints: {
+      4: [
+        "Currency of Mexico and other countries",
+        "One who writes verse; creative writer",
+        "Opening in a wall; look intently",
+        "Strike a position; pretend",
+        "Thick cord; lasso",
+        "A flower; came back up",
+        "Learned by repetition",
+        "Painful and aching"
+      ],
+      5: [
+        "On the outside; further away",
+        "Openings in walls; looks intently",
+        "Written text; formal writing style",
+        "Transfer a plant to a new pot",
+        "Thick cords; lassos",
+        "Stir up; wake from sleep",
+        "Path taken; way to go",
+        "Fungal organism; mushroom type",
+        "Shop; keep in a warehouse",
+        "One who drinks the top of the barrel",
+        "Figure of speech; recurring theme"
+      ],
+      6: [
+        "One who forces someone out",
+        "Those on the outside",
+        "One who strikes poses; affected person",
+        "One who puts up notices; bill poster",
+        "One who pours liquid",
+        "One who pouts or sulks",
+        "Magic word; ta-da! A type of coffee",
+        "Post again; share online again",
+        "Transfers plants to new pots",
+        "Stirs up; wakes from sleep",
+        "Paths taken; ways to go",
+        "Fungal organisms; mushroom types",
+        "Shops; keeps in warehouses",
+        "Ones who drink from the top",
+        "One who tops; something placed on top",
+        "One who goes on tours",
+        "Figures of speech; recurring themes",
+        "Group of traveling performers"
+      ],
+      7: [
+        "Ones who force someone out",
+        "Ones who strike poses; affected people",
+        "Ones who put up notices",
+        "Body position; the way you hold yourself",
+        "Ones who pour liquid",
+        "Ones who pout or sulk",
+        "Magic words; types of coffee",
+        "Posts again; shares online again",
+        "More sturdy; more robust",
+        "Ones who top; things placed on top",
+        "Ones who go on tours",
+        "Reliable member of a performing group",
+        "Groups of traveling performers",
+        "Leg covering garment; pants (British)"
+      ],
+      8: [
+        "Body positions; the way you hold yourself",
+        "Reliable members of performing groups",
+        "Leg covering garments; pants (British)"
+      ],
+      9: [
+        "One who cheers on and encourages (pangram!)"
+      ],
+      10: [
+        "Ones who cheer on and encourage (pangram!)"
+      ]
+    }
+  },
+  // PUZZLE 68: SPLATTER
+  {
+    id: 'splatter-puzzle',
+    subtitle: 'Make a big splash!',
+    letters: ['S', 'P', 'L', 'A', 'T', 'E', 'R'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 84,
+    words: {
+      4: ['ALES', 'APES', 'AREA', 'EARL', 'EARS', 'EAST', 'EATS', 'ERAS', 'LATE', 'LEAP', 'PALE', 'PATE', 'PEAL', 'PEAR', 'PEAT', 'PLEA', 'RAPE', 'RATE', 'REAP', 'SALE', 'SATE', 'SEAL', 'SEAR', 'SEAT', 'TALE', 'TAPE', 'TARE', 'TEAL', 'TEAR'],
+      5: ['ALERT', 'ALTER', 'ARLES', 'ASTER', 'EARLS', 'LAPSE', 'LASER', 'LATER', 'LEAPS', 'PALES', 'PARSE', 'PASTE', 'PATER', 'PEALS', 'PEARS', 'PETAL', 'PLATE', 'PLEAT', 'RAPES', 'RATES', 'REAPS', 'SALES', 'SLATE', 'SPARE', 'SPEAR', 'STALE', 'STARE', 'STEAL', 'TALES', 'TAPER', 'TAPES', 'TARES', 'TEALS', 'TEARS'],
+      6: ['ALERTS', 'ALTERS', 'ASTERS', 'LASERS', 'PALEST', 'PETALS', 'PLATER', 'PLATES', 'PLEATS', 'STAPLE', 'TAPERS'],
+      7: ['PLASTER', 'PLATERS', 'PSALTER', 'STAPLER', 'STAPLES'],
+      8: ['PLASTERS', 'PSALTERS', 'SPLATTER', 'STAPLERS'],
+      9: ['SPLATTERS']
+    },
+    hints: {
+      4: [
+        "Types of beer",
+        "Primates; imitates someone",
+        "Region; surface space",
+        "British nobleman",
+        "Hearing organs",
+        "Compass direction; sunrise side",
+        "Consumes food",
+        "Historical time periods",
+        "Not on time; deceased",
+        "Jump; spring forward",
+        "Light in color; fence stake",
+        "Top of the head",
+        "Ring out like bells",
+        "Fruit related to apples",
+        "Soil used in gardening",
+        "Urgent request; legal argument",
+        "Forced sexual assault",
+        "Speed; evaluate or rank",
+        "Harvest crops",
+        "Discount event at a store",
+        "Ocean mammal; close tightly",
+        "Burn the surface; scorch",
+        "Chair; place to sit",
+        "Story; narrative",
+        "Sticky strip; recording medium",
+        "Weed; weight of a container",
+        "Blue-green color; type of duck",
+        "Rip; eye drop"
+      ],
+      5: [
+        "Warning; alarm",
+        "Change; modify",
+        "Heraldic term for the lower half of a shield",
+        "Star-shaped flower",
+        "British noblemen",
+        "Slip; temporary failure",
+        "Focused light beam device",
+        "After; more recent",
+        "Jumps; springs forward",
+        "Light colors; fence stakes",
+        "Analyze grammatically",
+        "Glue; soft dough mixture",
+        "One who fathers a child",
+        "Rings out like bells",
+        "Fruits related to apples",
+        "Flower part",
+        "Flat dish; serving dish",
+        "Fold in fabric; press flat",
+        "Forced sexual assaults",
+        "Speeds; evaluates",
+        "Harvests crops",
+        "Discount events at stores",
+        "Rock; schedule",
+        "Extra; not tight",
+        "Weapon; throw a javelin",
+        "Not fresh; old bread",
+        "Gaze; look fixedly",
+        "Take without permission",
+        "Stories; narratives",
+        "Narrow gradually; thin candle",
+        "Sticky strips; recordings",
+        "Weeds; container weights",
+        "Blue-green colors; types of duck",
+        "Rips; eye drops"
+      ],
+      6: [
+        "Warnings; alarms",
+        "Changes; modifies",
+        "Star-shaped flowers",
+        "Focused light beam devices",
+        "Most light in color",
+        "Flower parts",
+        "One who applies a coating",
+        "Flat dishes; serving dishes",
+        "Folds in fabric; presses flat",
+        "Fasten; secure with a clasp",
+        "Narrow candles; tapers"
+      ],
+      7: [
+        "Smooth coating material; cast material",
+        "Ones who apply coatings",
+        "Book of Psalms; hymn book",
+        "Device for fastening papers together",
+        "Fastens; secures with a clasp"
+      ],
+      8: [
+        "Smooth coating materials; cast materials",
+        "Books of Psalms; hymn books",
+        "Splash messily (pangram!)",
+        "Devices for fastening papers together"
+      ],
+      9: [
+        "Splashes messily (pangram!)"
+      ]
+    }
+  },
+
+  // PUZZLE 69: MARINADE
+  {
+    id: 'marinade-puzzle',
+    subtitle: 'Soak it all in!',
+    letters: ['M', 'A', 'R', 'I', 'N', 'D', 'E'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 35,
+    words: {
+      4: ['AIDE', 'AMEN', 'DARE', 'DEAN', 'DEAR', 'EARN', 'IDEA', 'MADE', 'MANE', 'MARE', 'NAME', 'NEAR', 'READ'],
+      5: ['AIMED', 'AIRED', 'MANED', 'NAMED'],
+      6: ['ADMIRE', 'AIRMEN', 'ANEMIA', 'DANDER', 'MAIDEN', 'MAIMED', 'MAIMER', 'MARINE', 'MEDIAN', 'RAINED', 'REMAIN'],
+      7: ['ADMIRED', 'ADMIRER', 'MARINER', 'MARRIED'],
+      8: ['MARINADE', 'REMAINED'],
+      9: ['REMAINDER']
+    },
+    hints: {
+      4: [
+        "Helper; assistant",
+        "So be it; said at end of a prayer",
+        "Challenge someone; be bold",
+        "School administrator; church leader",
+        "Beloved; expensive",
+        "Make money; deserve",
+        "Thought or concept",
+        "Created; manufactured",
+        "Lion's flowing neck hair",
+        "Female horse",
+        "What you're called",
+        "Close by; not far",
+        "Look at written words"
+      ],
+      5: [
+        "Pointed or directed at a target",
+        "Broadcast on radio or television",
+        "Having a flowing neck mane",
+        "Given a name; called something"
+      ],
+      6: [
+        "Look up to; regard with respect",
+        "Male members of a military flight crew",
+        "Iron-deficiency blood condition",
+        "Loose skin flakes; anger or irritation",
+        "Young unmarried woman; first time",
+        "Injured by crushing; dented",
+        "One who injures by crushing",
+        "Soldier of the sea",
+        "Middle value; relating to the middle",
+        "Fell as water from the sky",
+        "Stay behind; continue to be"
+      ],
+      7: [
+        "Looked up to; regarded with respect",
+        "One who looks up to someone",
+        "Sailor who navigates by the stars",
+        "Joined in matrimony; wed"
+      ],
+      8: [
+        "Seasoning liquid for soaking meat (pangram!)",
+        "Continued to be; stayed behind"
+      ],
+      9: [
+        "What is left over; the rest"
+      ]
+    }
+  },
+
+  // PUZZLE 70: POPSICLE
+  {
+    id: 'popsicle-puzzle',
+    subtitle: 'Cool down with this one!',
+    letters: ['P', 'O', 'S', 'I', 'C', 'L', 'E'],
+    keyLetters: ['O', 'E'],
+    totalWordCount: 26,
+    words: {
+      4: ['COLE', 'COPE', 'LOPE', 'LOSE', 'OLEO', 'POLE', 'POSE', 'SLOE', 'SOLE'],
+      5: ['CLOSE', 'COLES', 'COPES', 'ELOPE', 'LOPES', 'POLES', 'POSES', 'SCOPE', 'SLOPE'],
+      6: ['ELOPES', 'POLICE', 'SCOPES', 'SLOPES'],
+      7: ['POLICES'],
+      8: ['POLICIES', 'POPSICLE'],
+      9: ['POPSICLES']
+    },
+    hints: {
+      4: [
+        "A type of leafy green vegetable",
+        "Deal with; manage a situation",
+        "Run at an easy pace",
+        "Misplace; fail to win",
+        "Margarine; a type of olive oil",
+        "Long stick; unit of measurement",
+        "Strike a position; pretend",
+        "A dark berry used in sloe gin",
+        "Bottom of a shoe; only one"
+      ],
+      5: [
+        "Shut; nearby; nearly",
+        "Types of leafy green vegetables",
+        "Deals with; manages situations",
+        "Run away together; flee secretly",
+        "Runs at an easy pace",
+        "Long sticks; units of measurement",
+        "Strikes positions; pretends",
+        "Range of view; extent of coverage",
+        "Incline; slanted surface"
+      ],
+      6: [
+        "Runs away together; flees secretly",
+        "Law enforcement; keep order",
+        "Ranges of view; extents of coverage",
+        "Inclines; slanted surfaces"
+      ],
+      7: [
+        "Enforces law and order"
+      ],
+      8: [
+        "Rules or plans of action",
+        "Frozen treat on a stick (pangram!)"
+      ],
+      9: [
+        "Frozen treats on sticks (pangram!)"
+      ]
+    }
+  },
+
+  // PUZZLE 71: SKELETON
+  {
+    id: 'skeleton-puzzle',
+    subtitle: 'Down to the bone!',
+    letters: ['S', 'K', 'E', 'L', 'T', 'O', 'N'],
+    keyLetters: ['E', 'O'],
+    totalWordCount: 28,
+    words: {
+      4: ['LONE', 'LOSE', 'NOEL', 'NOSE', 'NOTE', 'ONES', 'SLOE', 'SOLE', 'TOES', 'TOLE', 'TONE'],
+      5: ['NOELS', 'NOTES', 'ONSET', 'STOKE', 'STOLE', 'STONE', 'TOLES', 'TONES'],
+      6: ['KETONE', 'ONSETS', 'STOKES', 'STOLEN', 'STOLES', 'STONES'],
+      7: ['KETONES'],
+      8: ['SKELETON'],
+      9: ['SKELETONS']
+    },
+    hints: {
+      4: [
+        "Solitary; by oneself",
+        "Misplace; fail to win",
+        "Christmas carol; a boy's name",
+        "Facial feature for smelling",
+        "Written message; musical pitch",
+        "Single items; individuals",
+        "A dark berry used in sloe gin",
+        "Bottom of a shoe; only one",
+        "Foot digits",
+        "Decorative painted tinware",
+        "Sound quality; shade of color"
+      ],
+      5: [
+        "Christmas carols; boys' names",
+        "Written messages; musical pitches",
+        "Beginning; start of something",
+        "Stir up a fire; provoke interest",
+        "Long loose garment; took without right",
+        "Rock; fruit seed",
+        "Decorative painted tinwares",
+        "Sound qualities; shades of color"
+      ],
+      6: [
+        "Chemical compound found in blood",
+        "Beginnings; starts of something",
+        "Stirs up a fire; provokes interest",
+        "Taken without right; pilfered",
+        "Long loose garments",
+        "Rocks; fruit seeds"
+      ],
+      7: [
+        "Chemical compounds found in blood"
+      ],
+      8: [
+        "The bones of a body (pangram!)"
+      ],
+      9: [
+        "The bones of multiple bodies (pangram!)"
+      ]
+    }
+  },
+  // PUZZLE 72: TAKEOFFS
+  {
+    id: 'takeoffs-puzzle',
+    subtitle: 'Up, up, and away!',
+    letters: ['T', 'A', 'K', 'E', 'O', 'F', 'S'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 33,
+    words: {
+      4: ['EAST', 'EATS', 'FAKE', 'FATE', 'FEAT', 'FETA', 'SAFE', 'SAKE', 'SATE', 'SEAT', 'TAKE', 'TEAK'],
+      5: ['FAKES', 'FATES', 'FEATS', 'SAFES', 'SAKES', 'SATES', 'SEATS', 'SKATE', 'STAKE', 'STEAK', 'TAKES', 'TEAKS'],
+      6: ['SAFEST', 'SKATES', 'STAKES', 'STEAKS'],
+      7: ['FASTEST', 'OFFTAKE', 'TAKEOFF'],
+      8: ['OFFTAKES', 'TAKEOFFS']
+    },
+    hints: {
+      4: [
+        "Compass direction; sunrise side",
+        "Consumes food",
+        "Not real; counterfeit",
+        "Destiny; what will happen",
+        "Achievement; impressive act",
+        "Greek cheese used in salads",
+        "Not dangerous; secure",
+        "Purpose; for goodness ___",
+        "Satisfy fully",
+        "Chair; place to sit",
+        "Grab; bring along",
+        "Tropical hardwood; sailing ship material"
+      ],
+      5: [
+        "Not real ones; counterfeits",
+        "Destinies; what will happen",
+        "Achievements; impressive acts",
+        "Secure storage boxes; not dangerous ones",
+        "Purposes; reasons",
+        "Satisfies fully",
+        "Chairs; places to sit",
+        "Glide on ice with blades",
+        "Pointed post; claim something",
+        "Beef cut; dinner centerpiece",
+        "Grabs; brings along",
+        "Tropical hardwoods; sailing ship materials"
+      ],
+      6: [
+        "Most secure; most protected",
+        "Glides on ice with blades",
+        "Pointed posts; claims something",
+        "Beef cuts; dinner centerpieces"
+      ],
+      7: [
+        "Most quick; most rapid",
+        "Removal of gas or liquid from a source",
+        "Plane departure; comedic impression (pangram!)"
+      ],
+      8: [
+        "Removals of gas or liquid from sources",
+        "Plane departures; comedic impressions (pangram!)"
+      ]
+    }
+  },
+
+  // PUZZLE 73: MANAGERS
+  {
+    id: 'managers-puzzle',
+    subtitle: 'Who\'s in charge here?',
+    letters: ['M', 'A', 'N', 'G', 'E', 'R', 'S'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 67,
+    words: {
+      4: ['AMEN', 'AREA', 'EARN', 'EARS', 'ERAS', 'GAME', 'GEAR', 'MARE', 'MEAN', 'NAME', 'NEAR', 'RAGE', 'REAM', 'SAGE', 'SAME', 'SANE', 'SEAM', 'SEAR'],
+      5: ['AMENS', 'ANGER', 'AREAS', 'ARENA', 'EARNS', 'GAMER', 'GAMES', 'GEARS', 'MANES', 'MARES', 'MEANS', 'NAMES', 'NEARS', 'RAGES', 'RAMEN', 'RANGE', 'REAMS', 'SAGES', 'SANER', 'SEAMS', 'SEARS', 'SNARE'],
+      6: ['ANGERS', 'ARENAS', 'GAMERS', 'GARNER', 'GRANGE', 'MANAGE', 'MANGER', 'MANNER', 'MENAGE', 'NAGGER', 'RAMENS', 'RANGER', 'RANGES', 'RENAME', 'SEAMEN', 'SNARES'],
+      7: ['GARNERS', 'GRANGES', 'MANAGER', 'MANAGES', 'MANGERS', 'MANNERS', 'MENAGES', 'NAGGERS', 'RANGERS', 'RENAMES'],
+      8: ['MANAGERS']
+    },
+    hints: {
+      4: [
+        "So be it; said at end of a prayer",
+        "Region; surface space",
+        "Make money; deserve",
+        "Hearing organs",
+        "Historical time periods",
+        "Activity with rules; wild animal",
+        "Mechanical cog; equipment",
+        "Female horse",
+        "Unkind; or an average",
+        "What you're called",
+        "Close by; not far",
+        "Intense anger; fury",
+        "Large quantity of paper; daydream",
+        "Wise person; herb used in cooking",
+        "Identical; not different",
+        "Mentally sound; rational",
+        "Line where two fabrics are joined",
+        "Burn the surface; scorch"
+      ],
+      5: [
+        "So be it phrases; prayer endings",
+        "Strong feeling of annoyance",
+        "Regions; surface spaces",
+        "Sports venue; open area for competition",
+        "Makes money; deserves",
+        "One who plays video games",
+        "Activities with rules; wild animals",
+        "Mechanical cogs; equipment",
+        "Lions' flowing neck hair",
+        "Female horses",
+        "Methods; averages",
+        "What people are called",
+        "Comes close to",
+        "Intense angers; furies",
+        "Japanese noodle soup",
+        "Span of distance; mountain chain",
+        "Large quantities of paper",
+        "Wise people; herbs used in cooking",
+        "More mentally sound",
+        "Lines where fabrics are joined",
+        "Burns surfaces; scorches",
+        "Trap for catching animals"
+      ],
+      6: [
+        "Strong feelings of annoyance",
+        "Sports venues; open areas for competition",
+        "Ones who play video games",
+        "Collect and store; gather rewards",
+        "Farm with outbuildings; farming cooperative",
+        "Oversee; handle a situation",
+        "Feeding trough for animals",
+        "Way of doing something; polite behavior",
+        "A household; domestic group",
+        "One who pesters or complains repeatedly",
+        "Japanese noodle soups",
+        "Park protector; forest guide",
+        "Spans; mountain chains",
+        "Give a new name to",
+        "Sailors; navy men",
+        "Traps for catching animals"
+      ],
+      7: [
+        "Collects and stores; gathers rewards",
+        "Farms with outbuildings; cooperatives",
+        "One who oversees a team or business (pangram!)",
+        "Oversees; handles situations",
+        "Feeding troughs for animals",
+        "Ways of doing things; polite behaviors",
+        "Households; domestic groups",
+        "Ones who pester or complain repeatedly",
+        "Park protectors; forest guides",
+        "Gives new names to"
+      ],
+      8: [
+        "People who oversee teams or businesses (pangram!)"
+      ]
+    }
+  },
 
 ];
 
