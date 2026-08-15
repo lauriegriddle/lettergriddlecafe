@@ -1211,6 +1211,31 @@ const stories = [
   closingLink: 'https://lettergriddle.com/play',
   closingLinkText: 'Play Letter Griddle ☕'
 },
+{
+  id: 'smile-youre-on',
+  title: 'Smile! You\'re on…',
+  subtitle: '📸 Now Available',
+  date: 'August 2026',
+  locked: false,
+  content: [
+    '"Sarah, you are our resident expert \'gramm-er…" Laurel starts.',
+    '"Laurel, thank you for…" Sarah begins.',
+    '"Following?" Josie asks.',
+    '"Liking?" Jennie questions.',
+    '"Engaging?" Josephine wonders.',
+    '"All of those things," Sarah completes her thought.',
+    '"Have you noticed that Letter Griddle has an account?" Laurel asks the group.',
+    '"I\'ve noticed my feed has some…" Sarah starts.',
+    '"Colorful posts…" Laurel eagerly awaits Sarah\'s response.',
+    'Laurel takes her phone out of the side leg pocket of her yoga pants.',
+    '"…that announce puzzle topics!" Laurel shares.',
+    'Opening up her app, Laurel shows Sarah her phone screen with the Letter Griddle account page displayed.',
+{ type: 'image', src: '/images/instagram-preview.png', alt: 'Letter Griddle Instagram account — @letter_griddle' },
+  ],
+  closing: 'Readers, follow the Letter Griddle fun on Instagram. 📸 @letter_griddle — Each Letter Griddle post announces the day\'s topic with a fun caption and a musical selection for a multi-sensory Letter Griddle experience.',
+  closingLink: 'https://instagram.com/letter_griddle',
+  closingLinkText: 'Follow @letter_griddle on Instagram 📸'
+},
 ];
 
 // Puzzle data - expandable for future puzzles
@@ -1912,6 +1937,27 @@ const puzzles = {
   ],
   didYouKnow: 'Saturday gets its name from Saturn, the Roman god of agriculture, wealth, and time. In Nordic languages like Swedish (lördag), the name stems from an old Norse word for bath, as Vikings traditionally washed up on Saturdays. In Sweden, Saturday (lördagsgodis) is traditionally the only day children are allowed to eat candy.'
 },
+'smile-youre-on': {
+  id: 'instagram',
+  title: 'Letter Griddle Insta',
+  category: 'Letter Griddle Insta',
+  words: ['LIKE', 'SHARE', 'FOLLOW', 'ACCOUNT', 'ENGAGING'],
+  hints: [
+    'What Josie wondered Sarah did on Letter Griddle\'s posts',
+    'What Jennie wondered Sarah did with the colorful posts',
+    'What Josephine wondered Sarah did with the account',
+    'The Letter Griddle Instagram page Laurel pulled up on her phone',
+    'What Josephine wondered — and what the posts are designed to be'
+  ],
+  revealed: [
+    { pos: 1, letter: 'I' },
+    { pos: 2, letter: 'A' },
+    { pos: 3, letter: 'L' },
+    { pos: 3, letter: 'O' },
+    { pos: 4, letter: 'G' }
+  ],
+  didYouKnow: 'Originally called "Codename," the name Instagram comes from a mix of "instant camera" and "telegram." The platform now exceeds 2 billion monthly active users worldwide.'
+},
 };
 
 // Mobile touch optimization styles - reusable objects
@@ -2378,8 +2424,20 @@ function StoryDetail({ story, puzzle, onBack }) {
         <div className="story-section">
           <div className="story-text-card">
             {story.content.map((paragraph, i) => (
-              <p key={i} className="story-paragraph">{paragraph}</p>
-            ))}
+  typeof paragraph === 'object' && paragraph.type === 'image'
+    ? (
+      <img
+        key={i}
+        src={paragraph.src}
+        alt={paragraph.alt}
+        className="story-image"
+        style={{ width: '100%', maxWidth: '400px', borderRadius: '12px', margin: '16px auto', display: 'block' }}
+      />
+    )
+    : (
+      <p key={i} className="story-paragraph">{paragraph}</p>
+    )
+))}
             <div className="story-closing">
               <p>{story.closing}</p>
               {story.closingLink && (
