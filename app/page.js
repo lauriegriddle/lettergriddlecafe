@@ -1166,6 +1166,51 @@ const stories = [
   closingLink: 'https://youtube.com/watch?v=b7k0a5hYnSI',
   closingLinkText: 'Name That Song on YouTube 🎵'
 },
+{
+  id: 'enjoy-the-day-before-sunday',
+  title: 'Enjoy the Day Before Sunday',
+  subtitle: '☕ Now Available',
+  date: 'August 2026',
+  locked: false,
+  content: [
+    '"That\'s it!"',
+    '"What is it?" Taylor questions Laurel.',
+    '"Relaxation!" Laurel responds.',
+    '"Sounds like…" Jennie begins.',
+    '"A theme day for the cafe?" Sarah continues.',
+    '"Relaxation Saturday at Letter Griddle!" Laurel announces.',
+    '"Perfect!" Mrs. Lindsay offers.',
+    '"How does it work?" Josie asks Laurel.',
+    '"Well, we\'ve got Trivia Sundays firmly rooted in our schedule…" Laurel begins.',
+    '"Yes, and…?" Taylor eagerly asks.',
+    '"Saturday is before Sunday…" Laurel continues.',
+    '"As always, yes, and…" Taylor prompts.',
+    '"Let\'s get the trivia crew together on Saturdays!" Mr. Lindsay interjects.',
+    '"Okay, so, I think I\'m following…sort of…." Taylor says.',
+    '"Relaxation Saturdays at Letter Griddle!" Josie repeats Laurel\'s earlier statement.',
+    '"We offer two for one teas!" Laurel continues.',
+    '"Hot or iced?" Mrs. Lindsay asks.',
+    '"Yes! Hot tea and iced tea!" Laurel shares.',
+    '"You had me at two for one…" Mr. Lindsay says.',
+    '"What else?" Jennie asks as she looks at Isaac.',
+    '"A special item from Letter Griddle Cookbook!" Laurel is on a roll.',
+    '"Wonderful!" Josephine interjects, knowing that she will play a special part in this.',
+    '"On Trivia Sunday, the crew will decide on the following Relaxation Saturday\'s special treat!" Laurel adds.',
+    '"Yes, perfect! That\'s how we will choose the special treat!" Josephine continues.',
+    '"The crew will be thinking about the treat they chose all week and when Saturday rolls around…" Laurel shares.',
+    '"The crew will roll in to Letter Griddle Cafe…" Taylor says.',
+    '"…for the special baked item…" Josephine interjects.',
+    '"…and tea!" Mr. Lindsay adds.',
+    '"Very relaxing!" Mrs. Lindsay says.',
+    '"Indeed!" Laurel offers.',
+    '"Wonderful plan!" Sarah compliments Laurel\'s idea.',
+    '"The customers have already chosen and only have to decide Hot or Iced tea," Josephine says confidently.',
+    '"Relaxation Saturday at Letter Griddle Cafe has been invented," Taylor announces.',
+  ],
+  closing: 'Readers, please don\'t wait until Saturday when you can relax with lettergriddle.com/play any day of the week. ☕',
+  closingLink: 'https://lettergriddle.com/play',
+  closingLinkText: 'Play Letter Griddle ☕'
+},
 ];
 
 // Puzzle data - expandable for future puzzles
@@ -1845,6 +1890,27 @@ const puzzles = {
     { pos: 4, letter: 'E' }
   ],
   didYouKnow: 'Blasting through the TV every week as the theme for The Hills, "Unwritten" transformed into a meteoric slow-burner, eventually spending 42 weeks on the Billboard Hot 100 and becoming the most-played song on American radio for the year 2006.'
+},
+'enjoy-the-day-before-sunday': {
+  id: 'saturday',
+  title: 'Enjoy the Day Before Sunday',
+  category: 'Enjoy the Day Before Sunday',
+  words: ['ROLL', 'RELAX', 'INVENT', 'PERFECT', 'SATURDAY'],
+  hints: [
+    'What the crew will do into the cafe and what Laurel is on',
+    'What Saturdays at Letter Griddle are designed for',
+    'What Taylor announced Relaxation Saturday had been',
+    'Mrs. Lindsay\'s one word response to the new plan',
+    'The day before Sunday and the new Letter Griddle gathering day'
+  ],
+  revealed: [
+    { pos: 1, letter: 'O' },
+    { pos: 2, letter: 'L' },
+    { pos: 3, letter: 'E' },
+    { pos: 3, letter: 'F' },
+    { pos: 4, letter: 'R' }
+  ],
+  didYouKnow: 'Saturday gets its name from Saturn, the Roman god of agriculture, wealth, and time. In Nordic languages like Swedish (lördag), the name stems from an old Norse word for bath, as Vikings traditionally washed up on Saturdays. In Sweden, Saturday (lördagsgodis) is traditionally the only day children are allowed to eat candy.'
 },
 };
 
