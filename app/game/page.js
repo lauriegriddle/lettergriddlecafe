@@ -4307,7 +4307,7 @@ const PUZZLES = [
       4: [
         "Solitary; by oneself",
         "Misplace; fail to win",
-        "Christmas carol; a boy's name",
+        "Christmas; a boy's name",
         "Facial feature for smelling",
         "Written message; musical pitch",
         "Single items; individuals",
@@ -4318,7 +4318,7 @@ const PUZZLES = [
         "Sound quality; shade of color"
       ],
       5: [
-        "Christmas carols; boys' names",
+        "Christmas, plural; boys' names",
         "Written messages; musical pitches",
         "Beginning; start of something",
         "Stir up a fire; provoke interest",
