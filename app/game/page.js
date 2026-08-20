@@ -4501,6 +4501,266 @@ const PUZZLES = [
       ]
     }
   },
+    // PUZZLE 74: COTTAGES
+  {
+    id: 'cottages-puzzle',
+    subtitle: 'Home sweet home!',
+    letters: ['C', 'O', 'T', 'A', 'G', 'E', 'S'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 24,
+    words: {
+      4: ['ACES', 'AGES', 'CAGE', 'CASE', 'EASE', 'EAST', 'EATS', 'GATE', 'SAGE', 'SATE', 'SEAT', 'TEAS'],
+      5: ['AGATE', 'CAGES', 'CASES', 'GATES', 'SAGES', 'SATES', 'SEATS', 'STAGE'],
+      6: ['AGATES', 'STAGES'],
+      7: ['COTTAGE'],
+      8: ['COTTAGES']
+    },
+    hints: {
+      4: [
+        "Top cards in a deck; experts",
+        "Time periods; grows older",
+        "Wire enclosure; trap an animal",
+        "Container; instance or example",
+        "Comfort; make less difficult",
+        "Compass direction; sunrise side",
+        "Consumes food",
+        "Hinged barrier; entrance",
+        "Wise person; herb used in cooking",
+        "Satisfy fully",
+        "Chair; place to sit",
+        "Hot brewed beverages"
+      ],
+      5: [
+        "Banded gemstone used in jewelry",
+        "Wire enclosures; traps animals",
+        "Containers; instances or examples",
+        "Hinged barriers; entrances",
+        "Wise people; herbs used in cooking",
+        "Satisfies fully",
+        "Chairs; places to sit",
+        "Platform or theater; a period of development"
+      ],
+      6: [
+        "Banded gemstones used in jewelry",
+        "Platforms or theaters; periods of development"
+      ],
+      7: [
+        "Small cozy country house (pangram!)"
+      ],
+      8: [
+        "Small cozy country houses (pangram!)"
+      ]
+    }
+  },
+
+  // PUZZLE 75: SMOOTHIE
+  {
+    id: 'smoothie-puzzle',
+    subtitle: 'Blend it up!',
+    letters: ['S', 'M', 'O', 'T', 'H', 'I', 'E'],
+    keyLetters: ['O', 'E'],
+    totalWordCount: 27,
+    words: {
+      4: ['HOES', 'HOME', 'HOSE', 'MOTE', 'SHOE', 'SOME', 'TOES', 'TOME'],
+      5: ['EMOTE', 'ETHOS', 'HOMES', 'HOSES', 'METHO', 'MOTES', 'MOTET', 'SHOES', 'SMOTE', 'THOSE', 'TOMES'],
+      6: ['EMOTES', 'METHOS', 'MOTETS'],
+      7: ['HOMIEST'],
+      8: ['SMOOTHIE', 'SOMETIME'],
+      9: ['SMOOTHIES', 'SOMETIMES']
+    },
+    hints: {
+      4: [
+        "Garden tools for weeding",
+        "Where you live; cozy place",
+        "Flexible tube for water",
+        "Small speck of dust or material",
+        "Footwear; fit snugly",
+        "A certain amount; rather",
+        "Foot digits",
+        "A large book; heavy volume"
+      ],
+      5: [
+        "Express emotion dramatically",
+        "The spirit or character of a culture",
+        "Cozy places; residences",
+        "Flexible tubes for water",
+        "Methylated spirits; fuel alcohol",
+        "Small specks of dust or material",
+        "A choral composition; short anthem",
+        "Footwear items; fits snugly",
+        "Struck with force; extinguished",
+        "The ones over there; at that time",
+        "Large books; heavy volumes"
+      ],
+      6: [
+        "Expresses emotion dramatically",
+        "Methylated spirits; fuel alcohols",
+        "Short choral compositions; anthems"
+      ],
+      7: [
+        "Most comfortable and cozy feeling"
+      ],
+      8: [
+        "Blended fruit drink (pangram!)",
+        "At a certain unspecified time"
+      ],
+      9: [
+        "Blended fruit drinks (pangram!)",
+        "At certain unspecified times"
+      ]
+    }
+  },
+
+  // PUZZLE 76: SCHOONERS
+  {
+    id: 'schooners-puzzle',
+    subtitle: 'Sailing on in!',
+    letters: ['S', 'C', 'H', 'O', 'N', 'E', 'R'],
+    keyLetters: ['O', 'E'],
+    totalWordCount: 53,
+    words: {
+      4: ['CONE', 'CORE', 'ECHO', 'EONS', 'HERO', 'HONE', 'HOSE', 'NOSE', 'ONCE', 'ONES', 'ORES', 'ROES', 'ROSE', 'SHOE', 'SORE'],
+      5: ['CHORE', 'CHOSE', 'CONES', 'CORES', 'CRONE', 'ECHOS', 'HERON', 'HEROS', 'HONES', 'HORSE', 'HOSES', 'NOSES', 'OCHER', 'OCHRE', 'ROSES', 'SCONE', 'SCORE', 'SHOES', 'SHONE', 'SHORE', 'SNORE', 'SORES'],
+      6: ['CHORES', 'CRONES', 'HERONS', 'HORSES', 'OCHERS', 'OCHRES', 'SCONES', 'SCORES', 'SENHOR', 'SHORES', 'SNORES'],
+      7: ['CORONER', 'SENHORS'],
+      8: ['CORONERS', 'SCHOONER'],
+      9: ['SCHOONERS']
+    },
+    hints: {
+      4: [
+        "Ice cream shape; traffic marker",
+        "Center; essential part",
+        "Sound that bounces back",
+        "Long time periods",
+        "Brave or admired person",
+        "Sharpen; make smooth",
+        "Flexible tube for water",
+        "Facial feature for smelling",
+        "One time only",
+        "Single items; individuals",
+        "Rocks containing valuable metals",
+        "Fish eggs; a type of deer",
+        "A flower; came back up",
+        "Footwear; fit snugly",
+        "Painful and aching"
+      ],
+      5: [
+        "Task or errand; a duty",
+        "Selected; picked out",
+        "Ice cream shapes; traffic markers",
+        "Centers; essential parts",
+        "Old woman; witch in fairy tales",
+        "Sounds that bounce back",
+        "Large wading bird with long legs",
+        "Brave or admired people",
+        "Sharpens; makes smooth",
+        "Large four-legged riding animal",
+        "Flexible tubes for water",
+        "Facial features for smelling",
+        "Reddish-brown pigment; raw umber",
+        "Reddish-brown pigment; British spelling",
+        "A flower; came back up",
+        "Small round bread or biscuit",
+        "Tally of points; make a goal",
+        "Footwear items; fits snugly",
+        "Gleamed; glowed brightly",
+        "Rocky coastline; beach",
+        "Make a rumbling nasal sound",
+        "Painful and aching ones"
+      ],
+      6: [
+        "Tasks or errands; duties",
+        "Old women; witches in fairy tales",
+        "Large wading birds with long legs",
+        "Large four-legged riding animals",
+        "Reddish-brown pigments; raw umber",
+        "Reddish-brown pigments; British spelling",
+        "Small round breads or biscuits",
+        "Tallies of points; makes goals",
+        "Portuguese or Brazilian title for a man",
+        "Rocky coastlines; beaches",
+        "Makes rumbling nasal sounds"
+      ],
+      7: [
+        "Official who investigates suspicious deaths",
+        "Portuguese or Brazilian titles for men"
+      ],
+      8: [
+        "Officials who investigate suspicious deaths",
+        "Sailing vessel with two or more masts (pangram!)"
+      ],
+      9: [
+        "Sailing vessels with two or more masts (pangram!)"
+      ]
+    }
+  },
+
+  // PUZZLE 77: COMMENTS
+  {
+    id: 'comments-puzzle',
+    subtitle: "Say what's on your mind!",
+    letters: ['C', 'O', 'M', 'E', 'N', 'T', 'S'],
+    keyLetters: ['O', 'E'],
+    totalWordCount: 39,
+    words: {
+      4: ['COME', 'CONE', 'COTE', 'EONS', 'MOTE', 'NOSE', 'NOTE', 'ONCE', 'ONES', 'SOME', 'TOES', 'TOME', 'TONE'],
+      5: ['COMES', 'COMET', 'CONES', 'COTES', 'MOTES', 'NOTES', 'ONSET', 'SCONE', 'SMOTE', 'STONE', 'TOMES', 'TONES'],
+      6: ['COMETS', 'MOMENT', 'ONSETS', 'SCONES', 'STONES'],
+      7: ['COMMENT', 'CONSENT', 'CONTEMN', 'CONTENT', 'MOMENTS'],
+      8: ['COMMENTS', 'CONSENTS', 'CONTEMNS', 'CONTENTS']
+    },
+    hints: {
+      4: [
+        "Arrive; travel toward",
+        "Ice cream shape; traffic marker",
+        "A dovecote; a small shelter",
+        "Long time periods",
+        "Small speck of dust or material",
+        "Facial feature for smelling",
+        "Written message; musical pitch",
+        "One time only",
+        "Single items; individuals",
+        "A certain amount; rather",
+        "Foot digits",
+        "A large book; heavy volume",
+        "Sound quality; shade of color"
+      ],
+      5: [
+        "Arrives; travels toward",
+        "Space rock that burns in atmosphere",
+        "Ice cream shapes; traffic markers",
+        "Dovecotes; small shelters",
+        "Small specks of dust or material",
+        "Written messages; musical pitches",
+        "Beginning; start of something",
+        "Small round bread or biscuit",
+        "Struck with force; extinguished",
+        "Rock; fruit seed",
+        "Large books; heavy volumes",
+        "Sound qualities; shades of color"
+      ],
+      6: [
+        "Space rocks that burn in atmosphere",
+        "Brief period of time; very important",
+        "Beginnings; starts of something",
+        "Small round breads or biscuits",
+        "Rocks; fruit seeds"
+      ],
+      7: [
+        "Remark or observation (pangram!)",
+        "Give permission or agreement",
+        "Treat with scorn or disdain",
+        "What is inside; satisfied and happy",
+        "Brief periods of time; very important ones"
+      ],
+      8: [
+        "Remarks or observations (pangram!)",
+        "Gives permission or agreement",
+        "Treats with scorn or disdain",
+        "What is inside; satisfied and happy"
+      ]
+    }
+  },
 
 ];
 
