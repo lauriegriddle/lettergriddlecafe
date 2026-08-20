@@ -4955,6 +4955,235 @@ const PUZZLES = [
     }
   },
 
+    // PUZZLE 81: GATHERS
+  {
+    id: 'gathers-puzzle',
+    subtitle: 'Come on in!',
+    letters: ['G', 'A', 'T', 'H', 'E', 'R', 'S'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 59,
+    words: {
+      4: ['AGES', 'AREA', 'ARES', 'EARS', 'EAST', 'EATS', 'ERAS', 'GATE', 'GEAR', 'HARE', 'HATE', 'HEAR', 'HEAT', 'RAGE', 'RATE', 'SAGE', 'SATE', 'SEAR', 'SEAT', 'TARE', 'TEAR'],
+      5: ['EARTH', 'GATES', 'GEARS', 'GREAT', 'HARES', 'HASTE', 'HATER', 'HEARS', 'HEART', 'HEATS', 'RAGES', 'RATES', 'SAGES', 'SEARS', 'SEATS', 'SHARE', 'SHEAR', 'STAGE', 'STARE', 'TARES', 'TEARS'],
+      6: ['EARTHS', 'GASHES', 'GATHER', 'GREATS', 'HATERS', 'HEARSE', 'HEARTS', 'RASHER', 'SHARER', 'SHARES', 'SHEARS', 'STAGES', 'STARES'],
+      7: ['GATHERS', 'RASHERS', 'TRASHER'],
+      8: ['THRASHES']
+    },
+    hints: {
+      4: [
+        "Time periods; grows older",
+        "Region; surface space",
+        "Greek god of war; plural of are",
+        "Hearing organs",
+        "Compass direction; sunrise side",
+        "Consumes food",
+        "Historical time periods",
+        "Hinged barrier; entrance",
+        "Mechanical cog; equipment",
+        "Rabbit-like animal",
+        "Strong dislike; despise",
+        "Perceive sound",
+        "Warmth from the sun or fire",
+        "Intense anger; fury",
+        "Speed; evaluate or rank",
+        "Wise person; herb used in cooking",
+        "Satisfy fully",
+        "Burn the surface; scorch",
+        "Chair; place to sit",
+        "Weed; weight of a container",
+        "Rip; eye drop"
+      ],
+      5: [
+        "Soil and rock beneath our feet",
+        "Hinged barriers; entrances",
+        "Mechanical cogs; equipment",
+        "Impressive; outstanding",
+        "Rabbit-like animals",
+        "Urgency; hurried rush",
+        "One who strongly dislikes",
+        "Perceives sound",
+        "Organ that pumps blood",
+        "Warmth from the sun; fires",
+        "Intense angers; furies",
+        "Speeds; evaluates",
+        "Wise people; herbs used in cooking",
+        "Burns surfaces; scorches",
+        "Chairs; places to sit",
+        "Divide; portion out",
+        "Cut with shears",
+        "Platform or theater; period of development",
+        "Gaze; look fixedly",
+        "Weeds; container weights",
+        "Rips; eye drops"
+      ],
+      6: [
+        "Soils and rocks of the planet",
+        "Deep cuts or wounds",
+        "Collect together; assemble (pangram!)",
+        "Impressive or outstanding ones",
+        "Ones who strongly dislike",
+        "Funeral vehicle; carriage",
+        "Organs that pump blood",
+        "More reckless; strips of bacon",
+        "One who divides or shares",
+        "Divides; portions out",
+        "Cuts with shears",
+        "Platforms or theaters; periods of development",
+        "Gazes; looks fixedly"
+      ],
+      7: [
+        "Collects together; assembles (pangram!)",
+        "Strips of bacon; more reckless ones",
+        "One who thrashes or beats"
+      ],
+      8: [
+        "Beats or flails vigorously"
+      ]
+    }
+  },
+
+  // PUZZLE 82: FLATTENS
+  {
+    id: 'flattens-puzzle',
+    subtitle: 'Level up!',
+    letters: ['F', 'L', 'A', 'T', 'E', 'N', 'S'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 45,
+    words: {
+      4: ['ALES', 'ANTE', 'EAST', 'EATS', 'FATE', 'FEAT', 'FLEA', 'LANE', 'LATE', 'LEAF', 'LEAN', 'NEAT', 'SALE', 'SANE', 'SATE', 'SEAL', 'SEAT', 'TALE', 'TEAL', 'TEAS'],
+      5: ['ANTES', 'EATEN', 'FANES', 'FATES', 'FEATS', 'FLEAS', 'LANES', 'LEANS', 'LEANT', 'SALES', 'SATES', 'SEALS', 'SEATS', 'TALES', 'TEALS'],
+      6: ['FASTEN', 'FEASTS', 'SAFEST', 'SANEST', 'STALES', 'TALENT'],
+      7: ['FASTENS', 'FLATTEN', 'TALENTS'],
+      8: ['FLATTENS']
+    },
+    hints: {
+      4: [
+        "Types of beer",
+        "Poker stake; put money in the pot",
+        "Compass direction; sunrise side",
+        "Consumes food",
+        "Destiny; what will happen",
+        "Achievement; impressive act",
+        "Jumping insect; a small bite",
+        "Narrow road; bowling path",
+        "Not on time; deceased",
+        "Part of a book or plant",
+        "Thin; tilt to one side",
+        "Tidy and organized",
+        "Discount event at a store",
+        "Mentally sound; rational",
+        "Satisfy fully",
+        "Ocean mammal; close tightly",
+        "Chair; place to sit",
+        "Story; narrative",
+        "Blue-green color; type of duck",
+        "Hot brewed beverages"
+      ],
+      5: [
+        "Poker stakes; bets before dealing",
+        "Consumed as food",
+        "Weather vanes; old-fashioned word for temples",
+        "Destinies; what will happen",
+        "Achievements; impressive acts",
+        "Jumping insects; small bites",
+        "Narrow roads; bowling paths",
+        "Tilts to one side",
+        "Leaned; past tense of lean",
+        "Discount events at stores",
+        "Satisfies fully",
+        "Ocean mammals; closes tightly",
+        "Chairs; places to sit",
+        "Stories; narratives",
+        "Blue-green colors; types of duck"
+      ],
+      6: [
+        "Secure or fix firmly in place",
+        "Large celebratory meals",
+        "Most secure; most protected",
+        "Most mentally sound; most rational",
+        "Makes less fresh; goes flat",
+        "A natural ability or gift"
+      ],
+      7: [
+        "Secures or fixes firmly in place",
+        "Make level or smooth (pangram!)",
+        "Natural abilities or gifts"
+      ],
+      8: [
+        "Makes level or smooth (pangram!)"
+      ]
+    }
+  },
+
+  // PUZZLE 83: WAFFLERS
+  {
+    id: 'wafflers-puzzle',
+    subtitle: 'Stop waffling and play!',
+    letters: ['W', 'A', 'F', 'L', 'E', 'R', 'S'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 40,
+    words: {
+      4: ['ALES', 'AREA', 'AWES', 'EARL', 'EARS', 'ERAS', 'FARE', 'FEAR', 'FLEA', 'REAL', 'SAFE', 'SALE', 'SEAL', 'SEAR', 'WARE', 'WEAL', 'WEAR'],
+      5: ['EARLS', 'FARES', 'FEARS', 'FLARE', 'FLEAS', 'LASER', 'REALS', 'SAFER', 'SALES', 'SEALS', 'SEARS', 'WAFER', 'WARES', 'WEALS', 'WEARS'],
+      6: ['FALSER', 'FLARES', 'LASERS', 'WAFERS', 'WAFFLE'],
+      7: ['WAFFLER', 'WAFFLES'],
+      8: ['WAFFLERS']
+    },
+    hints: {
+      4: [
+        "Types of beer",
+        "Region; surface space",
+        "Inspires wonder or amazement",
+        "British nobleman",
+        "Hearing organs",
+        "Historical time periods",
+        "Cost of a journey; food and drink",
+        "Feeling of dread or worry",
+        "Jumping insect; a small bite",
+        "Genuine; actual",
+        "Not dangerous; secure",
+        "Discount event at a store",
+        "Ocean mammal; close tightly",
+        "Burn the surface; scorch",
+        "Goods or merchandise",
+        "Prosperity; well-being",
+        "Have clothing on"
+      ],
+      5: [
+        "British noblemen",
+        "Costs of journeys; food and drink",
+        "Feelings of dread or worry",
+        "Bright burst of light or emotion",
+        "Jumping insects; small bites",
+        "Focused light beam device",
+        "Genuine things; currency",
+        "More secure; more protected",
+        "Discount events at stores",
+        "Ocean mammals; closes tightly",
+        "Burns surfaces; scorches",
+        "Thin crispy breakfast treat",
+        "Goods or merchandise",
+        "Prosperities; well-beings",
+        "Has clothing on"
+      ],
+      6: [
+        "More false; less truthful",
+        "Bright bursts of light or emotion",
+        "Focused light beam devices",
+        "Thin crispy breakfast treats",
+        "Gridded breakfast cake or treat"
+      ],
+      7: [
+        "One who speaks indecisively",
+        "Gridded breakfast cakes or treats"
+      ],
+      8: [
+        "People who speak indecisively (pangram!)"
+      ]
+    }
+  },
+
+
 ];
 
 // Get today's puzzle dynamically based on rotation
