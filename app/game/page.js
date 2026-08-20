@@ -4761,6 +4761,199 @@ const PUZZLES = [
       ]
     }
   },
+    // PUZZLE 78: FORAGES
+  {
+    id: 'forages-puzzle',
+    subtitle: 'Seek and you shall find!',
+    letters: ['F', 'O', 'R', 'A', 'G', 'E', 'S'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 23,
+    words: {
+      4: ['AREA', 'EARS', 'ERAS', 'FARE', 'FEAR', 'GEAR', 'RAGE', 'SAFE', 'SAGE', 'SEAR'],
+      5: ['AFORE', 'AREAS', 'FARES', 'FEARS', 'GEARS', 'RAGES', 'SAGES', 'SEARS'],
+      6: ['FORAGE', 'GREASE'],
+      7: ['FORAGES', 'GREASER', 'GREASES']
+    },
+    hints: {
+      4: [
+        "Region; surface space",
+        "Hearing organs",
+        "Historical time periods",
+        "Cost of a journey; food and drink",
+        "Feeling of dread or worry",
+        "Mechanical cog; equipment",
+        "Intense anger; fury",
+        "Not dangerous; secure",
+        "Wise person; herb used in cooking",
+        "Burn the surface; scorch"
+      ],
+      5: [
+        "Before; nautical term for ahead",
+        "Regions; surface spaces",
+        "Costs of journeys; food and drink",
+        "Feelings of dread or worry",
+        "Mechanical cogs; equipment",
+        "Intense angers; furies",
+        "Wise people; herbs used in cooking",
+        "Burns surfaces; scorches"
+      ],
+      6: [
+        "Search for food in the wild (pangram!)",
+        "Cooking fat; lubricate an engine"
+      ],
+      7: [
+        "Searches for food in the wild (pangram!)",
+        "One who lubricates engines; a rough person",
+        "Cooking fats; lubricates engines"
+      ]
+    }
+  },
+
+  // PUZZLE 79: STARRING
+  {
+    id: 'starring-puzzle',
+    subtitle: 'You\'re the star!',
+    letters: ['S', 'T', 'A', 'R', 'I', 'N', 'G'],
+    keyLetters: ['A', 'I'],
+    totalWordCount: 55,
+    words: {
+      4: ['ANTI', 'ARIA', 'GAIN', 'GAIT', 'RAIN', 'RANI', 'SARI'],
+      5: ['ANTIS', 'ARIAS', 'GAINS', 'GIANT', 'GRAIN', 'NAIRA', 'RAITA', 'RAINS', 'RIANT', 'SARIS', 'SATIN', 'STAIN', 'TIARA', 'TRAIN'],
+      6: ['AIRING', 'GIANTS', 'GRAINS', 'NAIRAS', 'RAITAS', 'RATING', 'SATINS', 'STAINS', 'STRAIN', 'TIARAS', 'TRAINS'],
+      7: ['AGAINST', 'AIRINGS', 'GAINING', 'GRANITA', 'INGRAIN', 'RAINING', 'RAISING', 'RANTING', 'RATINGS', 'SANGRIA', 'STARING', 'STRAINS'],
+      8: ['GRAINING', 'GRANITAS', 'GRANTING', 'INGRAINS', 'RANTINGS', 'SANGRIAS', 'STARRING', 'TRAINING'],
+      9: ['STRAINING', 'TRAININGS'],
+      10: ['STRAININGS']
+    },
+    hints: {
+      4: [
+        "Against; opposed to",
+        "Operatic solo; a melody",
+        "Profit; to acquire something",
+        "A way of walking; pace",
+        "Water falling from the sky",
+        "Queen or princess in India",
+        "Wrapped garment worn in South Asia"
+      ],
+      5: [
+        "Opposed to things",
+        "Operatic solos; melodies",
+        "Profits; acquires something",
+        "Large and imposing person",
+        "Cereal crop; small hard seed",
+        "Nigerian currency",
+        "Indian yogurt and cucumber condiment",
+        "Water falling from the sky",
+        "Laughing; cheerful in manner",
+        "Wrapped garments worn in South Asia",
+        "Smooth fabric; a color",
+        "Mark or discolor; taint",
+        "Jeweled crown worn by royalty",
+        "Locomotive and its cars"
+      ],
+      6: [
+        "Broadcasting on radio or television",
+        "Large and imposing people",
+        "Cereal crops; small hard seeds",
+        "Nigerian currencies",
+        "Indian yogurt and cucumber condiments",
+        "Score or rank; evaluating something",
+        "Smooth fabrics; colors",
+        "Marks or discolors; taints",
+        "Stretch or overexert; filter liquid",
+        "Jeweled crowns worn by royalty",
+        "Locomotives and their cars"
+      ],
+      7: [
+        "Opposed to; in conflict with",
+        "Broadcasting on radio or television",
+        "Acquiring profit or weight",
+        "Italian frozen fruit dessert",
+        "Firmly establish in the mind",
+        "Falling as water from the sky",
+        "Lifting or increasing",
+        "Speaking angrily at length",
+        "Scores or ranks; evaluating things",
+        "Spanish wine punch with fruit",
+        "Gazing fixedly at something",
+        "Stretches or overexerts; filters liquid"
+      ],
+      8: [
+        "Adding texture or wood pattern",
+        "Italian frozen fruit desserts",
+        "Giving or allowing something",
+        "Firmly establishes in the mind",
+        "Speaking angrily at length",
+        "Spanish wine punches with fruit",
+        "Featuring as the lead performer (pangram!)",
+        "Preparing athletes or students"
+      ],
+      9: [
+        "Overexerting or stretching to the limit",
+        "Preparing athletes or students"
+      ],
+      10: [
+        "Overexertions; stretching to the limits"
+      ]
+    }
+  },
+
+  // PUZZLE 80: SLEEPING
+  {
+    id: 'sleeping-puzzle',
+    subtitle: 'Shh... words at rest!',
+    letters: ['S', 'L', 'E', 'P', 'I', 'N', 'G'],
+    keyLetters: ['E', 'I'],
+    totalWordCount: 29,
+    words: {
+      4: ['ISLE', 'LEIS', 'LIEN', 'LIES', 'LINE', 'PINE', 'PLIE', 'SINE'],
+      5: ['LIENS', 'LINES', 'PILES', 'PINES', 'PLIES', 'SINGE', 'SPIEL', 'SPINE'],
+      6: ['NIPPLE', 'SINGES', 'SPIELS', 'SPINEL', 'SPINES', 'SPLINE'],
+      7: ['NIPPLES', 'PEELING', 'SEEPING', 'SPINELS', 'SPLINES'],
+      8: ['PEELINGS', 'SLEEPING']
+    },
+    hints: {
+      4: [
+        "Small island",
+        "Garlands worn around the neck",
+        "Legal claim on a property",
+        "Untruths; reclines flat",
+        "Straight mark; queue",
+        "Evergreen tree with needles",
+        "Ballet position; pastry layer",
+        "Math function in trigonometry"
+      ],
+      5: [
+        "Legal claims on a property",
+        "Straight marks; queues",
+        "Stacks of things; hair styling tools",
+        "Evergreen trees with needles",
+        "Ballet positions; pastry layers",
+        "Burn slightly; scorch the edges",
+        "Persuasive talk; entertaining story",
+        "Backbone; pointed column"
+      ],
+      6: [
+        "Small rounded protrusion",
+        "Burns slightly; scorches the edges",
+        "Persuasive talks; entertaining stories",
+        "A gemstone related to ruby",
+        "Backbones; pointed columns",
+        "A key or ridge fitting into a groove"
+      ],
+      7: [
+        "Small rounded protrusions",
+        "Removing outer layer; stripping bark",
+        "Slowly leaking or oozing through",
+        "Gemstones related to rubies",
+        "Keys or ridges fitting into grooves"
+      ],
+      8: [
+        "Outer layers removed; strips of bark",
+        "Resting with eyes closed (pangram!)"
+      ]
+    }
+  },
 
 ];
 
