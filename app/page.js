@@ -1998,7 +1998,7 @@ const puzzles = {
   hints: [
     'The black ones caused traffic jams on the mountain roads',
     'The blackberry one was where the bears were spotted',
-    'The Lindsays\' mugs went back in the motorhomelnthey\'re this no more',
+    'The Lindsays\' _______ mugs went back in the motorhome',
     'The nightly chorus that left the Lindsays\' ears ringing',
     'Sarah\'s mac and cheese is always this, never boxed'
   ],
