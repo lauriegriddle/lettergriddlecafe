@@ -2000,7 +2000,7 @@ const puzzles = {
     'The blackberry one was where the bears were spotted',
     'The Lindsays\' mugs went back in the motorhomelnthey\'re this no more',
     'The nightly chorus that left the Lindsays\' ears ringing',
-    'Sarah\'s mac and cheese — always this, never boxed'
+    'Sarah\'s mac and cheese is always this, never boxed'
   ],
   revealed: [
     { pos: 1, letter: 'E' },
