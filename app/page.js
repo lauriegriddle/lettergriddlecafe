@@ -1236,6 +1236,38 @@ const stories = [
   closingLink: 'https://instagram.com/letter_griddle',
   closingLinkText: 'Follow @letter_griddle on Instagram 📸'
 },
+
+{
+  id: 'cicadas-black-bears-and-a-motorhome',
+  title: 'Cicadas, Black Bears, and a Motorhome',
+  subtitle: '🐻 Now Available',
+  date: 'August 2026',
+  locked: false,
+  content: [
+    '"We\'re baaaack!" Mr. Lindsay\'s familiar baritone boomed from the cafe entrance.',
+    '"Literally, we just rolled into town," Mrs. Lindsay explains gesturing toward the motorhome in the parking lot.',
+    '"We saw your Instagram photos," Josie shares.',
+    '"You\'re going to have to speak up," Mr. Lindsay advises.',
+    '"After listening to the nightly chorus of cicadas echoing through the forest, our ears are ringing," Mrs. Lindsay clarifies.',
+    '"Along with the intense roar of the mountain creeks after that thunderstorm and the bear jams, we will be glad to return to the peace and quiet of Letter Griddle," Mr. Lindsay jokes.',
+    '"Did you say, \'bear jams?\'" Josephine shouts.',
+    '"The black bears were so close to the roads, all of us stopped to marvel at them!" Mrs. Lindsay tells the group.',
+    '"I marveled at your photos you posted online," Laurel says.',
+    '"Weren\'t you scared?" Jennie asks.',
+    '"Yap! Yap!" Isaac wants answers.',
+    '"It says here in Smithsonian magazine that Federal and park regulations require visitors to stay at least 150 feet away from wildlife, including American black bears," Taylor says, as he shows the article to the group.',
+    '"The motorhome was the perfect spot to view the bears enjoying the blackberry patch!" Mrs. Lindsay shares.',
+    '"When traffic stopped for a couple hours, we were able to enjoy the scenery and lunch!" Mr. Lindsay boasts.',
+    '"Speaking of lunch….." Sarah segues, "I have brought my homemade Mac and cheese for today\'s end of summer cookout."',
+    '"Let\'s get the tables moved!" Mr. Lindsay pushes up his sleeves.',
+    '"Let\'s fire up the grill!" Laurel positions herself as the grill master.',
+    '"Let\'s grab the plate of hamburger buns!" Josephine says to Josie.',
+    '"Let\'s put the travel mugs back in the motorhome!" Mrs. Lindsay says and adds, "We are drinking from Letter Griddle mugs for the rest of the summer."',
+  ],
+  closing: 'Friends, cicadas, rushing water, thunderstorms, and black bears are fun but nothing compares to the comfort of friends, a cozy cafe, and a Letter Griddle puzzle. 🐻',
+  closingLink: 'https://lettergriddle.com/play',
+  closingLinkText: 'Play Letter Griddle ☕'
+},
 ];
 
 // Puzzle data - expandable for future puzzles
@@ -1957,6 +1989,27 @@ const puzzles = {
     { pos: 4, letter: 'G' }
   ],
   didYouKnow: 'Originally called "Codename," the name Instagram comes from a mix of "instant camera" and "telegram." The platform now exceeds 2 billion monthly active users worldwide.'
+},
+'cicadas-black-bears-and-a-motorhome': {
+  id: 'smoky-mountains',
+  title: 'Great Smoky Mountains National Park',
+  category: 'Great Smoky Mountains National Park',
+  words: ['BEAR', 'PATCH', 'TRAVEL', 'CICADAS', 'HOMEMADE'],
+  hints: [
+    'The black ones caused traffic jams on the mountain roads',
+    'The blackberry one was where the bears were spotted',
+    'The Lindsays\' mugs went back in the motorhomelnthey\'re this no more',
+    'The nightly chorus that left the Lindsays\' ears ringing',
+    'Sarah\'s mac and cheese — always this, never boxed'
+  ],
+  revealed: [
+    { pos: 1, letter: 'E' },
+    { pos: 2, letter: 'T' },
+    { pos: 3, letter: 'V' },
+    { pos: 3, letter: 'A' },
+    { pos: 4, letter: 'M' }
+  ],
+  didYouKnow: 'The Great Smoky Mountains National Park is the "Salamander Capital of the World," housing 30 different species across five distinct families. It holds more salamander diversity than almost anywhere else on Earth. Their total weight in the park exceeds the weight of all mammals and birds combined.'
 },
 };
 
