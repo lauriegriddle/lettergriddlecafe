@@ -4904,12 +4904,12 @@ const PUZZLES = [
     subtitle: 'Shh... words at rest!',
     letters: ['S', 'L', 'E', 'P', 'I', 'N', 'G'],
     keyLetters: ['E', 'I'],
-    totalWordCount: 29,
+    totalWordCount: 27,
     words: {
       4: ['ISLE', 'LEIS', 'LIEN', 'LIES', 'LINE', 'PINE', 'PLIE', 'SINE'],
       5: ['LIENS', 'LINES', 'PILES', 'PINES', 'PLIES', 'SINGE', 'SPIEL', 'SPINE'],
-      6: ['NIPPLE', 'SINGES', 'SPIELS', 'SPINEL', 'SPINES', 'SPLINE'],
-      7: ['NIPPLES', 'PEELING', 'SEEPING', 'SPINELS', 'SPLINES'],
+      6: ['SINGES', 'SPIELS', 'SPINEL', 'SPINES', 'SPLINE'],
+      7: ['PEELING', 'SEEPING', 'SPINELS', 'SPLINES'],
       8: ['PEELINGS', 'SLEEPING']
     },
     hints: {
@@ -4934,7 +4934,6 @@ const PUZZLES = [
         "Backbone; pointed column"
       ],
       6: [
-        "Small rounded protrusion",
         "Burns slightly; scorches the edges",
         "Persuasive talks; entertaining stories",
         "A gemstone related to ruby",
@@ -4942,7 +4941,6 @@ const PUZZLES = [
         "A key or ridge fitting into a groove"
       ],
       7: [
-        "Small rounded protrusions",
         "Removing outer layer; stripping bark",
         "Slowly leaking or oozing through",
         "Gemstones related to rubies",
