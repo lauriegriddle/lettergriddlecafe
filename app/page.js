@@ -1268,6 +1268,61 @@ const stories = [
   closingLink: 'https://lettergriddle.com/play',
   closingLinkText: 'Play Letter Griddle ☕'
 },
+{
+  id: 'hamburgers-watermelon-and-zion-national-park',
+  title: 'Hamburgers, Watermelon, and Zion National Park',
+  subtitle: '🏜️ Now Available',
+  date: 'August 2026',
+  locked: false,
+  content: [
+    '"Laurel, you are a grill master," Sarah says.',
+    '"Grill master extraordinaire," Jennie embellishes.',
+    '"Yap! Yap!" Isaac confirms.',
+    '"And the watermelon is…," Josie starts then decides to take another bite.',
+    '"So sweet and summer-y!" Josephine completes her daughter\'s thought.',
+    '"It\'s the perfect refresher for today!" Sarah agrees, wiping her brow and sipping iced tea.',
+    '"Summer…," Mrs. Lindsay begins before looking at Mr. Lindsay.',
+    '"Fall is…," Mr. Lindsay starts as he exchanges glances with Mrs. Lindsay.',
+    '"Right around the corner," Sarah offers fanning herself with a Letter Griddle menu.',
+    '"Crew, we want to tell you about…," Mr. Lindsay begins.',
+    '"Zion National Park," Mrs. Lindsay completes her husband\'s sentence.',
+    '"It\'s beautiful heading into…," Taylor slows down as he adds, "fall."',
+    '"We have always heard that too, Taylor. Which is why…," Mrs. Lindsay starts.',
+    '"Well, crew, it\'s why we\'re going. We are getting back in the motorhome and heading west," Mr. Lindsay reveals the couple\'s plans.',
+    '"You just got back from the Great Smoky Mountains." Laurel points out.',
+    '"And we couldn\'t wait to get to Letter Griddle and all of you, but you know once we get a taste of life on the road," Mrs. Lindsay shares.',
+    '"And the weather is still cooperating," Mr. Lindsay elaborates, "I really want firsthand knowledge of whether or not the motorhome will fit in the Zion-Mount Carmel Tunnel."',
+    '"Josie and I will miss you," Josephine laments.',
+    '"Here\'s what I will look for on your \'gram," Josie excitedly says. "Golden Hour Sunset Monolith photo and 🧗‍♂️✨🏜️ #ZionNationalPark #TheWatchman #GoldenHour #RVLife #DesertSunset."',
+    '"Oh, fun idea Josie!" Sarah says, "I will look for a post of \'Wading into The Narrows\' action shot and 🌊🥾⛰️ #TheNarrows #VirginRiver #SlotCanyon #ActiveRetirement #KeepMoving."',
+    '"Not to be left out of a trend," Taylor says, side-eyeing Josie and Sarah. "I will look on your Instagram page for a \'Canyon Shuttle Wildlife\' video/reel and 🦌🌳🚍 #ZionShuttle #MuleDeer #WildlifePhotography #NationalParks #SeptemberInZion."',
+    '"Honk. Honk."',
+    'The crew sees the motorhome rolling up to the cookout area at Letter Griddle.',
+    '"Laurel?" Mrs. Lindsay wonders.',
+    '"I didn\'t know she had a driver\'s license," Mr. Lindsay says.',
+    '"Your chariot awaits," Laurel says over the motorhome PA system before hopping out of the driver\'s seat.',
+    '"Well, thanks, Laurel, for the valet service of the motorhome and the cookout was wonderful," Mr. Lindsay shares.',
+    '"Everyone, we will…" Mrs. Lindsay starts, not good with good-byes, voice aquiver.',
+    '"….take a motorhome selfie for Instagram!" Josie says.',
+    'The crew gathers in front of the camper with Josie in front. Next to her, Josephine kneels down with her phone\'s camera reversed and ready.',
+    '"On the count of three, everyone say, Zion!" Laurel shouts.',
+    '"One," Taylor starts.',
+    '"Two," Sarah continues.',
+    '"Three!" Jennie finishes.',
+    '"ZION!" The crew says in unison.',
+    'Click, click, click, tap, tap, tap.',
+    'The crew turns their head to see Isaac padding to the front of the RV, around the front he goes and into the motorhome, positioning himself in the driver\'s seat, paws at 10 and 2 on the steering wheel.',
+    'The crew is taken aback by the adorable creature as an audible gasp is released.',
+    'Each crew member takes out their phone and snaps a pic of Isaac driving the RV.',
+    '"Wow, this is going to be great for the \'gram!" Taylor says. "Remember, I install car stereos, motorcycle radios, and motorhome sound systems."',
+    '"Isaac\'s picture will be great next to my \'ways to beat the summer heat\' post on my grid," Sarah says.',
+    '"Isaac, our CEO of valet parking at Letter Griddle!" Laurel captions her post.',
+    '"Isaac is going viral and we\'re going to Zion!" Mr. and Mrs. Lindsay chime.',
+  ],
+  closing: 'Friends, Readers, and Travelers, we hope you are beating the heat, finding ways to enjoy the summer, and while you\'re here, whether going viral or not, having fun with today\'s Letter Griddle puzzle. 🏜️',
+  closingLink: 'https://lettergriddle.com/play',
+  closingLinkText: 'Play Letter Griddle 🏜️'
+},
 ];
 
 // Puzzle data - expandable for future puzzles
@@ -2010,6 +2065,27 @@ const puzzles = {
     { pos: 4, letter: 'M' }
   ],
   didYouKnow: 'The Great Smoky Mountains National Park is the "Salamander Capital of the World," housing 30 different species across five distinct families. It holds more salamander diversity than almost anywhere else on Earth. Their total weight in the park exceeds the weight of all mammals and birds combined.'
+},
+'hamburgers-watermelon-and-zion-national-park': {
+  id: 'zion-national-park',
+  title: 'Zion National Park',
+  category: 'Zion National Park',
+  words: ['PARK', 'ISAAC', 'CANYON', 'NARROWS', 'MONOLITH'],
+  hints: [
+    'Zion National ____ is the Lindsays\' next motorhome destination',
+    'The CEO of valet parking at Letter Griddle, paws at 10 and 2',
+    'The shuttle wildlife video Taylor planned to look for on Instagram',
+    'The wading action shot Sarah was watching for on the Lindsays\' grid',
+    'The golden hour sunset photo Josie requested for the \'gram'
+  ],
+  revealed: [
+    { pos: 1, letter: 'A' },
+    { pos: 2, letter: 'A' },
+    { pos: 3, letter: 'Y' },
+    { pos: 3, letter: 'R' },
+    { pos: 4, letter: 'L' }
+  ],
+  didYouKnow: 'Any vehicle over 11 feet 4 inches tall or 7 feet 10 inches wide, which includes almost every standard motorhome, cannot physically fit in the historic 1.1-mile Zion-Mount Carmel Tunnel while staying in its own lane. To let an RV pass, rangers must physically stop oncoming traffic at both ends so the motorhome can drive directly down the double-yellow center line of the pitch-black tunnel.'
 },
 };
 
