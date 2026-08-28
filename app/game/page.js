@@ -5032,7 +5032,7 @@ const PUZZLES = [
       7: [
         "Collects together; assembles (pangram!)",
         "Strips of bacon; more reckless ones",
-        "One who thrashes or beats"
+        "One who trashes"
       ],
       8: [
         "Beats or flails vigorously"
