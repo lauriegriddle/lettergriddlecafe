@@ -1311,7 +1311,7 @@ const stories = [
     '"Three!" Jennie finishes.',
     '"ZION!" The crew says in unison.',
     'Click, click, click, tap, tap, tap.',
-    'The crew turns their head to see Isaac padding toward the RV, around the front and inside he goes. Once in the motorhome, he positions himself in the driver\'s seat, paws at 10 and 2 on the steering wheel.',
+    'The crew turns to see Isaac padding toward the RV, around the front and inside he goes. Once in the motorhome, he positions himself in the driver\'s seat, paws at 10 and 2 on the steering wheel.',
     'The crew is taken aback by the adorable creature as an audible gasp is released.',
     'Each crew member takes out their phone and snaps a pic of Isaac driving the RV.',
     '"Wow, this is going to be great for the \'gram!" Taylor says. "Remember, I install car stereos, motorcycle radios, and motorhome sound systems."',
