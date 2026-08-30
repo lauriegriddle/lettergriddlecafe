@@ -5574,6 +5574,216 @@ const PUZZLES = [
       ]
     }
   },
+  // PUZZLE 89: UNDERSEA
+  {
+    id: 'undersea-puzzle',
+    subtitle: 'Dive into the deep!',
+    letters: ['U', 'N', 'D', 'E', 'R', 'S', 'A'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 39,
+    words: {
+      4: ['DARE', 'DEAN', 'DEAR', 'EARN', 'EARS', 'ERAS', 'NEAR', 'READ', 'SANE', 'SEAR', 'UREA'],
+      5: ['DARES', 'DEANS', 'DEARS', 'EARNS', 'NEARS', 'READS', 'SANER', 'SEARS', 'SNARE', 'UREAS'],
+      6: ['DANDER', 'EARNED', 'EARNER', 'ENDEAR', 'SANDER', 'SNARED', 'SNARER', 'SNARES', 'UNREAD'],
+      7: ['DANDERS', 'DANSEUR', 'EARNERS', 'ENDEARS', 'SANDERS', 'SNARERS', 'UNREADS'],
+      8: ['DANSEURS', 'UNDERSEA']
+    },
+    hints: {
+      4: [
+        "Challenge someone; be bold",
+        "School administrator; church leader",
+        "Beloved; expensive",
+        "Make money; deserve",
+        "Hearing organs",
+        "Historical time periods",
+        "Close by; not far",
+        "Look at written words",
+        "Mentally sound; rational",
+        "Burn the surface; scorch",
+        "A compound found in urine"
+      ],
+      5: [
+        "Challenges; acts boldly",
+        "School administrators; church leaders",
+        "Beloved ones",
+        "Makes money; deserves",
+        "Comes close to",
+        "Looks at written words",
+        "More mentally sound",
+        "Burns surfaces; scorches",
+        "Trap for catching animals",
+        "Compounds found in urine"
+      ],
+      6: [
+        "Loose skin flakes; anger or irritation",
+        "Made money; deserved",
+        "One who makes money or deserves",
+        "Make beloved; make dear to someone",
+        "Power tool for smoothing wood",
+        "Caught in a trap",
+        "One who sets a trap",
+        "Traps for catching animals",
+        "Not yet read; unread messages"
+      ],
+      7: [
+        "Loose skin flakes; angers or irritations",
+        "A male ballet dancer",
+        "Ones who make money or deserve",
+        "Makes beloved; makes dear to someone",
+        "Power tools for smoothing wood",
+        "Ones who set traps",
+        "Unread messages; things not yet read"
+      ],
+      8: [
+        "Male ballet dancers",
+        "Below the surface of the sea (pangram!)"
+      ]
+    }
+  },
+
+  // PUZZLE 90: TIRELESSLY
+  {
+    id: 'tirelessly-puzzle',
+    subtitle: 'Keep going!',
+    letters: ['T', 'I', 'R', 'E', 'L', 'S', 'Y'],
+    keyLetters: ['I', 'E'],
+    totalWordCount: 51,
+    words: {
+      4: ['ISLE', 'LEIS', 'LIER', 'LIES', 'LIRE', 'LITE', 'RILE', 'RISE', 'RITE', 'SIRE', 'SITE', 'TIER', 'TIES', 'TILE', 'TIRE'],
+      5: ['EYRIE', 'ISLES', 'ISLET', 'LIERS', 'LITER', 'LITRE', 'RELIT', 'RILES', 'RISES', 'RITES', 'SIRES', 'SITES', 'SLIER', 'STILE', 'TIERS', 'TILER', 'TILES', 'TIRES', 'TRIES'],
+      6: ['EYRIES', 'ISLETS', 'LISTER', 'LITERS', 'LITRES', 'RELIST', 'RESILE', 'SLIEST', 'STILES', 'TILERS'],
+      7: ['LISTERS', 'RELISTS', 'RESILES', 'STERILE'],
+      8: ['SISTERLY', 'TIRELESS'],
+      10: ['TIRELESSLY']
+    },
+    hints: {
+      4: [
+        "Small island",
+        "Garlands worn around the neck",
+        "One who lies down; one who tells untruths",
+        "Untruths; reclines flat",
+        "Former Italian currency",
+        "Low in calories; not heavy",
+        "Annoy; stir up",
+        "Go upward; get out of bed",
+        "Ceremony or ritual",
+        "Father; address to a king",
+        "Location; a website address",
+        "Level or layer",
+        "Connections; neckwear",
+        "Flat piece used for floors or roofs",
+        "Rubber wheel covering; grow weary"
+      ],
+      5: [
+        "Eagle's nest high on a cliff",
+        "Small islands",
+        "Small island; a small isolated piece",
+        "Ones who lie down; ones who tell untruths",
+        "Unit of volume equal to about a quart",
+        "Unit of volume; British spelling",
+        "Replaced in a position; past tense of relight",
+        "Annoys; stirs up",
+        "Goes upward; gets out of bed",
+        "Ceremonies or rituals",
+        "Fathers; addresses to kings",
+        "Locations; website addresses",
+        "Less straight; at more of an angle",
+        "A step or set of steps over a fence",
+        "Levels or layers",
+        "One who lays tiles",
+        "Flat pieces used for floors or roofs",
+        "Rubber wheel coverings; grows weary",
+        "Attempts; gives it a go"
+      ],
+      6: [
+        "Eagles' nests high on cliffs",
+        "Small isolated pieces; small islands",
+        "One who makes lists; a type of plow",
+        "Units of volume equal to about a quart",
+        "Units of volume; British spelling",
+        "List again; put back on a list",
+        "Spring back; bounce back elastically",
+        "Most sly; craftiest",
+        "Steps or sets of steps over fences",
+        "Ones who lay tiles"
+      ],
+      7: [
+        "Ones who make lists; types of plow",
+        "Lists again; puts back on lists",
+        "Springs back; bounces back elastically",
+        "Completely free from germs (pangram!)"
+      ],
+      8: [
+        "Like a sister; of or relating to sisters",
+        "Without ever getting tired (pangram!)"
+      ],
+      10: [
+        "In a way that never gets tired (pangram!)"
+      ]
+    }
+  },
+
+  // PUZZLE 91: WONDERS
+  {
+    id: 'wonders-puzzle',
+    subtitle: 'Never stop wondering!',
+    letters: ['W', 'O', 'N', 'D', 'E', 'R', 'S'],
+    keyLetters: ['O', 'E'],
+    totalWordCount: 37,
+    words: {
+      4: ['DOES', 'DONE', 'DOSE', 'EONS', 'NODE', 'NONE', 'NOSE', 'ODES', 'ONES', 'ORES', 'OWED', 'RODE', 'ROES', 'ROSE', 'WOES', 'WORE'],
+      5: ['DONER', 'DRONE', 'ENDOW', 'NODES', 'NOSED', 'OWNED', 'OWNER', 'SENOR', 'SNORE', 'WORSE'],
+      6: ['DONERS', 'DRONES', 'ENDOWS', 'OWNERS', 'SENORS', 'SNORED', 'SNORER', 'SNORES', 'WONDER'],
+      7: ['SNORERS', 'WONDERS']
+    },
+    hints: {
+      4: [
+        "Performs an action; third person singular",
+        "Finished; completed",
+        "A measured portion of medicine",
+        "Long time periods",
+        "A point or junction in a network",
+        "Not any; not one",
+        "Facial feature for smelling",
+        "Poems; pieces of poetry",
+        "Single items; individuals",
+        "Rocks containing valuable metals",
+        "Had a debt; was obligated",
+        "Traveled on horseback; past tense of ride",
+        "Fish eggs; a type of deer",
+        "A flower; came back up",
+        "Troubles; sources of distress",
+        "Had clothing on"
+      ],
+      5: [
+        "Rotating meat kebab; one who donates",
+        "Pilotless aircraft; a low hum",
+        "Give a gift or power to",
+        "Points or junctions in a network",
+        "Detected by smell; investigated",
+        "Possessed; had as property",
+        "One who possesses something",
+        "Spanish title for a man",
+        "Make a rumbling nasal sound",
+        "More bad; not as good"
+      ],
+      6: [
+        "Rotating meat kebabs; ones who donate",
+        "Pilotless aircraft; low hums",
+        "Gives gifts or powers to",
+        "Ones who possess something",
+        "Spanish titles for men",
+        "Made a rumbling nasal sound",
+        "One who makes a rumbling nasal sound",
+        "Makes rumbling nasal sounds",
+        "Marvel; feel amazed (pangram!)"
+      ],
+      7: [
+        "Ones who make rumbling nasal sounds",
+        "Marvels; feels amazed (pangram!)"
+      ]
+    }
+  },
 
 ];
 
