@@ -5180,7 +5180,400 @@ const PUZZLES = [
       ]
     }
   },
+  // PUZZLE 84: POSTURE
+  {
+    id: 'posture-puzzle',
+    subtitle: 'Stand tall!',
+    letters: ['P', 'O', 'S', 'T', 'U', 'R', 'E'],
+    keyLetters: ['O', 'E'],
+    totalWordCount: 55,
+    words: {
+      4: ['EURO', 'PESO', 'POET', 'PORE', 'POSE', 'ROPE', 'ROSE', 'ROTE', 'SORE', 'TORE'],
+      5: ['EUROS', 'OUTER', 'PORES', 'PROSE', 'REPOT', 'ROPES', 'ROUSE', 'ROUTE', 'SPORE', 'STORE', 'TOPER', 'TROPE'],
+      6: ['ESPORT', 'OUSTER', 'OUTERS', 'POSEUR', 'POSTER', 'POUTER', 'PRESTO', 'REPOST', 'REPOTS', 'ROUTES', 'ROUSES', 'SPORES', 'STORES', 'TOPERS', 'TOURER', 'TROPES', 'TROUPE'],
+      7: ['ESPORTS', 'OUSTERS', 'POSEURS', 'POSTERS', 'POSTURE', 'POUTERS', 'PRESTOS', 'REPOSTS', 'STOUTER', 'TOURERS', 'TROUPER', 'TROUPES', 'TROUSER'],
+      8: ['POSTURES', 'TROUPERS', 'TROUSERS']
+    },
+    hints: {
+      4: [
+        "European currency",
+        "Currency of Mexico and other countries",
+        "One who writes verse; creative writer",
+        "Opening in a wall; look intently",
+        "Strike a position; pretend",
+        "Thick cord; lasso",
+        "A flower; came back up",
+        "Learned by repetition",
+        "Painful and aching",
+        "Ripped apart; past tense of tear"
+      ],
+      5: [
+        "European currencies",
+        "On the outside; further away",
+        "Openings in walls; looks intently",
+        "Written text; formal writing style",
+        "Transfer a plant to a new pot",
+        "Thick cords; lassos",
+        "Stir up; wake from sleep",
+        "Path taken; way to go",
+        "Fungal organism; mushroom type",
+        "Shop; keep in a warehouse",
+        "One who drinks the top of the barrel",
+        "Figure of speech; recurring theme"
+      ],
+      6: [
+        "Competitive gaming event",
+        "One who forces someone out",
+        "Those on the outside",
+        "One who strikes poses; affected person",
+        "One who puts up notices; bill poster",
+        "One who pouts or sulks",
+        "Magic word; ta-da! A type of coffee",
+        "Share online again",
+        "Transfers plants to new pots",
+        "Paths taken; ways to go",
+        "Stirs up; wakes from sleep",
+        "Fungal organisms; mushroom types",
+        "Shops; keeps in warehouses",
+        "Ones who drink from the top",
+        "One who goes on tours",
+        "Figures of speech; recurring themes",
+        "Group of traveling performers"
+      ],
+      7: [
+        "Competitive gaming events",
+        "Ones who force someone out",
+        "Ones who strike poses; affected people",
+        "Ones who put up notices",
+        "The way you hold yourself (pangram!)",
+        "Ones who pout or sulk",
+        "Magic words; types of coffee",
+        "Shares online again",
+        "More sturdy; more robust",
+        "Ones who go on tours",
+        "Reliable member of a performing group",
+        "Groups of traveling performers",
+        "Leg covering garment; pants (British)"
+      ],
+      8: [
+        "The ways you hold yourself (pangram!)",
+        "Reliable members of performing groups",
+        "Leg covering garments; pants (British)"
+      ]
+    }
+  },
 
+  // PUZZLE 85: FASTENER
+  {
+    id: 'fastener-puzzle',
+    subtitle: 'Hold it together!',
+    letters: ['F', 'A', 'S', 'T', 'E', 'N', 'R'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 50,
+    words: {
+      4: ['ANTE', 'EARN', 'EARS', 'ERAS', 'FARE', 'FEAR', 'NEAR', 'RATE', 'SAFE', 'SANE', 'SEAR', 'TARE', 'TEAR'],
+      5: ['ANTES', 'EARNS', 'FANES', 'FARES', 'FEARS', 'NEARS', 'RANEE', 'RATES', 'SANER', 'SEARS', 'SNARE', 'STARE', 'TARES', 'TEARS'],
+      6: ['FASTEN', 'NEATER', 'RANEES', 'RAREST', 'SEATER', 'SNARER', 'SNARES', 'STARER', 'STARES'],
+      7: ['EARNEST', 'EASTERN', 'FASTENS', 'FEASTER', 'NEAREST', 'NEATERS', 'SEATERS', 'SNARERS', 'STARERS'],
+      8: ['EARNESTS', 'EASTERNS', 'FASTENER', 'FEASTERS'],
+      9: ['FASTENERS']
+    },
+    hints: {
+      4: [
+        "Poker stake; put money in the pot",
+        "Make money; deserve",
+        "Hearing organs",
+        "Historical time periods",
+        "Cost of a journey; food and drink",
+        "Feeling of dread or worry",
+        "Close by; not far",
+        "Speed; evaluate or rank",
+        "Not dangerous; secure",
+        "Mentally sound; rational",
+        "Burn the surface; scorch",
+        "Weed; weight of a container",
+        "Rip; eye drop"
+      ],
+      5: [
+        "Poker stakes; bets before dealing",
+        "Makes money; deserves",
+        "Weather vanes; old-fashioned word for temples",
+        "Costs of journeys; food and drink",
+        "Feelings of dread or worry",
+        "Comes close to",
+        "An Indian queen or princess",
+        "Speeds; evaluates",
+        "More mentally sound",
+        "Burns surfaces; scorches",
+        "Trap for catching animals",
+        "Gaze; look fixedly",
+        "Weeds; container weights",
+        "Rips; eye drops"
+      ],
+      6: [
+        "Secure or fix firmly in place",
+        "More precise; more trim",
+        "Indian queens or princesses",
+        "Most uncommon; most infrequent",
+        "One who sits in a particular seat",
+        "One who sets a trap",
+        "Traps for catching animals",
+        "One who gazes fixedly",
+        "Gazes; looks fixedly"
+      ],
+      7: [
+        "Serious and sincere; a deposit",
+        "From the east; facing east",
+        "Secures or fixes firmly in place",
+        "One who feasts heartily",
+        "Closest; most nearby",
+        "More precise; more trim ones",
+        "Ones who sit in particular seats",
+        "Ones who set traps",
+        "Ones who gaze fixedly"
+      ],
+      8: [
+        "Serious and sincere deposits",
+        "Things from the east; facing east",
+        "A clip or clasp that holds things (pangram!)",
+        "Ones who feast heartily"
+      ],
+      9: [
+        "Clips or clasps that hold things (pangram!)"
+      ]
+    }
+  },
+
+  // PUZZLE 86: GREATLY
+  {
+    id: 'greatly-puzzle',
+    subtitle: 'Think big!',
+    letters: ['G', 'R', 'E', 'A', 'T', 'L', 'Y'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 33,
+    words: {
+      4: ['AREA', 'EARL', 'GALE', 'GATE', 'GEAR', 'LATE', 'RAGE', 'RATE', 'REAL', 'TALE', 'TARE', 'TEAL', 'TEAR', 'YEAR'],
+      5: ['ALERT', 'ALTER', 'EARLY', 'GLARE', 'GREAT', 'LAGER', 'LARGE', 'LATER', 'LAYER', 'LEGAL', 'REGAL', 'RELAY'],
+      6: ['GYRATE', 'REGALE', 'TARGET'],
+      7: ['EAGERLY', 'GREATLY', 'LARGELY', 'REGALLY']
+    },
+    hints: {
+      4: [
+        "Region; surface space",
+        "British nobleman",
+        "Strong wind; a sale of goods",
+        "Hinged barrier; entrance",
+        "Mechanical cog; equipment",
+        "Not on time; deceased",
+        "Intense anger; fury",
+        "Speed; evaluate or rank",
+        "Genuine; actual",
+        "Story; narrative",
+        "Weed; weight of a container",
+        "Blue-green color; type of duck",
+        "Rip; eye drop",
+        "365 days; what you celebrate on your birthday"
+      ],
+      5: [
+        "Warning; alarm",
+        "Change; modify",
+        "Coming before others; in the morning",
+        "Bright burst of light or anger",
+        "Impressive; outstanding",
+        "Beer brewed with hops; a beer mug",
+        "Big; of significant size",
+        "After; more recent",
+        "Coating; level or stratum",
+        "Lawful; valid; relating to law",
+        "Relating to a king or queen",
+        "Pass the baton; race team tactic"
+      ],
+      6: [
+        "Spin or rotate around an axis",
+        "To delight or entertain greatly",
+        "Goal or aim; bullseye in darts"
+      ],
+      7: [
+        "With great enthusiasm or keenness",
+        "To a very great degree (pangram!)",
+        "To a large extent or degree",
+        "In a grand or magnificent manner"
+      ]
+    }
+  },
+
+  // PUZZLE 87: TRAVELERS
+  {
+    id: 'travelers-puzzle',
+    subtitle: 'The world awaits!',
+    letters: ['T', 'R', 'A', 'V', 'E', 'L', 'S'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 67,
+    words: {
+      4: ['AREA', 'ARES', 'LASE', 'LATE', 'LAVE', 'RAVE', 'SALE', 'SATE', 'SEAL', 'SEAR', 'SEAT', 'TALE', 'TARE', 'TEAL', 'TEAR', 'VALE', 'VEAL'],
+      5: ['ALERT', 'ALTER', 'ASTER', 'EARLS', 'LASER', 'LATER', 'LAVER', 'LAVES', 'LEAST', 'RATES', 'RAVEL', 'RAVES', 'SALES', 'SATES', 'SEALS', 'SEARS', 'SEATS', 'SLATE', 'SLAVE', 'STALE', 'STARE', 'STAVE', 'STEAL', 'TALES', 'TARES', 'TEALS', 'TEARS', 'VALES', 'VALET', 'VEALS'],
+      6: ['ALERTS', 'ALTERS', 'LASERS', 'LAVERS', 'RAVELS', 'SALVER', 'SLAVER', 'SLAVES', 'STALES', 'STARVE', 'STAVES', 'TRAVEL', 'VALETS', 'VASTER'],
+      7: ['SALVERS', 'SLAVERS', 'STARVES', 'TRAVELS'],
+      8: ['TRAVELER'],
+      9: ['TRAVELERS']
+    },
+    hints: {
+      4: [
+        "Region; surface space",
+        "Greek god of war; plural of are",
+        "Treat with a laser beam",
+        "Not on time; deceased",
+        "Wash; flow gently over",
+        "Shout of enthusiasm; a type of music",
+        "Discount event at a store",
+        "Satisfy fully",
+        "Ocean mammal; close tightly",
+        "Burn the surface; scorch",
+        "Chair; place to sit",
+        "Story; narrative",
+        "Weed; weight of a container",
+        "Blue-green color; type of duck",
+        "Rip; eye drop",
+        "Valley; a girl's name",
+        "Tender meat; a pale color"
+      ],
+      5: [
+        "Warning; alarm",
+        "Change; modify",
+        "Star-shaped flower",
+        "British noblemen",
+        "Focused light beam device",
+        "After; more recent",
+        "One who washes; a washing trough",
+        "Washes; flows gently over",
+        "Smallest amount",
+        "Speeds; evaluates",
+        "Unwind yarn; become undone",
+        "Shouts of enthusiasm; types of music",
+        "Discount events at stores",
+        "Satisfies fully",
+        "Ocean mammals; closes tightly",
+        "Burns surfaces; scorches",
+        "Chairs; places to sit",
+        "Rock; schedule",
+        "One held in servitude",
+        "Not fresh; old bread",
+        "Gaze; look fixedly",
+        "A wooden post or support",
+        "Take without permission",
+        "Stories; narratives",
+        "Weeds; container weights",
+        "Blue-green colors; types of duck",
+        "Rips; eye drops",
+        "Valleys; girls' names",
+        "Hotel attendant; a parking attendant",
+        "Tender meats; pale colors"
+      ],
+      6: [
+        "Warnings; alarms",
+        "Changes; modifies",
+        "Focused light beam devices",
+        "Ones who wash; washing troughs",
+        "Unwinds yarn; becomes undone",
+        "A serving tray",
+        "To drool; a slave trader",
+        "Ones held in servitude",
+        "Makes less fresh; goes flat",
+        "Deprive of food; go without",
+        "Wooden posts or supports",
+        "Journey from one place to another (pangram!)",
+        "Hotel attendants; parking attendants",
+        "More vast; more immense"
+      ],
+      7: [
+        "Serving trays",
+        "Ones who drool; slave traders",
+        "Deprives of food; goes without",
+        "Journeys from one place to another (pangram!)"
+      ],
+      8: [
+        "One who journeys from place to place (pangram!)"
+      ],
+      9: [
+        "Ones who journey from place to place (pangram!)"
+      ]
+    }
+  },
+
+  // PUZZLE 88: CREATORS
+  {
+    id: 'creators-puzzle',
+    subtitle: 'Make something wonderful!',
+    letters: ['C', 'R', 'E', 'A', 'T', 'O', 'S'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 47,
+    words: {
+      4: ['ACES', 'ACRE', 'CARE', 'CASE', 'EARS', 'EAST', 'EATS', 'ERAS', 'RACE', 'RATE', 'SEAR'],
+      5: ['ACRES', 'CARES', 'CARTE', 'CRATE', 'ORATE', 'RATES', 'REACT', 'SCARE', 'STARE', 'TRACE'],
+      6: ['CARTER', 'CARTES', 'CASTER', 'COARSE', 'COATER', 'CRATER', 'CRATES', 'ORATES', 'REACTS', 'RECAST', 'RECOAT', 'SCARES', 'STARES', 'TRACER', 'TRACES'],
+      7: ['CARTERS', 'CASTERS', 'COATERS', 'CRATERS', 'CREATOR', 'REACTOR', 'RECASTS', 'RECOATS', 'TRACERS'],
+      8: ['CREATORS', 'REACTORS']
+    },
+    hints: {
+      4: [
+        "Top cards in a deck; experts",
+        "Unit of land measurement",
+        "Be concerned; look after",
+        "Container; instance or example",
+        "Hearing organs",
+        "Compass direction; sunrise side",
+        "Consumes food",
+        "Historical time periods",
+        "Competition; run fast",
+        "Speed; evaluate or rank",
+        "Burn the surface; scorch"
+      ],
+      5: [
+        "Units of land measurement",
+        "Is concerned; looks after",
+        "Menu; as in a la ___",
+        "Wooden shipping box",
+        "Speak formally; give a speech",
+        "Speeds; evaluates",
+        "Respond to something",
+        "Frighten; startle",
+        "Gaze; look fixedly",
+        "Track; small amount"
+      ],
+      6: [
+        "One who drives a cart",
+        "Menus; as in a la ___",
+        "A wheel or one who casts",
+        "Rough; lacking refinement",
+        "One who applies a coating",
+        "Large bowl-shaped depression",
+        "Wooden shipping boxes",
+        "Speaks formally; gives speeches",
+        "Responds to something",
+        "Cast or mold again",
+        "Apply a new coat to",
+        "Frightens; startles",
+        "Gazes; looks fixedly",
+        "One who tracks; glowing bullet",
+        "Tracks; small amounts"
+      ],
+      7: [
+        "Ones who drive carts",
+        "Wheels or ones who cast",
+        "Ones who apply coatings",
+        "Large bowl-shaped depressions",
+        "One who makes or invents something (pangram!)",
+        "A nuclear device; one who reacts",
+        "Casts or molds again",
+        "Applies new coats to",
+        "Ones who track; glowing bullets"
+      ],
+      8: [
+        "Ones who make or invent things (pangram!)",
+        "Nuclear devices; ones who react"
+      ]
+    }
+  },
 
 ];
 
