@@ -1323,6 +1323,45 @@ const stories = [
   closingLink: 'https://lettergriddle.com/play',
   closingLinkText: 'Play Letter Griddle 🏜️'
 },
+{
+  id: 'a-blue-by-any-other-name',
+  title: 'A Blue By Any Other Name',
+  subtitle: '💙 Now Available',
+  date: 'September 2026',
+  locked: false,
+  content: [
+    '"Time to get out the cozy fall recipes," Laurel says.',
+    '"I would like to place an order for Chicken Cordon Bleu," says Taylor.',
+    '"Why blue?" asks Josephine.',
+    '"Yes, why not teal?" wonders Sarah.',
+    '"Why not baby blue?" questions Josie.',
+    '"Or periwinkle?" asks Mrs. Lindsay.',
+    '"Periwinkle Prize Chicken doesn\'t pop, but I would still eat it," Mr. Lindsay says.',
+    '"Good points," Laurel says to her inquisitive crew. "But blue ribbon chicken is the translation."',
+    '"Tip-tap, tip-tap, tip-tap, tip-tap."',
+    'Isaac makes his way out of Jennie\'s arms to the dining room floor.',
+    '"Excuse us, I mean, Sir Isaac, wasn\'t having anything to do with his new leash," Jennie explains, trailing behind with his leash in hand.',
+    '"Tip-tip-tap, tip-tip-tap, tip-tip-tap, tip-tip-tap."',
+    'Isaac picks up the pace.',
+    '"Isaac, where are you off to now?" Jennie, picking up her own pace behind Isaac, wonders.',
+    '"Yap! Yap!"',
+    '"Where is he?" Mrs. Lindsay asks.',
+    '"I will go find the lovable little fellow," Mr. Lindsay offers as he begins his trek.',
+    '"Tip-tip-tip-tap, tip-tip-tip-tap, tip-tip-tip-tap, tip-tip-tip-tap," the group hears before Mr. Lindsay is able to begin the dog hunt.',
+    'The quickening rhythm of the paws returns to the cafe dining room.',
+    '"Tip-tip-tip-tap, tip-tip-tip-tap."',
+    'Isaac stops at Jennie.',
+    '"What are you dragging, Isaac?" Josie wonders.',
+    '"Oh, my! Isaac is a smart chihuahua!" Sarah marvels.',
+    '"It\'s like he understands everything we are saying!" Mrs. Lindsay remarks.',
+    '"He loves this leash!" Laurel notices.',
+    '"Because it\'s blue!" Jennie says, scratching Isaac\'s head.',
+    '"Yap! Yap!" Isaac concurs.',
+  ],
+  closing: 'Readers, dog aficionados, and cozy cooks, enjoy the beginning of your fall season dreams, plans, and menus. Be sure to enjoy today\'s Letter Griddle puzzle, available all seasons, 24/7. 💙',
+  closingLink: 'https://lettergriddle.com/play',
+  closingLinkText: 'Play Letter Griddle 💙'
+},
 ];
 
 // Puzzle data - expandable for future puzzles
@@ -2086,6 +2125,27 @@ const puzzles = {
     { pos: 4, letter: 'L' }
   ],
   didYouKnow: 'Any vehicle over 11 feet 4 inches tall or 7 feet 10 inches wide, which includes almost every standard motorhome, cannot physically fit in the historic 1.1-mile Zion-Mount Carmel Tunnel while staying in its own lane. To let an RV pass, rangers must physically stop oncoming traffic at both ends so the motorhome can drive directly down the double-yellow center line of the pitch-black tunnel.'
+},
+'a-blue-by-any-other-name': {
+  id: 'blue',
+  title: 'Blue',
+  category: 'Blue',
+  words: ['TEAL', 'LEASH', 'CORDON', 'CHICKEN', 'RECIPES'],
+  hints: [
+    'Sarah\'s alternative shade suggestion for Cordon Bleu',
+    'Isaac\'s blue treasure he dragged back to Jennie',
+    'The French word in the dish name meaning blue ribbon',
+    'The star ingredient of Laurel\'s cozy fall order',
+    'What Laurel is ready to pull out for the fall season'
+  ],
+  revealed: [
+    { pos: 1, letter: 'E' },
+    { pos: 2, letter: 'A' },
+    { pos: 3, letter: 'D' },
+    { pos: 3, letter: 'C' },
+    { pos: 4, letter: 'P' }
+  ],
+  didYouKnow: 'Chicken Cordon Bleu gets its name from a French term meaning "blue ribbon," which originally referred to an elite 16th-century order of knights who wore distinctive blue sashes.'
 },
 };
 
