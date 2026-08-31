@@ -1291,7 +1291,7 @@ const stories = [
     '"Well, crew, it\'s why we\'re going. We are getting back in the motorhome and heading west," Mr. Lindsay reveals the couple\'s plans.',
     '"You just got back from the Great Smoky Mountains." Laurel points out.',
     '"And we couldn\'t wait to get to Letter Griddle and all of you, but you know once we get a taste of life on the road," Mrs. Lindsay shares.',
-    '"And the weather is still cooperating," Mr. Lindsay elaborates, "I really want firsthand knowledge of whether or not the motorhome will fit in the Zion-Mount Carmel Tunnel."',
+    '"And the weather is still cooperating," Mr. Lindsay elaborates, "I really want firsthand knowledge of whether or not the motorhome will be able to go in the Zion-Mount Carmel Tunnel."',
     '"Josie and I will miss you," Josephine laments.',
     '"Here\'s what I will look for on your \'gram," Josie excitedly says. "Golden Hour Sunset Monolith photo and 🧗‍♂️✨🏜️ #ZionNationalPark #TheWatchman #GoldenHour #RVLife #DesertSunset."',
     '"Oh, fun idea Josie!" Sarah says, "I will look for a post of \'Wading into The Narrows\' action shot and 🌊🥾⛰️ #TheNarrows #VirginRiver #SlotCanyon #ActiveRetirement #KeepMoving."',
@@ -2124,7 +2124,7 @@ const puzzles = {
     { pos: 3, letter: 'R' },
     { pos: 4, letter: 'L' }
   ],
-  didYouKnow: 'Any vehicle over 11 feet 4 inches tall or 7 feet 10 inches wide, which includes almost every standard motorhome, cannot physically fit in the historic 1.1-mile Zion-Mount Carmel Tunnel while staying in its own lane. To let an RV pass, rangers must physically stop oncoming traffic at both ends so the motorhome can drive directly down the double-yellow center line of the pitch-black tunnel.'
+  didYouKnow: 'Any vehicle over 11 feet 4 inches tall or 7 feet 10 inches wide, which includes almost every standard motorhome, cannot physically fit in the historic 1.1-mile Zion-Mount Carmel Tunnel while staying in its own lane. To address this safety and traffic issue, the National Park Service banned all oversized vehicles from this section of the highway as of June 2026. The historic practice where rangers physically stopped oncoming traffic at both ends so a motorhome could drive down the double-yellow center line of the pitch-black tunnel has been permanently discontinued.'
 },
 'a-blue-by-any-other-name': {
   id: 'blue',
