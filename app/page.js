@@ -1362,6 +1362,44 @@ const stories = [
   closingLink: 'https://lettergriddle.com/play',
   closingLinkText: 'Play Letter Griddle 💙'
 },
+{
+  id: 'zion-national-park-vacation-slides',
+  title: 'Zion National Park Vacation Slides',
+  subtitle: '🏜️ Now Available',
+  date: 'September 2026',
+  locked: false,
+  content: [
+    '"That was delicious!"',
+    '"Laurel, you\'ve outdone yourself!"',
+    '"Well, there\'s…," Laurel starts.',
+    '"Dessert?!" Josie asks.',
+    '"Of course, but first, let\'s hear all about Zion National Park!" Josephine says.',
+    '"I liked your Golden Hour Sunset Monolith photo," Josie says.',
+    '"We took that from the back door of the motorhome," Mrs. Lindsay says. "When the sun briefly broke through the clouds to hit the monoliths, I got the perfect golden hour view."',
+    '"I shared your \'Wading into The Narrows\' action shot of you both in your gear," Sarah adds.',
+    '"We couldn\'t go during our visit because of the risk of flash flooding," Mr. Lindsay explains.',
+    '"So we put on our gear, and had a party at the campground," Mrs. Lindsay continues.',
+    '"Not to be outdone, I liked, shared, and commented on your Canyon Shuttle Wildlife reel," Taylor boasts, side-eyeing Josie and Sarah.',
+    '"Due to rockfall debris cleanup, we stopped at The Grotto, stop #6, but it gave us a chance to make friends with the other travelers."',
+    '"We had a grand time, but we missed our Letter Griddle crew, so naturally we loved the Instagram engagement!" Mr. Lindsay booms.',
+    '"We are so glad to be back!" Mrs. Lindsay says.',
+    '"And engage at Letter Griddle!" Mr. Lindsay booms.',
+    '"The desert sunset was so very beautiful," Mrs. Lindsay explains. "I don\'t think we\'ll forget those beautiful oranges, terra cottas, and golden colors for the rest of our lives."',
+    '"Wading in the Narrows was harrowing. If you plan to go, make sure you have a guide, guru or good weather forecast so that you don\'t get caught in a flash flood," Mr. Lindsay advises.',
+    '"Our guide was vigilant about monitoring the local weather," Mrs. Lindsay adds.',
+    '"We invited him to our party at the campground. We found out he was vigilant about making sure our ice cream was sweet enough," Mr. Lindsay gushes. "Turns out he\'s a craft ice cream maker in the off-season."',
+    '"The gift shop sales girls were so sweet during those rainy days," Mrs. Lindsay says. "They promised your postcards should arrive by Halloween."',
+    '"I got my answer firsthand of whether or not the motorhome will fit in the Zion-Mount Carmel Tunnel," Mr. Lindsay says.',
+    '"It can\'t and it won\'t," Mrs. Lindsay adds.',
+    '"As of June, RVs are no longer able to go in the tunnel," Mr. Lindsay explains. "They are too big, it\'s too dark in there, and it takes too long."',
+    '"And for dessert?" Josie asks.',
+    '"What\'s a perfect dessert for a return from the desert?" Taylor asks.',
+    '"Red Rock Flash Flood Mud Cake!" Laurel proudly states.',
+  ],
+  closing: 'Friends, whether you\'re dreaming of desert sunsets or cozy cafe desserts, there\'s always a Letter Griddle puzzle waiting for you. 🏜️',
+  closingLink: 'https://lettergriddle.com/play',
+  closingLinkText: 'Play Letter Griddle 🏜️'
+},
 ];
 
 // Puzzle data - expandable for future puzzles
@@ -2146,6 +2184,27 @@ const puzzles = {
     { pos: 4, letter: 'P' }
   ],
   didYouKnow: 'Chicken Cordon Bleu gets its name from a French term meaning "blue ribbon," which originally referred to an elite 16th-century order of knights who wore distinctive blue sashes.'
+},
+'zion-national-park-vacation-slides': {
+  id: 'zion-slides',
+  title: 'Zion National Park Vacation Slides',
+  category: 'Zion National Park Vacation Slides',
+  words: ['GOOD', 'GUIDE', 'TUNNEL', 'WEATHER', 'ROCKFALL'],
+  hints: [
+    'The Lindsays\' attitude about their grand time at Zion',
+    'The vigilant one who turned out to be a craft ice cream maker',
+    'The Zion-Mount Carmel one that RVs can no longer enter as of June',
+    'What the guide monitored carefully to keep the crew safe',
+    'The debris cleanup that rerouted the shuttle to The Grotto'
+  ],
+  revealed: [
+    { pos: 1, letter: 'O' },
+    { pos: 2, letter: 'I' },
+    { pos: 3, letter: 'N' },
+    { pos: 3, letter: 'T' },
+    { pos: 4, letter: 'F' }
+  ],
+  didYouKnow: 'Those massive, 2,000-foot crimson and white vertical cliffs that everyone stares at? Millions of years ago, Zion wasn\'t a mountain canyon. It was a massive, sweeping desert landscape with the largest sand dunes on the planet. Over eons, those ancient sand dunes compressed and cemented together into the solid Navajo sandstone visible today.'
 },
 };
 
