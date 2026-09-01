@@ -1369,8 +1369,10 @@ const stories = [
   date: 'September 2026',
   locked: false,
   content: [
-    '"That was delicious!"',
-    '"Laurel, you\'ve outdone yourself!"',
+    '"That was delicious!" The Lindsays chime.',
+    '"Laurel, you\'ve outdone yourself!" Jennie says.',
+    '"Yap! Yap!" Isaac is still happy to have his favorite blue leash.',
+    '"What is on the agenda?" Sarah asks.',
     '"Well, there\'s…," Laurel starts.',
     '"Dessert?!" Josie asks.',
     '"Of course, but first, let\'s hear all about Zion National Park!" Josephine says.',
