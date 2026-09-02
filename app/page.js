@@ -230,7 +230,7 @@ const stories = [
     date: 'December 2025',
     locked: false,
     content: [
-      '"Hey, Trivia Crew! Roads to the cafe are impassable. See you on Zoom at 7. 🌀 Password is Kerflufflegrid." Laurel reads the group text, then presses send.',
+      '"Hey, Trivia Crew! Roads to the cafe are impassable. See you on Zoom at 7. ⏳ Password is Kerflufflegrid." Laurel reads the group text, then presses send.',
       'Responses soon follow:',
       '"Charged. ✨" - Taylor B.',
       '"See everyone in the Zoom grid! 😃" - Sarah',
@@ -251,7 +251,7 @@ const stories = [
     ],
     closing: 'kerflufflegrid.com is always accessible, 24/7, now or whenever.',
     closingLink: 'https://kerflufflegrid.com',
-    closingLinkText: 'Play Kerflufflegrid 🌀'
+    closingLinkText: 'Play Kerflufflegrid ⏳'
   },
   {
   id: 'new-year-retro-style',
