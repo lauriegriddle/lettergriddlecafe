@@ -5456,7 +5456,7 @@ const PUZZLES = [
         "Burns surfaces; scorches",
         "Chairs; places to sit",
         "Rock; schedule",
-        "One held in servitude",
+        "Work hard; ____ away",
         "Not fresh; old bread",
         "Gaze; look fixedly",
         "A wooden post or support",
@@ -5476,8 +5476,8 @@ const PUZZLES = [
         "Ones who wash; washing troughs",
         "Unwinds yarn; becomes undone",
         "A serving tray",
-        "To drool; a slave trader",
-        "Ones held in servitude",
+        "To drool",
+        "Works hard; _____ away",
         "Makes less fresh; goes flat",
         "Deprive of food; go without",
         "Wooden posts or supports",
@@ -5487,7 +5487,7 @@ const PUZZLES = [
       ],
       7: [
         "Serving trays",
-        "Ones who drool; slave traders",
+        "Ones who drool",
         "Deprives of food; goes without",
         "Journeys from one place to another (pangram!)"
       ],
