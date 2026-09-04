@@ -5784,6 +5784,328 @@ const PUZZLES = [
       ]
     }
   },
+  // PUZZLE 92: LARGEST
+  {
+    id: 'largest-puzzle',
+    subtitle: 'Go big or go home!',
+    letters: ['L', 'A', 'R', 'G', 'E', 'S', 'T'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 73,
+    words: {
+      4: ['AGES', 'ALES', 'AREA', 'ARES', 'EARL', 'EARS', 'EAST', 'EATS', 'ERAS', 'GALE', 'GATE', 'GEAR', 'LATE', 'RAGE', 'RATE', 'REAL', 'SAGE', 'SALE', 'SATE', 'SEAL', 'SEAR', 'SEAT', 'TALE', 'TARE', 'TEAL', 'TEAR'],
+      5: ['ALERT', 'ALTER', 'ASTER', 'EARLS', 'GALES', 'GATES', 'GEARS', 'GLARE', 'GRATE', 'GREAT', 'LARGE', 'LASER', 'LATER', 'RAGES', 'RATES', 'REALS', 'SAGES', 'SALES', 'SATES', 'SEALS', 'SEARS', 'SEATS', 'STALE', 'STARE', 'TALES', 'TARES', 'TEALS', 'TEARS'],
+      6: ['ALERTS', 'ALTERS', 'ASTERS', 'GRATES', 'GREATS', 'LAGERS', 'LASERS', 'SALTER', 'SLATER', 'STAGER', 'STALES', 'STARES', 'STEALS', 'TARGET'],
+      7: ['LARGEST', 'SALTERS', 'SLATERS', 'STAGERS', 'TARGETS']
+    },
+    hints: {
+      4: [
+        "Time periods; grows older",
+        "Types of beer",
+        "Region; surface space",
+        "Greek god of war; plural of are",
+        "British nobleman",
+        "Hearing organs",
+        "Compass direction; sunrise side",
+        "Consumes food",
+        "Historical time periods",
+        "Strong wind; a sale of goods",
+        "Hinged barrier; entrance",
+        "Mechanical cog; equipment",
+        "Not on time; deceased",
+        "Intense anger; fury",
+        "Speed; evaluate or rank",
+        "Genuine; actual",
+        "Wise person; herb used in cooking",
+        "Discount event at a store",
+        "Satisfy fully",
+        "Ocean mammal; close tightly",
+        "Burn the surface; scorch",
+        "Chair; place to sit",
+        "Story; narrative",
+        "Weed; weight of a container",
+        "Blue-green color; type of duck",
+        "Rip; eye drop"
+      ],
+      5: [
+        "Warning; alarm",
+        "Change; modify",
+        "Star-shaped flower",
+        "British noblemen",
+        "Strong winds; sales of goods",
+        "Hinged barriers; entrances",
+        "Mechanical cogs; equipment",
+        "Bright burst of light or anger",
+        "Scratch or scrape; ridged cooking pan",
+        "Impressive; outstanding",
+        "Big; of significant size",
+        "Focused light beam device",
+        "After; more recent",
+        "Intense angers; furies",
+        "Speeds; evaluates",
+        "Genuine things; currency",
+        "Wise people; herbs used in cooking",
+        "Discount events at stores",
+        "Satisfies fully",
+        "Ocean mammals; closes tightly",
+        "Burns surfaces; scorches",
+        "Chairs; places to sit",
+        "Rock; schedule",
+        "Gazes; looks fixedly",
+        "Stories; narratives",
+        "Weeds; container weights",
+        "Blue-green colors; types of duck",
+        "Rips; eye drops"
+      ],
+      6: [
+        "Warnings; alarms",
+        "Changes; modifies",
+        "Star-shaped flowers",
+        "Scratches or scrapes; ridged cooking pans",
+        "Impressive or outstanding ones",
+        "Beers aged in storage; beer mugs",
+        "Focused light beam devices",
+        "One who adds salt",
+        "One who lays slate tiles",
+        "One who stages events",
+        "Makes less fresh; goes flat",
+        "Gazes; looks fixedly",
+        "Takes without permission",
+        "Goal or aim; bullseye in darts"
+      ],
+      7: [
+        "Greatest in size (pangram!)",
+        "Ones who add salt",
+        "Ones who lay slate tiles",
+        "Ones who stage events",
+        "Goals or aims; bullseyes in darts"
+      ]
+    }
+  },
+
+  // PUZZLE 93: GEMSTONE
+  {
+    id: 'gemstone-puzzle',
+    subtitle: 'A real gem!',
+    letters: ['G', 'E', 'M', 'S', 'T', 'O', 'N'],
+    keyLetters: ['E', 'O'],
+    totalWordCount: 36,
+    words: {
+      4: ['EONS', 'GOES', 'GONE', 'MEMO', 'MOTE', 'NOSE', 'NOTE', 'OMEN', 'ONES', 'SOME', 'TOES', 'TOME', 'TONE'],
+      5: ['EMOTE', 'GNOME', 'MESON', 'MONTE', 'MOTES', 'NOTES', 'OMENS', 'ONSET', 'SMOTE', 'STENO', 'STONE', 'TOMES', 'TONES'],
+      6: ['EMOTES', 'GNOMES', 'MESONS', 'MOMENT', 'MONTES', 'ONSETS', 'STENOS', 'STONES'],
+      7: ['MOMENTS'],
+      8: ['GEMSTONE']
+    },
+    hints: {
+      4: [
+        "Long time periods",
+        "Travels to a place",
+        "Departed; no longer here",
+        "Brief note; a musical reminder",
+        "Small speck of dust or material",
+        "Facial feature for smelling",
+        "Written message; musical pitch",
+        "Sign; portent of things to come",
+        "Single items; individuals",
+        "A certain amount; rather",
+        "Foot digits",
+        "A large book; heavy volume",
+        "Sound quality; shade of color"
+      ],
+      5: [
+        "Express emotion dramatically",
+        "Small mythical creature living underground",
+        "A subatomic particle",
+        "A card game; a mountain in Italy",
+        "Small specks of dust or material",
+        "Written messages; musical pitches",
+        "Signs; portents of things to come",
+        "Beginning; start of something",
+        "Struck with force; extinguished",
+        "Shorthand typist",
+        "Rock; fruit seed",
+        "Large books; heavy volumes",
+        "Sound qualities; shades of color"
+      ],
+      6: [
+        "Expresses emotion dramatically",
+        "Small mythical creatures living underground",
+        "Subatomic particles",
+        "Brief period of time; very important",
+        "Card games; mountains in Italy",
+        "Beginnings; starts of something",
+        "Shorthand typists",
+        "Rocks; fruit seeds"
+      ],
+      7: [
+        "Brief periods of time; very important ones"
+      ],
+      8: [
+        "A precious or semi-precious stone (pangram!)"
+      ]
+    }
+  },
+
+  // PUZZLE 94: MARATHON
+  {
+    id: 'marathon-puzzle',
+    subtitle: 'Pace yourself!',
+    letters: ['M', 'A', 'R', 'T', 'H', 'O', 'N'],
+    keyLetters: ['O', 'T'],
+    totalWordCount: 20,
+    words: {
+      4: ['ATOM', 'HOOT', 'MOAT', 'MOOT', 'OATH', 'ROOT', 'ROTA', 'TARO', 'TORN', 'TORT', 'TOOT', 'TROT'],
+      5: ['MONTH', 'NORTH', 'TAROT', 'THORN'],
+      6: ['MATRON', 'NATRON'],
+      7: ['OTTOMAN'],
+      8: ['MARATHON']
+    },
+    hints: {
+      4: [
+        "Smallest unit of an element",
+        "Cry of an owl; stare wide-eyed",
+        "A defensive ditch filled with water",
+        "Open to debate; a debating exercise",
+        "Solemn promise or vow",
+        "Underground plant part; origin",
+        "A list or roll; a roster",
+        "Tropical starchy plant; its root",
+        "Ripped; past tense of tear",
+        "A legal wrong; crime",
+        "A double honk; a pipe sound",
+        "Move at a jogging pace"
+      ],
+      5: [
+        "One of twelve periods in a year",
+        "Direction toward the North Pole",
+        "A card used in fortune telling",
+        "Prickly plant with a sharp point"
+      ],
+      6: [
+        "A woman in charge of a household or institution",
+        "A mineral salt found in dry lake beds"
+      ],
+      7: [
+        "A padded footstool; a Turkish empire"
+      ],
+      8: [
+        "A long-distance running race of 26.2 miles (pangram!)"
+      ]
+    }
+  },
+
+  // PUZZLE 95: DOWNTOWNER
+  {
+    id: 'downtowner-puzzle',
+    subtitle: 'City life!',
+    letters: ['D', 'O', 'W', 'N', 'T', 'E', 'R'],
+    keyLetters: ['O', 'E'],
+    totalWordCount: 29,
+    words: {
+      4: ['DOER', 'DONE', 'DOTE', 'NODE', 'NONE', 'NOTE', 'OWED', 'RODE', 'ROTE', 'TONE', 'WORE'],
+      5: ['DONER', 'DOTER', 'DRONE', 'NOTED', 'NOTER', 'OWNED', 'OWNER', 'ROWED', 'TONED', 'TONER', 'TOWED', 'TOWER'],
+      6: ['DOWNER', 'REDONE', 'TOWNER', 'WONDER', 'WORDED'],
+      10: ['DOWNTOWNER']
+    },
+    hints: {
+      4: [
+        "One who performs an action",
+        "Finished; completed",
+        "Fuss over; show excessive affection",
+        "A point or junction in a network",
+        "Not any; not one",
+        "Written message; musical pitch",
+        "Had a debt; was obligated",
+        "Traveled on horseback; past tense of ride",
+        "Learned by repetition",
+        "Sound quality; shade of color",
+        "Had clothing on"
+      ],
+      5: [
+        "Rotating meat kebab; one who donates",
+        "One who fusses or shows excessive affection",
+        "Pilotless aircraft; a low hum",
+        "Had a written message; was observed",
+        "One who writes things down",
+        "Possessed; had as property",
+        "One who possesses something",
+        "Propelled a boat with oars",
+        "Had a certain sound quality",
+        "Printer ink; skin care product",
+        "Pulled behind a vehicle",
+        "Tall structure; to loom over"
+      ],
+      6: [
+        "Something that depresses; a pessimist",
+        "Done over again; renovated",
+        "A resident of a town",
+        "Marvel; feel amazed",
+        "Expressed in words; phrased carefully"
+      ],
+      10: [
+        "A person who lives or works in the city center (pangram!)"
+      ]
+    }
+  },
+
+  // PUZZLE 96: SKYLINE
+  {
+    id: 'skyline-puzzle',
+    subtitle: 'Reach for the sky!',
+    letters: ['S', 'K', 'Y', 'L', 'I', 'N', 'E'],
+    keyLetters: ['I', 'E'],
+    totalWordCount: 28,
+    words: {
+      4: ['ISLE', 'LEIS', 'LIEN', 'LIES', 'LIKE', 'LINE', 'SINE'],
+      5: ['ISLES', 'LIENS', 'LIKEN', 'LIKES', 'LINES', 'NISEI', 'SEINE', 'SINES', 'SKEIN', 'SKIES', 'YIKES'],
+      6: ['LIKENS', 'NISEIS', 'SEINES', 'SENILE', 'SILKEN', 'SKEINS'],
+      7: ['SKYLINE'],
+      8: ['LIKENESS', 'SKYLINES'],
+      9: ['SILKINESS']
+    },
+    hints: {
+      4: [
+        "Small island",
+        "Garlands worn around the neck",
+        "Legal claim on a property",
+        "Untruths; reclines flat",
+        "Enjoy; be fond of",
+        "Straight mark; queue",
+        "Math function in trigonometry"
+      ],
+      5: [
+        "Small islands",
+        "Legal claims on a property",
+        "Compare to; find similar",
+        "Enjoys; is fond of",
+        "Straight marks; queues",
+        "Second-generation Japanese-American",
+        "A fishing net; a French river",
+        "Math functions in trigonometry",
+        "A coil of yarn or thread",
+        "The upper atmosphere; plural of sky",
+        "Expression of surprise or alarm"
+      ],
+      6: [
+        "Compares to; finds similar",
+        "Second-generation Japanese-Americans",
+        "Fishing nets; French rivers",
+        "Showing signs of mental decline with age",
+        "Smooth and lustrous like silk",
+        "Coils of yarn or thread"
+      ],
+      7: [
+        "The outline of buildings against the sky (pangram!)"
+      ],
+      8: [
+        "The quality of being alike or similar",
+        "Outlines of buildings against the sky (pangram!)"
+      ],
+      9: [
+        "The quality of being smooth and lustrous"
+      ]
+    }
+  },
 
 ];
 
