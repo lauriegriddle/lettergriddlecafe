@@ -5711,11 +5711,11 @@ const PUZZLES = [
         "Ones who make lists; types of plow",
         "Lists again; puts back on lists",
         "Springs back; bounces back elastically",
-        "Completely free from germs (pangram!)"
+        "Completely free from germs"
       ],
       8: [
         "Like a sister; of or relating to sisters",
-        "Without ever getting tired (pangram!)"
+        "Without ever getting tired"
       ],
       10: [
         "In a way that never gets tired (pangram!)"
