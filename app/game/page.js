@@ -6106,6 +6106,424 @@ const PUZZLES = [
       ]
     }
   },
+  
+  // PUZZLE 97: ANGELIC
+  {
+    id: 'angelic-puzzle',
+    subtitle: 'Pure word magic!',
+    letters: ['A', 'N', 'G', 'E', 'L', 'I', 'C'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 22,
+    words: {
+      4: ['ACNE', 'CAGE', 'CANE', 'GALE', 'LACE', 'LANE', 'LEAN'],
+      5: ['ALIEN', 'ALINE', 'ANGEL', 'ANGLE', 'CLEAN', 'GLEAN', 'LANCE'],
+      6: ['CANINE'],
+      7: ['ANGELIC', 'LEANING'],
+      8: ['ANGELICA', 'CLEANING', 'GLEANING']
+    },
+    hints: {
+      4: [
+        "Skin condition with pimples",
+        "Wire enclosure; trap an animal",
+        "Walking stick; sugar plant",
+        "Strong wind; a sale of goods",
+        "Delicate fabric; shoe tie",
+        "Narrow road; bowling path",
+        "Thin; tilt to one side"
+      ],
+      5: [
+        "Being from another world; foreign",
+        "Line up; arrange in a row",
+        "Heavenly being with wings",
+        "Geometric shape; point of view",
+        "Free from dirt; tidy up",
+        "Gather bit by bit; collect information",
+        "Long spear; pierce to drain"
+      ],
+      6: [
+        "Tooth; relating to dogs"
+      ],
+      7: [
+        "Relating to angels; heavenly (pangram!)",
+        "Tilting to one side; resting on a surface"
+      ],
+      8: [
+        "Herb with a licorice-like flavor",
+        "Making free from dirt; tidying up",
+        "Gathering bit by bit; collecting"
+      ]
+    }
+  },
+
+  // PUZZLE 98: CRUISED
+  {
+    id: 'cruised-puzzle',
+    subtitle: 'Smooth sailing!',
+    letters: ['C', 'R', 'U', 'I', 'S', 'E', 'D'],
+    keyLetters: ['I', 'E'],
+    totalWordCount: 37,
+    words: {
+      4: ['CIRE', 'DICE', 'DIRE', 'RICE', 'RIDE', 'RISE', 'SIDE', 'SIRE'],
+      5: ['CIDER', 'CRIED', 'CRIES', 'CURIE', 'DICER', 'DICES', 'DRIED', 'DRIER', 'DRIES', 'ICIER', 'RICED', 'RICER', 'RICES', 'RIDES', 'SIDES', 'SIRED', 'SIRES'],
+      6: ['CIDERS', 'CRUISE', 'CURIES', 'DICERS', 'DRIERS', 'RICERS'],
+      7: ['CRUISED', 'CRUISER', 'CRUISES', 'DECRIED', 'DECRIES'],
+      8: ['CRUISERS']
+    },
+    hints: {
+      4: [
+        "A waxed fabric with a shiny finish",
+        "Cut into small cubes",
+        "Extremely serious; urgent",
+        "Grain often served in stir-fry",
+        "Travel on a horse or vehicle",
+        "Go upward; get out of bed",
+        "Edge; one part of an argument",
+        "Father; address to a king"
+      ],
+      5: [
+        "Apple-based alcoholic drink",
+        "Wept; shouted out",
+        "Weeps; shouts out",
+        "A unit of radioactivity",
+        "One who cuts into cubes",
+        "Cuts into small cubes",
+        "Removed moisture; preserved",
+        "More arid; laundry appliance",
+        "Removes moisture",
+        "More cold and frosty",
+        "Cooked rice by boiling",
+        "Kitchen tool for pressing potatoes",
+        "Grains of cooked rice",
+        "Travels on a horse or vehicle",
+        "Edges; parts of arguments",
+        "Fathered offspring",
+        "Fathers; addresses to kings"
+      ],
+      6: [
+        "Apple-based alcoholic drinks",
+        "Travel leisurely by ship or car",
+        "Units of radioactivity",
+        "Ones who cut into cubes",
+        "Laundry appliances; more arid ones",
+        "Kitchen tools for pressing potatoes"
+      ],
+      7: [
+        "Traveled leisurely by ship (pangram!)",
+        "A ship or person that cruises",
+        "Travels leisurely by ship",
+        "Criticized harshly; spoke against",
+        "Criticizes harshly; speaks against"
+      ],
+      8: [
+        "Ships or people that cruise (pangram!)"
+      ]
+    }
+  },
+
+  // PUZZLE 99: INTERESTED
+  {
+    id: 'interested-puzzle',
+    subtitle: 'Curiosity wins!',
+    letters: ['I', 'N', 'T', 'E', 'R', 'S', 'D'],
+    keyLetters: ['I', 'E'],
+    totalWordCount: 59,
+    words: {
+      4: ['DINE', 'DIRE', 'EDIT', 'IDES', 'RIDE', 'RISE', 'RITE', 'SIRE', 'SITE', 'TIED', 'TIER', 'TIES', 'TINE', 'TIRE'],
+      5: ['DINER', 'DINES', 'EDITS', 'INERT', 'INTER', 'NITER', 'RIDES', 'RINSE', 'RISEN', 'RITES', 'SIREN', 'SIRES', 'SITED', 'SITES', 'SNIDE', 'STEIN', 'TIERS', 'TINES', 'TIRED', 'TIRES', 'TRIED', 'TRIES'],
+      6: ['DINERS', 'DIREST', 'INERTS', 'INSERT', 'INTERS', 'NITERS', 'RINSED', 'RINSES', 'SIRENS', 'SISTER', 'SNIDER', 'STEINS', 'STRIDE', 'TINDER'],
+      7: ['INSERTS', 'SNIDEST', 'STINTED', 'STRIDES', 'TINDERS'],
+      8: ['DISINTER', 'INTEREST'],
+      9: ['INTERESTS'],
+      10: ['INTERESTED']
+    },
+    hints: {
+      4: [
+        "Eat a meal; have dinner",
+        "Extremely serious; urgent",
+        "Revise text; prepare for publishing",
+        "Middle of the month; the fifteenth",
+        "Travel on a horse or vehicle",
+        "Go upward; get out of bed",
+        "Ceremony or ritual",
+        "Father; address to a king",
+        "Location; a website address",
+        "Fastened; bound together",
+        "Level or layer",
+        "Connections; neckwear",
+        "Pointed spike; prong of a fork",
+        "Rubber wheel covering; grow weary"
+      ],
+      5: [
+        "One who eats a meal; restaurant with booths",
+        "Eats meals at a restaurant",
+        "Revises text; prepares for publishing",
+        "Inactive; not moving",
+        "Bury between; place between others",
+        "Potassium nitrate; a saltpeter compound",
+        "Travels on a horse or vehicle",
+        "Wash lightly with water",
+        "Gone up; out of bed",
+        "Ceremonies or rituals",
+        "Warning sound; mythical sea singer",
+        "Fathers; addresses to kings",
+        "Located; placed in a position",
+        "Locations; website addresses",
+        "Sarcastic in a mean way",
+        "Beer mug; a brewing vessel",
+        "Levels or layers",
+        "Pointed spikes; prongs of a fork",
+        "Weary; needing rest",
+        "Rubber wheel coverings; grows weary",
+        "Attempted; made an effort",
+        "Attempts; makes an effort"
+      ],
+      6: [
+        "Restaurants with booths",
+        "Most extremely serious",
+        "Inactive things; not moving ones",
+        "Place inside; put within",
+        "Buries between; places between others",
+        "Potassium nitrate compounds",
+        "Washed lightly with water",
+        "Washes lightly with water",
+        "Warning sounds; mythical sea singers",
+        "Female sibling",
+        "More sarcastic in a mean way",
+        "Beer mugs; brewing vessels",
+        "Walk with long decisive steps",
+        "Dry material used to start a fire"
+      ],
+      7: [
+        "Places inside; puts within",
+        "Most sarcastic in a mean way",
+        "Gave less than expected; was sparing",
+        "Walks with long decisive steps",
+        "Dry materials used to start a fire"
+      ],
+      8: [
+        "Dig up a buried body",
+        "Attention; money earned on savings"
+      ],
+      9: [
+        "Attention; money earned on savings (plural)"
+      ],
+      10: [
+        "Curious; having attention engaged (pangram!)"
+      ]
+    }
+  },
+
+  // PUZZLE 100: UPTURNED
+  {
+    id: 'upturned-puzzle',
+    subtitle: 'Turn it around!',
+    letters: ['U', 'P', 'T', 'R', 'N', 'E', 'D'],
+    keyLetters: ['U', 'E'],
+    totalWordCount: 31,
+    words: {
+      4: ['DUNE', 'DUPE', 'DURE', 'NUDE', 'PURE', 'RUED', 'RUNE'],
+      5: ['DRUPE', 'DUPED', 'DUPER', 'PRUDE', 'PRUNE', 'UNDER', 'UNDUE', 'UPEND'],
+      6: ['ENDURE', 'PRUNED', 'PUNTED', 'PUNTER', 'PURRED', 'RETURN', 'TENURE', 'TURNED'],
+      7: ['DENTURE', 'ENDURED', 'PRUDENT', 'RUPTURE', 'TENURED'],
+      8: ['RUPTURED', 'UPTURNED']
+    },
+    hints: {
+      4: [
+        "Sand hill formed by wind",
+        "Trick or deceive someone",
+        "Endure; last through hardship",
+        "Without clothing; bare",
+        "Clean and unmixed; unadulterated",
+        "Felt regret about",
+        "Magical symbol; letter in old alphabet"
+      ],
+      5: [
+        "A fleshy fruit with a pit like a plum",
+        "Tricked or deceived",
+        "One who tricks or deceives",
+        "One who is excessively proper or modest",
+        "Trim a tree; dried plum",
+        "Below; less than",
+        "Excessive; more than needed",
+        "Turn upside down; tip over"
+      ],
+      6: [
+        "Withstand; put up with hardship",
+        "Trimmed a tree; dried as a plum",
+        "Kicked a ball before it bounced",
+        "One who kicks before the ball bounces",
+        "Made a purring sound",
+        "Go back; send back",
+        "Length of time holding a position",
+        "Rotated; changed direction"
+      ],
+      7: [
+        "A removable dental plate",
+        "Withstood; put up with hardship",
+        "Careful and wise with money",
+        "Break or burst suddenly",
+        "Having a tenure; holding a position"
+      ],
+      8: [
+        "Broke or burst suddenly",
+        "Flipped over; facing downward (pangram!)"
+      ]
+    }
+  },
+
+  // PUZZLE 101: AIRLINES
+  {
+    id: 'airlines-puzzle',
+    subtitle: 'First class words!',
+    letters: ['A', 'I', 'R', 'L', 'N', 'E', 'S'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 46,
+    words: {
+      4: ['ALES', 'EARL', 'EARN', 'EARS', 'ERAS', 'LANE', 'LEAN', 'NEAR', 'SANE', 'SEAL', 'SEAR'],
+      5: ['ALIEN', 'ALINE', 'ANISE', 'ARISE', 'EARLS', 'EARNS', 'INANE', 'LANES', 'LEANS', 'LIANE', 'NEARS', 'RAISE', 'SANER', 'SEALS', 'SEARS', 'SNARE'],
+      6: ['ALIENS', 'ALINES', 'ARISEN', 'ARISES', 'INSANE', 'LIANES', 'NAILER', 'RAISER', 'RAISES', 'SALINE', 'SERIAL', 'SNARES'],
+      7: ['AIRLINE', 'NAILERS', 'RAISERS', 'SALINES', 'SERIALS'],
+      8: ['AIRLINES', 'RAINLESS']
+    },
+    hints: {
+      4: [
+        "Types of beer",
+        "British nobleman",
+        "Make money; deserve",
+        "Hearing organs",
+        "Historical time periods",
+        "Narrow road; bowling path",
+        "Thin; tilt to one side",
+        "Close by; not far",
+        "Mentally sound; rational",
+        "Ocean mammal; close tightly",
+        "Burn the surface; scorch"
+      ],
+      5: [
+        "Being from another world; foreign",
+        "Line up; arrange in a row",
+        "Herb with licorice-flavored seeds",
+        "Get up; come into being",
+        "British noblemen",
+        "Makes money; deserves",
+        "Silly and pointless; lacking sense",
+        "Narrow roads; bowling paths",
+        "Tilts to one side",
+        "Tropical climbing plant; vine",
+        "Comes close to",
+        "Lift up; increase",
+        "More mentally sound",
+        "Ocean mammals; closes tightly",
+        "Burns surfaces; scorches",
+        "Trap for catching animals"
+      ],
+      6: [
+        "Beings from another world; foreigners",
+        "Lines up; arranges in a row",
+        "Got up; came into being",
+        "Gets up; comes into being",
+        "Not rational; wild or chaotic",
+        "Tropical climbing plants; vines",
+        "One who lifts or increases",
+        "One who raises things up",
+        "Lifts up; increases",
+        "Containing salt; saltwater solution",
+        "Ongoing story; in sequence",
+        "Traps for catching animals"
+      ],
+      7: [
+        "A company providing air travel (pangram!)",
+        "Ones who lift or increase",
+        "Ones who raise things up",
+        "Saltwater solutions",
+        "Ongoing stories; TV series"
+      ],
+      8: [
+        "Companies providing air travel (pangram!)",
+        "Having no rain; completely dry"
+      ]
+    }
+  },
+
+  // PUZZLE 102: STITCHER
+  {
+    id: 'stitcher-puzzle',
+    subtitle: 'Sew many words!',
+    letters: ['S', 'T', 'I', 'C', 'H', 'E', 'R'],
+    keyLetters: ['I', 'E'],
+    totalWordCount: 49,
+    words: {
+      4: ['CITE', 'HEIR', 'HIRE', 'ICER', 'ICES', 'RICE', 'RISE', 'RITE', 'SIRE', 'SITE', 'TIER', 'TIES', 'TIRE'],
+      5: ['CITER', 'CITES', 'ETHIC', 'HEIRS', 'HIRES', 'ICERS', 'ICIER', 'RISES', 'RITES', 'SIRES', 'SITES', 'THEIR', 'TIERS', 'TIRES', 'TRICE', 'TRIES'],
+      6: ['ETHICS', 'ITCHER', 'ITCHES', 'RECITE', 'RICHES', 'STERIC', 'TECHIE', 'THEIRS', 'THRICE', 'TIERCE', 'TRICES'],
+      7: ['HERETIC', 'ITCHERS', 'RECITES', 'RICHEST', 'TECHIES', 'TIERCES'],
+      8: ['HERETICS', 'STITCHER'],
+      9: ['STITCHERS']
+    },
+    hints: {
+      4: [
+        "Reference or quote as evidence",
+        "One who inherits; future owner",
+        "Employ someone; rent something",
+        "One who makes things icy",
+        "Frozen water cubes",
+        "Grain often served in stir-fry",
+        "Go upward; get out of bed",
+        "Ceremony or ritual",
+        "Father; address to a king",
+        "Location; a website address",
+        "Level or layer",
+        "Connections; neckwear",
+        "Rubber wheel covering; grow weary"
+      ],
+      5: [
+        "One who references or quotes as evidence",
+        "References or quotes as evidence",
+        "Moral principle or code of conduct",
+        "Those who inherit; future owners",
+        "Employs people; rents something",
+        "Ones who make things icy",
+        "Frozen water cubes (plural)",
+        "Goes upward; gets out of bed",
+        "Ceremonies or rituals",
+        "Fathers; addresses to kings",
+        "Locations; website addresses",
+        "Belonging to them",
+        "Levels or layers",
+        "Rubber wheel coverings",
+        "A brief moment; in a ___",
+        "Attempts; makes an effort"
+      ],
+      6: [
+        "Moral principles or codes of conduct",
+        "One who itches or causes itching",
+        "Causes an itching sensation",
+        "Speak or read aloud from memory",
+        "Great wealth or valuable things",
+        "Relating to molecular arrangement",
+        "Informal term for a technology enthusiast",
+        "Belonging to them (plural emphasis)",
+        "Three times; multiplied by three",
+        "A cask holding a third of a barrel",
+        "Brief moments; in a ___ (plural)"
+      ],
+      7: [
+        "One who denies accepted beliefs",
+        "Ones who itch or cause itching",
+        "Speaks or reads aloud from memory",
+        "Most wealthy; most valuable",
+        "Informal terms for technology enthusiasts",
+        "Casks holding a third of a barrel"
+      ],
+      8: [
+        "Ones who deny accepted beliefs",
+        "One who sews or mends fabric (pangram!)"
+      ],
+      9: [
+        "Ones who sew or mend fabric (pangram!)"
+      ]
+    }
+  },
 
 ];
 
