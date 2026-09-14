@@ -6524,6 +6524,290 @@ const PUZZLES = [
       ]
     }
   },
+    // PUZZLE 103: TREASURED
+  {
+    id: 'treasured-puzzle',
+    subtitle: 'Every word is precious!',
+    letters: ['T', 'R', 'E', 'A', 'S', 'U', 'D'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 51,
+    words: {
+      4: ['DARE', 'DATE', 'DEAR', 'EARS', 'EAST', 'EATS', 'ERAS', 'RATE', 'READ', 'SATE', 'SEAR', 'SEAT', 'TARE', 'TEAR'],
+      5: ['DARES', 'DATER', 'DATES', 'DEARS', 'EASED', 'EATER', 'ERASE', 'RATES', 'READS', 'SATED', 'SATES', 'SEARS', 'SEATS', 'STARE', 'STEAD', 'TARES', 'TEARS', 'TRADE', 'TREAD'],
+      6: ['DATERS', 'EATERS', 'ERASED', 'ERASER', 'ERASES', 'STARED', 'STARES', 'STEADS', 'TRADES', 'TREADS'],
+      7: ['ASSURED', 'ERASERS', 'ERASURE', 'STATURE'],
+      8: ['ERASURES', 'TREASURE'],
+      9: ['TREASURED', 'TREASURES']
+    },
+    hints: {
+      4: [
+        "Challenge someone; be bold",
+        "Calendar day; romantic outing",
+        "Beloved; expensive",
+        "Hearing organs",
+        "Compass direction; sunrise side",
+        "Consumes food",
+        "Historical time periods",
+        "Speed; evaluate or rank",
+        "Look at written words",
+        "Satisfy fully",
+        "Burn the surface; scorch",
+        "Chair; place to sit",
+        "Weed; weight of a container",
+        "Rip; eye drop"
+      ],
+      5: [
+        "Challenges; acts boldly",
+        "One who goes on dates",
+        "Calendar days; romantic outings",
+        "Beloved ones",
+        "Made more comfortable",
+        "One who consumes food",
+        "Remove; rub out",
+        "Speeds; evaluates",
+        "Looks at written words",
+        "Satisfied fully",
+        "Satisfies fully",
+        "Burns surfaces; scorches",
+        "Chairs; places to sit",
+        "Gaze; look fixedly",
+        "Place; in good stead",
+        "Weeds; container weights",
+        "Rips; eye drops",
+        "Exchange; business deal",
+        "Walk heavily; tire pattern"
+      ],
+      6: [
+        "Ones who go on dates",
+        "Ones who consume food",
+        "Removed; rubbed out",
+        "Tool for removing pencil marks",
+        "Removes; rubs out",
+        "Gazed; looked fixedly",
+        "Gazes; looks fixedly",
+        "Places; positions",
+        "Exchanges; business deals",
+        "Walks heavily; tire patterns"
+      ],
+      7: [
+        "Guaranteed; made certain",
+        "Tools for removing pencil marks",
+        "The act of erasing or removing",
+        "A person's upright posture; a sculpture"
+      ],
+      8: [
+        "The acts of erasing or removing",
+        "A collection of precious things (pangram!)"
+      ],
+      9: [
+        "Greatly valued and cherished (pangram!)",
+        "Collections of precious things (pangram!)"
+      ]
+    }
+  },
+
+  // PUZZLE 104: OUTSIDE
+  {
+    id: 'outside-puzzle',
+    subtitle: 'Step outside!',
+    letters: ['O', 'U', 'T', 'S', 'I', 'D', 'E'],
+    keyLetters: ['O', 'E'],
+    totalWordCount: 25,
+    words: {
+      4: ['DOES', 'DOSE', 'DOTE', 'ODES', 'TOED', 'TOES'],
+      5: ['DIODE', 'DOSED', 'DOTED', 'DOUSE', 'OUTED', 'TOTED'],
+      6: ['DIODES', 'DOTTED', 'DOUSED', 'IODISE', 'OUSTED', 'SOTTED', 'TOUTED'],
+      7: ['DITTOED', 'DITTOES', 'IODISED', 'OUTSIDE', 'TEDIOUS'],
+      8: ['OUTSIDES']
+    },
+    hints: {
+      4: [
+        "Performs an action; third person singular",
+        "A measured portion of medicine",
+        "Fuss over; show excessive affection",
+        "Poems; pieces of poetry",
+        "Having a toe or toes",
+        "Foot digits"
+      ],
+      5: [
+        "Electronic component allowing current one way",
+        "Given a measured portion of medicine",
+        "Fussed over; showed excessive affection",
+        "Soak thoroughly; drench",
+        "Made public; revealed",
+        "Carried; hauled something heavy"
+      ],
+      6: [
+        "Electronic components allowing current one way",
+        "Covered with small round marks",
+        "Soaked thoroughly; drenched",
+        "Treat with iodine; British spelling",
+        "Forced out; removed from position",
+        "Very drunk; completely soaked",
+        "Promoted enthusiastically"
+      ],
+      7: [
+        "Copied by writing; repeated exactly",
+        "Copies by writing; repeated marks",
+        "Treated with iodine; British spelling",
+        "The exterior; not inside (pangram!)",
+        "Boring and long-winded; tiresome"
+      ],
+      8: [
+        "The exteriors; not inside (pangram!)"
+      ]
+    }
+  },
+
+  // PUZZLE 105: GROUNDED
+  {
+    id: 'grounded-puzzle',
+    subtitle: 'Stay grounded!',
+    letters: ['G', 'R', 'O', 'U', 'N', 'D', 'E'],
+    keyLetters: ['O', 'E'],
+    totalWordCount: 21,
+    words: {
+      4: ['DOER', 'DONE', 'ERGO', 'EURO', 'GONE', 'GORE', 'NODE', 'RODE'],
+      5: ['DONER', 'DRONE', 'GORED', 'ROUGE'],
+      6: ['DONNER', 'REDONE', 'ROUGED', 'UNDONE'],
+      7: ['DUNGEON', 'ROUNDED', 'ROUNDER'],
+      8: ['GROUNDED', 'GROUNDER']
+    },
+    hints: {
+      4: [
+        "One who performs an action",
+        "Finished; completed",
+        "Therefore; Latin for consequently",
+        "European currency",
+        "Departed; no longer here",
+        "Pierced with a tusk; stained red",
+        "A point or junction in a network",
+        "Traveled on horseback; past tense of ride"
+      ],
+      5: [
+        "Rotating meat kebab; one who donates",
+        "Pilotless aircraft; a low hum",
+        "Pierced with a tusk; stained red",
+        "A red cosmetic; to apply red color"
+      ],
+      6: [
+        "Thunder that rolls and echoes",
+        "Done over again; renovated",
+        "Applied red color to",
+        "No longer tied or bound; freed"
+      ],
+      7: [
+        "An underground prison or vault",
+        "Made into a circular shape",
+        "More circular; more complete"
+      ],
+      8: [
+        "Prohibited from leaving; based in reality (pangram!)",
+        "A ball that bounces along the ground"
+      ]
+    }
+  },
+
+  // PUZZLE 106: UNDERHAND
+  {
+    id: 'underhand-puzzle',
+    subtitle: 'Play it straight!',
+    letters: ['U', 'N', 'D', 'E', 'R', 'H', 'A'],
+    keyLetters: ['A', 'E'],
+    totalWordCount: 21,
+    words: {
+      4: ['DARE', 'DEAN', 'DEAR', 'EARN', 'HARE', 'HEAD', 'HEAR', 'NEAR', 'UREA'],
+      5: ['DARED', 'HARED', 'HEARD'],
+      6: ['DANDER', 'EARNED', 'EARNER', 'ENDEAR', 'HANDER', 'HEADER', 'UNREAD'],
+      7: ['UNHEARD'],
+      9: ['UNDERHAND']
+    },
+    hints: {
+      4: [
+        "Challenge someone; be bold",
+        "School administrator; church leader",
+        "Beloved; expensive",
+        "Make money; deserve",
+        "Rabbit-like animal",
+        "Top of the body; leader",
+        "Perceive sound",
+        "Close by; not far",
+        "A compound found in urine"
+      ],
+      5: [
+        "Challenged; was bold",
+        "Moved quickly like a hare",
+        "Perceived sound; listened to"
+      ],
+      6: [
+        "Loose skin flakes; anger or irritation",
+        "Made money; deserved",
+        "One who makes money or deserves",
+        "Make beloved; make dear to someone",
+        "One who passes something by hand",
+        "Title at top of a document",
+        "Not yet read; unread messages"
+      ],
+      7: [
+        "Never heard before; unprecedented"
+      ],
+      9: [
+        "Sneaky or deceptive; not above board (pangram!)"
+      ]
+    }
+  },
+
+  // PUZZLE 107: UNREFINED
+  {
+    id: 'unrefined-puzzle',
+    subtitle: 'Raw and real!',
+    letters: ['U', 'N', 'R', 'E', 'F', 'I', 'D'],
+    keyLetters: ['I', 'E'],
+    totalWordCount: 24,
+    words: {
+      4: ['DINE', 'DIRE', 'FINE', 'FIRE', 'REIN', 'RIDE', 'RIFE'],
+      5: ['DINER', 'DRIED', 'DRIER', 'FIEND', 'FINED', 'FINER', 'FIRED', 'FIRER', 'INFER', 'UNDIE'],
+      6: ['FINDER', 'FRIEND'],
+      7: ['DEFINED', 'DEFINER', 'REFINED', 'UNFIRED'],
+      9: ['UNREFINED']
+    },
+    hints: {
+      4: [
+        "Eat a meal; have dinner",
+        "Extremely serious; urgent",
+        "Good quality; penalty fee",
+        "Flames; to let go from a job",
+        "Strap to control a horse",
+        "Travel on a horse or vehicle",
+        "Widespread; full of"
+      ],
+      5: [
+        "Restaurant with booths; person eating",
+        "Removed moisture; preserved",
+        "More arid; laundry appliance",
+        "A devil or evil spirit",
+        "Given a penalty fee",
+        "Better quality; more delicate",
+        "Let go from a job; shot a gun",
+        "One who fires or dismisses",
+        "Conclude from evidence",
+        "An undergarment; informal term"
+      ],
+      6: [
+        "One who locates something lost",
+        "Close companion you care about"
+      ],
+      7: [
+        "Described precisely; given a meaning",
+        "One who describes precisely",
+        "Processed to improve purity or quality",
+        "Not yet fired or dismissed"
+      ],
+      9: [
+        "Not processed or purified; rough and natural (pangram!)"
+      ]
+    }
+  },
 
 ];
 
