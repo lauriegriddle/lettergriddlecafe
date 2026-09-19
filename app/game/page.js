@@ -6585,7 +6585,7 @@ const PUZZLES = [
         "Removes; rubs out",
         "Gazed; looked fixedly",
         "Gazes; looks fixedly",
-        "Places; positions; in good _____ (plural)",
+        "Places; positions; in good ______ (plural)",
         "Exchanges; business deals",
         "Walks heavily; tire patterns"
       ],
