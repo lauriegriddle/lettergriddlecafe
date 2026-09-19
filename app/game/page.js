@@ -6571,7 +6571,7 @@ const PUZZLES = [
         "Burns surfaces; scorches",
         "Chairs; places to sit",
         "Gaze; look fixedly",
-        "Place; in good stead",
+        "Place; in good _____",
         "Weeds; container weights",
         "Rips; eye drops",
         "Exchange; business deal",
@@ -6585,7 +6585,7 @@ const PUZZLES = [
         "Removes; rubs out",
         "Gazed; looked fixedly",
         "Gazes; looks fixedly",
-        "Places; positions",
+        "Places; positions; in good _____ (plural)",
         "Exchanges; business deals",
         "Walks heavily; tire patterns"
       ],
