@@ -1402,6 +1402,35 @@ const stories = [
   closingLink: 'https://lettergriddle.com/play',
   closingLinkText: 'Play Letter Griddle 🏜️'
 },
+{
+  id: 'autumn-rustles',
+  title: 'Autumn Rustles',
+  subtitle: '🍂 Now Available',
+  date: 'September 2026',
+  locked: false,
+  content: [
+    'Erasing the summer slate to start a new season, "Quite invigorating," Laurel says thinking aloud.',
+    '"Falling for Fall" Laurel\'s initial brainstorm for the cafe\'s seasonal chalkboard fell short.',
+    '"Sounds like the bulletin board at the hardware store or local Y," Laurel decides.',
+    '"Rustles at the Cafe is the perfect heading for this board," Laurel says.',
+    'Alternating using the shades of reds, oranges, and browns chalk colors, Laurel carefully forms the letters following the insides of the stencils. "\'Creativity abounds\' is a perfect tagline," she thinks to herself.',
+    'Finished with the heading and tagline, taking a break in the corner booth, Laurel grabs her Letter Griddle Cafe notepad and pen, and begins listing the creative endeavors for the fall season:',
+    'Create new pumpkin spice coffee recipes,',
+    'Perfect cinnamon pancake recipe,',
+    'Attend annual cinnamon festival in Griddle Falls,',
+    'Talk-up September Night at the Cafe,',
+    'Decorate for College Football Pep Rally Saturdays.',
+    '"Just to name a few," she tells Griddles, who\'s emerged from a sunny corner of the cafe.',
+    'Griddles the Cafe Cat, Gigi, or even simply Grids, all suitable ways to address this cafe kitty, who knows Laurel so well.',
+    'Rubbing her ears against Laurel\'s leg, purring, the kitty is good company.',
+    '"Griddles, creativity is whatever we want it to be. We can be creative in any way we choose," Laurel says to her tangerine-toned feline friend.',
+    'Through purrs, continued chin-rubbing on Laurel\'s leg, and closed eyes, Griddles concurs.',
+    '"Gigi, this fall is a journey! Let\'s discover new ways to be creative!"',
+  ],
+  closing: 'Friends, autumn leaves are rustling. What new creative journeys are you taking? For daily inspiration and a puzzle, visit lettergriddle.com/play 🍂',
+  closingLink: 'https://lettergriddle.com/play',
+  closingLinkText: 'Play Letter Griddle 🍂'
+},
 ];
 
 // Puzzle data - expandable for future puzzles
@@ -2207,6 +2236,27 @@ const puzzles = {
     { pos: 4, letter: 'F' }
   ],
   didYouKnow: 'Those massive, 2,000-foot crimson and white vertical cliffs that everyone stares at? Millions of years ago, Zion wasn\'t a mountain canyon. It was a massive, sweeping desert landscape with the largest sand dunes on the planet. Over eons, those ancient sand dunes compressed and cemented together into the solid Navajo sandstone visible today.'
+},
+'autumn-rustles': {
+  id: 'autumn',
+  title: 'Autumn',
+  category: 'Autumn',
+  words: ['FALL', 'SPICE', 'RUSTLE', 'JOURNEY', 'GRIDDLES'],
+  hints: [
+    'The season Laurel is decorating the chalkboard for',
+    'The pumpkin variety going into new coffee recipes',
+    'The sound of autumn leaves and the cafe\'s seasonal heading',
+    'What Laurel calls this fall season\'s creative adventure',
+    'The tangerine-toned cafe cat who concurs through purrs'
+  ],
+  revealed: [
+    { pos: 1, letter: 'A' },
+    { pos: 2, letter: 'I' },
+    { pos: 3, letter: 'T' },
+    { pos: 3, letter: 'R' },
+    { pos: 4, letter: 'D' }
+  ],
+  didYouKnow: 'The changing colors of autumn trigger emotional warmth and nostalgia, which help spark new, reflective ideas and creative problem-solving.'
 },
 };
 
