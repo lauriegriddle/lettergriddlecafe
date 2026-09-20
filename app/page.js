@@ -1337,7 +1337,7 @@ const stories = [
     '"Why not baby blue?" questions Josie.',
     '"Or periwinkle?" asks Mrs. Lindsay.',
     '"Good points," Laurel says to her inquisitive crew. "But blue ribbon chicken is the translation."',
-    '"Periwinkle Prize Chicken doesn\'t pop, but I would still eat it," Mr. Lindsay says.',
+    '"Periwinkle Prize Chicken doesn\'t pop, but I would still eat it," Mr. Lindsay chortles.',
     '"Tip-tap, tip-tap, tip-tap, tip-tap."',
     'Isaac makes his way out of Jennie\'s arms to the dining room floor.',
     '"Excuse us, I mean, Sir Isaac, wasn\'t having anything to do with his new leash," Jennie explains, trailing behind with his leash in hand.',
