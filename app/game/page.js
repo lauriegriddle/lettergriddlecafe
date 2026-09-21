@@ -6687,11 +6687,11 @@ const PUZZLES = [
       5: [
         "Rotating meat kebab; one who donates",
         "Pilotless aircraft; a low hum",
-        "Pierced with a tusk; stained red",
+        "Pierced",
         "A red cosmetic; to apply red color"
       ],
       6: [
-        "Thunder that rolls and echoes",
+        "One who dons",
         "Done over again; renovated",
         "Applied red color to",
         "No longer tied or bound; freed"
