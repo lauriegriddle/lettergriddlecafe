@@ -1431,6 +1431,39 @@ const stories = [
   closingLink: 'https://lettergriddle.com/play',
   closingLinkText: 'Play Letter Griddle 🍂'
 },
+{
+  id: 'cafe-adventures-in-mexico',
+  title: 'Cafe Adventures in Mexico',
+  subtitle: '🌮 Now Available',
+  date: 'September 2026',
+  locked: false,
+  content: [
+    '"Isaac, wear this sombrero," Jennie says, placing a miniature straw hat with a colorful band on her faithful chihuahua\'s head. "You are a handsome señor."',
+    '"Yap, yap," a festive Isaac agrees. Yap translates to yap in any language.',
+    '"I\'ve written some fun facts about beautiful Mexico to include in trivia!" Mr. Lindsay says.',
+    '"Our trip to Chichen Itza two summers ago…like it was yesterday," Mrs. Lindsay reflects.',
+    '"Trivia night at the Letter Griddle Cafe was never spicier, muchachos!" Taylor challenges his friends.',
+    '"I set up the churros station," Josephine says.',
+    '"How is this paper picado looking?" Josie asks from the counter.',
+    '"Muy bueno!" Laurel compliments, eyeing colorful paper banner strung above the counter.',
+    '"Time for some music!" Mr. and Mrs. Lindsay chime.',
+    'Sarah asks, "Mariachi, cumbia, or ranchera?"',
+    '"Mariachi music is queued up in Jukebox," Laurel responds.',
+    '"Arriba!" Mr. Lindsay says, pleased.',
+    '"The playlist is ready!" Sarah says.',
+    '"Check the cake safe for sweet treats!" Mrs. Lindsay reminds the sweet-toothed in the group.',
+    '"Churros, tres leches, and pan dulce, oh my!" Mr. Lindsay says after surveying the offerings.',
+    '"Delicioso!" Mrs. Lindsay remarks.',
+    '"Dessert case. Check. Churros station. Check." Josephine assures the group.',
+    '"Excelente!" Mr. Lindsay says.',
+    '"Grab some churros!" Laurel instructs her amigos. "Trivia starts…"',
+    '"…now!" Taylor finishes.',
+    '"Yap, yap," Isaac concurs. Yap translates to yap in any language. 🌮 🇲🇽',
+  ],
+  closing: 'Amigos, bienvenidos! Enjoy this time of celebrating Hispanic heritage with our fun adventure game at lettergriddle.com/adventures-in-mexico — currently in beta. Let us know what you think! 🌮',
+  closingLink: 'https://lettergriddle.com/adventures-in-mexico',
+  closingLinkText: 'Play Adventures in Mexico 🌮'
+},
 ];
 
 // Puzzle data - expandable for future puzzles
@@ -2257,6 +2290,27 @@ const puzzles = {
     { pos: 4, letter: 'D' }
   ],
   didYouKnow: 'The changing colors of autumn trigger emotional warmth and nostalgia, which help spark new, reflective ideas and creative problem-solving.'
+},
+'cafe-adventures-in-mexico': {
+  id: 'adventures-in-mexico',
+  title: 'Adventures in Mexico',
+  category: 'Adventures in Mexico',
+  words: ['CREW', 'AMIGO', 'MEXICO', 'CHURROS', 'SOMBRERO'],
+  hints: [
+    'The Letter Griddle trivia group; Taylor\'s muchachos',
+    'What Laurel calls her friends at trivia night',
+    'The beautiful country inspiring tonight\'s trivia',
+    'The fried treat at Josephine\'s station',
+    'The miniature straw hat Isaac wore so handsomely'
+  ],
+  revealed: [
+    { pos: 1, letter: 'R' },
+    { pos: 2, letter: 'I' },
+    { pos: 3, letter: 'I' },
+    { pos: 3, letter: 'R' },
+    { pos: 4, letter: 'R' }
+  ],
+  didYouKnow: 'Mexico City is built on top of the drained Aztec lake bed of Tenochtitlán and sinks up to 50 centimeters, nearly 20 inches, every year.'
 },
 };
 
