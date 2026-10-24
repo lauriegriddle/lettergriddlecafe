@@ -1529,6 +1529,39 @@ const stories = [
   closingLink: 'https://lauriehess.com',
   closingLinkText: 'Visit LaurieHess.com 💛'
 },
+
+{
+  id: 'cafe-adventures-in-canada',
+  title: 'Cafe Adventures in Canada',
+  subtitle: '🍁 Now Available',
+  date: 'October 2026',
+  locked: false,
+  content: [
+    '"Yap! Yap, eh!" Jennie remarks as she attaches Isaac\'s little maple leaf bandana to his collar.',
+    '"Yap! Yap!" Isaac happily replies.',
+    '"Now we are ready to greet everyone with a friendly Welcome, eh!" Jennie says.',
+    'Jennie and her faithful chihuahua enter Letter Griddle Cafe.',
+    '"He shoots! He scores!" Mr. Lindsay booms, eyeing Isaac. "Canada has won the most Olympic gold medals in hockey," he adds, reaching for his favorite chihuahua.',
+    '"Noted and added to round three," Taylor says as he runs a trivia check with the Lindsays. "Ready, what is the mountain range that runs through British Columbia and Alberta?"',
+    '"The RV got us to the mountain. We saw the most beautiful scenery at Banff National Park," Mrs. Lindsay remembers.',
+    '"Canada\'s first national park and it\'s now a UNESCO World Heritage Site," Mr. Lindsay adds as if he\'s telling Isaac Canada trivia.',
+    '"The Rockies! I remember that from my school report. I have found some great Canadian artists!" Josie shares with the busy group. "Celine, Drake and the Weeknd." She queues up the playlist on Jukebox.',
+    '"Mr. and Mrs. Lindsay, Taylor, Jennie, Isaac, and Josie, thanks for your help," Laurel says. "What else are we working on before the adventure begins, eh?"',
+    '"I\'m finishing up filling the syrup bottles!" Josephine shares. "I am being careful!"',
+    '"It takes about 40 liters of maple sap to make just 1 liter of syrup!" Laurel says.',
+    '"Taylor, do we have a trivia question about syrup?" Josephine asks.',
+    '"Canada produces over 70% of the world\'s maple syrup!" Mr. Lindsay interjects.',
+    '"Quebec alone accounts for about 90% of Canada\'s production," Mrs. Lindsay adds.',
+    '"Canada is famous for sweet maple syrup and maple…" Taylor says.',
+    '"Did someone say maple butter tarts?" Sarah asks, entering the cafe along with an aroma of deliciousness.',
+    'Leaving their cozy corner booth, the crew meets Sarah at the door to inspect the lovely array of treats.',
+    '"Beauty!" Laurel says.',
+    '"Our adventure begins, eh!" Taylor announces.',
+  ],
+  closing: 'Friends, enjoy celebrating Canada with our fun adventure game at lettergriddle.com/adventures-in-canada — currently in beta. Let us know what you think! 🍁',
+  closingLink: 'https://www.lettergriddle.com/adventures-in-canada',
+  closingLinkText: 'Play Adventures in Canada 🍁'
+},
 ];
 
 // Puzzle data - expandable for future puzzles
@@ -2397,6 +2430,27 @@ const puzzles = {
     { pos: 4, letter: 'B' }
   ],
   didYouKnow: 'Over 3.5 billion paychecks are issued to about 156 million workers across the United States every single year.'
+},
+'cafe-adventures-in-canada': {
+  id: 'adventures-in-canada',
+  title: 'Adventures in Canada',
+  category: 'Adventures in Canada',
+  words: ['GOLD', 'MAPLE', 'HOCKEY', 'BANDANA', 'CANADIAN'],
+  hints: [
+    'Canada\'s most Olympic medals in this sport are this color',
+    'The syrup, the leaf, the butter tarts are all this flavor',
+    'Invented in Canada in the 1870s',
+    'Isaac\'s little maple leaf accessory around his collar',
+    'Celine, Drake, and The Weeknd are all this nationality'
+  ],
+  revealed: [
+    { pos: 1, letter: 'O' },
+    { pos: 2, letter: 'P' },
+    { pos: 3, letter: 'K' },
+    { pos: 3, letter: 'D' },
+    { pos: 4, letter: 'D' }
+  ],
+  didYouKnow: 'Ice hockey was invented in Canada in the 1870s! The first organized indoor game was played in Montreal in 1875. Canada has won the most Olympic gold medals in hockey.'
 },
 };
 
