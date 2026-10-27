@@ -1562,6 +1562,52 @@ const stories = [
   closingLink: 'https://www.lettergriddle.com/adventures-in-canada',
   closingLinkText: 'Play Adventures in Canada 🍁'
 },
+{
+  id: 'cinnamon-festival-in-griddle-falls',
+  title: 'Cinnamon Festival in Griddle Falls! 🍂',
+  subtitle: '🍂 Now Available',
+  date: 'October 2026',
+  locked: false,
+  content: [
+    '"Josephine, head to the flower shop first! There are some decorations for the Letter Griddle booth." Laurel taps and sends the text. 💐',
+    '"Market Square and the whole town is so festive with its fall colors," Laurel notes as she sets up the Letter Griddle festival booth. "Griddle Falls is especially pretty this time of year."',
+    'Swoosh. Ping.',
+    'Picking up her phone, Laurel taps on the photo of Josie holding a beautiful fall arrangement. 💐',
+    '"Can\'t wait to see you!" Josie texts the group chat. 🍁',
+    '"The decorations from the flower shop look really pretty!" Laurel responds. 💐',
+    'Swoosh. Ping.',
+    '"You know I\'m looking for…," Taylor texts in his usual fill-in-the-blank style. 🤨',
+    '"the cinnamon pancakes! There\'s enough for everybody," Laurel assures the group. Then adds a row of 🥞.',
+    'Swoosh. Ping.',
+    '"Taylor, just head straight down Main Street, it\'s the quickest route!" Sarah\'s GPS game has been on point for the crew\'s off-campus gatherings. 🧭',
+    '"Isaac and I are taking a walk," Jennie texts the group. 🐾',
+    '"Let Isaac say hi to the ducks, then keep moving!" Mr. and Mrs. Lindsay chime as they enter the chat. 🦆',
+    '"Jennie, head toward the fountain," Sarah directs. ⛲️',
+    '"Sarah, I found a shortcut through the park!" Jennie texts. 🌳',
+    '"We didn\'t forget to stop at the bakery for cinnamon rolls!" Mr. and Mrs. Lindsay add. 🥐',
+    '"The Lindsays will arrive at the Letter Griddle booth in three minutes according to my calculation," Sarah informs the group. 🕰️',
+    '"Sarah, let us know when you\'ll be at our booth in Market Square," Laurel sends. ⌚️',
+    '"Laurel, the booth looks fantastic," Josephine says as she and Josie arrive. "This arrangement will look perfect on the table."',
+    '"Cinnamon has ancient roots." Taylor states as he joins the group.',
+    '"Thanks for keeping our trivia skills honed, even on a festival day!" Laurel chides.',
+    '"The cinnamon buns are in this decorative box," the Lindsays chime as they arrive.',
+    '"The aroma alone is tempting us, or I mean, me," Mr. Lindsay adds.',
+    '"They will look lovely displayed on this tray between the arrangement and the pancake griddle," Josephine says.',
+    'Tip, tap, tip, tap, tip, tap.',
+    '"Yap! Yap!" Isaac interjects, cuing the group to notice his cinnamon-hued doggie sweater vest.',
+    '"I knitted Isaac\'s sweater vest," Jennie announces, donning a human sized sweater vest. "I made one for myself with the extra yarn."',
+    '"Isaac is here, now…" Mr. Lindsay starts, does a quiet head count, and concludes, "we are missing…"',
+    'The crew scrolls through the group text on their smart phones and sees a gray bubbled ellipsis next to Laurel\'s name. 💬',
+    '"Sarah, where are…" Laurel tapping the text, looks up to see Sarah. 🗺️',
+    'Setting her phone down, Laurel says, "Sarah, thank you for helping everyone get here!"',
+    '"Of course, the Cinnamon Festival wouldn\'t be the same without our whole crew together," Sarah says.',
+    'The crew pauses hungry for pancakes but more hungry for an explanation.',
+    'Knowing that the crew will let the festival treats get cold in the crisp autumn air without her confessional, Sarah adds, "GPS only works when my phone battery isn\'t at zero…now how about some cinnamon pancakes?"',
+  ],
+  closing: 'Friends, enjoy gathering the Letter Griddle crew when you play our fun adventure game Letter Griddle Land, currently in beta. Let us know what you think! 🍂',
+  closingLink: 'https://www.lettergriddle.com/griddle-land',
+  closingLinkText: 'Play Letter Griddle Land 🍂'
+},
 ];
 
 // Puzzle data - expandable for future puzzles
@@ -2451,6 +2497,27 @@ const puzzles = {
     { pos: 4, letter: 'D' }
   ],
   didYouKnow: 'Ice hockey was invented in Canada in the 1870s! The first organized indoor game was played in Montreal in 1875. Canada has won the most Olympic gold medals in hockey.'
+},
+'cinnamon-festival-in-griddle-falls': {
+  id: 'cinnamon-festival',
+  title: 'Cinnamon Festival',
+  category: 'Cinnamon',
+  words: ['BAKE', 'SPICE', 'AROMA', 'BAKERY', 'PANCAKES'],
+  hints: [
+    'What you do with cinnamon rolls in the oven',
+    'Cinnamon\'s ancient and valuable role in cooking',
+    'What tempted Mr. Lindsay from the decorative box',
+    'Where the Lindsays stopped for cinnamon rolls',
+    'Laurel\'s cinnamon specialty at the festival booth'
+  ],
+  revealed: [
+    { pos: 1, letter: 'A' },
+    { pos: 2, letter: 'I' },
+    { pos: 2, letter: 'O' },
+    { pos: 3, letter: 'E' },
+    { pos: 4, letter: 'A' }
+  ],
+  didYouKnow: 'In first-century Rome, Pliny the Elder noted that 350 grams of cinnamon cost about fifteen times the value of silver by weight. Written records of cinnamon in China date back to 2800 B.C., making it one of the oldest known spices in human history.'
 },
 };
 
