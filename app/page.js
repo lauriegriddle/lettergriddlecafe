@@ -1608,6 +1608,54 @@ const stories = [
   closingLink: 'https://www.lettergriddle.com/griddle-land',
   closingLinkText: 'Play Letter Griddle Land 🍂'
 },
+{
+  id: 'coffee-trivia-night',
+  title: 'Coffee Trivia Night ☕',
+  subtitle: '☕ Now Available',
+  date: 'October 2026',
+  locked: false,
+  content: [
+    'Hello Friend!',
+    'Welcome!',
+    'Come in and smell the fresh roast!',
+    'You\'re just in time to join us for coffee trivia.',
+    'The crew has set up the espresso bar, baked treats, and now they are going to learn about beans from around the world!',
+    'Join the Lindsays in the corner booth.',
+    'Taylor is already asking the group an important question about coffee. "This African country is considered the birthplace of coffee."',
+    'Mr. Lindsay is mumbling to himself then announces, "Coffee was discovered in Ethiopia around the 9th century!"',
+    '"Legend says a goat herder named Kaldi noticed his goats became energetic after eating berries from a certain tree," Mrs. Lindsay adds.',
+    '"Ethiopia still grows some of the world\'s finest arabica beans," Mr. Lindsay says.',
+    '"Mr. and Mrs. Lindsay! We\'d love to hear about your trip to the coffee farms!" Taylor says. "Maybe over a cup of \'this coffee drink named after Italian monks\' brown robes.\'"',
+    '"Cappuccino is named after the Capuchin friars because the color of the drink resembles the brown robes they wear," Sarah chimes.',
+    '"In Italy, cappuccino is traditionally only consumed in the morning, never after a meal!" Taylor responds.',
+    '"The coffee cake is baking," Josephine tells the group.',
+    '"Mom, the kitchen smells amazing!" Josie says.',
+    'Now let\'s give our attention to the excitement in the trivia station.',
+    '"The process of heating green coffee beans to develop their flavor is known as…" Taylor begins.',
+    '"Coffee beans start out green and are transformed through roasting!" Jennie proudly states.',
+    '"Right! Did you know that light roasts retain more caffeine and origin flavors, while dark roasts have bolder, smokier tastes with slightly less caffeine?" Taylor asks.',
+    '"The \'first crack\' sound during roasting indicates light roast level," Laurel adds. "Beans used at Letter Griddle Cafe are roasted to perfection."',
+    '"Josie, find some cozy coffeehouse music in the jukebox!" Josephine says.',
+    '"Hey, everyone, I found the perfect acoustic playlist for coffee night!" Josie announces. "I will play it for…"',
+    '"…ambiance." Josephine helps finish the thought.',
+    '"One more trivia question before we take our coffee break. This Italian word means \'pressed out\' and describes a strong coffee," Taylor asks.',
+    '"Espresso!" Jennie responds.',
+    '"Yap! Yap!" Isaac emphasizes.',
+    '"Espresso was invented in Italy in the early 1900s. The word means \'pressed out\' in Italian, referring to how hot water is forced through finely ground coffee," Taylor explains.',
+    '"A proper espresso shot takes only 25-30 seconds to pull!" Laurel adds.',
+    '"The coffeehouse playlist is ready to be turned up," Taylor cues Josie.',
+    'Ambient instrumentals infuse the cafe.',
+    '"Folks, be sure to check the cake safe for treats!" Taylor announces.',
+    '"Coffee cake," Mr. Lindsay announces.',
+    '"Tiramisu," Mrs. Lindsay chimes.',
+    '"Biscotti," Sarah adds.',
+    '"Oh my!" Jennie says.',
+    '"Yap! Yap!" Isaac concurs.',
+  ],
+  closing: 'Thank you for joining us for trivia, coffee, and a treat. For more, gather at lettergriddle.com/adventures-in-coffee, still in beta. Let us know what you think! ☕',
+  closingLink: 'https://www.lettergriddle.com/adventures-in-coffee',
+  closingLinkText: 'Play Adventures in Coffee ☕'
+},
 ];
 
 // Puzzle data - expandable for future puzzles
@@ -2518,6 +2566,27 @@ const puzzles = {
     { pos: 4, letter: 'A' }
   ],
   didYouKnow: 'In first-century Rome, Pliny the Elder noted that 350 grams of cinnamon cost about fifteen times the value of silver by weight. Written records of cinnamon in China date back to 2800 B.C., making it one of the oldest known spices in human history.'
+},
+'coffee-trivia-night': {
+  id: 'coffee-trivia-night',
+  title: 'Coffee Trivia Night',
+  category: 'Coffee Trivia Night',
+  words: ['CAKE', 'MUSIC', 'JUKEBOX', 'AMBIENT', 'ACOUSTIC'],
+  hints: [
+    'Josephine said this coffee treat was baking in the kitchen',
+    'Josie\'s playlist filled the cafe with cozy this',
+    'The cafe\'s classic machine for playing favorite tunes',
+    'The kind of instrumentals that infused the cafe',
+    'The style of playlist Josie found for coffee night'
+  ],
+  revealed: [
+    { pos: 1, letter: 'A' },
+    { pos: 2, letter: 'S' },
+    { pos: 3, letter: 'E' },
+    { pos: 3, letter: 'I' },
+    { pos: 4, letter: 'S' }
+  ],
+  didYouKnow: 'Traditional American coffee cake is a sweet, spiced pastry or crumb cake named because it is meant to be eaten alongside a cup of coffee, not because it contains brewed coffee in the batter.'
 },
 };
 
