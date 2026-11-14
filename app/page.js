@@ -1694,7 +1694,7 @@ const stories = [
     '"Quickly," Josephine replies, helping herself to a cinnamon roll from the tray. "Thanks, Laurel."',
     '"What went the quickest?" Laurel asks.',
     '"Yes," Josephine answers. "I mean, it all went immediately. Delicious cinnamon roll."',
-    '"Cookies, brownies, cakes, pies, all of it, sold," Taylor announces, making his way to the cake safe. "Don\'t mind if I do. Thanks, Laurel," he adds as he plucks a cinnamon roll from the batch.',
+    '"Cookies, brownies, cakes, pies, all of it," Taylor announces, making his way to the cake safe. "Don\'t mind if I do. Thanks, Laurel," he adds as he plucks a cinnamon roll from the batch.',
     '"Sold out," Sarah says. "Oh, thanks, Laurel," she adds as she cues Laurel to hand her a cinnamon roll.',
     '"One minute we were getting the booth set up and the next we were turning away customers," Mr. Lindsay booms, holding the cafe door open.',
     '"By turning away customers, he means inviting them to Letter Griddle Cafe. Expect some new friends," Mrs. Lindsay shares, entering the cafe with Isaac.',
