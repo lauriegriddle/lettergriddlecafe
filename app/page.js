@@ -1656,6 +1656,92 @@ const stories = [
   closingLink: 'https://www.lettergriddle.com/adventures-in-coffee',
   closingLinkText: 'Play Adventures in Coffee ☕'
 },
+{
+  id: 'kitchen-inspiration',
+  title: 'Kitchen Inspiration',
+  subtitle: '🥞 Now Available',
+  date: 'November 2026',
+  locked: false,
+  content: [
+    '"Let me see if I have everything to make Favorite Pancakes in the Letter Griddle Cookbook," Sarah ponders in her galley kitchen.',
+    'Sarah scans her kitchen canisters and refrigerator for the ingredients.',
+    'Ingredients',
+    '1¼ cups sifted all-purpose flour',
+    '3 teaspoons baking powder',
+    '1 tablespoon sugar',
+    '½ teaspoon salt',
+    '1 beaten egg',
+    '1 cup milk*',
+    '2 tablespoons salad oil',
+    '*For thinner pancakes, add 2 tablespoons milk to batter',
+    '"There\'s no way I can eat all of the pancakes that this recipe makes," she notices. "Any leftovers can be taken to the cafe tomorrow morning. The crew will have a tasty breakfast before setting up the booth at the bake sale."',
+    '"Yes, the crew will love these pancakes that are inspired by what is in this kitchen!"',
+  ],
+  closing: 'Friends, we hope you experience kitchen inspiration. Feel free to share this recipe for Favorite Pancakes. 🥞',
+  closingLink: 'https://www.lettergriddlecookbook.com/',
+  closingLinkText: 'Visit the Letter Griddle Cookbook 🥞'
+},
+{
+  id: 'room-for-new-friends-and-cinnamon-rolls',
+  title: 'There\'s Always Room for New Friends and Cinnamon Rolls',
+  subtitle: '🍥 Now Available',
+  date: 'November 2026',
+  locked: false,
+  content: [
+    '"It is all gone!" Josie beams, holding the cafe door for her mother.',
+    '"The bake sale was a success," Josephine shares.',
+    '"Everything sold out?" Laurel asks, plating a piping hot batch of cinnamon rolls in the cake safe.',
+    '"Quickly," Josephine replies, helping herself to a cinnamon roll from the tray. "Thanks, Laurel."',
+    '"What went the quickest?" Laurel asks.',
+    '"Yes," Josephine answers. "I mean, it all went immediately. Delicious cinnamon roll."',
+    '"Cookies, brownies, cakes, pies, all of it, sold," Taylor announces, making his way to the cake safe. "Don\'t mind if I do. Thanks, Laurel," he adds as he plucks a cinnamon roll from the batch.',
+    '"Sold out," Sarah says. "Oh, thanks, Laurel," she adds as she cues Laurel to hand her a cinnamon roll.',
+    '"One minute we were getting the booth set up and the next we were turning away customers," Mr. Lindsay booms, holding the cafe door open.',
+    '"By turning away customers, he means inviting them to Letter Griddle Cafe. Expect some new friends," Mrs. Lindsay shares, entering the cafe with Isaac.',
+    '"Yap! Yap!" Isaac emphasizes.',
+    '"Where\'s Jennie?" Laurel asks.',
+    '"So as I was saying, Laurel is the baker who made the treats sold at the booth today," Jennie explains as the group she\'s with is entering the cafe.',
+    '"Hi, I\'m Laurel," Laurel addresses the group. "Please enjoy," she says, lifting the cake safe lid.',
+    '"Hi, Mrs. Peru! I\'ve never seen you outside of the art hallway at school!" Josie exclaims.',
+    '"Josie! I\'ve never seen you outside of the art hallway either." Mrs. Peru exclaims as Josie runs to give her a hug.',
+    '"What are you doing here?" Josie asks.',
+    '"Josie," Josephine says in a hushed tone.',
+    '"I would like to order four dozen of these delicious cinnamon rolls to be delivered to school next week," Mrs. Peru explains.',
+    '"Very good! Let us know where and when," Laurel says. "There\'s always room for cinnamon rolls."',
+  ],
+  closing: 'Friends, sometimes we create so much good that it is meant to be shared far and wide, and we know there\'s always more where that came from. 🍥',
+  closingLink: 'https://lettergriddle.com/play',
+  closingLinkText: 'Play Letter Griddle 🍥'
+},
+{
+  id: 'how-much',
+  title: 'How Much?',
+  subtitle: '🎨 Now Available',
+  date: 'November 2026',
+  locked: false,
+  content: [
+    '"How much did we make?" Josie asks as Josephine is folding laundry.',
+    '"Josie, we will count it up later together," Josephine says. "You are going to show me you know how to count money."',
+    '"That\'s going to be exciting," Josie says.',
+    '"For now, let\'s think about how much we appreciate the time we spent together," Josephine says.',
+    '"It was fun," Josie says.',
+    '"We made a lot of people happy with the treats we made," Josephine explains.',
+    '"We sold out before the morning was over," Josie adds.',
+    '"We were even able to get new customers to come to the cafe," Josephine reminds Josie.',
+    '"I really liked seeing my art teacher at the cafe," Josie says.',
+    '"She even ordered four dozen cinnamon rolls for the teachers at your school," Josephine says.',
+    '"Can I draw a picture for her?" Josie asks.',
+    '"Of course," Josephine replies. "You can also thank her for…"',
+    '"…for teaching me how to draw, paint, and make fancy letters," Josie finishes her mother\'s thought.',
+    '"Josie, the sale was about how we sold what we made to the community and all of the experiences we had and will have because of it," Josephine says.',
+    'Josie pulls her colors and paper from the shelf, starts to create, and listens to her mother.',
+    '"One morning can lead us to new, fun experiences," Josephine explains.',
+    '"I will make you a picture next, Mom."',
+  ],
+  closing: 'Friends, you may be inspired to create a picture or a note expressing gratitude, or reflect on a recent experience where your good multiplied. 🎨',
+  closingLink: 'https://lettergriddle.com/play',
+  closingLinkText: 'Play Letter Griddle 🎨'
+},
 ];
 
 // Puzzle data - expandable for future puzzles
@@ -2587,6 +2673,69 @@ const puzzles = {
     { pos: 4, letter: 'S' }
   ],
   didYouKnow: 'Traditional American coffee cake is a sweet, spiced pastry or crumb cake named because it is meant to be eaten alongside a cup of coffee, not because it contains brewed coffee in the batter.'
+},
+'kitchen-inspiration': {
+  id: 'favorite-pancakes-kitchen',
+  title: 'Favorite Pancakes',
+  category: 'Favorite Pancakes',
+  words: ['MILK', 'SUGAR', 'GALLEY', 'KITCHEN', 'CANISTER'],
+  hints: [
+    'The 1 cup ingredient with an asterisk for thinner pancakes',
+    '1 tablespoon needed',
+    'The narrow kind of kitchen where Sarah is standing',
+    'The room where inspiration strikes in the title',
+    'Where Sarah scans for flour and other dry ingredients'
+  ],
+  revealed: [
+    { pos: 1, letter: 'I' },
+    { pos: 2, letter: 'G' },
+    { pos: 3, letter: 'L' },
+    { pos: 3, letter: 'C' },
+    { pos: 5, letter: 'T' }
+  ],
+  didYouKnow: 'In the 1800s some American cooks stirred fresh snow into batter, believing it would make pancakes lighter.'
+},
+'room-for-new-friends-and-cinnamon-rolls': {
+  id: 'cinnamon-rolls',
+  title: 'Cinnamon Rolls',
+  category: 'Cinnamon Rolls',
+  words: ['SALE', 'BOOTH', 'THANKS', 'SUCCESS', 'CINNAMON'],
+  hints: [
+    'What the bake was, and why everything sold out',
+    'Where the crew set up their treats at the bake sale',
+    'What everyone says to Laurel with each roll',
+    'How Josephine describes the bake sale',
+    'The spice in the swirl of the rolls Laurel plated'
+  ],
+  revealed: [
+    { pos: 1, letter: 'A' },
+    { pos: 2, letter: 'O' },
+    { pos: 3, letter: 'N' },
+    { pos: 4, letter: 'E' },
+    { pos: 5, letter: 'M' }
+  ],
+  didYouKnow: 'The spiral shape of cinnamon rolls spreads the cinnamon and sugar filling evenly through every single bite.'
+},
+'how-much': {
+  id: 'how-much',
+  title: 'How Much?',
+  category: 'How Much?',
+  words: ['ONE', 'FOUR', 'DOZEN', 'CREATE', 'PICTURE'],
+  hints: [
+    'The number of mornings that can lead to new experiences',
+    'How many dozen cinnamon rolls Mrs. Peru ordered',
+    'The unit for the cinnamon roll order, twelve to a set',
+    'What Josie does with her colors and paper',
+    'What Josie wants to draw for her art teacher'
+  ],
+  revealed: [
+    { pos: 1, letter: 'N' },
+    { pos: 2, letter: 'U' },
+    { pos: 3, letter: 'E' },
+    { pos: 4, letter: 'T' },
+    { pos: 5, letter: 'R' }
+  ],
+  didYouKnow: 'When you do something kind for someone else, it can activate the brain\'s reward centers, much like receiving a reward does.'
 },
 };
 
