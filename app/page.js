@@ -1707,7 +1707,7 @@ const stories = [
     '"What are you doing here?" Josie asks.',
     '"Josie," Josephine says in a hushed tone.',
     '"I would like to order four dozen of these delicious cinnamon rolls to be delivered to school next week," Mrs. Peru explains.',
-    '"Very good! Let us know where and when," Laurel says. "There\'s always room for cinnamon rolls."',
+    '"Very good!" Laurel says. "There\'s always room for cinnamon rolls."',
   ],
   closing: 'Friends, sometimes we create so much good that it is meant to be shared far and wide, and we know there\'s always more where that came from. 🍥',
   closingLink: 'https://lettergriddle.com/play',
